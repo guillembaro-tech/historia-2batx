@@ -1,0 +1,31 @@
+{
+  "titol": "La Guerra Civil",
+  "dates": "1936–1939",
+  "resum": "El cop d'estat, la revolució a la rereguarda, les fases militars i la guerra a Catalunya.",
+  "pregunta": "",
+  "apartats": [],
+  "fonts": [],
+  "practica": [],
+  "pau": [
+    {
+      "aspecte": "Esclat de la guerra a Catalunya fins als Fets de Maig",
+      "n": 18
+    },
+    {
+      "aspecte": "Fases de la guerra",
+      "n": 10
+    },
+    {
+      "aspecte": "Esclat i resistència a Barcelona i Madrid",
+      "n": 7
+    },
+    {
+      "aspecte": "Dels Fets de Maig al final de la guerra a Catalunya",
+      "n": 6
+    },
+    {
+      "aspecte": "Batalla de l'Ebre i ocupació de Catalunya",
+      "n": 6
+    }
+  ]
+}

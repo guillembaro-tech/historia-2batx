@@ -1,0 +1,104 @@
+{
+  "titol": "La Restauració: evolució política, social, econòmica i demogràfica",
+  "dates": "1875–1931",
+  "resum": "Del sistema canovista i el torn pacífic a la dictadura de Primo de Rivera, amb l'economia, la societat i la demografia del període.",
+  "pregunta": "Com va funcionar un sistema estable però poc democràtic, i per què va acabar en dictadura?",
+  "apartats": [
+    {
+      "titol": "El sistema de la Restauració",
+      "dates": "1875–1898",
+      "resum": "Constitució de 1876, torn pacífic entre conservadors i liberals, caciquisme i corrupció electoral.",
+      "conceptes": [
+        "Constitució de 1876",
+        "Torn pacífic",
+        "Caciquisme"
+      ],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "Els exclosos del sistema",
+      "dates": "1875–1898",
+      "resum": "Carlins, republicans i moviment obrer: anarquisme i socialisme.",
+      "conceptes": [
+        "Republicanisme",
+        "Anarquisme",
+        "PSOE i UGT"
+      ],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "El Desastre del 98",
+      "dates": "1895–1898",
+      "resum": "Guerra de Cuba i Filipines, guerra amb els EUA, Tractat de París i regeneracionisme.",
+      "conceptes": [
+        "Guerra de Cuba",
+        "Tractat de París",
+        "Regeneracionisme"
+      ],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "La crisi del sistema",
+      "dates": "1898–1923",
+      "resum": "Setmana Tràgica, crisi de 1917, pistolerisme i desastre d'Annual.",
+      "conceptes": [
+        "Setmana Tràgica",
+        "Crisi de 1917",
+        "Annual"
+      ],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "La dictadura i la caiguda de la monarquia",
+      "dates": "1923–1931",
+      "resum": "Directori militar i civil, corporativisme, oposició i fi de la monarquia.",
+      "conceptes": [
+        "Directori",
+        "Corporativisme",
+        "Pacte de Sant Sebastià"
+      ],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "Economia, societat i demografia",
+      "dates": "1875–1931",
+      "resum": "Transició demogràfica, problema agrari, industrialització i condició de la dona.",
+      "conceptes": [
+        "Transició demogràfica",
+        "Indústria",
+        "La dona"
+      ],
+      "ambits": [],
+      "cos": ""
+    }
+  ],
+  "fonts": [],
+  "practica": [],
+  "pau": [
+    {
+      "aspecte": "Sistema canovista (1875–1898)",
+      "n": 22
+    },
+    {
+      "aspecte": "Desastre del 98 i regeneracionisme",
+      "n": 11
+    },
+    {
+      "aspecte": "Gran Guerra, crisi de 1917 i pistolerisme",
+      "n": 11
+    },
+    {
+      "aspecte": "Primo de Rivera",
+      "n": 10
+    },
+    {
+      "aspecte": "Condicions de vida obrera (fins al 1898)",
+      "n": 7
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+backend:
+  name: github
+  repo: guillembaro-tech/historia-2batx
+  branch: main
+
+media_folder: media
+public_folder: /historia-2batx/media
+
+collections:
+  - name: temes
+    label: "Temes"
+    files:
+      - name: tema-1
+        label: "Tema 1. La Restauració"
+        file: content/temes/tema-1.json
+        fields: &camps_tema
+          - { label: "Títol", name: titol, widget: string }
+          - { label: "Dates", name: dates, widget: string, hint: "Ex.: 1875–1931" }
+          - { label: "Resum curt", name: resum, widget: text }
+          - { label: "Pregunta guia", name: pregunta, widget: string, required: false }
+          - label: "Apartats"
+            name: apartats
+            widget: list
+            required: false
+            summary: "{{fields.titol}} ({{fields.dates}})"
+            fields:
+              - { label: "Títol", name: titol, widget: string }
+              - { label: "Dates", name: dates, widget: string, required: false }
+              - { label: "Resum (una o dues frases)", name: resum, widget: text, required: false }
+              - label: "Conceptes clau"
+                name: conceptes
+                widget: list
+                required: false
+                field: { label: "Concepte", name: concepte, widget: string }
+              - label: "Àmbits del glossari"
+                name: ambits
+                widget: select
+                multiple: true
+                required: false
+                options:
+                  - "1. Liberalisme i democràcia. Clientelisme i corrupció."
+                  - "2. Canvi econòmic i social a Espanya i Catalunya."
+                  - "3. Revolució i revolucionaris. Conflicte social i obrerisme."
+                  - "4. Conquesta dels drets socials i incipient Estat del Benestar."
+                  - "5. Militarisme."
+                  - "6. Contrarevolució: corporativisme, democràcia orgànica i feixisme."
+                  - "7. Violència política i social (en temps de pau i en temps de guerra)."
+                  - "8. Església i poder. Clericalisme i anticlericalisme."
+                  - "9. El paper de la dona."
+                  - "10. Centralisme, catalanismes i experiències d'auto-govern."
+              - { label: "Explicació", name: cos, widget: markdown, required: false }
+          - label: "Fonts"
+            name: fonts
+            widget: list
+            required: false
+            summary: "{{fields.titol}}"
+            fields:
+              - { label: "Títol", name: titol, widget: string }
+              - { label: "Tipus", name: tipus, widget: select, options: ["Text", "Fotografia", "Caricatura", "Cartell", "Pintura", "Mapa", "Gràfic", "Taula"] }
+              - { label: "Imatge", name: imatge, widget: image, required: false }
+              - { label: "Text de la font", name: text, widget: markdown, required: false, hint: "Per a fonts escrites" }
+              - { label: "Autor", name: autor, widget: string, required: false }
+              - { label: "Data", name: data, widget: string, required: false }
+              - { label: "Procedència (arxiu, publicació, web)", name: procedencia, widget: string, required: false }
+              - { label: "Enllaç a l'original", name: enllac, widget: string, required: false }
+              - { label: "Context i comentari", name: context, widget: markdown, required: false }
+          - label: "Pràctica PAU"
+            name: practica
+            widget: list
+            required: false
+            summary: "Exercici {{fields.exercici}}"
+            fields:
+              - { label: "Exercici", name: exercici, widget: select, options: ["1", "2", "3", "4"] }
+              - { label: "Enunciat", name: enunciat, widget: markdown }
+          - label: "El que més surt a la PAU"
+            name: pau
+            widget: list
+            required: false
+            summary: "{{fields.aspecte}}: {{fields.n}}"
+            fields:
+              - { label: "Aspecte", name: aspecte, widget: string }
+              - { label: "Nombre de preguntes", name: n, widget: number, value_type: int }
+      - name: tema-2
+        label: "Tema 2. El catalanisme polític"
+        file: content/temes/tema-2.json
+        fields: *camps_tema
+      - name: tema-3
+        label: "Tema 3. La Segona República"
+        file: content/temes/tema-3.json
+        fields: *camps_tema
+      - name: tema-4
+        label: "Tema 4. La Guerra Civil"
+        file: content/temes/tema-4.json
+        fields: *camps_tema
+      - name: tema-5
+        label: "Tema 5. El franquisme"
+        file: content/temes/tema-5.json
+        fields: *camps_tema
+      - name: tema-6
+        label: "Tema 6. La Transició i la democràcia"
+        file: content/temes/tema-6.json
+        fields: *camps_tema
