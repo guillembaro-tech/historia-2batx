@@ -1,11 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex">
-<title>Administració. Història 2n Batx</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Història de 2n de Batxillerat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F9;--ink:#1B2230;--muted:#5A6376;--line:#D6DAE3;--focus:#2B6CB0;
+--t1:#9C5B18;
+--t2:#9E2638;
+--t3:#6A3E9C;
+--t4:#3E6B4E;
+--t5:#46566E;
+--t6:#2B6CB0;}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55}
+h1,h2,h3{font-family:Literata,Georgia,"Times New Roman",serif;font-weight:700;line-height:1.15;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:36px 24px 48px}
+/* cronologia */
+.rib{position:relative;margin:8px 0 0;padding:26px 0 30px}
+.rib .band2{position:absolute;top:8px;height:18px;border-radius:3px 3px 0 0;display:flex;align-items:center;padding-left:8px;font-size:.72rem;color:#fff;font-weight:700;text-decoration:none;white-space:nowrap;overflow:hidden}
+.rib .line{position:relative;height:40px;display:flex}
+.rib .seg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:Literata,Georgia,serif;font-weight:700;font-size:1.1rem;text-decoration:none;border-right:2px solid var(--bg);transition:filter .15s}
+.rib .seg:last-child{border-right:0}
+.rib .seg:hover{filter:brightness(1.15)}
+.rib .dim{opacity:.28}
+.rib .ticks{position:relative;height:18px;margin-top:6px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.rib .ticks span{position:absolute;transform:translateX(-50%)}
+.rib .ticks span.l{transform:none}
+.rib .ticks span.r{transform:translateX(-100%)}
+.rib .from{position:absolute;left:0;top:0;height:14px}
+@media (max-width:560px){.rib .seg{font-size:.9rem}.rib .t1936{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.hero h1{font-size:clamp(2rem,4.8vw,3.3rem);max-width:17ch}
+.hero p{max-width:60ch;color:var(--muted);margin:14px 0 0;font-size:1.05rem}
+.hero .note{font-size:.85rem;margin-top:10px}
+section{margin-top:52px}
+section>h2{font-size:1.6rem}
+section>.sub{color:var(--muted);margin:6px 0 20px;max-width:64ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:#fff;border:1px solid var(--line);border-top:6px solid var(--c);border-radius:4px 4px 8px 8px;padding:18px 20px 18px;min-height:220px;transition:border-color .15s,transform .15s}
+.tema:hover{border-color:var(--c);transform:translateY(-2px)}
+.tema .num{font-family:Literata,Georgia,serif;font-weight:700;font-size:2.4rem;line-height:1;color:var(--c)}
+.tema h3{font-size:1.18rem;margin:10px 0 4px}
+.tema .dates{font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.tema p{margin:10px 0 14px;font-size:.95rem}
+.tema .go{margin-top:auto;font-weight:700;font-size:.92rem;color:var(--c)}
+.ex{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:2px solid var(--ink)}
+.ex div{padding:16px 18px 18px 0;border-bottom:1px solid var(--line)}
+.ex b{display:block;font-family:Literata,Georgia,serif;font-size:1.05rem;margin-bottom:4px}
+.ex span{display:block;font-size:.92rem;color:var(--muted)}
+.ex i{font-style:normal;font-size:.82rem;color:var(--ink);font-weight:700}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;padding:10px 16px;border:1.5px solid var(--ink);border-radius:6px;text-decoration:none;font-weight:700;font-size:.95rem}
+.btn:hover{background:var(--ink);color:var(--bg)}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+@media (max-width:560px){.wrap{padding:24px 16px 36px}.tema{min-height:0}}
+
+</style>
 </head>
 <body>
-<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+<div class="wrap">
+<header class="hero">
+<h1>Història d'Espanya i Catalunya</h1>
+<p>Els sis temes de 2n de Batxillerat que entren a les PAU, de la Restauració a la consolidació democràtica (1875–1986). Tria un tema a la cronologia o a les fitxes.</p>
+<div class="rib" role="img" aria-label="Cronologia dels sis temes, de 1875 a 1986. El catalanisme polític comença el 1833 i discorre en paral·lel a la Restauració."><a class="band2" style="left:0;width:50.45%;background:var(--t2)" href="tema-2.html" title="Tema 2: El catalanisme polític (1833–1931)">2 Catalanisme polític, des de 1833</a><div class="line"><a class="seg" style="width:50.45%;background:var(--t1)" href="tema-1.html" title="Tema 1: La Restauració: evolució política, social, econòmica i demogràfica (1875–1931)">1</a><a class="seg" style="width:4.50%;background:var(--t3)" href="tema-3.html" title="Tema 3: La Segona República (1931–1936)">3</a><a class="seg" style="width:2.70%;background:var(--t4)" href="tema-4.html" title="Tema 4: La Guerra Civil (1936–1939)"></a><a class="seg" style="width:32.43%;background:var(--t5)" href="tema-5.html" title="Tema 5: El franquisme (1939–1975)">5</a><a class="seg" style="width:9.91%;background:var(--t6)" href="tema-6.html" title="Tema 6: La Transició i la democràcia (1975–1986)">6</a></div><div class="ticks"><span class="l" style="left:0.00%">1875</span><span class="r" style="left:50.45%">1931</span><span class="t1936" style="left:54.95%">1936</span><span class="l" style="left:57.66%">1939</span><span class="" style="left:90.09%">1975</span><span class="r" style="left:100.00%">1986</span></div></div></header>
+<section aria-labelledby="st"><h2 id="st">Els sis temes</h2><p class="sub">Cada tema té la seva pàgina amb l'explicació, els descriptors del glossari, fonts i pràctica per a l'examen.</p><div class="grid"><a class="tema" style="--c:var(--t1)" href="tema-1.html"><span class="num">1</span><h3>La Restauració: evolució política, social, econòmica i demogràfica</h3><span class="dates">1875–1931</span><p>Del sistema canovista i el torn pacífic a la dictadura de Primo de Rivera, amb l'economia, la societat i la demografia del període.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t2)" href="tema-2.html"><span class="num">2</span><h3>El catalanisme polític: precedents, aparició i evolució</h3><span class="dates">1833–1931</span><p>De la Renaixença i els primers moviments catalanistes a la Mancomunitat i el camí cap al 1931.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t3)" href="tema-3.html"><span class="num">3</span><h3>La Segona República</h3><span class="dates">1931–1936</span><p>Reformes, biennis, l'Estatut de 1932 i les tensions que desemboquen en la guerra.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t4)" href="tema-4.html"><span class="num">4</span><h3>La Guerra Civil</h3><span class="dates">1936–1939</span><p>El cop d'estat, la revolució a la rereguarda, les fases militars i la guerra a Catalunya.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t5)" href="tema-5.html"><span class="num">5</span><h3>El franquisme</h3><span class="dates">1939–1975</span><p>Els pilars de la dictadura, l'autarquia, el desarrollismo, la repressió i l'oposició.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t6)" href="tema-6.html"><span class="num">6</span><h3>La Transició i la democràcia</h3><span class="dates">1975–1986</span><p>De la mort de Franco a la Constitució, l'Estatut de 1979 i la consolidació democràtica.</p><span class="go">Obre el tema</span></a></div></section>
+<section aria-labelledby="se"><h2 id="se">Com és l'examen</h2><p class="sub">Quatre exercicis de 2,5 punts cadascun. Cada examen equilibra l'àmbit català i l'espanyol, i temes polítics, socials i econòmics.</p>
+<div class="ex">
+<div><i>Exercici 1</i><b>Anàlisi crítica de fonts</b><span>Dues fonts amb un mateix eix temàtic i tres preguntes.</span></div>
+<div><i>Exercici 2</i><b>Situeu-vos en el temps utilitzant termes històrics</b><span>Dos enunciats per triar-ne un, amb cinc termes històrics.</span></div>
+<div><i>Exercici 3</i><b>Exposeu un tema a través dels descriptors d'un glossari</b><span>Un tema transversal a partir del glossari oficial.</span></div>
+<div><i>Exercici 4</i><b>Poseu a prova els vostres sabers</b><span>Deu preguntes sobre fets, esdeveniments i contextos.</span></div>
+</div>
+<div class="links"><a class="btn" href="examen.html">Guia de l'examen</a><a class="btn" href="glossari.html">Glossari i descriptors</a></div>
+</section>
+<footer>Història d'Espanya i Catalunya, 2n de Batxillerat. Institut Comtat d'Osona.</footer>
+</div>
+
 </body>
 </html>
