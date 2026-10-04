@@ -2,9 +2,91 @@
   "titol": "El catalanisme polític: precedents, aparició i evolució",
   "dates": "1833–1931",
   "resum": "De la Renaixença i els primers moviments catalanistes a la Mancomunitat i el camí cap al 1931.",
-  "pregunta": "",
-  "apartats": [],
-  "fonts": [],
+  "pregunta": "Com va passar el catalanisme de reivindicar una llengua a governar la Mancomunitat i proclamar la República Catalana?",
+  "apartats": [
+    {
+      "titol": "Els precedents del catalanisme",
+      "dates": "1833–1874",
+      "resum": "El pes del 1714, la Renaixença, el carlisme, les bullangues i el federalisme republicà.",
+      "conceptes": [
+        "Nova Planta",
+        "Renaixença",
+        "Jocs Florals",
+        "Carlisme",
+        "Bullangues",
+        "Federalisme",
+        "Pacte Federal de Tortosa"
+      ],
+      "ambits": [
+        "10. Centralisme, catalanismes i experiències d'auto-govern."
+      ],
+      "cos": "Per entendre el catalanisme cal tornar al **1714**. L'11 de setembre d'aquell any, al final de la Guerra de Successió, Barcelona va caure davant les tropes de Felip V. La derrota va tenir un preu polític: el rei va suprimir les institucions de govern pròpies del país (les Corts, la Generalitat i el Consell de Cent), i el **Decret de Nova Planta** (1716) va organitzar Catalunya com una província més de la monarquia, governada per un capità general i una Reial Audiència. El castellà es va imposar a l'Audiència i, amb el temps, també a l'ensenyament, i les universitats catalanes es van suprimir per crear-ne una de sola a Cervera. Ara bé, el decret va mantenir el **dret civil català**, i el català va continuar sent la llengua de la vida quotidiana. Aquesta doble herència, un país sense institucions pròpies però amb una llengua i un dret vius, explica per què el catalanisme del segle XIX va començar defensant la llengua i el dret abans de reclamar autogovern.\n\nLa primera resposta va ser cultural. La **Renaixença** va ser el moviment que, des de la dècada de 1830, va voler tornar el català a la literatura. Se'n sol situar l'inici el 1833, amb l'oda «La pàtria» de Bonaventura Carles Aribau, publicada a *El Vapor*, tot i que Josep Pau Ballot ja havia publicat el 1815 una *Gramàtica i apologia de la llengua catalana*. Joaquim Rubió i Ors, «lo Gaiter del Llobregat», en va escriure el primer manifest en el pròleg del seu recull de poemes (1841), i la restauració dels **Jocs Florals** (1859) va donar prestigi al català com a llengua de cultura. El moviment va arrelar a la Universitat de Barcelona, a l'Acadèmia de Bones Lletres i a l'Ateneu Barcelonès (1872), i va tenir una vessant popular amb el teatre de Serafí Pitarra.\n\nLa Renaixença no va ser un fet aïllat. S'explica, en primer lloc, per una societat que s'industrialitzava i tenia una burgesia forta, diferent de la de la resta d'Espanya. En segon lloc, per la reacció contra el centralisme amb què es construïa l'Estat liberal: fins i tot conservadors com Joan Mañé i Flaquer en criticaven l'afany uniformitzador. I, finalment, pel romanticisme europeu, que valorava el passat medieval. Els intel·lectuals de la Renaixença hi van trobar l'època en què Catalunya havia tingut institucions pròpies, i en van fer la base d'una identitat diferenciada.\n\nAl mateix temps, dos moviments populars expressaven el malestar amb el liberalisme centralista. El **carlisme**, fort a les comarques de muntanya, defensava la religió i els furs tradicionals; després de la darrera guerra carlina (1872-1876), una part del carlisme català va evolucionar cap a la defensa de l'autonomia. A les ciutats, les **bullangues**, revoltes urbanes com la Jamància (1843), canalitzaven unes demandes polítiques i socials que el sufragi censatari deixava fora de les institucions. D'aquestes revoltes en van sortir els primers grups republicans federals i els primers nuclis socialistes.\n\nEl **republicanisme federal** va donar al catalanisme la seva primera proposta política: organitzar Espanya de baix a dalt, com una federació. Francesc Pi i Margall en va ser el gran teòric, i el 1868 Valentí Almirall va redactar unes *Bases per a la Constitució Federal de la Nació Espanyola i per a l'Estat de Catalunya*. Els federals van guanyar amb claredat a Catalunya les eleccions de 1869, i aquell mateix any el **Pacte Federal de Tortosa**, promogut pel mateix Almirall, va unir els federals de Catalunya, l'Aragó, el País Valencià i les Balears. Però el fracàs de la Primera República (1873-1874), que a Catalunya ja va néixer amb una abstenció de més del 70% a les eleccions, els va desacreditar. Una part dels catalanistes en va treure una conclusió: calia un moviment propi, que no depengués dels partits espanyols. És el camí que Almirall emprendrà durant la Restauració.\n\n**Al llibre:** Unitat 2, apartats 3 i 4."
+    },
+    {
+      "titol": "Valentí Almirall i el catalanisme progressista",
+      "dates": "1875–1887",
+      "resum": "El Diari Català, els congressos catalanistes, el Centre Català, el Memorial de Greuges i Lo catalanisme.",
+      "conceptes": [],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "El catalanisme conservador i les Bases de Manresa",
+      "dates": "1887–1898",
+      "resum": "La Lliga de Catalunya, el Missatge a la Reina Regent, la defensa del dret civil, la Unió Catalanista i les Bases de Manresa.",
+      "conceptes": [],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "La Lliga Regionalista i la Solidaritat Catalana",
+      "dates": "1898–1909",
+      "resum": "La crisi del 98, el tancament de caixes, la Lliga Regionalista, els fets del Cu-cut!, la Llei de Jurisdiccions i la Solidaritat Catalana.",
+      "conceptes": [],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "La Mancomunitat de Catalunya",
+      "dates": "1914–1925",
+      "resum": "Prat de la Riba, l'obra de govern, l'Assemblea de Parlamentaris, la campanya autonomista i la supressió per la Dictadura.",
+      "conceptes": [],
+      "ambits": [],
+      "cos": ""
+    },
+    {
+      "titol": "El catalanisme d'esquerres i el camí cap a la República",
+      "dates": "1906–1931",
+      "resum": "Els republicans nacionalistes, Macià i Estat Català, la repressió de la Dictadura, ERC i la proclamació de la República Catalana.",
+      "conceptes": [],
+      "ambits": [],
+      "cos": ""
+    }
+  ],
+  "fonts": [
+    {
+      "titol": "Decret de Nova Planta",
+      "tipus": "Text",
+      "imatge": "",
+      "text": "«Habiendo con la asistencia divina y justicia de mi causa pacificado enteramente mis armas el Principado de Cataluña, tocaba a mi Soberanía establecer gobierno en él, y dar providencias para que sus moradores vivan con paz, quietud y abundancia [...].\n\nLas causas en la Real Audiencia se substanciarán en lengua castellana [...].\n\nEn todo lo demás que no está prevenido en los capítulos antecedentes de este decreto, mando se observen las constituciones que antes había en Cataluña [...].»",
+      "autor": "Felip V",
+      "data": "16 de gener de 1716",
+      "procedencia": "Decreto de Nueva Planta de la Real Audiencia del Principado de Cataluña (fragments). Edició del Repertorio Mayans (Universidad de Zaragoza)",
+      "enllac": "https://repertoriomayans.unizar.es/wp-content/uploads/2023/12/1707-1717-Decretos-de-Nueva-Planta-4-Nueva-Planta-de-la-Audiencia-de-Cataluna-1716-1.pdf",
+      "context": "El decret organitza el govern borbònic de Catalunya després de la derrota de 1714. Imposa el castellà a l'Audiència, però conserva les antigues constitucions en tot allò que no regula, sobretot el dret civil. Aquesta continuïtat del dret i de la llengua serà un dels fonaments del catalanisme del segle XIX."
+    },
+    {
+      "titol": "Pròleg de Lo Gaiter del Llobregat",
+      "tipus": "Text",
+      "imatge": "",
+      "text": "«L'ardenta afició que té i ha tingut sempre a les coses de sa pàtria; el gust que li cabria de què sos compatricis coneguessin més a fondo nostre antic, melodiós i abundant idioma, que desgraciadament es perd de dia en dia [...]; i en fi el desig de despertar en els demés eix sentiment noble i digne d'alabança, són les úniques causes que han mogut a l'autor d'estes poesies a dar-les a la llum pública. [...]\n\nCatalunya pot aspirar encara a la independència, no a la política, puix pesa molt poc en comparació de les demés nacions, les quals poden posar en el plat de la balança [...] exèrcits de molts mils homes [...]; però sí a la literària [...].\n\nCatalunya fou per espai de dos segles la mestra en lletres dels demés pobles; per què, puix, no pot deixar de fer l'humillant paper de deixeble o imitadora, creant-se una literatura pròpia i a part de la castellana? Per què no pot restablir sos jocs florals [...]?»",
+      "autor": "Joaquim Rubió i Ors",
+      "data": "1841",
+      "procedencia": "Pròleg del recull Lo Gaiter del Llobregat. Transcripció del llibre de text (Barcanova, Unitat 2), amb l'ortografia actualitzada",
+      "enllac": "",
+      "context": "És considerat el primer manifest de la Renaixença. Rubió renuncia a la independència política, però reclama una «independència literària»: una literatura pròpia en català i la restauració dels Jocs Florals, que arribaria el 1859. La reivindicació encara és cultural, no política."
+    }
+  ],
   "practica": [],
   "pau": [
     {
