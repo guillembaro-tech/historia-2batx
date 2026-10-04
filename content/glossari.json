@@ -1,0 +1,113 @@
+{
+ "titol": "Glossari i descriptors",
+ "document": "EXERCICI 3. Exposar un tema a través dels descriptors d’un Glossari.",
+ "font": "Document oficial «Glossari i descriptors» de l'exercici 3 de la PAU d'Història (2026), del Consell Interuniversitari de Catalunya.",
+ "important": [
+  "En cap cas es tracta de temes nous, sinó d’una selecció de grans àmbits amb els que incidir més serenament en temàtiques que ja es treballen a l’aula.",
+  "Els descriptors de cada àmbit, desiguals en extensió, tenen per missió orientar en aquest tipus de treball. Són els que serveixen de guia i d’enllaç amb les preguntes d’aquest exercici.",
+  "Igualment, els descriptors no recullen tots els continguts que podria contemplar cada àmbit. De la mateixa manera que no es recullen tots els continguts possibles del catalanisme, tampoc del conflicte social, i així successivament."
+ ],
+ "ambits": [
+  {
+   "n": 1,
+   "titol": "Liberalisme i democràcia. Clientelisme i corrupció.",
+   "descriptor": [
+    "Cal distingir liberalisme de democràcia. Els estats liberals construïts al llarg del segle XIX van adoptar diverses característiques, entre elles el fet de tenir Constitucions, la divisió de poders, la concepció del ciutadà i de la nació.",
+    "En concret, aquest descriptor convida a reflexionar en el fet que un dels elements conflictius del procés de democratització va ser el de l’ampliació del sufragi i la persistència del caciquisme i la corrupció electoral. Al mateix temps, caldrà estar amatents als trets principals, continuïtats o grans diferències de les diferents constitucions (1876, 1931 i 1978), així com la legislació política definitòria del règim franquista. Finalment, cal introduir el protagonisme actiu de la ciutadania en el canvi històric i en l’adveniment de la democràcia, i no només a través de les grans biografies, com ara en el procés de transició accelerat a partir de la mort de Franco, o en la proclamació de la República el 1931."
+   ],
+   "enunciats": [
+    {
+     "on": "Sèrie 0 (2025) · opció b",
+     "text": "«La reinstauració del sufragi universal el 1890 va fer d'Espanya un país democràtic». Valoreu aquest enunciat a partir de la discussió entre liberalisme i democràcia, i la corrupció sistèmica."
+    },
+    {
+     "on": "Model oficial d'exemples (2026) · enunciat a",
+     "text": "«El protagonisme de la Transició a la Democràcia a Espanya va ser del rei Juan Carlos I i del president Adolfo Suárez». Valora aquesta afirmació tenint en compte la pluralitat del protagonisme polític i civil, tant a Espanya com a Catalunya."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "titol": "Canvi econòmic i social a Espanya i Catalunya.",
+   "descriptor": [
+    "El vapor i “el retorn a l’aigua”. La segona Revolució industrial. Les diferències de població activa entre Catalunya i Espanya i els respectius efectes socials i polítics. El canvi econòmic i social durant el franquisme: misèria, autarquia i “desarrollismo”. Canvi demogràfic i moviments migratoris."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 3,
+   "titol": "Revolució i revolucionaris. Conflicte social i obrerisme.",
+   "descriptor": [
+    "Capitalisme i societat de classes. La revolució a l’anarquisme i al socialisme marxista: la divisió entre opressors i oprimits, o entre burgesos i proletaris. Com fer la revolució?: la presa de l’Estat o la seva destrucció. Sindicats d’ofici i sindicats d’indústria. Principals organitzacions obreristes (partits i sindicats) a Catalunya i a Espanya. Les col·lectivitzacions durant la guerra civil."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 4,
+   "titol": "Conquesta dels drets socials i incipient Estat del Benestar.",
+   "descriptor": [
+    "Espanya, un model tardà d’extensió dels drets socials i laborals: legalització dels sindicats; la Comissió de reformes socials; les lleis sobre accidents de treball i jubilació. L’Institut Nacional de Previsió. La jornada laboral de 8 hores i la vaga de la Canadenca. Les lleis sobre Cases Barates. El reformisme a la Segona República: la setmana anual retribuïda; la protecció del treball a la Constitució; la despenalització de la vaga del delicte de sedició. La llei de Contractes de Conreu i l’impacte de la llei de Reforma Agrària. El franquisme i l’endarreriment en la consolidació d’un Estat del Benestar modern. El Fuero del Trabajo, la criminalització de la vaga, la pèrdua de la negociació col·lectiva i la llei de bases de la Seguretat Social. La Transició: els Pactes de la Moncloa i el sistema de la Seguretat Social; les reformes socials del primer govern socialista."
+   ],
+   "enunciats": [
+    {
+     "on": "Model oficial d'exemples (2026) · enunciat b",
+     "text": "Feu una relació on comenteu i relacioneu les principals fites en la conquesta dels drets socials i laborals a Espanya, atenent a les singularitats de cada etapa històrica."
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "titol": "Militarisme.",
+   "descriptor": [
+    "El protagonisme militar per mitjà de cops d’estat i de la repressió de la dissidència política i social, bé sostenint les restes de l’imperi o en les noves empreses africanes. El paper dels cabdills “salvadors de la pàtria” (Miguel Primo de Rivera i Francisco Franco). El “soroll de sabres” durant la transició a la democràcia (23 F), o la mateixa clàusula de la Constitució de 1978 que continuà situant l’exèrcit com a garant de la unitat d’Espanya (art.8)."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 6,
+   "titol": "Contrarevolució: corporativisme, democràcia orgànica i feixisme.",
+   "descriptor": [
+    "El primer corporativisme social a la dictadura de Miguel Primo de Rivera. El franquisme: feixisme, corporativisme polític i social i “democràcia orgànica”. Les principals institucions polítiques i socials del nou estat franquista."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 7,
+   "titol": "Violència política i social (en temps de pau i en temps de guerra).",
+   "descriptor": [
+    "Els atemptats anarquistes i la seva repressió a finals del segle XIX. Els anys del pistolerisme (1919-23). La violència política i social asimètrica, entre ambdós bàndols durant la Guerra Civil, a la rereguarda catalana i a la resta d’espais en conflicte. La continuïtat de la repressió institucionalitzada durant el Franquisme. La violència política durant la Transició (la governamental i la terrorista)."
+   ],
+   "enunciats": [
+    {
+     "on": "Sèrie 0 (2025) · opció a",
+     "text": "Raoneu les causes, les característiques i l'impacte que va tenir la violència política i social durant la Guerra Civil i els primers anys de la dictadura franquista, atenent les singularitats de cada etapa històrica."
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "titol": "Església i poder. Clericalisme i anticlericalisme.",
+   "descriptor": [
+    "Els models de relació entre Església i Estat: la confessionalitat de l’Estat (Constitució de 1876); el reformisme (Llei del cadenat); l’anticlericalisme del moviment obrer i del Partit Radical; la protesta popular (la dimensió religiosa, però també política i social de la Setmana Tràgica catalana).",
+    "Les reformes de la Segona República i la dinàmica clericalisme / anticlericalisme. La guerra civil com a croada. El nacional catolicisme franquista i l’església com a pilar del règim. Les dissidències eclesiàstiques internes i el Concili Vaticà IIn. El caràcter aconfessional de l’Espanya actual."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 9,
+   "titol": "El paper de la dona.",
+   "descriptor": [
+    "La ideologia de la domesticitat i de la masculinitat: l’Angel de la llar o la “perfecta casada”, i “l’home que guanya el pa”. La dona a la fàbrica. La participació de la dona a la protesta social i en els partits i sindicats del primer terç de segle XX. Els debats a l’entorn del vot de la dona, i les reformes durant la Segona República. El profund retrocés franquista i la repressió específica. La nova obtenció de drets (permís marital, adulteri, divorci, despenalització de l’avortament) i l’articulat de la Constitució de 1978."
+   ],
+   "enunciats": []
+  },
+  {
+   "n": 10,
+   "titol": "Centralisme, catalanismes i experiències d’auto-govern.",
+   "descriptor": [
+    "La pèrdua de l’imperi i la crisi de la identitat nacional espanyola. Les dues ànimes del catalanisme, la republicana federal i liberal, i la conservadora i catòlica. L’hegemonia de la Lliga Regionalista (Solidaritat Catalana) i crisi de 1918-23. La Mancomunitat com a laboratori polític. La repressió de les cultures no castellanes que culminà amb la Dictadura de Primo de Rivera. El republicanisme nacionalista i l’hegemonia d’ERC el 1931. Un sistema de partits diferenciat. Proclamació de la República catalana, establiment de la Generalitat i aprovació i Estatut d’Autonomia. La llarga nit de la dictadura franquista: l’exili polític i cultural, la liquidació de les institucions i la persecució del catalanisme i de la cultura catalana. A la transició post franquista, restabliment provisional de la Generalitat -anterior a la Constitució de 1978-, aprovació de l’estatut de Sau i reconeixement constitucional a l’autonomia de les nacionalitats i regions."
+   ],
+   "enunciats": []
+  }
+ ]
+}

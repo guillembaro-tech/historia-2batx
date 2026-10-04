@@ -12,3 +12,5 @@ El menú de capçalera és a `assets/menu.js`: per afegir-hi o canviar-hi una en
 El Taller PAU és a `taller.html`. El contingut de cada tema del taller és a `content/temes/taller-N.json`; un tema apareix com a disponible quan hi posa `"estat": "disponible"`.
 
 La secció Preguntes PAU és a `preguntes-pau.html`. Les dades (preguntes de les PAU 2010–2024 per tema i aspecte) són a `content/preguntes-pau.json`.
+
+La Guia de l'examen és a `examen.html`. El Glossari i descriptors és a `glossari.html`, amb el text oficial dels descriptors a `content/glossari.json`; els enllaços als apartats surten dels àmbits de cada tema.

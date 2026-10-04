@@ -48,7 +48,7 @@ img{max-width:100%;height:auto}
 .ap h3{grid-area:t;align-self:baseline;font-size:1.2rem;line-height:1.3}
 .ap .rs{grid-area:r;margin-top:5px;font-size:.94rem;line-height:1.5;color:var(--muted);max-width:62ch}
 .chev{grid-area:c;align-self:center;justify-self:end;width:9px;height:9px;margin-top:-4px;border-right:2px solid #9AA2B1;border-bottom:2px solid #9AA2B1;transform:rotate(45deg);transition:transform .2s ease,border-color .2s}
-.ap[open]{box-shadow:inset 3px 0 0 var(--c)}
+.ap[open],.ap[open]>summary{box-shadow:inset 3px 0 0 var(--c)}
 .ap[open] .chev{transform:rotate(225deg);margin-top:6px;border-color:var(--c-ink)}
 .ap-b{padding:2px 26px 34px 66px}
 .ap[open] .ap-b{animation:obre .24s ease}
@@ -73,6 +73,8 @@ img{max-width:100%;height:auto}
 .chips li{background:var(--soft);border-radius:6px;padding:2px 9px;font-size:.86rem;color:var(--ink2)}
 .amb li{padding-top:2px}
 .amb li+li{margin-top:4px}
+.amb a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+.amb a:hover{color:var(--c-ink);text-decoration-color:currentColor}
 
 /* Columna lateral */
 .side{margin-top:52px;display:flex;flex-direction:column;gap:22px}
