@@ -22,20 +22,24 @@ h1,h2,h3{font-family:Literata,Georgia,"Times New Roman",serif;font-weight:700;li
 a{color:inherit}
 a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:4px}
 .wrap{max-width:1080px;margin:0 auto;padding:36px 24px 48px}
-/* cronologia */
-.rib{position:relative;margin:8px 0 0;padding:26px 0 30px}
-.rib .band2{position:absolute;top:8px;height:18px;border-radius:3px 3px 0 0;display:flex;align-items:center;padding-left:8px;font-size:.72rem;color:#fff;font-weight:700;text-decoration:none;white-space:nowrap;overflow:hidden}
-.rib .line{position:relative;height:40px;display:flex}
-.rib .seg{height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-family:Literata,Georgia,serif;font-weight:700;font-size:1.1rem;text-decoration:none;border-right:2px solid var(--bg);transition:filter .15s}
-.rib .seg:last-child{border-right:0}
-.rib .seg:hover{filter:brightness(1.15)}
-.rib .dim{opacity:.28}
-.rib .ticks{position:relative;height:18px;margin-top:6px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
+/* cronologia: blocs blancs amb el color del tema a dalt */
+.rib{margin:26px 0 0}
+.rib a{text-decoration:none;color:var(--ink)}
+.rib .cat{display:flex;align-items:center;gap:10px;height:36px;margin-bottom:6px;padding:0 14px;border-radius:8px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--t2);font-size:.9rem;font-weight:500;white-space:nowrap;overflow:hidden;transition:box-shadow .15s}
+.rib .cat b{font-family:Literata,Georgia,serif;font-weight:700;font-size:1.1rem;color:var(--t2)}
+.rib .cat small{color:var(--muted);font-weight:400;font-size:.85rem}
+.rib .row{display:flex;gap:4px}
+.rib .s{display:flex;align-items:center;gap:8px;height:56px;padding:0 12px;border-radius:8px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--c);white-space:nowrap;overflow:hidden;transition:box-shadow .15s}
+.rib .s b{font-family:Literata,Georgia,serif;font-weight:700;font-size:1.3rem;color:var(--c)}
+.rib .s span{font-size:.95rem;font-weight:500}
+.rib .s.n{justify-content:center;padding:0}
+.rib .s:last-child{padding:0 10px;gap:6px}
+.rib .s:hover,.rib .cat:hover{box-shadow:0 2px 10px rgba(27,34,48,.10)}
+.rib .ticks{position:relative;height:18px;margin-top:8px;font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .rib .ticks span{position:absolute;transform:translateX(-50%)}
 .rib .ticks span.l{transform:none}
 .rib .ticks span.r{transform:translateX(-100%)}
-.rib .from{position:absolute;left:0;top:0;height:14px}
-@media (max-width:560px){.rib .seg{font-size:.9rem}.rib .t1936{display:none}}
+@media (max-width:560px){.rib .cat small{display:none}.rib .row{gap:3px}.rib .s{height:46px;padding:0 6px;justify-content:center}.rib .s span{display:none}.rib .s b{font-size:1.1rem}.rib .s.n{min-width:20px}.rib .t1936,.rib .t1975{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .hero h1{font-size:clamp(2rem,4.8vw,3.3rem);max-width:17ch}
@@ -72,7 +76,7 @@ footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--line);font-si
 <header class="hero">
 <h1>Història d'Espanya i Catalunya</h1>
 <p>Els sis temes de 2n de Batxillerat que entren a les PAU, de la Restauració a la consolidació democràtica (1875–1986). Tria un tema a la cronologia o a les fitxes.</p>
-<div class="rib" role="img" aria-label="Cronologia dels sis temes, de 1875 a 1986. El catalanisme polític comença el 1833 i discorre en paral·lel a la Restauració."><a class="band2" style="left:0;width:50.45%;background:var(--t2)" href="tema-2.html" title="Tema 2: El catalanisme polític (1833–1931)">2 Catalanisme polític, des de 1833</a><div class="line"><a class="seg" style="width:50.45%;background:var(--t1)" href="tema-1.html" title="Tema 1: La Restauració: evolució política, social, econòmica i demogràfica (1875–1931)">1</a><a class="seg" style="width:4.50%;background:var(--t3)" href="tema-3.html" title="Tema 3: La Segona República (1931–1936)">3</a><a class="seg" style="width:2.70%;background:var(--t4)" href="tema-4.html" title="Tema 4: La Guerra Civil (1936–1939)"></a><a class="seg" style="width:32.43%;background:var(--t5)" href="tema-5.html" title="Tema 5: El franquisme (1939–1975)">5</a><a class="seg" style="width:9.91%;background:var(--t6)" href="tema-6.html" title="Tema 6: La Transició i la democràcia (1975–1986)">6</a></div><div class="ticks"><span class="l" style="left:0.00%">1875</span><span class="r" style="left:50.45%">1931</span><span class="t1936" style="left:54.95%">1936</span><span class="l" style="left:57.66%">1939</span><span class="" style="left:90.09%">1975</span><span class="r" style="left:100.00%">1986</span></div></div></header>
+<nav class="rib" aria-label="Cronologia dels sis temes, de 1875 a 1986"><a class="cat" style="width:50.45%" href="tema-2.html" title="Tema 2: El catalanisme polític (1833–1931)" aria-label="Tema 2: El catalanisme polític (1833–1931), en paral·lel a la Restauració"><b>2</b>Catalanisme polític <small>1833–1931, en paral·lel a la Restauració</small></a><div class="row"><a class="s" style="width:50.45%;--c:var(--t1)" href="tema-1.html" title="Tema 1: La Restauració: evolució política, social, econòmica i demogràfica (1875–1931)" aria-label="Tema 1: La Restauració: evolució política, social, econòmica i demogràfica (1875–1931)"><b>1</b><span>Restauració</span></a><a class="s n" style="width:4.50%;--c:var(--t3)" href="tema-3.html" title="Tema 3: La Segona República (1931–1936)" aria-label="Tema 3: La Segona República (1931–1936)"><b>3</b></a><a class="s n" style="width:2.70%;--c:var(--t4)" href="tema-4.html" title="Tema 4: La Guerra Civil (1936–1939)" aria-label="Tema 4: La Guerra Civil (1936–1939)"><b>4</b></a><a class="s" style="width:32.43%;--c:var(--t5)" href="tema-5.html" title="Tema 5: El franquisme (1939–1975)" aria-label="Tema 5: El franquisme (1939–1975)"><b>5</b><span>Franquisme</span></a><a class="s" style="width:9.91%;--c:var(--t6)" href="tema-6.html" title="Tema 6: La Transició i la democràcia (1975–1986)" aria-label="Tema 6: La Transició i la democràcia (1975–1986)"><b>6</b><span>Transició</span></a></div><div class="ticks" aria-hidden="true"><span class="l" style="left:0.00%">1875</span><span class="r" style="left:50.45%">1931</span><span class="t1936" style="left:54.95%">1936</span><span class="l" style="left:57.66%">1939</span><span class="t1975" style="left:90.09%">1975</span><span class="r" style="left:100.00%">1986</span></div></nav></header>
 <section aria-labelledby="st"><h2 id="st">Els sis temes</h2><p class="sub">Cada tema té la seva pàgina amb l'explicació, els descriptors del glossari, fonts i pràctica per a l'examen.</p><div class="grid"><a class="tema" style="--c:var(--t1)" href="tema-1.html"><span class="num">1</span><h3>La Restauració: evolució política, social, econòmica i demogràfica</h3><span class="dates">1875–1931</span><p>Del sistema canovista i el torn pacífic a la dictadura de Primo de Rivera, amb l'economia, la societat i la demografia del període.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t2)" href="tema-2.html"><span class="num">2</span><h3>El catalanisme polític: precedents, aparició i evolució</h3><span class="dates">1833–1931</span><p>De la Renaixença i els primers moviments catalanistes a la Mancomunitat i el camí cap al 1931.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t3)" href="tema-3.html"><span class="num">3</span><h3>La Segona República</h3><span class="dates">1931–1936</span><p>Reformes, biennis, l'Estatut de 1932 i les tensions que desemboquen en la guerra.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t4)" href="tema-4.html"><span class="num">4</span><h3>La Guerra Civil</h3><span class="dates">1936–1939</span><p>El cop d'estat, la revolució a la rereguarda, les fases militars i la guerra a Catalunya.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t5)" href="tema-5.html"><span class="num">5</span><h3>El franquisme</h3><span class="dates">1939–1975</span><p>Els pilars de la dictadura, l'autarquia, el desarrollismo, la repressió i l'oposició.</p><span class="go">Obre el tema</span></a><a class="tema" style="--c:var(--t6)" href="tema-6.html"><span class="num">6</span><h3>La Transició i la democràcia</h3><span class="dates">1975–1986</span><p>De la mort de Franco a la Constitució, l'Estatut de 1979 i la consolidació democràtica.</p><span class="go">Obre el tema</span></a></div></section>
 <section aria-labelledby="se"><h2 id="se">Com és l'examen</h2><p class="sub">Quatre exercicis de 2,5 punts cadascun. Cada examen equilibra l'àmbit català i l'espanyol, i temes polítics, socials i econòmics.</p>
 <div class="ex">
