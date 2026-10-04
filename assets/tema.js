@@ -17,7 +17,7 @@ fetch('content/temes/tema-' + N + '.json', {cache:'no-cache'})
 function render(d){
   document.title = 'Tema ' + N + '. ' + (d.titol || NOMS[N]);
   const ap = d.apartats || [], fo = d.fonts || [], pr = d.practica || [], pau = d.pau || [];
-  let h = '<div class="hero"><div class="wrap"><nav class="top"><a href="index.html">Tornar a l\'inici</a><span>Tema ' + N + ' de 6</span></nav>'
+  let h = '<div class="hero"><div class="wrap"><nav class="top"><span>Tema ' + N + ' de 6</span></nav>'
     + '<h1>' + esc(d.titol) + '</h1><div class="d">Tema ' + N + '. ' + esc(d.dates) + '</div>'
     + (d.resum ? '<p class="r">' + esc(d.resum) + '</p>' : '')
     + (d.pregunta ? '<p class="q">' + esc(d.pregunta) + '</p>' : '')
@@ -29,6 +29,7 @@ function render(d){
   else h += '<p class="todo">Els apartats d\'aquest tema estan en preparació.</p>';
   h += '</div><aside>';
   h += '<div class="box nav"><h3>En aquesta pàgina</h3><a href="#apartats">Apartats</a><a href="#fonts">Fonts</a><a href="#practica">Pràctica PAU</a></div>';
+  h += '<a class="box taller" href="taller.html#tema-' + N + '"><h3>Taller PAU</h3><p>Aprèn a respondre els exercicis 1, 2 i 3 amb exemples d\'aquest tema.</p><span>Obre el taller</span></a>';
   if (has(pau)) {
     const mx = Math.max(...pau.map(p => +p.n || 0), 1);
     h += '<div class="box"><h3>El que més surt a la PAU</h3>' + pau.map(p => '<div class="bar"><div><span>' + esc(p.aspecte) + '</span><b>' + esc(p.n) + '</b></div><i style="width:' + ((+p.n||0)/mx*100) + '%"></i></div>').join('')

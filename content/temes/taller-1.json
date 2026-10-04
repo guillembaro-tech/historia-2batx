@@ -1,0 +1,724 @@
+{
+  "tema": 1,
+  "titol": "La Restauració",
+  "estat": "disponible",
+  "ex1": {
+    "segell": "Fonts reals · preguntes amb el format de la Sèrie 0",
+    "oficial": false,
+    "fonts": [
+      {
+        "etiqueta": "FONT 1",
+        "text": [
+          "«Don Alfonso XII, por la gracia de Dios Rey Constitucional de España, a todos los que las presentes vieren y entendieren, sabed: que en unión y de acuerdo con las Cortes del Reino actualmente reunidas, hemos venido en decretar y sancionar la siguiente Constitución de la Monarquía Española [...].",
+          "Art. 18. La potestad de hacer las leyes reside en las Cortes con el Rey.",
+          "Art. 19. Las Cortes se componen de dos Cuerpos Colegisladores, iguales en facultades: el Senado y el Congreso de los Diputados.",
+          "Art. 32. Las Cortes se reúnen todos los años. Corresponde al Rey convocarlas, suspender, cerrar sus sesiones y disolver simultánea o separadamente la parte electiva del Senado y el Congreso de los Diputados [...].",
+          "Art. 50. La potestad de hacer ejecutar las leyes reside en el Rey [...].",
+          "Art. 51. El Rey sanciona y promulga las leyes.»"
+        ],
+        "peu": "Constitución de la Monarquía Española, 30 de juny de 1876 (preàmbul i articles 18, 19, 32, 50 i 51)."
+      },
+      {
+        "etiqueta": "FONT 2",
+        "text": [
+          "«[...] pudieron ya en 1812 sus representantes consignar en un Código que la “nación es libre [...] y que la soberanía reside esencialmente en ella”. [...] Y, sin embargo, el pueblo no es más libre que antes. [...] Es decir, que no es verdad que la soberanía resida en la nación; que no es verdad que el régimen político de ésta sea el Parlamento, según llamamos al gobierno del país por el país. ¿Cuál es, pues, ese régimen? [...]",
+          "Monarquía, partidos, Constitución, Administración, Cortes, son puro papel pintado con paisajes de sistema parlamentario, dice Macias Picavea; a un Estado de derecho regular y perfecto, agrega Silvela, se opone en España un Estado de hecho que lo hace de todo en todo ilusorio, resultando que tenemos todas las apariencias y ninguna de las realidades de un pueblo constituido según ley y orden Jurídico [...].»"
+        ],
+        "peu": "Joaquín Costa, *Oligarquía y caciquismo como la forma actual de gobierno en España: urgencia y modo de cambiarla*, memòria presentada a l'Ateneo de Madrid, 1901."
+      }
+    ],
+    "preguntes": [
+      {
+        "n": "1.1",
+        "text": "Identifiqueu dues de les idees fonamentals de la primera font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.2",
+        "text": "Identifiqueu dues de les idees fonamentals de la segona font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.3",
+        "text": "Prenent com a punt de partida les dues preguntes anteriors, feu una breu redacció que respongui a l'enunciat següent: la distància entre el funcionament teòric i el funcionament real del sistema polític de la Restauració, atenent el seu context històric.",
+        "punts": "1,50 p"
+      }
+    ],
+    "guia": [
+      {
+        "q": "Què em demanen exactament la 1.1 i la 1.2?",
+        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Ves directament a les idees."
+      },
+      {
+        "q": "Quina diferència hi ha entre el tema i la idea?",
+        "a": "El tema és de què parla la font; la idea és què en diu. La font 1 parla de les Corts i del rei (tema); la idea és que el rei i les Corts comparteixen el poder de fer les lleis. Si la teva frase podria servir per a qualsevol text sobre el tema, és el tema, no la idea."
+      },
+      {
+        "q": "De quan és cada font i qui la va escriure?",
+        "nota": "t'ajuda a entendre-la, però no cal escriure-ho a la 1.1 ni a la 1.2",
+        "a": "El peu de font t'ho diu: la Constitució es va aprovar el 1876, a l'inici del règim; Costa escriu el 1901, tres anys després del Desastre del 98. No cal classificar les fonts, però aquestes dates són el marc cronològic que necessitaràs a la 1.3."
+      },
+      {
+        "q": "Què tenen en comú les dues fonts?",
+        "a": "El sistema polític de la Restauració. La font 1 mostra com havia de funcionar segons la llei; la font 2 denuncia com funcionava realment. Aquesta tensió és el fil de la 1.3."
+      },
+      {
+        "q": "Quant espai dedico a cada qüestió?",
+        "a": "La 1.3 val el triple que la 1.1 o la 1.2, i hi has de dedicar proporcionalment més espai. La normativa no fixa cap nombre de línies: el que es valora és el contingut."
+      }
+    ],
+    "vocabulari": [
+      {
+        "on": "1.1 · per anomenar les idees de la font 1",
+        "termes": [
+          "sobirania compartida",
+          "liberalisme doctrinari"
+        ]
+      },
+      {
+        "on": "1.2 · per anomenar les idees de la font 2",
+        "termes": [
+          "oligarquia",
+          "caciquisme",
+          "regeneracionisme"
+        ]
+      },
+      {
+        "on": "1.3 · per explicar el context",
+        "nota": "els fets que expliquen per què les fonts diuen coses diferents",
+        "termes": [
+          "torn pacífic",
+          "encasellat",
+          "governador civil",
+          "cacic",
+          "corrupció electoral",
+          "sufragi universal masculí (1890)",
+          "Desastre del 98"
+        ]
+      }
+    ],
+    "context": [
+      "Com s'alternaven els partits en el govern?",
+      "Com s'aconseguia que les eleccions donessin el resultat que volia el govern?",
+      "Per què Costa ho denunciava precisament el 1901?"
+    ],
+    "dates_fonts": "1876 i 1901",
+    "fets_context": "torn pacífic, encasellat, cacics, corrupció electoral",
+    "model": [
+      {
+        "q": "1.1"
+      },
+      {
+        "accept": [
+          "La sobirania és compartida entre el rei i les Corts: la Constitució la decreten conjuntament, i la potestat de fer les lleis resideix en les Corts amb el rei.",
+          "El rei té un poder molt ampli: exerceix el poder executiu, sanciona i promulga les lleis i convoca, suspèn i dissol les Corts.",
+          "Les Corts són bicamerals: un Senat i un Congrés dels Diputats amb les mateixes facultats."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que]] la sobirania és compartida entre el rei i les Corts: Alfons XII decreta la Constitució «en unión y de acuerdo con las Cortes», i el poder de fer les lleis correspon a les Corts juntament amb el monarca. Aquest principi, propi del liberalisme doctrinari de Cánovas, s'allunya de la sobirania nacional."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] el text atorga al rei un poder molt ampli, [[ja que]] té el poder executiu, sanciona i promulga les lleis i pot convocar, suspendre i dissoldre les Corts."
+      },
+      {
+        "why": "La resposta entra directament a les idees, sense dir quin tipus de font és. La primera idea fa servir el nom que la història dona al que diu la font (sobirania compartida) i l'explica. Hi ha una sola cita, breu i entre cometes."
+      },
+      {
+        "q": "1.2"
+      },
+      {
+        "accept": [
+          "Tot i que la Constitució de 1812 ja proclamava la sobirania nacional, el poble no és més lliure que abans: la sobirania no resideix realment en la nació.",
+          "El Parlament no representa el país: el sistema parlamentari és una aparença («papel pintado»).",
+          "Hi ha una distància entre l'estat de dret (el que diuen les lleis) i l'estat de fet (com s'exerceix realment el poder), que fa il·lusori el primer."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que,]] segons Costa, tot i que la Constitució de 1812 ja va proclamar que la sobirania resideix en la nació, el poble no és més lliure que abans: la sobirania no és realment de la nació i el Parlament no representa el país."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] institucions com la monarquia, els partits o les Corts són només una aparença de sistema parlamentari, darrere de la qual un estat de fet buida de contingut l'estat de dret. [[Tal com indica el títol de l'obra,]] aquest règim real és l'oligarquia i el caciquisme."
+      },
+      {
+        "why": "El peu de font (el títol de l'obra) es pot fer servir per donar sentit a la resposta, tal com permeten les FAQ oficials."
+      },
+      {
+        "q": "1.3"
+      },
+      {
+        "tag": "Marc cronològic",
+        "k": 1,
+        "text": "Les dues fonts tracten sobre el sistema polític de la Restauració, [[però]] són de dos moments diferents. La font 1 és de 1876, a l'inici del regnat d'Alfons XII, quan calia donar un marc legal estable al nou règim després del Sexenni Democràtic. La font 2 és de 1901: el sistema feia vint-i-cinc anys que funcionava i el país vivia la crisi oberta pel Desastre del 98."
+      },
+      {
+        "why": "Diu de quan és cada font i què passava en aquell moment. Les FAQ oficials insisteixen a explicitar el marc cronològic, sobretot a la 1.3."
+      },
+      {
+        "tag": "Confrontació",
+        "k": 2,
+        "text": "La font 1 defineix com havia de funcionar el poder: un règim liberal en què el rei i les Corts comparteixen la sobirania. [[En canvi,]] la font 2 denuncia que aquest sistema parlamentari és pura aparença. Totes dues parlen, doncs, de les mateixes institucions, [[però]] la primera n'exposa el funcionament teòric i la segona en qüestiona la realitat. [[A més,]] la Constitució de 1876 ja no reconeixia la sobirania nacional; Costa va més enllà i afirma que fins i tot la part representativa del sistema, les Corts, és una ficció."
+      },
+      {
+        "why": "Parteix de les idees de la 1.1 i la 1.2, però no les repeteix: les posa l'una davant de l'altra amb connectors de contrast."
+      },
+      {
+        "tag": "Context",
+        "k": 3,
+        "text": "La diferència entre les dues fonts s'explica pel funcionament real del sistema canovista. Conservadors i liberals s'alternaven en el govern mitjançant el torn pacífic: quan calia un canvi, el rei nomenava un nou cap de govern i, fent ús de la facultat de dissoldre les Corts que li atorgava l'article 32 (font 1), li permetia convocar eleccions. [[Després,]] des del Ministeri de la Governació s'elaborava l'encasellat, i els governadors civils i els cacics garantien el resultat amb la corrupció electoral. [[Així,]] eren les eleccions les que s'adaptaven al govern, i no a l'inrevés; [[per això]] Costa afirma que el Parlament no representa el país (font 2). [[Ni tan sols]] el sufragi universal masculí, aprovat el 1890, va canviar aquesta pràctica, i la crisi del 98 va fer créixer crítiques regeneracionistes com la seva."
+      },
+      {
+        "why": "Fixa't en el mètode: cada fet del context es lliga a una font. L'article 32 (font 1) explica com el rei podia canviar de govern; l'encasellat i els cacics expliquen per què Costa (font 2) diu que el Parlament no representa el país; el 98 explica per què ho denuncia el 1901."
+      },
+      {
+        "tag": "Intenció i conclusió",
+        "k": 4,
+        "text": "[[Pel que fa a la intenció,]] la Constitució pretenia donar estabilitat al nou règim, [[mentre que]] Costa escriu des del regeneracionisme per denunciar-lo i reclamar-ne una reforma profunda. [[En conclusió,]] les dues fonts mostren la distància entre la constitució escrita i el funcionament real del poder a l'Espanya de la Restauració."
+      }
+    ]
+  },
+  "ex2": {
+    "opcions": [
+      {
+        "id": "a",
+        "boto": "a · Setmana Tràgica (1909)",
+        "segell": "Enunciat oficial · Sèrie 0, 2025",
+        "oficial": true,
+        "enunciat": "Un diari estranger us ha enviat com a corresponsal a la Barcelona de principis del segle XX per explicar l'impacte de la Setmana Tràgica. Com a part de la vostra feina, heu de redactar un article utilitzant els cinc termes següents de manera adequada: reservistes, barricades, anticlericalisme, vaga general i Francesc Ferrer i Guàrdia (l'ús de cada terme històric val 0,20 punts).",
+        "termes": [
+          "reservistes",
+          "barricades",
+          "anticlericalisme",
+          "vaga general",
+          "Francesc Ferrer i Guàrdia"
+        ],
+        "guia": [
+          {
+            "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos el corresponsal?",
+            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal escriure literalment com el personatge ni imitar el format d'un article: segons les FAQ oficials, no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+          },
+          {
+            "q": "Quin moment he d'explicar?",
+            "a": "El juliol de 1909 i les setmanes posteriors, fins a l'execució de Ferrer i Guàrdia (13 d'octubre de 1909) i les seves conseqüències."
+          },
+          {
+            "q": "Què he d'explicar?",
+            "a": "L'impacte de la Setmana Tràgica: per què esclata, què passa i quines conseqüències té."
+          },
+          {
+            "q": "Com ordeno els cinc termes?",
+            "a": "Segons el moment en què intervenen: reservistes (causa) → vaga general → barricades i anticlericalisme (fets) → Ferrer i Guàrdia (repressió i conseqüències)."
+          }
+        ],
+        "esquema": [
+          {
+            "titol": "Abans · causes",
+            "items": [
+              "Guerra al Marroc (juliol de 1909)",
+              "__reservistes__ i redempció en metàl·lic",
+              "Embarcament al port de Barcelona"
+            ]
+          },
+          {
+            "titol": "Durant · fets",
+            "items": [
+              "__vaga general__ (26 de juliol)",
+              "__barricades__",
+              "Crema d'esglésies: __anticlericalisme__"
+            ]
+          },
+          {
+            "titol": "Després · conseqüències",
+            "items": [
+              "Estat de guerra i repressió",
+              "__Ferrer i Guàrdia__ afusellat",
+              "Protestes a Europa, caiguda de Maura"
+            ]
+          }
+        ],
+        "guio": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "que": "Situa els fets en el temps i l'espai i explica'n l'origen.",
+            "inici": "El juliol de 1909, Barcelona va viure... L'origen cal buscar-lo [on]: ..."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "que": "Què passa i com, amb alguna data i algun exemple concret.",
+            "inici": "El 26 de juliol, ... A més, ... Al mateix temps, ..."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "que": "La repressió i els seus efectes polítics.",
+            "inici": "El govern va declarar... La repressió posterior..."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "que": "Una frase que doni sentit al conjunt.",
+            "inici": "En definitiva, ..."
+          }
+        ],
+        "rubrica": [
+          {
+            "terme": "reservistes",
+            "text": "explico qui eren i per què la seva mobilització va encendre la protesta."
+          },
+          {
+            "terme": "vaga general",
+            "text": "dic qui la convoca, quan i contra què."
+          },
+          {
+            "terme": "barricades",
+            "text": "les situo dins de la revolta al carrer."
+          },
+          {
+            "terme": "anticlericalisme",
+            "text": "explico per què es van cremar edificis religiosos."
+          },
+          {
+            "terme": "Ferrer i Guàrdia",
+            "text": "el relaciono amb la repressió i les seves conseqüències."
+          }
+        ],
+        "nota_termes": "S'admeten derivats de la mateixa família.",
+        "model": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "text": "El juliol de 1909, Barcelona va viure una de les revoltes populars més greus de la Restauració, coneguda com la Setmana Tràgica. L'origen cal buscar-lo al Marroc. [[Després que]] grups rifenys van atacar els treballadors d'un ferrocarril miner prop de Melilla, el govern conservador d'Antoni Maura va decidir mobilitzar els __reservistes__. Molts eren obrers casats i amb fills, [[mentre que]] els joves de famílies benestants podien evitar el servei pagant la redempció en metàl·lic. [[Per això,]] l'embarcament de tropes al port de Barcelona va provocar protestes i un fort malestar als barris obrers."
+          },
+          {
+            "why": "El model no imita cap format d'article ni escriu en primera persona: el que puntua és el contingut i l'ús dels termes. La causa explica el terme: no n'hi ha prou de dir «es van mobilitzar reservistes», cal dir per què això indignava."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "text": "El 26 de juliol, Solidaritat Obrera i altres organitzacions obreres van convocar una __vaga general__ contra la guerra. La protesta es va estendre ràpidament i els carrers de Barcelona i d'altres poblacions industrials es van omplir de __barricades__. [[A més,]] la revolta va prendre un caràcter antireligiós: es van incendiar nombroses esglésies, convents i escoles religioses. Aquest __anticlericalisme__ popular, alimentat pel discurs del Partit Radical de Lerroux, expressava la identificació de l'Església amb les classes dominants. [[Al mateix temps,]] la notícia de la derrota del Barranco del Lobo, el 27 de juliol, va encendre encara més els ànims."
+          },
+          {
+            "why": "Tres termes en un paràgraf, però cadascun amb una funció: qui convoca, què passa al carrer i per què es cremen esglésies."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "text": "El govern va declarar l'estat de guerra i l'exèrcit va sufocar la revolta a principis d'agost. La repressió posterior va ser molt dura, amb nombrosos detinguts, consells de guerra i diverses execucions. El cas més polèmic va ser el de __Francesc Ferrer i Guàrdia__, pedagog llibertari i fundador de l'Escola Moderna, acusat sense proves sòlides de ser l'instigador de la revolta i afusellat al castell de Montjuïc el 13 d'octubre de 1909. La seva execució va provocar una onada de protestes a tot Europa i va contribuir a la caiguda del govern de Maura."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "text": "[[En definitiva,]] la Setmana Tràgica va mostrar el rebuig de les classes populars a la guerra colonial i la profunda fractura social de la Restauració."
+          },
+          {
+            "why": "Fixa't que el model fa servir altres termes de l'època (redempció en metàl·lic, Solidaritat Obrera, Partit Radical, Escola Moderna, estat de guerra): els cinc termes obligatoris són necessaris, però no suficients."
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "boto": "b · Eleccions de 1891",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "Sou un periodista estranger que el febrer de 1891 recorre una comarca rural per informar de les primeres eleccions generals celebrades amb sufragi universal masculí. Redacteu una crònica on expliqueu com s'han preparat i com s'han desenvolupat les eleccions, utilitzant de manera adequada els cinc termes següents: torn pacífic, encasellat, cacic, oligarquia i Cánovas (l'ús de cada terme històric val 0,20 punts).",
+        "termes": [
+          "torn pacífic",
+          "encasellat",
+          "cacic",
+          "oligarquia",
+          "Cánovas"
+        ],
+        "guia": [
+          {
+            "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos el periodista?",
+            "a": "El rol et situa en una comarca rural, on el caciquisme era més fort. No cal escriure en primera persona ni imitar el format d'una crònica: puntua el contingut i l'ús dels termes, en registre formal."
+          },
+          {
+            "q": "Quin moment he d'explicar?",
+            "a": "El febrer de 1891 (eleccions de l'1 de febrer). La llei de sufragi universal masculí és de 1890, aprovada pel govern liberal de Sagasta; Cánovas havia tornat al govern el juliol de 1890 i va ser qui va organitzar aquestes eleccions."
+          },
+          {
+            "q": "Què he d'explicar?",
+            "a": "Com es preparen i com es fan les eleccions: la paradoxa d'un sufragi ampliat que no canvia els resultats."
+          },
+          {
+            "q": "Com ordeno els cinc termes?",
+            "a": "De dalt a baix del sistema: Cánovas i el torn pacífic (Madrid) → encasellat (Ministeri de la Governació) → cacic (el poble) → oligarquia (valoració final)."
+          }
+        ],
+        "esquema": [
+          {
+            "titol": "Madrid · el pacte",
+            "items": [
+              "Llei de 1890 (Sagasta)",
+              "__Cánovas__ torna al govern",
+              "__torn pacífic__"
+            ]
+          },
+          {
+            "titol": "Província i poble · el mecanisme",
+            "items": [
+              "__encasellat__ (Governació)",
+              "Governador civil",
+              "__cacic__: favors, pressions, pucherazo"
+            ]
+          },
+          {
+            "titol": "Valoració",
+            "items": [
+              "Més electors, mateixos resultats",
+              "__oligarquia__ que governa",
+              "Les ciutats, més difícils de controlar"
+            ]
+          }
+        ],
+        "guio": [
+          {
+            "tag": "Context",
+            "k": 1,
+            "que": "La llei de 1890 i la paradoxa que vols explicar.",
+            "inici": "El febrer de 1891 es van celebrar... Tanmateix, ..."
+          },
+          {
+            "tag": "Preparació",
+            "k": 3,
+            "que": "Com es decideix el resultat des de Madrid.",
+            "inici": "El juliol de 1890, ... D'acord amb el torn pacífic, ..."
+          },
+          {
+            "tag": "Desenvolupament",
+            "k": 2,
+            "que": "Com es garanteix el resultat a cada poble.",
+            "inici": "A les comarques rurals, ... Per això, ..."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "que": "Qui governa realment.",
+            "inici": "En definitiva, darrere de les institucions liberals..."
+          }
+        ],
+        "rubrica": [
+          {
+            "terme": "Cánovas",
+            "text": "el situo com a cap del govern conservador que organitza les eleccions."
+          },
+          {
+            "terme": "torn pacífic",
+            "text": "explico l'alternança pactada entre conservadors i liberals."
+          },
+          {
+            "terme": "encasellat",
+            "text": "dic qui l'elabora i per a què serveix."
+          },
+          {
+            "terme": "cacic",
+            "text": "explico com garanteix el resultat al poble."
+          },
+          {
+            "terme": "oligarquia",
+            "text": "la faig servir per valorar qui governa realment."
+          }
+        ],
+        "nota_termes": "S'admeten derivats (cacic / caciquisme).",
+        "model": [
+          {
+            "tag": "Context",
+            "k": 1,
+            "text": "El febrer de 1891 es van celebrar les primeres eleccions generals amb sufragi universal masculí. La llei de 1890, impulsada pel govern liberal de Sagasta, permetia votar a tots els homes majors de vint-i-cinc anys. [[Tanmateix,]] l'ampliació del dret de vot no va canviar el funcionament real del sistema."
+          },
+          {
+            "tag": "Preparació",
+            "k": 3,
+            "text": "El juliol de 1890, la reina regent havia encarregat el govern a __Cánovas__, cap del Partit Conservador. D'acord amb el __torn pacífic__, l'alternança pactada entre conservadors i liberals, el nou govern havia de convocar eleccions per obtenir una majoria còmoda a les Corts. [[Per aconseguir-ho,]] des del Ministeri de la Governació es va elaborar l'__encasellat__, és a dir, la llista dels candidats que havien de sortir elegits a cada districte, en què també es reservaven escons per als liberals."
+          },
+          {
+            "why": "Cada terme respon a una pregunta: qui governa, per què canvia el govern i com es decideixen els resultats."
+          },
+          {
+            "tag": "Desenvolupament",
+            "k": 2,
+            "text": "A les comarques rurals, el governador civil i, sobretot, el __cacic__ local, sovint un gran propietari que controlava la feina, els préstecs i els favors, s'encarregaven de garantir el resultat. Ho feien amb pressions sobre els jornalers, compra de vots i manipulació d'actes, l'anomenat pucherazo. [[Per això,]] el resultat era conegut abans d'obrir les urnes."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "text": "[[En definitiva,]] darrere de les institucions liberals governava una __oligarquia__ de polítics i grans propietaris que es repartia el poder a través de la xarxa caciquil. Només a les ciutats, on el vot era més difícil de controlar, la manipulació resultava més complicada."
+          },
+          {
+            "why": "El terme més abstracte (oligarquia) es reserva per a la valoració final, on fa de conclusió."
+          }
+        ]
+      }
+    ]
+  },
+  "ex3": {
+    "opcions": [
+      {
+        "id": "a",
+        "boto": "a · Drets socials i laborals",
+        "segell": "Enunciat oficial · Exemples PAU 2026",
+        "oficial": true,
+        "enunciat": "Feu una relació on comenteu i relacioneu les principals fites en la conquesta dels drets socials i laborals a Espanya, atenent a les singularitats de cada etapa històrica.",
+        "descriptor": {
+          "titol": "Descriptor 4 del glossari oficial · Conquesta dels drets socials i incipient Estat del Benestar.",
+          "text": [
+            "Espanya, un model tardà d’extensió dels drets socials i laborals: legalització dels sindicats; la Comissió de reformes socials; les lleis sobre accidents de treball i jubilació. L’Institut Nacional de Previsió. La jornada laboral de 8 hores i la vaga de la Canadenca. Les lleis sobre Cases Barates. El reformisme a la Segona República: la setmana anual retribuïda; la protecció del treball a la Constitució; la despenalització de la vaga del delicte de sedició. La llei de Contractes de Conreu i l’impacte de la llei de Reforma Agrària. El franquisme i l’endarreriment en la consolidació d’un Estat del Benestar modern. El Fuero del Trabajo, la criminalització de la vaga, la pèrdua de la negociació col·lectiva i la llei de bases de la Seguretat Social. La Transició: els Pactes de la Moncloa i el sistema de la Seguretat Social; les reformes socials del primer govern socialista."
+          ]
+        },
+        "guia": [
+          {
+            "q": "Què em demana el verb?",
+            "a": "«Feu una relació on comenteu i relacioneu»: no n'hi ha prou amb enumerar fites. Has d'explicar què suposa cadascuna per als treballadors i relacionar-la amb les altres: què avança, què retrocedeix i què es manté."
+          },
+          {
+            "q": "Quines etapes he de tractar?",
+            "a": "Les que marca el descriptor: Restauració, Segona República, franquisme i Transició. «Atenent a les singularitats de cada etapa» vol dir que has d'explicar què té de particular cadascuna."
+          },
+          {
+            "q": "Quina idea guia tota la resposta?",
+            "a": "El descriptor te la dona a la primera frase: Espanya va ser «un model tardà» d'extensió dels drets socials i laborals. La resposta ha de mostrar per què va ser tardà i per què no va avançar en línia recta."
+          },
+          {
+            "q": "Encara no he estudiat la República, el franquisme ni la Transició. Què faig?",
+            "a": "Fixa't en l'estructura i fes servir les fites del descriptor. Quan estudiïs cada etapa, podràs tornar a aquest exercici i completar-lo."
+          }
+        ],
+        "taula": {
+          "cap": [
+            "Etapa",
+            "Fites, amb data",
+            "Avança, retrocedeix o es manté? Per què?"
+          ],
+          "files": [
+            [
+              "Restauració",
+              "Exemple: 1887, llei d'associacions · 1900, accidents de treball · 1919, jornada de 8 hores",
+              "Exemple: primers avenços, limitats; per por del conflicte obrer"
+            ],
+            [
+              "Segona República",
+              "",
+              ""
+            ],
+            [
+              "Franquisme",
+              "",
+              ""
+            ],
+            [
+              "Transició",
+              "",
+              ""
+            ]
+          ]
+        },
+        "guio": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "que": "Explica què són els drets socials i laborals i avança la idea que guiarà la resposta.",
+            "inici": "Els drets socials i laborals són... A Espanya, la seva conquesta va ser..."
+          },
+          {
+            "tag": "Un per etapa",
+            "k": 2,
+            "que": "Les fites principals de l'etapa, amb data, i què suposen per als treballadors.",
+            "pista": "**Raonament:** comença cada paràgraf dient si l'etapa avança, retrocedeix o es manté respecte a l'anterior, i per què. El punt del raonament es guanya aquí, repartit per tota la resposta.",
+            "inici": "Durant la Restauració, ... / La Segona República va suposar..., perquè... / El franquisme va significar un retrocés... / La Transició..."
+          },
+          {
+            "tag": "Conclusió",
+            "k": 4,
+            "que": "Un balanç de tot el període que respongui l'enunciat, sense repetir les lleis.",
+            "inici": "En definitiva, la conquesta dels drets socials a Espanya va ser..."
+          }
+        ],
+        "model": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "text": "Els drets socials i laborals són les garanties que protegeixen els treballadors davant dels abusos i els riscos de la feina: el dret a associar-se i a fer vaga, la limitació de la jornada o les assegurances davant dels accidents, la malaltia i la vellesa. A Espanya, la seva conquesta va ser tardana i discontínua, i va dependre de la pressió del moviment obrer i del règim polític de cada moment."
+          },
+          {
+            "why": "La introducció explica el concepte i avança la idea que guiarà tota la resposta, que és la del descriptor: Espanya va ser un model tardà."
+          },
+          {
+            "tag": "Restauració",
+            "k": 2,
+            "text": "{{Durant la Restauració, l'Estat liberal va començar a intervenir en les relacions laborals, sobretot per por de la conflictivitat obrera.}} La Comissió de Reformes Socials (1883) va estudiar per primera vegada les condicions de vida dels obrers, i la Llei d'associacions (1887) va permetre la creació legal de sindicats. A partir del 1900 es van aprovar les primeres lleis protectores, com la d'accidents de treball, i el 1908 es va crear l'Institut Nacional de Previsió. La fita més important va arribar el 1919: després de la vaga de la Canadenca, el govern va establir la jornada màxima de vuit hores, i aquell mateix any es va crear el retir obrer obligatori. {{[[Tot i això,]] aquestes lleis tenien un abast limitat i sovint s'incomplien.}}"
+          },
+          {
+            "tag": "Segona República",
+            "k": 2,
+            "text": "{{La Segona República va suposar un salt endavant, [[perquè]] va entendre els drets socials com una responsabilitat de l'Estat.}} La Constitució de 1931 va establir que el treball gaudiria de la protecció de les lleis, i el ministre de Treball, Francisco Largo Caballero, va impulsar els jurats mixtos, per negociar salaris i condicions entre patrons i obrers, i la llei de contracte de treball, que reconeixia set dies de vacances anuals retribuïdes. Al camp, la llei de Reforma Agrària (1932) volia repartir terres als jornalers, i a Catalunya la llei de Contractes de Conreu (1934) pretenia facilitar als rabassaires i altres pagesos l'accés a la propietat de la terra que treballaven. {{Aquestes reformes, [[però,]] van topar amb una forta oposició de la patronal i dels propietaris.}}"
+          },
+          {
+            "why": "Cada paràgraf comença situant l'etapa respecte a l'anterior («un salt endavant») i diu per què. Aquestes frases ressaltades valen el punt del raonament."
+          },
+          {
+            "tag": "Franquisme",
+            "k": 2,
+            "text": "{{El franquisme va significar un retrocés profund.}} Ja durant la Guerra Civil, el Fuero del Trabajo (1938) va substituir els sindicats lliures per un sindicat vertical controlat pel règim, que agrupava obligatòriament treballadors i empresaris. La vaga es va considerar un delicte i les condicions laborals les fixava l'Estat, sense negociació col·lectiva. El règim va crear algunes assegurances, com la de malaltia (1942), {{però amb un caràcter paternalista i a canvi de suprimir la llibertat sindical.}} {{Només a partir dels anys cinquanta hi va haver canvis parcials,}} com la llei de convenis col·lectius (1958) i la llei de bases de la Seguretat Social (1963)."
+          },
+          {
+            "tag": "Transició",
+            "k": 2,
+            "text": "{{La Transició va recuperar els drets perduts i els va ampliar dins d'un marc democràtic.}} El 1977 es van legalitzar els sindicats, i els Pactes de la Moncloa van combinar la moderació salarial amb compromisos de millora de la Seguretat Social. La Constitució de 1978 va reconèixer el dret de vaga i de sindicació, i el primer govern socialista va fixar la jornada de quaranta hores i trenta dies de vacances (1983) i va aprovar la llei general de sanitat (1986), que estenia l'assistència sanitària pública a tota la població."
+          },
+          {
+            "tag": "Conclusió · 0,5 p",
+            "k": 4,
+            "text": "[[En definitiva,]] la conquesta dels drets socials a Espanya va ser un procés tardà i discontinu: va començar tímidament durant la Restauració, va avançar amb la República, va retrocedir amb el franquisme i no es va consolidar fins a la democràcia. Aquesta trajectòria mostra la relació estreta entre drets socials i llibertats polítiques: els avenços més sòlids van arribar quan els treballadors es van poder organitzar lliurement."
+          },
+          {
+            "why": "La conclusió no repeteix les lleis: en fa un balanç i hi afegeix una interpretació."
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "boto": "b · Església i poder",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "«Entre 1876 i 1978, Espanya va passar d'un Estat confessional a un Estat aconfessional». Valoreu aquesta afirmació a partir de les relacions entre l'Església i el poder polític, atenent les singularitats de cada etapa històrica.",
+        "descriptor": {
+          "titol": "Descriptor 8 del glossari oficial · Església i poder. Clericalisme i anticlericalisme.",
+          "text": [
+            "Els models de relació entre Església i Estat: la confessionalitat de l’Estat (Constitució de 1876); el reformisme (Llei del cadenat); l’anticlericalisme del moviment obrer i del Partit Radical; la protesta popular (la dimensió religiosa, però també política i social de la Setmana Tràgica catalana).",
+            "Les reformes de la Segona República i la dinàmica clericalisme / anticlericalisme. La guerra civil com a croada. El nacional catolicisme franquista i l’església com a pilar del règim. Les dissidències eclesiàstiques internes i el Concili Vaticà IIn. El caràcter aconfessional de l’Espanya actual."
+          ]
+        },
+        "guia": [
+          {
+            "q": "Què em demana el verb «valoreu»?",
+            "a": "Que diguis si l'afirmació és certa i fins a quin punt. La trampa és que suggereix una evolució en línia recta, de 1876 a 1978, i no ho va ser."
+          },
+          {
+            "q": "Quins conceptes he de definir?",
+            "a": "Estat confessional: té una religió oficial i la protegeix. Estat laic: separa del tot l'Estat i l'Església (el model de 1931). Estat aconfessional: no té religió oficial, però pot cooperar amb les confessions (el model de 1978). També clericalisme, anticlericalisme i nacionalcatolicisme."
+          },
+          {
+            "q": "Quines etapes he de tractar i com les comparo?",
+            "a": "Restauració, Segona República, Guerra Civil, franquisme i Transició. Per comparar-les, fes-te les mateixes preguntes a cada etapa: l'Estat té una religió oficial? Quin poder té l'Església (educació, matrimoni, moral pública)? Com hi reaccionen els anticlericals o els catòlics?"
+          },
+          {
+            "q": "Encara no he estudiat la República, la Guerra Civil ni el franquisme. Què faig?",
+            "a": "Fixa't en l'estructura i fes servir les fites del descriptor. Quan estudiïs cada etapa, podràs tornar a aquest exercici i completar-lo."
+          }
+        ],
+        "taula": {
+          "cap": [
+            "Etapa",
+            "Fites, amb data",
+            "Confessional, laic o aconfessional? Què canvia?"
+          ],
+          "files": [
+            [
+              "Restauració",
+              "Exemple: 1876, Constitució · 1909, Setmana Tràgica · 1910, Llei del Cadenat",
+              "Exemple: Estat confessional; reformes liberals limitades"
+            ],
+            [
+              "Segona República",
+              "",
+              ""
+            ],
+            [
+              "Guerra Civil",
+              "",
+              ""
+            ],
+            [
+              "Franquisme",
+              "",
+              ""
+            ],
+            [
+              "Transició",
+              "",
+              ""
+            ]
+          ]
+        },
+        "guio": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "que": "Defineix Estat confessional, laic i aconfessional i avança la teva valoració de l'afirmació.",
+            "inici": "Un Estat confessional és... L'afirmació és certa en part, perquè..."
+          },
+          {
+            "tag": "Un per etapa",
+            "k": 2,
+            "que": "Quina relació hi ha entre l'Església i l'Estat en aquella etapa, amb fets i dates.",
+            "pista": "**Raonament:** comença cada paràgraf dient què canvia respecte a l'etapa anterior (més confessional, laic, aconfessional) i per què. El punt del raonament es guanya aquí, repartit per tota la resposta.",
+            "inici": "La Constitució de 1876 establia... / La Segona República va trencar amb... / El franquisme va tornar a..."
+          },
+          {
+            "tag": "Conclusió",
+            "k": 4,
+            "que": "Torna a l'afirmació i digues fins a quin punt és vàlida.",
+            "inici": "En conclusió, l'afirmació és vàlida pel que fa a..., però no pel que fa a..."
+          }
+        ],
+        "model": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "text": "Un Estat confessional té una religió oficial i la protegeix; un Estat laic separa del tot l'Estat i l'Església, i un Estat aconfessional no té religió oficial, però pot cooperar amb les confessions. L'afirmació és certa si es comparen el punt de partida i el d'arribada, [[però]] amaga que el camí no va ser lineal: entre 1876 i 1978, les relacions entre l'Església i l'Estat van oscil·lar entre la confessionalitat, la laïcitat i el nacionalcatolicisme."
+          },
+          {
+            "why": "Davant d'un «valoreu», la introducció ja avança la resposta: l'afirmació és certa només en part."
+          },
+          {
+            "tag": "Restauració",
+            "k": 2,
+            "text": "La Constitució de 1876 establia que la religió catòlica era la de l'Estat, que es comprometia a mantenir el culte i el clergat, i només tolerava les altres creences en privat. L'Església conservava una gran influència, sobretot en l'educació. {{Aquest predomini va alimentar l'anticlericalisme del moviment obrer i del Partit Radical de Lerroux, que va esclatar durant la Setmana Tràgica (1909) amb la crema d'esglésies i convents.}} Els governs liberals només van impulsar reformes limitades, com la Llei del Cadenat (1910), que prohibia durant dos anys l'establiment de noves ordres religioses sense autorització."
+          },
+          {
+            "tag": "Segona República",
+            "k": 2,
+            "text": "{{La Segona República va trencar amb aquest model i va optar per la laïcitat.}} La Constitució de 1931 va declarar que l'Estat no tenia religió oficial, i les mesures que la van desenvolupar van dissoldre la Companyia de Jesús, van aprovar el matrimoni civil i el divorci (1932) i van prohibir a les ordres religioses dedicar-se a l'ensenyament (1933). {{Aquestes reformes van enfrontar els partidaris de la laïcitat amb els sectors catòlics, que van veure la República com una amenaça,}} en un clima tensat per episodis anticlericals com la crema de convents del maig de 1931."
+          },
+          {
+            "tag": "Guerra Civil",
+            "k": 2,
+            "text": "{{La Guerra Civil va portar aquest enfrontament a l'extrem.}} A la rereguarda republicana, sobretot els primers mesos, milers de religiosos van ser assassinats i es van cremar moltes esglésies. Al bàndol franquista, la major part de la jerarquia eclesiàstica va presentar la guerra com una croada, i la Carta col·lectiva dels bisbes espanyols (1937) li va donar suport, [[tot i que]] el cardenal Vidal i Barraquer no la va signar."
+          },
+          {
+            "tag": "Franquisme",
+            "k": 2,
+            "text": "{{El franquisme va tornar a la confessionalitat, i amb més força que la Restauració:}} el nacionalcatolicisme va convertir l'Església en un pilar del règim. El Concordat amb la Santa Seu (1953) va reconèixer el catolicisme com a única religió de la nació i va donar a l'Església un gran control sobre l'educació i la moral pública. {{A partir del Concili Vaticà II, [[però,]] una part del clergat es va distanciar del règim,}} com va mostrar l'abat de Montserrat Aureli M. Escarré quan va criticar la dictadura al diari *Le Monde* (1963)."
+          },
+          {
+            "why": "Comparar amb una etapa anterior («amb més força que la Restauració») és una manera molt eficaç de raonar."
+          },
+          {
+            "tag": "Transició",
+            "k": 2,
+            "text": "{{La Transició va tancar aquest cicle.}} La Constitució de 1978 va establir que cap confessió no tindria caràcter estatal, però va obligar els poders públics a mantenir relacions de cooperació amb l'Església catòlica i les altres confessions. El 1979, uns nous acords amb la Santa Seu van substituir el Concordat de 1953."
+          },
+          {
+            "tag": "Conclusió · 0,5 p",
+            "k": 4,
+            "text": "[[En conclusió,]] l'afirmació és vàlida pel que fa al resultat, però no pel que fa al camí: Espanya va passar de la confessionalitat de 1876 a l'aconfessionalitat de 1978, però entremig va viure la laïcitat republicana i un retorn intens a la confessionalitat amb el franquisme. [[A més,]] el model de 1978 no va suposar una separació total, perquè la Constitució esmenta expressament la cooperació amb l'Església catòlica."
+          },
+          {
+            "why": "La conclusió respon l'afirmació amb matisos: és vàlida en el resultat, però no en el camí."
+          }
+        ]
+      }
+    ]
+  }
+}

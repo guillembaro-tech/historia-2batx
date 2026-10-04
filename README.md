@@ -9,4 +9,4 @@ El contingut de cada tema és a `content/temes/tema-N.json` i les imatges a `med
 
 El menú de capçalera és a `assets/menu.js`: per afegir-hi o canviar-hi una entrada, només cal editar aquest fitxer.
 
-El Taller PAU és a `taller.html`. El contingut de cada tema del taller és a `content/taller/tema-N.json`; un tema apareix com a disponible quan hi posa `"estat": "disponible"`.
+El Taller PAU és a `taller.html`. El contingut de cada tema del taller és a `content/temes/taller-N.json`; un tema apareix com a disponible quan hi posa `"estat": "disponible"`.
