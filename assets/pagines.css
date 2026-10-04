@@ -1,0 +1,91 @@
+/* Pàgines de consulta (Guia de l'examen, Glossari i descriptors).
+   Fan servir la base i l'acordió de tema.css; aquí només hi ha el que és propi. */
+
+/* Capçalera neutra */
+.ph{background:var(--paper);border-bottom:1px solid var(--line)}
+.ph .wrap{padding-top:36px;padding-bottom:34px}
+.ph .kick{color:var(--c-ink);opacity:1}
+.ph h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:700;letter-spacing:-.01em;margin-top:8px}
+.ph .r{max-width:62ch;margin:12px 0 0;font-size:1.05rem;line-height:1.55;color:var(--ink2)}
+
+/* Text de l'acordió */
+.ap-b h4{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:26px 0 8px}
+.ap-b h4:first-child{margin-top:4px}
+.ap-b .md ul{margin:0 0 1em;padding-left:20px}
+.ap-b .md li+li{margin-top:6px}
+.ap-b .md table{width:100%;border-collapse:collapse;margin:4px 0 1em;font-size:.95rem;line-height:1.5}
+.ap-b .md th{text-align:left;font-weight:500;font-size:.78rem;color:var(--muted);padding:0 12px 6px 0;border-bottom:1px solid var(--line)}
+.ap-b .md td{padding:8px 12px 8px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+.ap-b .md td.pt,.ap-b .md th.pt{text-align:right;padding-right:0;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ap-b .md td.pt{font-weight:500}
+.ap-b .md td.q{white-space:nowrap;font-weight:500;color:var(--c-ink)}
+.consell{margin:8px 0 1em;padding:14px 18px;border-radius:10px;background:var(--soft);font-size:.95rem;line-height:1.6}
+.consell>b:first-child{display:block;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.consell p{margin:0 0 .6em}
+.consell>:last-child{margin-bottom:0}
+.consell ul{margin:0;padding-left:20px}
+.consell table{margin:2px 0 0;table-layout:fixed}
+.consell td,.consell th{overflow-wrap:anywhere}
+.consell td,.consell th{border-color:#DFE3EA}
+.go{margin:18px 0 0}
+.go a{font-weight:500;color:var(--c-ink);text-decoration:none}
+.go a::after{content:" \2192"}
+.go a:hover{text-decoration:underline;text-underline-offset:3px}
+.go a+a{margin-left:20px}
+.termes p{margin:0 0 .9em}
+.termes b{display:block;font-weight:500;color:var(--ink)}
+
+/* Targetes dels quatre exercicis */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{display:block;text-decoration:none;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:border-color .15s}
+.card:hover{border-color:color-mix(in srgb,var(--c) 45%,#fff)}
+.card .fn{display:block}
+.card h3{font-size:1.05rem;line-height:1.3;margin:6px 0 4px}
+.card .meta{margin:0;font-size:.85rem}
+.temari{margin:18px 0 0;font-size:.95rem;line-height:1.6;color:var(--ink2);max-width:66ch}
+.temari a{color:var(--c-ink);text-underline-offset:3px}
+
+/* Columna lateral: enllaços a altres recursos */
+.res{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.res a{display:block;padding:8px 0;border-top:1px solid var(--hair);text-decoration:none;font-size:.92rem;color:var(--ink2)}
+.res h3+a{border-top:0;padding-top:2px}
+.res a:hover{color:var(--c-ink)}
+.res a small{display:block;font-size:.8rem;color:var(--muted)}
+
+/* Glossari */
+.intro{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:.98rem;line-height:1.65;color:var(--ink2)}
+.intro p{margin:0}
+.intro ol{margin:8px 0 0;padding-left:22px}
+.intro li+li{margin-top:6px}
+.intro .punts{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hair)}
+.intro .go{margin-top:14px}
+.desc{margin:4px 0 0;padding:2px 0 2px 18px;border-left:2px solid var(--c);font-family:var(--serif);font-size:1.02rem;line-height:1.75;color:var(--ink);max-width:640px}
+.desc p{margin:0 0 .9em}
+.desc p:last-child{margin-bottom:0}
+.on{list-style:none;margin:0;padding:0;max-width:640px}
+.on li{padding:7px 0;border-bottom:1px solid var(--hair);font-size:.95rem}
+.on li:last-child{border-bottom:0}
+.on a{color:var(--ink);text-decoration:none}
+.on a:hover{color:var(--c-ink);text-decoration:underline;text-underline-offset:3px}
+.on small{color:var(--muted);margin-right:6px;font-variant-numeric:tabular-nums}
+.buit{font-size:.92rem;color:var(--muted);font-style:italic;margin:0}
+.enun{margin:0 0 10px;padding:12px 16px;border-radius:10px;background:var(--soft);font-size:.95rem;line-height:1.6;max-width:640px}
+.enun small{display:block;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.ap-g>summary{grid-template-areas:". y c" "n t c"}
+.fonts-pag{max-width:66ch;font-size:.88rem;line-height:1.6;color:var(--muted)}
+.fonts-pag ul{margin:6px 0 10px;padding-left:20px}
+
+@media (max-width:640px){
+  .cards{grid-template-columns:1fr}
+  .consell{padding:12px 14px}
+  .consell table{font-size:.84rem}
+  .consell td,.consell th{padding-right:8px}
+  .intro{padding:16px 18px}
+  .ap-b .md table{font-size:.9rem}
+}
+@media print{
+  .ph{border:0}
+  .ph .wrap{padding:0 0 8px}
+  .cards,.res,.go{display:none!important}
+  .consell,.enun{background:none;padding:6px 0}
+}

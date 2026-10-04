@@ -24,7 +24,10 @@ function partCos(cos){
 function fitxa(a, llibre){
   let h = '';
   if (has(a.conceptes)) h += '<dt>Conceptes clau</dt><dd><ul class="chips">' + a.conceptes.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul></dd>';
-  if (has(a.ambits)) h += '<dt>Àmbits del glossari</dt><dd><ul class="amb">' + a.ambits.map(c => '<li>' + esc(c) + '</li>').join('') + '</ul></dd>';
+  if (has(a.ambits)) h += '<dt>Àmbits del glossari</dt><dd><ul class="amb">' + a.ambits.map(c => {
+    const m = /^(\d+)\./.exec(c);
+    return '<li>' + (m ? '<a href="glossari.html#ambit-' + m[1] + '">' + esc(c) + '</a>' : esc(c)) + '</li>';
+  }).join('') + '</ul></dd>';
   if (llibre) h += '<dt>Al llibre</dt><dd>' + mdi(llibre) + '</dd>';
   return h ? '<dl class="fx">' + h + '</dl>' : '';
 }
