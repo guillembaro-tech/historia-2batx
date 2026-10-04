@@ -10,3 +10,5 @@ El contingut de cada tema és a `content/temes/tema-N.json` i les imatges a `med
 El menú de capçalera és a `assets/menu.js`: per afegir-hi o canviar-hi una entrada, només cal editar aquest fitxer.
 
 El Taller PAU és a `taller.html`. El contingut de cada tema del taller és a `content/temes/taller-N.json`; un tema apareix com a disponible quan hi posa `"estat": "disponible"`.
+
+La secció Preguntes PAU és a `preguntes-pau.html`. Les dades (preguntes de les PAU 2010–2024 per tema i aspecte) són a `content/preguntes-pau.json`.

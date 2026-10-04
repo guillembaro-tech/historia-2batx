@@ -4,6 +4,10 @@
 .hm-top{min-height:56px}
 .hm-brand{font-family:Literata,Georgia,"Times New Roman",serif;font-weight:700;font-size:1.12rem;text-decoration:none;color:#1B2230;white-space:nowrap}
 .hm-brand span{color:#9C5B18}
+.hm-acc{display:flex;align-items:center;gap:4px}
+.hm-link{padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:500;font-size:.92rem;color:#1B2230;white-space:nowrap}
+.hm-link:hover{background:#F1F3F6}
+.hm-link[aria-current="page"]{background:#F1F3F6;font-weight:700}
 .hm-taller{display:inline-flex;align-items:center;gap:6px;background:#1B2230;color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;padding:8px 16px;border-radius:999px;white-space:nowrap}
 .hm-taller:hover{background:#9C5B18}
 .hm-taller[aria-current="page"]{background:#9C5B18}
@@ -15,3 +19,4 @@
 .hm-temes a[aria-current="page"]{border-bottom-color:var(--tc);font-weight:700}
 .hm a:focus-visible{outline:2px solid #2B6CB0;outline-offset:2px;border-radius:4px}
 @media (max-width:560px){.hm-in{padding:0 16px}.hm-temes a{padding:10px 10px 8px}}
+@media (max-width:480px){.hm-brand span{display:none}.hm-link{padding:8px 10px}.hm-taller{padding:8px 14px}}
