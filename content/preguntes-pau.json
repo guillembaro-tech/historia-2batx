@@ -1,0 +1,1429 @@
+{
+ "titol": "Què pregunta la PAU d'Història",
+ "periode": "2010–2024",
+ "font": "Full «Estadístiques Sele 2010–2024», recull propi a partir dels exàmens de les PAU de Catalunya. No inclou les convocatòries del 2025.",
+ "notes": [
+  "**El model d'examen ha canviat.** Fins al 2024 l'examen tenia una pregunta de fonts i una pregunta llarga. El model actual té quatre exercicis: fonts, termes, glossari i test. Les dades diuen quins continguts es repeteixen, no com es pregunten ara. La columna de fonts és la que es trasllada més directament a l'exercici 1 actual.",
+  "**Els aspectes s'encavalquen.** Una mateixa qüestió pot aparèixer en diverses files (per exemple, el Memorial de Greuges o les Bases de Manresa al catalanisme), de manera que la freqüència real d'un fet concret pot ser més alta que la de la seva fila.",
+  "**Fins al 2017 no es distingeix la convocatòria.** Les dades anteriors al 2018 només indiquen l'any; a partir del 2018 indiquen si és de juny o de setembre. Cada any hi ha diverses sèries d'examen, i per això un aspecte pot sortir més d'un cop el mateix any.",
+  "**Els recomptes es fan a partir dels anys anotats.** En tres files el número escrit al full original no coincideix amb els anys: Campanya del dret civil català (1, sense cap any), Mancomunitat i Prat de la Riba (10 escrit, 11 anys) i Repressió durant tota la dictadura (7 escrit, 8 anys). Aquí es compten els anys. Les taules resum del final de cada full tampoc coincideixen sempre amb la taula principal.",
+  "**Dades dubtoses.** Dues entrades del 2024 estan marcades amb interrogant al full original. A la graella es mostren més clares i, al detall, amb la marca «dubtós».",
+  "**Rètols.** S'han desplegat les abreviatures del full original i s'han corregit errades de redacció i una de contingut: el procés de Montjuïc és del **1896**, no del 1886."
+ ],
+ "temes": [
+  {
+   "tema": 1,
+   "nom": "Restauració",
+   "resum": "El **sistema canovista** (torn, caciquisme i corrupció electoral) és l'aspecte més preguntat de tots els temes: **22 de 97** preguntes. Des del 2018 ha sortit 9 vegades, en 5 convocatòries diferents. Els aspectes de la primera etapa (1875–1898, amb el Desastre inclòs) sumen **51 de 97**. L'impacte de la Gran Guerra i la crisi de 1917 surt 11 vegades, sempre com a pregunta llarga.",
+   "aspectes": [
+    {
+     "t": "Manifest de Sandhurst (1874)",
+     "f": [
+      "s2014"
+     ],
+     "l": []
+    },
+    {
+     "t": "Sistema canovista (1875–1898): els dos partits, les eleccions, les tupinades i la corrupció",
+     "f": [
+      "2012",
+      "2013",
+      "2016",
+      "2016",
+      "2017",
+      "s2019",
+      "s2020",
+      "j2021",
+      "s2022"
+     ],
+     "l": [
+      "2012",
+      "2013",
+      "2014",
+      "2014",
+      "2015",
+      "2016",
+      "2016",
+      "2017",
+      "s2019",
+      "s2020",
+      "j2021",
+      "s2022",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Forces d'oposició al sistema de la Restauració fins al 1898 (carlins, republicans, obrerisme)",
+     "f": [],
+     "l": [
+      "2015",
+      "2016",
+      "s2021",
+      "s2022"
+     ]
+    },
+    {
+     "t": "Conflictivitat obrera des dels processos de Montjuïc (1896) fins a la creació de la CNT (1910)",
+     "f": [],
+     "l": [
+      "j2024?"
+     ]
+    },
+    {
+     "t": "Condicions de vida de la classe obrera i associacionisme obrer (primera etapa, fins al 1898)",
+     "f": [
+      "2012"
+     ],
+     "l": [
+      "2012",
+      "2012",
+      "2013",
+      "s2019",
+      "s2020",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Causes de les insurreccions cubana i filipina, guerra entre Espanya i els EUA i Pau de París",
+     "f": [
+      "s2021"
+     ],
+     "l": [
+      "2011",
+      "2017",
+      "s2021"
+     ]
+    },
+    {
+     "t": "Tractat de París (1898)",
+     "f": [
+      "2011",
+      "s2020"
+     ],
+     "l": []
+    },
+    {
+     "t": "Desastre del 98 i/o regeneracionisme",
+     "f": [
+      "2011",
+      "2013",
+      "2015",
+      "j2018",
+      "s2024"
+     ],
+     "l": [
+      "2010",
+      "2013",
+      "2015",
+      "j2018",
+      "j2021",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Llei de Jurisdiccions (1906)",
+     "f": [
+      "j2024?"
+     ],
+     "l": []
+    },
+    {
+     "t": "Lerrouxisme",
+     "f": [
+      "j2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "Del 1898 al 1914",
+     "f": [],
+     "l": [
+      "2011"
+     ]
+    },
+    {
+     "t": "Del 1898 a la Setmana Tràgica (1909)",
+     "f": [],
+     "l": [
+      "2012",
+      "2016",
+      "j2021"
+     ]
+    },
+    {
+     "t": "Analfabetisme a Espanya",
+     "f": [
+      "j2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "Llei del Cadenat (1910)",
+     "f": [
+      "j2021"
+     ],
+     "l": []
+    },
+    {
+     "t": "Neutralitat espanyola a la Primera Guerra Mundial",
+     "f": [
+      "j2015"
+     ],
+     "l": [
+      "2015"
+     ]
+    },
+    {
+     "t": "Impacte econòmic i social de la Primera Guerra Mundial a Espanya, crisi de 1917 i pistolerisme fins al 1923",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "j2018",
+      "j2018",
+      "j2019",
+      "j2021",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Conflictivitat social i obrera (1902/1918–1923)",
+     "f": [
+      "2016"
+     ],
+     "l": [
+      "2016",
+      "j2023",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Condicions de vida de la classe obrera i obrerisme (segona etapa)",
+     "f": [],
+     "l": [
+      "2012",
+      "2013"
+     ]
+    },
+    {
+     "t": "Triple crisi de 1917",
+     "f": [],
+     "l": [
+      "2016"
+     ]
+    },
+    {
+     "t": "Vaga de La Canadenca (1919)",
+     "f": [
+      "j2024"
+     ],
+     "l": []
+    },
+    {
+     "t": "Desastre d'Annual (1921) i/o crisi de la Restauració (1914–1917)",
+     "f": [
+      "j2024"
+     ],
+     "l": [
+      "j2023"
+     ]
+    },
+    {
+     "t": "Pistolerisme",
+     "f": [
+      "2013"
+     ],
+     "l": []
+    },
+    {
+     "t": "De la crisi de 1917 a la dictadura de Primo de Rivera",
+     "f": [],
+     "l": [
+      "j2024"
+     ]
+    },
+    {
+     "t": "Dictadura de Primo de Rivera, a Espanya i/o a Catalunya",
+     "f": [
+      "2014",
+      "j2019"
+     ],
+     "l": [
+      "2010",
+      "2011",
+      "2013",
+      "2014",
+      "2015",
+      "j2018",
+      "j2019",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Desembarcament d'Alhucemas (1925)",
+     "f": [
+      "2010",
+      "j2018"
+     ],
+     "l": []
+    }
+   ]
+  },
+  {
+   "tema": 2,
+   "nom": "Catalanisme polític",
+   "resum": "És el tema més repartit: cap aspecte no passa del 15%. La **Mancomunitat i Prat de la Riba** encapçala (11), però la classificació en files petites amaga el pes real del **Memorial de Greuges** i les **Bases de Manresa**: sumant totes les files on apareixen, surten 19 i 20 vegades respectivament. Totes dues són clàssiques de fonts.",
+   "aspectes": [
+    {
+     "t": "Causes del sorgiment del moviment catalanista al segle XIX",
+     "f": [],
+     "l": [
+      "2013",
+      "2017",
+      "2017",
+      "j2019",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Pimargallisme i federalisme",
+     "f": [
+      "j2012",
+      "2012"
+     ],
+     "l": []
+    },
+    {
+     "t": "Valentí Almirall i els inicis del catalanisme fins al Memorial de Greuges: Centre Català i campanya del dret civil",
+     "f": [
+      "2011",
+      "j2019",
+      "j2022"
+     ],
+     "l": [
+      "2011",
+      "2014",
+      "2016",
+      "j2021",
+      "j2022"
+     ]
+    },
+    {
+     "t": "Missatge a la Reina Regent (1888)",
+     "f": [
+      "2013",
+      "j2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "Els dos grans corrents del catalanisme durant la Restauració (Torras i Bages i Almirall)",
+     "f": [
+      "2013"
+     ],
+     "l": [
+      "2013",
+      "2013",
+      "2015",
+      "2017",
+      "s2019",
+      "j2022",
+      "s2023",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Campanya del dret civil català",
+     "f": [],
+     "l": []
+    },
+    {
+     "t": "Solidaritat Catalana i el programa del Tívoli (1907)",
+     "f": [
+      "2012"
+     ],
+     "l": []
+    },
+    {
+     "t": "Catalanisme del 1875 al 1898",
+     "f": [],
+     "l": [
+      "j2023"
+     ]
+    },
+    {
+     "t": "Memorial de Greuges (1885)",
+     "f": [
+      "2010",
+      "2011",
+      "2015",
+      "s2019",
+      "j2021",
+      "s2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "De la Restauració al 1901 (corrents ideològics i/o fets principals)",
+     "f": [],
+     "l": [
+      "2011",
+      "s2018",
+      "s2018"
+     ]
+    },
+    {
+     "t": "De la Restauració a les Bases de Manresa (1892)",
+     "f": [],
+     "l": [
+      "2010",
+      "2015",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Catalanisme des del Memorial de Greuges fins al 1900–1901",
+     "f": [],
+     "l": [
+      "2012",
+      "2017"
+     ]
+    },
+    {
+     "t": "Memorial de Greuges (1885) i Bases de Manresa (1892)",
+     "f": [],
+     "l": [
+      "2011",
+      "s2019",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Torras i Bages, Unió Catalanista i Bases de Manresa",
+     "f": [
+      "2017"
+     ],
+     "l": [
+      "2016",
+      "j2019",
+      "j2021",
+      "j2022",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Bases de Manresa (1892) i/o Unió Catalanista",
+     "f": [
+      "2014",
+      "2016",
+      "2017",
+      "s2018",
+      "j2020",
+      "j2022"
+     ],
+     "l": []
+    },
+    {
+     "t": "De les Bases de Manresa al 1901",
+     "f": [],
+     "l": [
+      "2010",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Missatge dels catalans al rei dels hel·lens (1897)",
+     "f": [
+      "2012"
+     ],
+     "l": []
+    },
+    {
+     "t": "Catalanisme entre el 1898 i la Mancomunitat (1914)",
+     "f": [],
+     "l": [
+      "2011"
+     ]
+    },
+    {
+     "t": "Evolució del catalanisme entre el 1901 i el 1911/1914 (republicanisme, associacionisme obrer, Setmana Tràgica)",
+     "f": [],
+     "l": [
+      "2012",
+      "2017",
+      "j2020",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Catalanisme conservador i progressista",
+     "f": [],
+     "l": [
+      "2013"
+     ]
+    },
+    {
+     "t": "Mancomunitat (1914) i Prat de la Riba",
+     "f": [
+      "2010",
+      "2015",
+      "2017",
+      "j2020"
+     ],
+     "l": [
+      "2010",
+      "2011",
+      "2012",
+      "2015",
+      "2017",
+      "j2020",
+      "j2024"
+     ]
+    },
+    {
+     "t": "L'obra de la Generalitat fins al 1936",
+     "f": [],
+     "l": [
+      "2010"
+     ]
+    }
+   ]
+  },
+  {
+   "tema": 3,
+   "nom": "Segona República",
+   "resum": "El **bienni reformista** (reformes i Constitució de 1931) és l'aspecte més constant dels darrers anys: 8 de les seves 11 aparicions són del 2018 ençà, totes com a pregunta llarga. L'adveniment de la República a Catalunya (12) és el més preguntat en total. Les preguntes de comparar (eleccions de 1931, 1933 i 1936, o biennis entre si) sumen 7, repartides en cinc files.",
+   "aspectes": [
+    {
+     "t": "Adveniment de la Segona República",
+     "f": [
+      "s2020",
+      "j2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "Adveniment de la República a Catalunya i la Generalitat fins al 1932/1934",
+     "f": [
+      "2010",
+      "2013",
+      "j2022"
+     ],
+     "l": [
+      "2010",
+      "2011",
+      "2014",
+      "2015",
+      "j2018",
+      "j2019",
+      "j2020",
+      "j2021",
+      "j2022"
+     ]
+    },
+    {
+     "t": "Referèndum de l'Estatut (1931) i principals líders polítics a Catalunya",
+     "f": [
+      "2010"
+     ],
+     "l": [
+      "2013",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Estatut de 1932 i Generalitat: suspensió i recuperació",
+     "f": [
+      "2015",
+      "j2018",
+      "j2019"
+     ],
+     "l": [
+      "2013",
+      "2016",
+      "s2021",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Eleccions al Parlament de Catalunya (1932)",
+     "f": [
+      "2011"
+     ],
+     "l": []
+    },
+    {
+     "t": "Constitució de 1931",
+     "f": [
+      "2015",
+      "j2017",
+      "j2018",
+      "s2022"
+     ],
+     "l": []
+    },
+    {
+     "t": "Reformes del bienni reformista, Constitució de 1931 i/o adveniment de la República",
+     "f": [],
+     "l": [
+      "2012",
+      "2015",
+      "2016",
+      "s2018",
+      "s2020",
+      "j2020",
+      "j2021",
+      "s2022",
+      "s2022",
+      "s2023",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Drets de les dones, vot femení i eleccions de 1933",
+     "f": [
+      "2014",
+      "2016",
+      "s2023"
+     ],
+     "l": []
+    },
+    {
+     "t": "Problema agrari, atur, reformes i reforma militar",
+     "f": [
+      "2012",
+      "j2019",
+      "j2020"
+     ],
+     "l": []
+    },
+    {
+     "t": "Llei de Contractes de Conreu (1934) o Llei de Termes Municipals",
+     "f": [
+      "j2021",
+      "j2022"
+     ],
+     "l": []
+    },
+    {
+     "t": "Casas Viejas (1933)",
+     "f": [
+      "s2021"
+     ],
+     "l": []
+    },
+    {
+     "t": "Comparar les eleccions de 1931 i 1933 (i els principals partits)",
+     "f": [],
+     "l": [
+      "2016",
+      "2017"
+     ]
+    },
+    {
+     "t": "Comparar les eleccions de 1933 i 1936",
+     "f": [],
+     "l": [
+      "2014",
+      "j2019"
+     ]
+    },
+    {
+     "t": "Comparar les tres eleccions: 1931, 1933 i 1936",
+     "f": [],
+     "l": [
+      "s2020"
+     ]
+    },
+    {
+     "t": "Comparar el primer bienni amb el Front Popular",
+     "f": [],
+     "l": [
+      "2017"
+     ]
+    },
+    {
+     "t": "Comparar l'acció de govern dels dos primers biennis",
+     "f": [],
+     "l": [
+      "j2018"
+     ]
+    },
+    {
+     "t": "Revolució d'Octubre de 1934 (Astúries i/o Catalunya)",
+     "f": [
+      "2010",
+      "2014",
+      "s2018"
+     ],
+     "l": [
+      "2010",
+      "2014",
+      "2017"
+     ]
+    },
+    {
+     "t": "Proclama de Companys (1934)",
+     "f": [
+      "2010",
+      "s2024"
+     ],
+     "l": []
+    },
+    {
+     "t": "De la Revolució d'Octubre de 1934 al 1936 (Espanya i/o Catalunya)",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2014",
+      "2015",
+      "j2020",
+      "j2023",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Qui eren Alcalá-Zamora, Azaña, Gil-Robles, Lerroux, Largo Caballero i Prieto, i les reformes i/o la Constitució",
+     "f": [],
+     "l": [
+      "2014",
+      "j2018",
+      "j2019"
+     ]
+    },
+    {
+     "t": "Bienni conservador",
+     "f": [],
+     "l": [
+      "2015",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Del bienni conservador (1933) a la Guerra Civil (1936)",
+     "f": [],
+     "l": [
+      "2012",
+      "2016",
+      "s2018",
+      "s2021"
+     ]
+    },
+    {
+     "t": "Del Front Popular a la Guerra Civil",
+     "f": [],
+     "l": [
+      "2010",
+      "2010"
+     ]
+    },
+    {
+     "t": "Resultats electorals de febrer de 1936 (també a Catalunya)",
+     "f": [
+      "2010",
+      "2016",
+      "j2020"
+     ],
+     "l": [
+      "2017"
+     ]
+    },
+    {
+     "t": "Catalunya des de l'Estatut de 1932 fins a l'esclat de la Guerra Civil o el maig de 1937",
+     "f": [],
+     "l": [
+      "2011",
+      "2011",
+      "j2019",
+      "j2022",
+      "j2022"
+     ]
+    },
+    {
+     "t": "Trajectòries d'ERC, la Lliga, la CNT i la FAI durant la República: partits polítics i sindicats a Catalunya",
+     "f": [],
+     "l": [
+      "2014",
+      "2017",
+      "j2018"
+     ]
+    }
+   ]
+  },
+  {
+   "tema": 4,
+   "nom": "Guerra Civil",
+   "resum": "Tema molt concentrat en Catalunya: l'aspecte **esclat de la guerra a Catalunya, milícies, repressió i col·lectivitzacions fins als Fets de Maig** suma 18 de les 81 preguntes (22%) i és el segon més preguntat de tota la PAU. L'evolució militar general (10) ha sortit menys des del 2018.",
+   "aspectes": [
+    {
+     "t": "Esclat de la Guerra Civil i resistència a Barcelona i Madrid",
+     "f": [
+      "2012",
+      "2016",
+      "j2019",
+      "j2020",
+      "j2022",
+      "j2023"
+     ],
+     "l": [
+      "2016"
+     ]
+    },
+    {
+     "t": "Fases de la guerra (evolució militar)",
+     "f": [
+      "2010"
+     ],
+     "l": [
+      "2010",
+      "2012",
+      "2012",
+      "2014",
+      "2015",
+      "2016",
+      "s2019",
+      "j2019",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Suports internacionals dels dos bàndols i dues batalles",
+     "f": [],
+     "l": [
+      "2014",
+      "j2022"
+     ]
+    },
+    {
+     "t": "Inici, composició política i social dels bàndols i esclat revolucionari a la zona republicana o a les dues zones",
+     "f": [],
+     "l": [
+      "2010",
+      "2014",
+      "s2019",
+      "j2019"
+     ]
+    },
+    {
+     "t": "Esclat de la guerra a Catalunya, milícies antifeixistes, repressió i col·lectivitzacions fins als Fets de Maig (1937)",
+     "f": [
+      "2012",
+      "2016",
+      "2016",
+      "j2020"
+     ],
+     "l": [
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "j2018",
+      "s2020",
+      "j2020",
+      "j2021",
+      "j2023",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Fets de Maig de 1937",
+     "f": [
+      "2013"
+     ],
+     "l": [
+      "2017"
+     ]
+    },
+    {
+     "t": "Dels Fets de Maig al final de la guerra a Catalunya",
+     "f": [],
+     "l": [
+      "2010",
+      "2012",
+      "2016",
+      "j2020",
+      "j2024",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Guerra a Catalunya (1937)",
+     "f": [
+      "2011",
+      "s2019",
+      "j2024"
+     ],
+     "l": [
+      "j2024"
+     ]
+    },
+    {
+     "t": "Evolució de tota la guerra a Catalunya (fronts, batalles i bombardeigs)",
+     "f": [
+      "2014"
+     ],
+     "l": [
+      "2011"
+     ]
+    },
+    {
+     "t": "Final de la guerra a Catalunya i/o Espanya i causes de la derrota republicana",
+     "f": [
+      "s2020",
+      "j2021",
+      "s2010"
+     ],
+     "l": [
+      "2013",
+      "j2018",
+      "j2021"
+     ]
+    },
+    {
+     "t": "Batalla de l'Ebre i/o fases de l'ocupació franquista de Catalunya",
+     "f": [
+      "2010",
+      "2015"
+     ],
+     "l": [
+      "2015",
+      "2015",
+      "2016",
+      "s2020"
+     ]
+    },
+    {
+     "t": "Catalunya a la Guerra Civil (vida quotidiana, fets bèl·lics, col·lectivitzacions...)",
+     "f": [
+      "2014",
+      "2015",
+      "2017",
+      "j2018"
+     ],
+     "l": [
+      "2016"
+     ]
+    },
+    {
+     "t": "Exèrcit Popular (1936–1939)",
+     "f": [
+      "2012"
+     ],
+     "l": []
+    },
+    {
+     "t": "Evolució política de l'Espanya de Franco durant la guerra",
+     "f": [],
+     "l": [
+      "2012"
+     ]
+    },
+    {
+     "t": "Evolució política de la zona republicana durant la guerra",
+     "f": [],
+     "l": [
+      "2012",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Evolució política a les dues zones",
+     "f": [],
+     "l": [
+      "j2022"
+     ]
+    },
+    {
+     "t": "Repressió franquista i republicana (terror blanc i roig) i aixecament a Catalunya",
+     "f": [],
+     "l": [
+      "2015"
+     ]
+    },
+    {
+     "t": "Violència a la rereguarda republicana",
+     "f": [
+      "j2024"
+     ],
+     "l": []
+    },
+    {
+     "t": "Diversos fets de la guerra (Fets de Maig, etapa final, unificació de carlins i falangistes...)",
+     "f": [],
+     "l": [
+      "2015"
+     ]
+    },
+    {
+     "t": "Comparar la política franquista i la republicana (banderes)",
+     "f": [
+      "2015"
+     ],
+     "l": []
+    }
+   ]
+  },
+  {
+   "tema": 5,
+   "nom": "Franquisme",
+   "resum": "És el tema amb més preguntes (111). **El franquisme a Catalunya i l'oposició** encapçala (13), amb 8 preguntes de fonts, el màxim del tema. Segueixen el primer franquisme (1939–1945/1947), amb 12, i el desarrollismo i la División Azul, amb 9 cadascun. El desarrollismo surt sempre com a pregunta llarga.",
+   "aspectes": [
+    {
+     "t": "Pilars del franquisme i Lleis Fonamentals: per què era una dictadura",
+     "f": [
+      "s2012",
+      "j2015"
+     ],
+     "l": [
+      "j2022",
+      "j2023",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Ocupació franquista de Catalunya i repressió de la primera etapa, especialment de la llengua",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2012",
+      "s2022",
+      "j2023"
+     ]
+    },
+    {
+     "t": "División Azul, suports a Alemanya i Itàlia i/o autarquia",
+     "f": [
+      "j2010",
+      "j2012",
+      "j2013",
+      "j2013",
+      "s2018",
+      "j2019"
+     ],
+     "l": [
+      "2013",
+      "j2018",
+      "j2022"
+     ]
+    },
+    {
+     "t": "Franquisme entre el 1939 i el 1945/1947 (política, economia i societat) i suports",
+     "f": [
+      "j2020"
+     ],
+     "l": [
+      "2010",
+      "2012",
+      "2012",
+      "2014",
+      "2014",
+      "2017",
+      "j2018",
+      "j2019",
+      "j2020",
+      "j2022",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Franquisme entre el 1945 i el 1975 (política, economia i societat)",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2014",
+      "2015",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Comparació política de les dues etapes inicials del franquisme",
+     "f": [],
+     "l": [
+      "2015",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Autarquia econòmica i conseqüències (especialment a Catalunya)",
+     "f": [
+      "j2017"
+     ],
+     "l": [
+      "2010",
+      "2014",
+      "2017",
+      "s2019",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Situació internacional i tractats signats per Espanya (Segona Guerra Mundial, autarquia, obertura)",
+     "f": [],
+     "l": [
+      "j2021",
+      "j2022",
+      "j2023",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Desarrollismo a Espanya i/o Catalunya i conseqüències",
+     "f": [],
+     "l": [
+      "2012",
+      "2013",
+      "2015",
+      "2016",
+      "2017",
+      "j2019",
+      "s2021",
+      "s2022",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Comparar la política econòmica de les dues etapes i efectes a Catalunya",
+     "f": [
+      "j2015"
+     ],
+     "l": [
+      "2011",
+      "2012",
+      "2014",
+      "2018",
+      "j2021"
+     ]
+    },
+    {
+     "t": "Franco i el franquisme a Catalunya (1970) i/o oposició a Catalunya",
+     "f": [
+      "j2011",
+      "j2014",
+      "j2016",
+      "s2018",
+      "s2019",
+      "j2019",
+      "j2021",
+      "j2022"
+     ],
+     "l": [
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "j2021"
+     ]
+    },
+    {
+     "t": "Característiques de la repressió franquista a Catalunya i/o oposició, i persecució del català (1939)",
+     "f": [
+      "2012",
+      "j2023"
+     ],
+     "l": [
+      "2016",
+      "2018",
+      "s2019",
+      "j2019",
+      "j2021"
+     ]
+    },
+    {
+     "t": "Oposició al règim durant tot el franquisme (o només a Catalunya)",
+     "f": [],
+     "l": [
+      "2012",
+      "2013",
+      "2016",
+      "s2020",
+      "s2024",
+      "j2024"
+     ]
+    },
+    {
+     "t": "Repressió durant tota la dictadura (de vegades, entre el 1939 i el 1953 o al final)",
+     "f": [
+      "2014",
+      "s2016",
+      "s2021",
+      "s2023"
+     ],
+     "l": [
+      "2014",
+      "2017",
+      "j2019",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Comparar el franquisme dels anys quaranta i el dels seixanta",
+     "f": [],
+     "l": [
+      "2013"
+     ]
+    },
+    {
+     "t": "Crisi final del franquisme i paper de l'oposició",
+     "f": [],
+     "l": [
+      "2015",
+      "s2021"
+     ]
+    },
+    {
+     "t": "Migracions interiors a Espanya (1960–1970/1975) i evolució econòmica",
+     "f": [
+      "s2013",
+      "s2015",
+      "j2021",
+      "s2022",
+      "s2024"
+     ],
+     "l": [
+      "2013"
+     ]
+    },
+    {
+     "t": "Mort de Franco i Llei de Successió (1947)",
+     "f": [
+      "j2014",
+      "j2022"
+     ],
+     "l": []
+    },
+    {
+     "t": "Sección Femenina (1945)",
+     "f": [
+      "s2017"
+     ],
+     "l": []
+    },
+    {
+     "t": "Discurs de Serrano Suñer contra Rússia i ús de l'anticomunisme",
+     "f": [
+      "j2023",
+      "j2024"
+     ],
+     "l": []
+    }
+   ]
+  },
+  {
+   "tema": 6,
+   "nom": "Transició",
+   "resum": "Encapçala el període **de la mort de Franco a les eleccions de 1977, la Constitució de 1978 i l'Estatut de 1979**: 13 preguntes, 9 des del 2018. El retorn de Tarradellas i la recuperació de la Generalitat (8) és l'aspecte català més repetit.",
+   "aspectes": [
+    {
+     "t": "Manifestacions per l'amnistia",
+     "f": [
+      "j2018",
+      "s2020",
+      "s2021",
+      "s2022"
+     ],
+     "l": []
+    },
+    {
+     "t": "De la mort de Franco a les primeres eleccions democràtiques (1977), la Constitució (1978) o l'Estatut (1979); Joan Carles I",
+     "f": [
+      "s2011",
+      "j2023"
+     ],
+     "l": [
+      "2010",
+      "2011",
+      "2016",
+      "j2018",
+      "j2019",
+      "s2020",
+      "j2020",
+      "s2021",
+      "j2022",
+      "j2023",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Procés de transició entre el 1976/1977 i el 1978/1982 i Constitució",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2013",
+      "2014",
+      "2017",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Llei per a la Reforma Política (1977) i Pactes de la Moncloa",
+     "f": [
+      "j2010",
+      "j2020"
+     ],
+     "l": [
+      "2011"
+     ]
+    },
+    {
+     "t": "Acords laborals i Pactes de la Moncloa (1977)",
+     "f": [
+      "s2011",
+      "j2013",
+      "j2014"
+     ],
+     "l": []
+    },
+    {
+     "t": "Matança d'Atocha (1977)",
+     "f": [
+      "j2017"
+     ],
+     "l": [
+      "2017"
+     ]
+    },
+    {
+     "t": "Eleccions de 1977, o de 1977 i 1982",
+     "f": [
+      "j2010",
+      "j2011",
+      "s2018",
+      "j2021",
+      "j2022"
+     ],
+     "l": [
+      "2010",
+      "j2020"
+     ]
+    },
+    {
+     "t": "Eleccions de 1979 i 1982",
+     "f": [
+      "s2024"
+     ],
+     "l": [
+      "j2021",
+      "j2022",
+      "s2024"
+     ]
+    },
+    {
+     "t": "Evolució política entre el 1979 i el 1986, a Espanya i/o Catalunya",
+     "f": [],
+     "l": [
+      "2010",
+      "2011",
+      "2016",
+      "j2019"
+     ]
+    },
+    {
+     "t": "Retorn de Tarradellas, Generalitat i Estatut (recuperació de l'autonomia)",
+     "f": [
+      "j2017",
+      "j2018",
+      "s2023"
+     ],
+     "l": [
+      "2017",
+      "j2018",
+      "j2018",
+      "s2021",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Estatut de Sau (1979) i/o evolució fins al 1986",
+     "f": [
+      "j2016",
+      "j2019"
+     ],
+     "l": [
+      "s2022"
+     ]
+    },
+    {
+     "t": "Evolució política i econòmica de Catalunya entre el 1980 i el 1986",
+     "f": [],
+     "l": [
+      "j2018",
+      "s2023"
+     ]
+    },
+    {
+     "t": "Eleccions de 1980 a Catalunya i evolució política (1980–1986)",
+     "f": [],
+     "l": [
+      "2017",
+      "s2020"
+     ]
+    },
+    {
+     "t": "Evolució econòmica del 1978 al 1982",
+     "f": [],
+     "l": [
+      "2014"
+     ]
+    },
+    {
+     "t": "Evolució política i econòmica entre el 1982 i el 1986 i/o eleccions de 1982",
+     "f": [],
+     "l": [
+      "2011",
+      "2013",
+      "2017"
+     ]
+    },
+    {
+     "t": "Dret a l'educació (1985)",
+     "f": [
+      "s2017"
+     ],
+     "l": []
+    },
+    {
+     "t": "23-F (1981) i/o evolució fins al 1982/1986 i/o dimissió de Suárez",
+     "f": [
+      "j2011",
+      "j2013",
+      "s2013"
+     ],
+     "l": [
+      "2013",
+      "2017",
+      "s2018",
+      "j2023"
+     ]
+    },
+    {
+     "t": "Constitució, PSOE i 23-F (1981)",
+     "f": [],
+     "l": [
+      "2011"
+     ]
+    },
+    {
+     "t": "Paper d'Adolfo Suárez a la Transició i eleccions de 1977",
+     "f": [],
+     "l": [
+      "2013",
+      "2017",
+      "s2018"
+     ]
+    }
+   ]
+  }
+ ]
+}

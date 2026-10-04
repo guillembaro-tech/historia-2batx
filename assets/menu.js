@@ -15,7 +15,8 @@
   var h = '<header class="hm">'
     + '<div class="hm-in hm-top">'
     + '<a class="hm-brand" href="index.html"' + actual("index.html") + '>Història <span>2n Batx</span></a>'
-    + '<a class="hm-taller" href="taller.html"' + actual("taller.html") + '>Taller PAU</a>'
+    + '<div class="hm-acc"><a class="hm-link" href="preguntes-pau.html"' + actual("preguntes-pau.html") + '>Preguntes PAU</a>'
+    + '<a class="hm-taller" href="taller.html"' + actual("taller.html") + '>Taller PAU</a></div>'
     + '</div>'
     + '<nav class="hm-temes" aria-label="Temes de les PAU"><div class="hm-in">';
   TEMES.forEach(function (t) {

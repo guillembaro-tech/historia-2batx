@@ -1,0 +1,116 @@
+/* Què pregunta la PAU d'Història. --tc és el color del tema triat; el posa preguntes.js. */
+:root{
+  --bg:#F5F6F9;--paper:#fff;--ink:#1B2230;--ink2:#3B4354;--muted:#5F6879;
+  --line:#DCE0E7;--hair:#E9ECF1;--soft:#F1F3F6;--focus:#2B6CB0;
+  --serif:Literata,Georgia,"Times New Roman",serif;
+  --sans:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --tc:#9C5B18;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+:where(#pq) :where(h1,h2,h3){font-family:var(--serif);font-weight:600;line-height:1.2;margin:0}
+:where(#pq) :where(p){margin:0}
+:where(#pq) :where(button){font:inherit;color:inherit;cursor:pointer}
+#pq :focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:4px}
+.pq-in{max-width:1080px;margin:0 auto;padding:0 24px 64px}
+.pq-loading{padding:60px 24px;text-align:center;color:var(--muted);font-style:italic}
+
+/* Capçalera */
+.pq-hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.pq-hero .pq-in{padding-top:36px;padding-bottom:34px}
+.pq-kick{font-size:.75rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:#804B14}
+.pq-hero h1{font-size:clamp(1.7rem,4vw,2.5rem);font-weight:700;letter-spacing:-.01em;margin-top:8px}
+.pq-lead{max-width:62ch;margin-top:12px;font-size:1.05rem;line-height:1.55;color:var(--ink2)}
+
+/* Seccions */
+.pq-sec{margin-top:48px}
+.pq-sh{margin-bottom:16px}
+.pq-sh h2{font-size:1.5rem}
+.pq-sh p{max-width:68ch;margin-top:6px;color:var(--muted)}
+.pq-legend{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:12px;font-size:.85rem;color:var(--ink2)}
+.pq-legend span{display:inline-flex;align-items:center;gap:7px}
+.pq-legend i{width:12px;height:12px;border-radius:3px;background:var(--ink)}
+.pq-legend i.l{background:color-mix(in srgb,var(--ink) 28%,#fff)}
+.pq-legend-t{margin:0 0 0 auto;align-self:center}
+.pq-legend-t i{background:var(--tc)}
+.pq-legend-t i.l{background:color-mix(in srgb,var(--tc) 40%,#fff)}
+
+/* Barres dels sis temes */
+.pq-gbars{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:8px}
+.pq-gbar{display:grid;grid-template-columns:210px minmax(0,1fr) 44px;grid-template-areas:"n b x" ". s .";column-gap:18px;align-items:center;width:100%;padding:10px 14px;border:0;border-radius:8px;background:none;text-align:left;transition:background-color .15s}
+.pq-gbar:hover{background:#FAFBFC}
+.pq-gbar[aria-pressed="true"]{background:color-mix(in srgb,var(--c) 7%,#fff)}
+.pq-gname{grid-area:n;display:flex;align-items:center;gap:10px;font-weight:500}
+.pq-gname b,.pq-tabs b{display:grid;place-items:center;flex:none;width:22px;height:22px;border-radius:50%;background:var(--c);color:#fff;font-size:.74rem;font-weight:700}
+.pq-gbar .pq-track{grid-area:b;height:14px}
+.pq-gnum{grid-area:x;text-align:right;font-weight:500;font-variant-numeric:tabular-nums}
+.pq-gsplit{grid-area:s;margin-top:4px;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.pq-track{display:flex;border-radius:3px;overflow:hidden}
+.pq-track i{display:block;height:100%}
+.pq-track .f{background:var(--c)}
+.pq-track .l{background:color-mix(in srgb,var(--c) 40%,#fff)}
+
+/* Pestanyes de tema */
+.pq-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.pq-tabs button{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 7px;border:1px solid var(--line);border-radius:999px;background:var(--paper);font-size:.92rem;transition:border-color .15s}
+.pq-tabs button:hover{border-color:color-mix(in srgb,var(--c) 45%,#fff)}
+.pq-tabs button[aria-selected="true"]{border-color:var(--c);background:color-mix(in srgb,var(--c) 8%,#fff);font-weight:500}
+.pq-ins{max-width:72ch;margin-bottom:22px;padding-left:16px;border-left:2px solid var(--tc);line-height:1.65;color:var(--ink2)}
+.pq-ins b{font-weight:700;color:var(--ink)}
+
+/* Controls */
+.pq-ctl{display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px;margin-bottom:12px}
+.pq-seg{display:inline-flex;align-items:center;font-size:.86rem;color:var(--muted)}
+.pq-seg>span{margin-right:8px}
+.pq-seg button{border:1px solid var(--line);background:var(--paper);padding:5px 12px;font-size:.86rem;color:var(--ink2)}
+.pq-seg button+button{margin-left:-1px}
+.pq-seg span+button{border-radius:8px 0 0 8px}
+.pq-seg button:last-child{border-radius:0 8px 8px 0}
+.pq-seg button[aria-pressed="true"]{position:relative;background:var(--soft);border-color:#B9C0CC;color:var(--ink);font-weight:500}
+
+/* Graella d'aspectes i anys */
+.pq-scroll{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:12px}
+.pq-mx{min-width:820px;padding:2px 18px 8px}
+.pq-head,.pq-row{display:grid;grid-template-columns:minmax(220px,1fr) 130px repeat(15,30px);align-items:center}
+.pq-head{padding:12px 0 8px;border-bottom:1px solid var(--line);font-size:.74rem;color:var(--muted)}
+.pq-yr{text-align:center;font-variant-numeric:tabular-nums}
+.pq-row{width:100%;padding:9px 0;border:0;border-bottom:1px solid var(--hair);background:none;text-align:left;transition:background-color .15s}
+.pq-row:hover{background:#FAFBFC}
+.pq-row[aria-expanded="true"]{background:color-mix(in srgb,var(--tc) 5%,#fff);border-bottom-color:transparent}
+.pq-t{padding-right:16px;font-size:.92rem;line-height:1.4}
+.pq-tot{--c:var(--tc);display:flex;align-items:center;gap:8px;padding-right:12px}
+.pq-tot .pq-track{flex:1;height:8px}
+.pq-tot b{min-width:1.6em;text-align:right;font-size:.92rem;font-weight:500;font-variant-numeric:tabular-nums}
+.pq-cell{display:flex;flex-wrap:wrap;justify-content:center;align-content:center;gap:2px;min-height:22px;border-left:1px solid var(--hair)}
+.pq-cell i{width:8px;height:8px;border-radius:50%}
+.pq-cell i.f{background:var(--tc)}
+.pq-cell i.l{background:color-mix(in srgb,var(--tc) 40%,#fff)}
+.pq-cell i.q{opacity:.45}
+.pq-det{padding:4px 0 14px;border-bottom:1px solid var(--hair);background:color-mix(in srgb,var(--tc) 5%,#fff);font-size:.88rem;line-height:1.55;color:var(--ink2)}
+.pq-det p{padding:2px 0 0 0}
+.pq-det span{display:inline-block;min-width:80px;font-size:.72rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.pq-buit{padding:14px 0;color:var(--muted)}
+
+/* Notes */
+.pq-notes{max-width:72ch;margin:0;padding-left:20px;line-height:1.6;color:var(--ink2)}
+.pq-notes li+li{margin-top:10px}
+.pq-notes b{color:var(--ink)}
+.pq-font{max-width:72ch;margin-top:24px;font-size:.84rem;color:var(--muted)}
+
+@media (max-width:1000px){
+  .pq-head,.pq-row{grid-template-columns:minmax(200px,1fr) 110px repeat(15,24px)}
+  .pq-mx{min-width:690px}
+}
+@media (max-width:640px){
+  .pq-scroll{overflow:visible}
+  .pq-mx{min-width:0;padding:2px 14px 6px}
+  .pq-head,.pq-row{grid-template-columns:minmax(0,1fr) 88px}
+  .pq-yr,.pq-cell{display:none}
+  .pq-gbar{grid-template-columns:minmax(0,1fr) 40px;grid-template-areas:"n x" "b b" "s s";padding:10px}
+  .pq-gbar .pq-track{margin-top:8px}
+  .pq-legend-t{display:none}
+}
+@media (max-width:560px){.pq-in{padding-left:16px;padding-right:16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
