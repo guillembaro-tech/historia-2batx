@@ -1,5 +1,194 @@
 {
   "tema": 2,
   "titol": "El catalanisme polític",
-  "estat": "en preparació"
+  "estat": "en preparació",
+  "ex1": {
+    "segell": "Fonts reals · preguntes amb el format de la Sèrie 0",
+    "oficial": false,
+    "fonts": [
+      {
+        "etiqueta": "FONT 1",
+        "text": [
+          "«Nos quedaba la legislación civil, encarnada perfectamente en nuestro modo de ser, y la legislación civil salió ya amenazada de muerte de las Cortes de Cádiz, al decretarse en principio la unificación de Códigos, y la amenaza sigue todavía, próxima quizá á convertirse en triste realidad. [...]",
+          "El proyecto de bases para el Código que se quiere formar, contiene la sentencia de muerte de la legislación civil catalana que está todavía vigente; la serie de tratados internacionales que se preparan con las potencias industriales más potentes de Europa y América, han de ser un golpe fatal para nuestras manufacturas [...].»"
+        ],
+        "peu": "*Memoria en defensa de los intereses morales y materiales de Cataluña* (Memorial de Greuges), presentada a Alfons XII pel Centre Català el 10 de març de 1885 (fragments)."
+      },
+      {
+        "etiqueta": "FONT 2",
+        "text": [
+          "«Base 3a. La llengua catalana serà l'única que amb caràcter oficial podrà usar-se a Catalunya i en les relacions d'aquesta regió amb lo Poder central.",
+          "Base 5a. La divisió territorial sobre la que es desenrotlla la gradació jeràrquica dels Poders governatiu, administratiu i judicial, tindrà per fonament la comarca natural i el municipi.",
+          "Base 6a. Catalunya serà la única sobirana de son govern interior: per lo tant, dictarà lliurement ses lleis orgàniques; cuidarà de sa legislació civil, penal, mercantil, administrativa i processal; de l'establiment i percepció d'impostos; [...]",
+          "Base 7a. Lo Poder legislatiu Regional radicarà en les Corts Catalanes, que deuran reunir-se tots los anys en època determinada i en lloc diferent. Les Corts se formaran per sufragi de tots los caps de casa, agrupats en classes fundades en lo treball manual, en la capacitat o en les carreres professionals i en la propietat, indústria i comerç, mitjançant la corresponent organització gremial en lo que possible sia.»"
+        ],
+        "peu": "*Bases per a la Constitució Regional Catalana* (Bases de Manresa), aprovades per l'assemblea de la Unió Catalanista a Manresa el 27 de març de 1892 (bases 3a, 5a, 6a i 7a)."
+      }
+    ],
+    "preguntes": [
+      {
+        "n": "1.1",
+        "text": "Identifiqueu dues de les idees fonamentals de la primera font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.2",
+        "text": "Identifiqueu dues de les idees fonamentals de la segona font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.3",
+        "text": "Prenent com a punt de partida les dues preguntes anteriors, feu una breu redacció que respongui a l'enunciat següent: l'evolució del catalanisme polític entre la defensa dels interessos de Catalunya i la reivindicació de l'autogovern, atenent el seu context històric.",
+        "punts": "1,50 p"
+      }
+    ],
+    "guia": [
+      {
+        "q": "Què em demanen exactament la 1.1 i la 1.2?",
+        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Ves directament a les idees."
+      },
+      {
+        "q": "Quina diferència hi ha entre el tema i la idea?",
+        "a": "El tema és de què parla la font, i la idea és què en diu. La font 1 parla del dret civil i dels tractats comercials (tema), i una de les seves idees és que el nou Codi Civil faria desaparèixer el dret civil català. Si la teva frase podria servir per a qualsevol text sobre el tema, és el tema, no la idea."
+      },
+      {
+        "q": "Hi ha paraules de la font 2 que no entenc. Què volen dir?",
+        "a": "Les Bases estan escrites en el català de finals del segle XIX. *Lo* vol dir «el»; *son*, *sa* i *ses* volen dir «el seu», «la seva» i «les seves»; *deuran* vol dir «hauran de»; *sia* vol dir «sigui»; i els *caps de casa* eren els homes que encapçalaven cada família. No cal comentar la llengua de la font, només entendre-la."
+      },
+      {
+        "q": "De quan és cada font i qui la va escriure?",
+        "nota": "t'ajuda a entendre-la, però no cal escriure-ho a la 1.1 ni a la 1.2",
+        "a": "El peu de font t'ho diu. El Memorial de Greuges el va presentar el Centre Català a Alfons XII el 1885, i les Bases les va aprovar la Unió Catalanista a Manresa el 1892. No cal classificar les fonts, però aquestes dates són el marc cronològic que necessitaràs a la 1.3."
+      },
+      {
+        "q": "Què tenen en comú les dues fonts?",
+        "a": "Totes dues són reivindicacions del catalanisme polític davant de l'Estat. La font 1 defensa uns interessos concrets de Catalunya, i la font 2 proposa un autogovern. Aquesta evolució és el fil de la 1.3."
+      },
+      {
+        "q": "Quant espai dedico a cada qüestió?",
+        "a": "La 1.3 val el triple que la 1.1 o la 1.2, i hi has de dedicar proporcionalment més espai. La normativa no fixa cap nombre de línies, perquè el que es valora és el contingut."
+      }
+    ],
+    "vocabulari": [
+      {
+        "on": "1.1 · per anomenar les idees de la font 1",
+        "termes": [
+          "dret civil català",
+          "unificació de codis (Codi Civil)",
+          "proteccionisme"
+        ]
+      },
+      {
+        "on": "1.2 · per anomenar les idees de la font 2",
+        "termes": [
+          "autonomia",
+          "sufragi corporatiu",
+          "comarca",
+          "regionalisme"
+        ]
+      },
+      {
+        "on": "1.3 · per explicar el context",
+        "nota": "els fets que expliquen per què les fonts diuen coses diferents",
+        "termes": [
+          "Valentí Almirall",
+          "Centre Català",
+          "Lliga de Catalunya (1887)",
+          "Missatge a la Reina Regent (1888)",
+          "Codi Civil (1889)",
+          "Unió Catalanista (1891)",
+          "catalanisme conservador",
+          "torn pacífic"
+        ]
+      }
+    ],
+    "context": [
+      "Qui va impulsar cada document i amb quina finalitat?",
+      "Què va canviar dins del catalanisme entre 1885 i 1892?",
+      "Per què el catalanisme s'adreçava a la Corona i no als partits del torn?"
+    ],
+    "dates_fonts": "1885 i 1892",
+    "fets_context": "Centre Català, Lliga de Catalunya, Codi Civil, Unió Catalanista",
+    "model": [
+      {
+        "q": "1.1"
+      },
+      {
+        "accept": [
+          "El dret civil català, que forma part de la manera de ser dels catalans, està amenaçat des que les Corts de Cadis van decidir unificar els codis.",
+          "El projecte del nou Codi Civil suposaria la desaparició del dret civil català, que encara és vigent.",
+          "Els tractats comercials amb les grans potències industrials serien un cop fatal per a la indústria catalana."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que]] el dret civil català, que el text considera una part essencial de la manera de ser dels catalans, està amenaçat de desaparèixer. La voluntat d'unificar els codis venia de les Corts de Cadis, i el projecte de Codi Civil que es preparava en suposaria, segons la font, la «sentencia de muerte»."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] els tractats comercials que el govern negociava amb les grans potències industrials d'Europa i d'Amèrica perjudicarien greument la indústria catalana, [[perquè]] obririen el mercat espanyol als productes d'aquests països. Es tracta d'una defensa del **proteccionisme**."
+      },
+      {
+        "why": "Cada idea s'explica amb paraules pròpies i fa servir com a molt una cita breu entre cometes. La segona idea acaba posant el nom històric al que defensa la font, el proteccionisme."
+      },
+      {
+        "q": "1.2"
+      },
+      {
+        "accept": [
+          "El català ha de ser l'única llengua oficial a Catalunya i en les relacions amb el poder central.",
+          "Catalunya ha de ser sobirana en el seu govern interior, amb lleis pròpies en tots els àmbits del dret i amb els seus propis impostos.",
+          "El territori s'ha d'organitzar a partir de la comarca i el municipi, i no de les províncies.",
+          "Hi ha d'haver unes Corts catalanes, elegides pels caps de casa agrupats per classes, és a dir, per sufragi corporatiu."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que]] Catalunya hauria de tenir un autogovern molt ampli, ja que seria «la única sobirana de son govern interior». Faria les seves pròpies lleis civils, penals, mercantils i administratives, i establiria i cobraria els seus impostos. És, per tant, una proposta d'**autonomia**, en què el català seria l'única llengua oficial."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] aquest autogovern s'organitzaria d'una manera tradicional. El parlament, les Corts catalanes, no s'elegiria per sufragi universal, sinó per **sufragi corporatiu**, és a dir, pels caps de casa agrupats segons el treball manual, les professions o la propietat. [[A més,]] el territori es basaria en la comarca i el municipi, i no en les províncies."
+      },
+      {
+        "why": "Cada idea agrupa diverses bases que van en la mateixa direcció. No cal comentar-les una per una."
+      },
+      {
+        "q": "1.3"
+      },
+      {
+        "tag": "Marc cronològic",
+        "k": 1,
+        "text": "Les dues fonts són reivindicacions del catalanisme polític, [[però]] de dos moments diferents. La font 1 és de 1885, quan el Centre Català, impulsat per Valentí Almirall, va presentar el Memorial de Greuges a Alfons XII. La font 2 és de 1892, quan la Unió Catalanista, creada a iniciativa de la Lliga de Catalunya i sense el sector d'Almirall, va aprovar a Manresa les Bases per a la Constitució Regional Catalana. Entre l'una i l'altra, el catalanisme s'havia dividit, i el corrent conservador s'havia fet majoritari."
+      },
+      {
+        "why": "Diu de quan és cada font, qui la impulsa i què havia canviat entre l'una i l'altra. Les FAQ oficials insisteixen a explicitar el marc cronològic, sobretot a la 1.3."
+      },
+      {
+        "tag": "Confrontació",
+        "k": 2,
+        "text": "Totes dues fonts defensen la personalitat de Catalunya davant de l'Estat. [[Tanmateix,]] la font 1 es limita a denunciar uns greuges concrets, com l'amenaça al dret civil i a la indústria, i demana al rei que els resolgui. [[En canvi,]] la font 2 fa un pas més i proposa un autogovern amb parlament, lleis i impostos propis. [[Així,]] es passa de defensar els interessos de Catalunya dins del sistema a reclamar una autonomia política. [[Ara bé,]] cap de les dues no és separatista. El Memorial no qüestiona la unitat d'Espanya, i les Bases mantenen un poder central comú."
+      },
+      {
+        "why": "Parteix de les idees de la 1.1 i la 1.2, però no les repeteix. Les posa l'una davant de l'altra amb connectors de contrast."
+      },
+      {
+        "tag": "Context",
+        "k": 3,
+        "text": "La diferència entre les dues fonts s'explica per l'evolució del catalanisme en aquests anys. El torn pacífic i el caciquisme deixaven el catalanisme fora del poder, i per això s'adreçava directament a la Corona. El Memorial (font 1) va ser una iniciativa unitària, amb persones de diverses ideologies, i responia a dues amenaces concretes, el projecte de Codi Civil i els tractats comercials amb la Gran Bretanya. [[Després,]] el 1887 els conservadors es van separar del Centre Català i van fundar la Lliga de Catalunya, que el 1888 va demanar a la regent unes Corts pròpies, i la campanya de 1889 va aconseguir que el Codi Civil respectés el dret català. [[Per això,]] la Unió Catalanista ja no es va limitar a defensar-se i va formular el primer projecte d'autonomia (font 2), amb un model tradicionalista, propi del catalanisme conservador i catòlic, com mostra el sufragi corporatiu."
+      },
+      {
+        "why": "Fixa't en el mètode. Cada fet del context es lliga a una font. Les amenaces de 1885 expliquen el to defensiu del Memorial, i la divisió del catalanisme i l'èxit de 1889 expliquen per què les Bases fan un pas més i tenen un caràcter conservador."
+      },
+      {
+        "tag": "Intenció i conclusió",
+        "k": 4,
+        "text": "[[Pel que fa a la intenció,]] el Memorial pretenia convèncer el rei perquè protegís els interessos de Catalunya, [[mentre que]] les Bases volien fixar el programa polític del catalanisme. [[En conclusió,]] les dues fonts mostren com, en menys de deu anys, el catalanisme polític va passar de defensar els interessos de Catalunya dins de l'Estat a reclamar-ne l'autogovern."
+      }
+    ]
+  }
 }
