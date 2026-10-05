@@ -229,7 +229,6 @@ details.q .a{padding:0 14px 12px 36px;max-width:72ch}
 .tool .use{font-size:13.5px;color:var(--muted)}
 .tool .words{display:flex;flex-wrap:wrap;gap:6px}
 .tool .words span{background:var(--bg);border:1px solid var(--line);border-radius:5px;padding:2px 8px;font-size:14px}
-.tool.hl{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
 .tablewrap{overflow-x:auto}
 #taller table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:480px}
 #taller th,#taller td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}

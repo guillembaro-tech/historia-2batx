@@ -237,7 +237,7 @@
   function eines() {
     var W = function (a) { return '<div class="words">' + each(a, function (w) { return '<span>' + esc(w) + '</span>'; }) + '</div>'; };
     var T = [
-      ["Contrast", "Imprescindibles a la 1.3. Són els que recomanen els criteris oficials.", ["en contrast", "per contra", "tanmateix", "això no obstant", "en canvi", "ara bé", "altrament", "mentre que"], true],
+      ["Contrast", "Imprescindibles a la 1.3. Són els que recomanen els criteris oficials.", ["en contrast", "per contra", "tanmateix", "això no obstant", "en canvi", "ara bé", "altrament", "mentre que"]],
       ["Presentar idees", "Útils a la 1.1 i la 1.2 per presentar les dues idees de cada font. Si obres una sèrie, tanca-la.", ["la primera idea que podem destacar...", "la segona idea...", "d'una banda... d'altra banda"]],
       ["Causa", "Per explicar per què passa un fet.", ["perquè", "ja que", "atès que", "a causa de", "arran de", "com a resposta a"]],
       ["Conseqüència", "Per enllaçar un fet amb el que provoca.", ["per tant", "en conseqüència", "per això", "de manera que", "això va provocar", "com a resultat"]],
@@ -262,7 +262,7 @@
       ["Es veu clarament que...", "Es pot deduir que...", "Evita judicis de valor sense concretar."]
     ];
     return '<div class="panel"><div><h2>Caixa d\'eines per redactar</h2><p class="lead">Connectors, verbs i errors freqüents. Tria el connector segons la relació que vols expressar, no perquè quedi bé: cada connector afirma com s\'enllacen dos fets.</p></div>'
-      + '<div class="tools">' + each(T, function (t) { return '<div class="tool' + (t[3] ? ' hl' : '') + '"><h3>' + esc(t[0]) + '</h3><p class="use">' + esc(t[1]) + '</p>' + W(t[2]) + '</div>'; }) + '</div>'
+      + '<div class="tools">' + each(T, function (t) { return '<div class="tool"><h3>' + esc(t[0]) + '</h3><p class="use">' + esc(t[1]) + '</p>' + W(t[2]) + '</div>'; }) + '</div>'
       + '<div class="tool"><h3>Verbs precisos</h3><p class="use">Substitueix els verbs genèrics (fer, posar, dir) per verbs que expliquin exactament què passa.</p>' + W(["convocar", "instaurar", "decretar", "promulgar", "dissoldre", "proclamar", "sufocar", "reprimir", "denunciar", "reivindicar", "impulsar", "consolidar"]) + '</div>'
       + '<div class="tablewrap"><table><thead><tr><th>Evita</th><th>Escriu</th><th>Per què</th></tr></thead><tbody>' + each(E, function (r) { return '<tr><td class="bad">' + esc(r[0]) + '</td><td class="good">' + esc(r[1]) + '</td><td>' + esc(r[2]) + '</td></tr>'; }) + '</tbody></table></div>'
       + '<div class="tip"><b>Regles d\'estil que valoren els correctors.</b> Una idea per paràgraf i punt i a part per a cada idea nova. Si escrius «en primer lloc» o «d\'una banda», ha d\'aparèixer «en segon lloc» o «d\'altra banda». Dates concretes, però sense repetir-les. Majúscules quan canvien el significat: l\'Església, l\'Exèrcit, la Restauració, el Desastre del 98.</div></div>';
