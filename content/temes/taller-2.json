@@ -1,5 +1,722 @@
 {
   "tema": 2,
   "titol": "El catalanisme polític",
-  "estat": "en preparació"
+  "estat": "disponible",
+  "ex1": {
+    "segell": "Fonts reals · preguntes amb el format de la Sèrie 0",
+    "oficial": false,
+    "fonts": [
+      {
+        "etiqueta": "FONT 1",
+        "text": [
+          "«Nos quedaba la legislación civil, encarnada perfectamente en nuestro modo de ser, y la legislación civil salió ya amenazada de muerte de las Cortes de Cádiz, al decretarse en principio la unificación de Códigos, y la amenaza sigue todavía, próxima quizá á convertirse en triste realidad. [...]",
+          "El proyecto de bases para el Código que se quiere formar, contiene la sentencia de muerte de la legislación civil catalana que está todavía vigente; la serie de tratados internacionales que se preparan con las potencias industriales más potentes de Europa y América, han de ser un golpe fatal para nuestras manufacturas [...].»"
+        ],
+        "peu": "*Memoria en defensa de los intereses morales y materiales de Cataluña* (Memorial de Greuges), presentada a Alfons XII pel Centre Català el 10 de març de 1885 (fragments)."
+      },
+      {
+        "etiqueta": "FONT 2",
+        "text": [
+          "«Base 3a. La llengua catalana serà l'única que amb caràcter oficial podrà usar-se a Catalunya i en les relacions d'aquesta regió amb lo Poder central.",
+          "Base 5a. La divisió territorial sobre la que es desenrotlla la gradació jeràrquica dels Poders governatiu, administratiu i judicial, tindrà per fonament la comarca natural i el municipi.",
+          "Base 6a. Catalunya serà la única sobirana de son govern interior: per lo tant, dictarà lliurement ses lleis orgàniques; cuidarà de sa legislació civil, penal, mercantil, administrativa i processal; de l'establiment i percepció d'impostos; [...]",
+          "Base 7a. Lo Poder legislatiu Regional radicarà en les Corts Catalanes, que deuran reunir-se tots los anys en època determinada i en lloc diferent. Les Corts se formaran per sufragi de tots los caps de casa, agrupats en classes fundades en lo treball manual, en la capacitat o en les carreres professionals i en la propietat, indústria i comerç, mitjançant la corresponent organització gremial en lo que possible sia.»"
+        ],
+        "peu": "*Bases per a la Constitució Regional Catalana* (Bases de Manresa), aprovades per l'assemblea de la Unió Catalanista a Manresa el 27 de març de 1892 (bases 3a, 5a, 6a i 7a)."
+      }
+    ],
+    "preguntes": [
+      {
+        "n": "1.1",
+        "text": "Identifiqueu dues de les idees fonamentals de la primera font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.2",
+        "text": "Identifiqueu dues de les idees fonamentals de la segona font.",
+        "punts": "0,50 p"
+      },
+      {
+        "n": "1.3",
+        "text": "Prenent com a punt de partida les dues preguntes anteriors, feu una breu redacció que respongui a l'enunciat següent: l'evolució del catalanisme polític entre la defensa dels interessos de Catalunya i la reivindicació de l'autogovern, atenent el seu context històric.",
+        "punts": "1,50 p"
+      }
+    ],
+    "guia": [
+      {
+        "q": "Què em demanen exactament la 1.1 i la 1.2?",
+        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Ves directament a les idees."
+      },
+      {
+        "q": "Quina diferència hi ha entre el tema i la idea?",
+        "a": "El tema és de què parla la font, i la idea és què en diu. La font 1 parla del dret civil i dels tractats comercials (tema), i una de les seves idees és que el nou Codi Civil faria desaparèixer el dret civil català. Si la teva frase podria servir per a qualsevol text sobre el tema, és el tema, no la idea."
+      },
+      {
+        "q": "Hi ha paraules de la font 2 que no entenc. Què volen dir?",
+        "a": "Les Bases estan escrites en el català de finals del segle XIX. *Lo* vol dir «el»; *son*, *sa* i *ses* volen dir «el seu», «la seva» i «les seves»; *deuran* vol dir «hauran de»; *sia* vol dir «sigui»; i els *caps de casa* eren els homes que encapçalaven cada família. No cal comentar la llengua de la font, només entendre-la."
+      },
+      {
+        "q": "De quan és cada font i qui la va escriure?",
+        "nota": "t'ajuda a entendre-la, però no cal escriure-ho a la 1.1 ni a la 1.2",
+        "a": "El peu de font t'ho diu. El Memorial de Greuges el va presentar el Centre Català a Alfons XII el 1885, i les Bases les va aprovar la Unió Catalanista a Manresa el 1892. No cal classificar les fonts, però aquestes dates són el marc cronològic que necessitaràs a la 1.3."
+      },
+      {
+        "q": "Què tenen en comú les dues fonts?",
+        "a": "Totes dues són reivindicacions del catalanisme polític davant de l'Estat. La font 1 defensa uns interessos concrets de Catalunya, i la font 2 proposa un autogovern. Aquesta evolució és el fil de la 1.3."
+      },
+      {
+        "q": "Quant espai dedico a cada qüestió?",
+        "a": "La 1.3 val el triple que la 1.1 o la 1.2, i hi has de dedicar proporcionalment més espai. La normativa no fixa cap nombre de línies, perquè el que es valora és el contingut."
+      }
+    ],
+    "vocabulari": [
+      {
+        "on": "1.1 · per anomenar les idees de la font 1",
+        "termes": [
+          "dret civil català",
+          "unificació de codis (Codi Civil)",
+          "proteccionisme"
+        ]
+      },
+      {
+        "on": "1.2 · per anomenar les idees de la font 2",
+        "termes": [
+          "autonomia",
+          "sufragi corporatiu",
+          "comarca",
+          "regionalisme"
+        ]
+      },
+      {
+        "on": "1.3 · per explicar el context",
+        "nota": "els fets que expliquen per què les fonts diuen coses diferents",
+        "termes": [
+          "Valentí Almirall",
+          "Centre Català",
+          "Lliga de Catalunya (1887)",
+          "Missatge a la Reina Regent (1888)",
+          "Codi Civil (1889)",
+          "Unió Catalanista (1891)",
+          "catalanisme conservador",
+          "torn pacífic"
+        ]
+      }
+    ],
+    "context": [
+      "Qui va impulsar cada document i amb quina finalitat?",
+      "Què va canviar dins del catalanisme entre 1885 i 1892?",
+      "Per què el catalanisme s'adreçava a la Corona i no als partits del torn?"
+    ],
+    "dates_fonts": "1885 i 1892",
+    "fets_context": "Centre Català, Lliga de Catalunya, Codi Civil, Unió Catalanista",
+    "model": [
+      {
+        "q": "1.1"
+      },
+      {
+        "accept": [
+          "El dret civil català, que forma part de la manera de ser dels catalans, està amenaçat des que les Corts de Cadis van decidir unificar els codis.",
+          "El projecte del nou Codi Civil suposaria la desaparició del dret civil català, que encara és vigent.",
+          "Els tractats comercials amb les grans potències industrials serien un cop fatal per a la indústria catalana."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que]] el dret civil català, que el text considera una part essencial de la manera de ser dels catalans, està amenaçat de desaparèixer. La voluntat d'unificar els codis venia de les Corts de Cadis, i el projecte de Codi Civil que es preparava en suposaria, segons la font, la «sentencia de muerte»."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] els tractats comercials que el govern negociava amb les grans potències industrials d'Europa i d'Amèrica perjudicarien greument la indústria catalana, [[perquè]] obririen el mercat espanyol als productes d'aquests països. Es tracta d'una defensa del **proteccionisme**."
+      },
+      {
+        "why": "Cada idea s'explica amb paraules pròpies i fa servir com a molt una cita breu entre cometes. La segona idea acaba posant el nom històric al que defensa la font, el proteccionisme."
+      },
+      {
+        "q": "1.2"
+      },
+      {
+        "accept": [
+          "El català ha de ser l'única llengua oficial a Catalunya i en les relacions amb el poder central.",
+          "Catalunya ha de ser sobirana en el seu govern interior, amb lleis pròpies en tots els àmbits del dret i amb els seus propis impostos.",
+          "El territori s'ha d'organitzar a partir de la comarca i el municipi, i no de les províncies.",
+          "Hi ha d'haver unes Corts catalanes, elegides pels caps de casa agrupats per classes, és a dir, per sufragi corporatiu."
+        ]
+      },
+      {
+        "tag": "Idea 1",
+        "k": 2,
+        "text": "[[La primera idea que podem destacar és que]] Catalunya hauria de tenir un autogovern molt ampli, ja que seria «la única sobirana de son govern interior». Faria les seves pròpies lleis civils, penals, mercantils i administratives, i establiria i cobraria els seus impostos. És, per tant, una proposta d'**autonomia**, en què el català seria l'única llengua oficial."
+      },
+      {
+        "tag": "Idea 2",
+        "k": 2,
+        "text": "[[La segona idea és que]] aquest autogovern s'organitzaria d'una manera tradicional. El parlament, les Corts catalanes, no s'elegiria per sufragi universal, sinó per **sufragi corporatiu**, és a dir, pels caps de casa agrupats segons el treball manual, les professions o la propietat. [[A més,]] el territori es basaria en la comarca i el municipi, i no en les províncies."
+      },
+      {
+        "why": "Cada idea agrupa diverses bases que van en la mateixa direcció. No cal comentar-les una per una."
+      },
+      {
+        "q": "1.3"
+      },
+      {
+        "tag": "Marc cronològic",
+        "k": 1,
+        "text": "Les dues fonts són reivindicacions del catalanisme polític, [[però]] de dos moments diferents. La font 1 és de 1885, quan el Centre Català, impulsat per Valentí Almirall, va presentar el Memorial de Greuges a Alfons XII. La font 2 és de 1892, quan la Unió Catalanista, creada a iniciativa de la Lliga de Catalunya i sense el sector d'Almirall, va aprovar a Manresa les Bases per a la Constitució Regional Catalana. Entre l'una i l'altra, el catalanisme s'havia dividit, i el corrent conservador s'havia fet majoritari."
+      },
+      {
+        "why": "Diu de quan és cada font, qui la impulsa i què havia canviat entre l'una i l'altra. Les FAQ oficials insisteixen a explicitar el marc cronològic, sobretot a la 1.3."
+      },
+      {
+        "tag": "Confrontació",
+        "k": 2,
+        "text": "Totes dues fonts defensen la personalitat de Catalunya davant de l'Estat. [[Tanmateix,]] la font 1 es limita a denunciar uns greuges concrets, com l'amenaça al dret civil i a la indústria, i demana al rei que els resolgui. [[En canvi,]] la font 2 fa un pas més i proposa un autogovern amb parlament, lleis i impostos propis. [[Així,]] es passa de defensar els interessos de Catalunya dins del sistema a reclamar una autonomia política. [[Ara bé,]] cap de les dues no és separatista. El Memorial no qüestiona la unitat d'Espanya, i les Bases mantenen un poder central comú."
+      },
+      {
+        "why": "Parteix de les idees de la 1.1 i la 1.2, però no les repeteix. Les posa l'una davant de l'altra amb connectors de contrast."
+      },
+      {
+        "tag": "Context",
+        "k": 3,
+        "text": "La diferència entre les dues fonts s'explica per l'evolució del catalanisme en aquests anys. El torn pacífic i el caciquisme deixaven el catalanisme fora del poder, i per això s'adreçava directament a la Corona. El Memorial (font 1) va ser una iniciativa unitària, amb persones de diverses ideologies, i responia a dues amenaces concretes, el projecte de Codi Civil i els tractats comercials amb la Gran Bretanya. [[Després,]] el 1887 els conservadors es van separar del Centre Català i van fundar la Lliga de Catalunya, que el 1888 va demanar a la regent unes Corts pròpies, i la campanya de 1889 va aconseguir que el Codi Civil respectés el dret català. [[Per això,]] la Unió Catalanista ja no es va limitar a defensar-se i va formular el primer projecte d'autonomia (font 2), amb un model tradicionalista, propi del catalanisme conservador i catòlic, com mostra el sufragi corporatiu."
+      },
+      {
+        "why": "Fixa't en el mètode. Cada fet del context es lliga a una font. Les amenaces de 1885 expliquen el to defensiu del Memorial, i la divisió del catalanisme i l'èxit de 1889 expliquen per què les Bases fan un pas més i tenen un caràcter conservador."
+      },
+      {
+        "tag": "Intenció i conclusió",
+        "k": 4,
+        "text": "[[Pel que fa a la intenció,]] el Memorial pretenia convèncer el rei perquè protegís els interessos de Catalunya, [[mentre que]] les Bases volien fixar el programa polític del catalanisme. [[En conclusió,]] les dues fonts mostren com, en menys de deu anys, el catalanisme polític va passar de defensar els interessos de Catalunya dins de l'Estat a reclamar-ne l'autogovern."
+      }
+    ]
+  },
+  "ex2": {
+    "opcions": [
+      {
+        "id": "a",
+        "boto": "a · Solidaritat Catalana (1907)",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "És el 22 d'abril de 1907 i sou periodista d'un diari de Barcelona. Heu d'escriure la crònica de les eleccions generals del dia anterior a Catalunya. Expliqueu per què s'ha format la coalició que les ha guanyat, qui en forma part, què reclama i quines dificultats pot tenir per mantenir-se unida. Utilitzeu els cinc termes següents de manera adequada: fets del Cu-cut!, Llei de jurisdiccions, Solidaritat Catalana, Lliga Regionalista i Cambó (l'ús de cada terme històric val 0,20 punts).",
+        "termes": [
+          "fets del Cu-cut!",
+          "Llei de jurisdiccions",
+          "Solidaritat Catalana",
+          "Lliga Regionalista",
+          "Cambó"
+        ],
+        "guia": [
+          {
+            "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos periodista?",
+            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal imitar el format del text que et proposen ni escriure en primera persona, perquè segons les FAQ oficials no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+          },
+          {
+            "q": "Quin moment he d'explicar?",
+            "a": "Les eleccions del 21 d'abril de 1907. Per entendre-les, però, has de començar pels fets del novembre de 1905."
+          },
+          {
+            "q": "Què he d'explicar?",
+            "a": "Per què es va formar la Solidaritat Catalana, qui en formava part, què reclamava i per què era difícil que es mantingués unida."
+          },
+          {
+            "q": "Com ordeno els cinc termes?",
+            "a": "Segons el moment en què intervenen. Primer la Lliga Regionalista i els fets del Cu-cut! (1905), després la Llei de jurisdiccions (1906) i, finalment, la Solidaritat Catalana i Cambó (1906-1907)."
+          }
+        ],
+        "esquema": [
+          {
+            "titol": "Abans · causes",
+            "items": [
+              "Victòria de la __Lliga Regionalista__ a Barcelona (1905)",
+              "__fets del Cu-cut!__ (25 de novembre de 1905)",
+              "__Llei de jurisdiccions__ (1906)"
+            ]
+          },
+          {
+            "titol": "Durant · fets",
+            "items": [
+              "Neix la __Solidaritat Catalana__ (1906)",
+              "Programa del Tívoli (14 d'abril de 1907)",
+              "Atemptat contra __Cambó__ i 41 dels 44 escons"
+            ]
+          },
+          {
+            "titol": "Després · conseqüències",
+            "items": [
+              "El catalanisme, moviment de masses",
+              "Divisions per la llei d'administració local de Maura",
+              "Ruptura després de la Setmana Tràgica (1909)"
+            ]
+          }
+        ],
+        "guio": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "que": "Situa les eleccions i explica per què es va formar la coalició.",
+            "inici": "El 21 d'abril de 1907, Catalunya va votar... L'origen cal buscar-lo [on]..."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "que": "Qui formava la Solidaritat, què reclamava i com va anar la campanya, amb alguna data i algun exemple concret.",
+            "inici": "La Solidaritat Catalana aplegava... El seu programa... Tres dies abans de les eleccions..."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "que": "El resultat de les eleccions i les dificultats de la coalició.",
+            "inici": "La victòria va mostrar... Tanmateix, ..."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "que": "Una frase que doni sentit al conjunt.",
+            "inici": "En definitiva, ..."
+          }
+        ],
+        "rubrica": [
+          {
+            "terme": "fets del Cu-cut!",
+            "text": "explico què va passar i per què va provocar una crisi política."
+          },
+          {
+            "terme": "Llei de jurisdiccions",
+            "text": "dic què establia i per què es veia com un atac a la llibertat."
+          },
+          {
+            "terme": "Solidaritat Catalana",
+            "text": "explico qui en formava part i què reclamava."
+          },
+          {
+            "terme": "Lliga Regionalista",
+            "text": "la presento com l'eix de la coalició i el partit que havia guanyat a Barcelona el 1905."
+          },
+          {
+            "terme": "Cambó",
+            "text": "el situo com a dirigent de la Lliga i de la Solidaritat, i parlo de l'atemptat."
+          }
+        ],
+        "nota_termes": "S'admeten derivats de la mateixa família, com «solidaris».",
+        "model": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "text": "El 21 d'abril de 1907, Catalunya va viure unes eleccions generals excepcionals. Una coalició de gairebé totes les forces polítiques catalanes, la __Solidaritat Catalana__, va obtenir 41 dels 44 escons en joc i va deixar gairebé sense representació els partits del torn. L'origen cal buscar-lo als __fets del Cu-cut!__. El novembre de 1905, després que la __Lliga Regionalista__ guanyés les eleccions municipals de Barcelona, uns tres-cents oficials de la guarnició van assaltar les redaccions del setmanari satíric *Cu-cut!* i del diari *La Veu de Catalunya* per un acudit que es reia de l'exèrcit. [[En lloc de]] castigar-los, el govern liberal de Segismundo Moret va cedir a la pressió militar i va aprovar la __Llei de jurisdiccions__ (1906), que feia jutjar pels tribunals militars les ofenses a l'exèrcit."
+          },
+          {
+            "why": "El model no imita cap format de crònica ni escriu en primera persona, perquè el que puntua és el contingut. La causa explica els termes. No n'hi ha prou de dir que hi va haver un assalt, cal explicar per què la resposta del govern va indignar la societat catalana."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "text": "Molts catalans van veure la llei com un atac a la llibertat d'expressió i un retrocés del poder civil davant del militar. [[Per això]] es va formar la Solidaritat Catalana, que anava des dels carlins fins als republicans de Nicolás Salmerón, antic president de la Primera República. Només en quedaven fora els partits dinàstics i els republicans de Lerroux. La Lliga n'era l'eix, i un dels seus principals organitzadors era __Cambó__, que tres dies abans de les eleccions va resultar ferit en un atemptat a Hostafrancs, atribuït a seguidors de Lerroux. El programa de la coalició, llegit al teatre Tívoli, reclamava derogar la llei i descentralitzar l'Estat."
+          },
+          {
+            "why": "Cada terme té una funció. La Solidaritat és la resposta a la llei, la Lliga n'és l'eix i Cambó, un dels dirigents. L'atemptat és el detall concret que dona vida al relat."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "text": "La victòria va mostrar que el catalanisme s'havia convertit en un moviment de masses capaç de derrotar el caciquisme. [[Tanmateix,]] la coalició tenia poques coses en comú més enllà del rebuig a la llei. Hi convivien conservadors i republicans, catòlics i anticlericals, i aviat la van dividir debats com el del projecte de llei d'administració local de Maura. [[Finalment,]] la Setmana Tràgica (1909) la va trencar, quan la Lliga va donar suport a la repressió del govern."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "text": "[[En definitiva,]] les eleccions de 1907 van mostrar la força del catalanisme, però també la fragilitat d'una unitat construïda només contra un enemic comú."
+          },
+          {
+            "why": "Fixa't que el model fa servir altres termes de l'època, com caciquisme, partits del torn, Lerroux o Setmana Tràgica. Els cinc termes obligatoris són necessaris, però no suficients."
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "boto": "b · 14 d'abril de 1931",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "És el 14 d'abril de 1931 i sou a la plaça de Sant Jaume de Barcelona. Escriviu una carta a un amic que viu a l'estranger per explicar-li què ha passat aquests dies i per què tants catalans han acabat confiant en la república. Utilitzeu els cinc termes següents de manera adequada: Estat Català, Prats de Molló, Pacte de Sant Sebastià, Esquerra Republicana de Catalunya i Francesc Macià (l'ús de cada terme històric val 0,20 punts).",
+        "termes": [
+          "Estat Català",
+          "Prats de Molló",
+          "Pacte de Sant Sebastià",
+          "Esquerra Republicana de Catalunya",
+          "Francesc Macià"
+        ],
+        "guia": [
+          {
+            "q": "Quin paper em proposa l'enunciat? He d'escriure una carta?",
+            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal imitar el format del text que et proposen ni escriure en primera persona, perquè segons les FAQ oficials no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+          },
+          {
+            "q": "Quin moment he d'explicar?",
+            "a": "El 14 d'abril de 1931. Per explicar-lo, però, has de tornar a la Dictadura de Primo de Rivera (1923-1930)."
+          },
+          {
+            "q": "Què he d'explicar?",
+            "a": "Per què el catalanisme es va fer republicà i com es va arribar a la proclamació de la República i de la República Catalana."
+          },
+          {
+            "q": "Com ordeno els cinc termes?",
+            "a": "Segons el moment en què intervenen. Primer Francesc Macià i Estat Català (1922), després Prats de Molló (1926), el Pacte de Sant Sebastià (1930) i, finalment, Esquerra Republicana de Catalunya (1931)."
+          }
+        ],
+        "esquema": [
+          {
+            "titol": "Abans · causes",
+            "items": [
+              "Dictadura de Primo de Rivera (1923-1930)",
+              "Supressió de la Mancomunitat i repressió del catalanisme",
+              "__Francesc Macià__ funda __Estat Català__ (1922)"
+            ]
+          },
+          {
+            "titol": "Durant · fets",
+            "items": [
+              "Complot de __Prats de Molló__ (1926)",
+              "__Pacte de Sant Sebastià__ (agost de 1930)",
+              "Neix __Esquerra Republicana de Catalunya__ (març de 1931)"
+            ]
+          },
+          {
+            "titol": "Després · conseqüències",
+            "items": [
+              "Victòria republicana el 12 d'abril",
+              "Companys proclama la República",
+              "Macià proclama la República Catalana"
+            ]
+          }
+        ],
+        "guio": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "que": "Explica per què el catalanisme es va fer republicà durant la Dictadura.",
+            "inici": "Aquest 14 d'abril de 1931, ... Per entendre-ho cal tornar a [quan]..."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "que": "El camí de 1926 a 1931, amb alguna data i algun exemple concret.",
+            "inici": "El 1926, ... Després de la caiguda del dictador, ... El març de 1931, ..."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "que": "Què ha passat el 12 i el 14 d'abril.",
+            "inici": "El 12 d'abril, ... Avui, ..."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "que": "Una frase que doni sentit al conjunt.",
+            "inici": "En definitiva, ..."
+          }
+        ],
+        "rubrica": [
+          {
+            "terme": "Estat Català",
+            "text": "explico qui el va fundar i què defensava."
+          },
+          {
+            "terme": "Prats de Molló",
+            "text": "explico l'intent d'invasió i per què va fer famós Macià."
+          },
+          {
+            "terme": "Pacte de Sant Sebastià",
+            "text": "dic qui el va signar i quin compromís hi havia sobre Catalunya."
+          },
+          {
+            "terme": "Esquerra Republicana de Catalunya",
+            "text": "explico com es va formar i per què va guanyar."
+          },
+          {
+            "terme": "Francesc Macià",
+            "text": "el presento com el líder d'aquest procés i explico què va proclamar."
+          }
+        ],
+        "nota_termes": "S'admeten derivats de la mateixa família i la sigla ERC.",
+        "model": [
+          {
+            "tag": "Context i causes",
+            "k": 3,
+            "text": "Aquest 14 d'abril de 1931, Barcelona ha viscut la proclamació de la República. Per entendre-ho cal tornar a la Dictadura de Primo de Rivera (1923-1930), que va suprimir la Mancomunitat de Catalunya i va perseguir la llengua i els símbols catalans. [[Com que]] el rei Alfons XIII havia acceptat la Dictadura, molts catalanistes, fins i tot moderats, van concloure que l'autonomia només seria possible amb una república. Una de les figures que millor ho representava era __Francesc Macià__, un antic tinent coronel que el 1922 havia fundat __Estat Català__, una organització independentista disposada a recórrer a la insurrecció armada."
+          },
+          {
+            "why": "El context explica la idea central de l'enunciat, és a dir, per què el catalanisme es va unir al republicanisme."
+          },
+          {
+            "tag": "Fets",
+            "k": 2,
+            "text": "El novembre de 1926, Macià va intentar una invasió armada de Catalunya des de __Prats de Molló__, a la Catalunya del Nord, però la policia francesa la va avortar. El judici que se li va fer a París el va convertir en un símbol de la resistència a la Dictadura. [[Després de]] la caiguda del dictador, els republicans espanyols i els nacionalistes catalans van signar el __Pacte de Sant Sebastià__ (agost de 1930), en què es comprometien a portar la República i a reconèixer l'autonomia de Catalunya. [[Finalment,]] el març de 1931, Estat Català, el Partit Republicà Català i el grup del setmanari *L'Opinió* es van unir en __Esquerra Republicana de Catalunya__, presidida per Macià."
+          },
+          {
+            "why": "Els termes segueixen l'ordre del temps, i cadascun és un pas del camí cap a la República."
+          },
+          {
+            "tag": "Conseqüències",
+            "k": 4,
+            "text": "Diumenge passat, 12 d'abril, les eleccions municipals es van convertir en un plebiscit sobre la monarquia. Les candidatures republicanes van guanyar a la majoria de les ciutats, i a Barcelona ERC va superar àmpliament la Lliga Regionalista. Avui, Lluís Companys ha proclamat la República des del balcó de l'Ajuntament, i poc després Macià ha proclamat la República Catalana, que vol formar part d'una confederació de pobles ibèrics."
+          },
+          {
+            "tag": "Valoració",
+            "k": 4,
+            "text": "[[En definitiva,]] la repressió de la Dictadura ha empès el catalanisme cap al republicanisme, i la caiguda de la monarquia obre ara la porta a l'autogovern de Catalunya."
+          },
+          {
+            "why": "Fixa't que el model fa servir altres termes de l'època, com Dictadura, Mancomunitat, plebiscit o Lluís Companys."
+          }
+        ]
+      }
+    ]
+  },
+  "ex3": {
+    "opcions": [
+      {
+        "id": "a",
+        "boto": "a · Experiències d'autogovern",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "Feu una relació on comenteu i relacioneu les principals experiències d'autogovern de Catalunya, des de la Mancomunitat fins a l'Estatut de Sau, atenent a les singularitats de cada etapa històrica.",
+        "descriptor": {
+          "titol": "Descriptor 10 del glossari oficial · Centralisme, catalanismes i experiències d’auto-govern.",
+          "text": [
+            "La pèrdua de l’imperi i la crisi de la identitat nacional espanyola. Les dues ànimes del catalanisme, la republicana federal i liberal, i la conservadora i catòlica. L’hegemonia de la Lliga Regionalista (Solidaritat Catalana) i crisi de 1918-23. La Mancomunitat com a laboratori polític. La repressió de les cultures no castellanes que culminà amb la Dictadura de Primo de Rivera. El republicanisme nacionalista i l’hegemonia d’ERC el 1931. Un sistema de partits diferenciat. Proclamació de la República catalana, establiment de la Generalitat i aprovació i Estatut d’Autonomia. La llarga nit de la dictadura franquista: l’exili polític i cultural, la liquidació de les institucions i la persecució del catalanisme i de la cultura catalana. A la transició post franquista, restabliment provisional de la Generalitat -anterior a la Constitució de 1978-, aprovació de l’estatut de Sau i reconeixement constitucional a l’autonomia de les nacionalitats i regions."
+          ]
+        },
+        "guia": [
+          {
+            "q": "Què em demana el verb?",
+            "a": "«Feu una relació on comenteu i relacioneu». No n'hi ha prou amb enumerar institucions. Has d'explicar què podia fer cadascuna i relacionar-les entre si, dient què avança, què retrocedeix i què es manté."
+          },
+          {
+            "q": "Quines etapes he de tractar?",
+            "a": "Les que marca el descriptor, és a dir, la Restauració (Mancomunitat), la Segona República (Generalitat i Estatut de 1932), el franquisme (supressió de l'autogovern) i la Transició (Generalitat provisional i Estatut de Sau)."
+          },
+          {
+            "q": "Quina idea guia tota la resposta?",
+            "a": "L'autogovern de Catalunya no va avançar en línia recta. Va dependre del règim polític de cada moment, de manera que les dictadures el van suprimir i la República i la democràcia el van fer avançar."
+          },
+          {
+            "q": "Encara no he estudiat la República, el franquisme ni la Transició. Què faig?",
+            "a": "Fixa't en l'estructura i fes servir les fites del descriptor. Quan estudiïs cada etapa, podràs tornar a aquest exercici i completar-lo."
+          }
+        ],
+        "taula": {
+          "cap": [
+            "Etapa",
+            "Fites, amb data",
+            "Avança, retrocedeix o es manté? Per què?"
+          ],
+          "files": [
+            [
+              "Restauració",
+              "Exemple. 1914, Mancomunitat · 1918-1919, campanya autonomista · 1925, supressió",
+              "Exemple. Primer autogovern, només administratiu, perquè l'Estat no hi cedeix competències"
+            ],
+            [
+              "Segona República",
+              "",
+              ""
+            ],
+            [
+              "Franquisme",
+              "",
+              ""
+            ],
+            [
+              "Transició",
+              "",
+              ""
+            ]
+          ]
+        },
+        "guio": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "que": "Explica què vol dir autogovern i avança la idea que guiarà la resposta.",
+            "inici": "L'autogovern és... A Catalunya, al llarg del segle XX, ..."
+          },
+          {
+            "tag": "Un per etapa",
+            "k": 2,
+            "que": "La institució de cada etapa, amb dates, i què podia fer.",
+            "pista": "**Raonament.** Comença cada paràgraf dient si l'autogovern avança, retrocedeix o es manté respecte a l'etapa anterior, i per què. El punt del raonament es guanya aquí, repartit per tota la resposta.",
+            "inici": "Durant la Restauració, ... / La Segona República va suposar un salt endavant, perquè... / El franquisme va significar... / La Transició..."
+          },
+          {
+            "tag": "Conclusió",
+            "k": 4,
+            "que": "Un balanç de tot el període que respongui l'enunciat, sense repetir les institucions.",
+            "inici": "En definitiva, l'autogovern de Catalunya..."
+          }
+        ],
+        "model": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "text": "L'autogovern és la capacitat d'un territori de prendre decisions polítiques i de gestionar els seus assumptes amb institucions pròpies, dins d'un Estat més gran. A Catalunya, recuperar-lo va ser l'objectiu central del catalanisme, perquè després de la derrota de 1714 el Decret de Nova Planta havia suprimit les institucions pròpies. Al segle XX, però, l'autogovern va avançar i retrocedir segons el règim polític de cada moment."
+          },
+          {
+            "why": "La introducció explica el concepte de l'enunciat i avança la idea que guiarà tota la resposta."
+          },
+          {
+            "tag": "Restauració",
+            "k": 2,
+            "text": "{{Durant la Restauració, Catalunya va tenir per primera vegada des de 1714 una institució comuna per a tot el seu territori, però amb un poder molt limitat.}} La Mancomunitat de Catalunya (1914-1925), presidida per Enric Prat de la Riba i després per Josep Puig i Cadafalch, unia les quatre diputacions provincials. No tenia poder legislatiu i l'Estat no li va traspassar cap competència, però va fer una gran obra de modernització en l'ensenyament, la cultura, les carreteres o els telèfons. La campanya autonomista de 1918-1919 va reclamar un Estatut, que les Corts no van aprovar. {{[[Finalment,]] la Dictadura de Primo de Rivera la va suprimir el 1925.}}"
+          },
+          {
+            "tag": "Segona República",
+            "k": 2,
+            "text": "{{La Segona República va suposar un salt endavant, [[perquè]] per primera vegada l'Estat va reconèixer a Catalunya una autonomia política.}} El 14 d'abril de 1931, Francesc Macià va proclamar la República Catalana, que tres dies després es va convertir en la Generalitat de Catalunya. L'Estatut de Núria, aprovat en referèndum el 1931, va ser retallat per les Corts, que van aprovar l'Estatut d'autonomia el 1932. La Generalitat va tenir un Parlament i un govern propis, amb competències en àmbits com l'ensenyament, la cultura o les obres públiques. {{[[Tot i això,]] l'autonomia va viure moments de crisi, com la suspensió de l'Estatut després dels fets del Sis d'Octubre de 1934, fins que es va restablir el 1936.}}"
+          },
+          {
+            "why": "Cada paràgraf comença situant l'etapa respecte a l'anterior («un salt endavant») i diu per què. Aquestes frases ressaltades valen el punt del raonament."
+          },
+          {
+            "tag": "Franquisme",
+            "k": 2,
+            "text": "{{El franquisme va significar la desaparició total de l'autogovern.}} Franco va abolir l'Estatut el 1938, en plena Guerra Civil, i el règim va perseguir el catalanisme i la cultura catalana. El president Lluís Companys va ser afusellat el 1940, i la Generalitat només es va mantenir a l'exili, amb els presidents Josep Irla i Josep Tarradellas. {{[[Tot i això,]] la reivindicació no va desaparèixer,}} i el 1971 l'Assemblea de Catalunya va unir l'oposició antifranquista amb el lema «Llibertat, amnistia, Estatut d'Autonomia»."
+          },
+          {
+            "tag": "Transició",
+            "k": 2,
+            "text": "{{La Transició va recuperar l'autogovern, fins i tot abans que s'aprovés la Constitució.}} Després de la gran manifestació de l'Onze de Setembre de 1977, el govern d'Adolfo Suárez va restablir provisionalment la Generalitat, i el president Tarradellas va tornar de l'exili l'octubre de 1977. La Constitució de 1978 va reconèixer el dret a l'autonomia de les nacionalitats i regions, i l'Estatut de Sau, aprovat en referèndum el 1979, va donar a Catalunya un Parlament i un govern elegits democràticament, que es van formar el 1980."
+          },
+          {
+            "tag": "Conclusió · 0,5 p",
+            "k": 4,
+            "text": "[[En definitiva,]] l'autogovern de Catalunya al segle XX va seguir un camí discontinu. Va néixer com una experiència administrativa amb la Mancomunitat, es va convertir en autonomia política amb la República, va desaparèixer amb les dues dictadures i es va consolidar amb la democràcia. Aquesta trajectòria mostra que l'autogovern de Catalunya ha estat lligat a les llibertats a Espanya, ja que les dues dictadures el van suprimir i la República i la democràcia el van fer possible."
+          },
+          {
+            "why": "La conclusió no repeteix les institucions. En fa un balanç i hi afegeix una interpretació."
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "boto": "b · Catalanisme i separatisme",
+        "segell": "Elaboració pròpia en format PAU",
+        "oficial": false,
+        "enunciat": "«El catalanisme polític va ser, des dels seus orígens, un moviment separatista». Valoreu aquesta afirmació a partir de les propostes del catalanisme entre la Restauració i la Transició, atenent les singularitats de cada etapa històrica.",
+        "descriptor": {
+          "titol": "Descriptor 10 del glossari oficial · Centralisme, catalanismes i experiències d’auto-govern.",
+          "text": [
+            "La pèrdua de l’imperi i la crisi de la identitat nacional espanyola. Les dues ànimes del catalanisme, la republicana federal i liberal, i la conservadora i catòlica. L’hegemonia de la Lliga Regionalista (Solidaritat Catalana) i crisi de 1918-23. La Mancomunitat com a laboratori polític. La repressió de les cultures no castellanes que culminà amb la Dictadura de Primo de Rivera. El republicanisme nacionalista i l’hegemonia d’ERC el 1931. Un sistema de partits diferenciat. Proclamació de la República catalana, establiment de la Generalitat i aprovació i Estatut d’Autonomia. La llarga nit de la dictadura franquista: l’exili polític i cultural, la liquidació de les institucions i la persecució del catalanisme i de la cultura catalana. A la transició post franquista, restabliment provisional de la Generalitat -anterior a la Constitució de 1978-, aprovació de l’estatut de Sau i reconeixement constitucional a l’autonomia de les nacionalitats i regions."
+          ]
+        },
+        "guia": [
+          {
+            "q": "Què em demana el verb?",
+            "a": "«Valoreu aquesta afirmació». Has de decidir fins a quin punt és certa i argumentar-ho amb fets. No n'hi ha prou de dir que és falsa, cal demostrar-ho etapa per etapa."
+          },
+          {
+            "q": "Què vol dir separatista?",
+            "a": "Un moviment separatista vol separar un territori d'un Estat per crear-ne un de propi. L'has de distingir de l'autonomia, que vol dir governar-se dins de l'Estat, i del federalisme, que vol organitzar l'Estat com una unió de territoris amb govern propi."
+          },
+          {
+            "q": "Quina idea guia tota la resposta?",
+            "a": "Durant aquest període, la majoria del catalanisme va reclamar l'autonomia o una organització federal d'Espanya, i l'independentisme va ser un corrent minoritari. A més, els adversaris del catalanisme feien servir sovint la paraula «separatista» per desqualificar-lo."
+          },
+          {
+            "q": "Encara no he estudiat la República, el franquisme ni la Transició. Què faig?",
+            "a": "Fixa't en l'estructura i fes servir les fites del descriptor. Quan estudiïs cada etapa, podràs tornar a aquest exercici i completar-lo."
+          }
+        ],
+        "taula": {
+          "cap": [
+            "Etapa",
+            "Què proposava el catalanisme, amb data",
+            "Era separatista? Per què?"
+          ],
+          "files": [
+            [
+              "Restauració",
+              "Exemple. 1885, Memorial de Greuges · 1892, Bases de Manresa · 1906, La nacionalitat catalana · 1922, Estat Català",
+              "Exemple. Majoritàriament autonomista o federal; l'independentisme d'Estat Català era minoritari"
+            ],
+            [
+              "Segona República",
+              "",
+              ""
+            ],
+            [
+              "Franquisme",
+              "",
+              ""
+            ],
+            [
+              "Transició",
+              "",
+              ""
+            ]
+          ]
+        },
+        "guio": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "que": "Defineix el separatisme i avança la teva valoració de l'afirmació.",
+            "inici": "Un moviment separatista és... Aquesta afirmació és [valoració], perquè..."
+          },
+          {
+            "tag": "Un per etapa",
+            "k": 2,
+            "que": "Què proposava el catalanisme en cada etapa i si era separatista o no.",
+            "pista": "**Raonament.** Per a cada etapa, digues si el catalanisme es mantenia en la mateixa línia, s'acostava a l'independentisme o se n'allunyava, i per què.",
+            "inici": "Durant la Restauració, ... / A la Segona República, ... / Durant el franquisme, ... / A la Transició, ..."
+          },
+          {
+            "tag": "Conclusió",
+            "k": 4,
+            "que": "Una valoració final que respongui directament l'afirmació.",
+            "inici": "En definitiva, l'afirmació..."
+          }
+        ],
+        "model": [
+          {
+            "tag": "Introducció",
+            "k": 1,
+            "text": "Un moviment separatista és el que vol separar un territori d'un Estat per crear-ne un de nou. L'afirmació és inexacta. Durant la major part del període, el catalanisme polític va reclamar el reconeixement de la personalitat de Catalunya, l'autonomia o una organització federal d'Espanya, i l'independentisme hi va ser un corrent minoritari. A més, la paraula «separatista» la feien servir sovint els seus adversaris per desqualificar-lo."
+          },
+          {
+            "why": "La introducció defineix el concepte clau de l'enunciat i avança la valoració que es demostrarà etapa per etapa."
+          },
+          {
+            "tag": "Restauració",
+            "k": 2,
+            "text": "{{Durant la Restauració, el catalanisme va ser majoritàriament autonomista i no separatista.}} Valentí Almirall defensava una Espanya federal, i en lliurar el Memorial de Greuges (1885) la comissió va assegurar al rei que no volia debilitar la unitat d'Espanya. Les Bases de Manresa (1892) proposaven un ampli autogovern, però mantenien un poder central comú. Prat de la Riba, a *La nacionalitat catalana* (1906), afirmava que Catalunya era una nació, però reivindicava un Estat català «en unió federativa» amb les altres nacionalitats d'Espanya i assegurava que el nacionalisme català «mai no ha estat separatista». A més, la Lliga Regionalista va col·laborar sovint amb els governs de Madrid. {{L'independentisme organitzat va ser molt minoritari, i la seva expressió principal va ser Estat Català, fundat per Francesc Macià el 1922.}} Tot i això, la premsa i els militars van fer servir l'acusació de separatisme contra tot el catalanisme, i Primo de Rivera la va utilitzar per justificar el seu cop d'estat (1923)."
+          },
+          {
+            "tag": "Segona República",
+            "k": 2,
+            "text": "{{A la Segona República, fins i tot el catalanisme més radical va acceptar l'autonomia dins d'Espanya.}} Macià va proclamar la República Catalana el 14 d'abril de 1931, però com a part d'una futura confederació de pobles ibèrics, i tres dies després la va convertir en la Generalitat. Després, el catalanisme va acceptar l'Estatut d'autonomia que van aprovar les Corts el 1932, tot i que retallava el projecte votat a Catalunya, l'Estatut de Núria. {{Ni tan sols el Sis d'Octubre de 1934 va ser una proclamació d'independència,}} ja que Companys va proclamar l'Estat Català com a part d'una República Federal Espanyola."
+          },
+          {
+            "why": "Les frases ressaltades són el raonament. En cada etapa diuen si el catalanisme s'acosta al separatisme o se n'allunya, i per què."
+          },
+          {
+            "tag": "Franquisme",
+            "k": 2,
+            "text": "{{El franquisme va identificar tot el catalanisme amb el separatisme per justificar-ne la persecució.}} El règim va abolir l'Estatut, va perseguir la llengua i la cultura catalanes i va executar el president Companys (1940). L'oposició catalana, però, va reclamar sobretot la democràcia i l'autonomia. L'Assemblea de Catalunya (1971) en va resumir el programa amb el lema «Llibertat, amnistia, Estatut d'Autonomia»."
+          },
+          {
+            "tag": "Transició",
+            "k": 2,
+            "text": "{{A la Transició, el catalanisme majoritari va tornar a optar per l'autonomia dins d'Espanya.}} La Generalitat es va restablir provisionalment el 1977, la Constitució de 1978 va reconèixer l'autonomia de les nacionalitats i regions, i l'Estatut de Sau (1979) es va aprovar en referèndum amb un ampli suport."
+          },
+          {
+            "tag": "Conclusió · 0,5 p",
+            "k": 4,
+            "text": "[[En definitiva,]] l'afirmació no s'ajusta als fets. Entre la Restauració i la Transició, el catalanisme polític va ser sobretot autonomista o federalista, i l'independentisme hi va ser minoritari. L'acusació de separatisme va servir sovint per combatre'l, sobretot per part de les dues dictadures, que van suprimir l'autogovern de Catalunya."
+          },
+          {
+            "why": "La conclusió respon directament l'afirmació i hi afegeix una interpretació, en lloc de resumir les etapes."
+          }
+        ]
+      }
+    ]
+  }
 }
