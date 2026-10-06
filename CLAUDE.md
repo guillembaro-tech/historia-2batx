@@ -105,7 +105,9 @@ A l'arrel hi ha còpies antigues que la web no fa servir (`tema-N.json`, `tema.j
 3. Obre la PR amb `gh api repos/guillembaro-tech/historia-2batx/pulls -f title="..." -f head=<branca> -f base=main -F body=@descripcio.md --jq .number`.
 4. Fusiona-la amb `gh api -X PUT repos/guillembaro-tech/historia-2batx/pulls/<N>/merge -f merge_method=squash -f commit_title="... (#<N>)"`.
 5. Sincronitza amb `git fetch`, `git checkout main` i `git merge --ff-only origin/main`.
-6. GitHub Pages publica els canvis en un minut, més o menys. Comprova'ls a `https://raw.githubusercontent.com/guillembaro-tech/historia-2batx/main/<fitxer>` i a la web, afegint `?v=<commit>` a l'adreça per evitar la memòria cau. Des d'aquest entorn, l'API de builds de Pages retorna 403.
+6. GitHub Pages publica els canvis en un minut, més o menys. Comprova que la publicació ha acabat bé amb `gh api "repos/guillembaro-tech/historia-2batx/actions/runs?per_page=1" --jq '.workflow_runs[0] | [.status, .conclusion]'`, i després mira els canvis a la web afegint `?v=<commit>` a l'adreça per evitar la memòria cau. Des d'aquest entorn no es poden llegir els registres de les execucions ni l'API de builds de Pages (403).
+
+No esborris el fitxer `.nojekyll` de l'arrel. Sense aquest fitxer, GitHub Pages processa els `.md` amb Jekyll, i les marques del taller que hi surten en aquesta guia (les claus dobles) en fan fallar la publicació.
 
 ## Estat actual (5 d'octubre de 2026)
 
