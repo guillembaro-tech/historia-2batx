@@ -79,7 +79,9 @@ A l'arrel hi ha còpies antigues que la web no fa servir (`tema-N.json`, `tema.j
 - **Marques de text.** `[[connector]]`, `{{frase de raonament}}` (exercici 3), `__terme obligatori__` (exercici 2), `**negreta**` i `*cursiva*`.
 - **Segells que es fan servir.** «Enunciat oficial · Sèrie 0, 2025», «Enunciat oficial · Exemples PAU 2026», «Elaboració pròpia en format PAU» i «Fonts reals · preguntes amb el format de la Sèrie 0».
 - **Respostes model.**
-  - No escriuen en primera persona ni imiten el format del rol (crònica, carta), perquè segons les FAQ oficials no es valora el format. El registre és sempre formal.
+  - A l'exercici 1 no diuen quin tipus de font és. Segons els correctors de la PAU, només cal quan la pregunta ho demana, per exemple quan demana comentar una font visual.
+  - A l'exercici 2 es posen en el personatge de l'enunciat i escriuen en primera persona, perquè els correctors de la PAU ho demanen (criteri de la reunió de correctors de la PAU, recollit a la web el 10 d'octubre de 2026). El personatge se situa en una o dues frases i, a partir d'aquí, explica el tema (causes, fets i conseqüències). No es queda en impressions subjectives. Només explica el que ha passat fins a la data de l'enunciat, i el que ve després ho planteja com una previsió. No imiten el format (titular, encapçalament o comiat de carta), perquè segons les FAQ oficials no es valora. El registre és sempre formal.
+  - A l'exercici 1 i al 3 no escriuen en primera persona.
   - A l'exercici 2 hi surten els cinc termes subratllats i altres termes de l'època.
   - A l'exercici 3, cada paràgraf d'etapa comença amb una frase de raonament, marcada amb `{{ }}`, que diu si el procés de l'enunciat avança, retrocedeix o es manté respecte a l'etapa anterior, i per què. La conclusió fa balanç i no resumeix.
 - **Puntuació oficial.** Exercici 1, 0,50 + 0,50 + 1,50. Exercici 2, 1,50 de contingut i 5 termes × 0,20. Exercici 3, 1,00 + 1,00 + 0,50. Exercici 4, deu preguntes tipus test (2,50).
@@ -109,10 +111,11 @@ A l'arrel hi ha còpies antigues que la web no fa servir (`tema-N.json`, `tema.j
 
 No esborris el fitxer `.nojekyll` de l'arrel. Sense aquest fitxer, GitHub Pages processa els `.md` amb Jekyll, i les marques del taller que hi surten en aquesta guia (les claus dobles) en fan fallar la publicació.
 
-## Estat actual (5 d'octubre de 2026)
+## Estat actual (10 d'octubre de 2026)
 
 - **Tema 1, La Restauració.** Complet, amb sis apartats, fonts, pràctica i el taller sencer. L'apartat 4 inclou la Mancomunitat i la qüestió catalana i remet al Tema 2.
 - **Tema 2, El catalanisme polític.** Complet, amb sis apartats, nou fonts, pràctica i el taller sencer.
+- **Taller, exercici 2.** Les quatre respostes model (temes 1 i 2) estan escrites des del personatge, en primera persona, segons el nou criteri dels correctors de la PAU.
 - **Temes 3 a 6.** Els JSON només tenen el títol, les dates, el resum i les dades de preguntes PAU, i al taller surten «en preparació».
 
 ## Material de referència

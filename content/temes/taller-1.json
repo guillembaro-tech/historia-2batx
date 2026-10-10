@@ -47,7 +47,7 @@
     "guia": [
       {
         "q": "Què em demanen exactament la 1.1 i la 1.2?",
-        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Ves directament a les idees."
+        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Això només cal quan la pregunta ho demana, per exemple si et demana que comentis una font visual. Ves directament a les idees."
       },
       {
         "q": "Quina diferència hi ha entre el tema i la idea?",
@@ -203,7 +203,7 @@
         "guia": [
           {
             "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos el corresponsal?",
-            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal escriure literalment com el personatge ni imitar el format d'un article, perquè segons les FAQ oficials no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+            "a": "Sí. Els correctors de la PAU demanen que et posis en el personatge. Escriu com el corresponsal, en primera persona si vols, des de la Barcelona de 1909. Ara bé, el personatge és el punt de partida, no el contingut. Si només expliques què veu o què sent, no respons l'exercici. A partir del personatge has d'explicar el tema, és a dir, les causes, els fets i les conseqüències de la Setmana Tràgica. No cal imitar el format d'un article, perquè no puntua, i el registre ha de ser formal."
           },
           {
             "q": "Quin moment he d'explicar?",
@@ -248,26 +248,26 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "que": "Situa els fets en el temps i l'espai i explica'n l'origen.",
-            "inici": "El juliol de 1909, Barcelona va viure... L'origen cal buscar-lo [on]..."
+            "que": "Situa't com a corresponsal en una frase (on ets i de què escrius) i explica l'origen dels fets.",
+            "inici": "Escric aquest article des de Barcelona, on... L'origen cal buscar-lo [on]..."
           },
           {
             "tag": "Fets",
             "k": 2,
             "que": "Què passa i com, amb alguna data i algun exemple concret.",
-            "inici": "El 26 de juliol, ... A més, ... Al mateix temps, ..."
+            "inici": "Solidaritat Obrera... va convocar... A més, ... Al mateix temps, ..."
           },
           {
             "tag": "Conseqüències",
             "k": 4,
             "que": "La repressió i els seus efectes polítics.",
-            "inici": "El govern va declarar... La repressió posterior..."
+            "inici": "Es va declarar... Des d'aleshores, la repressió..."
           },
           {
             "tag": "Valoració",
             "k": 4,
-            "que": "Una frase que doni sentit al conjunt.",
-            "inici": "En definitiva, ..."
+            "que": "Una frase que doni sentit al conjunt, des del que ha vist el corresponsal.",
+            "inici": "En definitiva, tot el que he pogut conèixer a Barcelona mostra..."
           }
         ],
         "rubrica": [
@@ -297,31 +297,31 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "text": "El juliol de 1909, Barcelona va viure una de les revoltes populars més greus de la Restauració, coneguda com la Setmana Tràgica. L'origen cal buscar-lo al Marroc. [[Després que]] grups rifenys van atacar els treballadors d'un ferrocarril miner prop de Melilla, el govern conservador d'Antoni Maura va decidir mobilitzar els __reservistes__. Molts eren obrers casats i amb fills, [[mentre que]] els joves de famílies benestants podien evitar el servei pagant la redempció en metàl·lic. [[Per això,]] l'embarcament de tropes al port de Barcelona va provocar protestes i un fort malestar als barris obrers."
+            "text": "Escric aquest article a finals d'octubre de 1909 des de Barcelona, on el meu diari m'ha enviat per explicar l'impacte de la Setmana Tràgica, la revolta popular que la ciutat va viure a finals de juliol. L'origen cal buscar-lo al Marroc. [[Després que]] grups rifenys van atacar els treballadors d'un ferrocarril miner prop de Melilla, el govern conservador d'Antoni Maura va decidir mobilitzar els __reservistes__, en una aventura colonial que aquí molta gent relaciona amb els interessos de les companyies mineres del Rif. Molts reservistes eren obrers casats i amb fills, [[mentre que]] els joves de famílies benestants podien evitar el servei pagant la redempció en metàl·lic. [[Per això,]] l'embarcament de tropes al port de Barcelona va provocar protestes i un fort malestar als barris obrers. Segons m'han explicat, mentre embarcaven les tropes es van sentir crits com «¡Que vayan los ricos!», que resumien bé aquest malestar."
           },
           {
-            "why": "El model no imita cap format d'article ni escriu en primera persona, perquè el que puntua és el contingut i l'ús dels termes. La causa explica el terme. No n'hi ha prou de dir «es van mobilitzar reservistes», cal dir per què això indignava."
+            "why": "El corresponsal se situa amb una sola frase (qui és, on és i de què escriu) i de seguida passa a explicar. Parla en primera persona, que és la manera més natural de posar-se en el personatge, però el que diu és història. La causa explica el terme. No n'hi ha prou de dir «es van mobilitzar reservistes», cal dir per què això indignava."
           },
           {
             "tag": "Fets",
             "k": 2,
-            "text": "El 26 de juliol, Solidaritat Obrera i altres organitzacions obreres van convocar una __vaga general__ contra la guerra. La protesta es va estendre ràpidament i els carrers de Barcelona i d'altres poblacions industrials es van omplir de __barricades__. [[A més,]] la revolta va prendre un caràcter antireligiós, i es van incendiar nombroses esglésies, convents i escoles religioses. Aquest __anticlericalisme__ popular, alimentat pel discurs del Partit Radical de Lerroux, expressava la identificació de l'Església amb les classes dominants. [[Al mateix temps,]] la notícia de la derrota del Barranco del Lobo, el 27 de juliol, va encendre encara més els ànims."
+            "text": "Solidaritat Obrera, amb anarquistes i socialistes, va convocar una __vaga general__ contra la guerra per al 26 de juliol. La protesta es va estendre ràpidament i els carrers de Barcelona i d'altres poblacions industrials es van omplir de __barricades__. [[A més,]] la revolta va prendre un caràcter antireligiós, i es van incendiar nombroses esglésies, convents i escoles religioses, de les quals encara es veuen les restes en molts barris. Aquest __anticlericalisme__ popular, alimentat pel discurs del Partit Radical de Lerroux, expressava la identificació de l'Església amb les classes dominants. [[Al mateix temps,]] la notícia de la derrota del Barranco del Lobo, el 27 de juliol, va encendre encara més els ànims."
           },
           {
-            "why": "Tres termes en un paràgraf, però cadascun amb una funció. La vaga general diu qui convoca, les barricades mostren què passa al carrer i l'anticlericalisme explica per què es cremen esglésies."
+            "why": "Tres termes en un paràgraf, però cadascun amb una funció. La vaga general diu qui convoca, les barricades mostren què passa al carrer i l'anticlericalisme explica per què es cremen esglésies. El detall que veu el corresponsal, les restes dels incendis, fa creïble el personatge, i de seguida s'explica què hi ha al darrere."
           },
           {
             "tag": "Conseqüències",
             "k": 4,
-            "text": "El govern va declarar l'estat de guerra i l'exèrcit va sufocar la revolta a principis d'agost. La repressió posterior va ser molt dura, amb nombrosos detinguts, consells de guerra i diverses execucions. El cas més polèmic va ser el de __Francesc Ferrer i Guàrdia__, pedagog llibertari i fundador de l'Escola Moderna, acusat sense proves sòlides de ser l'instigador de la revolta i afusellat al castell de Montjuïc el 13 d'octubre de 1909. La seva execució va provocar una onada de protestes a tot Europa i va contribuir a la caiguda del govern de Maura."
+            "text": "Les autoritats militars van declarar l'estat de guerra i l'exèrcit va sufocar la revolta a principis d'agost. Des d'aleshores, la repressió ha estat molt dura, amb nombrosos detinguts, consells de guerra i diverses execucions. El cas més polèmic ha estat el de __Francesc Ferrer i Guàrdia__, pedagog llibertari i fundador de l'Escola Moderna, acusat sense proves sòlides de ser l'instigador de la revolta i afusellat al castell de Montjuïc el 13 d'octubre. La seva execució ha provocat una onada de protestes a tot Europa i, fa pocs dies, ha contribuït a la caiguda del govern de Maura."
           },
           {
             "tag": "Valoració",
             "k": 4,
-            "text": "[[En definitiva,]] la Setmana Tràgica va mostrar el rebuig de les classes populars a la guerra colonial i la profunda fractura social de la Restauració."
+            "text": "[[En definitiva,]] tot el que he pogut conèixer a Barcelona mostra el rebuig de les classes populars a la guerra colonial i la profunda fractura social que viu l'Espanya de la Restauració."
           },
           {
-            "why": "Fixa't que el model fa servir altres termes de l'època, com redempció en metàl·lic, Solidaritat Obrera, Partit Radical, Escola Moderna o estat de guerra. Els cinc termes obligatoris són necessaris, però no suficients."
+            "why": "Fixa't que el model fa servir altres termes de l'època, com redempció en metàl·lic, Solidaritat Obrera, Partit Radical, Escola Moderna o estat de guerra. Els cinc termes obligatoris són necessaris, però no suficients. A més, el corresponsal escriu a finals d'octubre de 1909 i només explica el que ha passat fins aleshores."
           }
         ]
       },
@@ -330,7 +330,7 @@
         "boto": "b · Eleccions de 1891",
         "segell": "Elaboració pròpia en format PAU",
         "oficial": false,
-        "enunciat": "Sou un periodista estranger que el febrer de 1891 recorre una comarca rural per informar de les primeres eleccions generals celebrades amb sufragi universal masculí. Redacteu una crònica on expliqueu com s'han preparat i com s'han desenvolupat les eleccions, utilitzant de manera adequada els cinc termes següents: torn pacífic, encasellat, cacic, oligarquia i Cánovas (l'ús de cada terme històric val 0,20 punts).",
+        "enunciat": "Sou un periodista estranger que el febrer de 1891 recorre una comarca rural per informar de les primeres eleccions generals celebrades d'acord amb la llei de sufragi universal masculí de 1890. Redacteu una crònica on expliqueu com s'han preparat i com s'han desenvolupat les eleccions, utilitzant de manera adequada els cinc termes següents: torn pacífic, encasellat, cacic, oligarquia i Cánovas (l'ús de cada terme històric val 0,20 punts).",
         "termes": [
           "torn pacífic",
           "encasellat",
@@ -341,7 +341,7 @@
         "guia": [
           {
             "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos el periodista?",
-            "a": "El rol et situa en una comarca rural, on el caciquisme era més fort. No cal escriure en primera persona ni imitar el format d'una crònica, perquè puntua el contingut i l'ús dels termes. Mantén sempre un registre formal."
+            "a": "Sí. Els correctors de la PAU demanen que et posis en el personatge. Escriu com el periodista estranger, en primera persona si vols, des d'una comarca rural el febrer de 1891, on el caciquisme era més fort. El personatge és el punt de partida. A partir del que veu, has d'explicar com es preparen i com es fan les eleccions. No cal imitar el format d'una crònica, perquè no puntua, i el registre ha de ser formal."
           },
           {
             "q": "Quin moment he d'explicar?",
@@ -386,26 +386,26 @@
           {
             "tag": "Context",
             "k": 1,
-            "que": "La llei de 1890 i la paradoxa que vols explicar.",
-            "inici": "El febrer de 1891 es van celebrar... Tanmateix, ..."
+            "que": "Situa't com a periodista (on ets i què has vingut a fer) i planteja la paradoxa de la llei de 1890.",
+            "inici": "Fa uns dies que recorro [on] per explicar... Tanmateix, el que he vist aquí..."
           },
           {
             "tag": "Preparació",
             "k": 3,
             "que": "Com es decideix el resultat des de Madrid.",
-            "inici": "El juliol de 1890, ... D'acord amb el torn pacífic, ..."
+            "inici": "Per entendre-ho, cal saber com s'havien preparat les eleccions a Madrid. El juliol de 1890, ... D'acord amb el torn pacífic, ..."
           },
           {
             "tag": "Desenvolupament",
             "k": 2,
             "que": "Com es garanteix el resultat a cada poble.",
-            "inici": "A les comarques rurals, ... Per això, ..."
+            "inici": "Aquí, a la comarca, he pogut comprovar com... Per això, ..."
           },
           {
             "tag": "Valoració",
             "k": 4,
             "que": "Qui governa realment.",
-            "inici": "En definitiva, darrere de les institucions liberals..."
+            "inici": "En definitiva, darrere de les institucions liberals que he vingut a observar..."
           }
         ],
         "rubrica": [
@@ -435,12 +435,15 @@
           {
             "tag": "Context",
             "k": 1,
-            "text": "El febrer de 1891 es van celebrar les primeres eleccions generals amb sufragi universal masculí. La llei de 1890, impulsada pel govern liberal de Sagasta, permetia votar a tots els homes majors de vint-i-cinc anys. [[Tanmateix,]] l'ampliació del dret de vot no va canviar el funcionament real del sistema."
+            "text": "Fa uns dies que recorro una comarca rural per explicar als lectors del meu diari com han anat les eleccions generals de l'1 de febrer de 1891, les primeres que s'han fet d'acord amb la llei de sufragi universal masculí de 1890. Aquesta llei, impulsada pel govern liberal de Sagasta, permet votar a tots els homes majors de vint-i-cinc anys. [[Tanmateix,]] el que he vist aquí m'ha fet entendre que l'ampliació del dret de vot no ha canviat el funcionament real del sistema."
+          },
+          {
+            "why": "El periodista se situa en la primera frase (qui és, on és i què ha vingut a fer) i ja hi planteja la idea que vol explicar, que és la paradoxa d'un sufragi més ampli que no canvia els resultats."
           },
           {
             "tag": "Preparació",
             "k": 3,
-            "text": "El juliol de 1890, la reina regent havia encarregat el govern a __Cánovas__, cap del Partit Conservador. D'acord amb el __torn pacífic__, l'alternança pactada entre conservadors i liberals, el nou govern havia de convocar eleccions per obtenir una majoria còmoda a les Corts. [[Per aconseguir-ho,]] des del Ministeri de la Governació es va elaborar l'__encasellat__, és a dir, la llista dels candidats que havien de sortir elegits a cada districte, en què també es reservaven escons per als liberals."
+            "text": "Per entendre-ho, cal saber com s'havien preparat les eleccions a Madrid. El juliol de 1890, la reina regent havia encarregat el govern a __Cánovas__, cap del Partit Conservador. D'acord amb el __torn pacífic__, l'alternança pactada entre conservadors i liberals, el nou govern havia de convocar eleccions per obtenir una majoria còmoda a les Corts. [[Per aconseguir-ho,]] des del Ministeri de la Governació es va elaborar l'__encasellat__, és a dir, la llista dels candidats que havien de sortir elegits a cada districte, en què també es reservaven escons per als liberals."
           },
           {
             "why": "Cada terme respon a una pregunta. Cánovas diu qui governa, el torn pacífic explica per què canvia el govern i l'encasellat, com es decideixen els resultats."
@@ -448,12 +451,15 @@
           {
             "tag": "Desenvolupament",
             "k": 2,
-            "text": "A les comarques rurals, el governador civil i, sobretot, el __cacic__ local, sovint un gran propietari que controlava la feina, els préstecs i els favors, s'encarregaven de garantir el resultat. Ho feien amb pressions sobre els jornalers, compra de vots i manipulació d'actes, l'anomenat pucherazo. [[Per això,]] el resultat era conegut abans d'obrir les urnes."
+            "text": "Aquí, a la comarca, he pogut comprovar com el governador civil i, sobretot, el __cacic__ local s'encarregaven de garantir el resultat. El cacic és sovint un gran propietari que controla la feina, els préstecs i els favors, i per això pocs jornalers s'atreveixen a votar contra el seu candidat. M'han explicat casos de pressions, de compra de vots i de manipulació d'actes, l'anomenat pucherazo. [[Per això,]] al poble on m'he allotjat, tothom coneixia el resultat abans d'obrir les urnes."
+          },
+          {
+            "why": "El que el periodista veu i sent a la comarca serveix per explicar com funciona el caciquisme. Les impressions del personatge sempre van lligades a una explicació."
           },
           {
             "tag": "Valoració",
             "k": 4,
-            "text": "[[En definitiva,]] darrere de les institucions liberals governava una __oligarquia__ de polítics i grans propietaris que es repartia el poder a través de la xarxa caciquil. Només a les ciutats, on el vot era més difícil de controlar, la manipulació resultava més complicada."
+            "text": "[[En definitiva,]] darrere de les institucions liberals que he vingut a observar, qui governa realment és una __oligarquia__ de polítics i grans propietaris que es reparteix el poder a través de la xarxa caciquil. Només a les ciutats, on el vot és més difícil de controlar, la manipulació resulta més complicada."
           },
           {
             "why": "El terme més abstracte (oligarquia) es reserva per a la valoració final, on fa de conclusió."
