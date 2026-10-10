@@ -99,7 +99,7 @@
   ];
   var EX1_ERRORS = [
     "Copiar o parafrasejar la font sense vocabulari propi. Segons les FAQ oficials, aquesta resposta no es pot qualificar, ni tan sols parcialment.",
-    "Començar la 1.1 explicant quin tipus de font és. L'enunciat no ho demana i no puntua, i ocupa espai que necessites per a les idees.",
+    "Començar la 1.1 explicant quin tipus de font és. Si la pregunta no ho demana, no puntua i ocupa espai que necessites per a les idees. Només té sentit quan et demanen que comentis una font visual, com una fotografia, un cartell o una caricatura.",
     "Fer un resum de tota la font en lloc d'identificar-ne dues idees fonamentals i explicar-les bé.",
     "Convertir la 1.3 en un tema. La 1.3 es construeix a partir de les dues fonts; el context només serveix per explicar-les.",
     "Repetir a la 1.3 el que ja has dit a la 1.1 i la 1.2. Hi has de partir d'aquestes idees, però per confrontar-les."
@@ -156,8 +156,10 @@
   var EX2_ERRORS = [
     "Posar els termes en una llista o definir-los un per un. «Ús adequat» vol dir integrar-los en el procés històric, relacionar-los entre ells i fer-los formar part real de la resposta.",
     "Fer servir només els cinc termes. Són condició necessària però no suficient. Una bona resposta n'hi afegeix d'altres de l'època, alguna data i algun exemple concret.",
-    "Fer una exposició del tema. L'enunciat demana un text centrat en un moment concret.",
-    "Escriure en un registre col·loquial perquè l'enunciat et dona un rol. El rol és un recurs; el registre ha de ser formal."
+    "Fer una exposició impersonal del tema, com si no hi hagués cap personatge. Els correctors de la PAU demanen que et posis en el personatge de l'enunciat i escriguis des del seu lloc i el seu moment.",
+    "Quedar-te en les impressions del personatge (què sent, què veu, quina por té) sense explicar el tema. Pots parlar en primera persona, però el personatge és el punt de partida, i el que puntua és l'explicació històrica.",
+    "Fer explicar al personatge fets que encara no han passat. Situa't en la data de l'enunciat i explica el que ha passat fins aleshores.",
+    "Escriure en un registre col·loquial perquè parles en primera persona. Posar-se en el personatge no vol dir deixar el registre formal ni el vocabulari històric."
   ];
   function ex2(e) {
     var o = e.opcions;
@@ -167,24 +169,27 @@
         + guide(x.guia, "Descompon l'enunciat", x.id);
     });
     var s2 = sketch(each(o, function (x) { return wrapOpt(x.id, boxes(x.esquema)); })) + pits(EX2_ERRORS);
-    var s3 = banner("A l'exercici 2 l'ortografia i la presentació compten, i poden restar fins a 0,25 punts (0,05 per falta, fins a quatre faltes, i 0,05 per presentació).") + each(o, function (x) { return plan(x.guio, x.id); });
+    var s3 = banner("A l'exercici 2 l'ortografia i la presentació compten, i poden restar fins a 0,25 punts (0,05 per falta, fins a quatre faltes, i 0,05 per presentació).")
+      + '<p class="note">Comença situant-te com a personatge en una o dues frases (qui ets, on ets i quan). A partir d\'aquí, cada paràgraf ha d\'explicar una part del tema, és a dir, les causes, els fets i les conseqüències.</p>'
+      + each(o, function (x) { return plan(x.guio, x.id); });
     var groups = [{ titol: "Contingut de la redacció", max: 1.5, items: [
-      { t: "He situat els fets en el temps i l'espai, amb alguna data concreta.", w: 0.3 },
-      { t: "He explicat les causes o els antecedents.", w: 0.3 },
-      { t: "He explicat els fets amb algun exemple concret.", w: 0.3 },
-      { t: "He explicat les conseqüències i he tancat amb una valoració.", w: 0.3 },
-      { t: "He fet servir altres termes de l'època, a més dels cinc obligatoris.", w: 0.3 }
+      { t: "M'he posat en el personatge de l'enunciat i escric des del seu lloc i el seu moment, però explico el tema i no em quedo en les seves impressions.", w: 0.25 },
+      { t: "He situat els fets en el temps i l'espai, amb alguna data concreta.", w: 0.25 },
+      { t: "He explicat les causes o els antecedents.", w: 0.25 },
+      { t: "He explicat els fets amb algun exemple concret.", w: 0.25 },
+      { t: "He explicat les conseqüències i he tancat amb una valoració.", w: 0.25 },
+      { t: "He fet servir altres termes de l'època, a més dels cinc obligatoris.", w: 0.25 }
     ] }];
     o.forEach(function (x) {
       groups.push({ titol: "Ús adequat dels termes", max: 1, opt: x.id,
         nota: "Un terme compta si forma part del relat i es relaciona amb els altres. Si no l'uses o l'uses malament, no resta, simplement no suma. " + (x.nota_termes || "S'admeten derivats de la mateixa família."),
         items: x.rubrica.map(function (r) { return { t: "**" + r.terme + "** · " + r.text, w: 0.2 }; }) });
     });
-    var steps = step(0, "Llegeix l'enunciat i situa el moment", "L'exercici 2 et situa en un moment concret del passat. No és l'exposició d'un tema, sinó un text centrat en aquell moment i construït amb els cinc termes.", s1)
+    var steps = step(0, "Llegeix l'enunciat i situa el moment", "L'exercici 2 et situa en un moment concret del passat i et dona un personatge. Has d'escriure des d'aquest personatge, i pots fer-ho en primera persona, però el text ha d'explicar aquell moment amb els cinc termes. No és l'exposició impersonal d'un tema ni un relat només d'impressions.", s1)
       + step(1, "Planifica i ordena els termes en el temps", "Copia aquest esquema i col·loca cada terme a la casella on té sentit. Si un terme no encaixa enlloc, encara no l'entens prou i has de tornar al temari.", s2)
-      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", s3)
-      + step(3, "Autoavalua't amb el full davant", "Primer compta els termes subratllats. Després comprova si cada terme fa una feina dins del relat o només hi és de pas.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment del contingut és una guia. Recorda el possible descompte per ortografia i presentació."))
-      + step(4, "Compara amb una resposta model", "Fixa't sobretot en com cada terme subratllat està lligat a una causa o a una conseqüència.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw"></i>connector</span><span><i class="sw t"></i>terme obligatori</span>'));
+      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Parla des del personatge, però explica el tema. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", s3)
+      + step(3, "Autoavalua't amb el full davant", "Primer compta els termes subratllats. Després comprova si cada terme fa una feina dins del relat o només hi és de pas, i si el personatge explica el tema o només diu el que sent.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment del contingut és una guia. Recorda el possible descompte per ortografia i presentació."))
+      + step(4, "Compara amb una resposta model", "Fixa't en com el personatge se situa al principi i, a partir d'aquí, explica el tema, i en com cada terme subratllat està lligat a una causa o a una conseqüència.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw"></i>connector</span><span><i class="sw t"></i>terme obligatori</span>'));
     return exSection('e2', [["Contingut de la redacció", "1,50"], ["Cinc termes × 0,20", "1,00"]], optsBar(o), steps);
   }
 
@@ -247,7 +252,8 @@
       ["Temps", "Per ordenar fets i etapes.", ["a partir de", "des de... fins a", "posteriorment", "poc després", "durant", "finalment"]],
       ["Exemplificar", "Per baixar de la idea al fet concret.", ["per exemple", "com ara", "en el cas de", "així ho mostra"]],
       ["Concloure", "Per obrir la conclusió de la 1.3 o de l'exercici 3.", ["en conclusió", "en definitiva", "en síntesi", "per tot plegat"]],
-      ["Deduir amb rigor", "Construccions impersonals, més formals que la primera persona.", ["es pot deduir que", "es considera que", "la font posa de manifest", "l'autor denuncia"]]
+      ["Deduir amb rigor", "Construccions impersonals per a l'exercici 1 i el 3, més formals que la primera persona.", ["es pot deduir que", "es considera que", "la font posa de manifest", "l'autor denuncia"]],
+      ["Parlar des del personatge", "Per a l'exercici 2. Situa't en una o dues frases i passa de seguida a explicar el tema.", ["escric des de...", "aquests dies he vist que...", "per entendre-ho, cal tornar a...", "tot això s'explica perquè...", "segons m'han explicat...", "ara com ara..."]]
     ];
     var E = [
       ["Desde el 1876...", "Des del 1876...", "«Desde» és castellà."],
@@ -268,7 +274,7 @@
       + '<div class="tip"><b>Regles d\'estil que valoren els correctors.</b> Una idea per paràgraf i punt i a part per a cada idea nova. Si escrius «en primer lloc» o «d\'una banda», ha d\'aparèixer «en segon lloc» o «d\'altra banda». Dates concretes, però sense repetir-les. Majúscules quan canvien el significat, com a l\'Església, l\'Exèrcit, la Restauració o el Desastre del 98.</div></div>';
   }
 
-  var FOOT = '<p class="tl-foot">Les puntuacions i els criteris provenen dels criteris d\'avaluació i de les FAQ de les PAU d\'Història. Descriptors reproduïts literalment del document «Glossari i descriptors» PAU26. Els enunciats marcats com a oficials provenen de la Sèrie 0 (2025) i dels exemples PAU 2026; els d\'elaboració pròpia segueixen el format oficial, però no provenen de cap convocatòria. Els blocs de punts de l\'autoavaluació són oficials; el repartiment intern de cada bloc és una guia, no un criteri de correcció.</p>';
+  var FOOT = '<p class="tl-foot">Les puntuacions i els criteris provenen dels criteris d\'avaluació i de les FAQ de les PAU d\'Història, i de les indicacions més recents dels correctors.Descriptors reproduïts literalment del document «Glossari i descriptors» PAU26. Els enunciats marcats com a oficials provenen de la Sèrie 0 (2025) i dels exemples PAU 2026; els d\'elaboració pròpia segueixen el format oficial, però no provenen de cap convocatòria. Els blocs de punts de l\'autoavaluació són oficials; el repartiment intern de cada bloc és una guia, no un criteri de correcció.</p>';
 
   /* ---------- vistes ---------- */
   function heroTema(n, extra) {
@@ -321,7 +327,7 @@
       + '</div></section>'
       + '<section class="tl-sec"><h2>Com es puntua cada exercici</h2><p class="sub">Criteris oficials. El taller treballa els exercicis 1, 2 i 3, que són els que demanen redactar.</p><div class="tablewrap tl-val"><table><thead><tr><th>Exercici</th><th>Què es valora</th><th>Punts</th></tr></thead><tbody>'
       + '<tr><td>1 · Anàlisi crítica de fonts</td><td>A la 1.1 i la 1.2, dues idees fonamentals de cada font. A la 1.3, una breu redacció que compara les fonts i les relaciona amb el context.</td><td class="num">0,50 + 0,50 + 1,50</td></tr>'
-      + '<tr><td>2 · Situeu-vos en el temps</td><td>Contingut de la redacció i ús adequat dels cinc termes (0,20 cadascun).</td><td class="num">1,50 + 1,00</td></tr>'
+      + '<tr><td>2 · Situeu-vos en el temps</td><td>Contingut de la redacció, escrita des del personatge que proposa l\'enunciat, i ús adequat dels cinc termes (0,20 cadascun).</td><td class="num">1,50 + 1,00</td></tr>'
       + '<tr><td>3 · Glossari</td><td>Descripció i explicació dels continguts, raonament dels canvis o continuïtats i breu conclusió.</td><td class="num">1,00 + 1,00 + 0,50</td></tr>'
       + '<tr><td>4 · Poseu a prova els vostres sabers</td><td>Deu preguntes tipus test. Cada encert suma 0,25 i cada error resta 0,08; les respostes en blanc no compten.</td><td class="num">2,50</td></tr>'
       + '</tbody></table></div><p class="sub" style="margin-top:10px">Als exercicis 2 i 3, les faltes d\'ortografia i la presentació poden restar fins a 0,25 punts.</p></section>' + FOOT + '</div>';

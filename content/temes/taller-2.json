@@ -45,7 +45,7 @@
     "guia": [
       {
         "q": "Què em demanen exactament la 1.1 i la 1.2?",
-        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Ves directament a les idees."
+        "a": "Dues idees fonamentals de cada font, i prou. No et demanen un resum, ni un comentari de text, ni que diguis quin tipus de font és. Això només cal quan la pregunta ho demana, per exemple si et demana que comentis una font visual. Ves directament a les idees."
       },
       {
         "q": "Quina diferència hi ha entre el tema i la idea?",
@@ -209,7 +209,7 @@
         "guia": [
           {
             "q": "Quin paper em proposa l'enunciat? He d'escriure com si fos periodista?",
-            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal imitar el format del text que et proposen ni escriure en primera persona, perquè segons les FAQ oficials no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+            "a": "Sí. Els correctors de la PAU demanen que et posis en el personatge. Escriu com el periodista, en primera persona si vols, l'endemà de les eleccions. Això vol dir que només saps el que ha passat fins al 22 d'abril de 1907, i que les dificultats de la coalició les has de plantejar com una previsió. El personatge és el punt de partida, però el que puntua és que expliquis el tema. No cal imitar el format d'una crònica, i el registre ha de ser formal."
           },
           {
             "q": "Quin moment he d'explicar?",
@@ -242,11 +242,11 @@
             ]
           },
           {
-            "titol": "Després · conseqüències",
+            "titol": "Després · el que pot passar",
             "items": [
               "El catalanisme, moviment de masses",
-              "Divisions per la llei d'administració local de Maura",
-              "Ruptura després de la Setmana Tràgica (1909)"
+              "Coalició heterogènia, des dels carlins fins als republicans",
+              "Quina actitud prendre davant del govern de Maura"
             ]
           }
         ],
@@ -254,20 +254,20 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "que": "Situa les eleccions i explica per què es va formar la coalició.",
-            "inici": "El 21 d'abril de 1907, Catalunya va votar... L'origen cal buscar-lo [on]..."
+            "que": "Situa't com a periodista l'endemà de les eleccions i explica per què es va formar la coalició.",
+            "inici": "Ahir, 21 d'abril de 1907, Catalunya va viure... L'origen cal buscar-lo [on]..."
           },
           {
             "tag": "Fets",
             "k": 2,
             "que": "Qui formava la Solidaritat, què reclamava i com va anar la campanya, amb alguna data i algun exemple concret.",
-            "inici": "La Solidaritat Catalana aplegava... El seu programa... Tres dies abans de les eleccions..."
+            "inici": "La Solidaritat Catalana aplega... Dijous passat, ... El seu programa..."
           },
           {
             "tag": "Conseqüències",
             "k": 4,
-            "que": "El resultat de les eleccions i les dificultats de la coalició.",
-            "inici": "La victòria va mostrar... Tanmateix, ..."
+            "que": "Què demostra la victòria i quines dificultats pot tenir la coalició, plantejades com una previsió.",
+            "inici": "La victòria d'ahir demostra... Tanmateix, no és segur que..."
           },
           {
             "tag": "Valoració",
@@ -303,31 +303,34 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "text": "El 21 d'abril de 1907, Catalunya va viure unes eleccions generals excepcionals. Una coalició de gairebé totes les forces polítiques catalanes, la __Solidaritat Catalana__, va obtenir 41 dels 44 escons en joc i va deixar gairebé sense representació els partits del torn. L'origen cal buscar-lo als __fets del Cu-cut!__. El novembre de 1905, després que la __Lliga Regionalista__ guanyés les eleccions municipals de Barcelona, uns tres-cents oficials de la guarnició van assaltar les redaccions del setmanari satíric *Cu-cut!* i del diari *La Veu de Catalunya* per un acudit que es reia de l'exèrcit. [[En lloc de]] castigar-los, el govern liberal de Segismundo Moret va cedir a la pressió militar i va aprovar la __Llei de jurisdiccions__ (1906), que feia jutjar pels tribunals militars les ofenses a l'exèrcit."
+            "text": "Ahir, 21 d'abril de 1907, Catalunya va viure unes eleccions generals excepcionals, i en aquesta crònica vull explicar per què. Una coalició de gairebé totes les forces polítiques catalanes, la __Solidaritat Catalana__, ha guanyat a gairebé tots els districtes i, segons els primers recomptes, s'emportarà 41 dels 44 escons en joc. Els partits del torn s'han quedat gairebé sense representació. L'origen cal buscar-lo als __fets del Cu-cut!__. El novembre de 1905, després que la __Lliga Regionalista__ guanyés les eleccions municipals de Barcelona, uns tres-cents oficials de la guarnició van assaltar les redaccions del setmanari satíric *Cu-cut!* i del diari *La Veu de Catalunya* per un acudit que es reia de l'exèrcit. El govern liberal de Montero Ríos no els va castigar i va acabar dimitint, i el nou govern de Segismundo Moret, [[en lloc de]] defensar el poder civil, va cedir a la pressió militar i va aprovar la __Llei de jurisdiccions__ (1906), que fa jutjar pels tribunals militars les ofenses a l'exèrcit."
           },
           {
-            "why": "El model no imita cap format de crònica ni escriu en primera persona, perquè el que puntua és el contingut. La causa explica els termes. No n'hi ha prou de dir que hi va haver un assalt, cal explicar per què la resposta del govern va indignar la societat catalana."
+            "why": "El periodista se situa amb una frase (escriu l'endemà de les eleccions) i de seguida passa a explicar per què s'ha format la coalició. No n'hi ha prou de dir que hi va haver un assalt, cal explicar per què la resposta del govern va indignar la societat catalana."
           },
           {
             "tag": "Fets",
             "k": 2,
-            "text": "Molts catalans van veure la llei com un atac a la llibertat d'expressió i un retrocés del poder civil davant del militar. [[Per això]] es va formar la Solidaritat Catalana, que anava des dels carlins fins als republicans de Nicolás Salmerón, antic president de la Primera República. Només en quedaven fora els partits dinàstics i els republicans de Lerroux. La Lliga n'era l'eix, i un dels seus principals organitzadors era __Cambó__, que tres dies abans de les eleccions va resultar ferit en un atemptat a Hostafrancs, atribuït a seguidors de Lerroux. El programa de la coalició, llegit al teatre Tívoli, reclamava derogar la llei i descentralitzar l'Estat."
+            "text": "Molts catalans van veure aquesta llei com un atac a la llibertat d'expressió i un retrocés del poder civil davant del militar. [[Per això]] es va formar la Solidaritat Catalana, que va des dels carlins fins als republicans de Nicolás Salmerón, antic president de la Primera República. Només en queden fora els partits dinàstics i els republicans de Lerroux. La Lliga n'és l'eix, i un dels seus principals organitzadors és __Cambó__, que dijous passat va resultar ferit en un atemptat a Hostafrancs que molts atribueixen a seguidors de Lerroux. El programa de la coalició, que vaig escoltar al teatre Tívoli el 14 d'abril, reclama derogar la llei i descentralitzar l'Estat."
           },
           {
-            "why": "Cada terme té una funció. La Solidaritat és la resposta a la llei, la Lliga n'és l'eix i Cambó, un dels dirigents. L'atemptat és el detall concret que dona vida al relat."
+            "why": "Cada terme té una funció. La Solidaritat és la resposta a la llei, la Lliga n'és l'eix i Cambó, un dels dirigents. L'atemptat és el detall concret que dona vida al relat. El periodista en parla tal com se'n parlava aquells dies, però encara avui no se sap amb certesa qui en va ser el responsable."
           },
           {
             "tag": "Conseqüències",
             "k": 4,
-            "text": "La victòria va mostrar que el catalanisme s'havia convertit en un moviment de masses capaç de derrotar el caciquisme. [[Tanmateix,]] la coalició tenia poques coses en comú més enllà del rebuig a la llei. Hi convivien conservadors i republicans, catòlics i anticlericals, i aviat la van dividir debats com el del projecte de llei d'administració local de Maura. [[Finalment,]] la Setmana Tràgica (1909) la va trencar, quan la Lliga va donar suport a la repressió del govern."
+            "text": "La victòria d'ahir demostra que el catalanisme s'ha convertit en un moviment de masses capaç de derrotar el caciquisme dels partits del torn. [[Tanmateix,]] no és segur que la coalició es mantingui unida gaire temps. Té poques coses en comú més enllà del rebuig a la Llei de jurisdiccions, i hi conviuen conservadors i republicans, catòlics i anticlericals. [[A més,]] ara els diputats solidaris hauran de decidir quina actitud prenen a les Corts davant del govern conservador d'Antoni Maura, i serà difícil que la Lliga i els republicans hi coincideixin."
+          },
+          {
+            "why": "El periodista escriu el 22 d'abril de 1907 i no pot saber com acabarà la coalició. Per això planteja les dificultats com una previsió, a partir del que ja sap. És el que demana l'enunciat, i així no explica fets que encara no han passat."
           },
           {
             "tag": "Valoració",
             "k": 4,
-            "text": "[[En definitiva,]] les eleccions de 1907 van mostrar la força del catalanisme, però també la fragilitat d'una unitat construïda només contra un enemic comú."
+            "text": "[[En definitiva,]] les eleccions d'ahir mostren la força del catalanisme, però també la fragilitat d'una unitat construïda només contra un enemic comú."
           },
           {
-            "why": "Fixa't que el model fa servir altres termes de l'època, com caciquisme, partits del torn, Lerroux o Setmana Tràgica. Els cinc termes obligatoris són necessaris, però no suficients."
+            "why": "Fixa't que el model fa servir altres termes de l'època, com caciquisme, partits del torn, Lerroux, programa del Tívoli o Antoni Maura. Els cinc termes obligatoris són necessaris, però no suficients."
           }
         ]
       },
@@ -347,7 +350,7 @@
         "guia": [
           {
             "q": "Quin paper em proposa l'enunciat? He d'escriure una carta?",
-            "a": "El rol és un recurs perquè et situïs en aquell moment i pensis què hi veuria algú que hi fos. No cal imitar el format del text que et proposen ni escriure en primera persona, perquè segons les FAQ oficials no es valora el format, sinó el contingut i l'ús dels termes. Mantén sempre un registre formal."
+            "a": "Has d'escriure com algú que és a la plaça de Sant Jaume el 14 d'abril de 1931 i explica a un amic què ha passat. Els correctors de la PAU demanen que et posis en el personatge, i pots fer-ho en primera persona. No cal encapçalament ni comiat de carta, perquè el format no puntua. El que puntua és que, a partir del personatge, expliquis el tema amb un registre formal."
           },
           {
             "q": "Quin moment he d'explicar?",
@@ -392,20 +395,20 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "que": "Explica per què el catalanisme es va fer republicà durant la Dictadura.",
-            "inici": "Aquest 14 d'abril de 1931, ... Per entendre-ho cal tornar a [quan]..."
+            "que": "Situa't a la plaça (on ets i quan) i explica per què el catalanisme es va fer republicà durant la Dictadura.",
+            "inici": "T'escric des de [on], perquè avui, 14 d'abril de 1931, ... Per entendre-ho cal tornar a [quan]..."
           },
           {
             "tag": "Fets",
             "k": 2,
             "que": "El camí de 1926 a 1931, amb alguna data i algun exemple concret.",
-            "inici": "El 1926, ... Després de la caiguda del dictador, ... El març de 1931, ..."
+            "inici": "El 1926, ... Després de la caiguda del dictador, ... El març passat, ..."
           },
           {
             "tag": "Conseqüències",
             "k": 4,
             "que": "Què ha passat el 12 i el 14 d'abril.",
-            "inici": "El 12 d'abril, ... Avui, ..."
+            "inici": "Diumenge passat, 12 d'abril, ... Avui, des d'aquesta plaça, he vist com..."
           },
           {
             "tag": "Valoració",
@@ -441,15 +444,15 @@
           {
             "tag": "Context i causes",
             "k": 3,
-            "text": "Aquest 14 d'abril de 1931, Barcelona ha viscut la proclamació de la República. Per entendre-ho cal tornar a la Dictadura de Primo de Rivera (1923-1930), que va suprimir la Mancomunitat de Catalunya i va perseguir la llengua i els símbols catalans. [[Com que]] el rei Alfons XIII havia acceptat la Dictadura, molts catalanistes, fins i tot moderats, van concloure que l'autonomia només seria possible amb una república. Una de les figures que millor ho representava era __Francesc Macià__, un antic tinent coronel que el 1922 havia fundat __Estat Català__, una organització independentista disposada a recórrer a la insurrecció armada."
+            "text": "T'escric des de la plaça de Sant Jaume, plena de gent, perquè avui, 14 d'abril de 1931, Barcelona ha viscut la proclamació de la República. Sé que des de fora costa d'entendre per què tants catalans han acabat confiant en la república, i per això t'ho vull explicar. Cal tornar a la Dictadura de Primo de Rivera (1923-1930), que va suprimir la Mancomunitat de Catalunya i va perseguir la llengua i els símbols catalans. [[Com que]] el rei Alfons XIII havia acceptat la Dictadura, molts catalanistes, fins i tot moderats, van concloure que l'autonomia només seria possible amb una república. Una de les figures que millor ho representa és __Francesc Macià__, un antic tinent coronel que el 1922 va fundar __Estat Català__, una organització independentista disposada a recórrer a la insurrecció armada."
           },
           {
-            "why": "El context explica la idea central de l'enunciat, és a dir, per què el catalanisme es va unir al republicanisme."
+            "why": "La carta comença dient qui escriu, on és i quan, i de seguida diu què vol explicar, que és la pregunta de l'enunciat. No cal encapçalament ni comiat, perquè el format no puntua. El context explica la idea central de l'enunciat, és a dir, per què el catalanisme es va unir al republicanisme."
           },
           {
             "tag": "Fets",
             "k": 2,
-            "text": "El novembre de 1926, Macià va intentar una invasió armada de Catalunya des de __Prats de Molló__, a la Catalunya del Nord, però la policia francesa la va avortar. El judici que se li va fer a París el va convertir en un símbol de la resistència a la Dictadura. [[Després de]] la caiguda del dictador, els republicans espanyols i els nacionalistes catalans van signar el __Pacte de Sant Sebastià__ (agost de 1930), en què es comprometien a portar la República i a reconèixer l'autonomia de Catalunya. [[Finalment,]] el març de 1931, Estat Català, el Partit Republicà Català i el grup del setmanari *L'Opinió* es van unir en __Esquerra Republicana de Catalunya__, presidida per Macià."
+            "text": "El novembre de 1926, Macià va intentar una invasió armada de Catalunya des de __Prats de Molló__, a la Catalunya del Nord, però la policia francesa la va avortar. Potser en vas llegir alguna cosa als diaris, perquè el judici que se li va fer a París el va convertir en un símbol de la resistència a la Dictadura. [[Després de]] la caiguda del dictador, els republicans espanyols i els nacionalistes catalans van signar el __Pacte de Sant Sebastià__ (agost de 1930), en què es comprometien a portar la República i a reconèixer l'autonomia de Catalunya. [[Finalment,]] el març passat, Estat Català, el Partit Republicà Català i el grup del setmanari *L'Opinió* es van unir en __Esquerra Republicana de Catalunya__, presidida per Macià."
           },
           {
             "why": "Els termes segueixen l'ordre del temps, i cadascun és un pas del camí cap a la República."
@@ -457,15 +460,15 @@
           {
             "tag": "Conseqüències",
             "k": 4,
-            "text": "Diumenge passat, 12 d'abril, les eleccions municipals es van convertir en un plebiscit sobre la monarquia. Les candidatures republicanes van guanyar a la majoria de les ciutats, i a Barcelona ERC va superar àmpliament la Lliga Regionalista. Avui, Lluís Companys ha proclamat la República des del balcó de l'Ajuntament, i poc després Macià ha proclamat la República Catalana, que vol formar part d'una confederació de pobles ibèrics."
+            "text": "Diumenge passat, 12 d'abril, les eleccions municipals es van convertir en un plebiscit sobre la monarquia. Les candidatures republicanes van guanyar a la majoria de les ciutats, i a Barcelona ERC va superar àmpliament la Lliga Regionalista. Avui, des d'aquesta plaça, he vist com Lluís Companys proclamava la República des del balcó de l'Ajuntament, i poc després Macià ha proclamat la República Catalana, que vol formar part d'una confederació de pobles ibèrics."
           },
           {
             "tag": "Valoració",
             "k": 4,
-            "text": "[[En definitiva,]] la repressió de la Dictadura ha empès el catalanisme cap al republicanisme, i la caiguda de la monarquia obre ara la porta a l'autogovern de Catalunya."
+            "text": "[[En definitiva,]] la repressió de la Dictadura ha empès el catalanisme cap al republicanisme, i la caiguda de la monarquia obre ara la porta a l'autogovern de Catalunya. Per això avui aquesta plaça és plena de gent que ho celebra."
           },
           {
-            "why": "Fixa't que el model fa servir altres termes de l'època, com Dictadura, Mancomunitat, plebiscit o Lluís Companys."
+            "why": "Fixa't que el model fa servir altres termes de l'època, com Dictadura, Mancomunitat, plebiscit o Lluís Companys. La frase final torna al personatge i a la plaça, però després d'haver explicat el tema."
           }
         ]
       }
