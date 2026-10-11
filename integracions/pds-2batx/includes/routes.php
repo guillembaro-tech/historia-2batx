@@ -116,19 +116,21 @@ add_action(
 			pds2_404();
 			return;
 		}
-		if ( is_tax( 'materia', 'historia' ) ) {
+		// L'arxiu del curs i el de la matèria Història porten a la portada de 2n (els del tema només llisten unitats).
+		// Mentre la secció és privada, només ho fan per als administradors, amb una redirecció temporal.
+		if ( is_tax( 'materia', 'historia' ) || is_tax( 'curs', PDS2_BASE ) ) {
 			if ( pds2_publicat() ) {
 				wp_safe_redirect( pds2_portada_url(), 301 );
 				exit;
 			}
-			if ( ! current_user_can( 'edit_posts' ) ) {
+			if ( pds2_pot_veure() ) {
+				wp_safe_redirect( pds2_portada_url(), 302 );
+				exit;
+			}
+			if ( is_tax( 'materia', 'historia' ) ) {
 				pds2_404();
 			}
 			return;
-		}
-		if ( pds2_publicat() && is_tax( 'curs', PDS2_BASE ) ) {
-			wp_safe_redirect( pds2_portada_url(), 301 );
-			exit;
 		}
 	},
 	1
@@ -169,11 +171,11 @@ add_filter(
 	2
 );
 
-/** Quan la secció és pública, els enllaços del curs i de la matèria Història porten a la portada de 2n. */
+/** Els enllaços del curs i de la matèria Història porten a la portada de 2n (als visitants, quan la secció sigui pública). */
 add_filter(
 	'term_link',
 	static function ( $url, $term ) {
-		if ( ! pds2_publicat() || ! ( $term instanceof WP_Term ) ) {
+		if ( ! pds2_pot_veure() || ! ( $term instanceof WP_Term ) ) {
 			return $url;
 		}
 		if ( ( 'curs' === $term->taxonomy && PDS2_BASE === $term->slug ) || ( 'materia' === $term->taxonomy && 'historia' === $term->slug ) ) {
