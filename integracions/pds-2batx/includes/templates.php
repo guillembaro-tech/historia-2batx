@@ -24,7 +24,7 @@ add_filter(
 		}
 		$mapa = array(
 			'portada'   => 'portada.php',
-			'tema'      => 'tema.php',
+			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
 			'taller'    => 'taller.php',
 			'preguntes' => 'preguntes.php',
 		);
@@ -33,6 +33,14 @@ add_filter(
 	},
 	99
 );
+
+/**
+ * Disseny del model de les unitats (v4) per al tema. De moment és una proposta: només surt amb ?disseny=v4
+ * (i la secció només la veuen els administradors mentre no es publiqui).
+ */
+function pds2_disseny_v4(): bool {
+	return 'tema' === pds2_vista() && isset( $_GET['disseny'] ) && 'v4' === sanitize_key( wp_unslash( $_GET['disseny'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
+}
 
 /** Classes del body per poder donar estil a la secció sense afectar la resta del lloc. */
 add_filter(
@@ -75,6 +83,20 @@ add_action(
 			wp_add_inline_script( 'pds2-taller', 'window.PDS2_TALLER = ' . wp_json_encode( $cfg ) . ';', 'before' );
 		}
 
+		if ( pds2_disseny_v4() ) {
+			// Els mateixos fitxers que les unitats del lloc (sandbox pds-v4-unitats.php), amb els mateixos noms.
+			$dir = WP_CONTENT_DIR . '/uploads/pds-model/';
+			$url = content_url( 'uploads/pds-model/' );
+			if ( file_exists( $dir . 'model4.css' ) ) {
+				wp_enqueue_style( 'pds-um', $url . 'model4.css', array(), (string) filemtime( $dir . 'model4.css' ) );
+				wp_enqueue_script( 'pds-um', $url . 'model.js', array(), (string) filemtime( $dir . 'model.js' ), true );
+				wp_enqueue_script( 'pds-um-tabs', $url . 'model4.js', array( 'pds-um' ), (string) filemtime( $dir . 'model4.js' ), true );
+			}
+			wp_enqueue_style( 'pds2-tema-v4', PDS2_URL . 'assets/css/tema-v4.css', array( 'pds2' ), PDS2_VER );
+			wp_enqueue_script( 'pds2-tema-v4', PDS2_URL . 'assets/js/tema-v4.js', wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
+			wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => 'disponible' === pds2_f( 'estat_taller', get_queried_object_id(), '' ) ? pds2_taller_url( get_queried_object_id() ) : '' ) ) . ';', 'before' );
+		}
+
 		if ( 'preguntes' === $v || 'tema' === $v ) {
 			wp_enqueue_style( 'pds2-preguntes', PDS2_URL . 'assets/css/preguntes.css', array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-preguntes', PDS2_URL . 'assets/js/preguntes.js', array(), PDS2_VER, true );
@@ -84,6 +106,9 @@ add_action(
 				'tema'  => 'tema' === $v ? pds2_tema_numero( get_queried_object_id() ) : 0,
 				'tot'   => pds2_preguntes_url(),
 			);
+			if ( pds2_disseny_v4() ) {
+				$cfg['color'] = 'curs';
+			}
 			wp_add_inline_script( 'pds2-preguntes', 'window.PDS2_PREGUNTES = ' . wp_json_encode( $cfg ) . ';', 'before' );
 		}
 	}
@@ -190,6 +215,73 @@ function pds2_enllacos_pendents( string $html ): string {
 		);
 	}
 	return $html;
+}
+
+/**
+ * Text del tema dividit per apartats per al disseny v4.
+ * Cada apartat porta el títol, l'HTML (amb els subtítols com a h3 i una àncora cadascun) i la llista de subtítols per a l'índex.
+ */
+function pds2_v4_seccions( int $post_id ): array {
+	$html  = pds2_enllacos_pendents( (string) apply_filters( 'the_content', get_post_field( 'post_content', $post_id ) ) );
+	$parts = preg_split( '#<h2[^>]*\bid="ap(\d+)"[^>]*>(.*?)</h2>#s', $html, -1, PREG_SPLIT_DELIM_CAPTURE );
+	$out   = array();
+	for ( $k = 1; $k + 1 < count( $parts ); $k += 3 ) {
+		$i   = (int) $parts[ $k ];
+		$sub = array();
+		$c   = 0;
+		$cos = (string) preg_replace_callback(
+			'#<h4([^>]*)>(.*?)</h4>#s',
+			static function ( $m ) use ( $i, &$sub, &$c ) {
+				++$c;
+				$id    = 'ap' . $i . '-' . $c;
+				$sub[] = array(
+					'id'    => $id,
+					'titol' => trim( wp_strip_all_tags( $m[2] ) ),
+				);
+				return '<h3 id="' . $id . '">' . $m[2] . '</h3>';
+			},
+			(string) ( $parts[ $k + 2 ] ?? '' )
+		);
+		$out[ $i ] = array(
+			'titol' => trim( wp_strip_all_tags( $parts[ $k + 1 ] ) ),
+			'html'  => $cos,
+			'sub'   => $sub,
+		);
+	}
+	ksort( $out );
+	return array(
+		'apartats' => array_values( $out ),
+		'paraules' => (int) preg_match_all( '/[\p{L}\p{N}]+/u', wp_strip_all_tags( $html ) ),
+	);
+}
+
+/** Fitxa d'un apartat amb els components del model de les unitats. */
+function pds2_v4_fitxa( array $ap ): string {
+	$h      = '<div class="um-box pds2-v4-fitxa">';
+	$h     .= '<span class="um-box-t">Fitxa de l\'apartat' . ( ! empty( $ap['dates'] ) ? ' · ' . esc_html( $ap['dates'] ) : '' ) . '</span>';
+	if ( '' !== trim( (string) ( $ap['resum'] ?? '' ) ) ) {
+		$h .= '<p>' . esc_html( $ap['resum'] ) . '</p>';
+	}
+	$conceptes = pds2_linies( $ap['conceptes'] ?? '' );
+	if ( $conceptes ) {
+		$h .= '<p class="pds2-v4-k">Conceptes clau</p><ul class="pds2-v4-tags">';
+		foreach ( $conceptes as $c ) {
+			$h .= '<li>' . esc_html( $c ) . '</li>';
+		}
+		$h .= '</ul>';
+	}
+	$ambits = array_filter( array_map( 'intval', (array) ( $ap['ambits'] ?? array() ) ) );
+	if ( $ambits ) {
+		$h .= '<p class="pds2-v4-k">Àmbits PAU</p><ul class="pds2-v4-ambits">';
+		foreach ( $ambits as $tid ) {
+			$a = pds2_ambit( $tid );
+			if ( $a ) {
+				$h .= '<li><b>' . esc_html( (string) $a['n'] ) . '</b><span>' . esc_html( rtrim( $a['titol'], '.' ) ) . '</span></li>';
+			}
+		}
+		$h .= '</ul>';
+	}
+	return $h . '</div>';
 }
 
 /** Converteix les marques senzilles (**negreta**, *cursiva*) d'un text curt. */

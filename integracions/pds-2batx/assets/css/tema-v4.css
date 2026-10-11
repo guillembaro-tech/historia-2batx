@@ -1,0 +1,60 @@
+/* Tema PAU amb el model de les unitats del lloc (disseny v4).
+   Aquí només hi ha els components propis de 2n de Batxillerat. La resta ve de uploads/pds-model/model4.css,
+   i el color és el del curs (--c-2n-batxillerat a pds-v4.css). */
+
+/* Il·lustració de la capçalera del Tema 1, amb el mateix traç que les de les unitats: el Congrés i una urna. */
+.um.pds2-t-1 .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M170 236V226H382V236M180 226V214H372V226'/%3E%3Cpath d='M196 214V140M208 214V140M232 214V140M244 214V140M268 214V140M280 214V140M304 214V140M316 214V140M340 214V140M352 214V140'/%3E%3Cpath d='M184 140H368V128H184Z'/%3E%3Cpath d='M178 128L276 92L374 128Z'/%3E%3Cpath d='M46 236V184H128V236'/%3E%3Cpath d='M72 184H102'/%3E%3Cpath d='M78 184V146H100V184'/%3E%3Cpath d='M83 158H95M83 168H92'/%3E%3C/g%3E%3Cpath d='M178 128L276 92L374 128Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M46 236V184H128V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); }
+
+/* Pestanya que porta al Taller PAU (és un enllaç, no una pestanya de la pàgina) */
+.um.pds2-v4 a.um-tab { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.um.pds2-v4 a.um-tab:hover { text-decoration: none; }
+.um.pds2-v4 a.um-tab svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Fitxa de l'apartat */
+.um.pds2-v4 .pds2-v4-fitxa { background: var(--surface-2); margin: 0 0 24px; }
+.um.pds2-v4 .pds2-v4-fitxa > p { max-width: none; }
+.um.pds2-v4 .pds2-v4-k { font-size: 13.5px; font-weight: 500; color: var(--ink-2); margin: 14px 0 6px; }
+.um.pds2-v4 .pds2-v4-tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.um.pds2-v4 .pds2-v4-tags li { margin: 0; font-size: 14px; line-height: 1.3; padding: 5px 11px; border-radius: 16px; background: var(--surface); border: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-v4-ambits { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.um.pds2-v4 .pds2-v4-ambits li { margin: 0; display: flex; gap: 10px; align-items: flex-start; font-size: 15px; line-height: 1.4; }
+.um.pds2-v4 .pds2-v4-ambits b,
+.um.pds2-v4 .pds2-v4-n,
+.um.pds2-v4 .pds2-v4-apartats li::before { flex: 0 0 26px; width: 26px; height: 26px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); font-size: 13.5px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; }
+.um.pds2-v4 .pds2-v4-fitxa .pds2-v4-ambits b { background: var(--surface); }
+
+/* Els apartats, a «Abans de començar» */
+.um.pds2-v4 .pds2-v4-apartats { list-style: none; padding: 0; counter-reset: ap; margin: 0 0 1em; }
+.um.pds2-v4 .pds2-v4-apartats li { counter-increment: ap; position: relative; margin: 0; padding: 12px 0 12px 40px; border-bottom: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-v4-apartats li:last-child { border-bottom: 0; }
+.um.pds2-v4 .pds2-v4-apartats li::before { content: counter(ap); position: absolute; left: 0; top: 13px; }
+.um.pds2-v4 .pds2-v4-apartats a { font-weight: 500; }
+.um.pds2-v4 .pds2-v4-dates { margin-left: 8px; font-size: 14px; color: var(--ink-3); white-space: nowrap; }
+.um.pds2-v4 .pds2-v4-apartats p { margin: 3px 0 0; font-size: 15.5px; color: var(--ink-2); }
+
+/* Fonts */
+.um.pds2-v4 .pds2-v4-font { border: 1px solid var(--outline); border-radius: var(--r); padding: 18px 20px 6px; margin: 0 0 16px; scroll-margin-top: 140px; }
+.um.pds2-v4 .pds2-v4-font > header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 14px; }
+.um.pds2-v4 .pds2-v4-n { margin-top: 1px; }
+.um.pds2-v4 .pds2-v4-font h3 { margin: 0; font-size: 18px; }
+.um.pds2-v4 .pds2-v4-meta { margin: 2px 0 0; font-size: 14px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-v4-cita { margin: 0 0 12px; padding: 2px 0 2px 16px; border-left: 3px solid var(--primary); }
+.um.pds2-v4 .pds2-v4-cita p { margin: 0 0 .6em; }
+.um.pds2-v4 .pds2-v4-proc { font-size: 14px; color: var(--ink-2); margin: 0 0 4px; }
+.um.pds2-v4 .pds2-v4-font .um-box { margin: 12px 0 14px; }
+
+/* Pràctica per a l'examen */
+.um.pds2-v4 .pds2-v4-ex > :last-child { margin-bottom: 0; }
+.um.pds2-v4 .pds2-v4-taller a.um-quiz-btn { display: inline-block; text-decoration: none; }
+
+/* Què hi pregunta la PAU */
+.um.pds2-v4 .pds2-v4-bars { display: grid; gap: 10px; margin: 0 0 8px; max-width: 760px; }
+.um.pds2-v4 .pds2-v4-bar { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(80px, 1fr) 28px; gap: 14px; align-items: center; font-size: 15.5px; line-height: 1.35; }
+.um.pds2-v4 .pds2-v4-bar i { display: block; height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+.um.pds2-v4 .pds2-v4-bar b { display: block; height: 100%; border-radius: 4px; background: var(--primary); }
+.um.pds2-v4 .pds2-v4-bar strong { text-align: right; font-weight: 500; }
+.um.pds2-v4 #pq { font-family: var(--font); margin-bottom: 16px; }
+@media (max-width: 600px) {
+	.um.pds2-v4 .pds2-v4-bar { grid-template-columns: minmax(0, 1fr) 28px; gap: 4px 12px; }
+	.um.pds2-v4 .pds2-v4-bar i { grid-column: 1 / -1; grid-row: 2; }
+}

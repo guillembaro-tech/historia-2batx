@@ -19,10 +19,13 @@
     .then(function (d) { D = prepara(d); pinta(); })
     .catch(function () { root.innerHTML = '<p class="pq-loading">No s\'han pogut carregar les dades. Torna-ho a provar d\'aquí a uns minuts.</p>'; });
 
+  /* Amb PDS2_PREGUNTES.color = 'curs', totes les barres fan servir el color del curs (variable --primary del model de les unitats). */
+  var forcat = CFG.color === 'curs' ? (getComputedStyle(root).getPropertyValue('--primary') || '').trim() : (CFG.color || '');
+
   function prepara(d) {
     d.total = 0; d.max = 1;
     d.temes.forEach(function (t) {
-      t.c = t.color || COLORS[t.tema];
+      t.c = forcat || t.color || COLORS[t.tema];
       t.nf = 0; t.nl = 0;
       t.aspectes.forEach(function (a, i) {
         a.o = i; a.F = a.f.map(parse); a.L = a.l.map(parse); a.n = a.f.length + a.l.length;
