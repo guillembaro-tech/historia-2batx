@@ -22,7 +22,7 @@ function wp_remote_post( $url, $a ) { $GLOBALS['peticions'][] = json_decode( $a[
 function wp_remote_retrieve_response_code( $r ) { return $r['code']; }
 function wp_remote_retrieve_body( $r ) { return $r['body']; }
 
-require dirname( __DIR__ ) . '/pds-correccio/pds-correccio.php'; // executa des de integracions/proves
+require dirname( __DIR__ ) . '/pds-correccio/pds-correccio.php';
 
 $errors = 0;
 function ok( $cond, $msg ) { global $errors; echo ( $cond ? "  OK   " : "  FALLA " ) . $msg . "\n"; if ( ! $cond ) { $errors++; } }

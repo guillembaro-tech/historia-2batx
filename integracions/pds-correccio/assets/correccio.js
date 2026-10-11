@@ -98,7 +98,7 @@
         el('p', {}, [
           el('strong', { text: 'Falta la clau de l\'API de Claude. ' }),
           'Per poder corregir, afegeix-la a ',
-          el('a', { href: cfg.connectors, text: 'Configuració > Connectors' }),
+          el('a', { href: cfg.connectors, text: 'Opcions > Connectors' }),
           ', a l\'apartat Anthropic.'
         ])
       ]));

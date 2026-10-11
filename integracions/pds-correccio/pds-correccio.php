@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Correcció de l'exercici de fonts
  * Description: Prototip només per al professor. Puja la foto d'una resposta manuscrita de l'exercici 1 (anàlisi de fonts) del Taller PAU d'Història i Claude la corregeix amb els criteris oficials, amb comentaris i requadres sobre la imatge. Les fotos no es guarden.
- * Version: 0.1.1
+ * Version: 0.1.2
  * Author: Professor de socials
  * License: GPL-2.0-or-later
  * Requires PHP: 8.1
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'PDS_CORR_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDS_CORR_URL', plugin_dir_url( __FILE__ ) );
-define( 'PDS_CORR_VER', '0.1.1' );
+define( 'PDS_CORR_VER', '0.1.2' );
 
 /** Adreça pública dels exercicis del Taller PAU (web d'Història de 2n de Batxillerat). */
 const PDS_CORR_TALLER_URL = 'https://guillembaro-tech.github.io/historia-2batx/content/temes/taller-%d.json';
@@ -61,7 +61,7 @@ function pds_corr_maxims(): array {
 
 /**
  * Clau de l'API d'Anthropic. Es fa servir la de la pàgina de connectors del WordPress
- * (Configuració > Connectors), o una constant o variable d'entorn ANTHROPIC_API_KEY.
+ * (Opcions > Connectors), o una constant o variable d'entorn ANTHROPIC_API_KEY.
  */
 function pds_corr_api_key(): string {
 	if ( defined( 'ANTHROPIC_API_KEY' ) && is_string( ANTHROPIC_API_KEY ) && '' !== ANTHROPIC_API_KEY ) {
@@ -418,7 +418,7 @@ function pds_corr_crida( array $body, string $key ) {
 	if ( 200 !== $code ) {
 		$msg = is_array( $json ) && isset( $json['error']['message'] ) ? (string) $json['error']['message'] : 'Error ' . $code;
 		$txt = array(
-			401 => 'La clau de Claude no és vàlida. Revisa-la a Configuració > Connectors.',
+			401 => 'La clau de Claude no és vàlida. Revisa-la a Opcions > Connectors.',
 			402 => 'El compte de l\'API de Claude no té crèdit.',
 			429 => 'S\'ha arribat al límit de peticions de l\'API de Claude. Espera un minut i torna-ho a provar.',
 			529 => 'Claude està saturat ara mateix. Torna-ho a provar d\'aquí a uns minuts.',
@@ -566,7 +566,7 @@ function pds_corr_imatges( $raw ) {
 function pds_corr_rest_corregeix( WP_REST_Request $req ) {
 	$key = pds_corr_api_key();
 	if ( '' === $key ) {
-		return new WP_Error( 'pds_corr_clau', 'Falta la clau de l\'API de Claude. Afegeix-la a Configuració > Connectors > Anthropic.', array( 'status' => 400 ) );
+		return new WP_Error( 'pds_corr_clau', 'Falta la clau de l\'API de Claude. Afegeix-la a Opcions > Connectors > Anthropic.', array( 'status' => 400 ) );
 	}
 	$p      = $req->get_json_params();
 	$models = pds_corr_models();
