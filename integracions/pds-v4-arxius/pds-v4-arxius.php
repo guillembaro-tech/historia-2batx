@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: PDS · Portada i arxius amb el disseny de les unitats
- * Description: La portada del lloc, els arxius de curs i de matèria i el de lliçons interactives amb el model de les unitats (disseny v4): capçalera de color, targetes amb contorn i el color de cada curs. No toca el tema; les plantilles es poden substituir des del tema amb un fitxer del mateix nom a pds-v4-arxius/.
- * Version: 0.1.0
+ * Description: La portada del lloc, els arxius de curs i de matèria i el de lliçons interactives amb el model de les unitats (disseny v4): capçalera de color, targetes amb contorn i el color de cada curs. No toca el tema; les plantilles es poden substituir des del tema amb un fitxer del mateix nom a pds-v4-arxius/. Els administradors poden veure el disseny antic amb ?disseny=antic.
+ * Version: 0.2.0
  * Author: Professor de socials
  * Requires PHP: 8.0
  * Text Domain: pds-v4-arxius
@@ -14,20 +14,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PDSA_VER', '0.1.0' );
+define( 'PDSA_VER', '0.2.0' );
 define( 'PDSA_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDSA_URL', plugin_dir_url( __FILE__ ) );
 
 /**
  * Pàgina d'aquest connector que s'està veient: portada, curs, materia, llicons o cap.
- * Mentre és una proposta, només s'aplica als administradors que hi afegeixen ?disseny=v4.
+ * S'aplica a tothom. Els administradors poden veure el disseny antic del tema amb ?disseny=antic.
  */
 function pdsa_vista(): string {
 	if ( is_admin() ) {
 		return '';
 	}
-	$prova = isset( $_GET['disseny'] ) && 'v4' === sanitize_key( wp_unslash( $_GET['disseny'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
-	if ( ! ( $prova && current_user_can( 'edit_posts' ) ) ) {
+	$antic = isset( $_GET['disseny'] ) && 'antic' === sanitize_key( wp_unslash( $_GET['disseny'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
+	if ( $antic && current_user_can( 'edit_posts' ) ) {
 		return '';
 	}
 	if ( is_front_page() ) {
@@ -73,7 +73,7 @@ add_action(
 			wp_enqueue_style( 'pds-um', content_url( 'uploads/pds-model/model4.css' ), array(), (string) filemtime( $dir . 'model4.css' ) );
 			$dep = array( 'pds-um' );
 		}
-		wp_enqueue_style( 'pds-v4-arxius', PDSA_URL . 'assets/arxius.css', $dep, PDSA_VER );
+		wp_enqueue_style( 'pds-v4-arxius', PDSA_URL . 'assets/arxius.css', $dep, (string) filemtime( PDSA_DIR . 'assets/arxius.css' ) );
 	},
 	21
 );
