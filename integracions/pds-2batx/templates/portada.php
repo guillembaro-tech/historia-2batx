@@ -47,7 +47,7 @@ $taller1 = isset( $posts[1] ) && 'disponible' === pds2_f( 'estat_taller', $posts
 			?>
 			<div class="pds2-crono-par" role="listitem">
 				<?php echo $u2 ? '<a' : '<span'; ?> class="pds2-crono-seg pds2-crono-seg--par" style="--c: <?php echo esc_attr( $oficials[2]['color'] ); ?>; left: 0; width: <?php echo esc_attr( (string) $pos( $d2[1] ) ); ?>%;"<?php echo $u2 ? ' href="' . esc_url( $u2 ) . '"' : ''; ?>>
-					<b>2</b> Catalanisme polític <span class="pds2-mono">1833–1931</span>, en paral·lel a la Restauració
+					<b>2</b><span>Catalanisme polític<span class="pds2-crono-extra"> (1833–1931), en paral·lel a la Restauració</span></span>
 				<?php echo $u2 ? '</a>' : '</span>'; ?>
 			</div>
 			<div class="pds2-crono-main">
@@ -56,14 +56,14 @@ $taller1 = isset( $posts[1] ) && 'disponible' === pds2_f( 'estat_taller', $posts
 					$url = isset( $posts[ $n ] ) ? get_permalink( $posts[ $n ] ) : '';
 					$tag = $url ? 'a' : 'span';
 					?>
-					<<?php echo $tag; ?> role="listitem" class="pds2-crono-seg<?php echo $url ? '' : ' is-off'; ?>" style="--c: <?php echo esc_attr( $oficials[ $n ]['color'] ); ?>; left: <?php echo esc_attr( (string) $pos( $d[0] ) ); ?>%; width: <?php echo esc_attr( (string) ( $pos( $d[1] ) - $pos( $d[0] ) ) ); ?>%;"<?php echo $url ? ' href="' . esc_url( $url ) . '"' : ''; ?> title="<?php echo esc_attr( 'Tema ' . $n . '. ' . $oficials[ $n ]['nom'] . ' (' . $oficials[ $n ]['dates'] . ')' ); ?>">
+					<<?php echo $tag; ?> role="listitem" class="pds2-crono-seg<?php echo $url ? '' : ' is-off'; ?><?php echo ( $d[1] - $d[0] ) < 10 ? ' is-estret' : ''; ?>" style="--c: <?php echo esc_attr( $oficials[ $n ]['color'] ); ?>; left: <?php echo esc_attr( (string) $pos( $d[0] ) ); ?>%; width: <?php echo esc_attr( (string) ( $pos( $d[1] ) - $pos( $d[0] ) ) ); ?>%;"<?php echo $url ? ' href="' . esc_url( $url ) . '"' : ''; ?> title="<?php echo esc_attr( 'Tema ' . $n . '. ' . $oficials[ $n ]['nom'] . ' (' . $oficials[ $n ]['dates'] . ')' ); ?>">
 						<b><?php echo (int) $n; ?></b><span class="pds2-crono-nom"><?php echo esc_html( $oficials[ $n ]['curt'] ); ?></span>
 					</<?php echo $tag; ?>>
 				<?php endforeach; ?>
 			</div>
 			<div class="pds2-crono-anys" aria-hidden="true">
 				<?php foreach ( array( 1875, 1931, 1936, 1939, 1975, 1986 ) as $a ) : ?>
-					<span style="left: <?php echo esc_attr( (string) $pos( $a ) ); ?>%;"><?php echo (int) $a; ?></span>
+					<span class="pds2-any-<?php echo (int) $a; ?>" style="left: <?php echo esc_attr( (string) $pos( $a ) ); ?>%;"><?php echo (int) $a; ?></span>
 				<?php endforeach; ?>
 			</div>
 		</div>

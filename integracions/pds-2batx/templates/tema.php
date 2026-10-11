@@ -25,7 +25,8 @@ while ( have_posts() ) :
 	$preguntes = array_values( (array) pds2_f( 'preguntes', $pid, array() ) );
 	$taller_on = 'disponible' === pds2_f( 'estat_taller', $pid, '' );
 	$pau_max   = max( array_merge( array( 1 ), array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) ) );
-	$pau_tot   = array_sum( array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) );
+	// Total real de preguntes del tema (fonts i llargues de tots els aspectes). Les barres només mostren els aspectes que més surten.
+	$pau_tot   = array_sum( array_map( static fn( $r ) => count( pds2_convocatories( $r['fonts'] ?? '' ) ) + count( pds2_convocatories( $r['llargues'] ?? '' ) ), $preguntes ) );
 	?>
 	<?php pds2_avis_privat(); ?>
 	<header class="unit-hero pds2-hero" style="--pds2-tc: <?php echo esc_attr( $color ); ?>;">
@@ -137,7 +138,7 @@ while ( have_posts() ) :
 								<?php endif; ?>
 							</p>
 							<?php if ( '' !== trim( wp_strip_all_tags( (string) ( $f['context'] ?? '' ) ) ) ) : ?>
-								<div class="pds2-font-ctx"><p class="pds2-k">Context</p><?php echo wp_kses_post( $f['context'] ); ?></div>
+								<div class="pds2-font-ctx"><p class="pds2-k">Context</p><?php echo pds2_enllacos_pendents( wp_kses_post( $f['context'] ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- ja filtrat amb wp_kses_post. ?></div>
 							<?php endif; ?>
 						</article>
 					<?php endforeach; ?>
@@ -155,7 +156,7 @@ while ( have_posts() ) :
 					<?php foreach ( $practica as $p ) : ?>
 						<li>
 							<span class="pds2-ex">Exercici <?php echo esc_html( (string) ( $p['exercici'] ?? '' ) ); ?></span>
-							<div class="pds2-practica-t"><?php echo wp_kses_post( (string) ( $p['enunciat'] ?? '' ) ); ?></div>
+							<div class="pds2-practica-t"><?php echo pds2_enllacos_pendents( wp_kses_post( (string) ( $p['enunciat'] ?? '' ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- ja filtrat amb wp_kses_post. ?></div>
 						</li>
 					<?php endforeach; ?>
 				</ol>
@@ -169,6 +170,7 @@ while ( have_posts() ) :
 				<h2 class="pds2-h2">Què hi pregunta la PAU</h2>
 				<p class="pds2-sub">Preguntes de fonts i preguntes llargues de les PAU d'Història de Catalunya entre el 2010 i el 2024.</p>
 				<?php if ( $pau ) : ?>
+					<h3 class="pds2-h3">El que més surt a la PAU</h3>
 					<div class="pds2-bars" role="list">
 						<?php foreach ( $pau as $r ) : ?>
 							<div class="pds2-bar" role="listitem">

@@ -150,7 +150,7 @@ function pds2_fitxa_html( array $ap ): string {
 
 /** Contingut del tema amb la fitxa de cada apartat just després del seu encapçalament. */
 function pds2_contingut_tema( int $post_id ): string {
-	$html     = apply_filters( 'the_content', get_post_field( 'post_content', $post_id ) );
+	$html     = pds2_enllacos_pendents( (string) apply_filters( 'the_content', get_post_field( 'post_content', $post_id ) ) );
 	$apartats = array_values( (array) pds2_f( 'apartats', $post_id, array() ) );
 	return (string) preg_replace_callback(
 		'#(<h2[^>]*\bid="ap(\d+)"[^>]*>.*?</h2>)#s',
@@ -160,6 +160,36 @@ function pds2_contingut_tema( int $post_id ): string {
 		},
 		$html
 	);
+}
+
+/**
+ * Mentre un tema no és al WordPress, els enllaços que hi porten van a la web d'Història de GitHub.
+ * Quan s'importa el tema, els enllaços tornen a portar a la pàgina del WordPress sense tocar res.
+ */
+function pds2_enllacos_pendents( string $html ): string {
+	static $presents = null;
+	if ( null === $presents ) {
+		$presents = array();
+		foreach ( pds2_temes() as $t ) {
+			$presents[ pds2_tema_numero( $t->ID ) ] = true;
+		}
+	}
+	$base = preg_quote( home_url( '/' . PDS2_BASE . '/' ), '#' );
+	foreach ( pds2_temes_oficials() as $n => $o ) {
+		if ( isset( $presents[ $n ] ) ) {
+			continue;
+		}
+		$slug = preg_quote( $o['slug'], '#' );
+		$html = (string) preg_replace( '#href="' . $base . $slug . '/taller/"#', 'href="' . esc_url( PDS2_FONT_URL . 'taller.html#tema-' . $n ) . '"', $html );
+		$html = (string) preg_replace_callback(
+			'#href="' . $base . $slug . '/(\#[\w-]+)?"#',
+			static function ( $m ) use ( $n ) {
+				return 'href="' . esc_url( PDS2_FONT_URL . 'tema-' . $n . '.html' . ( $m[1] ?? '' ) ) . '"';
+			},
+			$html
+		);
+	}
+	return $html;
 }
 
 /** Converteix les marques senzilles (**negreta**, *cursiva*) d'un text curt. */

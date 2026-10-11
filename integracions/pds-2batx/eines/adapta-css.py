@@ -4,6 +4,7 @@
 - Treu les regles globals (:root, *, html, body) i hi posa les variables dins del contenidor.
 - Prefixa tots els selectors amb el contenidor (#taller o #pq) perquè no afectin la resta del lloc.
 - Fa servir les lletres i els colors del lloc (variables --qe-* del tema).
+- Canvia el nom de les classes que el tema també fa servir (RENOMS) i fa que les graelles no desbordin al mòbil.
 
 Ús: python3 eines/adapta-css.py origen.css desti.css '#taller'
 """
@@ -31,6 +32,14 @@ for d in decls.split(';'):
     k, v = [x.strip() for x in d.split(':', 1)]
     out_vars.append(f'{k}:{VARS.get(k, v)}')
 css = css[:m.start()] + css[m.end():] if m else css
+
+# 1b. Classes que el tema del lloc també fa servir amb un altre sentit (el tema dona marc i marges a .ex).
+RENOMS = {'ex': 'tl-ex'}
+for vell, nou in RENOMS.items():
+    css = re.sub(r'\.' + vell + r'(?![\w-])', '.' + nou, css)
+
+# 1c. Graelles amb una amplada mínima fixa: que no desbordin en pantalles estretes.
+css = re.sub(r'repeat\((auto-fit|auto-fill),\s*minmax\((\d+px),\s*1fr\)\)', r'repeat(\1,minmax(min(100%,\2),1fr))', css)
 
 # 2. Treu regles globals
 for pat in [r'\*,\*::before,\*::after\{[^}]*\}', r'html,body\{[^}]*\}', r'\[hidden\]\{[^}]*\}']:

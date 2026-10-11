@@ -64,7 +64,7 @@ body.pds2 { --pds2-tc: var(--qe-blue-900); }
 .pds2 .pds2-rail-taller { border-top: 4px solid var(--pds2-tc); }
 
 /* ---------- Fonts ---------- */
-.pds2 .pds2-fonts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 20px; }
+.pds2 .pds2-fonts { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 20px; align-items: start; }
 .pds2 .pds2-font { background: var(--qe-white); border: 1px solid var(--qe-border); border-radius: var(--qe-radius-lg); padding: 20px 22px; scroll-margin-top: calc(var(--qe-header-h) + 16px); min-width: 0; }
 .pds2 .pds2-font:target { outline: 2px solid var(--pds2-tc); outline-offset: 2px; }
 .pds2 .pds2-font-h { display: flex; gap: 14px; align-items: flex-start; margin: 0 0 14px; }
@@ -108,20 +108,33 @@ body.pds2 { --pds2-tc: var(--qe-blue-900); }
 .pds2 .pds2-crono-main .pds2-crono-seg:last-child { border-radius: 0 var(--qe-radius-sm) var(--qe-radius-sm) 0; border-right: 0; }
 .pds2 a.pds2-crono-seg:hover { filter: brightness(1.1); text-decoration: none; }
 .pds2 .pds2-crono-seg.is-off { opacity: 0.55; }
+.pds2 .pds2-crono-seg.is-estret { justify-content: center; padding: 0 2px; }
+.pds2 .pds2-crono-seg.is-estret .pds2-crono-nom { display: none; }
 .pds2 .pds2-crono-anys { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; }
 .pds2 .pds2-crono-anys span { position: absolute; transform: translateX(-50%); font-family: var(--qe-font-mono); font-size: 12px; color: var(--qe-ink-2); }
 .pds2 .pds2-crono-anys span:first-child { transform: none; }
 .pds2 .pds2-crono-anys span:last-child { transform: translateX(-100%); }
+/* 1936 i 1939 són a prop: un s'alinea a la dreta de la marca i l'altre a l'esquerra. */
+.pds2 .pds2-crono-anys .pds2-any-1936 { transform: translateX(calc(-100% - 3px)); }
+.pds2 .pds2-crono-anys .pds2-any-1939 { transform: translateX(3px); }
 @media (max-width: 760px) {
 	.pds2 .pds2-crono-nom { display: none; }
 	.pds2 .pds2-crono-seg { justify-content: center; padding: 0 4px; }
 	.pds2 .pds2-crono-par .pds2-crono-seg { justify-content: flex-start; padding: 0 10px; font-size: 12.5px; white-space: normal; line-height: 1.2; }
 	.pds2 .pds2-crono-par { height: 48px; }
 	.pds2 .pds2-crono-anys span:nth-child(3), .pds2 .pds2-crono-anys span:nth-child(4) { display: none; }
+	.pds2 .pds2-crono-extra { display: none; }
+	.pds2 .pds2-crono-anys .pds2-any-1975 { transform: translateX(calc(-100% - 3px)); }
 }
 
 /* ---------- Portada: temes i examen ---------- */
 .pds2 .pds2-temes { padding: 56px 0; border-top: 1px solid var(--qe-border); }
+/* «PAU» és més ample que el número de curs que el tema preveu en aquesta columna. */
+.pds2 .pds2-temes .course-head { grid-template-columns: auto 1fr; }
+@media (max-width: 600px) {
+	.pds2 .pds2-temes .course-head { grid-template-columns: 1fr; gap: 6px; }
+	.pds2 .pds2-temes .course-head .num { font-size: 32px; }
+}
 .pds2 .pds2-tema-row .num { color: var(--c); }
 .pds2 .pds2-tema-row.is-off { opacity: 0.6; cursor: default; }
 .pds2 .pds2-examen { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border: 1px solid var(--qe-border); border-radius: var(--qe-radius-lg); background: var(--qe-white); overflow: hidden; }
@@ -147,3 +160,7 @@ body.pds2 { --pds2-tc: var(--qe-blue-900); }
 .pds2 #pds-corr-app .notice { border-left: 4px solid var(--qe-yellow-600); background: var(--qe-yellow-50); padding: 8px 12px; margin: 0 0 14px; }
 .pds2 #pds-corr-app select { min-height: 40px; border: 1px solid var(--qe-border); border-radius: var(--qe-radius-sm); padding: 6px 10px; background: var(--qe-white); }
 .pds2 #pds-corr-app input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+
+/* El primer bloc de preguntes no necessita el marge de separació: ja el dona la secció (o el títol «Aspecte per aspecte» al tema). */
+.pds2 #pq .pq-in > .pq-sec:first-child { margin-top: 0; }
+.pds2 #pq .pq-solo > .pq-sec:first-child { margin-top: 8px; }
