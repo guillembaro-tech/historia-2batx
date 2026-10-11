@@ -151,7 +151,7 @@
     if (cfg.public) {
       refs.queden = el('p', { class: 'pds-corr-petit' });
       app.appendChild(el('div', { class: 'pds-corr-avis-public' }, [
-        el('p', {}, [el('strong', { text: 'Correcció amb intel·ligència artificial. ' }), 'La fa Claude, d\'Anthropic, amb els criteris oficials de la PAU. La nota és orientativa i es pot equivocar: contrasta-la amb el teu professor o professora.']),
+        el('p', {}, [el('strong', { text: 'Correcció amb intel·ligència artificial. ' }), 'La fa Claude, d\'Anthropic, amb els criteris oficials de la PAU. La nota és orientativa i es pot equivocar. Contrasta-la amb el teu professor o professora.']),
         el('p', { text: 'La foto s\'envia a Claude només per corregir-la i no es desa enlloc. No hi escriguis el teu nom ni cap altra dada personal.' }),
         refs.queden
       ]));
