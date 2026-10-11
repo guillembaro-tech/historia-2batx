@@ -2,12 +2,13 @@
    Aquí només hi ha els components propis de 2n de Batxillerat. La resta ve de uploads/pds-model/model4.css,
    i el color és el del curs (--c-2n-batxillerat a pds-v4.css). */
 
-/* Il·lustració de la capçalera del Tema 1, amb el mateix traç que les de les unitats: el Congrés i una urna. */
-.um.pds2-t-1 .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M170 236V226H382V236M180 226V214H372V226'/%3E%3Cpath d='M196 214V140M208 214V140M232 214V140M244 214V140M268 214V140M280 214V140M304 214V140M316 214V140M340 214V140M352 214V140'/%3E%3Cpath d='M184 140H368V128H184Z'/%3E%3Cpath d='M178 128L276 92L374 128Z'/%3E%3Cpath d='M46 236V184H128V236'/%3E%3Cpath d='M72 184H102'/%3E%3Cpath d='M78 184V146H100V184'/%3E%3Cpath d='M83 158H95M83 168H92'/%3E%3C/g%3E%3Cpath d='M178 128L276 92L374 128Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M46 236V184H128V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); }
+/* Il·lustració de la capçalera del Tema 1, amb el mateix traç que les de les unitats: el Congrés i una urna.
+   Com a les unitats, només a partir de 1025 px; en pantalles més estretes taparia el text. */
+@media (min-width: 1025px) { .um.pds2-t-1 .um-hero > .um-wrap { background-size: auto 86%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M170 236V226H382V236M180 226V214H372V226'/%3E%3Cpath d='M196 214V140M208 214V140M232 214V140M244 214V140M268 214V140M280 214V140M304 214V140M316 214V140M340 214V140M352 214V140'/%3E%3Cpath d='M184 140H368V128H184Z'/%3E%3Cpath d='M178 128L276 92L374 128Z'/%3E%3Cpath d='M46 236V184H128V236'/%3E%3Cpath d='M72 184H102'/%3E%3Cpath d='M78 184V146H100V184'/%3E%3Cpath d='M83 158H95M83 168H92'/%3E%3C/g%3E%3Cpath d='M178 128L276 92L374 128Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M46 236V184H128V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
 
 /* Pestanya que porta al Taller PAU (és un enllaç, no una pestanya de la pàgina) */
-.um.pds2-v4 a.um-tab { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
-.um.pds2-v4 a.um-tab:hover { text-decoration: none; }
+.um.pds2-v4 a.um-tab { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); text-decoration: none; }
+.um.pds2-v4 a.um-tab:hover { color: var(--ink); text-decoration: none; }
 .um.pds2-v4 a.um-tab svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Fitxa de l'apartat */
@@ -45,7 +46,7 @@
 
 /* Pràctica per a l'examen */
 .um.pds2-v4 .pds2-v4-ex > :last-child { margin-bottom: 0; }
-.um.pds2-v4 .pds2-v4-taller a.um-quiz-btn { display: inline-block; text-decoration: none; }
+.um.pds2-v4 .pds2-v4-taller a.um-quiz-btn { display: inline-block; color: var(--on-primary); text-decoration: none; }
 
 /* Què hi pregunta la PAU */
 .um.pds2-v4 .pds2-v4-bars { display: grid; gap: 10px; margin: 0 0 8px; max-width: 760px; }

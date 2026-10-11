@@ -30,17 +30,6 @@ while ( have_posts() ) :
 	$pau_max   = max( array_merge( array( 1 ), array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) ) );
 	$minuts    = max( 5, (int) ( round( $seccions['paraules'] / 200 / 5 ) * 5 ) );
 
-	// Àmbits PAU de tot el tema (els dels apartats, sense repetir).
-	$ambits = array();
-	foreach ( $apartats as $ap ) {
-		foreach ( array_filter( array_map( 'intval', (array) ( $ap['ambits'] ?? array() ) ) ) as $tid ) {
-			$a = pds2_ambit( $tid );
-			if ( $a ) {
-				$ambits[ (int) $a['n'] ] = $a;
-			}
-		}
-	}
-	ksort( $ambits );
 	?>
 	<?php pds2_avis_privat(); ?>
 	<div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-t-<?php echo (int) $n; ?>" data-view="alumne">
@@ -121,15 +110,6 @@ while ( have_posts() ) :
 								</li>
 							<?php endforeach; ?>
 						</ol>
-					<?php endif; ?>
-					<?php if ( $ambits ) : ?>
-						<h3>Àmbits del glossari PAU</h3>
-						<p>Per a l'exercici 3, aquest tema serveix sobretot per als àmbits següents.</p>
-						<ul class="pds2-v4-ambits">
-							<?php foreach ( $ambits as $a ) : ?>
-								<li><b><?php echo (int) $a['n']; ?></b><span><?php echo esc_html( rtrim( $a['titol'], '.' ) ); ?></span></li>
-							<?php endforeach; ?>
-						</ul>
 					<?php endif; ?>
 				</section>
 
