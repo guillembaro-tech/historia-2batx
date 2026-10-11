@@ -140,6 +140,16 @@ add_filter(
 	4
 );
 
+/** Sense el prefix «Privat:» als títols dels temes i dels exercicis (l'estat ja es veu al panell). */
+add_filter(
+	'private_title_format',
+	static function ( $format, $post ) {
+		return in_array( get_post_type( $post ), array( 'tema_pau', 'exercici_pau' ), true ) ? '%s' : $format;
+	},
+	10,
+	2
+);
+
 /** La secció és pública? Fins que el professor no l'aprova, no. */
 function pds2_publicat(): bool {
 	return (bool) get_option( 'pds2_publicat', false );

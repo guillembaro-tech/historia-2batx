@@ -1,4 +1,5 @@
 <?php
+# Parsedown 1.7.4 amb un sol canvi (connector pds-2batx): «?array $Block = null» perquè PHP 8.4 no avisi de paràmetres nul·lables implícits.
 
 #
 #
@@ -712,7 +713,7 @@ class Parsedown
     #
     # Setext
 
-    protected function blockSetextHeader($Line, array $Block = null)
+    protected function blockSetextHeader($Line, ?array $Block = null)
     {
         if ( ! isset($Block) or isset($Block['type']) or isset($Block['interrupted']))
         {
@@ -850,7 +851,7 @@ class Parsedown
     #
     # Table
 
-    protected function blockTable($Line, array $Block = null)
+    protected function blockTable($Line, ?array $Block = null)
     {
         if ( ! isset($Block) or isset($Block['type']) or isset($Block['interrupted']))
         {

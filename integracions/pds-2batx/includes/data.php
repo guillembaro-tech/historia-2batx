@@ -266,7 +266,7 @@ function pds2_taller_data( int $n ): ?array {
 	}
 	$out = array(
 		'tema'  => $n,
-		'titol' => get_the_title( $tema ),
+		'titol' => pds2_temes_oficials()[ $n ]['nom'] ?? $tema->post_title,
 		'estat' => (string) pds2_f( 'estat_taller', $tema->ID, 'en preparació' ),
 	);
 	$ex2 = array();

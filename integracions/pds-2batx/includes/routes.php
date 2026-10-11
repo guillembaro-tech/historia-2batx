@@ -85,6 +85,16 @@ add_filter(
 	2
 );
 
+/** La pàgina de preguntes no té entrades, però no és un 404. */
+add_filter(
+	'pre_handle_404',
+	static function ( $pre, $q ) {
+		return 'preguntes' === $q->get( 'pds2_vista' ) ? true : $pre;
+	},
+	10,
+	2
+);
+
 /** Torna un error 404 normal del lloc. */
 function pds2_404(): void {
 	global $wp_query;
@@ -184,7 +194,8 @@ add_filter(
 				$parts['title'] = 'Història · 2n Batxillerat';
 				break;
 			case 'taller':
-				$parts['title'] = 'Taller PAU · ' . get_the_title();
+				$n              = pds2_tema_numero( get_queried_object_id() );
+				$parts['title'] = 'Taller PAU · Tema ' . $n . '. ' . ( pds2_temes_oficials()[ $n ]['nom'] ?? get_the_title() );
 				break;
 			case 'preguntes':
 				$parts['title'] = 'Què pregunta la PAU d\'Història';
