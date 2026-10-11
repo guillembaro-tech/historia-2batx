@@ -129,11 +129,11 @@ body.pds2 { --pds2-tc: var(--qe-blue-900); }
 
 /* ---------- Portada: temes i examen ---------- */
 .pds2 .pds2-temes { padding: 56px 0; border-top: 1px solid var(--qe-border); }
-/* «PAU» és més ample que el número de curs que el tema preveu en aquesta columna. */
-.pds2 .pds2-temes .course-head { grid-template-columns: auto 1fr; }
+/* «PAU» és més ample que el número de curs del tema: al mòbil, el títol passa a sota. */
 @media (max-width: 600px) {
-	.pds2 .pds2-temes .course-head { grid-template-columns: 1fr; gap: 6px; }
-	.pds2 .pds2-temes .course-head .num { font-size: 32px; }
+	.pds2 .pds2-temes .course-head { gap: 10px; }
+	.pds2 .pds2-temes .course-head .num { font-size: 56px; }
+	.pds2 .pds2-temes .course-head .meta { flex-basis: 100%; }
 }
 .pds2 .pds2-tema-row .num { color: var(--c); }
 .pds2 .pds2-tema-row.is-off { opacity: 0.6; cursor: default; }
