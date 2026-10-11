@@ -50,7 +50,10 @@
 .um.pds2-v4 .pds2-v4-bar strong { text-align: right; font-weight: 500; }
 .um.pds2-v4 #pq { font-family: var(--font); margin: 0 0 16px; }
 .um.pds2-v4 #pq .pq-in { padding: 0; max-width: none; }
+.um.pds2-v4 #pq .pq-in > .pq-sec:first-child { margin-top: 0; }
 .um.pds2-v4 #pq .pq-solo > .pq-sec:first-child { margin-top: 8px; }
+.um.pds2-v4 #pq .pq-legend i { background: var(--primary); }
+.um.pds2-v4 #pq .pq-legend i.l { background: color-mix(in srgb, var(--primary) 40%, #fff); }
 @media (max-width: 600px) {
 	.um.pds2-v4 .pds2-v4-bar { grid-template-columns: minmax(0, 1fr) 28px; gap: 4px 12px; }
 	.um.pds2-v4 .pds2-v4-bar i { grid-column: 1 / -1; grid-row: 2; }
@@ -85,7 +88,8 @@
 .um.pds2-v4 .pds2-v4-crono-anys span { position: absolute; transform: translateX(-50%); font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 .um.pds2-v4 .pds2-v4-crono-anys span:first-child { transform: none; }
 .um.pds2-v4 .pds2-v4-crono-anys span:last-child { transform: translateX(-100%); }
-.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1936 { transform: translateX(calc(-100% - 3px)); }
+/* 1931 i 1936 són massa a prop: el 1936 no s'escriu (el segment del Tema 3 ja el marca) */
+.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1936 { display: none; }
 .um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1939 { transform: translateX(3px); }
 @media (max-width: 760px) {
 	.um.pds2-v4 .pds2-v4-nom, .um.pds2-v4 .pds2-v4-extra { display: none; }
