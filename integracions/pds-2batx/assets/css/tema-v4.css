@@ -11,9 +11,13 @@
 .um.pds2-v4 a.um-tab:hover { color: var(--ink); text-decoration: none; }
 .um.pds2-v4 a.um-tab svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-/* Nota del final de cada apartat (conceptes clau, àmbits PAU i llibre) */
-.um.pds2-v4 .pds2-v4-peu { margin: 28px 0 16px; font-size: 14px; line-height: 1.5; }
-.um.pds2-v4 .pds2-v4-peu p { margin: 0 0 6px; max-width: none; }
+/* Avís de vista privada (mentre la secció no es publiqui) */
+.pds2-privat { background: #FEF7E0; border-bottom: 1px solid #F9DE8A; color: #202124; font-size: 14px; }
+.pds2-privat .pds2-in { max-width: 1040px; margin: 0 auto; padding: 10px clamp(16px, 4vw, 32px); }
+
+/* Nota del final de cada apartat (conceptes clau, àmbits PAU i llibre), amb la nota petita de les unitats */
+.um.pds2-v4 .pds2-v4-peu { margin-bottom: 16px; }
+.um.pds2-v4 .pds2-v4-peu p { margin: 0 0 6px; max-width: none; font-size: inherit; }
 .um.pds2-v4 .pds2-v4-peu p:last-child { margin-bottom: 0; }
 .um.pds2-v4 .pds2-v4-peu strong { color: var(--ink-2); font-weight: 500; }
 
@@ -41,7 +45,9 @@
 .um.pds2-v4 .pds2-v4-bar i { display: block; height: 8px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
 .um.pds2-v4 .pds2-v4-bar b { display: block; height: 100%; border-radius: 4px; background: var(--primary); }
 .um.pds2-v4 .pds2-v4-bar strong { text-align: right; font-weight: 500; }
-.um.pds2-v4 #pq { font-family: var(--font); margin-bottom: 16px; }
+.um.pds2-v4 #pq { font-family: var(--font); margin: 0 0 16px; }
+.um.pds2-v4 #pq .pq-in { padding: 0; max-width: none; }
+.um.pds2-v4 #pq .pq-solo > .pq-sec:first-child { margin-top: 8px; }
 @media (max-width: 600px) {
 	.um.pds2-v4 .pds2-v4-bar { grid-template-columns: minmax(0, 1fr) 28px; gap: 4px 12px; }
 	.um.pds2-v4 .pds2-v4-bar i { grid-column: 1 / -1; grid-row: 2; }
