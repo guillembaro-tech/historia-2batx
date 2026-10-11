@@ -16,6 +16,10 @@
     var t = about.querySelector('.um-about-t');
     if (t) { t.textContent = 'Sobre el tema'; }
   }
+  /* Com a les unitats, el menú «Per matèries» queda marcat (el tema ho fa per a les unitats a header.php) */
+  var dd = document.querySelector('.nav-main .nav-dd');
+  if (dd) { dd.classList.add('is-active'); }
+
   var cfg = window.PDS2_V4 || {};
   var bar = root.querySelector('.um-tabs .um-wrap');
   if (bar && cfg.taller) {

@@ -16,7 +16,7 @@
 .pds2-privat .pds2-in { max-width: 1040px; margin: 0 auto; padding: 10px clamp(16px, 4vw, 32px); }
 
 /* Nota del final de cada apartat (conceptes clau, àmbits PAU i llibre), amb la nota petita de les unitats */
-.um.pds2-v4 .pds2-v4-peu { margin-bottom: 16px; }
+.um.pds2-v4 .pds2-v4-peu { margin-bottom: 1em; }
 .um.pds2-v4 .pds2-v4-peu p { margin: 0 0 6px; max-width: none; font-size: inherit; }
 .um.pds2-v4 .pds2-v4-peu p:last-child { margin-bottom: 0; }
 .um.pds2-v4 .pds2-v4-peu strong { color: var(--ink-2); font-weight: 500; }
