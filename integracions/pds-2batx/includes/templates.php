@@ -255,33 +255,33 @@ function pds2_v4_seccions( int $post_id ): array {
 	);
 }
 
-/** Fitxa d'un apartat amb els components del model de les unitats. */
-function pds2_v4_fitxa( array $ap ): string {
-	$h      = '<div class="um-box pds2-v4-fitxa">';
-	$h     .= '<span class="um-box-t">Fitxa de l\'apartat' . ( ! empty( $ap['dates'] ) ? ' · ' . esc_html( $ap['dates'] ) : '' ) . '</span>';
-	if ( '' !== trim( (string) ( $ap['resum'] ?? '' ) ) ) {
-		$h .= '<p>' . esc_html( $ap['resum'] ) . '</p>';
-	}
+/**
+ * Nota del final de cada apartat al disseny v4: conceptes clau, àmbits PAU i llibre de text.
+ * Fa servir la nota petita de les unitats (um-foot-note) perquè el text de l'apartat vagi seguit.
+ */
+function pds2_v4_peu( array $ap ): string {
+	$files     = array();
 	$conceptes = pds2_linies( $ap['conceptes'] ?? '' );
 	if ( $conceptes ) {
-		$h .= '<p class="pds2-v4-k">Conceptes clau</p><ul class="pds2-v4-tags">';
-		foreach ( $conceptes as $c ) {
-			$h .= '<li>' . esc_html( $c ) . '</li>';
-		}
-		$h .= '</ul>';
+		$files[] = '<strong>Conceptes clau.</strong> ' . esc_html( implode( ', ', $conceptes ) ) . '.';
 	}
-	$ambits = array_filter( array_map( 'intval', (array) ( $ap['ambits'] ?? array() ) ) );
+	$ambits = array();
+	foreach ( array_filter( array_map( 'intval', (array) ( $ap['ambits'] ?? array() ) ) ) as $tid ) {
+		$a = pds2_ambit( $tid );
+		if ( $a ) {
+			$ambits[] = esc_html( $a['n'] . '. ' . rtrim( $a['titol'], '.' ) );
+		}
+	}
 	if ( $ambits ) {
-		$h .= '<p class="pds2-v4-k">Àmbits PAU</p><ul class="pds2-v4-ambits">';
-		foreach ( $ambits as $tid ) {
-			$a = pds2_ambit( $tid );
-			if ( $a ) {
-				$h .= '<li><b>' . esc_html( (string) $a['n'] ) . '</b><span>' . esc_html( rtrim( $a['titol'], '.' ) ) . '</span></li>';
-			}
-		}
-		$h .= '</ul>';
+		$files[] = '<strong>Àmbits PAU.</strong> ' . implode( ' · ', $ambits ) . '.';
 	}
-	return $h . '</div>';
+	if ( '' !== trim( (string) ( $ap['al_llibre'] ?? '' ) ) ) {
+		$files[] = '<strong>Al llibre.</strong> ' . esc_html( $ap['al_llibre'] );
+	}
+	if ( ! $files ) {
+		return '';
+	}
+	return '<div class="um-foot-note pds2-v4-peu"><p>' . implode( '</p><p>', $files ) . '</p></div>';
 }
 
 /** Converteix les marques senzilles (**negreta**, *cursiva*) d'un text curt. */

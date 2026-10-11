@@ -97,17 +97,9 @@ while ( have_posts() ) :
 					</div>
 					<?php if ( $apartats ) : ?>
 						<h3>Els apartats</h3>
-						<ol class="pds2-v4-apartats">
+						<ol>
 							<?php foreach ( $apartats as $i => $ap ) : ?>
-								<li>
-									<a href="#s<?php echo (int) ( $i + 1 ); ?>"><?php echo esc_html( (string) ( $ap['titol'] ?? '' ) ); ?></a>
-									<?php if ( ! empty( $ap['dates'] ) ) : ?>
-										<span class="pds2-v4-dates"><?php echo esc_html( $ap['dates'] ); ?></span>
-									<?php endif; ?>
-									<?php if ( ! empty( $ap['resum'] ) ) : ?>
-										<p><?php echo esc_html( $ap['resum'] ); ?></p>
-									<?php endif; ?>
-								</li>
+								<li><a href="#s<?php echo (int) ( $i + 1 ); ?>"><?php echo esc_html( (string) ( $ap['titol'] ?? '' ) ); ?></a><?php echo ! empty( $ap['dates'] ) ? ' (' . esc_html( $ap['dates'] ) . ')' : ''; ?></li>
 							<?php endforeach; ?>
 						</ol>
 					<?php endif; ?>
@@ -118,11 +110,11 @@ while ( have_posts() ) :
 					?>
 					<section class="um-sec" id="s<?php echo (int) ( $i + 1 ); ?>">
 						<header><span class="um-num">Apartat <?php echo (int) ( $i + 1 ); ?></span><h2 id="ap<?php echo (int) $i; ?>"><?php echo esc_html( $s['titol'] ); ?></h2></header>
-						<?php echo pds2_v4_fitxa( $ap ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
-						<?php echo $s['html']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- contingut del tema filtrat per the_content. ?>
-						<?php if ( ! empty( $ap['al_llibre'] ) ) : ?>
-							<p class="um-foot-note"><strong>Al llibre.</strong> <?php echo esc_html( $ap['al_llibre'] ); ?></p>
+						<?php if ( ! empty( $ap['resum'] ) ) : ?>
+							<p class="um-q"><?php echo ! empty( $ap['dates'] ) ? '<strong>' . esc_html( $ap['dates'] ) . '.</strong> ' : ''; ?><?php echo esc_html( $ap['resum'] ); ?></p>
 						<?php endif; ?>
+						<?php echo $s['html']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- contingut del tema filtrat per the_content. ?>
+						<?php echo pds2_v4_peu( $ap ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
 					</section>
 				<?php endforeach; ?>
 
