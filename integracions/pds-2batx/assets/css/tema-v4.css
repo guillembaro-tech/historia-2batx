@@ -6,6 +6,9 @@
    Com a les unitats, només a partir de 1025 px; en pantalles més estretes taparia el text. */
 @media (min-width: 1025px) { .um.pds2-t-1 .um-hero > .um-wrap { background-size: auto 86%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M170 236V226H382V236M180 226V214H372V226'/%3E%3Cpath d='M196 214V140M208 214V140M232 214V140M244 214V140M268 214V140M280 214V140M304 214V140M316 214V140M340 214V140M352 214V140'/%3E%3Cpath d='M184 140H368V128H184Z'/%3E%3Cpath d='M178 128L276 92L374 128Z'/%3E%3Cpath d='M46 236V184H128V236'/%3E%3Cpath d='M72 184H102'/%3E%3Cpath d='M78 184V146H100V184'/%3E%3Cpath d='M83 158H95M83 168H92'/%3E%3C/g%3E%3Cpath d='M178 128L276 92L374 128Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M46 236V184H128V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
 
+/* Il·lustració del Tema 2: un edifici amb arcades i la bandera, i un document (les Bases de Manresa). */
+@media (min-width: 1025px) { .um.pds2-t-2 .um-hero > .um-wrap { background-size: auto 86%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M150 236V110H380V236'/%3E%3Cpath d='M150 110L265 74L380 110'/%3E%3Cpath d='M240 236V176Q265 146 290 176V236'/%3E%3Cpath d='M172 160V132Q186 116 200 132V160ZM330 160V132Q344 116 358 132V160Z'/%3E%3Cpath d='M172 214V188Q186 172 200 188V214ZM330 214V188Q344 172 358 188V214Z'/%3E%3Cpath d='M265 74V40'/%3E%3Cpath d='M265 42H292V60H265'/%3E%3Cpath d='M50 236V150H118V236'/%3E%3Cpath d='M62 168H106M62 184H106M62 200H96'/%3E%3C/g%3E%3Cpath d='M265 42H292V60H265Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M240 236V176Q265 146 290 176V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
+
 /* Pestanya que porta al Taller PAU (és un enllaç, no una pestanya de la pàgina) */
 .um.pds2-v4 a.um-tab { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); text-decoration: none; }
 .um.pds2-v4 a.um-tab:hover { color: var(--ink); text-decoration: none; }
@@ -52,3 +55,44 @@
 	.um.pds2-v4 .pds2-v4-bar { grid-template-columns: minmax(0, 1fr) 28px; gap: 4px 12px; }
 	.um.pds2-v4 .pds2-v4-bar i { grid-column: 1 / -1; grid-row: 2; }
 }
+
+/* ---------- Portada de 2n i pàgina de preguntes ---------- */
+.um.pds2-v4 .pds2-v4-pagina { padding-top: 24px; padding-bottom: 72px; }
+.um.pds2-v4 .pds2-v4-temes { list-style: none; padding: 0; margin: 0 0 16px; }
+.um.pds2-v4 .pds2-v4-temes li { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 14px; align-items: center; margin: 0; padding: 14px 0; border-top: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-v4-temes li:first-child { border-top: 0; }
+.um.pds2-v4 .pds2-v4-tn { width: 36px; height: 36px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 500; background: var(--primary); color: #fff; }
+.um.pds2-v4 .pds2-v4-temes li.is-off .pds2-v4-tn { background: var(--surface-2); color: var(--ink-3); }
+.um.pds2-v4 .pds2-v4-tt { display: block; font-size: 18px; font-weight: 500; line-height: 1.3; }
+.um.pds2-v4 .pds2-v4-temes li.is-off .pds2-v4-tt { color: var(--ink-2); }
+.um.pds2-v4 .pds2-v4-tm { display: block; font-size: 14px; color: var(--ink-3); margin-top: 2px; }
+.um.pds2-v4 .pds2-v4-tl { font-size: 14px; font-weight: 500; padding: 7px 14px; border-radius: 16px; border: 1px solid var(--outline); white-space: nowrap; }
+.um.pds2-v4 .pds2-v4-tl:hover { background: var(--primary-soft); text-decoration: none; }
+.um.pds2-v4 .pds2-v4-botons { margin: 4px 0 20px; }
+.um.pds2-v4 .pds2-v4-botons a.um-quiz-btn { display: inline-block; color: var(--on-primary); text-decoration: none; }
+
+.um.pds2-v4 .pds2-v4-crono { position: relative; padding-bottom: 28px; margin: 4px 0 18px; }
+.um.pds2-v4 .pds2-v4-crono-par { height: 38px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; padding: 0 12px; border-radius: 6px; background: var(--primary-soft); color: var(--primary-dark); font-size: 14px; overflow: hidden; white-space: nowrap; }
+.um.pds2-v4 .pds2-v4-crono-main { position: relative; height: 56px; }
+.um.pds2-v4 .pds2-v4-crono-seg { position: absolute; top: 0; bottom: 0; display: flex; align-items: center; gap: 8px; padding: 0 12px; background: var(--surface-2); color: var(--ink-2); font-size: 14px; overflow: hidden; white-space: nowrap; border-right: 2px solid var(--surface); }
+.um.pds2-v4 .pds2-v4-crono-seg:first-child { border-radius: 6px 0 0 6px; }
+.um.pds2-v4 .pds2-v4-crono-seg:last-child { border-radius: 0 6px 6px 0; border-right: 0; }
+.um.pds2-v4 .pds2-v4-crono-seg.is-on, .um.pds2-v4 .pds2-v4-crono-par.is-on { background: var(--primary); color: #fff; }
+.um.pds2-v4 .pds2-v4-crono-seg.is-estret { justify-content: center; padding: 0 2px; }
+.um.pds2-v4 .pds2-v4-crono-seg.is-estret .pds2-v4-nom { display: none; }
+.um.pds2-v4 .pds2-v4-crono b, .um.pds2-v4 .pds2-v4-crono-par b { font-weight: 500; }
+.um.pds2-v4 .pds2-v4-crono-anys { position: absolute; left: 0; right: 0; bottom: 0; height: 20px; }
+.um.pds2-v4 .pds2-v4-crono-anys span { position: absolute; transform: translateX(-50%); font-size: 12.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.um.pds2-v4 .pds2-v4-crono-anys span:first-child { transform: none; }
+.um.pds2-v4 .pds2-v4-crono-anys span:last-child { transform: translateX(-100%); }
+.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1936 { transform: translateX(calc(-100% - 3px)); }
+.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1939 { transform: translateX(3px); }
+@media (max-width: 760px) {
+	.um.pds2-v4 .pds2-v4-nom, .um.pds2-v4 .pds2-v4-extra { display: none; }
+	.um.pds2-v4 .pds2-v4-crono-seg { justify-content: center; padding: 0 4px; }
+	.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1936, .um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1939 { display: none; }
+	.um.pds2-v4 .pds2-v4-crono-anys .pds2-v4-any-1975 { transform: translateX(calc(-100% - 3px)); }
+	.um.pds2-v4 .pds2-v4-temes li { grid-template-columns: 36px minmax(0, 1fr); }
+	.um.pds2-v4 .pds2-v4-tl { grid-column: 2; justify-self: start; }
+}
+.um.pds2-v4-preguntes #pq { margin: 0; }

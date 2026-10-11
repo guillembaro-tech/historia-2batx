@@ -23,10 +23,10 @@ add_filter(
 			return $template;
 		}
 		$mapa = array(
-			'portada'   => 'portada.php',
+			'portada'   => pds2_disseny_v4() ? 'portada-v4.php' : 'portada.php',
 			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
 			'taller'    => pds2_disseny_v4() ? 'taller-v4.php' : 'taller.php',
-			'preguntes' => 'preguntes.php',
+			'preguntes' => pds2_disseny_v4() ? 'preguntes-v4.php' : 'preguntes.php',
 		);
 		$v = pds2_vista();
 		return isset( $mapa[ $v ] ) ? pds2_plantilla( $mapa[ $v ] ) : $template;
@@ -35,11 +35,11 @@ add_filter(
 );
 
 /**
- * Disseny del model de les unitats (v4) per al tema i el Taller. És el disseny per defecte.
+ * Disseny del model de les unitats (v4) per a totes les pàgines de 2n. És el disseny per defecte.
  * Mentre es revisa la proposta, el disseny anterior encara es pot veure amb ?disseny=antic.
  */
 function pds2_disseny_v4(): bool {
-	if ( ! in_array( pds2_vista(), array( 'tema', 'taller' ), true ) ) {
+	if ( '' === pds2_vista() ) {
 		return false;
 	}
 	return ! ( isset( $_GET['disseny'] ) && 'antic' === sanitize_key( wp_unslash( $_GET['disseny'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
@@ -120,11 +120,12 @@ function pds2_estils_v4(): void {
 	}
 	$dir    = WP_CONTENT_DIR . '/uploads/pds-model/';
 	$url    = content_url( 'uploads/pds-model/' );
-	$taller = 'taller' === pds2_vista();
+	$vista  = pds2_vista();
+	$taller = 'taller' === $vista;
 	if ( file_exists( $dir . 'model4.css' ) ) {
 		wp_enqueue_style( 'pds-um', $url . 'model4.css', array(), (string) filemtime( $dir . 'model4.css' ) );
-		// El Taller només fa servir la capçalera i els estils: les pestanyes i els passos són de taller.js.
-		if ( ! $taller ) {
+		// Les pestanyes i l'índex del model només els fa servir el tema; la resta de pàgines fan servir la capçalera i els estils.
+		if ( 'tema' === $vista ) {
 			wp_enqueue_script( 'pds-um', $url . 'model.js', array(), (string) filemtime( $dir . 'model.js' ), true );
 			wp_enqueue_script( 'pds-um-tabs', $url . 'model4.js', array( 'pds-um' ), (string) filemtime( $dir . 'model4.js' ), true );
 		}
@@ -133,6 +134,8 @@ function pds2_estils_v4(): void {
 	wp_enqueue_style( 'pds2-tema-v4', PDS2_URL . 'assets/css/tema-v4.css', wp_style_is( 'pds-um', 'enqueued' ) ? array( 'pds-um' ) : array(), PDS2_VER );
 	if ( $taller ) {
 		wp_enqueue_style( 'pds2-taller-v4', PDS2_URL . 'assets/css/taller-v4.css', array( 'pds2-taller', 'pds2-tema-v4' ), PDS2_VER );
+	}
+	if ( 'tema' !== $vista ) {
 		return;
 	}
 	wp_enqueue_script( 'pds2-tema-v4', PDS2_URL . 'assets/js/tema-v4.js', wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
