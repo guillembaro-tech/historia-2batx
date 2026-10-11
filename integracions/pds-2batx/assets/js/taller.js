@@ -288,8 +288,11 @@
       + '<p class="sub">' + (extra || 'Com es responen els exercicis 1, 2 i 3, pas a pas: llegir l\'enunciat, planificar, escriure, autoavaluar-se i comparar amb un model comentat.') + '</p></div>' + PAPER_NOTE + '</div></div>';
   }
 
+  /* Al WordPress, el color el dona la plantilla (el del curs al disseny de les unitats). */
+  function colorTema(n) { return (CFG && CFG.color) || TEMES[n].color; }
+
   function vistaTema(n, d) {
-    root.style.setProperty('--tc', TEMES[n].color);
+    root.style.setProperty('--tc', colorTema(n));
     if (!CFG) document.title = 'Taller PAU · Tema ' + n + '. ' + TEMES[n].nom;
     root.innerHTML = heroTema(n) + '<div class="tl-in"><nav class="tabs" role="tablist" aria-label="Exercicis">'
       + '<button class="tab" type="button" role="tab" data-tab="e1" aria-selected="true"><span class="n">01</span>Anàlisi de fonts</button>'
@@ -309,7 +312,7 @@
   }
 
   function vistaPreparacio(n) {
-    root.style.setProperty('--tc', TEMES[n].color);
+    root.style.setProperty('--tc', colorTema(n));
     if (!CFG) document.title = 'Taller PAU · Tema ' + n + '. ' + TEMES[n].nom;
     root.innerHTML = heroTema(n, 'Els exercicis d\'aquest tema estan en preparació.') + '<div class="tl-in"><div class="tl-empty"><p>Aquest tema encara no té exemples al taller. Mentrestant, pots practicar el mètode amb un tema que ja estigui disponible, perquè els passos són els mateixos per a tots.</p><a class="btn primary" href="' + (CFG ? esc(CFG.temaUrl) : '#inici') + '">' + (CFG ? 'Torna al tema' : 'Tria un altre tema') + '</a></div></div>';
   }

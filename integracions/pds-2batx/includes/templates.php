@@ -25,7 +25,7 @@ add_filter(
 		$mapa = array(
 			'portada'   => 'portada.php',
 			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
-			'taller'    => 'taller.php',
+			'taller'    => pds2_disseny_v4() ? 'taller-v4.php' : 'taller.php',
 			'preguntes' => 'preguntes.php',
 		);
 		$v = pds2_vista();
@@ -35,11 +35,11 @@ add_filter(
 );
 
 /**
- * Disseny del model de les unitats (v4) per al tema. És el disseny per defecte.
+ * Disseny del model de les unitats (v4) per al tema i el Taller. És el disseny per defecte.
  * Mentre es revisa la proposta, el disseny anterior encara es pot veure amb ?disseny=antic.
  */
 function pds2_disseny_v4(): bool {
-	if ( 'tema' !== pds2_vista() ) {
+	if ( ! in_array( pds2_vista(), array( 'tema', 'taller' ), true ) ) {
 		return false;
 	}
 	return ! ( isset( $_GET['disseny'] ) && 'antic' === sanitize_key( wp_unslash( $_GET['disseny'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
@@ -74,13 +74,13 @@ add_action(
 
 		if ( 'taller' === $v ) {
 			$tema_id = get_queried_object_id();
-			wp_enqueue_style( 'pds2-taller', PDS2_URL . 'assets/css/taller.css', array( 'pds2' ), PDS2_VER );
+			wp_enqueue_style( 'pds2-taller', PDS2_URL . 'assets/css/taller.css', $v4 ? array() : array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-taller', PDS2_URL . 'assets/js/taller.js', array(), PDS2_VER, true );
 			$cfg = array(
 				'url'     => esc_url_raw( rest_url( 'pds-2batx/v1/taller/' . pds2_tema_numero( $tema_id ) ) ),
 				'nonce'   => wp_create_nonce( 'wp_rest' ),
 				'tema'    => pds2_tema_numero( $tema_id ),
-				'color'   => pds2_tema_color( $tema_id ),
+				'color'   => $v4 ? 'var(--primary)' : pds2_tema_color( $tema_id ),
 				'temaUrl' => get_permalink( $tema_id ),
 			);
 			$corr = pds2_correccio_config( $tema_id );
@@ -118,15 +118,23 @@ function pds2_estils_v4(): void {
 	if ( ! pds2_disseny_v4() ) {
 		return;
 	}
-	$dir = WP_CONTENT_DIR . '/uploads/pds-model/';
-	$url = content_url( 'uploads/pds-model/' );
+	$dir    = WP_CONTENT_DIR . '/uploads/pds-model/';
+	$url    = content_url( 'uploads/pds-model/' );
+	$taller = 'taller' === pds2_vista();
 	if ( file_exists( $dir . 'model4.css' ) ) {
 		wp_enqueue_style( 'pds-um', $url . 'model4.css', array(), (string) filemtime( $dir . 'model4.css' ) );
-		wp_enqueue_script( 'pds-um', $url . 'model.js', array(), (string) filemtime( $dir . 'model.js' ), true );
-		wp_enqueue_script( 'pds-um-tabs', $url . 'model4.js', array( 'pds-um' ), (string) filemtime( $dir . 'model4.js' ), true );
+		// El Taller només fa servir la capçalera i els estils: les pestanyes i els passos són de taller.js.
+		if ( ! $taller ) {
+			wp_enqueue_script( 'pds-um', $url . 'model.js', array(), (string) filemtime( $dir . 'model.js' ), true );
+			wp_enqueue_script( 'pds-um-tabs', $url . 'model4.js', array( 'pds-um' ), (string) filemtime( $dir . 'model4.js' ), true );
+		}
 	}
 	$tema_id = get_queried_object_id();
 	wp_enqueue_style( 'pds2-tema-v4', PDS2_URL . 'assets/css/tema-v4.css', wp_style_is( 'pds-um', 'enqueued' ) ? array( 'pds-um' ) : array(), PDS2_VER );
+	if ( $taller ) {
+		wp_enqueue_style( 'pds2-taller-v4', PDS2_URL . 'assets/css/taller-v4.css', array( 'pds2-taller', 'pds2-tema-v4' ), PDS2_VER );
+		return;
+	}
 	wp_enqueue_script( 'pds2-tema-v4', PDS2_URL . 'assets/js/tema-v4.js', wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
 	wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => 'disponible' === pds2_f( 'estat_taller', $tema_id, '' ) ? pds2_taller_url( $tema_id ) : '' ) ) . ';', 'before' );
 }
