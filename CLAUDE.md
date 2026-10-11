@@ -111,6 +111,13 @@ A l'arrel hi ha còpies antigues que la web no fa servir (`tema-N.json`, `tema.j
 
 No esborris el fitxer `.nojekyll` de l'arrel. Sense aquest fitxer, GitHub Pages processa els `.md` amb Jekyll, i les marques del taller que hi surten en aquesta guia (les claus dobles) en fan fallar la publicació.
 
+## Integracions
+
+- **Correcció de l'exercici de fonts.** Connector de WordPress «PDS · Correcció de l'exercici de fonts», instal·lat a professordesocials.cat (menú «Correcció PAU», només per a administradors). El professor hi puja la foto d'una resposta manuscrita de l'exercici 1 i Claude la corregeix amb els criteris oficials, amb comentaris i requadres sobre la imatge. Les fotos no es guarden.
+- El codi és a la branca `pds-correccio` d'aquest repositori (`integracions/`), que no es publica a la web. S'instal·la al WordPress descarregant els fitxers d'aquella branca i comprovant-ne l'MD5.
+- Llegeix l'exercici 1 dels fitxers `content/temes/taller-N.json` publicats. Si en canvies l'estructura, comprova que el connector continua funcionant.
+- La clau de l'API de Claude es posa al WordPress, a Opcions > Connectors > Anthropic. No la guardis mai al repositori ni la demanis pel xat.
+
 ## Estat actual (10 d'octubre de 2026)
 
 - **Tema 1, La Restauració.** Complet, amb sis apartats, fonts, pràctica i el taller sencer. L'apartat 4 inclou la Mancomunitat i la qüestió catalana i remet al Tema 2.
