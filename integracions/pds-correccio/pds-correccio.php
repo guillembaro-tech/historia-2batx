@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Correcció de l'exercici de fonts
  * Description: Prototip només per al professor. Puja la foto d'una resposta manuscrita de l'exercici 1 (anàlisi de fonts) del Taller PAU d'Història i Claude la corregeix amb els criteris oficials, amb comentaris i requadres sobre la imatge. Les fotos no es guarden.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Professor de socials
  * License: GPL-2.0-or-later
  * Requires PHP: 8.1
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'PDS_CORR_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDS_CORR_URL', plugin_dir_url( __FILE__ ) );
-define( 'PDS_CORR_VER', '0.1.0' );
+define( 'PDS_CORR_VER', '0.1.1' );
 
 /** Adreça pública dels exercicis del Taller PAU (web d'Història de 2n de Batxillerat). */
 const PDS_CORR_TALLER_URL = 'https://guillembaro-tech.github.io/historia-2batx/content/temes/taller-%d.json';
@@ -448,13 +448,18 @@ function pds_corr_crida( array $body, string $key ) {
 	return array( 'json' => $parsed, 'usage' => (array) ( $json['usage'] ?? array() ) );
 }
 
+/** Valor de text en minúscules i sense espais als extrems (l'esquema no garanteix les majúscules dels enums). */
+function pds_corr_min( $v ): string {
+	return mb_strtolower( trim( (string) $v ) );
+}
+
 /** Recalcula les puntuacions i valida els requadres perquè la nota no depengui de l'aritmètica del model. */
 function pds_corr_post( array $r, array $imatges ): array {
 	$criteris = pds_corr_criteris();
 	$maxims   = pds_corr_maxims();
 	$per_n    = array();
 	foreach ( (array) ( $r['preguntes'] ?? array() ) as $p ) {
-		$n = (string) ( $p['n'] ?? '' );
+		$n = pds_corr_min( $p['n'] ?? '' );
 		if ( isset( $maxims[ $n ] ) && ! isset( $per_n[ $n ] ) ) {
 			$per_n[ $n ] = $p;
 		}
@@ -478,7 +483,7 @@ function pds_corr_post( array $r, array $imatges ): array {
 				'criteri'      => $def[0],
 				'valor'        => (float) $def[1],
 				'punts'        => $pt,
-				'assoliment'   => in_array( $c['assoliment'] ?? '', array( 'assolit', 'parcial', 'no assolit' ), true ) ? $c['assoliment'] : ( $pt <= 0 ? 'no assolit' : ( $pt >= $def[1] ? 'assolit' : 'parcial' ) ),
+				'assoliment'   => in_array( pds_corr_min( $c['assoliment'] ?? '' ), array( 'assolit', 'parcial', 'no assolit' ), true ) ? pds_corr_min( $c['assoliment'] ) : ( $pt <= 0 ? 'no assolit' : ( $pt >= $def[1] ? 'assolit' : 'parcial' ) ),
 				'justificacio' => (string) ( $c['justificacio'] ?? '' ),
 			);
 		}
@@ -510,8 +515,8 @@ function pds_corr_post( array $r, array $imatges ): array {
 		}
 		$coment[] = array(
 			'imatge'    => $i,
-			'pregunta'  => (string) ( $c['pregunta'] ?? 'general' ),
-			'tipus'     => in_array( $c['tipus'] ?? '', array( 'encert', 'error', 'millora', 'ortografia' ), true ) ? $c['tipus'] : 'millora',
+			'pregunta'  => in_array( pds_corr_min( $c['pregunta'] ?? '' ), array( '1.1', '1.2', '1.3' ), true ) ? pds_corr_min( $c['pregunta'] ) : 'general',
+			'tipus'     => in_array( pds_corr_min( $c['tipus'] ?? '' ), array( 'encert', 'error', 'millora', 'ortografia' ), true ) ? pds_corr_min( $c['tipus'] ) : 'millora',
 			'fragment'  => (string) ( $c['fragment'] ?? '' ),
 			'comentari' => (string) ( $c['comentari'] ?? '' ),
 			'caixa'     => $caixa,
@@ -519,10 +524,10 @@ function pds_corr_post( array $r, array $imatges ): array {
 	}
 	$transc = array();
 	foreach ( (array) ( $r['transcripcio'] ?? array() ) as $t ) {
-		$transc[] = array( 'pregunta' => (string) ( $t['pregunta'] ?? '' ), 'text' => (string) ( $t['text'] ?? '' ) );
+		$transc[] = array( 'pregunta' => pds_corr_min( $t['pregunta'] ?? '' ), 'text' => (string) ( $t['text'] ?? '' ) );
 	}
 	return array(
-		'llegibilitat'      => in_array( $r['llegibilitat'] ?? '', array( 'bona', 'regular', 'dolenta' ), true ) ? $r['llegibilitat'] : 'regular',
+		'llegibilitat'      => in_array( pds_corr_min( $r['llegibilitat'] ?? '' ), array( 'bona', 'regular', 'dolenta' ), true ) ? pds_corr_min( $r['llegibilitat'] ) : 'regular',
 		'avis_llegibilitat' => (string) ( $r['avis_llegibilitat'] ?? '' ),
 		'transcripcio'      => $transc,
 		'preguntes'         => $preguntes,
