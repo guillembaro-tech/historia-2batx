@@ -274,7 +274,7 @@
       + '<div class="tip"><b>Regles d\'estil que valoren els correctors.</b> Una idea per paràgraf i punt i a part per a cada idea nova. Si escrius «en primer lloc» o «d\'una banda», ha d\'aparèixer «en segon lloc» o «d\'altra banda». Dates concretes, però sense repetir-les. Majúscules quan canvien el significat, com a l\'Església, l\'Exèrcit, la Restauració o el Desastre del 98.</div></div>';
   }
 
-  var FOOT = '<p class="tl-foot">Les puntuacions i els criteris provenen dels criteris d\'avaluació i de les FAQ de les PAU d\'Història, i de les indicacions més recents dels correctors.Descriptors reproduïts literalment del document «Glossari i descriptors» PAU26. Els enunciats marcats com a oficials provenen de la Sèrie 0 (2025) i dels exemples PAU 2026; els d\'elaboració pròpia segueixen el format oficial, però no provenen de cap convocatòria. Els blocs de punts de l\'autoavaluació són oficials; el repartiment intern de cada bloc és una guia, no un criteri de correcció.</p>';
+  var FOOT = '<p class="tl-foot">Les puntuacions i els criteris provenen dels criteris d\'avaluació i de les FAQ de les PAU d\'Història, i de les indicacions més recents dels correctors. Descriptors reproduïts literalment del document «Glossari i descriptors» PAU26. Els enunciats marcats com a oficials provenen de la Sèrie 0 (2025) i dels exemples PAU 2026; els d\'elaboració pròpia segueixen el format oficial, però no provenen de cap convocatòria. Els blocs de punts de l\'autoavaluació són oficials; el repartiment intern de cada bloc és una guia, no un criteri de correcció.</p>';
 
   /* ---------- vistes ---------- */
   function heroTema(n, extra) {
