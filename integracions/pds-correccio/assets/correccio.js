@@ -1,4 +1,4 @@
-/* PDS · Correcció de l'exercici de fonts (prototip per al professor). */
+/* PDS · Correcció de l'exercici de fonts. Amb cfg.public, versió oberta a tothom amb prova de treball. */
 (function () {
   'use strict';
 
@@ -13,7 +13,7 @@
     ortografia: 'Ortografia'
   };
   var MAX_FOTOS = 3;
-  var state = { tema: Number(cfg.temaInicial) || 1, model: (cfg.models && cfg.models[0] && cfg.models[0].id) || 'claude-sonnet-5-5', fotos: [], resultat: null, ocupat: false };
+  var state = { tema: Number(cfg.temaInicial) || 1, model: (cfg.models && cfg.models[0] && cfg.models[0].id) || 'claude-sonnet-5-5', fotos: [], resultat: null, ocupat: false, repte: null, queden: null };
 
   /* ---------- utilitats ---------- */
   function el(tag, attrs, kids) {
@@ -88,6 +88,37 @@
     });
   }
 
+  /* ---------- prova de treball (només a la versió oberta) ---------- */
+  function carregaRepte() {
+    return api('repte').then(function (j) { state.repte = j.repte; state.queden = j.queden; pintaQueden(); return j.repte; });
+  }
+  function bitsZero(b) {
+    var n = 0;
+    for (var i = 0; i < b.length; i++) {
+      if (b[i] === 0) { n += 8; continue; }
+      for (var m = 128; m && !(b[i] & m); m >>= 1) { n++; }
+      break;
+    }
+    return n;
+  }
+  function resolRepte(r) {
+    var enc = new TextEncoder(), n = 0;
+    function tanda() {
+      var feina = [];
+      for (var k = 0; k < 256; k++) { feina.push(crypto.subtle.digest('SHA-256', enc.encode(r.salt + ':' + (n + k)))); }
+      return Promise.all(feina).then(function (hs) {
+        for (var k = 0; k < hs.length; k++) { if (bitsZero(new Uint8Array(hs[k])) >= r.bits) { return String(n + k); } }
+        n += 256;
+        return new Promise(function (ok) { setTimeout(ok, 0); }).then(tanda);
+      });
+    }
+    return tanda();
+  }
+  function pintaQueden() {
+    if (!refs.queden || state.queden === null) { return; }
+    refs.queden.textContent = state.queden > 0 ? ('Avui encara pots fer ' + state.queden + (state.queden === 1 ? ' correcció.' : ' correccions.')) : 'Avui ja has fet totes les correccions. Demà en podràs fer més.';
+  }
+
   /* ---------- interfície ---------- */
   var refs = {};
 
@@ -117,8 +148,16 @@
     refs.estat = el('div', { class: 'pds-corr-estat', role: 'status', 'aria-live': 'polite' });
     refs.resultat = el('div', { class: 'pds-corr-resultat' });
 
+    if (cfg.public) {
+      refs.queden = el('p', { class: 'pds-corr-petit' });
+      app.appendChild(el('div', { class: 'pds-corr-avis-public' }, [
+        el('p', {}, [el('strong', { text: 'Correcció amb intel·ligència artificial. ' }), 'La fa Claude, d\'Anthropic, amb els criteris oficials de la PAU. La nota és orientativa i es pot equivocar: contrasta-la amb el teu professor o professora.']),
+        el('p', { text: 'La foto s\'envia a Claude només per corregir-la i no es desa enlloc. No hi escriguis el teu nom ni cap altra dada personal.' }),
+        refs.queden
+      ]));
+    }
     app.appendChild(el('div', { class: 'pds-corr-panell' }, [
-      el('div', { class: 'pds-corr-fila' }, [
+      cfg.public ? null : el('div', { class: 'pds-corr-fila' }, [
         el('label', { for: 'pds-corr-tema', text: 'Exercici' }), selTema,
         el('label', { for: 'pds-corr-model', text: 'Model' }), selModel
       ]),
@@ -135,6 +174,7 @@
     app.appendChild(refs.resultat);
     pintaFotos();
     carregaExercici();
+    if (cfg.public) { carregaRepte().catch(function (e) { missatge(e.message, 'error'); }); }
   }
 
   function carregaExercici() {
@@ -197,15 +237,21 @@
       missatge('Claude està llegint i corregint la resposta… ' + Math.round((Date.now() - t0) / 1000) + ' s (sol trigar entre 30 i 90 segons)');
     }, 1000);
     missatge('Claude està llegint i corregint la resposta…');
-    api('corregeix', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        tema: state.tema,
-        model: state.model,
-        transcripcio: transcripcio || '',
-        imatges: state.fotos.map(function (f) { return { data: f.data, mime: f.mime, w: f.w, h: f.h }; })
-      })
+    var cos = {
+      tema: state.tema,
+      model: state.model,
+      transcripcio: transcripcio || '',
+      imatges: state.fotos.map(function (f) { return { data: f.data, mime: f.mime, w: f.w, h: f.h }; })
+    };
+    var prepara = Promise.resolve();
+    if (cfg.public) {
+      missatge('Comprovant que no ets un robot…');
+      prepara = (state.repte ? Promise.resolve(state.repte) : carregaRepte()).then(function (r) {
+        return resolRepte(r).then(function (pow) { cos.repte = r; cos.pow = pow; cos.web = ''; state.repte = null; });
+      });
+    }
+    prepara.then(function () {
+      return api('corregeix', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(cos) });
     }).then(function (r) {
       state.resultat = r;
       missatge('');
@@ -217,6 +263,7 @@
       clearInterval(rellotge);
       state.ocupat = false;
       pintaFotos();
+      if (cfg.public) { carregaRepte().catch(function () {}); }
     });
   }
 
@@ -229,8 +276,8 @@
     R.appendChild(el('div', { class: 'pds-corr-cap' }, [
       el('div', { class: 'pds-corr-nota' }, [el('span', { class: 'pds-corr-nota-xifra', text: num(r.nota_total) }), el('span', { text: ' / 2,50' })]),
       el('div', { class: 'pds-corr-meta' }, [
-        el('p', { text: 'Nota orientativa. Revisa-la abans de donar-la per bona.' }),
-        el('p', { class: 'pds-corr-petit', text: state.resultat.model + ' · ' + state.resultat.tokens.entrada + ' tokens d\'entrada i ' + state.resultat.tokens.sortida + ' de sortida · cost aproximat ' + String(state.resultat.cost_usd).replace('.', ',') + ' $' })
+        el('p', { text: state.resultat.public ? 'Nota orientativa feta per una IA. Contrasta-la amb el teu professor o professora.' : 'Nota orientativa. Revisa-la abans de donar-la per bona.' }),
+        state.resultat.public ? null : el('p', { class: 'pds-corr-petit', text: state.resultat.model + ' · ' + state.resultat.tokens.entrada + ' tokens d\'entrada i ' + state.resultat.tokens.sortida + ' de sortida · cost aproximat ' + String(state.resultat.cost_usd).replace('.', ',') + ' $' })
       ])
     ]));
     if (r.llegibilitat !== 'bona') {

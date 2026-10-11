@@ -2,8 +2,8 @@
 /**
  * Enllaç amb el connector «PDS · Correcció de l'exercici de fonts».
  * - La correcció llegeix l'exercici 1 d'aquí en lloc de la web de GitHub.
- * - Al Taller, l'exercici 1 té un pas per corregir la resposta. Ara només el veuen els administradors,
- *   perquè la correcció per als alumnes encara no està decidida.
+ * - Al Taller, l'exercici 1 té un pas per corregir la resposta. El veuen els administradors i, si
+ *   la correcció és oberta (Correcció PAU > Correcció per a tothom), qualsevol persona.
  *
  * @package pds-2batx
  */
@@ -25,7 +25,12 @@ add_filter(
 
 /** Configuració del pas de correcció al Taller, o null si no s'ha de mostrar. */
 function pds2_correccio_config( int $tema_id ): ?array {
-	if ( ! current_user_can( 'manage_options' ) || ! function_exists( 'pds_corr_models' ) || ! defined( 'PDS_CORR_URL' ) ) {
+	if ( ! function_exists( 'pds_corr_models' ) || ! defined( 'PDS_CORR_URL' ) ) {
+		return null;
+	}
+	$admin  = current_user_can( 'manage_options' );
+	$public = ! $admin && function_exists( 'pds_corr_public_actiu' ) && pds_corr_public_actiu();
+	if ( ! $admin && ! $public ) {
 		return null;
 	}
 	$models = array();
@@ -40,11 +45,12 @@ function pds2_correccio_config( int $tema_id ): ?array {
 			'rest'        => esc_url_raw( rest_url( 'pds-correccio/v1/' ) ),
 			'nonce'       => wp_create_nonce( 'wp_rest' ),
 			'teClau'      => function_exists( 'pds_corr_api_key' ) && '' !== pds_corr_api_key(),
-			'connectors'  => esc_url_raw( admin_url( 'options-connectors.php' ) ),
-			'models'      => $models,
+			'connectors'  => $admin ? esc_url_raw( admin_url( 'options-connectors.php' ) ) : '',
+			'models'      => $admin ? $models : array(),
 			'temes'       => array( array( 'n' => $n, 'nom' => 'Tema ' . $n . '. ' . get_the_title( $tema_id ) ) ),
 			'temaInicial' => $n,
 			'front'       => true,
+			'public'      => $public,
 		),
 	);
 }

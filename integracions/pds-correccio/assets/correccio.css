@@ -72,3 +72,8 @@
 .pds-corr-transcripcio summary { cursor: pointer; font-weight: 600; }
 .pds-corr-transcripcio label { display: block; font-weight: 600; margin-top: 10px; }
 .pds-corr-transcripcio textarea { width: 100%; font-family: inherit; }
+
+/* Versió oberta a tothom */
+.pds-corr-avis-public { margin: 0 0 14px; padding: 12px 16px; border-radius: 8px; background: #E8F0FE; border: 1px solid #C6DAFC; font-size: 14px; line-height: 1.5; }
+.pds-corr-avis-public p { margin: 0 0 6px; }
+.pds-corr-avis-public p:last-child { margin-bottom: 0; }
