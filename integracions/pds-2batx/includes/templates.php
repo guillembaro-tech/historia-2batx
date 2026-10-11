@@ -35,11 +35,14 @@ add_filter(
 );
 
 /**
- * Disseny del model de les unitats (v4) per al tema. De moment és una proposta: només surt amb ?disseny=v4
- * (i la secció només la veuen els administradors mentre no es publiqui).
+ * Disseny del model de les unitats (v4) per al tema. És el disseny per defecte.
+ * Mentre es revisa la proposta, el disseny anterior encara es pot veure amb ?disseny=antic.
  */
 function pds2_disseny_v4(): bool {
-	return 'tema' === pds2_vista() && isset( $_GET['disseny'] ) && 'v4' === sanitize_key( wp_unslash( $_GET['disseny'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
+	if ( 'tema' !== pds2_vista() ) {
+		return false;
+	}
+	return ! ( isset( $_GET['disseny'] ) && 'antic' === sanitize_key( wp_unslash( $_GET['disseny'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la plantilla.
 }
 
 /** Classes del body per poder donar estil a la secció sense afectar la resta del lloc. */
