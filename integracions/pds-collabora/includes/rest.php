@@ -212,11 +212,12 @@ function pdsc_desa_arxiu( array $f ) {
 			return new WP_Error( 'arxiu', "No s'ha pogut desar la imatge." );
 		}
 		$fitxer = basename( $ok['path'] );
+		$mime   = (string) ( $ok['mime-type'] ?? $check['type'] ); // El lloc pot desar les imatges en WebP.
 	}
 	return array(
 		'fitxer' => $fitxer,
 		'nom'    => mb_substr( sanitize_file_name( (string) $f['name'] ), 0, 120 ),
-		'mime'   => $check['type'],
+		'mime'   => $mime ?? $check['type'],
 	);
 }
 

@@ -185,5 +185,5 @@ add_action(
 </div>
 		<?php
 	},
-	20
+	5 // Abans dels scripts del peu (prioritat 20).
 );

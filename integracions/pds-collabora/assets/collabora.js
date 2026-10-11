@@ -1,6 +1,8 @@
 /* Col·labora: botó de la capçalera, finestra del formulari i invitació a cada unitat. */
 (function () {
   'use strict';
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', inicia); } else { inicia(); }
+  function inicia() {
   var C = window.PDSC;
   var dlg = document.getElementById('pdsc');
   var fons = document.querySelector('.pdsc-fons');
@@ -195,4 +197,5 @@
 
   prefill();
   aplicaTipus();
+  }
 })();
