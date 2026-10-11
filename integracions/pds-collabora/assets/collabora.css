@@ -1,0 +1,77 @@
+/* Col·labora. El color és el del curs de la pàgina (--pdsc) o, fora dels cursos, el negre del logotip. */
+:root { --pdsc: #202124; --pdsc-soft: #F1F3F4; }
+
+/* Botó de la capçalera */
+.pdsc-boto { display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #DADCE0; background: #fff; color: #202124; font: 500 14px/1 Roboto, Arial, sans-serif; cursor: pointer; flex-shrink: 0; margin-left: 12px; white-space: nowrap; }
+.pdsc-boto:hover { background: #F1F3F4; }
+.pdsc-boto svg { width: 16px; height: 16px; flex: 0 0 16px; }
+@media (max-width: 1100px) { .pdsc-boto { padding: 0 9px; } .pdsc-boto span { display: none; } }
+.mobile-link.pdsc-mobil { display: flex; align-items: center; gap: 8px; width: 100%; border: 0; background: none; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+
+/* Finestra */
+.pdsc-fons { position: fixed; inset: 0; background: rgba(32, 33, 36, .45); z-index: 100000; }
+.pdsc { position: fixed; z-index: 100001; top: 50%; left: 50%; transform: translate(-50%, -50%); width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; overscroll-behavior: contain; background: #fff; border-radius: 16px; box-shadow: 0 8px 28px rgba(0, 0, 0, .25); padding: 28px 32px 24px; font-family: Roboto, Arial, sans-serif; color: #202124; box-sizing: border-box; }
+.pdsc[hidden], .pdsc-fons[hidden], .pdsc [hidden] { display: none !important; }
+html.pdsc-obert { overflow: hidden; }
+.pdsc .pdsc-ey { margin: 0 0 4px; color: var(--pdsc); font-size: 13px; font-weight: 500; letter-spacing: .02em; }
+.pdsc h2 { margin: 0 0 6px; font-size: 24px; font-weight: 500; line-height: 1.25; color: #202124; }
+.pdsc .pdsc-sub { margin: 0 0 18px; color: #5F6368; font-size: 15px; line-height: 1.5; }
+.pdsc fieldset { border: 0; padding: 0; margin: 0 0 18px; min-width: 0; }
+.pdsc legend { display: flex; align-items: center; padding: 0; margin: 0 0 8px; font-size: 15px; font-weight: 500; color: #202124; }
+.pdsc legend b { display: inline-flex; width: 22px; height: 22px; border-radius: 50%; align-items: center; justify-content: center; background: var(--pdsc); color: #fff; font-size: 12px; margin-right: 8px; }
+.pdsc .pdsc-xips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pdsc .pdsc-xips label { position: relative; display: inline-flex; align-items: center; padding: 7px 14px; border: 1px solid #DADCE0; border-radius: 16px; font-size: 14px; line-height: 1.3; color: #3C4043; cursor: pointer; background: #fff; }
+.pdsc .pdsc-xips label:has(input:checked) { border-color: var(--pdsc); background: var(--pdsc-soft); color: var(--pdsc); font-weight: 500; }
+.pdsc .pdsc-xips label:has(input:focus-visible) { outline: 2px solid var(--pdsc); outline-offset: 2px; }
+.pdsc .pdsc-xips input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+.pdsc .pdsc-graella { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.pdsc .pdsc-camp { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: #5F6368; min-width: 0; }
+.pdsc .pdsc-camp.is-ample { grid-column: 1 / -1; }
+.pdsc .pdsc-camp > span { font-weight: 500; color: #3C4043; }
+.pdsc input[type="text"], .pdsc input[type="url"], .pdsc input[type="email"], .pdsc select, .pdsc textarea { width: 100%; box-sizing: border-box; min-height: 40px; border: 1px solid #DADCE0; border-radius: 8px; padding: 8px 12px; font: 15px/1.4 Roboto, Arial, sans-serif; color: #202124; background: #fff; margin: 0; }
+.pdsc input:focus, .pdsc select:focus, .pdsc textarea:focus { outline: 2px solid var(--pdsc); outline-offset: -1px; border-color: var(--pdsc); }
+.pdsc textarea { min-height: 96px; resize: vertical; }
+.pdsc .pdsc-nota { margin: 6px 0 0; font-size: 13px; color: #5F6368; }
+.pdsc .pdsc-arxiu { display: flex; align-items: center; gap: 10px; margin-top: 10px; padding: 12px 14px; border: 1px dashed #BDC1C6; border-radius: 8px; font-size: 14px; color: #5F6368; cursor: pointer; }
+.pdsc .pdsc-arxiu b { color: var(--pdsc); font-weight: 500; }
+.pdsc .pdsc-arxiu input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.pdsc .pdsc-arxiu:focus-within { outline: 2px solid var(--pdsc); outline-offset: 2px; }
+.pdsc .pdsc-check { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; line-height: 1.45; color: #3C4043; margin-top: 8px; }
+.pdsc .pdsc-check input { margin: 3px 0 0; accent-color: var(--pdsc); flex: 0 0 auto; }
+.pdsc .pdsc-avis { margin: 10px 0 0; padding: 10px 12px; border-radius: 8px; background: #F1F3F4; font-size: 13px; line-height: 1.5; color: #3C4043; }
+.pdsc .pdsc-parany { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.pdsc .pdsc-msg { margin: 0 0 10px; padding: 10px 12px; border-radius: 8px; background: #FCE8E6; color: #A50E0E; font-size: 14px; }
+.pdsc .pdsc-peu { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; padding-top: 16px; border-top: 1px solid #E8EAED; }
+.pdsc .pdsc-peu button { height: 40px; padding: 0 20px; border-radius: 20px; font: 500 15px/1 Roboto, Arial, sans-serif; cursor: pointer; }
+.pdsc .pdsc-peu .alt { border: 1px solid #DADCE0; background: #fff; color: #3C4043; }
+.pdsc .pdsc-peu .prim { border: 0; background: var(--pdsc); color: #fff; }
+.pdsc .pdsc-peu .prim[disabled] { opacity: .6; cursor: default; }
+.pdsc .pdsc-tanca { position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%; border: 0; background: none; font-size: 24px; line-height: 1; color: #5F6368; cursor: pointer; }
+.pdsc .pdsc-tanca:hover { background: #F1F3F4; }
+@media (max-width: 600px) {
+	.pdsc { top: auto; bottom: 0; left: 0; transform: none; width: 100vw; max-height: 92vh; border-radius: 16px 16px 0 0; padding: 22px 16px 16px; }
+	.pdsc .pdsc-graella { grid-template-columns: minmax(0, 1fr); }
+	.pdsc h2 { font-size: 21px; padding-right: 32px; }
+}
+
+/* Invitació dins de la unitat */
+.pdsc-unitat { margin: 24px 0 8px; padding: 20px 24px; border-radius: 12px; border: 1px solid var(--pdsc); background: var(--pdsc-soft); display: flex; gap: 18px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-family: Roboto, Arial, sans-serif; }
+.pdsc-unitat[hidden] { display: none; }
+.pdsc-unitat h3 { margin: 0 0 4px; font-size: 18px; font-weight: 500; color: #202124; }
+.pdsc-unitat p { margin: 0; font-size: 15px; color: #3C4043; line-height: 1.5; }
+.pdsc-unitat button { height: 40px; padding: 0 20px; border: 0; border-radius: 20px; background: var(--pdsc); color: #fff; font: 500 15px/1 Roboto, Arial, sans-serif; white-space: nowrap; cursor: pointer; }
+
+/* Recomanat per la comunitat */
+.pdsc-comunitat { margin: 24px 0 8px; font-family: Roboto, Arial, sans-serif; }
+.pdsc-comunitat[hidden] { display: none; }
+.pdsc-comunitat h3 { margin: 0 0 12px; font-size: 20px; font-weight: 500; color: #202124; }
+.pdsc-comunitat ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.pdsc-comunitat li { margin: 0; padding: 14px 16px; border: 1px solid #DADCE0; border-radius: 12px; background: #fff; }
+.pdsc-comunitat .pdsc-etiq { display: inline-block; margin-bottom: 6px; padding: 2px 9px; border-radius: 10px; background: var(--pdsc-soft); color: var(--pdsc); font-size: 12.5px; font-weight: 500; }
+.pdsc-comunitat .pdsc-tit { display: block; font-size: 16px; font-weight: 500; color: #202124; text-decoration: none; }
+.pdsc-comunitat a.pdsc-tit:hover { color: var(--pdsc); text-decoration: underline; }
+.pdsc-comunitat .pdsc-any { color: #5F6368; font-weight: 400; }
+.pdsc-comunitat p { margin: 6px 0 0; font-size: 14.5px; line-height: 1.5; color: #3C4043; }
+.pdsc-comunitat .pdsc-qui { font-size: 13px; color: #5F6368; }
+
+@media print { .pdsc, .pdsc-fons, .pdsc-boto, .pdsc-unitat { display: none !important; } }
