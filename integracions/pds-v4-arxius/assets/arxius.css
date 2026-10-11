@@ -1,0 +1,65 @@
+/* Portada i arxius amb el model de les unitats (disseny v4).
+   Les peces generals (capçalera, targetes .um-sec, lletra i colors) són de uploads/pds-model/model4.css.
+   Aquí hi ha només les pròpies: llista d'unitats, graella de la portada i cronograma. */
+
+.um.pdsa-v4 .pdsa-pagina { padding-top: 24px; padding-bottom: 72px; }
+
+/* Capçalera de cada bloc (curs o matèria): cercle amb el color del curs i enllaç a la dreta */
+.um.pdsa-v4 .um-sec > header { flex-wrap: wrap; }
+.um.pdsa-v4 .pdsa-curs > header::before { content: attr(data-curt); background: var(--c) none; color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; }
+.um.pdsa-v4 .pdsa-veure { margin-left: auto; font-size: 15px; font-weight: 500; color: var(--c, var(--primary)); white-space: nowrap; }
+.um.pdsa-v4 .pdsa-veure.is-text { color: var(--ink-3); font-weight: 400; }
+
+/* Llista d'unitats, com la dels temes de 2n */
+.um.pdsa-v4 .pdsa-llista { list-style: none; padding: 0; margin: 0 0 16px; }
+.um.pdsa-v4 .pdsa-llista li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; align-items: center; margin: 0; padding: 12px 0; border-top: 1px solid var(--outline); }
+.um.pdsa-v4 .pdsa-llista li:first-child { border-top: 0; }
+.um.pdsa-v4 .pdsa-n { width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 500; background: var(--c-soft, var(--primary-soft)); color: var(--c, var(--primary)); flex: 0 0 auto; }
+.um.pdsa-v4 .pdsa-t { display: block; font-size: 18px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.um.pdsa-v4 .pdsa-t:hover { color: var(--c, var(--primary)); }
+.um.pdsa-v4 .pdsa-m { display: block; font-size: 14px; color: var(--ink-3); margin-top: 2px; }
+
+/* Portada: salts als cursos dins de la capçalera */
+.um.pdsa-v4 .pdsa-salts a { color: #fff; text-decoration: none; }
+.um.pdsa-v4 .pdsa-salts li:hover { background: rgba(255, 255, 255, .3); }
+
+/* Portada: graella de targetes d'unitat */
+.um.pdsa-v4 .pdsa-graella { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.um.pdsa-v4 .pdsa-graella li { margin: 0; }
+.um.pdsa-v4 .pdsa-targeta { display: flex; flex-direction: column; height: 100%; border: 1px solid var(--outline); border-radius: var(--r); overflow: hidden; color: inherit; background: var(--surface); transition: border-color .15s, box-shadow .15s; }
+.um.pdsa-v4 .pdsa-targeta:hover { text-decoration: none; border-color: var(--c, var(--primary)); box-shadow: 0 1px 3px rgba(60, 64, 67, .2); }
+.um.pdsa-v4 .pdsa-imatge { display: block; aspect-ratio: 16 / 9; background: var(--c-soft, var(--primary-soft)) center / cover no-repeat; }
+.um.pdsa-v4 .pdsa-imatge.is-buida { display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 500; color: var(--c, var(--primary)); }
+.um.pdsa-v4 .pdsa-cos { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px 14px; }
+.um.pdsa-v4 .pdsa-etiqueta { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-2); }
+.um.pdsa-v4 .pdsa-etiqueta b { font-weight: 500; font-size: 12.5px; padding: 1px 8px; border-radius: 10px; background: var(--c, var(--primary)); color: #fff; }
+.um.pdsa-v4 .pdsa-titol { font-size: 16.5px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.um.pdsa-v4 .pdsa-desc { font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+
+/* Cronograma sessió a sessió, plegat per unitats */
+.um.pdsa-v4 .pdsa-crono { border: 1px solid var(--outline); border-radius: var(--r); margin: 0 0 10px; }
+.um.pdsa-v4 .pdsa-crono > summary { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 10px 14px; cursor: pointer; list-style: none; }
+.um.pdsa-v4 .pdsa-crono > summary::-webkit-details-marker { display: none; }
+.um.pdsa-v4 .pdsa-crono > summary .pdsa-m { margin: 0; }
+.um.pdsa-v4 .pdsa-crono-t { font-weight: 500; }
+.um.pdsa-v4 .pdsa-crono[open] > summary { border-bottom: 1px solid var(--outline); }
+.um.pdsa-v4 .pdsa-crono ol { list-style: none; padding: 6px 14px 10px; margin: 0; }
+.um.pdsa-v4 .pdsa-crono li { display: grid; grid-template-columns: 34px 38px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; margin: 0; padding: 7px 0; border-top: 1px solid var(--surface-2); font-size: 15px; }
+.um.pdsa-v4 .pdsa-crono li:first-child { border-top: 0; }
+.um.pdsa-v4 .pdsa-acum { font-variant-numeric: tabular-nums; color: var(--primary); font-weight: 500; }
+.um.pdsa-v4 .pdsa-snum { font-variant-numeric: tabular-nums; color: var(--ink-3); font-size: 13.5px; }
+.um.pdsa-v4 .pdsa-tipus { font-size: 12.5px; color: var(--ink-2); padding: 2px 9px; border-radius: 10px; background: var(--surface-2); white-space: nowrap; }
+.um.pdsa-v4 .pdsa-crono li.is-sa .pdsa-tipus { background: #FEF7E0; color: #8A5300; }
+
+@media (max-width: 600px) {
+	.um.pdsa-v4 .pdsa-veure { margin-left: 54px; }
+	.um.pdsa-v4 .pdsa-crono > summary { grid-template-columns: 34px minmax(0, 1fr); }
+	.um.pdsa-v4 .pdsa-crono > summary .pdsa-m { grid-column: 2; }
+	.um.pdsa-v4 .pdsa-crono li { grid-template-columns: 30px minmax(0, 1fr); }
+	.um.pdsa-v4 .pdsa-crono li .pdsa-snum { display: none; }
+	.um.pdsa-v4 .pdsa-crono li .pdsa-tipus { grid-column: 2; justify-self: start; }
+}
+
+/* Lliçons interactives: temps i nivell */
+.um.pdsa-v4 .pdsa-xips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.um.pdsa-v4 .pdsa-xips span { font-size: 12.5px; padding: 2px 9px; border-radius: 10px; background: var(--surface-2); color: var(--ink-2); }
