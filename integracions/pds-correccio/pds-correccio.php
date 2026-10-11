@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Correcció de l'exercici de fonts
  * Description: Prototip només per al professor. Puja la foto d'una resposta manuscrita de l'exercici 1 (anàlisi de fonts) del Taller PAU d'Història i Claude la corregeix amb els criteris oficials, amb comentaris i requadres sobre la imatge. Les fotos no es guarden.
- * Version: 0.1.2
+ * Version: 0.1.3
  * Author: Professor de socials
  * License: GPL-2.0-or-later
  * Requires PHP: 8.1
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'PDS_CORR_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDS_CORR_URL', plugin_dir_url( __FILE__ ) );
-define( 'PDS_CORR_VER', '0.1.2' );
+define( 'PDS_CORR_VER', '0.1.3' );
 
 /** Adreça pública dels exercicis del Taller PAU (web d'Història de 2n de Batxillerat). */
 const PDS_CORR_TALLER_URL = 'https://guillembaro-tech.github.io/historia-2batx/content/temes/taller-%d.json';
@@ -154,10 +154,18 @@ function pds_corr_routes(): void {
 	);
 }
 
-/** Exercici 1 d'un tema del Taller PAU, amb memòria cau de 6 hores. */
+/**
+ * Exercici 1 d'un tema del Taller PAU.
+ * Si el connector «PDS · 2n de Batxillerat» té el tema al WordPress, es fa servir aquest (filtre
+ * pds_corr_exercici_local). Si no, es llegeix de la web d'Història, amb memòria cau de 6 hores.
+ */
 function pds_corr_exercici( int $tema ) {
 	if ( $tema < 1 || $tema > 6 ) {
 		return new WP_Error( 'pds_corr_tema', 'Tema no vàlid.', array( 'status' => 400 ) );
+	}
+	$local = apply_filters( 'pds_corr_exercici_local', null, $tema );
+	if ( is_array( $local ) && ! empty( $local['ex1']['fonts'] ) && ! empty( $local['ex1']['preguntes'] ) ) {
+		return $local;
 	}
 	$key  = 'pds_corr_taller_' . $tema;
 	$data = get_transient( $key );

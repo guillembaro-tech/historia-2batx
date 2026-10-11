@@ -13,7 +13,7 @@
     ortografia: 'Ortografia'
   };
   var MAX_FOTOS = 3;
-  var state = { tema: 1, model: (cfg.models && cfg.models[0] && cfg.models[0].id) || 'claude-sonnet-5-5', fotos: [], resultat: null, ocupat: false };
+  var state = { tema: Number(cfg.temaInicial) || 1, model: (cfg.models && cfg.models[0] && cfg.models[0].id) || 'claude-sonnet-5-5', fotos: [], resultat: null, ocupat: false };
 
   /* ---------- utilitats ---------- */
   function el(tag, attrs, kids) {
