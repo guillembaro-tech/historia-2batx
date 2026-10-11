@@ -295,9 +295,9 @@
     root.style.setProperty('--tc', colorTema(n));
     if (!CFG) document.title = 'Taller PAU · Tema ' + n + '. ' + TEMES[n].nom;
     root.innerHTML = heroTema(n) + '<div class="tl-in"><nav class="tabs" role="tablist" aria-label="Exercicis">'
-      + '<button class="tab" type="button" role="tab" data-tab="e1" aria-selected="true"><span class="n">01</span>Anàlisi de fonts</button>'
-      + '<button class="tab" type="button" role="tab" data-tab="e2" aria-selected="false"><span class="n">02</span>Situa\'t en el temps</button>'
-      + '<button class="tab" type="button" role="tab" data-tab="e3" aria-selected="false"><span class="n">03</span>Glossari</button>'
+      + '<button class="tab" type="button" role="tab" data-tab="e1" aria-selected="true"><span class="n">01</span>Exercici 1 (fonts)</button>'
+      + '<button class="tab" type="button" role="tab" data-tab="e2" aria-selected="false"><span class="n">02</span>Exercici 2 (situa\'t en el temps)</button>'
+      + '<button class="tab" type="button" role="tab" data-tab="e3" aria-selected="false"><span class="n">03</span>Exercici 3 (glossari)</button>'
       + '<button class="tab" type="button" role="tab" data-tab="tools" aria-selected="false"><span class="n">+</span>Caixa d\'eines</button></nav>'
       + ex1(d.ex1) + ex2(d.ex2) + ex3(d.ex3) + '<section id="tools" hidden>' + eines() + '</section>' + FOOT + '</div>';
     var ids = ['e1', 'e2', 'e3', 'tools'];
