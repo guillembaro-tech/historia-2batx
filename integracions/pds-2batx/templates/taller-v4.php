@@ -16,15 +16,17 @@ while ( have_posts() ) :
 	the_post();
 	$pid     = get_the_ID();
 	$n       = pds2_tema_numero( $pid );
-	$oficial = pds2_temes_oficials()[ $n ] ?? array( 'nom' => get_the_title() );
+	$oficial = pds2_temes_oficials()[ $n ] ?? array( 'nom' => get_the_title(), 'dates' => '' );
+	$dates   = (string) pds2_f( 'dates', $pid, $oficial['dates'] );
 	?>
 	<?php pds2_avis_privat(); ?>
 	<div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-v4-taller pds2-t-<?php echo (int) $n; ?>" data-view="alumne">
 		<header class="um-hero">
 			<div class="um-wrap">
 				<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / <a href="<?php echo esc_url( get_permalink( $pid ) ); ?>">Tema <?php echo (int) $n; ?></a> / Taller PAU</nav>
-				<p class="um-eyebrow">2n Batxillerat · Història · Tema <?php echo (int) $n; ?>. <?php echo esc_html( $oficial['nom'] ); ?></p>
-				<h1>Taller PAU</h1>
+				<p class="um-eyebrow">2n Batxillerat · Història · Tema <?php echo (int) $n; ?><?php echo $dates ? ' · ' . esc_html( $dates ) : ''; ?></p>
+				<p class="pds2-v4-kicker">Taller PAU</p>
+				<h1><?php echo esc_html( $oficial['nom'] ); ?></h1>
 				<p class="um-guide">Com es responen els exercicis 1, 2 i 3, pas a pas. Llegeixes l'enunciat, planifiques, escrius, t'autoavalues i ho compares amb una resposta model comentada.</p>
 				<ul class="um-facts">
 					<li>Exercicis 1, 2 i 3 de la PAU</li>

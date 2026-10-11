@@ -5,6 +5,9 @@
 
 .um.pds2-v4 .pds2-v4-tallerwrap { padding-top: 8px; padding-bottom: 72px; }
 
+/* Capçalera: l'etiqueta «Taller PAU» damunt del nom del tema, perquè cada tema té el seu taller */
+.um.pds2-v4 .pds2-v4-kicker { order: 1; display: inline-flex; align-items: center; gap: 6px; margin: 0 0 10px; padding: 5px 12px; border-radius: 16px; background: #fff; color: var(--primary); font-size: 14px; font-weight: 500; line-height: 1.2; }
+
 .um.pds2-v4 #taller {
 	--bg: #F6F8FB;
 	--paper: #FFFFFF;
