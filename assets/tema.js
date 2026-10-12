@@ -135,7 +135,7 @@ function render(d){
   window.addEventListener('afterprint', () => { if (abans) dets.forEach((x, i) => { x.open = abans[i]; }); abans = null; sync(); });
 
   const dlg = document.getElementById('zoom');
-  app.querySelectorAll('figure.font img').forEach(im => im.addEventListener('click', () => { dlg.querySelector('img').src = im.src; dlg.querySelector('img').alt = im.alt; dlg.showModal(); }));
+  app.querySelectorAll('figure.font img, .md p > img').forEach(im => im.addEventListener('click', () => { dlg.querySelector('img').src = im.src; dlg.querySelector('img').alt = im.alt; dlg.showModal(); }));
   dlg.querySelector('button').onclick = () => dlg.close();
   dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
 }
