@@ -112,8 +112,8 @@ while ( have_posts() ) :
 				<?php foreach ( $apartats as $i => $a ) :
 					$q = (string) pdsha_f( 'ha_q_' . $a['k'], $pid, '' );
 					?>
-					<section class="um-sec pdsha-ap-<?php echo esc_attr( $a['k'] ); ?>" id="s<?php echo (int) ( $i + 1 ); ?>"<?php echo 'Destacat' === $a['num'] ? '' : ' data-lletra="' . esc_attr( rtrim( $a['num'], ')' ) ) . '"'; ?>>
-						<header><span class="um-num"><?php echo esc_html( 'Destacat' === $a['num'] ? 'Destacat' : 'Apartat ' . $a['num'] ); ?></span><h2><?php echo esc_html( $a['titol'] ); ?></h2></header>
+					<section class="um-sec pdsha-ap-<?php echo esc_attr( $a['k'] ); ?>" id="s<?php echo (int) ( $i + 1 ); ?>">
+						<header<?php echo 'Destacat' === $a['num'] ? '' : ' data-lletra="' . esc_attr( rtrim( $a['num'], ')' ) ) . '"'; ?>><span class="um-num"><?php echo esc_html( 'Destacat' === $a['num'] ? 'Destacat' : 'Apartat ' . $a['num'] ); ?></span><h2><?php echo esc_html( $a['titol'] ); ?></h2></header>
 						<?php if ( $q ) : ?>
 							<p class="um-q"><?php echo esc_html( $q ); ?></p>
 						<?php endif; ?>
