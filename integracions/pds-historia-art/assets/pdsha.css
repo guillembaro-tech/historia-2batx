@@ -105,3 +105,14 @@
 /* Al document d'impressió (model4.js) la resposta model surt sempre */
 .pd .pdsha-model-cos[hidden] { display: block !important; }
 .pd .pdsha-model { border: 0; padding: 0; }
+
+/* Variables del model per al document d'impressió (#um-print-doc no és dins de .um) */
+.pd { --outline: #DADCE0; --primary: var(--pl-c, #B80672); --primary-soft: var(--pl-soft, #FDE7F3); --ink: #202124; --ink-2: #5F6368; --ink-3: #80868B; --surface: #fff; --surface-2: #F8F9FA; --r: 2mm; }
+.pd .pdsha-fitxa { font-family: "Roboto Var", Arial, sans-serif; break-inside: avoid; }
+.pd .pdsha-fitxa > div { grid-template-columns: 34mm 1fr; }
+.pd .pdsha-fitxa dt, .pd .pdsha-fitxa dd { font-size: 8.8pt; padding: 1.6mm 2.4mm; }
+.pd .pdsha-cards { grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+.pd .pdsha-card { break-inside: avoid; }
+.pd .pdsha-card-body { padding: 2mm 2.4mm; }
+.pd .pdsha-card-t { font-size: 9.5pt; }
+.pd .pdsha-card-n, .pd .pdsha-card-m { font-size: 8pt; }

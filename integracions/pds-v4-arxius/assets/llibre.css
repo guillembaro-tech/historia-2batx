@@ -16,6 +16,8 @@
 .pd .pd-kick { color: rgba(255,255,255,.9); font: 500 8.5pt "Roboto Var", Arial, sans-serif; letter-spacing: .02em; margin: 0; }
 .pd .pd-title { font: 500 28pt/1.1 "Roboto Var", Arial, sans-serif; margin: 3mm 0 0; color: #fff; }
 .pd .pd-guia { font: italic 11pt/1.45 "Literata", Georgia, serif; margin: 4mm 0 0; color: rgba(255,255,255,.92); max-width: 130mm; }
+/* Els títols llargs de la portada no es justifiquen (els paràgrafs del document sí) */
+.pd .pd-cover-band p { text-align: left; hyphens: manual; }
 .pd .pd-name { font-family: "Roboto Var", Arial, sans-serif; }
 .pd .pd-index { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; margin: 6mm 0 0; padding: 4mm 5mm; border: .6pt solid #DADCE0; border-radius: 2mm; font: 9pt/1.35 "Roboto Var", Arial, sans-serif; color: #3C4043; }
 .pd .pd-index b { color: var(--c); font-weight: 500; margin-right: 2mm; }
