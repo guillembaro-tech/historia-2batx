@@ -1,76 +1,160 @@
-/* PDF de les unitats com a llibre de consulta (document d'impressió de model4.js).
-   Dues columnes: text a l'esquerra i, al marge dret, imatges verticals i paraules clau.
-   Mapes i gràfics a tota l'amplada, amb requadre. Portada amb el color del curs i índex.
-   Les regles de pàgina (@page) les afegeix llibre.js només quan s'imprimeix una unitat. */
+/* Documents de les unitats i dels temes (PDF), model de llibre de coneixements (octubre de 2026).
+   Una columna de text. Les paraules clau i les imatges verticals van al costat, amb el text al voltant.
+   Mapes, gràfics i imatges horitzontals a tota l'amplada. Els exercicis no tenen marge lateral.
+   Les regles de pàgina (@page, capçalera i peu) les posa model4.js quan s'imprimeix. */
 @font-face { font-family: "Literata"; src: url("/wp-content/uploads/pds-model/fonts/literata-latin-opsz-normal.woff2") format("woff2"); font-weight: 200 900; font-style: normal; }
 @font-face { font-family: "Literata"; src: url("/wp-content/uploads/pds-model/fonts/literata-latin-opsz-italic.woff2") format("woff2"); font-weight: 200 900; font-style: italic; }
 
-
 @media print {
-.pd { --c: var(--pl-c, #1F5FBF); --c-soft: var(--pl-soft, #E8F0FC); --side: 54mm; --gap: 6mm; padding: 0 !important; font-family: "Literata", Georgia, serif; font-size: 10pt; line-height: 1.52; color: #202124; }
-
-/* Portada */
-.pd .pd-cover { border: 0; margin: 0 0 9mm; padding: 0; }
-.pd .pd-cover-band { background: var(--c); color: #fff; border-radius: 3mm; padding: 9mm 10mm 8mm; margin-bottom: 5mm; position: relative; overflow: hidden; }
-.pd .pd-cover-band::after { content: ""; position: absolute; right: -14mm; top: -14mm; width: 60mm; height: 60mm; border-radius: 50%; border: 1.2mm solid rgba(255,255,255,.18); }
-.pd .pd-kick { color: rgba(255,255,255,.9); font: 500 8.5pt "Roboto Var", Arial, sans-serif; letter-spacing: .02em; margin: 0; }
-.pd .pd-title { font: 500 28pt/1.1 "Roboto Var", Arial, sans-serif; margin: 3mm 0 0; color: #fff; }
-.pd .pd-guia { font: italic 11pt/1.45 "Literata", Georgia, serif; margin: 4mm 0 0; color: rgba(255,255,255,.92); max-width: 130mm; }
-/* Els títols llargs de la portada no es justifiquen (els paràgrafs del document sí) */
-.pd .pd-cover-band p { text-align: left; hyphens: manual; }
-.pd .pd-name { font-family: "Roboto Var", Arial, sans-serif; }
-.pd .pd-index { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5mm 8mm; margin: 6mm 0 0; padding: 4mm 5mm; border: .6pt solid #DADCE0; border-radius: 2mm; font: 9pt/1.35 "Roboto Var", Arial, sans-serif; color: #3C4043; }
-.pd .pd-index b { color: var(--c); font-weight: 500; margin-right: 2mm; }
-.pd .pd-index p { margin: 0; }
-
-/* Títols */
-.pd .pd-h1 { font: 500 9pt "Roboto Var", Arial, sans-serif; color: var(--c); text-transform: uppercase; letter-spacing: .12em; margin: 0 0 3mm; border-bottom: .6pt solid var(--c); padding-bottom: 1.5mm; }
-.pd h2 { font: 500 17pt/1.2 "Roboto Var", Arial, sans-serif; color: #202124; margin: 7mm 0 3mm; padding-top: 3mm; border-top: 1.4pt solid var(--c); break-after: avoid; }
-.pd h3 { font: 500 11.5pt/1.3 "Roboto Var", Arial, sans-serif; color: var(--c-fosc, var(--c)); margin: 5mm 0 1.5mm; break-after: avoid; }
-.pd h4 { font: 500 10pt "Roboto Var", Arial, sans-serif; margin: 3mm 0 1mm; }
-.pd .um-q { font: italic 10.5pt/1.45 "Literata", Georgia, serif; color: #3C4043; border-left: 1.2pt solid var(--c); padding: .5mm 0 .5mm 3.5mm; margin: 0 0 3mm; }
-.pd p { margin: 0 0 2.4mm; text-align: justify; hyphens: auto; }
-.pd li { text-align: left; }
-.pd mark, .pd .um-term { background: var(--c-soft); }
+html.um-printing #um-print-doc { padding: 0 !important; }
+.pd { --c: #1F5FBF; --c-soft: #E8F0FC; --c-dark: #174A96; --ink: #202124; --ink2: #3C4043; --grey: #5F6368; --line: #DADCE0; --side: 58mm;
+  font-family: "Literata", Georgia, serif; font-size: 10pt; line-height: 1.5; color: var(--ink); padding: 0 !important; max-width: none; }
+.pd * { box-sizing: border-box; }
+.pd p, .pd li, .pd dd { orphans: 3; widows: 3; }
+.pd a { color: inherit; text-decoration: none; }
 .pd strong, .pd b { font-weight: 600; }
+.pd mark, .pd .um-term { background: var(--c-soft); padding: 0 1px; }
+.pd .sans, .pd h1, .pd h2, .pd h3, .pd h4, .pd figcaption, .pd .um-box-t, .pd .um-tag, .pd table, .pd .pd-name, .pd .pd-index-box { font-family: "Roboto Var", Roboto, Arial, sans-serif; }
 
-/* Dues columnes: text principal a l'esquerra i marge a la dreta per a imatges verticals i paraules clau */
-.pd .pd-sec { position: relative; }
-.pd .pd-sec::after { content: ""; display: block; clear: both; }
-.pd .pd-sec > *:not(.pl-costat):not(.um-key):not(.pl-ample):not(.um-two):not(.um-cards):not(h2) { margin-right: calc(var(--side) + var(--gap)) !important; }
-.pd .pl-costat, .pd .pd-sec > .um-key { float: right; clear: right; width: var(--side); margin: 1mm 0 3mm 0 !important; }
-.pd .pl-ample, .pd .pd-sec > .um-two, .pd .pd-sec > .um-cards { clear: both; }
+/* Capçalera: franja amb el to suau del curs, el títol i el dibuix de la unitat (imatge destacada) */
+.pd .pd-cover { margin: 0 0 7mm; border: 0; padding: 0; }
+.pd .pd-band { display: flex; align-items: stretch; background: var(--c-soft); border-radius: 2.5mm; overflow: hidden; min-height: 48mm; }
+.pd .pd-band.is-small { min-height: 34mm; }
+.pd .pd-band-t { flex: 1 1 auto; padding: 8mm 6mm 7mm 9mm; display: flex; flex-direction: column; justify-content: center; }
+.pd .pd-band-i { flex: 0 0 64mm; width: 64mm; display: flex; align-items: flex-end; justify-content: flex-end; padding: 3mm 5mm 0 0; }
+.pd .pd-band.is-small .pd-band-i { flex-basis: 50mm; width: 50mm; }
+.pd .pd-band-t { min-width: 0; }
+.pd .pd-band-i img { display: block; height: 40mm; width: 100%; object-fit: contain; object-position: right bottom; }
+.pd .pd-band.is-small .pd-band-i img { height: 28mm; }
+.pd .pd-kick { margin: 0 0 2mm; font: 500 8.5pt/1.3 "Roboto Var", Roboto, Arial, sans-serif; color: var(--c-dark); letter-spacing: .02em; }
+.pd .pd-title { margin: 0; font: 600 26pt/1.08 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink); letter-spacing: -.01em; text-align: left; hyphens: manual; }
+.pd .pd-band.is-small .pd-title { font-size: 20pt; }
+.pd .pd-guia { margin: 3.5mm 0 0; font: italic 10.5pt/1.45 "Literata", Georgia, serif; color: var(--ink2); max-width: 105mm; text-align: left; }
+.pd .pd-name { display: flex; align-items: flex-end; gap: 2.5mm; margin: 5mm 0 0; font-size: 8.5pt; color: var(--grey); }
+.pd .pd-name i { flex: 1; border-bottom: .6pt solid #9AA0A6; height: 4mm; }
+.pd .pd-name i.w { flex: 3; }
+.pd .pd-index-box { margin: 5mm 0 0; padding: 3.5mm 5mm 3mm; border: .6pt solid var(--line); border-radius: 2mm; }
+.pd .pd-index-t { margin: 0 0 2mm; font: 600 7.5pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); text-transform: uppercase; letter-spacing: .1em; }
+.pd .pd-index { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 8mm; font-size: 8.8pt; line-height: 1.35; color: var(--ink2); }
+.pd .pd-index li { margin: 0 0 1.4mm; break-inside: avoid; display: flex; gap: 2.5mm; }
+.pd .pd-index b { color: var(--c); font-weight: 600; min-width: 3mm; }
 
-/* Imatges i mapes amb requadre */
-.pd figure.um-fig { border: .6pt solid #DADCE0; border-radius: 2mm; padding: 2.2mm; background: #fff; margin: 2mm 0 4mm; break-inside: avoid; box-shadow: none; }
-.pd figure.um-fig img { display: block; width: 100%; height: auto; max-height: 92mm; object-fit: contain; border-radius: 1mm; background: #F8F9FA; }
-.pd figure.pl-costat img { max-height: 70mm; }
-.pd figure.um-fig figcaption { font: 7.4pt/1.35 "Roboto Var", Arial, sans-serif; color: #5F6368; margin-top: 1.8mm; text-align: left; }
-.pd figure.um-fig figcaption b { color: #202124; font-weight: 500; display: block; margin-bottom: .4mm; font-size: 7.8pt; }
-.pd figure.um-map { border-color: var(--c); }
-.pd figure.um-fig svg { max-height: 70mm; }
-.pd .um-two { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
-.pd .um-two figure.um-fig { margin: 0; float: none; width: auto; }
+/* Parts i títols */
+.pd .pd-break { break-before: page; }
+.pd .pd-h1 { font: 600 9pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--c); text-transform: uppercase; letter-spacing: .14em; margin: 0 0 4mm; padding-bottom: 1.6mm; border-bottom: .8pt solid var(--c); }
+.pd h2 { font: 600 16pt/1.2 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink); margin: 8mm 0 3mm; padding-top: 2.6mm; border-top: 1.6pt solid var(--c); break-after: avoid; clear: both; }
+.pd .pd-sec:first-of-type > h2, .pd .pd-h1 + .pd-sec > h2 { margin-top: 2mm; }
+/* El tema del lloc posa mides fixes als títols quan s'imprimeix; aquí manen les del document */
+.pd .pd-h1 { font-size: 9pt !important; line-height: 1.3 !important; }
+.pd h2 { font-size: 16pt !important; line-height: 1.2 !important; }
+.pd h3 { font-size: 11.5pt !important; line-height: 1.3 !important; }
+.pd h4 { font-size: 10pt !important; line-height: 1.3 !important; }
+.pd .um-level > h3 { font-size: 13pt !important; }
+.pd .pds2-v4-font h3 { font-size: 11pt !important; }
+.pd h2 .pd-n { display: inline-block; min-width: 7.5mm; color: var(--c); }
+.pd h3 { font: 600 11.5pt/1.3 "Roboto Var", Roboto, Arial, sans-serif; color: var(--c-dark); margin: 5mm 0 1.6mm; break-after: avoid; }
+.pd h4 { font: 600 10pt/1.3 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink); margin: 3.5mm 0 1.2mm; break-after: avoid; }
+/* La pregunta guia no es queda sola al final de la pàgina */
+.pd .um-q { break-after: avoid; }
+.pd .um-q { font: italic 10.5pt/1.45 "Literata", Georgia, serif; color: var(--ink2); border-left: 1.6pt solid var(--c); padding: .6mm 0 .6mm 3.5mm; margin: 0 0 3.5mm; text-align: left; }
+.pd p { margin: 0 0 2.4mm; text-align: justify; hyphens: auto; }
+.pd ul, .pd ol { margin: 0 0 2.6mm; padding-left: 5.5mm; }
+.pd li { margin: .8mm 0; text-align: left; }
+.pd li::marker { color: var(--c); font-family: "Roboto Var", Roboto, Arial, sans-serif; font-weight: 600; }
+.pd .pds2-claus li { margin-bottom: 1.6mm; }
+
+/* Al costat: paraules clau i imatges verticals, amb el text al voltant */
+.pd .pd-blk { display: flow-root; }
+.pd .pd-blk-h { break-inside: avoid; }
+.pd .pd-keep { break-inside: avoid; }
+.pd figure.pd-port img { max-height: 72mm; }
+.pd figure.pd-port figcaption { max-width: 120mm; margin-left: auto; margin-right: auto; text-align: center; }
+.pd .pd-side-g { float: right; clear: right; width: var(--side); margin: 1mm 0 3mm 5mm; }
+.pd .pd-side-g > * { margin: 0 0 3mm !important; float: none; width: auto; }
+.pd .pd-side-g figure img { max-height: 68mm; width: 100%; object-fit: contain; }
+.pd .in-side.um-key { font-size: 8.4pt; }
+/* Les caixes que queden al costat d'una columna lateral s'estrenyen en lloc de passar-hi per sota */
+.pd .um-box:not(.in-side), .pd .um-check, .pd .um-cards { display: flow-root; }
+.pd .pd-wide, .pd .um-two, .pd .um-cards, .pd table, .pd .pd-docs article { clear: both; }
+
+/* Figures */
+.pd figure { margin: 2.5mm 0 4mm; padding: 0; border: 0; break-inside: avoid; }
+.pd figure img, .pd figure svg { display: block; width: 100%; height: auto; border-radius: 1.2mm; }
+.pd figure.pd-wide img { max-height: 98mm; width: auto; max-width: 100%; margin: 0 auto; }
+
+.pd figure svg { max-height: 115mm; font-family: "Roboto Var", Roboto, Arial, sans-serif; }
+.pd figure.um-map { border: .6pt solid var(--line); border-radius: 2mm; padding: 2mm; }
+.pd figcaption { font: 7.6pt/1.38 "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); margin-top: 1.6mm; text-align: left; }
+.pd figcaption b { color: var(--ink); font-weight: 600; }
+.pd figcaption a { color: inherit; }
+.pd .pd-imgs { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+.pd .pd-imgs img { max-height: 80mm; object-fit: cover; }
+.pd .um-two { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 2mm 0 4mm; }
+.pd .um-two figure { margin: 0; }
+.pd .um-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 2mm 0 4mm; }
+.pd .um-card { border: .6pt solid var(--line); border-radius: 2mm; padding: 2.6mm 3.2mm; break-inside: avoid; font: 8.8pt/1.42 "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-card p { text-align: left; margin-bottom: 1mm; }
 
 /* Caixes */
-.pd .um-box, .pd .um-check { border-radius: 2mm; padding: 2.6mm 3.2mm; margin: 2mm 0 4mm; font: 8.8pt/1.45 "Roboto Var", Arial, sans-serif; }
-.pd .um-box p, .pd .um-check p { text-align: left; margin-bottom: 1mm; }
-.pd .um-box-t { font: 600 7.6pt "Roboto Var", Arial, sans-serif !important; color: var(--c) !important; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 1mm !important; }
-.pd .um-key { background: var(--c-soft); border-left: 1.4pt solid var(--c); border-radius: 0 2mm 2mm 0; font-size: 8.2pt; }
-.pd .um-check { border: .6pt solid var(--c); background: #fff; }
+.pd .um-box, .pd .um-check { border-radius: 2mm; padding: 2.8mm 3.6mm; margin: 2.5mm 0 4mm; font: 9pt/1.45 "Roboto Var", Roboto, Arial, sans-serif; break-inside: avoid; }
+.pd .um-box p, .pd .um-check p { text-align: left; margin-bottom: 1.2mm; }
+.pd .um-box > :last-child, .pd .um-check > :last-child { margin-bottom: 0; }
+.pd .um-box-t { display: block; font: 600 7.4pt "Roboto Var", Roboto, Arial, sans-serif !important; color: var(--c) !important; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 1.2mm !important; }
+.pd .um-key { background: var(--c-soft); border-left: 1.8pt solid var(--c); border-radius: 0 2mm 2mm 0; }
+
+.pd .pds2-idea p { font: italic 10.5pt/1.45 "Literata", Georgia, serif; }
+.pd .um-font { background: #F8F9FA; border-left: 1.8pt solid #9AA0A6; border-radius: 0 2mm 2mm 0; }
+.pd .um-font blockquote { margin: 0 0 1.2mm; font: italic 9.6pt/1.5 "Literata", Georgia, serif; color: var(--ink); }
+.pd .um-src { font-size: 7.6pt; color: var(--grey); }
+.pd .um-check { border: .8pt solid var(--c); background: #fff; }
 .pd .um-check ol { margin: 0; padding-left: 4.5mm; }
-.pd .um-think { border: .6pt dashed #9AA0A6; background: #fff; }
+.pd .um-think { border: .8pt dashed #9AA0A6; background: #fff; }
 .pd .um-near { background: #F1F3F4; }
+.pd .um-docent { background: #F3F6FB; border: .6pt solid #C9D6EC; }
+.pd .pd-ans, .pd .pd-why { font-style: italic; color: var(--ink2); font-size: 9pt; }
+
+/* Documents de l'època (temes de 2n) */
+.pd .pds2-v4-font { border-left: 2.2pt solid var(--c); padding: 1mm 0 1mm 4.5mm; margin: 0 0 6mm; break-inside: avoid; }
+.pd .pds2-v4-font > header { display: flex; gap: 3mm; align-items: baseline; margin-bottom: 1.5mm; }
+.pd .pds2-v4-n { font: 600 8pt "Roboto Var", Roboto, Arial, sans-serif; color: #fff; background: var(--c); border-radius: 1mm; padding: .4mm 1.8mm; }
+.pd .pds2-v4-n::before { content: "Document "; }
+.pd .pds2-v4-font h3 { margin: 0; color: var(--ink); }
+.pd .pds2-v4-meta, .pd .pds2-v4-proc { font: 8pt/1.35 "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); margin: .6mm 0 1.5mm; text-align: left; }
+.pd .pds2-v4-cita { margin: 0 0 2mm; font: italic 10pt/1.5 "Literata", Georgia, serif; }
+.pd .pds2-v4-peu { font: 8.4pt/1.4 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink2); border-top: .6pt solid var(--line); padding-top: 2mm; margin-top: 4mm; clear: both; }
+.pd .pds2-v4-peu p { text-align: left; margin-bottom: 1mm; }
+
+/* Glossari a dues columnes */
+.pd .pd-glossari dl { columns: 2; column-gap: 8mm; margin: 0; font-size: 9pt; line-height: 1.42; }
+.pd .pd-glossari dl > div { break-inside: avoid; margin: 0 0 2mm; }
+.pd .pd-glossari dt { display: inline; font: 600 9pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--c-dark); }
+.pd .pd-glossari dt::after { content: ". "; }
+.pd .pd-glossari dd { display: inline; margin: 0; }
 
 /* Taules */
-.pd table { font: 8.4pt/1.35 "Roboto Var", Arial, sans-serif; border-collapse: collapse; margin: 2mm 0 4mm; }
-.pd th, .pd td { border: 0; border-bottom: .5pt solid #DADCE0; padding: 1.6mm 2mm; }
-.pd thead th { background: var(--c); color: #fff; font-weight: 500; }
+.pd table { width: 100%; font-size: 8.4pt; line-height: 1.35; border-collapse: collapse; margin: 2.5mm 0 4mm; break-inside: auto; }
+.pd th, .pd td { border: 0; border-bottom: .5pt solid var(--line); padding: 1.6mm 2mm; text-align: left; vertical-align: top; }
+.pd thead th { background: var(--c); color: #fff; font-weight: 600; }
 .pd tbody tr:nth-child(even) td { background: #F8F9FA; }
 
-.pd .um-step-bar, .pd .um-step-nav, .pd .um-step-res { display: none !important; }
-.pd table { width: 100%; }
-.pd .pd-sec > table { width: calc(100% - var(--side) - var(--gap)) !important; margin-right: 0 !important; }
-.pd figure svg { font-family: "Roboto Var", Arial, sans-serif; }
+/* Exercicis: tota l'amplada, numeració clara i espai per respondre */
+.pd .um-levels { display: block; }
+.pd .um-level { display: block !important; margin: 0 0 6mm; break-inside: auto !important; }
+.pd .um-level + .um-level { break-before: page; }
+.pd .um-level > h3 { font-size: 13pt; color: var(--c); margin-top: 0; }
+.pd .um-tag { display: block; font: 8.5pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); margin: -1mm 0 3mm; }
+.pd .pd-p-activitats ol > li, .pd .pd-p-sa ol > li { margin-bottom: 2.6mm; break-inside: avoid; }
+.pd .um-blank { display: inline-block; min-width: 24mm; border-bottom: .6pt solid #80868B; height: 1em; vertical-align: baseline; }
+.pd .pd-lines { margin: 2mm 0 1mm; }
+.pd .pd-lines span { display: block; height: 7.6mm; border-bottom: .5pt solid #BDC1C6; }
+.pd .pd-quiz .pd-q { break-inside: avoid; margin: 0 0 3.5mm; }
+.pd .pd-qt { font: 600 9.6pt/1.4 "Roboto Var", Roboto, Arial, sans-serif; margin: 0 0 1.2mm; text-align: left; }
+.pd .pd-doc { background: #F1F3F4; padding: 1.6mm 2.6mm; font-style: italic; border-radius: 1mm; }
+.pd .pd-opts { list-style: none; padding-left: 4mm; margin: 0; }
+.pd .pd-opts li { display: flex; gap: 2mm; margin: .6mm 0; }
+.pd .pd-opts .pd-box { flex: 0 0 3.2mm; height: 3.2mm; border: .6pt solid #80868B; border-radius: .6mm; font-size: 7pt; line-height: 3.2mm; text-align: center; color: var(--c); margin-top: .9mm; }
+.pd .pd-opts .is-ok { font-weight: 600; }
+.pd .pd-sess { border: .6pt solid var(--line); border-radius: 2mm; padding: 2.6mm 3.4mm; margin: 0 0 3mm; break-inside: avoid; }
 
+.pd .um-step-bar, .pd .um-step-nav, .pd .um-step-res, .pd .um-foot-note, .pd .um-start-btn, .pd .um-start-prev { display: none !important; }
 }
