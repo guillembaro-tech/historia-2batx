@@ -73,6 +73,9 @@
 .um.pds2-v4 .pds2-v4-tl:hover { background: var(--primary-soft); text-decoration: none; }
 .um.pds2-v4 .pds2-v4-botons { margin: 4px 0 20px; }
 .um.pds2-v4 .pds2-v4-botons a.um-quiz-btn { display: inline-block; color: var(--on-primary); text-decoration: none; }
+/* Portada de 2n: enllaç a cada matèria a la capçalera de la secció */
+.um.pds2-v4 .pds2-v4-veure { margin-left: auto; font-size: 15px; font-weight: 500; white-space: nowrap; }
+.um.pds2-v4 .pds2-v4-estils .pds2-v4-tn { font-size: 14px; }
 
 .um.pds2-v4 .pds2-v4-crono { position: relative; padding-bottom: 28px; margin: 4px 0 18px; }
 .um.pds2-v4 .pds2-v4-crono-par { height: 38px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; padding: 0 12px; border-radius: 6px; background: var(--primary-soft); color: var(--primary-dark); font-size: 14px; overflow: hidden; white-space: nowrap; }

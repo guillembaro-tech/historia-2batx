@@ -24,6 +24,7 @@ add_filter(
 		}
 		$mapa = array(
 			'portada'   => pds2_disseny_v4() ? 'portada-v4.php' : 'portada.php',
+			'historia'  => 'historia-v4.php',
 			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
 			'taller'    => pds2_disseny_v4() ? 'taller-v4.php' : 'taller.php',
 			'preguntes' => pds2_disseny_v4() ? 'preguntes-v4.php' : 'preguntes.php',
@@ -142,14 +143,11 @@ function pds2_estils_v4(): void {
 	wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => 'disponible' === pds2_f( 'estat_taller', $tema_id, '' ) ? pds2_taller_url( $tema_id ) : '' ) ) . ';', 'before' );
 }
 
-/** Molla de pa de la secció: Inici / Història / 2n Batxillerat / ... */
+/** Molla de pa de la secció (disseny antic): Inici / 2n Batxillerat / Història / ... */
 function pds2_molla( array $extra = array() ): void {
-	$historia = get_term_by( 'slug', 'historia', 'materia' );
 	echo '<p class="crumbs"><a href="' . esc_url( home_url( '/' ) ) . '">Inici</a>';
-	if ( $historia ) {
-		echo '<span class="sep">/</span><span>' . esc_html( $historia->name ) . '</span>';
-	}
 	echo '<span class="sep">/</span><a href="' . esc_url( pds2_portada_url() ) . '">2n Batxillerat</a>';
+	echo '<span class="sep">/</span><a href="' . esc_url( pds2_historia_url() ) . '">Història</a>';
 	foreach ( $extra as $label => $url ) {
 		echo '<span class="sep">/</span>';
 		echo $url ? '<a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>' : '<span>' . esc_html( $label ) . '</span>';

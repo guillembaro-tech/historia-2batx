@@ -17,6 +17,7 @@ add_action( 'init', 'pds2_add_rewrite_rules', 20 );
 function pds2_add_rewrite_rules(): void {
 	$b = preg_quote( PDS2_BASE, '/' );
 	add_rewrite_rule( '^' . $b . '/preguntes-pau/?$', 'index.php?pds2_vista=preguntes', 'top' );
+	add_rewrite_rule( '^' . $b . '/historia/?$', 'index.php?pds2_vista=historia', 'top' );
 	add_rewrite_rule( '^' . $b . '/([^/]+)/taller/?$', 'index.php?tema_pau=$matches[1]&pds2_vista=taller', 'top' );
 	add_rewrite_rule( '^' . $b . '/([^/]+)/?$', 'index.php?tema_pau=$matches[1]', 'top' );
 }
@@ -29,11 +30,16 @@ add_filter(
 	}
 );
 
-/** Vista actual de la secció: portada, tema, taller, preguntes o cap. */
+/** Vistes de la secció que no són cap entrada (pàgines fetes només amb la plantilla). */
+function pds2_vistes_sense_entrades(): array {
+	return array( 'preguntes', 'historia' );
+}
+
+/** Vista actual de la secció: portada (les matèries de 2n), historia (portada de la matèria), tema, taller, preguntes o cap. */
 function pds2_vista(): string {
 	$v = (string) get_query_var( 'pds2_vista' );
-	if ( 'preguntes' === $v ) {
-		return 'preguntes';
+	if ( in_array( $v, pds2_vistes_sense_entrades(), true ) ) {
+		return $v;
 	}
 	if ( is_singular( 'tema_pau' ) ) {
 		return 'taller' === $v ? 'taller' : 'tema';
@@ -49,19 +55,25 @@ function pds2_taller_url( int $post_id ): string {
 	return trailingslashit( get_permalink( $post_id ) ) . 'taller/';
 }
 
+/** Portada de 2n de Batxillerat, amb les matèries del curs. */
 function pds2_portada_url(): string {
 	return home_url( '/' . PDS2_BASE . '/' );
+}
+
+/** Portada de la matèria Història (els sis temes de la PAU). */
+function pds2_historia_url(): string {
+	return home_url( '/' . PDS2_BASE . '/historia/' );
 }
 
 function pds2_preguntes_url(): string {
 	return home_url( '/' . PDS2_BASE . '/preguntes-pau/' );
 }
 
-/** La pàgina de preguntes no és cap entrada: que el WordPress no la tracti com la portada del blog. */
+/** Les pàgines de preguntes i d'Història no són cap entrada: que el WordPress no les tracti com la portada del blog. */
 add_action(
 	'parse_query',
 	static function ( WP_Query $q ) {
-		if ( $q->is_main_query() && 'preguntes' === $q->get( 'pds2_vista' ) ) {
+		if ( $q->is_main_query() && in_array( $q->get( 'pds2_vista' ), pds2_vistes_sense_entrades(), true ) ) {
 			$q->is_home     = false;
 			$q->is_404      = false;
 			$q->is_page     = false;
@@ -74,7 +86,7 @@ add_action(
 add_filter(
 	'posts_pre_query',
 	static function ( $posts, WP_Query $q ) {
-		if ( $q->is_main_query() && 'preguntes' === $q->get( 'pds2_vista' ) ) {
+		if ( $q->is_main_query() && in_array( $q->get( 'pds2_vista' ), pds2_vistes_sense_entrades(), true ) ) {
 			$q->found_posts   = 0;
 			$q->max_num_pages = 0;
 			return array();
@@ -85,11 +97,11 @@ add_filter(
 	2
 );
 
-/** La pàgina de preguntes no té entrades, però no és un 404. */
+/** Les pàgines de preguntes i d'Història no tenen entrades, però no són un 404. */
 add_filter(
 	'pre_handle_404',
 	static function ( $pre, $q ) {
-		return 'preguntes' === $q->get( 'pds2_vista' ) ? true : $pre;
+		return in_array( $q->get( 'pds2_vista' ), pds2_vistes_sense_entrades(), true ) ? true : $pre;
 	},
 	10,
 	2
@@ -106,7 +118,7 @@ function pds2_404(): void {
 /**
  * Accés i redireccions.
  * - Mentre la secció no estigui publicada, els visitants reben un 404 a totes les pàgines de 2n.
- * - Quan es publiqui, la pàgina del curs i la de la matèria Història porten a la portada de 2n.
+ * - L'arxiu del curs porta a la portada de 2n (les matèries) i el de la matèria Història, a la portada d'Història.
  */
 add_action(
 	'template_redirect',
@@ -116,15 +128,16 @@ add_action(
 			pds2_404();
 			return;
 		}
-		// L'arxiu del curs i el de la matèria Història porten a la portada de 2n (els del tema només llisten unitats).
+		// L'arxiu del curs porta a la portada de 2n i el de la matèria Història, a la portada d'Història (els del tema només llisten unitats).
 		// Mentre la secció és privada, només ho fan per als administradors, amb una redirecció temporal.
 		if ( is_tax( 'materia', 'historia' ) || is_tax( 'curs', PDS2_BASE ) ) {
+			$desti = is_tax( 'materia', 'historia' ) ? pds2_historia_url() : pds2_portada_url();
 			if ( pds2_publicat() ) {
-				wp_safe_redirect( pds2_portada_url(), 301 );
+				wp_safe_redirect( $desti, 301 );
 				exit;
 			}
 			if ( pds2_pot_veure() ) {
-				wp_safe_redirect( pds2_portada_url(), 302 );
+				wp_safe_redirect( $desti, 302 );
 				exit;
 			}
 			if ( is_tax( 'materia', 'historia' ) ) {
@@ -171,15 +184,18 @@ add_filter(
 	2
 );
 
-/** Els enllaços del curs i de la matèria Història porten a la portada de 2n (als visitants, quan la secció sigui pública). */
+/** L'enllaç del curs porta a la portada de 2n i el de la matèria Història, a la portada d'Història (quan la secció és pública). */
 add_filter(
 	'term_link',
 	static function ( $url, $term ) {
 		if ( ! pds2_pot_veure() || ! ( $term instanceof WP_Term ) ) {
 			return $url;
 		}
-		if ( ( 'curs' === $term->taxonomy && PDS2_BASE === $term->slug ) || ( 'materia' === $term->taxonomy && 'historia' === $term->slug ) ) {
+		if ( 'curs' === $term->taxonomy && PDS2_BASE === $term->slug ) {
 			return pds2_portada_url();
+		}
+		if ( 'materia' === $term->taxonomy && 'historia' === $term->slug ) {
+			return pds2_historia_url();
 		}
 		return $url;
 	},
@@ -193,6 +209,9 @@ add_filter(
 	static function ( $parts ) {
 		switch ( pds2_vista() ) {
 			case 'portada':
+				$parts['title'] = '2n Batxillerat';
+				break;
+			case 'historia':
 				$parts['title'] = 'Història · 2n Batxillerat';
 				break;
 			case 'taller':
@@ -205,4 +224,35 @@ add_filter(
 		}
 		return $parts;
 	}
+);
+
+/**
+ * Nombre que surt al costat de cada matèria i de cada curs al menú de la capçalera (filtre pds_menu_count del tema).
+ * Per a Història, els temes publicats. Per a 2n de Batxillerat, s'hi sumen (Història de l'Art hi suma els seus estils).
+ */
+function pds2_temes_publicats(): int {
+	$q = new WP_Query(
+		array(
+			'post_type'      => 'tema_pau',
+			'post_status'    => 'publish',
+			'posts_per_page' => 1,
+			'fields'         => 'ids',
+		)
+	);
+	return (int) $q->found_posts;
+}
+
+add_filter(
+	'pds_menu_count',
+	static function ( $n, $term ) {
+		if ( ! ( $term instanceof WP_Term ) || ! pds2_publicat() ) {
+			return $n;
+		}
+		if ( ( 'materia' === $term->taxonomy && 'historia' === $term->slug ) || ( 'curs' === $term->taxonomy && PDS2_BASE === $term->slug ) ) {
+			return (int) $n + pds2_temes_publicats();
+		}
+		return $n;
+	},
+	10,
+	2
 );

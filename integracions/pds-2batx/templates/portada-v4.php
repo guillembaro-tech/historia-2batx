@@ -1,6 +1,7 @@
 <?php
 /**
- * Portada de 2n de Batxillerat amb el model de les unitats del lloc (disseny v4).
+ * Portada de 2n de Batxillerat (/2n-batxillerat/): les matèries del curs, Història i Història de l'Art,
+ * amb el model de les unitats del lloc (disseny v4). La portada de la matèria Història és historia-v4.php.
  *
  * @package pds-2batx
  */
@@ -16,38 +17,64 @@ $posts    = array();
 foreach ( pds2_temes() as $p ) {
 	$posts[ pds2_tema_numero( $p->ID ) ] = $p;
 }
-$inici = 1875;
-$fi    = 1986;
-$pos   = static function ( int $any ) use ( $inici, $fi ): float {
-	return round( ( max( $inici, min( $fi, $any ) ) - $inici ) / ( $fi - $inici ) * 100, 2 );
-};
-$anys  = static function ( string $dates ): array {
-	preg_match_all( '/\d{4}/', $dates, $m );
-	return array( (int) ( $m[0][0] ?? 0 ), (int) ( $m[0][1] ?? 0 ) );
-};
-$amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 'estat_taller', $p->ID, '' ) );
+
+// Història de l'Art, si el connector hi és i l'usuari la pot veure.
+$art = function_exists( 'pdsha_pot_veure' ) && function_exists( 'pdsha_periodes' ) && function_exists( 'pdsha_estils_ordenats' ) && pdsha_pot_veure();
+$art_estils = array(); // Una fila per estil previst o fet: període, nom, terme (o null si és en preparació).
+$art_obres  = 0;
+$art_total  = 0;
+if ( $art ) {
+	$fets_de = array();
+	foreach ( pdsha_estils_ordenats() as $branca ) {
+		foreach ( $branca['estils'] as $t ) {
+			$fets_de[ $branca['periode']->slug ][ $t->slug ] = $t;
+		}
+	}
+	foreach ( pdsha_periodes() as $slug => $per ) {
+		$fets  = $fets_de[ $slug ] ?? array();
+		$ordre = array_unique( array_merge( array_keys( $per['estils'] ), array_keys( $fets ) ) );
+		foreach ( $ordre as $es ) {
+			$art_estils[] = array(
+				'per'   => $per,
+				'nom'   => isset( $fets[ $es ] ) ? pdsha_titol_estil( $fets[ $es ] ) : $per['estils'][ $es ],
+				'terme' => $fets[ $es ] ?? null,
+			);
+		}
+		if ( ! $ordre ) {
+			$art_estils[] = array(
+				'per'   => $per,
+				'nom'   => $per['resum'],
+				'terme' => null,
+			);
+		}
+	}
+	$art_obres = count( pdsha_obres_per_numero() );
+	$art_total = count( pdsha_obres_oficials() );
+}
 ?>
 <?php pds2_avis_privat(); ?>
-<div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-v4-portada" data-view="alumne">
+<div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-v4-portada pds2-v4-curs" data-view="alumne">
 	<header class="um-hero">
 		<div class="um-wrap">
 			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / 2n Batxillerat</nav>
-			<p class="um-eyebrow">2n Batxillerat · Història · PAU</p>
-			<h1>Història d'Espanya i Catalunya</h1>
-			<p class="um-guide">Els sis temes de 2n de Batxillerat que entren a les PAU, de la Restauració a la consolidació democràtica (1875–1986).</p>
+			<p class="um-eyebrow">Curs · Història<?php echo $art ? ", Història de l'Art" : ''; ?></p>
+			<h1>2n Batxillerat</h1>
+			<p class="um-guide">Les matèries de 2n de Batxillerat, preparades per a les PAU.<?php echo $art ? " Història explica els sis temes de l'examen i Història de l'Art, les obres de referència agrupades per estils." : " Història explica els sis temes de l'examen."; ?></p>
 			<ul class="um-facts">
-				<li>6 temes de la PAU</li>
-				<li><?php echo count( $amb_taller ); ?> <?php echo 1 === count( $amb_taller ) ? 'tema' : 'temes'; ?> amb Taller PAU</li>
-				<li>Preguntes de les PAU del 2010 al 2024</li>
+				<li><?php echo $art ? '2 matèries' : '1 matèria'; ?></li>
+				<li><?php echo count( $posts ); ?> de 6 temes d'Història</li>
+				<?php if ( $art ) : ?>
+					<li><?php echo (int) $art_obres; ?> de <?php echo (int) $art_total; ?> obres d'Història de l'Art</li>
+				<?php endif; ?>
 			</ul>
 		</div>
 	</header>
 
 	<div class="um-wrap pds2-v4-pagina">
 
-		<section class="um-sec" id="temes">
-			<header><span class="um-num">Temes</span><h2>Els sis temes</h2></header>
-			<p>Cada tema té l'explicació per apartats, les fonts, la pràctica per a l'examen i les preguntes que hi ha fet la PAU.</p>
+		<section class="um-sec" id="materia-historia">
+			<header><span class="um-num">Matèria</span><h2>Història</h2><a class="pds2-v4-veure" href="<?php echo esc_url( pds2_historia_url() ); ?>">Obre la matèria <span aria-hidden="true">→</span></a></header>
+			<p>Història d'Espanya i Catalunya, de la Restauració a la consolidació democràtica (1875–1986). Cada tema té l'explicació per apartats, les fonts, la pràctica per a l'examen i les preguntes que hi ha fet la PAU.</p>
 			<ol class="pds2-v4-temes">
 				<?php foreach ( $oficials as $n => $o ) :
 					$p      = $posts[ $n ] ?? null;
@@ -69,54 +96,38 @@ $amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 
 					</li>
 				<?php endforeach; ?>
 			</ol>
+			<p class="pds2-v4-botons"><a class="um-quiz-btn" href="<?php echo esc_url( pds2_historia_url() ); ?>">Obre Història</a></p>
 		</section>
 
-		<?php if ( function_exists( 'pdsha_portada_url' ) && function_exists( 'pdsha_pot_veure' ) && pdsha_pot_veure() ) : ?>
-			<section class="um-sec" id="historia-art">
-				<header><span class="um-num">Història de l'Art</span><h2>També a 2n: Història de l'Art</h2></header>
-				<p>Història de l'Art també entra a la PAU. Hi trobaràs les obres de referència de l'examen, explicades una a una i agrupades per estils i per llenguatges artístics.</p>
+		<?php if ( $art ) : ?>
+			<section class="um-sec" id="materia-historia-art">
+				<header><span class="um-num">Matèria</span><h2>Història de l'Art</h2><a class="pds2-v4-veure" href="<?php echo esc_url( pdsha_portada_url() ); ?>">Obre la matèria <span aria-hidden="true">→</span></a></header>
+				<p>Les <?php echo (int) $art_total; ?> obres de referència de la PAU, explicades una a una i agrupades per estils i per llenguatges artístics. Cada estil té el seu tema.</p>
+				<ol class="pds2-v4-temes pds2-v4-estils">
+					<?php foreach ( $art_estils as $e ) :
+						$t     = $e['terme'];
+						$obres = $t ? pdsha_obres( array( 'estil' => $t->term_id ) ) : array();
+						$dates = $t ? (string) pdsha_f( 'ha_estil_dates', $t, '' ) : '';
+						$meta  = $t
+							? implode( ' · ', array_filter( array( $e['per']['nom'], $dates, count( $obres ) . ' ' . ( 1 === count( $obres ) ? 'obra' : 'obres' ) ) ) )
+							: $e['per']['nom'] . ' · En preparació';
+						?>
+						<li class="<?php echo $t ? 'is-on' : 'is-off'; ?>">
+							<span class="pds2-v4-tn" title="<?php echo esc_attr( $e['per']['nom'] ); ?>"><?php echo esc_html( $e['per']['num'] ); ?></span>
+							<div>
+								<?php if ( $t ) : ?>
+									<a class="pds2-v4-tt" href="<?php echo esc_url( pdsha_estil_url( $t ) ); ?>"><?php echo esc_html( $e['nom'] ); ?></a>
+								<?php else : ?>
+									<span class="pds2-v4-tt"><?php echo esc_html( $e['nom'] ); ?></span>
+								<?php endif; ?>
+								<span class="pds2-v4-tm"><?php echo esc_html( $meta ); ?></span>
+							</div>
+						</li>
+					<?php endforeach; ?>
+				</ol>
 				<p class="pds2-v4-botons"><a class="um-quiz-btn" href="<?php echo esc_url( pdsha_portada_url() ); ?>">Obre Història de l'Art</a></p>
 			</section>
 		<?php endif; ?>
-
-		<section class="um-sec" id="cronologia">
-			<header><span class="um-num">Cronologia</span><h2>La línia del temps</h2></header>
-			<div class="pds2-v4-crono" aria-hidden="true">
-				<?php $d2 = $anys( $oficials[2]['dates'] ); ?>
-				<div class="pds2-v4-crono-par<?php echo isset( $posts[2] ) ? ' is-on' : ''; ?>" style="width: <?php echo esc_attr( (string) $pos( $d2[1] ) ); ?>%;">
-					<b>2</b><span>Catalanisme polític<span class="pds2-v4-extra"> (1833–1931), en paral·lel a la Restauració</span></span>
-				</div>
-				<div class="pds2-v4-crono-main">
-					<?php foreach ( array( 1, 3, 4, 5, 6 ) as $n ) :
-						$d = $anys( $oficials[ $n ]['dates'] );
-						?>
-						<div class="pds2-v4-crono-seg<?php echo isset( $posts[ $n ] ) ? ' is-on' : ''; ?><?php echo ( $d[1] - $d[0] ) < 10 ? ' is-estret' : ''; ?>" style="left: <?php echo esc_attr( (string) $pos( $d[0] ) ); ?>%; width: <?php echo esc_attr( (string) ( $pos( $d[1] ) - $pos( $d[0] ) ) ); ?>%;" title="<?php echo esc_attr( 'Tema ' . $n . '. ' . $oficials[ $n ]['nom'] . ' (' . $oficials[ $n ]['dates'] . ')' ); ?>">
-							<b><?php echo (int) $n; ?></b><span class="pds2-v4-nom"><?php echo esc_html( $oficials[ $n ]['curt'] ); ?></span>
-						</div>
-					<?php endforeach; ?>
-				</div>
-				<div class="pds2-v4-crono-anys">
-					<?php foreach ( array( 1875, 1931, 1936, 1939, 1975, 1986 ) as $a ) : ?>
-						<span class="pds2-v4-any-<?php echo (int) $a; ?>" style="left: <?php echo esc_attr( (string) $pos( $a ) ); ?>%;"><?php echo (int) $a; ?></span>
-					<?php endforeach; ?>
-				</div>
-			</div>
-			<p class="um-foot-note">El catalanisme polític comença abans de la Restauració, però a la PAU s'estudia en paral·lel al Tema 1.</p>
-		</section>
-
-		<section class="um-sec" id="examen">
-			<header><span class="um-num">Examen</span><h2>Com és l'examen</h2></header>
-			<p>Quatre exercicis de 2,5 punts cadascun. Cada examen equilibra l'àmbit català i l'espanyol, i temes polítics, socials i econòmics.</p>
-			<div class="um-cards">
-				<article class="um-card"><h4>Exercici 1. Anàlisi crítica de fonts</h4><span class="um-tag">0,50 + 0,50 + 1,50 punts</span><p>Dues fonts amb un mateix eix temàtic i tres preguntes.</p></article>
-				<article class="um-card"><h4>Exercici 2. Situeu-vos en el temps</h4><span class="um-tag">1,50 + 5 termes × 0,20 punts</span><p>Dos enunciats per triar-ne un, amb cinc termes històrics i escrit des del personatge que proposa l'enunciat.</p></article>
-				<article class="um-card"><h4>Exercici 3. Glossari</h4><span class="um-tag">1,00 + 1,00 + 0,50 punts</span><p>Un tema transversal a partir d'un descriptor del glossari oficial.</p></article>
-				<article class="um-card"><h4>Exercici 4. Poseu a prova els vostres sabers</h4><span class="um-tag">10 preguntes · 2,50 punts</span><p>Deu preguntes tipus test sobre fets, esdeveniments i contextos.</p></article>
-			</div>
-			<p class="pds2-v4-botons">
-				<a class="um-quiz-btn" href="<?php echo esc_url( pds2_preguntes_url() ); ?>">Què pregunta la PAU (2010-2024)</a>
-			</p>
-		</section>
 
 	</div>
 </div>

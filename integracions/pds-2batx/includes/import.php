@@ -54,7 +54,7 @@ function pds2_reescriu_enllacos( string $html ): string {
 			} elseif ( preg_match( '/^taller\.html#tema-([1-6])$/', $h, $x ) ) {
 				$nou = home_url( '/' . PDS2_BASE . '/' . $o[ (int) $x[1] ]['slug'] . '/taller/' );
 			} elseif ( preg_match( '/^taller\.html$/', $h ) || preg_match( '/^index\.html(#.*)?$/', $h ) ) {
-				$nou = home_url( '/' . PDS2_BASE . '/' );
+				$nou = home_url( '/' . PDS2_BASE . '/historia/' );
 			} elseif ( preg_match( '/^preguntes-pau\.html(#[\w-]+)?$/', $h, $x ) ) {
 				$nou = home_url( '/' . PDS2_BASE . '/preguntes-pau/' ) . ( $x[1] ?? '' );
 			} elseif ( preg_match( '/^(glossari|examen)\.html(#.*)?$/', $h ) || preg_match( '#^media/#', $h ) ) {

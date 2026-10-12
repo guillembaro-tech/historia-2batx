@@ -96,7 +96,7 @@ while ( have_posts() ) :
 			<div class="rail-card">
 				<h4>2n Batxillerat</h4>
 				<ul class="rail-list">
-					<li><a href="<?php echo esc_url( pds2_portada_url() ); ?>">Els sis temes</a></li>
+					<li><a href="<?php echo esc_url( pds2_historia_url() ); ?>">Els sis temes</a></li>
 					<li><a href="<?php echo esc_url( pds2_preguntes_url() ); ?>">Preguntes PAU 2010-2024</a></li>
 				</ul>
 			</div>

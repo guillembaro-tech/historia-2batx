@@ -298,3 +298,36 @@ add_filter(
 		return $parts;
 	}
 );
+
+/**
+ * Nombre que surt al costat de la matèria i del curs al menú de la capçalera (filtre pds_menu_count del tema).
+ * Compta els estils que ja tenen obres publicades i no són en vista prèvia. Al curs de 2n s'hi sumen als temes d'Història.
+ */
+function pdsha_estils_publicats(): int {
+	$t = get_terms(
+		array(
+			'taxonomy'   => 'estil',
+			'hide_empty' => true,
+		)
+	);
+	if ( is_wp_error( $t ) ) {
+		return 0;
+	}
+	$previ = (array) get_option( 'pdsha_previ', array() );
+	return count( array_filter( $t, static fn( $x ) => $x->parent && ! in_array( $x->slug, $previ, true ) ) );
+}
+
+add_filter(
+	'pds_menu_count',
+	static function ( $n, $term ) {
+		if ( ! ( $term instanceof WP_Term ) || ! pdsha_publicat() ) {
+			return $n;
+		}
+		if ( ( 'materia' === $term->taxonomy && 'historia-art' === $term->slug ) || ( 'curs' === $term->taxonomy && '2n-batxillerat' === $term->slug ) ) {
+			return (int) $n + pdsha_estils_publicats();
+		}
+		return $n;
+	},
+	10,
+	2
+);

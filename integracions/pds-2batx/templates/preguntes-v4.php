@@ -16,7 +16,7 @@ get_header();
 <div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-v4-preguntes" data-view="alumne">
 	<header class="um-hero">
 		<div class="um-wrap">
-			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / Preguntes PAU</nav>
+			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / <a href="<?php echo esc_url( pds2_historia_url() ); ?>">Història</a> / Preguntes PAU</nav>
 			<p class="um-eyebrow">2n Batxillerat · Història · PAU del 2010 al 2024</p>
 			<h1>Què pregunta la PAU d'Història</h1>
 			<p class="um-guide">Recompte de les preguntes de fonts i de les preguntes llargues de les PAU d'Història de Catalunya entre el 2010 i el 2024, per tema i per aspecte. Serveix per saber quins continguts es repeteixen més.</p>

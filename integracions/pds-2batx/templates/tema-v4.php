@@ -38,7 +38,7 @@ while ( have_posts() ) :
 	<div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-t-<?php echo (int) $n; ?>" data-view="alumne">
 		<header class="um-hero">
 			<div class="um-wrap">
-				<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / Tema <?php echo (int) $n; ?></nav>
+				<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / <a href="<?php echo esc_url( pds2_historia_url() ); ?>">Història</a> / Tema <?php echo (int) $n; ?></nav>
 				<p class="um-eyebrow">2n Batxillerat · Història · Tema <?php echo (int) $n; ?><?php echo $dates ? ' · ' . esc_html( $dates ) : ''; ?></p>
 				<h1><?php echo esc_html( $oficial['nom'] ); ?></h1>
 				<?php if ( $pregunta ) : ?>

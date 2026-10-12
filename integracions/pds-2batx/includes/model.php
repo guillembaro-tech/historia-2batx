@@ -23,7 +23,7 @@ function pds2_temes_oficials(): array {
 
 /** Adreces reservades dins de /2n-batxillerat/ que cap tema no pot fer servir. */
 function pds2_slugs_reservats(): array {
-	return array( 'preguntes-pau', 'taller', 'glossari', 'guia-de-l-examen', 'page', 'feed' );
+	return array( 'preguntes-pau', 'taller', 'glossari', 'guia-de-l-examen', 'historia', 'historia-art', 'page', 'feed' );
 }
 
 add_action( 'init', 'pds2_register_model', 9 );
