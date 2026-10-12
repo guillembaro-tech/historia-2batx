@@ -1,0 +1,329 @@
+{
+ "imatges": {
+  "planta": {
+   "file": "Santiago de Compostela plan vertical.jpg",
+   "credit": "Dibuix de José-Manuel Benito · Domini públic · Wikimedia Commons",
+   "titol": "Planta de la catedral de Santiago de Compostel·la",
+   "alt": "Planta de la catedral de Santiago de Compostel·la"
+  },
+  "nau": {
+   "file": "Catedral de Santiago de Compostela interior adjusted.JPG",
+   "credit": "Foto de Lansbricae · CC BY-SA 2.0 · Wikimedia Commons",
+   "titol": "Nau central de la catedral de Santiago de Compostel·la",
+   "alt": "Nau central de la catedral de Santiago de Compostel·la"
+  },
+  "portic": {
+   "file": "Pórtico de la Gloria.jpg",
+   "credit": "Dibuix d'Enrique Mayer Castro, a La tumba del apóstol Santiago (1924) · Domini públic · Wikimedia Commons",
+   "titol": "Pòrtic de la Glòria",
+   "alt": "Pòrtic de la Glòria"
+  },
+  "moissac": {
+   "file": "Moissac Porch, Tympanum.jpg",
+   "credit": "Foto d'ArtProjection · CC0 · Wikimedia Commons",
+   "titol": "Timpà de la portalada de Sant Pere de Moissac",
+   "alt": "Timpà de la portalada de Sant Pere de Moissac"
+  },
+  "cardona": {
+   "file": "Interior Col·legiata de Sant Vicenç de Cardona.jpg",
+   "credit": "Foto de Gennadii Saus Segura · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Interior de Sant Vicenç de Cardona",
+   "alt": "Interior de Sant Vicenç de Cardona"
+  },
+  "batllo": {
+   "file": "(Barcelona) Majestat Batllo - Museu Nacional d'Art de Catalunya.jpg",
+   "credit": "Foto de Didier Descouens · Domini públic · Wikimedia Commons",
+   "titol": "Majestat Batlló",
+   "alt": "Majestat Batlló"
+  },
+  "taull": {
+   "file": "(Barcelona) Frescos of Sant Climent de Taüll.jpg",
+   "credit": "Foto de Didier Descouens · Domini públic · Wikimedia Commons",
+   "titol": "Absis central de Sant Climent de Taüll al MNAC",
+   "alt": "Absis central de Sant Climent de Taüll al MNAC"
+  },
+  "pantocrator": {
+   "file": "Pantocràtor de Taüll.jpg",
+   "credit": "Foto d'Espencat · Domini públic · Wikimedia Commons",
+   "titol": "Crist en majestat de Sant Climent de Taüll",
+   "alt": "Crist en majestat de Sant Climent de Taüll"
+  },
+  "esglesia": {
+   "file": "Taüll, Església de Sant Climent-PM 24165.jpg",
+   "credit": "Foto de PMRMaeyaert · CC BY-SA 3.0 · Wikimedia Commons",
+   "titol": "Església de Sant Climent de Taüll",
+   "alt": "Església de Sant Climent de Taüll"
+  }
+ },
+ "estils": [
+  {
+   "slug": "romanic",
+   "nom": "Romànic",
+   "pare": "edat-mitjana",
+   "ordre": 3,
+   "estil_titol": "El romànic",
+   "estil_dates": "Segles XI i XII",
+   "estil_pregunta": "Per què una Europa rural, feudal i profundament religiosa va omplir el territori d'esglésies de pedra i les va cobrir d'imatges pensades per ensenyar i impressionar?",
+   "estil_resum": "L'art de l'Europa feudal dels segles XI i XII. Esglésies de pedra amb voltes, escultura a les portalades i pintura als absis, al servei de l'Església i pensades per ensenyar la fe a una població que, en la seva gran majoria, no sabia llegir.",
+   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> Pot proposar qualsevol de les tres obres de referència del romànic. La Sèrie 0 (2025) va triar la catedral de Santiago de Compostel·la. Les preguntes demanen datar i situar l'obra en el seu context, analitzar-ne la forma i l'estil, explicar-ne la funció i relacionar-la amb altres obres.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari i tècniques. Per exemple, assenyalar les parts d'una església o distingir el fresc del tremp.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> La figura de l'artista medieval, la funció de les imatges o casos de patrimoni català, com la Vall de Boí o el MNAC. A l'exercici 4, les obres no han de ser de la llista.</p>",
+   "estil_seccions": [
+    {
+     "titol": "Una Europa feudal, cristiana i en camí",
+     "llenguatge": "",
+     "pregunta": "Què va fer possible que, en dos segles, s'aixequessin milers d'esglésies amb un estil semblant de Galícia a Itàlia?",
+     "cos": "<h3>Una societat feudal</h3><p>Cap a l'any 1000, l'Europa occidental entra en una etapa de més estabilitat. La societat s'organitza segons el <strong>feudalisme</strong>, un sistema polític, social i econòmic en què els senyors laics i eclesiàstics dominen la terra i els camperols que la treballen, i en què els homes lliures es lliguen entre ells amb vincles de dependència personal (el <strong>vassallatge</strong>). L'economia és sobretot agrària, però a partir del segle XI la població i la producció creixen, i el comerç i les ciutats comencen a revifar.</p><h3>L'Església, la gran promotora</h3><p>L'Església és la institució més poderosa i la que dona sentit a la vida de la gent, del naixement a la mort. Té terres, rendes i poder polític, i és la principal clienta dels artistes. Els <strong>monestirs</strong> benedictins, sobretot els vinculats a l'abadia de <strong>Cluny</strong> (fundada el 910), són centres de poder, de cultura i de producció de llibres. A finals del segle XI neix l'orde del <strong>Cister</strong> (Cîteaux, 1098), que defensarà una arquitectura més austera.</p><h3>Els pelegrinatges</h3><p>Els grans centres de pelegrinatge són Roma, Jerusalem i <strong>Santiago de Compostel·la</strong>, on es veneren les relíquies de l'apòstol Jaume. Quatre vies travessaven França i, ja a la península Ibèrica, s'unien en un sol camí, el Camí Francès. Per aquests camins no circulaven només pelegrins, sinó també mercaders, mestres d'obres, artesans i idees artístiques. Per això l'art romànic té un aire de família a tot Europa, tot i les variants regionals.</p><h3>Catalunya, una terra de comtats</h3><p>Als comtats catalans, el romànic arrela molt aviat. A la primera meitat del segle XI, l'<strong>abat Oliba</strong>, abat de Ripoll i de Cuixà i bisbe de Vic, impulsa grans obres, i després del 1020 s'hi aixequen edificis amb mètodes de construcció llombards. El romànic es manté durant tot el segle XII i, cap al final d'aquest segle, comencen a arribar les formes del gòtic.</p><h3>Per què en diem «romànic»?</h3><p>Els artistes del segle XII no feien servir aquest nom. El terme el va aplicar a un estil artístic <strong>Charles de Gerville el 1818</strong>, i el va difondre Arcisse de Caumont. Es va triar per analogia amb les llengües romàniques, que deriven del llatí, perquè aquest art reprèn solucions de l'arquitectura romana, com l'arc de mig punt i la volta. A Catalunya, el nom es va fixar amb l'obra de Josep Puig i Cadafalch <em>L'arquitectura romànica a Catalunya</em> (1909-1918).</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Feudalisme · vassallatge · monestir · Cluny · Cister · pelegrinatge · relíquia · romànic.</p></div>"
+    },
+    {
+     "titol": "L'arquitectura romànica",
+     "llenguatge": "arquitectura",
+     "pregunta": "Com es construeix un temple de pedra que sigui sòlid, perduri i expressi la presència de Déu?",
+     "cos": "<h3>La pedra i la volta</h3><p>L'arquitectura romànica cobreix les esglésies amb <strong>voltes de pedra</strong> en lloc de sostres de fusta. Les voltes pesen molt i empenyen els murs cap enfora, i tot l'edifici s'organitza per contrarestar aquesta força. Per això els murs són gruixuts, les finestres petites i l'interior, penombrós. La llum que entra per aquestes obertures té un valor simbòlic, perquè representa Déu.</p><ul><li><strong>Arc de mig punt.</strong> Arc semicircular, la peça bàsica de tot el sistema.</li><li><strong>Volta de canó.</strong> Volta en forma de mig cilindre, sovint reforçada per <strong>arcs torals</strong> o faixons que la divideixen en trams.</li><li><strong>Volta d'aresta.</strong> Volta que resulta de l'encreuament de dues voltes de canó. Es fa servir sobretot a les naus laterals.</li><li><strong>Contraforts.</strong> Pilars adossats a l'exterior dels murs per aguantar l'empenta de les voltes.</li><li><strong>Cimbori.</strong> Torre sobre el creuer, sovint octogonal (vuitavada), que il·lumina el centre de l'església.</li><li><strong>Absis i absidioles.</strong> Capçalera semicircular on hi ha l'altar, i capelles semicirculars més petites.</li><li><strong>Girola o deambulatori.</strong> Passadís que envolta l'altar major per darrere i permet als pelegrins circular i visitar les capelles sense interrompre la litúrgia.</li><li><strong>Tribuna.</strong> Galeria sobre les naus laterals, oberta a la nau central.</li></ul><h3>Dues etapes</h3>[[img:cardona|dreta|Sant Vicenç de Cardona (consagrada el 1040).|La nau central es cobreix amb una volta de canó reforçada amb arcs torals. Al fons, el presbiteri, elevat sobre la cripta.]]<p>El <strong>primer romànic o romànic llombard</strong> (segle XI) deu el nom als mestres d'obres de la Llombardia. Les esglésies són de pedra petita i poc tallada, amb poca escultura, i es decoren per fora amb <strong>arcuacions cegues</strong> (arquets) i <strong>lesenes</strong> (franges verticals en relleu). Un exemple és <strong>Sant Vicenç de Cardona</strong>, consagrada el 1040, amb planta de creu llatina, cimbori vuitavat sobre el creuer i una cripta sota el presbiteri.</p><p>Al <strong>segle XII</strong>, els carreus es tallen amb més precisió, les portalades i els capitells s'omplen d'escultura i els interiors es cobreixen de pintura. És l'època de les grans esglésies de pelegrinatge, com Santiago de Compostel·la o Sant Serni de Tolosa, i dels conjunts de la Vall de Boí.</p><h3>Tipologies</h3><ul><li><strong>Església de pelegrinatge.</strong> Gran, amb tres naus o més, transsepte, girola amb capelles i tribuna, per acollir multituds.</li><li><strong>Monestir.</strong> Conjunt on viu una comunitat de monjos. El <strong>claustre</strong>, un pati porticat, n'és el centre, i al seu voltant hi ha l'església, la sala capitular, el refetor i el dormitori.</li></ul><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Arc de mig punt · volta de canó · volta d'aresta · arc toral · contrafort · cimbori · absis · girola · tribuna · creuer · transsepte · arcuacions cegues · lesenes · claustre.</p></div>"
+    },
+    {
+     "titol": "L'escultura romànica",
+     "llenguatge": "escultura",
+     "pregunta": "Com es pot explicar la Bíblia a una població que no sap llegir?",
+     "cos": "<p>L'escultura romànica està al servei de l'arquitectura i té una funció <strong>didàctica</strong>. A les portalades i als capitells, els fidels, que en la seva gran majoria no sabien llegir, hi veien les històries de la Bíblia i els missatges de l'Església. Per això s'ha dit que aquestes portalades són una mena de «Bíblia de pedra».</p><ul><li><strong>Llei d'adaptació al marc.</strong> Les figures s'allarguen, s'encongeixen o es dobleguen per encaixar en l'espai arquitectònic (un capitell, un timpà, una arquivolta).</li><li><strong>Jerarquia.</strong> La mida de cada figura depèn de la seva importància, no de la realitat. Crist és sempre la més gran.</li><li><strong>Frontalitat i simetria.</strong> Figures rígides, de cara a l'espectador, ordenades al voltant d'un eix.</li><li><strong>Antinaturalisme.</strong> Formes esquemàtiques, plecs de la roba en línies paral·leles i poc interès per l'anatomia.</li><li><strong>Horror vacui.</strong> Tendència a omplir tot l'espai.</li><li><strong>Policromia.</strong> Originalment, l'escultura estava pintada.</li></ul>[[img:batllo|dreta|Majestat Batlló (mitjan segle XII). MNAC, Barcelona.|Talla de fusta policromada (156 × 119,5 cm). Crist crucificat, viu, amb els ulls oberts i vestit amb una túnica llarga, com un rei.]]<p>Les parts d'una portalada són el <strong>timpà</strong> (espai semicircular damunt la porta), les <strong>arquivoltes</strong> (arcs concèntrics que l'emmarquen), el <strong>dintell</strong>, el <strong>mainell</strong> (pilar central que divideix la porta) i els <strong>brancals</strong> (laterals). A més de la pedra, hi ha <strong>talles de fusta policromada</strong>, com les <strong>Majestats</strong> (Crist crucificat vestit amb túnica, com la <em>Majestat Batlló</em> del MNAC) i les <strong>Mares de Déu</strong> amb el Nen a la falda.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Llei d'adaptació al marc · jerarquia · frontalitat · horror vacui · timpà · arquivolta · mainell · Crist en majestat · tetramorf · Majestat.</p></div>"
+    },
+    {
+     "titol": "La pintura romànica",
+     "llenguatge": "pintura",
+     "pregunta": "Per què les esglésies romàniques, tan austeres per fora, eren plenes de color per dins?",
+     "cos": "<p>La pintura romànica cobria els murs i els absis de les esglésies. La tècnica principal és el <strong>fresc</strong>, que consisteix a pintar amb pigments dissolts en aigua sobre el morter encara humit. En assecar-se, el color queda fixat al mur. Per als <strong>frontals d'altar</strong>, els plafons de fusta que decoraven la part davantera de l'altar, es feia servir el <strong>tremp</strong>, amb pigments lligats amb una cola o amb ou.</p><ul><li>Colors plans i intensos, sense degradats, i <strong>contorns negres</strong> gruixuts.</li><li>Fons de <strong>franges de colors</strong>, sense paisatge ni profunditat.</li><li>Figures <strong>frontals, hieràtiques</strong> i jerarquitzades.</li><li>Influència de l'art <strong>bizantí</strong>.</li></ul><p>A l'absis, el lloc més sagrat, hi sol haver Crist en majestat (<em>Maiestas Domini</em>) o la Mare de Déu amb el Nen (<em>Theotokos</em>), amb el tetramorf, els apòstols i els sants.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Fresc · tremp · frontal d'altar · Crist en majestat · màndorla · alfa i omega · tetramorf · jerarquia · frontalitat.</p></div>"
+    },
+    {
+     "titol": "Artistes, societat i patrimoni",
+     "llenguatge": "",
+     "pregunta": "Qui eren els artistes romànics i de qui és avui aquest art?",
+     "cos": "<h3>L'artista anònim</h3><p>A l'edat mitjana, l'artista era considerat un <strong>artesà</strong>, i l'obra tenia valor perquè servia a Déu i a l'Església, no per qui la feia. Per això la majoria d'autors són anònims, i els historiadors els anomenen pel lloc on van treballar, com el Mestre de Taüll. Treballaven en <strong>tallers</strong> que es desplaçaven d'una obra a una altra. Hi ha algunes excepcions, com la inscripció del Pòrtic de la Glòria que dona el nom del Mestre Mateu. Un precedent anterior al romànic és el <em>Beatus</em> de Girona (975), on apareix el nom d'<strong>Ende</strong>, una de les primeres dones pintores documentades a la península Ibèrica.</p><h3>Patrimoni, museu i territori</h3><p>Moltes obres romàniques catalanes són avui al MNAC, lluny dels pobles on es van fer. El trasllat les va preservar i les fa accessibles a tothom, però les separa del seu context. La Vall de Boí combina les dues coses, amb esglésies declarades Patrimoni Mundial, reproduccions i una recreació digital a Sant Climent. Aquest debat entre la conservació in situ i la museïtzació és un tema habitual de l'exercici 4 de la PAU.</p>[[img:esglesia||Sant Climent de Taüll (Vall de Boí).|L'església, de tres naus i tres absis, i el campanar de torre, de sis pisos, decorat amb frisos d'arcuacions cegues entre lesenes, com en el romànic llombard.]]"
+    }
+   ],
+   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, <em>Exemples d'exercicis PAU 2025</em> i <em>Sèrie 0 (2025)</em>, amb els criteris de correcció.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li><li>Gran Enciclopèdia Catalana. Articles «Sant Vicenç del Castell de Cardona» i «Sant Climent de Taüll».</li><li>Museu Nacional d'Art de Catalunya. Fitxa de la <em>Majestat Batlló</em>.</li><li>Centre del Romànic de la Vall de Boí. <em>El redescobriment del romànic</em>.</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
+  }
+ ],
+ "obres": [
+  {
+   "origen": "hart-15",
+   "numero": 15,
+   "titol": "Catedral de Santiago de Compostel·la",
+   "slug": "catedral-de-santiago-de-compostela",
+   "estil": "romanic",
+   "llenguatge": "arquitectura",
+   "miniatura": "nau",
+   "autor": "Mestre Bernat el Vell i Mestre Mateu",
+   "dates": "1075-1211",
+   "lloc": "Santiago de Compostel·la (Galícia)",
+   "resum": "És la gran església de pelegrinatge del romànic, construïda per acollir els milers de pelegrins que venien a venerar les relíquies de l'apòstol Jaume. La planta de creu llatina, amb **girola** i **tribuna**, permet que els pelegrins circulin sense interrompre el culte. Les voltes de pedra li donen solidesa, però deixen l'interior en penombra. El **Pòrtic de la Glòria**, del Mestre Mateu (1188), és una de les obres cabdals de l'escultura romànica.",
+   "fitxa": [
+    [
+     "Localització",
+     "Santiago de Compostel·la (Galícia)."
+    ],
+    [
+     "Cronologia",
+     "Inici de les obres el **1075**. Consagració l'**abril del 1211**. El **Pòrtic de la Glòria**, entre el 1168 i el 1188."
+    ],
+    [
+     "Autors",
+     "Mestre **Bernat el Vell**, amb l'ajut de Robert, al començament. El Pòrtic de la Glòria és del **Mestre Mateu** i el seu taller."
+    ],
+    [
+     "Promotors",
+     "El rei Alfons VI i el bisbe Diego Peláez, que comencen l'obra, i sobretot **Diego Gelmírez**, bisbe des del 1100 i primer arquebisbe de Compostel·la des del 1120."
+    ],
+    [
+     "Material",
+     "Granit."
+    ],
+    [
+     "Estil",
+     "Romànic ple. És el model de les grans esglésies de pelegrinatge."
+    ],
+    [
+     "Font de l'època",
+     "El *Còdex Calixtí* (segle XII), que inclou una guia per als pelegrins i dona el nom dels mestres d'obres."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "planta",
+     "seccio": "inici",
+     "titol": "Planta de la catedral",
+     "text": "Reconstrucció hipotètica de la planta del segle XII. Creu llatina, tres naus, transsepte i girola amb absidioles."
+    },
+    {
+     "clau": "nau",
+     "seccio": "inici",
+     "titol": "La nau central, vista des de la tribuna",
+     "text": "Volta de canó amb arcs torals i, a banda i banda, la tribuna. Al fons, el baldaquí barroc de l'altar major."
+    },
+    {
+     "clau": "portic",
+     "seccio": "destacat",
+     "titol": "Pòrtic de la Glòria (Mestre Mateu, 1168-1188)",
+     "text": "Dibuix publicat el 1924. Tres arcs, el central amb Crist envoltat dels evangelistes i els vint-i-quatre ancians a l'arquivolta."
+    }
+   ],
+   "q_context": "Per què es construeix una catedral tan gran en un extrem d'Europa, i per què just en aquest moment?",
+   "context": "<p>Les obres comencen el <strong>1075</strong> i la catedral es consagra el <strong>1211</strong>. Segons els criteris oficials de la Sèrie 0, a la PAU s'accepta datar-la cap al 1100 o al segle XII.</p><h3>Una Europa feudal que creix</h3><p>Cap a l'any 1000, l'Europa occidental entra en una etapa de més estabilitat. La societat s'organitza segons el <strong>feudalisme</strong>, un sistema en què els senyors laics i eclesiàstics dominen la terra i els camperols que la treballen, i en què els homes lliures es lliguen entre ells amb vincles de dependència personal. A partir del segle XI, la població i la producció agrària creixen, i amb aquest excedent es poden finançar obres de pedra molt costoses.</p><h3>L'Església i el culte a les relíquies</h3><p>L'Església és la institució més poderosa i la principal clienta dels artistes. Els grans monestirs, com <strong>Cluny</strong>, impulsen la construcció d'esglésies i difonen un mateix model de litúrgia. Les <strong>relíquies</strong>, restes d'un sant o objectes que hi havien estat en contacte, eren molt venerades, perquè es creia que el sant hi era present i podia fer d'intercessor davant de Déu. Segons la tradició, a principis del segle IX es va descobrir a Galícia el sepulcre de l'apòstol <strong>Jaume el Major</strong>. Per als regnes cristians del nord peninsular, en guerra amb al-Andalus, l'apòstol es va convertir en un símbol religiós i polític.</p><h3>El pelegrinatge</h3><p>Santiago es converteix, amb Roma i Jerusalem, en un dels tres grans destins de <strong>pelegrinatge</strong> de la cristiandat. Quatre vies travessaven França i, ja a la península Ibèrica, s'unien en un sol camí, el Camí Francès. Per aquests camins no circulaven només pelegrins, sinó també mercaders, mestres d'obres i artesans. Això explica dues coses. D'una banda, l'església havia de ser molt gran per acollir multituds. De l'altra, les solucions artístiques viatjaven, i per això Santiago s'assembla a altres esglésies del camí, com Sant Serni de Tolosa o Santa Fe de Conques.</p><h3>Una obra de diverses generacions</h3><p>L'obra la comencen el rei <strong>Alfons VI</strong> i el bisbe Diego Peláez el 1075, sota la direcció del Mestre Bernat el Vell. El gran impulsor és <strong>Diego Gelmírez</strong>, que va voler una seu a l'altura de les relíquies de l'apòstol i va aconseguir que el papa la convertís en arquebisbat el 1120. El 1168, el rei Ferran II de Lleó concedeix una pensió vitalícia al <strong>Mestre Mateu</strong>, que dirigeix l'acabament de la basílica. Mateu i el seu taller fan la cripta, la desapareguda façana occidental i el Pòrtic de la Glòria. Al segle XVIII s'hi va afegir la façana barroca de l'Obradoiro, que avui tapa el Pòrtic.</p><p>Mentrestant, als comtats catalans, el romànic arrela amb el <strong>romànic llombard</strong>, impulsat per l'abat Oliba a la primera meitat del segle XI. Sant Vicenç de Cardona, consagrada el 1040, n'és un bon exemple.</p>",
+   "q_analisi": "Com s'ha de construir un edifici de pedra perquè sigui sòlid, molt gran i alhora deixi circular milers de persones?",
+   "analisi": "<h3>La planta</h3><ul><li><strong>Creu llatina</strong>, amb el braç llarg (les naus) i el braç curt (el <strong>transsepte</strong>). El punt on es creuen és el <strong>creuer</strong>, cobert amb un <strong>cimbori</strong>.</li><li><strong>Tres naus</strong> al cos de l'església i també <strong>tres naus al transsepte</strong>, que permeten circular per tot l'edifici.</li><li>A la capçalera, una <strong>girola</strong> o deambulatori, un passadís que envolta l'altar major per darrere, amb capelles radials o <strong>absidioles</strong>.</li></ul><h3>L'alçat i les cobertes</h3><p>La nau central, més alta que les laterals, es cobreix amb una <strong>volta de canó</strong> reforçada amb <strong>arcs torals</strong>, que la divideixen en trams. Les naus laterals es cobreixen amb <strong>voltes d'aresta</strong>. Sobre les naus laterals hi ha una <strong>tribuna</strong>, una galeria oberta a la nau central amb arcs de mig punt que emmarquen dos arcs <strong>geminats</strong>. Totes les voltes de pedra pesen molt i empenyen els murs cap enfora. La tribuna fa de contrafort de la volta central i en contraresta l'empenta. Per això la nau central no pot tenir finestres pròpies, el <strong>claristori</strong>, i rep la llum de manera indirecta, a través de la tribuna i les naus laterals.</p><h3>L'estil</h3><p>És <strong>romànic ple</strong>. Els arcs són de mig punt, les voltes de pedra, els murs gruixuts i els suports, pilars amb mitges columnes adossades. Els carreus de granit estan ben tallats, a diferència de la pedra petita i poc treballada del primer romànic català. L'interior és penombrós, i la llum, que entra per finestres petites, té un valor simbòlic, perquè representa Déu.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Creu llatina · transsepte · creuer · cimbori · girola · absidiola · volta de canó · arc toral · volta d'aresta · tribuna · arcs geminats · claristori.</p></div>",
+   "q_funcio": "Per a qui es va fer aquesta església i com ho expressa la seva arquitectura?",
+   "funcio": "<p>És un temple dedicat al <strong>culte cristià</strong> i a la <strong>veneració de les relíquies</strong> de l'apòstol Jaume, guardades sota l'altar major. Era el final d'una de les grans rutes de pelegrinatge de l'edat mitjana. La forma de l'edifici respon a aquesta funció. La girola i les absidioles permeten que els pelegrins s'acostin a les relíquies i visitin les capelles sense interrompre la litúrgia de l'altar major. Les naus i la tribuna acullen les multituds.</p><p>També té una funció de <strong>prestigi</strong>. La catedral mostra el poder de l'Església de Compostel·la i dels seus arquebisbes, i la importància de Santiago com a centre de la cristiandat. Fins i tot la planta té sentit simbòlic, perquè la creu llatina recorda la creu de Crist.</p>",
+   "destacat_titol": "El Pòrtic de la Glòria",
+   "q_destacat": "Per què aquesta portada és tan diferent de les portalades romàniques anteriors?",
+   "destacat": "<p>És l'antiga façana principal de la catedral, avui protegida per la façana barroca de l'Obradoiro. La va fer el <strong>Mestre Mateu</strong> amb el seu taller. Una inscripció als dintells, col·locats l'1 d'abril de 1188, en dona el nom i diu que va dirigir les obres de la catedral des dels fonaments, una cosa molt poc habitual en l'art romànic.</p><ul><li>Al <strong>timpà central</strong> hi ha Crist, molt més gran que la resta de figures, envoltat dels quatre evangelistes amb els seus símbols.</li><li>A l'<strong>arquivolta</strong>, els <strong>vint-i-quatre ancians de l'Apocalipsi</strong> conversen entre ells mentre afinen els instruments.</li><li>Al <strong>mainell</strong>, la columna central, hi ha l'apòstol <strong>Jaume</strong>, el patró de la catedral, que rep els pelegrins.</li><li>La meitat esquerra del Pòrtic es dedica a l'<strong>Antic Testament</strong>, i la dreta, al <strong>Nou Testament</strong>, amb el Judici Final i els turments de l'infern a les arquivoltes.</li></ul><p>Les figures ja no són rígides. Es giren, dialoguen entre elles i tenen volum, i el profeta <strong>Daniel</strong> somriu, un gest molt nou al segle XII. Per aquest naturalisme, el Pòrtic es considera una obra del romànic final, amb trets que anticipen el gòtic. Darrere del mainell hi ha una figura agenollada que la tradició identifica amb el Mestre Mateu.</p>",
+   "q_relacio": "Amb quines obres de la llista la pots comparar, i què les uneix o les separa?",
+   "relacio": "<ul><li><strong>Obra 16. Portalada de Moissac.</strong> Està en un dels camins cap a Santiago i representa el mateix tema, la visió de l'Apocalipsi amb Crist i els vint-i-quatre ancians. La comparació mostra l'evolució de l'escultura romànica en uns seixanta anys, de la rigidesa i la llei d'adaptació al marc de Moissac al naturalisme del Pòrtic.</li><li><strong>Obra 17. Frescos de Sant Climent de Taüll.</strong> El mateix Crist en majestat, però en pintura i en una petita església del Pirineu, consagrada el 1123.</li><li><strong>Obra 18. Catedral de Chartres.</strong> El gòtic resol el gran problema del romànic, la llum. Amb l'arc apuntat, la volta de creueria i els arcbotants, l'empenta de les voltes es concentra en uns quants punts, i els murs es poden obrir amb grans vitralls.</li></ul><h3>Altres obres del romànic (per a l'apartat d de la PAU)</h3><ul><li><strong>Edificis.</strong> El monestir de Santa Maria de Ripoll, Sant Vicenç de Cardona, la catedral de la Seu d'Urgell, Sant Martí del Canigó, Sant Serni de Tolosa.</li><li><strong>Arts visuals.</strong> Les pintures de Sant Climent de Taüll, la portalada de Moissac, el <em>Brodat de la Creació</em> de Girona, les pintures del panteó reial de Sant Isidor de Lleó.</li></ul>",
+   "compara": [
+    "hart-16",
+    "hart-17"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Assenyalar a la planta la nau central, el transsepte, el creuer, la girola o les absidioles.</p><p><strong>Exercici 3.</strong> L'artista medieval. El Mestre Mateu és una excepció, perquè la majoria d'artistes romànics són anònims.</p><p><strong>Exercici 4.</strong> El patrimoni i el turisme. La ciutat vella de Santiago és Patrimoni Mundial des del 1985, i el Camí de Sant Jaume, des del 1993.</p>",
+   "pau_etiqueta": "Enunciat oficial, Sèrie 0 (2025). Exercici 2, opció A.",
+   "pau_enunciat": "<p>Catedral de Santiago de Compostel·la (Pòrtic de la Glòria, interior de la nau i planta).</p><p>a) Dateu i situeu l'obra en el seu context històric i cultural específic. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de l'obra i indiqueu quin estil artístic defineix aquestes parts de l'edifici. [1 punt]</p><p>c) Expliqueu quina era la funció de l'obra i com s'integra a les vies de peregrinació. [1 punt]</p><p>d) Esmenteu dos edificis representatius d'aquest estil i dues obres del mateix estil de les arts visuals (poden ser una pintura i una escultura, dues pintures o dues escultures). [1 punt]</p>",
+   "pau_criteris": "<p><strong>a)</strong> Datació, cap al 1100 (s'admet el segle XII; consagració el 1211) [0,20]. Quatre elements de context, com l'estabilitat política i el desenvolupament urbà, el paper de l'Església, el sistema feudal, les vies de pelegrinatge, els grans monestirs, els comtats catalans o el paper de Gelmírez [0,20 × 4].</p><p><strong>b)</strong> Tres característiques, entre la planta de creu llatina amb girola i absidioles, el cimbori, els arcs de mig punt, la volta de canó a la nau central i d'aresta a les laterals, la tribuna i la manca de claristori [0,25 × 3]. Estil romànic, de pelegrinatge [0,25].</p><p><strong>c)</strong> Culte cristià i relíquies de l'apòstol Jaume [0,50]. Final d'una de les grans vies de pelegrinatge, per on també circulaven novetats artístiques, mestres i artesans [0,50].</p><p><strong>d)</strong> Dos edificis, com Ripoll, Cardona, la Seu d'Urgell o el Canigó [0,25 × 2], i dues obres de les arts visuals, com Taüll, el Brodat de la Creació, Sant Isidor de Lleó, Moissac o Vézelay [0,25 × 2].</p>",
+   "pau_model": "<p><strong>a)</strong> Les obres van començar el 1075 i la catedral es va consagrar el 1211. És una obra de l'Europa feudal dels segles XI i XII, una època de relativa estabilitat política i de creixement econòmic. L'Església tenia un paper decisiu en la vida política, social i econòmica, i els grans monestirs, com Cluny, impulsaven la construcció d'abadies. Les vies de pelegrinatge cap a Santiago van fer circular persones, mercaderies i idees artístiques. El gran promotor de l'obra va ser l'arquebisbe Diego Gelmírez. A Catalunya, era l'època dels comtats.</p><p><strong>b)</strong> Té planta de creu llatina amb tres naus, un gran creuer també de tres naus i una capçalera amb girola i absidioles. Sobre el creuer hi ha un cimbori. Tots els arcs són de mig punt. La nau central, més alta que les laterals, es cobreix amb volta de canó reforçada amb arcs torals, i les naus laterals, amb voltes d'aresta. A sobre de les naus laterals hi ha una tribuna amb arcs de mig punt que emmarquen dos arcs geminats. La nau central no té claristori i rep la llum de manera indirecta. És una església romànica, la més representativa de les esglésies de pelegrinatge.</p><p><strong>c)</strong> És un temple dedicat al culte cristià i a la veneració de les relíquies de l'apòstol Jaume el Major. Era el final d'un dels camins de pelegrinatge més importants de l'edat mitjana, com els de Roma i Jerusalem. La planta està pensada per als pelegrins, perquè la girola i la tribuna permeten circular i acollir multituds sense interrompre el culte a l'altar major. Per aquestes vies també circulaven mestres d'obres i artesans, i amb ells les novetats artístiques.</p><p><strong>d)</strong> Edificis com el monestir de Santa Maria de Ripoll o Sant Vicenç de Cardona. Obres de les arts visuals com les pintures de Sant Climent de Taüll i la portalada de Sant Pere de Moissac.</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Expliqueu per què la planta de la catedral és adequada per a una església de pelegrinatge.</li><li>Per què la nau central no té finestres pròpies? Relacioneu-ho amb el sistema de cobertes de l'edifici.</li><li>Compareu el timpà central del Pòrtic de la Glòria amb el timpà de la portalada de Sant Pere de Moissac. Quines semblances i quines diferències hi observeu?</li></ol>",
+   "fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em> i <em>Sèrie 0 (2025)</em>, amb els criteris de correcció.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li><li>Santiago Turismo (Concello de Santiago). «O Pórtico da Glória».</li><li>Turismo de Galicia. Fitxa «Catedral de Santiago de Compostela».</li><li>Museo Nacional del Prado. Exposició <em>Maestro Mateo en el Museo del Prado</em> (2016), ressenya a <em>Meer</em>.</li><li>UNESCO. Fitxes del Patrimoni Mundial «Santiago de Compostela (ciutat vella)» i «Camins de Santiago de Compostel·la».</li></ul>"
+  },
+  {
+   "origen": "hart-16",
+   "numero": 16,
+   "titol": "Portalada de Sant Pere de Moissac",
+   "slug": "portalada-de-sant-pere-de-moissac",
+   "estil": "romanic",
+   "llenguatge": "escultura",
+   "miniatura": "moissac",
+   "autor": "",
+   "dates": "Cap al 1120-1125",
+   "lloc": "Moissac (Occitània, França)",
+   "resum": "Portalada de l'abadia benedictina de Sant Pere de Moissac, en un dels camins cap a Santiago. El timpà representa la visió de l'Apocalipsi, amb **Crist en majestat**, el tetramorf i els ancians. És un exemple clar de la **llei d'adaptació al marc** i de la **jerarquia** de l'escultura romànica.",
+   "fitxa": [
+    [
+     "Localització",
+     "Abadia benedictina de Sant Pere de Moissac (Occitània, França), en un dels camins cap a Santiago."
+    ],
+    [
+     "Cronologia",
+     "Porxo i portalada cap al **1120-1125**, segons la datació més habitual, que encara es discuteix. L'abadia ja tenia un claustre acabat cap al 1100."
+    ],
+    [
+     "Promotor",
+     "L'abat **Roger** (algunes fonts atribueixen la portada al seu antecessor, l'abat Ansquitil)."
+    ],
+    [
+     "Tècnica",
+     "Relleu en pedra, originalment policromat."
+    ],
+    [
+     "Tema",
+     "La visió de l'Apocalipsi (capítols 4 i 5)."
+    ],
+    [
+     "Patrimoni",
+     "L'església i el claustre formen part, des del 1998, del bé del Patrimoni Mundial «Camins de Sant Jaume a França»."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "moissac",
+     "seccio": "inici",
+     "titol": "Timpà de la portalada de Sant Pere de Moissac (cap al 1120-1125)",
+     "text": "Crist en majestat, el tetramorf, dos àngels i els ancians de l'Apocalipsi."
+    }
+   ],
+   "q_context": "On i quan es va fer aquesta portalada, i per a qui?",
+   "context": "<p>La portalada es va fer cap al <strong>1120-1125</strong>, segons la datació més habitual, que encara es discuteix. L'abadia ja tenia un claustre acabat cap al 1100.</p><p>Moissac era una abadia benedictina situada en un dels camins cap a Santiago de Compostel·la. És l'època de l'Europa feudal, en què l'Església és la institució més poderosa i la principal clienta dels artistes, i en què els pelegrinatges fan circular persones i idees artístiques.</p><p>L'escultura romànica està al servei de l'arquitectura i té una funció <strong>didàctica</strong>. A les portalades i als capitells, els fidels, que en la seva gran majoria no sabien llegir, hi veien les històries de la Bíblia i els missatges de l'Església. Per això s'ha dit que aquestes portalades són una mena de «Bíblia de pedra».</p>",
+   "q_analisi": "Com s'adapten les figures a l'espai de la portada?",
+   "analisi": "<p>És un exemple clar de la <strong>llei d'adaptació al marc</strong> i de la <strong>jerarquia</strong>. Les figures omplen tot l'espai semicircular, sense buits. La composició és simètrica, i els ancians, amb les postures i les mirades, porten la vista de l'espectador cap al centre. Al <strong>mainell</strong>, tres parelles de lleons entrecreuats fan de guardians de l'entrada.</p><h3>Els trets de l'escultura romànica</h3><ul><li><strong>Llei d'adaptació al marc.</strong> Les figures s'allarguen, s'encongeixen o es dobleguen per encaixar en l'espai arquitectònic (un capitell, un timpà, una arquivolta).</li><li><strong>Jerarquia.</strong> La mida de cada figura depèn de la seva importància, no de la realitat. Crist és sempre la més gran.</li><li><strong>Frontalitat i simetria.</strong> Figures rígides, de cara a l'espectador, ordenades al voltant d'un eix.</li><li><strong>Antinaturalisme.</strong> Formes esquemàtiques, plecs de la roba en línies paral·leles i poc interès per l'anatomia.</li><li><strong>Horror vacui.</strong> Tendència a omplir tot l'espai.</li><li><strong>Policromia.</strong> Originalment, l'escultura estava pintada.</li></ul><h3>Les parts d'una portalada</h3><p>El <strong>timpà</strong> (espai semicircular damunt la porta), les <strong>arquivoltes</strong> (arcs concèntrics que l'emmarquen), el <strong>dintell</strong>, el <strong>mainell</strong> (pilar central que divideix la porta) i els <strong>brancals</strong> (laterals).</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Llei d'adaptació al marc · jerarquia · frontalitat · horror vacui · timpà · arquivolta · mainell · Crist en majestat · tetramorf.</p></div>",
+   "q_funcio": "Què representa i què havia de transmetre als qui entraven a l'església?",
+   "funcio": "<h3>Tema i iconografia</h3><p>El timpà representa la visió de l'Apocalipsi. Al centre hi ha <strong>Crist en majestat</strong>, coronat i assegut en un tron, molt més gran que la resta de figures. L'envolta el <strong>tetramorf</strong>, els quatre símbols dels evangelistes (l'home o àngel de Mateu, el lleó de Marc, el bou de Lluc i l'àguila de Joan), i dos àngels. Als registres inferiors, els <strong>ancians</strong> de l'Apocalipsi, asseguts, amb corones, copes i instruments, giren el cap cap a Crist.</p><h3>Funció</h3><p>La portalada marca el pas del món terrenal a l'espai sagrat. Presenta Crist com el rei i jutge de la fi dels temps, una imatge de poder i un advertiment per al fidel que entra al temple. Moissac era un lloc de pas de pelegrins, que trobaven aquesta imatge en entrar a l'església.</p>",
+   "q_relacio": "Amb quines obres de la llista la pots comparar?",
+   "relacio": "<ul><li><strong>Obra 15. Pòrtic de la Glòria (Santiago de Compostel·la).</strong> Representa el mateix tema, la visió de l'Apocalipsi amb Crist i els vint-i-quatre ancians, uns seixanta anys més tard (1188). Les figures del Mestre Mateu es giren, dialoguen i tenen volum, mentre que les de Moissac són més rígides i s'adapten al marc.</li><li><strong>Obra 17. Frescos de Sant Climent de Taüll.</strong> El mateix Crist en majestat amb el tetramorf, però en pintura.</li></ul><h3>Altres escultures romàniques</h3><p>La portalada de Santa Maria de Ripoll, el timpà de Vézelay i les talles de fusta policromada, com la <em>Majestat Batlló</em> del MNAC.</p>",
+   "compara": [
+    "hart-15",
+    "hart-17"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Assenyalar les parts d'una portalada (timpà, arquivoltes, dintell, mainell i brancals).</p><p><strong>Exercici 4.</strong> El patrimoni. L'església i el claustre formen part, des del 1998, del bé del Patrimoni Mundial «Camins de Sant Jaume a França».</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Identifiqueu les parts de la portalada i expliqueu què és la llei d'adaptació al marc.</li><li>Expliqueu el tema del timpà i la funció que tenia per als fidels que entraven a l'església.</li><li>Compareu el timpà de Moissac amb el timpà central del Pòrtic de la Glòria. Quines semblances i quines diferències hi observeu?</li></ol>",
+   "fonts": "<ul><li>Media Center for Art History, Columbia University. Fitxa de l'abadia de Sant Pere de Moissac.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li></ul>"
+  },
+  {
+   "origen": "hart-17",
+   "numero": 17,
+   "titol": "Frescos de Sant Climent de Taüll",
+   "slug": "frescos-de-sant-climent-de-taull",
+   "estil": "romanic",
+   "llenguatge": "pintura",
+   "miniatura": "pantocrator",
+   "autor": "Mestre de Taüll",
+   "dates": "1123",
+   "lloc": "MNAC, Barcelona",
+   "resum": "Pintura al fresc de l'absis central de Sant Climent de Taüll, a la Vall de Boí, consagrada el 1123. Presenta el **Crist en majestat** dins una màndorla, envoltat del tetramorf, amb colors plans i intensos i contorns negres. Avui és al **MNAC**, a Barcelona.",
+   "fitxa": [
+    [
+     "Autor",
+     "Anònim, conegut com el **Mestre de Taüll**."
+    ],
+    [
+     "Cronologia",
+     "L'església es va consagrar el **10 de desembre de 1123**, segons la inscripció de consagració, pel bisbe **Ramon de Roda** (o de Barbastre). Les pintures són d'aquesta època."
+    ],
+    [
+     "Tècnica",
+     "Pintura al fresc, traspassada a tela."
+    ],
+    [
+     "Localització",
+     "Originalment, a l'absis central de Sant Climent de Taüll (Vall de Boí). Avui, al **Museu Nacional d'Art de Catalunya** (MNAC), a Barcelona."
+    ],
+    [
+     "Estil",
+     "Romànic."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "taull",
+     "seccio": "inici",
+     "titol": "L'absis central, al MNAC",
+     "text": "Pintura al fresc traspassada a tela i muntada sobre una estructura que reprodueix la forma de l'absis."
+    },
+    {
+     "clau": "pantocrator",
+     "seccio": "inici",
+     "titol": "Detall del Crist en majestat",
+     "text": "La màndorla, el llibre amb la inscripció *EGO SUM LUX MUNDI* i l'alfa i l'omega."
+    },
+    {
+     "clau": "esglesia",
+     "seccio": "destacat",
+     "titol": "Sant Climent de Taüll (Vall de Boí)",
+     "text": "L'església per a la qual es van pintar els frescos, amb el campanar de torre de sis pisos."
+    }
+   ],
+   "q_context": "Quan i en quin context es van pintar aquests frescos?",
+   "context": "<p>L'església de Sant Climent de Taüll es va consagrar el <strong>10 de desembre de 1123</strong>, segons la inscripció de consagració, pel bisbe <strong>Ramon de Roda</strong> (o de Barbastre). Les pintures són d'aquesta època, el primer terç del segle XII.</p><p>És l'Europa feudal, amb una Església molt poderosa, grans monestirs i pelegrinatges que fan circular les idees artístiques. Als comtats catalans, el romànic llombard s'havia estès pel Pirineu, i a la Vall de Boí es conserva un conjunt d'esglésies d'aquesta època que la UNESCO va inscriure a la llista del Patrimoni Mundial el <strong>30 de novembre de 2000</strong>.</p>",
+   "q_analisi": "Com aconsegueix el pintor una imatge tan solemne i fàcil de llegir?",
+   "analisi": "<h3>La tècnica</h3><p>És una pintura al <strong>fresc</strong>, que consisteix a pintar amb pigments dissolts en aigua sobre el morter encara humit. En assecar-se, el color queda fixat al mur. Al segle XX es va arrencar de l'església i es va traspassar a tela.</p><h3>La forma</h3><p>És una obra cabdal del romànic europeu. Crist és molt més gran que les altres figures (<strong>jerarquia</strong>), està en posició <strong>frontal</strong> i la composició és <strong>simètrica</strong>. Els colors són plans i intensos, i les figures es dibuixen amb línies negres gruixudes. El rostre és geomètric, amb els ulls molt oberts, i els plecs de la roba es resolen amb línies paral·leles. El fons, de franges de colors, elimina qualsevol sensació d'espai real. El pintor superposa capes de color per aconseguir tons més intensos, com el blau sobre negre.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Fresc · Crist en majestat · màndorla · alfa i omega · tetramorf · jerarquia · frontalitat.</p></div>",
+   "q_funcio": "Què representa i per què presidia l'altar?",
+   "funcio": "<h3>Tema</h3><p>A la volta de l'absis hi ha el <strong>Crist en majestat</strong> dins una <strong>màndorla</strong>, l'aurèola en forma d'ametlla que l'envolta. Beneeix amb la mà dreta i amb l'esquerra sosté un llibre amb la inscripció <em>EGO SUM LUX MUNDI</em> («Jo soc la llum del món»). A banda i banda pengen l'<strong>alfa</strong> i l'<strong>omega</strong>, la primera i la darrera lletra de l'alfabet grec, que signifiquen que Crist és el principi i la fi de tot. L'envolten els quatre evangelistes amb els seus símbols, el <strong>tetramorf</strong>. A la franja de sota hi ha la <strong>Mare de Déu</strong>, que sosté una copa d'on surten raigs vermells, símbol de la sang de Crist, i diversos apòstols. Als arcs de davant de l'absis hi ha la mà de Déu i l'Anyell de Déu.</p><h3>Funció</h3><p>La imatge presidia l'altar i havia de transmetre la grandesa de Déu i la doctrina de l'Església a uns fidels que no sabien llegir. Crist apareix com a rei del cel i jutge, en un llenguatge que tothom podia entendre.</p>",
+   "destacat_titol": "Del Pirineu al museu",
+   "q_destacat": "Per què aquesta pintura és avui a Barcelona i no a Taüll?",
+   "destacat": "<p>Les pintures es van arrencar el <strong>1920</strong>, dins la campanya de la Junta de Museus de Barcelona del 1919-1923, juntament amb altres conjunts romànics del Pirineu. Es van instal·lar al Museu de la Ciutadella el 1921 i, el 1934, al Palau Nacional de Montjuïc, avui seu del MNAC. A l'església hi ha una reproducció, i <strong>des del 2013</strong> s'hi projecta una recreació virtual (videomapping) de les pintures.</p>",
+   "q_relacio": "Amb quines obres de la llista la pots comparar?",
+   "relacio": "<ul><li><strong>Obres 15 i 16. Pòrtic de la Glòria i portalada de Moissac.</strong> El mateix Crist en majestat amb els símbols dels evangelistes, però en escultura.</li><li><strong>Obra 22. Capella Scrovegni (Giotto).</strong> Gairebé dos segles després, Giotto dona volum, espai i expressió a les figures, lluny de la pintura plana i simbòlica de Taüll.</li></ul><h3>Altres pintures romàniques</h3><p>L'absis de Santa Maria de Taüll, també al MNAC, i les pintures del panteó reial de Sant Isidor de Lleó.</p>",
+   "compara": [
+    "hart-15",
+    "hart-16"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Distingir el fresc del tremp.</p><p><strong>Exercici 4.</strong> El debat entre conservar l'obra al seu lloc o al museu. Les pintures originals són al MNAC, a l'església hi ha una reproducció i, des del 2013, una recreació virtual.</p>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Mestre de Taüll, pintura de l'absis central de Sant Climent de Taüll (Barcelona, Museu Nacional d'Art de Catalunya).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i la tècnica de l'obra i indiqueu-ne l'estil. [1,5 punts]</p><p>c) Expliqueu el tema i la funció que tenia aquesta pintura. [1 punt]</p><p>d) Expliqueu per què aquesta pintura es conserva avui al MNAC i no a l'església per a la qual es va fer. [0,5 punts]</p>",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Primer terç del segle XII (consagració de l'església, 10 de desembre de 1123). Europa feudal, poder de l'Església, monestirs, pelegrinatges, comtats catalans i expansió del romànic llombard al Pirineu.</p><p><strong>b)</strong> Fresc traspassat a tela. Jerarquia, frontalitat, simetria, màndorla, colors plans i intensos, contorns negres, fons de franges sense profunditat, rostre geomètric i plecs lineals. Estil romànic, amb influència bizantina.</p><p><strong>c)</strong> Crist en majestat amb el llibre <em>EGO SUM LUX MUNDI</em>, alfa i omega, tetramorf, la Mare de Déu amb la copa i els apòstols. Funció didàctica i religiosa, perquè presidia l'altar i mostrava Crist com a rei i jutge a uns fidels que no sabien llegir.</p><p><strong>d)</strong> Es va arrencar el 1920 dins la campanya de la Junta de Museus (1919-1923) i es va traslladar a Barcelona per conservar-la en un museu. A l'església hi ha una reproducció i una recreació digital.</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>Les pintures originals de l'absis de Sant Climent de Taüll són al MNAC des del segle XX. A l'església hi ha una reproducció i, des del 2013, s'hi projecta una recreació virtual de les pintures. El conjunt de la Vall de Boí és Patrimoni Mundial des del 2000.</p><ol><li>Creieu que les pintures originals haurien de tornar a Taüll, o és millor que es quedin al museu? Justifiqueu la resposta.</li><li>Quins avantatges i quins riscos té la tecnologia digital per difondre el patrimoni artístic?</li></ol>",
+   "fonts": "<ul><li>Museu Nacional d'Art de Catalunya. Fitxes de la col·lecció (Sant Climent de Taüll).</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Sant Climent de Taüll».</li><li>Gran Enciclopèdia Catalana. Article «Sant Climent de Taüll».</li><li>Centre del Romànic de la Vall de Boí. <em>El redescobriment del romànic</em>.</li></ul>"
+  }
+ ]
+}

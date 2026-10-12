@@ -1,0 +1,103 @@
+/* PDS · Història de l'Art. Complements del model de les unitats (model4.css) amb el color de 2n. */
+
+/* Avís de vista privada */
+.pdsha-privat { background: #FFF4E5; border-bottom: 1px solid #F3D19E; color: #5C3B00; font-size: 14px; padding: 10px 0; }
+.pdsha-privat .um-wrap { padding-top: 0; padding-bottom: 0; }
+
+/* Portada sense columna d'índex */
+.pdsha-pagina { padding-top: 28px; padding-bottom: 40px; }
+.pdsha-pagina .um-sec { max-width: 980px; }
+
+/* Botons de filtre (llenguatges i estils) */
+.pdsha-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 18px; }
+.pdsha-chips a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid var(--outline); border-radius: 18px; font-size: 14.5px; line-height: 1.3; color: var(--ink); text-decoration: none; background: var(--surface); }
+.pdsha-chips a b { font-weight: 500; font-size: 12.5px; color: var(--ink-2); }
+.pdsha-chips a:hover { border-color: var(--primary); color: var(--primary); }
+.pdsha-chips a[aria-current="page"] { background: var(--primary); border-color: var(--primary); color: #fff; }
+.pdsha-chips a[aria-current="page"] b { color: rgba(255,255,255,.85); }
+.pdsha-chips-estils a { border-color: var(--primary); color: var(--primary); font-weight: 500; }
+
+/* Targetes d'obra */
+.pdsha-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin: 8px 0 22px; }
+.pdsha-card { display: flex; flex-direction: column; border: 1px solid var(--outline); border-radius: var(--r, 12px); overflow: hidden; color: var(--ink); text-decoration: none; background: var(--surface); transition: border-color .15s, box-shadow .15s; }
+.pdsha-card:hover { border-color: var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+.pdsha-card-img { display: block; aspect-ratio: 4 / 3; background: var(--surface-2); }
+.pdsha-card-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.pdsha-card-body { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 14px; }
+.pdsha-card-n { font-size: 12.5px; color: var(--primary); font-weight: 500; letter-spacing: .02em; }
+.pdsha-card-t { font-size: 16px; font-weight: 500; line-height: 1.3; }
+.pdsha-card-m { font-size: 13.5px; color: var(--ink-2); }
+
+/* Llista oficial per períodes */
+.pdsha-periode { margin: 0 0 22px; }
+.pdsha-periode h3 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 18px 0 8px; }
+.pdsha-periode h3 small { font-size: 13px; font-weight: 400; color: var(--ink-2); }
+.pdsha-llista { margin: 0; padding-left: 2.2em; columns: 2 300px; column-gap: 28px; }
+.pdsha-llista li { break-inside: avoid; margin: 0 0 6px; line-height: 1.4; }
+.pdsha-llista li::marker { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.pdsha-llista li.is-off { color: var(--ink-2); }
+.pdsha-llista li.is-on::marker { color: var(--primary); font-weight: 500; }
+.pdsha-llista li.is-on a { font-weight: 500; }
+.pdsha-llista small { font-size: 12px; color: var(--ink-3); margin-left: 4px; }
+
+/* Imatges: senceres, sense retallar (plantes i obres verticals) */
+.um .pdsha-fig img { object-fit: contain; max-height: 520px; background: var(--surface-2); }
+.um .pdsha-two { align-items: start; }
+.um .pdsha-two .pdsha-fig img { height: 340px; object-fit: contain; }
+.pdsha-fig figcaption { font-size: 14px; }
+.pdsha-credit { display: block; margin-top: 4px; font-size: 12px; color: var(--ink-3); }
+.um-main figure.um-fig.alignright, .um-main figure.um-fig.pdsha-dreta { float: right; width: 42%; margin: 4px 0 16px 20px; }
+.um-main .um-sec::after { content: ""; display: block; clear: both; }
+
+/* Fitxa tècnica */
+.pdsha-fitxa { margin: 18px 0 20px; border: 1px solid var(--outline); border-radius: var(--r, 12px); overflow: hidden; }
+.pdsha-fitxa > div { display: grid; grid-template-columns: 170px 1fr; border-top: 1px solid var(--outline); }
+.pdsha-fitxa > div:first-child { border-top: 0; }
+.pdsha-fitxa dt { padding: 10px 14px; background: var(--primary-soft); color: var(--primary); font-weight: 500; font-size: 14.5px; }
+.pdsha-fitxa dd { margin: 0; padding: 10px 14px; font-size: 15px; line-height: 1.5; }
+
+/* Resposta model desplegable */
+.pdsha-model { border: 1px solid var(--outline); border-radius: var(--r, 12px); margin: 18px 0; padding: 0 16px; }
+.pdsha-model-btn { display: block; width: 100%; text-align: left; background: none; border: 0; padding: 12px 0; font: inherit; font-weight: 500; color: var(--primary); cursor: pointer; }
+.pdsha-model-btn::after { content: " ▾"; }
+.pdsha-model-btn[aria-expanded="true"]::after { content: " ▴"; }
+.pdsha-model-cos { border-top: 1px solid var(--outline); padding: 4px 0 8px; }
+.pdsha-model-cos > h3:first-child { margin-top: 12px; }
+.pdsha-etiqueta { color: var(--ink-2); margin-bottom: .6em; }
+
+/* Obres al final d'un apartat de l'estil */
+.pdsha-obres-ap ul { margin: 4px 0 0; padding-left: 1.2em; }
+.pdsha-obres-ap li { margin: 2px 0; }
+
+/* Obra anterior, tema de l'estil i obra següent */
+.pdsha-pasa { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 26px 0 6px; }
+.pdsha-pasa a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border: 1px solid var(--outline); border-radius: var(--r, 12px); color: var(--ink); text-decoration: none; font-weight: 500; line-height: 1.35; }
+.pdsha-pasa a:hover { border-color: var(--primary); color: var(--primary); }
+.pdsha-pasa small { font-size: 12.5px; font-weight: 400; color: var(--ink-2); }
+.pdsha-pasa-seg { text-align: right; }
+.pdsha-pasa-estil { text-align: center; background: var(--primary-soft); border-color: transparent !important; }
+
+/* Crèdits */
+.pdsha-credits { font-size: 14.5px; padding-left: 1.2em; }
+.pdsha-credits li { margin: 0 0 6px; }
+
+@media (max-width: 640px) {
+	.pdsha-fitxa > div { grid-template-columns: 1fr; }
+	.pdsha-fitxa dt { padding-bottom: 4px; }
+	.pdsha-fitxa dd { padding-top: 6px; }
+	.um .pdsha-two { grid-template-columns: 1fr; }
+	.um .pdsha-two .pdsha-fig img { height: auto; max-height: 420px; }
+	.um-main figure.um-fig.alignright, .um-main figure.um-fig.pdsha-dreta { float: none; width: auto; margin: 20px 0; }
+	.pdsha-pasa-seg, .pdsha-pasa-estil { text-align: left; }
+	.pdsha-llista { columns: 1; }
+}
+
+@media print {
+	.pdsha-privat, .pdsha-chips, .pdsha-pasa { display: none !important; }
+	.pdsha-model { border: 0; padding: 0; }
+	.pdsha-model-cos[hidden] { display: block !important; }
+}
+
+/* Al document d'impressió (model4.js) la resposta model surt sempre */
+.pd .pdsha-model-cos[hidden] { display: block !important; }
+.pd .pdsha-model { border: 0; padding: 0; }
