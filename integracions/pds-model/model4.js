@@ -609,6 +609,10 @@
     var b = sectionBody(sec, o, false);
     var h = b.el.querySelector('h2');
     if (h) { h.parentNode.replaceChild(mk('h1', 'pd-h1', h.innerHTML), h); }
+    if (p.id === 'sa') {
+      $$('.um-lines', b.el).forEach(function (l) { var nl = +l.getAttribute('data-n') || 8; l.parentNode.replaceChild(mk('div', 'pd-lines', new Array(nl + 1).join('<span></span>')), l); });
+      if (o.parts.length === 1) { var h1 = b.el.querySelector('h1.pd-h1'); if (h1) { h1.parentNode.removeChild(h1); } }
+    }
     if (p.id === 'activitats') {
       var lv = o.level || 'tots';
       if (lv !== 'tots') {
@@ -640,9 +644,15 @@
     var cov = mk('header', 'pd-cover');
     var kick = eyebrow;
     if (!hasTemari && parts.length === 1) { kick = (eyebrow ? eyebrow + ' · ' : '') + BY[parts[0]].label; }
-    var band = mk('div', 'pd-band' + (hasTemari ? '' : ' is-small'));
-    band.innerHTML = '<div class="pd-band-t">' + (kick ? '<p class="pd-kick">' + esc(kick) + '</p>' : '') + '<p class="pd-title">' + esc(title) + '</p>' +
-      (hasTemari && guide ? '<p class="pd-guia">' + esc(guide) + '</p>' : '') + '</div>' +
+    var ctitle = title, cguide = hasTemari ? guide : '', saSola = !hasTemari && parts.length === 1 && parts[0] === 'sa';
+    if (saSola) {
+      var saH = root.querySelector('#sa > header h2'), saQ = root.querySelector('#sa .um-sa-repte strong');
+      if (saH) { ctitle = txt(saH); kick = "Situació d'aprenentatge · " + title + (eyebrow ? ' · ' + (eyebrow.split('·')[0] || '').trim() : ''); }
+      if (saQ) { cguide = txt(saQ); }
+    }
+    var band = mk('div', 'pd-band' + (hasTemari || saSola ? '' : ' is-small'));
+    band.innerHTML = '<div class="pd-band-t">' + (kick ? '<p class="pd-kick">' + esc(kick) + '</p>' : '') + '<p class="pd-title">' + esc(ctitle) + '</p>' +
+      (cguide ? '<p class="pd-guia">' + esc(cguide) + '</p>' : '') + '</div>' +
       (BAND ? '<div class="pd-band-i"><img src="' + BAND.url + '" alt="" width="' + BAND.w + '" height="' + BAND.h + '"></div>' : '');
     cov.appendChild(band);
     if (o.name) { cov.appendChild(mk('p', 'pd-name', '<span>Nom i cognoms</span><i class="w"></i><span>Grup</span><i></i><span>Data</span><i></i>')); }
@@ -827,22 +837,29 @@
     rows.forEach(function (r) { var n = 0; Array.prototype.forEach.call(r.cells, function (c) { n += c.colSpan || 1; }); ncol = Math.max(ncol, n); });
     if (!ncol) { return ''; }
     var width = (ctx.width || TW) - (ctx.ind || 0), cw = Math.floor(width / ncol);
+    var fillT = t.classList.contains('um-fill'), hr = t.querySelector('tr'), cws = [];
+    for (var ci = 0; ci < ncol; ci++) { cws.push(cw); }
+    if (hr && hr.cells.length === ncol && Array.prototype.every.call(hr.cells, function (c) { return +c.getAttribute('data-w'); })) {
+      cws = Array.prototype.map.call(hr.cells, function (c) { return Math.floor(width * (+c.getAttribute('data-w')) / 100); });
+    }
     var ln = 'single:4:' + LINE;
     var s = '<w:tbl><w:tblPr><w:tblW w:w="' + width + '" w:type="dxa"/>' + (ctx.ind ? '<w:tblInd w:w="' + ctx.ind + '" w:type="dxa"/>' : '') + '<w:tblBorders>' + borders({ top: ln, bottom: ln }) + '<w:insideH w:val="single" w:sz="4" w:space="0" w:color="' + LINE + '"/><w:insideV w:val="nil"/></w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:top w:w="40" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:bottom w:w="40" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>';
-    for (var i = 0; i < ncol; i++) { s += '<w:gridCol w:w="' + cw + '"/>'; }
+    for (var i = 0; i < ncol; i++) { s += '<w:gridCol w:w="' + cws[i] + '"/>'; }
     s += '</w:tblGrid>';
     var small = ncol > 5;
     rows.forEach(function (r, ri) {
       var head = r.parentNode.tagName === 'THEAD' || (ri === 0 && !t.querySelector('thead') && Array.prototype.every.call(r.cells, function (c) { return c.tagName === 'TH'; }));
-      s += '<w:tr><w:trPr>' + (head ? '<w:tblHeader/>' : '') + '<w:cantSplit/></w:trPr>';
+      s += '<w:tr><w:trPr>' + (head ? '<w:tblHeader/>' : '') + '<w:cantSplit/>' + (fillT && !head && !r.classList.contains('um-sa-ex') ? '<w:trHeight w:val="' + (+t.getAttribute('data-h') || 760) + '" w:hRule="atLeast"/>' : '') + '</w:trPr>';
+      var cix = 0;
       Array.prototype.forEach.call(r.cells, function (c) {
+        var cwc = cws[cix] || cw; cix += c.colSpan || 1;
         var span = c.colSpan || 1, th = c.tagName === 'TH';
         var f = { font: SANS, b: th || head, sz: small ? 15 : 17, color: head ? 'FFFFFF' : INK };
         var hasBlock = Array.prototype.some.call(c.children, function (k) { return BLOCK.test(k.tagName.toLowerCase()); });
-        var inner = hasBlock ? blocks(c, { width: cw * span - 180, f: f, inCell: true }) : para(runsXml(segs(c, f, [])), { space: [0, 0, 252] });
+        var inner = hasBlock ? blocks(c, { width: cwc * span - 180, f: f, inCell: true }) : para(runsXml(segs(c, f, [])), { space: [0, 0, 252] });
         if (!/<\/w:p>$/.test(inner)) { inner += '<w:p/>'; }
         var fill = head ? C : (ri % 2 === 0 && !head ? 'F8F9FA' : null);
-        s += '<w:tc><w:tcPr><w:tcW w:w="' + (cw * span) + '" w:type="dxa"/>' + (span > 1 ? '<w:gridSpan w:val="' + span + '"/>' : '') + (fill ? '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>' : '') + '</w:tcPr>' + inner + '</w:tc>';
+        s += '<w:tc><w:tcPr><w:tcW w:w="' + (cwc * span) + '" w:type="dxa"/>' + (span > 1 ? '<w:gridSpan w:val="' + span + '"/>' : '') + (fill ? '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>' : '') + '</w:tcPr>' + inner + '</w:tc>';
       });
       s += '</w:tr>';
     });
@@ -874,7 +891,7 @@
     var lvl = (ctx.lvl || 0), left = 340 * (lvl + 1) + (ctx.ind || 0);
     var claus = list.classList.contains('pds2-claus');
     $$(':scope > li', list).forEach(function (li) {
-      var pre = ordered ? (n++) + '.' : (lvl ? '–' : '•');
+      var pre = ordered ? (n++) + '.' : (list.classList.contains('um-checklist') ? '☐' : (lvl ? '–' : '•'));
       var inl = [], rest = [];
       li.childNodes.forEach(function (k) { if (k.nodeType === 1 && (BLOCK.test(k.tagName.toLowerCase()) || k.classList.contains('pd-lines'))) { rest.push(k); } else if (!rest.length) { inl.push(k); } else { rest.push(k); } });
       var tmp = document.createElement('span');
@@ -967,7 +984,7 @@
       flush();
       if (t === 'h1' && cl.contains('pd-h1')) { s += inlineP(k, { style: 'Heading1', pb: ctx.pb }); ctx.pb = false; return; }
       if (t === 'h1' || t === 'h2') { if (FLOAT) { s += CLEAR; FLOAT = false; } s += inlineP(k, { style: 'Heading2' }); return; }
-      if (t === 'h3') { s += inlineP(k, { style: ctx.box ? 'BoxHead' : 'Heading3' }); return; }
+      if (t === 'h3') { s += inlineP(k, { style: ctx.box ? 'BoxHead' : 'Heading3', pb: cl.contains('um-sa-nova') }); return; }
       if (t === 'h4') { s += inlineP(k, { style: 'Heading4' }); return; }
       if (t === 'svg' || t === 'img') { s += imageXml(k, ctx); return; }
       if (cl.contains('um-box-t')) { s += inlineP(k, { style: 'BoxTitle', ind: base.ind }, { color: ctx.boxColor || C }); return; }
@@ -1241,7 +1258,7 @@
       var d = compose(o);
       d.style.cssText = 'position:absolute;left:-10000px;top:0;width:760px';
       document.body.appendChild(d);
-      var svgs = $$('svg, img', d).filter(function (s) { return !s.closest('.pd-band') && (s.tagName.toLowerCase() === 'img' || !s.parentNode.closest('svg')); });
+      var svgs = $$('svg, img', d).filter(function (s) { return !s.closest('.pd-band') && !(s.classList && s.classList.contains('um-ico')) && (s.tagName.toLowerCase() === 'img' || !s.parentNode.closest('svg')); });
       IMG = new Map();
       docPrId = 100;
       FLOAT = false;
