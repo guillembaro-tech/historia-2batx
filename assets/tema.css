@@ -27,9 +27,9 @@ img{max-width:100%;height:auto}
 .hero .q{max-width:48ch;margin:24px 0 0;padding-left:16px;border-left:2px solid rgba(255,255,255,.5);font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.5}
 
 /* Graella: contingut i columna lateral */
-.pg{display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:auto auto auto 1fr;column-gap:56px}
+.pg{display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:auto auto auto auto 1fr;column-gap:56px}
 .pg>.blk{grid-column:1}
-.pg>.side{grid-column:2;grid-row:1/span 4}
+.pg>.side{grid-column:2;grid-row:1/span 5}
 .blk{margin-top:52px;scroll-margin-top:24px}
 .blk-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
 .blk-h h2{font-size:1.5rem}
@@ -184,3 +184,9 @@ dialog button{position:fixed;top:14px;right:18px;font:inherit;font-weight:500;ba
   figure.font,.ex,.fx{break-inside:avoid}
   a{text-decoration:none}
 }
+
+/* Què has d'entendre d'aquest tema */
+.entendre .una{margin:0 0 14px;padding:14px 16px;border-left:3px solid var(--c);background:var(--paper);border-radius:0 10px 10px 0;line-height:1.55}
+.entendre .claus{margin:0;padding-left:22px;line-height:1.55}
+.entendre .claus li+li{margin-top:.6em}
+.entendre .claus b,.entendre .una b{color:var(--ink)}

@@ -43,6 +43,14 @@ function render(d){
     + (d.pregunta ? '<p class="q">' + esc(d.pregunta) + '</p>' : '')
     + '</div></div><div class="wrap"><div class="pg">';
 
+  // Què has d'entendre: la idea principal i una idea clau per apartat
+  if (d.idea_clau || has(d.claus)) {
+    h += '<section class="blk entendre" id="entendre" aria-labelledby="h-en"><div class="blk-h"><h2 id="h-en">Què has d\'entendre d\'aquest tema</h2></div>'
+      + (d.idea_clau ? '<p class="una"><b>Si només en recordes una idea.</b> ' + esc(d.idea_clau) + '</p>' : '')
+      + (has(d.claus) ? '<ol class="claus">' + d.claus.map(c => '<li><b>' + esc(c.titol) + '.</b> ' + esc(c.text) + '</li>').join('') + '</ol>' : '')
+      + '</section>';
+  }
+
   // Apartats: acordió
   h += '<section class="blk" id="apartats" aria-labelledby="h-ap"><div class="blk-h"><h2 id="h-ap">Apartats</h2>'
     + (ap.length > 1 ? '<button type="button" class="tot" aria-controls="acc" aria-expanded="false">Obre-ho tot</button>' : '') + '</div>';
@@ -66,7 +74,7 @@ function render(d){
 
   // Columna lateral
   h += '<aside class="side">';
-  h += '<nav class="nav" aria-label="En aquesta pàgina"><h3>En aquesta pàgina</h3><a href="#apartats">Apartats</a><a href="#fonts">Fonts</a><a href="#practica">Pràctica PAU</a></nav>';
+  h += '<nav class="nav" aria-label="En aquesta pàgina"><h3>En aquesta pàgina</h3>' + ((d.idea_clau || has(d.claus)) ? '<a href="#entendre">Què has d\'entendre</a>' : '') + '<a href="#apartats">Apartats</a><a href="#fonts">Fonts</a><a href="#practica">Pràctica PAU</a></nav>';
   h += '<a class="taller" href="taller.html#tema-' + N + '"><h3>Taller PAU</h3><p>Aprèn a respondre els exercicis 1, 2 i 3 amb exemples d\'aquest tema.</p><span>Obre el taller</span></a>';
   if (has(pau)) {
     const mx = Math.max(...pau.map(p => +p.n || 0), 1);

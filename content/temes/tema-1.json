@@ -3,6 +3,37 @@
   "dates": "1875–1931",
   "resum": "Del sistema canovista i el torn pacífic a la dictadura de Primo de Rivera, amb l'economia, la societat i la demografia del període.",
   "pregunta": "Com va funcionar un sistema estable però poc democràtic, i per què va acabar en dictadura?",
+  "idea_clau": "La Restauració va donar estabilitat a Espanya, però a canvi de deixar fora del poder la major part de la societat, i aquesta exclusió explica la seva crisi i la seva caiguda.",
+  "claus": [
+    {
+      "titol": "Un règim per tenir ordre",
+      "text": "Després del Sexenni, Cánovas va preparar el retorn dels Borbons amb Alfons XII i va construir un règim basat en la Constitució de 1876, amb la sobirania compartida entre el rei i les Corts."
+    },
+    {
+      "titol": "Liberal, però no democràtic",
+      "text": "Conservadors i liberals s'alternaven en el govern (torn pacífic) gràcies al caciquisme. Era el govern qui decidia les eleccions, i no els electors."
+    },
+    {
+      "titol": "Molts quedaven fora",
+      "text": "Carlins, republicans, nacionalistes i el moviment obrer (socialistes i anarquistes) no tenien lloc al sistema i s'hi van oposar."
+    },
+    {
+      "titol": "El 98, la gran sacsejada",
+      "text": "La pèrdua de Cuba, Puerto Rico i les Filipines va obrir una crisi de confiança i les crides a regenerar el país."
+    },
+    {
+      "titol": "Un sistema que no es reforma",
+      "text": "Entre el 1898 i el 1923, la guerra del Marroc, la crisi de 1917 i els conflictes obrers el van debilitar."
+    },
+    {
+      "titol": "De la dictadura a la República",
+      "text": "Primo de Rivera (1923-1930) va intentar salvar el règim amb una dictadura, i el seu fracàs va arrossegar la monarquia, que va caure el 14 d'abril de 1931."
+    },
+    {
+      "titol": "Un país que canvia a poc a poc",
+      "text": "La població va iniciar la transició demogràfica, l'agricultura arrossegava problemes greus, com els latifundis, i la indústria es concentrava a Catalunya i al País Basc."
+    }
+  ],
   "apartats": [
     {
       "titol": "El sistema de la Restauració",

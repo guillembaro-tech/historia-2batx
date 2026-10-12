@@ -18,6 +18,16 @@ collections:
           - { label: "Dates", name: dates, widget: string, hint: "Ex.: 1875–1931" }
           - { label: "Resum curt", name: resum, widget: text }
           - { label: "Pregunta guia", name: pregunta, widget: string, required: false }
+          - { label: "Si només en recordes una idea", name: idea_clau, widget: text, required: false, hint: "Una frase que resumeixi tot el tema." }
+          - label: "Què has d'entendre (idees clau)"
+            name: claus
+            widget: list
+            required: false
+            summary: "{{fields.titol}}"
+            hint: "Una idea per apartat, amb un títol curt i una o dues frases."
+            fields:
+              - { label: "Títol", name: titol, widget: string }
+              - { label: "Text", name: text, widget: text }
           - label: "Apartats"
             name: apartats
             widget: list
