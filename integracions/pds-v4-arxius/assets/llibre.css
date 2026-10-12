@@ -64,7 +64,9 @@ html.um-printing #um-print-doc { padding: 0 !important; }
 .pd .pds2-claus li { margin-bottom: 1.6mm; }
 
 /* Al costat: paraules clau i imatges verticals, amb el text al voltant */
-.pd .pd-blk { display: flow-root; }
+/* La columna lateral pot continuar al costat dels apartats següents: el text puja a l'esquerra de la imatge
+   en lloc de començar per sota. Només les peces d'amplada completa (h2, mapes, taules) passen per sota. */
+.pd .pd-blk { display: block; }
 .pd .pd-blk-h { break-inside: avoid; }
 .pd .pd-keep { break-inside: avoid; }
 .pd figure.pd-port img { max-height: 72mm; }
