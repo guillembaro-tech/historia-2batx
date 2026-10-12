@@ -14,3 +14,9 @@ Cada carpeta `tema-N/` té la presentació d'un tema, tal com es copia al servid
 Després es converteix a PDF amb LibreOffice, es passen les pàgines a WebP i s'escriu el `manifest.json` amb els títols i les notes del .pptx.
 
 El contingut és el del tema publicat a professordesocials.cat. Les dates i xifres de les diapositives es comproven amb el text del tema abans de publicar.
+
+## Eines
+
+- `eines/tema-1.js` · Tema 1 de 2n de Batxillerat (La Restauració). Les imatges són a `media/tema-1/` de la branca `main`.
+- `eines/1r-eso-grecia/build.js` · Mostra de L'Antiga Grècia (1r ESO, unitat 4), amb l'apartat 1. Té les imatges a `img/` i el dibuix de la capçalera (`hero-crop.png`).
+- Tots dos fan servir `apply_theme.js` de l'habilitat de PowerPoint de Claude (la ruta canvia a cada sessió) i el paquet pptxgenjs. S'executen amb `NODE_PATH=$(npm root -g) node <fitxer> <sortida.pptx>`.
