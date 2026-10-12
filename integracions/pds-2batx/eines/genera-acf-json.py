@@ -106,6 +106,12 @@ tema_fields = [
     t.color(['color'], 'color', 'Color del tema', width='25'),
     t.select(['estat_taller'], 'estat_taller', 'Estat al Taller PAU', {'disponible': 'Disponible', 'en preparació': 'En preparació'}, default='en preparació', width='25'),
     t.textarea(['pregunta'], 'pregunta', 'Pregunta guia del tema', rows=2),
+    t.tab(['tab_entendre'], "Què has d'entendre"),
+    t.textarea(['idea_clau'], 'idea_clau', 'Si només en recordes una idea', rows=3, instructions='Una frase que resumeixi tot el tema.'),
+    t.repeater(['claus'], 'claus', 'Idees clau', [
+        t.text(['claus', 'titol'], 'titol', 'Títol', width='30'),
+        t.textarea(['claus', 'text'], 'text', 'Text', rows=2, width='70'),
+    ], button='Afegeix una idea', layout='table', instructions='Una idea per apartat, amb un títol curt i una o dues frases. Surten a «Què has d\'entendre d\'aquest tema». Si està buit, hi surt la llista dels apartats.'),
     t.tab(['tab_apartats'], 'Apartats'),
     t.message(['msg_apartats'], 'Com funcionen', 'El text de cada apartat és a l\'editor, amb un encapçalament per apartat i les àncores <code>ap0</code>, <code>ap1</code>… L\'ordre d\'aquesta llista ha de coincidir amb el dels encapçalaments.'),
     t.repeater(['apartats'], 'apartats', 'Fitxes dels apartats', [

@@ -120,6 +120,101 @@
             "new_lines": ""
         },
         {
+            "key": "field_pds2_tema_tab_entendre",
+            "label": "Què has d'entendre",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_pds2_tema_idea_clau",
+            "label": "Si només en recordes una idea",
+            "name": "idea_clau",
+            "type": "textarea",
+            "instructions": "Una frase que resumeixi tot el tema.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_pds2_tema_claus",
+            "label": "Idees clau",
+            "name": "claus",
+            "type": "repeater",
+            "instructions": "Una idea per apartat, amb un títol curt i una o dues frases. Surten a «Què has d'entendre d'aquest tema». Si està buit, hi surt la llista dels apartats.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Afegeix una idea",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_pds2_tema_claus_titol",
+                    "label": "Títol",
+                    "name": "titol",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_pds2_tema_claus_text",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "70",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
             "key": "field_pds2_tema_tab_apartats",
             "label": "Apartats",
             "name": "",

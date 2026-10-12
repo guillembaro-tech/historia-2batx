@@ -19,6 +19,8 @@ while ( have_posts() ) :
 	$oficial   = pds2_temes_oficials()[ $n ] ?? array( 'nom' => get_the_title(), 'dates' => '' );
 	$dates     = (string) pds2_f( 'dates', $pid, $oficial['dates'] );
 	$pregunta  = (string) pds2_f( 'pregunta', $pid, '' );
+	$idea_clau = (string) pds2_f( 'idea_clau', $pid, '' );
+	$claus     = array_values( array_filter( (array) pds2_f( 'claus', $pid, array() ), static fn( $c ) => '' !== trim( (string) ( $c['text'] ?? '' ) ) ) );
 	$apartats  = array_values( (array) pds2_f( 'apartats', $pid, array() ) );
 	$fonts     = array_values( (array) pds2_f( 'fonts', $pid, array() ) );
 	$practica  = array_values( (array) pds2_f( 'practica', $pid, array() ) );
@@ -88,14 +90,25 @@ while ( have_posts() ) :
 
 				<section class="um-sec" id="comencem">
 					<header><span class="um-num">Abans de començar</span><h2>Què has d'entendre d'aquest tema</h2></header>
-					<?php if ( has_excerpt() ) : ?>
+					<?php if ( $idea_clau || $claus ) : ?>
+						<?php if ( $idea_clau ) : ?>
+							<div class="um-box um-key pds2-idea"><span class="um-box-t">Si només en recordes una idea</span><p><?php echo esc_html( $idea_clau ); ?></p></div>
+						<?php endif; ?>
+						<?php if ( $claus ) : ?>
+							<ol class="pds2-claus">
+								<?php foreach ( $claus as $c ) : ?>
+									<li><?php echo ! empty( $c['titol'] ) ? '<strong>' . esc_html( rtrim( (string) $c['titol'], '.' ) ) . '.</strong> ' : ''; ?><?php echo esc_html( (string) $c['text'] ); ?></li>
+								<?php endforeach; ?>
+							</ol>
+						<?php endif; ?>
+					<?php elseif ( has_excerpt() ) : ?>
 						<p class="um-intro"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
 					<?php endif; ?>
 					<div class="um-box um-near">
 						<span class="um-box-t">Tema <?php echo (int) $n; ?> de la PAU d'Història</span>
 						<p><?php echo esc_html( get_the_title() ); ?><?php echo $dates ? ' (' . esc_html( $dates ) . ')' : ''; ?>.</p>
 					</div>
-					<?php if ( $apartats ) : ?>
+					<?php if ( $apartats && ! $claus ) : ?>
 						<h3>Els apartats</h3>
 						<ol>
 							<?php foreach ( $apartats as $i => $ap ) : ?>
