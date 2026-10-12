@@ -107,17 +107,17 @@ $a_la_web = static function ( array $rang ) use ( $per_n ): int {
 								$thumb  = $obr ? get_post_thumbnail_id( $obr[0] ) : 0;
 								$dates  = (string) pdsha_f( 'ha_estil_dates', $t, '' );
 								?>
-								<a class="pdsha-estil" href="<?php echo esc_url( pdsha_estil_url( $t ) ); ?>">
+								<a class="pdsha-ecard" href="<?php echo esc_url( pdsha_estil_url( $t ) ); ?>">
 									<?php echo $thumb ? wp_get_attachment_image( $thumb, 'thumbnail', false, array( 'alt' => '', 'loading' => 'lazy' ) ) : ''; ?>
 									<span><b><?php echo esc_html( pdsha_titol_estil( $t ) ); ?></b><small><?php echo esc_html( implode( ' · ', array_filter( array( $dates, count( $obr ) . ' ' . ( 1 === count( $obr ) ? 'obra' : 'obres' ) ) ) ) ); ?></small></span>
 									<i>Obre el tema</i>
 								</a>
 							<?php else : ?>
-								<span class="pdsha-estil pdsha-estil-off"><span><b><?php echo esc_html( $previstos[ $es ] ); ?></b><small>En preparació</small></span></span>
+								<span class="pdsha-ecard pdsha-ecard-off"><span><b><?php echo esc_html( $previstos[ $es ] ); ?></b><small>En preparació</small></span></span>
 							<?php endif; ?>
 						<?php endforeach; ?>
 						<?php if ( ! $ordre ) : ?>
-							<span class="pdsha-estil pdsha-estil-off"><span><b>Estils del període</b><small>En preparació</small></span></span>
+							<span class="pdsha-ecard pdsha-ecard-off"><span><b>Estils del període</b><small>En preparació</small></span></span>
 						<?php endif; ?>
 					</div>
 
