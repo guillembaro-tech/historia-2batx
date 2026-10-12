@@ -1,0 +1,247 @@
+[
+ {
+  "post": 857,
+  "curs": "1r-eso",
+  "codi": "map",
+  "fitxer": "destacada-llegir-lespai-i-el-temps.png",
+  "alt": "Dibuix de línies d'una rosa dels vents i un rellotge de sorra"
+ },
+ {
+  "post": 793,
+  "curs": "1r-eso",
+  "codi": "pre",
+  "fitxer": "destacada-la-prehistoria.png",
+  "alt": "Dibuix de línies d'un menhir i un dolmen"
+ },
+ {
+  "post": 822,
+  "curs": "1r-eso",
+  "codi": "mes",
+  "fitxer": "destacada-primeres-civilitzacions.png",
+  "alt": "Dibuix de línies d'un zigurat esglaonat"
+ },
+ {
+  "post": 831,
+  "curs": "1r-eso",
+  "codi": "gre",
+  "fitxer": "destacada-antiga-grecia.png",
+  "alt": "Dibuix de línies d'un temple grec amb columnes i frontó"
+ },
+ {
+  "post": 859,
+  "curs": "1r-eso",
+  "codi": "rom",
+  "fitxer": "destacada-roma-i-el-seu-llegat-a-catalunya.png",
+  "alt": "Dibuix de línies d'un aqüeducte romà amb dues fileres d'arcs"
+ },
+ {
+  "post": 1138,
+  "curs": "2n-eso",
+  "codi": "biz",
+  "fitxer": "destacada-el-mare-nostrum-fragmentat.png",
+  "alt": "Dibuix de línies d'una basílica amb cúpula i dos minarets"
+ },
+ {
+  "post": 1185,
+  "curs": "2n-eso",
+  "codi": "feu",
+  "fitxer": "destacada-el-mon-feudal-i-els-regnes-cristians.png",
+  "alt": "Dibuix de línies d'un castell amb muralla emmerletada i dues torres"
+ },
+ {
+  "post": 1186,
+  "curs": "2n-eso",
+  "codi": "bur",
+  "fitxer": "destacada-el-renaixement-urba-la-baixa-edat-mitjana.png",
+  "alt": "Dibuix de línies de la façana d'una catedral gòtica amb rosassa"
+ },
+ {
+  "post": 1187,
+  "curs": "2n-eso",
+  "codi": "ara",
+  "fitxer": "destacada-la-corona-darago-lexpansio-mediterrania.png",
+  "alt": "Dibuix de línies d'una galera amb vela i rems sobre les onades"
+ },
+ {
+  "post": 1188,
+  "curs": "2n-eso",
+  "codi": "ren",
+  "fitxer": "destacada-descobriments-i-renaixement.png",
+  "alt": "Dibuix de línies d'una caravel·la amb tres veles"
+ },
+ {
+  "post": 1189,
+  "curs": "2n-eso",
+  "codi": "bar",
+  "fitxer": "destacada-limperi-dels-austries-i-el-barroc.png",
+  "alt": "Dibuix de línies d'una corona"
+ },
+ {
+  "post": 617,
+  "curs": "3r-eso",
+  "codi": "eco",
+  "fitxer": "destacada-l-activitat-economica.png",
+  "alt": "Dibuix de línies d'un gràfic de barres amb una fletxa que puja, una pila de monedes i una moneda"
+ },
+ {
+  "post": 643,
+  "curs": "3r-eso",
+  "codi": "pri",
+  "fitxer": "destacada-el-sector-primari.png",
+  "alt": "Dibuix de línies d'un camp llaurat amb espigues i una masia"
+ },
+ {
+  "post": 647,
+  "curs": "3r-eso",
+  "codi": "sec",
+  "fitxer": "destacada-el-sector-secundari.png",
+  "alt": "Dibuix de línies d'una planta industrial amb dipòsits, una torre i canonades"
+ },
+ {
+  "post": 656,
+  "curs": "3r-eso",
+  "codi": "ter",
+  "fitxer": "destacada-el-sector-terciari.png",
+  "alt": "Dibuix de línies d'una botiga amb tendal i un camió de repartiment"
+ },
+ {
+  "post": 1099,
+  "curs": "3r-eso",
+  "codi": "ue",
+  "fitxer": "destacada-la-unio-europea-que-es-i-com-funciona.png",
+  "alt": "Dibuix de línies d'un cercle de dotze estrelles i un edifici amb columnes"
+ },
+ {
+  "post": 663,
+  "curs": "3r-eso",
+  "codi": "pol",
+  "fitxer": "destacada-l-organitzacio-politica-de-les-societats.png",
+  "alt": "Dibuix de línies d'un hemicicle parlamentari amb un faristol"
+ },
+ {
+  "post": 678,
+  "curs": "3r-eso",
+  "codi": "pob",
+  "fitxer": "destacada-la-poblacio.png",
+  "alt": "Dibuix de línies de tres persones de diferents edats i una piràmide de població"
+ },
+ {
+  "post": 675,
+  "curs": "3r-eso",
+  "codi": "mig",
+  "fitxer": "destacada-les-migracions.png",
+  "alt": "Dibuix de línies d'un globus terraqüi, una ruta i una maleta"
+ },
+ {
+  "post": 921,
+  "curs": "4t-eso",
+  "codi": "rev",
+  "fitxer": "destacada-de-lantic-regim-a-la-revolucio-francesa.png",
+  "alt": "Dibuix de línies de les taules d'una declaració de drets i una corona caiguda a terra"
+ },
+ {
+  "post": 922,
+  "curs": "4t-eso",
+  "codi": "lib",
+  "fitxer": "destacada-liberalisme-i-nacionalisme-1815-1871.png",
+  "alt": "Dibuix de línies de tres banderes onejant"
+ },
+ {
+  "post": 923,
+  "curs": "4t-eso",
+  "codi": "ind",
+  "fitxer": "destacada-la-revolucio-industrial-i-la-societat-de-classes.png",
+  "alt": "Dibuix de línies d'una fàbrica amb teulada de dents de serra, una xemeneia que fa fum i una roda dentada"
+ },
+ {
+  "post": 924,
+  "curs": "4t-eso",
+  "codi": "imp",
+  "fitxer": "destacada-imperialisme-i-la-crisi-de-la-restauracio.png",
+  "alt": "Dibuix de línies d'un globus terraqüi i un vaixell de vapor"
+ },
+ {
+  "post": 925,
+  "curs": "4t-eso",
+  "codi": "gg",
+  "fitxer": "destacada-la-gran-guerra-la-revolucio-russa-i-lentreguerres.png",
+  "alt": "Dibuix de línies d'una trinxera amb sacs, filferro espinós i un casc"
+ },
+ {
+  "post": 926,
+  "curs": "4t-eso",
+  "codi": "r2",
+  "fitxer": "destacada-la-2a-republica-guerra-civil-i-franquisme.png",
+  "alt": "Dibuix de línies d'una urna amb una papereta i una escola"
+ },
+ {
+  "post": 927,
+  "curs": "4t-eso",
+  "codi": "gm2",
+  "fitxer": "destacada-la-2a-guerra-mundial-i-la-guerra-freda.png",
+  "alt": "Dibuix de línies d'un avió i dos reflectors sobre una ciutat"
+ },
+ {
+  "post": 928,
+  "curs": "4t-eso",
+  "codi": "tra",
+  "fitxer": "destacada-de-la-transicio-al-mon-actual.png",
+  "alt": "Dibuix de línies d'un llibre obert, la Constitució, i un globus terraqüi"
+ },
+ {
+  "post": 1270,
+  "curs": "1r-batxillerat",
+  "codi": "rev",
+  "fitxer": "destacada-l-antic-regim-i-les-revolucions-liberals.png",
+  "alt": "Dibuix de línies de les taules d'una declaració de drets i una corona caiguda a terra"
+ },
+ {
+  "post": 1318,
+  "curs": "1r-batxillerat",
+  "codi": "ind",
+  "fitxer": "destacada-la-revolucio-industrial-i-el-moviment-obrer.png",
+  "alt": "Dibuix de línies d'una fàbrica amb teulada de dents de serra, una xemeneia que fa fum i una roda dentada"
+ },
+ {
+  "post": 1339,
+  "curs": "1r-batxillerat",
+  "codi": "imp",
+  "fitxer": "destacada-imperialisme-i-grans-potencies.png",
+  "alt": "Dibuix de línies d'un globus terraqüi i un vaixell de vapor"
+ },
+ {
+  "post": 1346,
+  "curs": "1r-batxillerat",
+  "codi": "gg",
+  "fitxer": "destacada-la-gran-guerra-i-la-revolucio-russa.png",
+  "alt": "Dibuix de línies d'una trinxera amb sacs, filferro espinós i un casc"
+ },
+ {
+  "post": 1357,
+  "curs": "1r-batxillerat",
+  "codi": "crac",
+  "fitxer": "destacada-el-crac-del-29-i-els-feixismes.png",
+  "alt": "Dibuix de línies d'una borsa amb columnes i un gràfic que cau"
+ },
+ {
+  "post": 1367,
+  "curs": "1r-batxillerat",
+  "codi": "gm2",
+  "fitxer": "destacada-la-segona-guerra-mundial.png",
+  "alt": "Dibuix de línies d'un avió i dos reflectors sobre una ciutat"
+ },
+ {
+  "post": 1456,
+  "curs": "2n-batxillerat",
+  "codi": "t1",
+  "fitxer": "destacada-la-restauracio.png",
+  "alt": "Dibuix de línies del Congrés dels Diputats i una urna"
+ },
+ {
+  "post": 1499,
+  "curs": "2n-batxillerat",
+  "codi": "t2",
+  "fitxer": "destacada-el-catalanisme-politic.png",
+  "alt": "Dibuix de línies d'un edifici amb arcades i una bandera, i un document"
+ }
+]
