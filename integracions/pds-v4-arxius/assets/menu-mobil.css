@@ -37,3 +37,14 @@ body.pds-body #pds-mobile-nav .mobile-section:nth-of-type(1) .mobile-link::after
 body.pds-body #pds-mobile-nav .mobile-link--top { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; border: 1px solid #DADCE0; border-radius: 12px; font: 500 16px/1.3 Roboto, Arial, sans-serif; color: #202124; text-decoration: none; }
 /* Col·labora */
 body.pds-body #pds-mobile-nav .mobile-link.pdsc-mobil { justify-content: center; height: 48px; padding: 0 20px; border: 0; border-radius: 24px; background: #202124; color: #fff; font: 500 16px/1 Roboto, Arial, sans-serif; }
+
+/* ---------- Desplegables de la capçalera (escriptori) ----------
+   Entre el botó i el desplegable hi ha 6 px buits. Si el ratolí hi passava, el menú es tancava.
+   Un pont invisible omple aquest espai, i en treure el ratolí el menú espera un moment abans de tancar-se. */
+body.pds-body .nav-main .nav-dd-panel::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+body.pds-body .nav-main .nav-dd-panel {
+	pointer-events: auto;
+	transition: opacity 0.12s ease 0.25s, transform 0.12s ease 0.25s, visibility 0s linear 0.37s;
+}
+body.pds-body .nav-main .nav-dd:hover > .nav-dd-panel,
+body.pds-body .nav-main .nav-dd:focus-within > .nav-dd-panel { transition-delay: 0s; z-index: 61; }

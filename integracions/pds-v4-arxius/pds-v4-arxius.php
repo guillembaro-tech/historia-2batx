@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Portada i arxius amb el disseny de les unitats
  * Description: La portada del lloc, els arxius de curs i de matèria i el de lliçons interactives amb el model de les unitats (disseny v4): capçalera de color, targetes amb contorn i el color de cada curs. No toca el tema; les plantilles es poden substituir des del tema amb un fitxer del mateix nom a pds-v4-arxius/. Els administradors poden veure el disseny antic amb ?disseny=antic.
- * Version: 0.4.0
+ * Version: 0.4.1
  * Author: Professor de socials
  * Requires PHP: 8.0
  * Text Domain: pds-v4-arxius
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PDSA_VER', '0.4.0' );
+define( 'PDSA_VER', '0.4.1' );
 define( 'PDSA_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDSA_URL', plugin_dir_url( __FILE__ ) );
 
