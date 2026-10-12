@@ -235,6 +235,7 @@ o15 = {
             "**Obra 16. Portalada de Moissac.** Està en un dels camins cap a Santiago i representa el mateix tema, la visió de l'Apocalipsi amb Crist i els vint-i-quatre ancians. La comparació mostra l'evolució de l'escultura romànica en uns seixanta anys, de la rigidesa i la llei d'adaptació al marc de Moissac al naturalisme del Pòrtic.",
             "**Obra 17. Frescos de Sant Climent de Taüll.** El mateix Crist en majestat, però en pintura i en una petita església del Pirineu, consagrada el 1123.",
             "**Obra 18. Catedral de Chartres.** El gòtic resol el gran problema del romànic, la llum. Amb l'arc apuntat, la volta de creueria i els arcbotants, l'empenta de les voltes es concentra en uns quants punts, i els murs es poden obrir amb grans vitralls.",
+            "**Obra 14. Mesquita de Còrdova.** Segons les cròniques, el 997 les tropes d'Almansor van saquejar Santiago i se'n van endur les campanes a Còrdova, on se'n va fer servir el metall per fer llums per a la mesquita. Les dues obres mostren dues maneres d'entendre l'espai sagrat, la planta de creu llatina dirigida cap a l'altar i la sala d'oració hipòstila dirigida cap a la quibla.",
         ]),
         h3("Altres obres del romànic (per a l'apartat d de la PAU)"),
         ul([
@@ -242,7 +243,7 @@ o15 = {
             "**Arts visuals.** Les pintures de Sant Climent de Taüll, la portalada de Moissac, el *Brodat de la Creació* de Girona, les pintures del panteó reial de Sant Isidor de Lleó.",
         ]),
     ),
-    'compara': ['hart-16', 'hart-17'],
+    'compara': ['hart-16', 'hart-17', 'hart-14'],
     'tambe': j(
         p("**Exercici 1.** Assenyalar a la planta la nau central, el transsepte, el creuer, la girola o les absidioles."),
         p("**Exercici 3.** L'artista medieval. El Mestre Mateu és una excepció, perquè la majoria d'artistes romànics són anònims."),
@@ -407,12 +408,13 @@ o17 = {
     'relacio': j(
         ul([
             "**Obres 15 i 16. Pòrtic de la Glòria i portalada de Moissac.** El mateix Crist en majestat amb els símbols dels evangelistes, però en escultura.",
+            "**Obra 13. Santa Sofia de Constantinoble.** El Crist en majestat de Taüll és hereu del Pantocràtor bizantí. A l'art bizantí, el Pantocràtor sovint es representa de mig cos, mentre que a Taüll és de cos sencer i està assegut dins d'una màndorla.",
             "**Obra 22. Capella Scrovegni (Giotto).** Gairebé dos segles després, Giotto dona volum, espai i expressió a les figures, lluny de la pintura plana i simbòlica de Taüll.",
         ]),
         h3('Altres pintures romàniques'),
         p("L'absis de Santa Maria de Taüll, també al MNAC, i les pintures del panteó reial de Sant Isidor de Lleó."),
     ),
-    'compara': ['hart-15', 'hart-16'],
+    'compara': ['hart-15', 'hart-16', 'hart-13'],
     'tambe': j(
         p("**Exercici 1.** Distingir el fresc del tremp."),
         p("**Exercici 4.** El debat entre conservar l'obra al seu lloc o al museu. Les pintures originals són al MNAC, a l'església hi ha una reproducció i, des del 2013, una recreació virtual."),
