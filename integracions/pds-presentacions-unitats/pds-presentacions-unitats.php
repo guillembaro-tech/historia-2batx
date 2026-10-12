@@ -61,7 +61,7 @@ function pdsp_seccio( array $p ): string {
 	$base = $p['url'];
 	ob_start();
 	?>
-<section class="um-sec pdsp-pres" id="presentacio" aria-labelledby="pdsp-titol">
+<section class="um-sec pdsp-pres" id="pdsp-presentacio" aria-labelledby="pdsp-titol">
 	<header><span class="um-num">Presentació</span><h2 id="pdsp-titol">Presentació de la unitat</h2></header>
 	<p>Les idees de cada apartat amb imatges, mapes i dibuixos, i el «Comprova-ho» per repassar. Passa les diapositives amb les fletxes, lliscant el dit al mòbil o triant-ne una de la llista.</p>
 	<div class="pdsp-v" data-base="<?php echo esc_url( $base ); ?>" data-v="<?php echo esc_attr( $v ); ?>">

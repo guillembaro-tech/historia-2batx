@@ -1,4 +1,4 @@
-/* Presentació de la unitat. La pestanya «Presentació» la crea model4.js (grup presentacio, secció #presentacio).
+/* Presentació de la unitat. La pestanya «Presentació» la crea model4.js (grup presentacio, secció #pdsp-presentacio).
    Les diapositives són imatges, i el .pptx i el PDF es descarreguen a part. */
 (function () {
   'use strict';
