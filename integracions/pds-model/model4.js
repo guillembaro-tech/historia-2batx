@@ -376,7 +376,7 @@
 
   /* ---------- 1. Composició: un document net a partir de la selecció ---------- */
   function cleanClone(node, o) {
-    var c = node.cloneNode(true);
+    var c = (node._umOrig || node).cloneNode(true);
     $$('[id]', c).forEach(function (e) { e.removeAttribute('id'); });
     if (c.removeAttribute) { c.removeAttribute('id'); }
     $$('button, .um-quiz-foot, .um-quiz-res, script, style, .um-progress, .um-quiz-btn, .pds2-v4-taller, .um-start-quiz, .um-start-prev, .um-step-bar, .um-step-nav, .um-step-res', c).forEach(function (e) { e.parentNode.removeChild(e); });
@@ -617,7 +617,9 @@
         var first = b.el.querySelector('h1 + p');
         if (first) { first.parentNode.removeChild(first); }
       }
-      if (o.lines) {
+      if (window.pdsUaPrint) {
+        window.pdsUaPrint(b.el, o);
+      } else if (o.lines) {
         $$('.um-level ol > li, .pds2-v4-ex', b.el).forEach(function (li) { li.appendChild(mk('div', 'pd-lines', '<span></span><span></span><span></span>')); });
       }
     }
@@ -891,10 +893,10 @@
   }
   function wrapOne(k) { var d = document.createElement('div'); d.appendChild(k.cloneNode(true)); return d; }
 
-  function linesXml(ctx) {
+  function linesXml(ctx, nl) {
     var lw = (ctx.width || TW) - (ctx.ind || 0), ln = 'single:4:BDC1C6';
     var s = '<w:tbl><w:tblPr><w:tblW w:w="' + lw + '" w:type="dxa"/><w:tblInd w:w="' + (ctx.ind || 0) + '" w:type="dxa"/><w:tblBorders>' + borders({ bottom: ln }) + '<w:insideH w:val="single" w:sz="4" w:space="0" w:color="BDC1C6"/><w:insideV w:val="nil"/></w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="0" w:type="dxa"/><w:right w:w="0" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid><w:gridCol w:w="' + lw + '"/></w:tblGrid>';
-    for (var i = 0; i < 3; i++) { s += '<w:tr><w:trPr><w:trHeight w:val="430" w:hRule="exact"/><w:cantSplit/></w:trPr><w:tc><w:tcPr><w:tcW w:w="' + lw + '" w:type="dxa"/></w:tcPr><w:p/></w:tc></w:tr>'; }
+    for (var i = 0; i < (nl || 3); i++) { s += '<w:tr><w:trPr><w:trHeight w:val="430" w:hRule="exact"/><w:cantSplit/></w:trPr><w:tc><w:tcPr><w:tcW w:w="' + lw + '" w:type="dxa"/></w:tcPr><w:p/></w:tc></w:tr>'; }
     return s + '</w:tbl>' + para('', { style: 'Gap', space: [0, 100] });
   }
 
@@ -943,7 +945,7 @@
       if (t === 'svg' || t === 'img') { s += imageXml(k, ctx); return; }
       if (cl.contains('um-box-t')) { s += inlineP(k, { style: 'BoxTitle', ind: base.ind }, { color: ctx.boxColor || C }); return; }
       if (cl.contains('um-tag')) { s += inlineP(k, { style: 'Tag', ind: base.ind }); return; }
-      if (cl.contains('pd-lines')) { s += linesXml(ctx); return; }
+      if (cl.contains('pd-lines')) { s += linesXml(ctx, k.children.length); return; }
       if (t === 'p') {
         if (cl.contains('um-q')) { s += inlineP(k, { style: 'Lead', ind: base.ind }); return; }
         if (cl.contains('pd-qt')) { s += inlineP(k, { keep: true, ind: base.ind, space: [140, 60] }, { b: true, font: SANS }); return; }
@@ -1581,4 +1583,500 @@
   document.addEventListener('click', function (e) { var a = e.target.closest('a[href="#fonts"]'); if (a) { d.open = true; } });
   window.addEventListener('hashchange', obre);
   obre();
+})();
+
+/* Unitat model · versió 4: pestanya «Activitats» (ESO) i «Pràctica PAU» (temes de 2n)
+   Mostra 2026-10-12. Millora la presentació a la pantalla sense canviar el text de la pàgina.
+   Els documents (PDF i Word) es continuen fent amb el contingut original (sec._umOrig).
+   Icones Tabler (MIT). */
+(function () {
+  'use strict';
+  var root = document.querySelector('.um');
+  var sec = document.getElementById('activitats');
+  if (!root || !sec || sec.getAttribute('data-ua')) { return; }
+  sec.setAttribute('data-ua', '1');
+  sec._umOrig = sec.cloneNode(true);
+  var isTema = root.classList.contains('pds2-v4');
+  var IC = {"tria": "<path d=\"M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0\" /> <path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" />", "marca": "<path d=\"M9 11l3 3l8 -8\" /> <path d=\"M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9\" />", "comp": "<path d=\"M12 3a3 3 0 0 0 -3 3v12a3 3 0 0 0 3 3\" /> <path d=\"M6 3a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3\" /> <path d=\"M13 7h7a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-7\" /> <path d=\"M5 7h-1a1 1 0 0 0 -1 1v8a1 1 0 0 0 1 1h1\" /> <path d=\"M17 12h.01\" /> <path d=\"M13 12h.01\" />", "rel": "<path d=\"M21 7l-18 0\" /> <path d=\"M18 10l3 -3l-3 -3\" /> <path d=\"M6 20l-3 -3l3 -3\" /> <path d=\"M3 17l18 0\" />", "ord": "<path d=\"M4 15l3 3l3 -3\" /> <path d=\"M7 6v12\" /> <path d=\"M17 3a2 2 0 0 1 2 2v3a2 2 0 1 1 -4 0v-3a2 2 0 0 1 2 -2\" /> <path d=\"M15 16a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M19 16v3a2 2 0 0 1 -2 2h-1.5\" />", "vf": "<path d=\"M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0\" /> <path d=\"M9 12l2 2l4 -4\" />", "expl": "<path d=\"M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2\" /> <path d=\"M16 7h4\" /> <path d=\"M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3\" />", "compara": "<path d=\"M7 20l10 0\" /> <path d=\"M6 6l6 -1l6 1\" /> <path d=\"M12 3l0 17\" /> <path d=\"M9 12l-3 -6l-3 6a3 3 0 0 0 6 0\" /> <path d=\"M21 12l-3 -6l-3 6a3 3 0 0 0 6 0\" />", "dib": "<path d=\"M3 21v-4a4 4 0 1 1 4 4h-4\" /> <path d=\"M21 3a16 16 0 0 0 -12.8 10.2\" /> <path d=\"M21 3a16 16 0 0 1 -10.2 12.8\" /> <path d=\"M10.6 9a9 9 0 0 1 4.4 4.4\" />", "rec": "<path d=\"M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0\" /> <path d=\"M21 21l-6 -6\" />", "fonts": "<path d=\"M14 3v4a1 1 0 0 0 1 1h4\" /> <path d=\"M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2\" /> <path d=\"M9 9l1 0\" /> <path d=\"M9 13l6 0\" /> <path d=\"M9 17l6 0\" />", "arg": "<path d=\"M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10\" /> <path d=\"M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2\" />", "refl": "<path d=\"M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7\" /> <path d=\"M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3\" /> <path d=\"M9.7 17l4.6 0\" />", "mapa": "<path d=\"M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5\" /> <path d=\"M9 4v13\" /> <path d=\"M15 7v5.5\" /> <path d=\"M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879\" /> <path d=\"M19 18v.01\" />", "resp": "<path d=\"M8 9h8\" /> <path d=\"M8 13h6\" /> <path d=\"M9 18h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-3l-3 3l-3 -3\" />", "book": "<path d=\"M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0\" /> <path d=\"M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0\" /> <path d=\"M3 6l0 13\" /> <path d=\"M12 6l0 13\" /> <path d=\"M21 6l0 13\" />", "ofi": "<path d=\"M12 15a3 3 0 1 0 6 0a3 3 0 1 0 -6 0\" /> <path d=\"M13 17.5v4.5l2 -1.5l2 1.5v-4.5\" /> <path d=\"M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73\" /> <path d=\"M6 9l12 0\" /> <path d=\"M6 12l3 0\" /> <path d=\"M6 15l2 0\" />", "propi": "<path d=\"M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4\" /> <path d=\"M13.5 6.5l4 4\" />", "taller": "<path d=\"M22 9l-10 -4l-10 4l10 4l10 -4v6\" /> <path d=\"M6 10.6v5.4a6 3 0 0 0 12 0v-5.4\" />", "eraser": "<path d=\"M19 20h-10.5l-4.21 -4.3a1 1 0 0 1 0 -1.41l10 -10a1 1 0 0 1 1.41 0l5 5a1 1 0 0 1 0 1.41l-9.2 9.3\" /> <path d=\"M18 13.3l-6.3 -6.3\" />", "save": "<path d=\"M6 4h10l4 4v10a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2\" /> <path d=\"M10 14a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M14 4l0 4l-6 0l0 -4\" />", "notebook": "<path d=\"M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18\" /> <path d=\"M13 8l2 0\" /> <path d=\"M13 12l2 0\" />", "level": "<path d=\"M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M4 6l8 0\" /> <path d=\"M16 6l4 0\" /> <path d=\"M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M4 12l2 0\" /> <path d=\"M10 12l10 0\" /> <path d=\"M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0\" /> <path d=\"M4 18l11 0\" /> <path d=\"M19 18l1 0\" />", "hourglass": "<path d=\"M6.5 7h11\" /> <path d=\"M6.5 17h11\" /> <path d=\"M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1 -1 1h-10a1 1 0 0 1 -1 -1\" /> <path d=\"M6 4v2a6 6 0 1 0 12 0v-2a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1\" />", "books": "<path d=\"M5 5a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -14\" /> <path d=\"M9 5a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -14\" /> <path d=\"M5 8h4\" /> <path d=\"M9 16h4\" /> <path d=\"M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041\" /> <path d=\"M14 9l4 -1\" /> <path d=\"M16 16l3.923 -.98\" />", "vocab": "<path d=\"M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2\" /> <path d=\"M12 5v16\" /> <path d=\"M7 7h1\" /> <path d=\"M7 11h1\" /> <path d=\"M16 7h1\" /> <path d=\"M16 11h1\" /> <path d=\"M16 15h1\" />", "test": "<path d=\"M3.5 5.5l1.5 1.5l2.5 -2.5\" /> <path d=\"M3.5 11.5l1.5 1.5l2.5 -2.5\" /> <path d=\"M3.5 17.5l1.5 1.5l2.5 -2.5\" /> <path d=\"M11 6l9 0\" /> <path d=\"M11 12l9 0\" /> <path d=\"M11 18l9 0\" />", "star": "<path d=\"M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245\" />", "print": "<path d=\"M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2\" /> <path d=\"M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4\" /> <path d=\"M7 15a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2l0 -4\" />", "arrow": "<path d=\"M5 12l14 0\" /> <path d=\"M15 16l4 -4\" /> <path d=\"M15 8l4 4\" />", "tick": "<path d=\"M5 12l5 5l10 -10\" />", "x": "<path d=\"M18 6l-12 12\" /> <path d=\"M6 6l12 12\" />"};
+  var KEY = 'ua:' + location.pathname + ':';
+  var uid = 0;
+
+  function ic(n) { return '<svg class="ua-ic" viewBox="0 0 24 24" aria-hidden="true">' + (IC[n] || '') + '</svg>'; }
+  function mk(tag, cls, html) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (html !== undefined) { e.innerHTML = html; } return e; }
+  function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
+  function load(k) { try { return localStorage.getItem(KEY + k); } catch (e) { return null; } }
+  function save(k, v) { try { if (v === null || v === '') { localStorage.removeItem(KEY + k); } else { localStorage.setItem(KEY + k, v); } } catch (e) { /* res */ } }
+  function grow(t) { t.style.height = 'auto'; t.style.height = (t.scrollHeight + 2) + 'px'; }
+
+  /* Camps que es desen només en aquest navegador */
+  function keep(el, k) {
+    if (el.type === 'checkbox' || el.type === 'radio') {
+      if (load(k) === '1') { el.checked = true; }
+      el.addEventListener('change', function () {
+        if (el.type === 'radio') { $$('input[name="' + el.name + '"]', sec).forEach(function (r) { save(r.getAttribute('data-k'), r.checked ? '1' : null); }); }
+        else { save(k, el.checked ? '1' : null); }
+      });
+    } else {
+      var v = load(k);
+      if (v) { el.value = v; }
+      el.addEventListener('input', function () { save(k, el.value); if (el.tagName === 'TEXTAREA') { grow(el); } });
+    }
+    el.setAttribute('data-k', k);
+  }
+
+  function answerBox(k, rows, ph) {
+    var w = mk('div', 'ua-ans');
+    var t = mk('textarea');
+    t.rows = rows;
+    t.placeholder = ph || 'Escriu aquí la resposta…';
+    t.setAttribute('aria-label', 'Resposta');
+    keep(t, k);
+    w.appendChild(t);
+    setTimeout(function () { if (t.value) { grow(t); } }, 0);
+    return w;
+  }
+
+  function footer(levelKey) {
+    var f = mk('div', 'ua-foot', ic('save') + '<span>Les respostes es desen només en aquest navegador. Per lliurar-les, copia-les a la llibreta o descarrega-les en PDF o en Word amb espai per respondre.</span>');
+    var b = mk('button', 'ua-clear', ic('eraser') + 'Esborra les respostes');
+    b.type = 'button';
+    b.addEventListener('click', function () {
+      if (!window.confirm('Vols esborrar totes les respostes d\'aquesta pàgina?')) { return; }
+      $$('[data-k]', sec).forEach(function (el) {
+        if (levelKey && el.getAttribute('data-k').indexOf(levelKey) !== 0) { return; }
+        save(el.getAttribute('data-k'), null);
+        if (el.type === 'checkbox' || el.type === 'radio') { el.checked = false; } else { el.value = ''; if (el.tagName === 'TEXTAREA') { el.style.height = ''; } }
+      });
+    });
+    f.appendChild(b);
+    return f;
+  }
+
+  /* Descàrrega en PDF o Word, amb el model de llibre dels documents */
+  var LVK = { 'um-l-ad': 'ad', 'um-l-ba': 'ba', 'um-l-am': 'am' };
+  var LVN = { ad: 'Adaptat', ba: 'Bàsic', am: 'Ampliació', tots: '' };
+  function curLevel() {
+    var l = sec.querySelector('.um-levels.is-switch > .um-level:not(.is-off)') || sec.querySelector('.um-level');
+    if (!l) { return 'tots'; }
+    for (var c in LVK) { if (l.classList.contains(c)) { return LVK[c]; } }
+    return 'tots';
+  }
+  function fileSave(blob, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.parentNode.removeChild(a); }, 1500);
+  }
+  function dlOpts() { return { parts: ['activitats'], level: curLevel(), lines: true, answers: false, notes: false, solutions: false, name: true }; }
+  function dlButtons(box) {
+    var X = window.pdsUmExport;
+    var row = mk('span', 'ua-dl-b');
+    var bp = mk('button', 'ua-dl-pdf', ic('print') + '<span>PDF</span>');
+    var bw = mk('button', 'ua-dl-doc', ic('fonts') + '<span>Word</span>');
+    bp.type = bw.type = 'button';
+    bp.title = 'Desa en PDF o imprimeix. A la finestra d\'impressió, tria «Desa com a PDF».';
+    bw.title = 'Descarrega en Word (.docx)';
+    var msg = mk('span', 'ua-dl-msg');
+    msg.setAttribute('aria-live', 'polite');
+    if (!X) { box.hidden = true; return box; }
+    bp.addEventListener('click', function () { if (X.prepareBand) { X.prepareBand(); } X.printDoc(dlOpts()); });
+    bw.addEventListener('click', function () {
+      var o = dlOpts();
+      bw.disabled = true;
+      msg.textContent = 'Preparant el document…';
+      if (X.prepareBand) { X.prepareBand(); }
+      X.buildDocx(o).then(function (blob) {
+        fileSave(blob, X.fileBase(o) + '.docx');
+        msg.textContent = 'Fet. S\'ha descarregat.';
+      }).catch(function () {
+        msg.textContent = 'No s\'ha pogut crear. Prova-ho amb el PDF.';
+      }).then(function () { bw.disabled = false; setTimeout(function () { msg.textContent = ''; }, 6000); });
+    });
+    row.appendChild(bp);
+    row.appendChild(bw);
+    box.appendChild(row);
+    box.appendChild(msg);
+    return box;
+  }
+
+  /* ---------- ESO: activitats per nivells ---------- */
+  var TYPES = {
+    tria: 'Tria', marca: 'Marca', comp: 'Completa', rel: 'Relaciona', ord: 'Ordena', vf: 'Vertader o fals',
+    expl: 'Explica', compara: 'Compara', dib: 'Dibuixa', rec: 'Investiga', mapa: 'Mapa', resp: 'Respon'
+  };
+  var LABS = { 'Anàlisi de fonts': 'fonts', 'Argumenta': 'arg', 'Recerca': 'rec', 'Reflexió': 'refl' };
+
+  function ownText(li) {
+    var t = '';
+    li.childNodes.forEach(function (n) { if (!(n.nodeType === 1 && /^(UL|OL)$/.test(n.tagName))) { t += n.textContent; } });
+    return t.replace(/\s+/g, ' ').trim();
+  }
+
+  function kind(li) {
+    var t = ownText(li);
+    var lab = li.firstElementChild && li.firstElementChild.tagName === 'STRONG' && li.firstChild === li.firstElementChild ? li.firstElementChild.textContent.replace(/\.\s*$/, '') : '';
+    if (lab && LABS[lab]) { return { k: LABS[lab], label: lab, strong: li.firstElementChild, open: true }; }
+    var boxes = li.textContent.indexOf('☐') > -1;
+    var blanks = !!li.querySelector('.um-blank');
+    if (/vertader\s*(\(V\))?\s*o\s*fals/i.test(t) || li.textContent.indexOf('___') > -1) { return { k: 'vf' }; }
+    if (/^Relaciona/i.test(t)) { return { k: 'rel' }; }
+    if (/^Ordena/i.test(t)) { return { k: 'ord', open: !blanks }; }
+    if (/^Completa/i.test(t) || (blanks && !boxes)) { return { k: 'comp' }; }
+    if (boxes) { var stem = t.split('☐')[0]; return { k: (/^\s*Marca\b/i.test(stem) || /\b(dues|tres|quatre|tots|totes)\b/i.test(stem)) ? 'marca' : (blanks ? 'comp' : 'tria') }; }
+    if (/^(Dibuixa)/i.test(t)) { return { k: 'dib', paper: true }; }
+    if (/^(Ressegueix)/i.test(t)) { return { k: 'mapa', paper: true }; }
+    if (/^(Compara)/i.test(t)) { return { k: 'compara', open: true }; }
+    if (/^(Busca|Investiga|Documenta)/i.test(t)) { return { k: 'rec', open: true }; }
+    if (/^(Explica|Defineix|Resumeix|Descriu)/i.test(t)) { return { k: 'expl', open: true }; }
+    return { k: 'resp', open: true };
+  }
+
+  /* «☐ A · ☐ B · ☐ C» → opcions que es poden marcar */
+  function options(host, multi, k) {
+    var stop = null;
+    host.childNodes.forEach(function (n) { if (!stop && n.nodeType === 1 && /^(UL|OL)$/.test(n.tagName)) { stop = n; } });
+    var all = Array.prototype.slice.call(host.childNodes);
+    var nodes = stop ? all.slice(0, all.indexOf(stop)) : all;
+    var frag = document.createElement('div');
+    nodes.forEach(function (n) { frag.appendChild(n); });
+    var html = frag.innerHTML;
+    var i = html.indexOf('☐');
+    if (i < 0) { nodes.forEach(function (n) { host.insertBefore(n, stop); }); return false; }
+    var stem = html.slice(0, i).replace(/\s+$/, '');
+    var opts = html.slice(i + 1).split('☐').map(function (o) { return o.replace(/\s*·\s*$/, '').replace(/\.\s*$/, '').trim(); }).filter(Boolean);
+    var name = 'ua' + (++uid);
+    var stemEl = mk('span', 'ua-stem', stem);
+    var box = mk('span', 'ua-opts' + (multi ? ' is-multi' : ''));
+    box.setAttribute('role', 'group');
+    opts.forEach(function (o, j) {
+      var l = mk('label', 'ua-opt');
+      var inp = mk('input');
+      inp.type = multi ? 'checkbox' : 'radio';
+      inp.name = name;
+      keep(inp, k + ':o' + j);
+      l.appendChild(inp);
+      l.appendChild(mk('span', 'ua-box'));
+      l.appendChild(mk('span', 'ua-opt-t', o));
+      box.appendChild(l);
+    });
+    host.insertBefore(stemEl, stop);
+    host.insertBefore(box, stop);
+    return true;
+  }
+
+  function vfToggles(li, k) {
+    $$('li', li).forEach(function (sub, j) {
+      var w = document.createTreeWalker(sub, NodeFilter.SHOW_TEXT);
+      var n;
+      while ((n = w.nextNode())) {
+        if (n.nodeValue.indexOf('___') < 0) { continue; }
+        var parts = n.nodeValue.split('___');
+        n.nodeValue = parts[0].replace(/\s+$/, ' ');
+        var g = mk('span', 'ua-vf');
+        g.setAttribute('role', 'group');
+        g.setAttribute('aria-label', 'Vertader o fals');
+        var name = 'ua' + (++uid);
+        ['V', 'F'].forEach(function (v) {
+          var l = mk('label', 'ua-vf-b ua-vf-' + v.toLowerCase());
+          var inp = mk('input');
+          inp.type = 'radio';
+          inp.name = name;
+          keep(inp, k + ':vf' + j + v);
+          l.appendChild(inp);
+          l.appendChild(mk('span', '', v));
+          l.title = v === 'V' ? 'Vertader' : 'Fals';
+          g.appendChild(l);
+        });
+        sub.classList.add('ua-vf-row');
+        sub.appendChild(g);
+        break;
+      }
+    });
+  }
+
+  function blanks(scope, k) {
+    $$('.um-blank', scope).forEach(function (b, j) {
+      var inp = mk('input', 'ua-blank-in');
+      inp.type = 'text';
+      inp.setAttribute('aria-label', 'Espai per completar');
+      inp.autocomplete = 'off';
+      keep(inp, k + ':b' + j);
+      b.appendChild(inp);
+      b.classList.add('ua-blank');
+    });
+  }
+
+  function question(li, n, lvKey, lvIdx) {
+    var k = lvKey + ':' + n;
+    var ty = kind(li);
+    var head = mk('div', 'ua-qh');
+    head.appendChild(mk('span', 'ua-n', String(n)));
+    var lab = ty.label || TYPES[ty.k];
+    head.appendChild(mk('span', 'ua-type ua-t-' + ty.k, ic(ty.k) + '<span>' + lab + '</span>'));
+    if (ty.strong) { ty.strong.classList.add('ua-hide'); var nx = ty.strong.nextSibling; if (nx && nx.nodeType === 3) { nx.nodeValue = nx.nodeValue.replace(/^\s+/, ''); } }
+    var body = mk('div', 'ua-qb');
+    while (li.firstChild) { body.appendChild(li.firstChild); }
+    li.appendChild(head);
+    li.appendChild(body);
+    li.classList.add('ua-q', 'ua-q-' + ty.k);
+    var multi = ty.k === 'marca' || /^\s*Marca\b/i.test(ownText(body));
+    var had = options(body, multi, k);
+    $$(':scope > ul > li', body).forEach(function (sub, j) { if (sub.textContent.indexOf('☐') > -1) { options(sub, false, k + ':s' + j); sub.classList.add('ua-sub-opts'); } });
+    if (ty.k === 'vf' || body.textContent.indexOf('___') > -1) { vfToggles(body, k); }
+    blanks(body, k);
+    $$(':scope > ul', body).forEach(function (u) { u.classList.add('ua-list'); if (ty.k === 'rel' || /→/.test(u.textContent)) { u.classList.add('is-rel'); } });
+    if (ty.paper) {
+      body.appendChild(mk('p', 'ua-paper', ic('notebook') + '<span>Fes-ho a la llibreta.</span>'));
+    } else if (ty.open && !had) {
+      var rows = lvIdx === 2 ? 6 : 3;
+      body.appendChild(answerBox(k + ':r', rows));
+    }
+  }
+
+  function apartat(h4, ol, lvKey, lvIdx) {
+    var card = mk('div', 'ua-ap');
+    var m = /^\s*(\d+)(?:\s*i\s*(\d+))?\.\s*(.*)$/.exec(h4.textContent);
+    var num = m ? (m[2] ? m[1] + '-' + m[2] : m[1]) : '';
+    var title = m ? m[3] : h4.textContent;
+    var target = m && document.getElementById('s' + m[1]) ? '#s' + m[1] : '';
+    var lis = $$(':scope > li', ol);
+    var hd = mk('div', 'ua-aph');
+    hd.innerHTML = '<span class="ua-apn">' + num + '</span><span class="ua-apt"><span class="ua-ape">Apartat ' + num.replace('-', ' i ') + '</span><span class="ua-apti">' + title + '</span></span>' +
+      '<span class="ua-apm">' + lis.length + (lis.length === 1 ? ' activitat' : ' activitats') + '</span>' +
+      (target ? '<a class="ua-rep" href="' + target + '">' + ic('book') + '<span>Repassa l\'apartat</span></a>' : '');
+    h4.classList.add('ua-hide');
+    h4.parentNode.insertBefore(card, h4);
+    card.appendChild(h4);
+    card.appendChild(hd);
+    card.appendChild(ol);
+    ol.classList.add('ua-ol');
+    var start = parseInt(ol.getAttribute('start') || '1', 10);
+    lis.forEach(function (li, i) { question(li, start + i, lvKey, lvIdx); });
+  }
+
+  function eso() {
+    var levels = $$('.um-levels > .um-level', sec);
+    if (!levels.length) { return; }
+    sec.classList.add('ua-eso');
+    /* Selector de nivell: graó 1, 2 i 3 en el color del curs */
+    $$('.um-lvsw-b', sec).forEach(function (b, i) {
+      var d = b.querySelector('.d');
+      if (d) { d.outerHTML = '<span class="ua-steps" aria-hidden="true">' + [0, 1, 2].map(function (s) { return '<i' + (s <= i ? ' class="on"' : '') + '></i>'; }).join('') + '</span>'; }
+    });
+    /* Com es treballa */
+    var lv = sec.querySelector('.um-lvsw');
+    var how = mk('ol', 'ua-how');
+    how.innerHTML = '<li>' + ic('level') + '<span><b>Tria el nivell</b> o el que et digui el professor.</span></li>' +
+      '<li>' + ic('expl') + '<span><b>Respon aquí</b> o a la llibreta. Marca, completa i escriu.</span></li>' +
+      '';
+    var dl = mk('li', 'ua-dl', ic('print') + '<span><b>Descarrega el nivell <span class="ua-dl-lv"></span></b> amb espai per respondre.</span>');
+    how.appendChild(dlButtons(dl));
+    if (lv) { lv.parentNode.insertBefore(how, lv); }
+    var setLv = function () { var t = dl.querySelector('.ua-dl-lv'); if (t) { t.textContent = LVN[curLevel()] || ''; } };
+    if (lv) { lv.addEventListener('click', function () { setTimeout(setLv, 0); }); }
+    setTimeout(setLv, 0);
+    levels.forEach(function (l, li) {
+      var lvKey = 'n' + li;
+      var kids = Array.prototype.slice.call(l.children);
+      kids.forEach(function (h) {
+        if (h.tagName !== 'H4') { return; }
+        var ol = h.nextElementSibling;
+        if (ol && ol.tagName === 'OL') { apartat(h, ol, lvKey, li); }
+      });
+      l.appendChild(footer(lvKey));
+    });
+  }
+
+  /* ---------- 2n de Batxillerat: pràctica PAU ---------- */
+  var EX = {
+    1: { t: 'Anàlisi crítica de fonts', c: 'Fonts', s: 'Obligatori', ic: 'fonts', parts: [['1.1 Idees de la primera font', '0,5'], ['1.2 Idees de la segona font', '0,5'], ['1.3 Comparació i context', '1,5']] },
+    2: { t: 'Situeu-vos en el temps utilitzant termes històrics', c: 'Termes històrics', s: 'Opció A o B', ic: 'hourglass', parts: [['Contingut', '1,5'], ['Ús de 5 termes × 0,20', '1']] },
+    3: { t: 'Exposeu un tema a través dels descriptors del glossari', c: 'Glossari', s: 'Opció A o B', ic: 'vocab', parts: [['Descripció i explicació', '1'], ['Raonament i valoració', '1'], ['Conclusió o balanç final', '0,5']] },
+    4: { t: 'Poseu a prova els vostres sabers', c: 'Test', s: 'Obligatori', ic: 'test', parts: [['10 preguntes × 0,25', '2,5']] }
+  };
+
+
+  function terms(text) {
+    var m = /següents[^:]*:\s*([^()]+?)\s*\(/.exec(text);
+    if (!m) { return null; }
+    var list = m[1].split(/,\s*/);
+    var last = list.pop();
+    var j = last.indexOf(' i ');
+    if (j > 0) { list.push(last.slice(0, j), last.slice(j + 3)); } else { list.push(last); }
+    list = list.map(function (s) { return s.trim(); }).filter(Boolean);
+    return list.length === 5 ? list : null;
+  }
+
+  function tema() {
+    var boxes = $$('.pds2-v4-ex', sec);
+    if (!boxes.length) { return; }
+    sec.classList.add('ua-tema');
+    var taller = sec.querySelector('.pds2-v4-taller');
+    var tallerHref = taller && taller.querySelector('a') ? taller.querySelector('a').getAttribute('href') : '';
+    var groups = {};
+    var order = [];
+    boxes.forEach(function (b) {
+      var t = b.querySelector('.um-box-t');
+      var n = t ? parseInt(t.textContent.replace(/\D+/g, ''), 10) : 0;
+      if (!groups[n]) { groups[n] = []; order.push(n); }
+      groups[n].push(b);
+    });
+    /* L'examen d'un cop d'ull */
+    var map = mk('div', 'ua-exam');
+    map.innerHTML = '<p class="ua-exam-t">' + ic('test') + '<span>L\'examen té quatre exercicis de 2,5 punts. En aquest tema en pots practicar ' + order.length + '.</span></p>';
+    var tiles = mk('div', 'ua-tiles');
+    [1, 2, 3, 4].forEach(function (n) {
+      var on = !!groups[n];
+      var a = mk(on ? 'a' : 'span', 'ua-tile' + (on ? '' : ' is-off'));
+      if (on) { a.href = '#ua-ex' + n; }
+      a.innerHTML = '<span class="ua-tile-n">' + n + '</span>' + ic(EX[n].ic) + '<span class="ua-tile-t">' + EX[n].c + '</span><span class="ua-tile-s">' + (on ? (groups[n].length > 1 ? groups[n].length + ' enunciats' : '1 enunciat') : 'No n\'hi ha en aquest tema') + '</span>';
+      tiles.appendChild(a);
+    });
+    map.appendChild(tiles);
+    var dl = mk('div', 'ua-dl ua-dl-tema', ic('print') + '<span><b>Descarrega la pràctica</b> amb espai per respondre.</span>');
+    map.appendChild(dlButtons(dl));
+    var intro = sec.querySelector(':scope > p');
+    (intro || sec.querySelector('header')).insertAdjacentElement('afterend', map);
+    if (taller) {
+      taller.classList.add('ua-taller');
+      var tt = taller.querySelector('.um-box-t');
+      if (tt) { tt.innerHTML = ic('taller') + '<span>Taller PAU</span>'; }
+      map.insertAdjacentElement('afterend', taller);
+    }
+    var prev = taller || map;
+    order.forEach(function (n) {
+      var ex = EX[n] || { t: '', s: '', parts: [] };
+      var card = mk('article', 'ua-ex');
+      card.id = 'ua-ex' + n;
+      card.innerHTML = '<header class="ua-exh"><span class="ua-exn">' + n + '</span><span class="ua-ext"><span class="ua-exe">Exercici ' + n + ' · ' + ex.s + '</span><span class="ua-exti">' + ex.t + '</span></span><span class="ua-pts">2,5 punts</span></header>' +
+        '<div class="ua-parts">' + ex.parts.map(function (p) { return '<span>' + p[0] + ' <b>' + p[1] + '</b></span>'; }).join('') + '</div>';
+      if (groups[n].length > 1) { card.appendChild(mk('p', 'ua-pick', (n === 2 || n === 3 ? 'A l\'examen triaràs una opció. ' : '') + 'Aquí en tens ' + groups[n].length + ' per practicar.')); }
+      groups[n].forEach(function (b, i) {
+        var en = mk('div', 'ua-en');
+        var first = b.querySelector('p');
+        var em = first && first.firstElementChild && first.firstElementChild.tagName === 'EM' && first.firstChild === first.firstElementChild ? first.firstElementChild : null;
+        var chips = mk('div', 'ua-chips');
+        if (groups[n].length > 1) { chips.appendChild(mk('span', 'ua-chip ua-chip-n', 'Enunciat ' + (i + 1))); }
+        if (em && /^Enunciat oficial/.test(em.textContent)) {
+          var src = em.textContent.replace(/^Enunciat oficial,?\s*/, '').replace(/\.\s*$/, '');
+          var desc = /Descriptor\s+\d+\s+del glossari/.exec(src);
+          var orig = src.replace(/\.?\s*Descriptor\s+\d+\s+del glossari\.?/, '').trim();
+          chips.appendChild(mk('span', 'ua-chip ua-chip-ofi', ic('ofi') + '<span>Enunciat oficial · ' + orig + '</span>'));
+          if (desc) { chips.appendChild(mk('span', 'ua-chip', ic('vocab') + '<span>' + desc[0] + '</span>')); }
+          em.classList.add('ua-hide');
+          var nx = em.nextSibling; if (nx && nx.nodeType === 3) { nx.nodeValue = nx.nodeValue.replace(/^\s+/, ''); }
+        } else {
+          chips.appendChild(mk('span', 'ua-chip ua-chip-propi', ic('propi') + '<span>Enunciat propi</span>'));
+        }
+        en.appendChild(chips);
+        var body = mk('div', 'ua-en-b');
+        var link = null;
+        $$(':scope > p', b).forEach(function (p) {
+          var a = p.querySelector('a');
+          if (a && /taller/i.test(a.getAttribute('href') || '') && /^(Treballa-ho|Pas a pas)/.test(p.textContent.trim())) { link = a.getAttribute('href'); return; }
+          body.appendChild(p);
+        });
+        en.appendChild(body);
+        if (n === 2) {
+          var tl = terms(body.textContent);
+          if (tl) {
+            var tw = mk('div', 'ua-terms');
+            tw.appendChild(mk('p', 'ua-terms-t', 'Marca cada terme quan l\'hagis fet servir'));
+            var g = mk('div', 'ua-opts is-multi');
+            tl.forEach(function (term, j) {
+              var l = mk('label', 'ua-opt');
+              var inp = mk('input'); inp.type = 'checkbox';
+              keep(inp, 'ex' + n + 'e' + i + ':t' + j);
+              l.appendChild(inp); l.appendChild(mk('span', 'ua-box')); l.appendChild(mk('span', 'ua-opt-t', term));
+              g.appendChild(l);
+            });
+            tw.appendChild(g);
+            en.appendChild(tw);
+          }
+        }
+        var d = mk('details', 'ua-draft');
+        d.appendChild(mk('summary', '', ic('expl') + '<span>Espai per a l\'esborrany</span>'));
+        d.appendChild(answerBox('ex' + n + 'e' + i + ':r', 10, 'Planifica o escriu aquí la resposta…'));
+        var ta = d.querySelector('textarea');
+        if (ta && ta.value) { d.open = true; }
+        d.addEventListener('toggle', function () { if (d.open && ta) { grow(ta); } });
+        en.appendChild(d);
+        if (link) { en.appendChild(mk('p', 'ua-go', '<a class="um-quiz-btn" href="' + link + '">' + ic('taller') + '<span>Fes-lo pas a pas al Taller PAU</span></a>')); }
+        card.appendChild(en);
+        b.parentNode.removeChild(b);
+      });
+      prev.insertAdjacentElement('afterend', card);
+      prev = card;
+    });
+    prev.insertAdjacentElement('afterend', footer(''));
+  }
+
+  /* ---------- Document (PDF i Word): l'exportació hi crida pdsUaPrint ---------- */
+  function printOpts(li) {
+    var stop = null;
+    li.childNodes.forEach(function (n) { if (!stop && n.nodeType === 1 && /^(UL|OL)$/.test(n.tagName)) { stop = n; } });
+    var all = Array.prototype.slice.call(li.childNodes);
+    var nodes = stop ? all.slice(0, all.indexOf(stop)) : all;
+    var frag = document.createElement('div');
+    nodes.forEach(function (n) { frag.appendChild(n); });
+    var html = frag.innerHTML;
+    var i = html.indexOf('☐');
+    if (i < 0) { nodes.forEach(function (n) { li.insertBefore(n, stop); }); return false; }
+    var stem = mk('span', 'pd-stem', html.slice(0, i).replace(/\s+$/, ''));
+    var ul = mk('ul', 'pd-opts');
+    html.slice(i + 1).split('☐').forEach(function (o) {
+      o = o.replace(/\s*·\s*$/, '').replace(/\.\s*$/, '').trim();
+      if (o) { ul.appendChild(mk('li', '', '<span class="pd-box"></span><span>' + o + '</span>')); }
+    });
+    var wrap = mk('div', 'pd-optw');
+    wrap.appendChild(ul);
+    li.insertBefore(stem, stop);
+    li.insertBefore(wrap, stop);
+    return true;
+  }
+  function printVF(scope) {
+    var w = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT);
+    var list = [], n;
+    while ((n = w.nextNode())) { if (n.nodeValue.indexOf('___') > -1) { list.push(n); } }
+    list.forEach(function (t) {
+      var parts = t.nodeValue.split('___');
+      var f = document.createDocumentFragment();
+      parts.forEach(function (p, j) {
+        if (p) { f.appendChild(document.createTextNode(j < parts.length - 1 ? p.replace(/\s+$/, ' ') : p)); }
+        if (j < parts.length - 1) { f.appendChild(mk('span', 'pd-vf', '<span class="pd-box"></span> V <span class="pd-box"></span> F')); }
+      });
+      t.parentNode.replaceChild(f, t);
+    });
+    return list.length > 0;
+  }
+  function lines(n) { return mk('div', 'pd-lines', new Array(n + 1).join('<span></span>')); }
+  window.pdsUaPrint = function (el, o) {
+    if (el.querySelector('.um-level')) {
+      $$('.um-level ol > li', el).forEach(function (li) {
+        var closed = printOpts(li);
+        $$(':scope > ul > li', li).forEach(function (s) { if (printOpts(s)) { closed = true; } });
+        if (printVF(li)) { closed = true; }
+        if (li.querySelector('.um-blank')) { closed = true; }
+        if (!o.lines || closed) { return; }
+        var am = !!li.closest('.um-l-am');
+        var dib = /^\s*(Dibuixa|Ressegueix)/i.test(li.textContent);
+        li.appendChild(lines(dib ? 7 : (am ? 6 : 3)));
+      });
+      return;
+    }
+    $$('.pds2-v4-ex', el).forEach(function (b) {
+      var t = b.querySelector('.um-box-t');
+      var n = t ? parseInt(t.textContent.replace(/\D+/g, ''), 10) : 0;
+      if (t && EX[n]) { t.textContent = 'Exercici ' + n + ' · ' + EX[n].t + ' · 2,5 punts'; }
+      $$(':scope > p', b).forEach(function (p) {
+        var a = p.querySelector('a');
+        if (a && /taller/i.test(a.getAttribute('href') || '') && /^(Treballa-ho|Pas a pas)/.test(p.textContent.trim())) { p.parentNode.removeChild(p); }
+      });
+      if (o.lines) { b.appendChild(lines(12)); }
+    });
+  };
+
+  if (isTema) { tema(); } else { eso(); }
 })();
