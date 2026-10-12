@@ -18,6 +18,7 @@ Connector de WordPress per a professordesocials.cat. Porta al WordPress la web d
 - `assets/css/taller.css`, `assets/css/preguntes.css` · Generats amb `eines/adapta-css.py` a partir dels de la web d'Història.
 - `templates/` · Plantilles. El tema les pot substituir amb un fitxer del mateix nom a `pds-2batx/`.
 - `lib/Parsedown.php` · Parsedown 1.7.4 (llicència MIT, `lib/LICENSE-Parsedown.txt`).
+- `includes/presentacio.php` · Presentació de cada tema. Si hi ha `uploads/pds-2batx/presentacions/tema-N/manifest.json`, la pàgina del tema mostra la pestanya «Presentació», amb un visor de les diapositives (imatges WebP), les notes i la descàrrega del .pptx (per a Presentacions de Google) i del PDF. Els fitxers surten de `integracions/presentacions/`.
 
 ## Instal·lació
 

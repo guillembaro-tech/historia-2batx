@@ -27,6 +27,7 @@ while ( have_posts() ) :
 	$pau       = array_values( (array) pds2_f( 'pau', $pid, array() ) );
 	$preguntes = array_values( (array) pds2_f( 'preguntes', $pid, array() ) );
 	$taller_on = 'disponible' === pds2_f( 'estat_taller', $pid, '' );
+	$pres      = pds2_presentacio( (int) $n );
 	$seccions  = pds2_v4_seccions( $pid );
 	$pau_tot   = array_sum( array_map( static fn( $r ) => count( pds2_convocatories( $r['fonts'] ?? '' ) ) + count( pds2_convocatories( $r['llargues'] ?? '' ) ), $preguntes ) );
 	$pau_max   = max( array_merge( array( 1 ), array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) ) );
@@ -46,6 +47,9 @@ while ( have_posts() ) :
 				<ul class="um-facts">
 					<li><?php echo count( $apartats ); ?> apartats<?php echo $dates ? ' (' . esc_html( $dates ) . ')' : ''; ?></li>
 					<li>Lectura del temari, uns <?php echo (int) $minuts; ?> minuts</li>
+					<?php if ( $pres ) : ?>
+						<li>Presentació (<?php echo count( $pres['diapositives'] ); ?> diapositives)</li>
+					<?php endif; ?>
 					<?php if ( $taller_on ) : ?>
 						<li>Taller PAU (exercicis 1, 2 i 3, pas a pas)</li>
 					<?php endif; ?>
@@ -166,6 +170,60 @@ while ( have_posts() ) :
 							</article>
 						<?php endforeach; ?>
 						<p class="um-foot-note">Material obert de professordesocials.cat amb llicència Creative Commons BY-SA 4.0.</p>
+					</section>
+				<?php endif; ?>
+
+				<?php if ( $pres ) :
+					$dia  = $pres['diapositives'];
+					$v    = rawurlencode( (string) ( $pres['versio'] ?? PDS2_VER ) );
+					$base = $pres['url'];
+					?>
+					<section class="um-sec pds2-pres" id="sa" aria-labelledby="presentacio">
+						<header><span class="um-num">Presentació</span><h2 id="presentacio">Presentació del tema</h2></header>
+						<p>Les idees clau de cada apartat, amb les imatges i el que en surt a la PAU. Passa les diapositives amb les fletxes, lliscant el dit al mòbil o triant-ne una de la llista.</p>
+						<div class="pds2-pres-v" data-base="<?php echo esc_url( $base ); ?>" data-v="<?php echo esc_attr( $v ); ?>">
+							<div class="pds2-pres-stage">
+								<img src="<?php echo esc_url( $base . $dia[0]['img'] . '?v=' . $v ); ?>" width="1600" height="900" alt="<?php echo esc_attr( 'Diapositiva 1. ' . $dia[0]['t'] ); ?>" decoding="async">
+								<button type="button" class="pds2-pres-nav pds2-pres-prev" aria-label="Diapositiva anterior" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+								<button type="button" class="pds2-pres-nav pds2-pres-next" aria-label="Diapositiva següent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+							</div>
+							<div class="pds2-pres-bar">
+								<label class="screen-reader-text" for="pds2-pres-tria">Tria una diapositiva</label>
+								<select id="pds2-pres-tria" class="pds2-pres-tria">
+									<?php
+									$grup = null;
+									foreach ( $dia as $i => $d ) :
+										if ( ( $d['s'] ?? '' ) !== $grup ) :
+											if ( null !== $grup ) :
+												echo '</optgroup>';
+											endif;
+											$grup = (string) ( $d['s'] ?? '' );
+											echo '<optgroup label="' . esc_attr( $grup ) . '">';
+										endif;
+										?>
+										<option value="<?php echo (int) $i; ?>"><?php echo (int) ( $i + 1 ) . '. ' . esc_html( (string) $d['t'] ); ?></option>
+									<?php endforeach; ?>
+									<?php echo null !== $grup ? '</optgroup>' : ''; ?>
+								</select>
+								<span class="pds2-pres-comp" aria-live="polite">1 / <?php echo count( $dia ); ?></span>
+								<button type="button" class="um-btn pds2-pres-full">Pantalla completa</button>
+							</div>
+						</div>
+						<div class="um-box um-near pds2-pres-notes">
+							<span class="um-box-t">Notes de la diapositiva</span>
+							<p><?php echo esc_html( (string) ( $dia[0]['n'] ?? '' ) ); ?></p>
+						</div>
+						<div class="um-box um-key pds2-pres-baixa">
+							<span class="um-box-t">Descarrega-la</span>
+							<p>El fitxer de PowerPoint s'obre i s'edita a Presentacions de Google. Puja'l a Google Drive i obre'l amb Presentacions de Google. També el pots obrir amb PowerPoint o amb LibreOffice.</p>
+							<p class="pds2-pres-btns">
+								<a class="um-quiz-btn" href="<?php echo esc_url( $base . $pres['pptx'] . '?v=' . $v ); ?>" download>Descarrega per a Google Slides (.pptx, <?php echo esc_html( pds2_mb( (int) ( $pres['mida_pptx'] ?? 0 ) ) ); ?>)</a>
+								<?php if ( ! empty( $pres['pdf'] ) ) : ?>
+									<a class="um-btn pds2-pres-pdf" href="<?php echo esc_url( $base . $pres['pdf'] . '?v=' . $v ); ?>" download>Descarrega en PDF (<?php echo esc_html( pds2_mb( (int) ( $pres['mida_pdf'] ?? 0 ) ) ); ?>)</a>
+								<?php endif; ?>
+							</p>
+						</div>
+						<script type="application/json" class="pds2-pres-dades"><?php echo wp_json_encode( array_map( static fn( $d ) => array( 'img' => (string) $d['img'], 't' => (string) $d['t'], 'n' => (string) ( $d['n'] ?? '' ) ), $dia ), JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP ); ?></script>
 					</section>
 				<?php endif; ?>
 
