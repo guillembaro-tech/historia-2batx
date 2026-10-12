@@ -20,7 +20,7 @@ Connector de WordPress per a la secció d'Història de l'Art de 2n de Batxillera
 
 ## Publicació
 
-Mentre l'opció `pdsha_publicat` no valgui 1, només la veuen els administradors, les obres són privades i les pàgines porten `noindex`. Per publicar, cal posar l'opció a 1 i passar les obres a «Publicat».
+Pública des del 12 d'octubre de 2026 (opció `pdsha_publicat` = 1). Mentre l'opció no valgui 1, només la veuen els administradors, les obres són privades i les pàgines porten `noindex`. Les obres noves que s'importen es publiquen si la secció és pública.
 
 ## Contingut
 

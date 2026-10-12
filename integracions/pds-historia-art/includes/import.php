@@ -18,9 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Importa un fitxer de dades de la carpeta data/.
  *
  * @param string $fitxer Nom del fitxer, per exemple romanic.json.
- * @param string $estat  Estat de les obres noves o actualitzades (private mentre no es publica).
+ * @param string $estat  Estat de les obres noves. Per defecte, publicat si la secció ja és pública i privat si no ho és.
  */
-function pdsha_importa( string $fitxer, string $estat = 'private' ): array {
+function pdsha_importa( string $fitxer, string $estat = '' ): array {
+	if ( '' === $estat ) {
+		$estat = pdsha_publicat() ? 'publish' : 'private';
+	}
 	$ruta = PDSHA_DIR . 'data/' . basename( $fitxer );
 	if ( ! is_readable( $ruta ) ) {
 		return array( 'error' => 'No es troba ' . $fitxer );

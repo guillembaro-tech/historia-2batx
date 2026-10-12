@@ -71,6 +71,14 @@ $amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 
 			</ol>
 		</section>
 
+		<?php if ( function_exists( 'pdsha_portada_url' ) && function_exists( 'pdsha_pot_veure' ) && pdsha_pot_veure() ) : ?>
+			<section class="um-sec" id="historia-art">
+				<header><span class="um-num">Història de l'Art</span><h2>També a 2n: Història de l'Art</h2></header>
+				<p>Història de l'Art també entra a la PAU. Hi trobaràs les obres de referència de l'examen, explicades una a una i agrupades per estils i per llenguatges artístics.</p>
+				<p class="pds2-v4-botons"><a class="um-quiz-btn" href="<?php echo esc_url( pdsha_portada_url() ); ?>">Obre Història de l'Art</a></p>
+			</section>
+		<?php endif; ?>
+
 		<section class="um-sec" id="cronologia">
 			<header><span class="um-num">Cronologia</span><h2>La línia del temps</h2></header>
 			<div class="pds2-v4-crono" aria-hidden="true">
