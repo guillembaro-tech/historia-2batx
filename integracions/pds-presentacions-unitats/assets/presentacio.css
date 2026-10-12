@@ -15,7 +15,8 @@
 .um .pdsp-bar .um-btn:hover, .um .pdsp-btns .um-btn:hover { background: var(--primary-soft); text-decoration: none; }
 .um .pdsp-notes p { white-space: pre-line; }
 .um .pdsp-btns { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.um .pdsp-btns .um-quiz-btn { margin: 0; }
+.um .pdsp-btns .um-quiz-btn { margin: 0; display: inline-block; color: #fff; text-decoration: none; }
+.um .pdsp-btns .um-quiz-btn:hover { color: #fff; background: var(--primary-dark); text-decoration: none; }
 .um .pdsp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 /* Pantalla completa */
 .um .pdsp-v:fullscreen { background: #000; display: flex; flex-direction: column; justify-content: center; padding: 12px; margin: 0; }
