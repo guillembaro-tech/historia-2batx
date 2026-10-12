@@ -1367,7 +1367,7 @@
   function go(kind) {
     var o = opts();
     if (!o.parts.length) { return; }
-    if (kind === 'pdf') { close(); printDoc(o); return; }
+    if (kind === 'pdf') { close(); window.pdsUmExport.printDoc(o); return; }
     var msg = dlg.querySelector('.um-xp-msg'), btns = $$('[data-go]', dlg);
     msg.textContent = 'Preparant el document…';
     btns.forEach(function (b) { b.disabled = true; });
@@ -2080,4 +2080,48 @@
   };
 
   if (isTema) { tema(); } else { eso(); }
+})();
+
+/* Avís abans d'obrir la finestra d'impressió: destinació «Desa com a PDF» i marges «Per defecte» */
+(function () {
+  'use strict';
+  var X = window.pdsUmExport;
+  if (!X || !X.printDoc || X._avis) { return; }
+  X._avis = true;
+  var orig = X.printDoc;
+  var KEY = 'pds-pdf-avis';
+  var chrome = /Chrome|Chromium|Edg\//.test(navigator.userAgent) && !/Firefox/.test(navigator.userAgent);
+  function done() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+  X.printDoc = function (o) {
+    if (done()) { return orig(o); }
+    return new Promise(function (resolve) {
+      var w = document.createElement('div');
+      w.className = 'pds-avis';
+      w.setAttribute('role', 'dialog');
+      w.setAttribute('aria-modal', 'true');
+      w.setAttribute('aria-labelledby', 'pds-avis-t');
+      w.innerHTML = '<div class="pds-avis-card">' +
+        '<h2 id="pds-avis-t">Abans de desar el PDF</h2>' +
+        '<p>S\'obrirà la finestra d\'impressió del navegador. Comprova-hi dues coses.</p>' +
+        '<ol>' +
+        '<li><b>Destinació</b>, tria «Desa com a PDF». Si el vols imprimir, tria la impressora.</li>' +
+        '<li><b>Marges</b>, tria «Per defecte»' + (chrome ? ' (és a «Més opcions de configuració»)' : '') + '. Amb «Cap», el text queda enganxat a la vora del full.</li>' +
+        '</ol>' +
+        '<label class="pds-avis-no"><input type="checkbox"> No ho tornis a mostrar en aquest ordinador</label>' +
+        '<div class="pds-avis-btns"><button type="button" class="pds-avis-x">Cancel·la</button><button type="button" class="pds-avis-ok">Entesos, obre-la</button></div>' +
+        '</div>';
+      (document.querySelector('.um') || document.body).appendChild(w);
+      var ok = w.querySelector('.pds-avis-ok');
+      function end(go) {
+        if (go && w.querySelector('.pds-avis-no input').checked) { try { localStorage.setItem(KEY, '1'); } catch (e) { /* res */ } }
+        w.parentNode.removeChild(w);
+        resolve(go ? orig(o) : undefined);
+      }
+      ok.addEventListener('click', function () { end(true); });
+      w.querySelector('.pds-avis-x').addEventListener('click', function () { end(false); });
+      w.addEventListener('click', function (e) { if (e.target === w) { end(false); } });
+      w.addEventListener('keydown', function (e) { if (e.key === 'Escape') { end(false); } });
+      ok.focus();
+    });
+  };
 })();
