@@ -833,3 +833,4 @@ html.um-xp-open { overflow: hidden; }
 .pd .pd-vf { white-space: nowrap; margin-left: 2mm; color: #5F6368; }
 .pd .pd-vf .pd-box { display: inline-block; width: 3.2mm; height: 3.2mm; border: .6pt solid #80868B; border-radius: .6mm; vertical-align: -.5mm; margin-left: 1.5mm; }
 .pd .um-level ol ul .pd-opts { padding-left: 2mm; }
+.um .ua-dl-tip { flex-basis: 100%; font-size: 12px; line-height: 1.35; color: var(--ink-3); }

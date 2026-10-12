@@ -1698,6 +1698,7 @@
     row.appendChild(bw);
     box.appendChild(row);
     box.appendChild(msg);
+    box.appendChild(mk('span', 'ua-dl-tip', 'Per al PDF, tria «Desa com a PDF» i deixa els marges «Per defecte».'));
     return box;
   }
 
