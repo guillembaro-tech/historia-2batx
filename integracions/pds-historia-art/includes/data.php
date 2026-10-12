@@ -88,7 +88,7 @@ function pdsha_obres( array $tax = array() ): array {
 		'post_type'      => 'obra_art',
 		'post_status'    => pdsha_estats(),
 		'posts_per_page' => 200,
-		'meta_key'       => 'numero',
+		'meta_key'       => 'ha_numero',
 		'orderby'        => array( 'meta_value_num' => 'ASC', 'title' => 'ASC' ),
 		'no_found_rows'  => true,
 	);
@@ -115,7 +115,7 @@ function pdsha_obres_per_numero(): array {
 	if ( null === $m ) {
 		$m = array();
 		foreach ( pdsha_obres() as $p ) {
-			$n = (int) pdsha_f( 'numero', $p->ID, 0 );
+			$n = (int) pdsha_f( 'ha_numero', $p->ID, 0 );
 			if ( $n ) {
 				$m[ $n ] = $p;
 			}
@@ -207,7 +207,7 @@ function pdsha_llenguatges(): array {
 
 /** Títol del tema d'un estil («El romànic»). */
 function pdsha_titol_estil( WP_Term $t ): string {
-	return (string) pdsha_f( 'estil_titol', $t, $t->name );
+	return (string) pdsha_f( 'ha_estil_titol', $t, $t->name );
 }
 
 /** Converteix les marques senzilles (**negreta**, *cursiva*) d'un text curt. */
@@ -248,7 +248,7 @@ function pdsha_figura( int $att, string $titol = '', string $text = '', string $
 function pdsha_imatges( int $post_id, string $seccio ): string {
 	$imgs = array_values(
 		array_filter(
-			(array) pdsha_f( 'imatges', $post_id, array() ),
+			(array) pdsha_f( 'ha_imatges', $post_id, array() ),
 			static fn( $r ) => ( $r['seccio'] ?? '' ) === $seccio && ! empty( $r['imatge'] )
 		)
 	);
@@ -264,10 +264,10 @@ function pdsha_imatges( int $post_id, string $seccio ): string {
 
 /** Targeta d'una obra (imatge, número, títol, autor i dates). */
 function pdsha_targeta( WP_Post $p ): string {
-	$n     = (int) pdsha_f( 'numero', $p->ID, 0 );
+	$n     = (int) pdsha_f( 'ha_numero', $p->ID, 0 );
 	$llg   = pdsha_llenguatge_de( $p->ID );
 	$thumb = get_post_thumbnail_id( $p );
-	$meta  = array_filter( array( (string) pdsha_f( 'autor', $p->ID, '' ), (string) pdsha_f( 'dates', $p->ID, '' ) ) );
+	$meta  = array_filter( array( (string) pdsha_f( 'ha_autor', $p->ID, '' ), (string) pdsha_f( 'ha_dates', $p->ID, '' ) ) );
 	$h     = '<a class="pdsha-card" href="' . esc_url( get_permalink( $p ) ) . '"' . ( $llg ? ' data-llenguatge="' . esc_attr( $llg->slug ) . '"' : '' ) . '>';
 	$h    .= '<span class="pdsha-card-img">' . ( $thumb ? wp_get_attachment_image( $thumb, 'medium_large', false, array( 'alt' => '', 'loading' => 'lazy' ) ) : '' ) . '</span>';
 	$h    .= '<span class="pdsha-card-body">';

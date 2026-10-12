@@ -25,9 +25,9 @@ function pdsha_camps(): void {
 		return;
 	}
 	$tab  = static fn( string $k, string $l ) => array( 'key' => 'field_pdsha_tab_' . $k, 'label' => $l, 'type' => 'tab', 'placement' => 'top' );
-	$text = static fn( string $k, string $l, string $i = '' ) => array( 'key' => 'field_pdsha_' . $k, 'name' => $k, 'label' => $l, 'type' => 'text', 'instructions' => $i );
-	$area = static fn( string $k, string $l, string $i = '', int $rows = 3 ) => array( 'key' => 'field_pdsha_' . $k, 'name' => $k, 'label' => $l, 'type' => 'textarea', 'rows' => $rows, 'new_lines' => '', 'instructions' => $i );
-	$wys  = static fn( string $k, string $l, string $i = '' ) => array( 'key' => 'field_pdsha_' . $k, 'name' => $k, 'label' => $l, 'type' => 'wysiwyg', 'tabs' => 'all', 'toolbar' => 'full', 'media_upload' => 1, 'delay' => 1, 'instructions' => $i );
+	$text = static fn( string $k, string $l, string $i = '' ) => array( 'key' => 'field_pdsha_' . $k, 'name' => 'ha_' . $k, 'label' => $l, 'type' => 'text', 'instructions' => $i );
+	$area = static fn( string $k, string $l, string $i = '', int $rows = 3 ) => array( 'key' => 'field_pdsha_' . $k, 'name' => 'ha_' . $k, 'label' => $l, 'type' => 'textarea', 'rows' => $rows, 'new_lines' => '', 'instructions' => $i );
+	$wys  = static fn( string $k, string $l, string $i = '' ) => array( 'key' => 'field_pdsha_' . $k, 'name' => 'ha_' . $k, 'label' => $l, 'type' => 'wysiwyg', 'tabs' => 'all', 'toolbar' => 'full', 'media_upload' => 1, 'delay' => 1, 'instructions' => $i );
 
 	acf_add_local_field_group(
 		array(
@@ -39,14 +39,14 @@ function pdsha_camps(): void {
 			'menu_order' => 0,
 			'fields'     => array(
 				$tab( 'fitxa', 'Fitxa' ),
-				array( 'key' => 'field_pdsha_numero', 'name' => 'numero', 'label' => 'Número a la llista oficial', 'type' => 'number', 'min' => 1, 'max' => 99, 'instructions' => "Número de l'obra a la llista d'obres de referència de la PAU." ),
+				array( 'key' => 'field_pdsha_numero', 'name' => 'ha_numero', 'label' => 'Número a la llista oficial', 'type' => 'number', 'min' => 1, 'max' => 99, 'instructions' => "Número de l'obra a la llista d'obres de referència de la PAU." ),
 				$text( 'autor', 'Autor', 'Per a les targetes. Si és anònim, deixa-ho en blanc.' ),
 				$text( 'dates', 'Dates', 'Forma curta, per exemple 1075-1211.' ),
 				$text( 'lloc', 'Lloc', 'On és avui.' ),
 				$area( 'resum', 'En trenta segons', "Resum de l'obra en tres o quatre frases. Admet **negreta** i *cursiva*.", 4 ),
 				array(
 					'key'          => 'field_pdsha_fitxa',
-					'name'         => 'fitxa',
+					'name'         => 'ha_fitxa',
 					'label'        => 'Fitxa tècnica',
 					'type'         => 'repeater',
 					'layout'       => 'table',
@@ -58,7 +58,7 @@ function pdsha_camps(): void {
 				),
 				array(
 					'key'          => 'field_pdsha_imatges',
-					'name'         => 'imatges',
+					'name'         => 'ha_imatges',
 					'label'        => 'Imatges',
 					'type'         => 'repeater',
 					'layout'       => 'block',
@@ -100,7 +100,7 @@ function pdsha_camps(): void {
 				$tab( 'relacio', 'd) Relació' ),
 				$text( 'q_relacio', 'Pregunta guia' ),
 				$wys( 'relacio', 'Relació amb altres obres' ),
-				array( 'key' => 'field_pdsha_compara', 'name' => 'compara', 'label' => 'Compara-la amb', 'type' => 'relationship', 'post_type' => array( 'obra_art' ), 'post_status' => array( 'publish', 'private' ), 'filters' => array( 'search' ), 'return_format' => 'id', 'instructions' => 'Obres de la llista que surten com a targetes al final de l\'apartat.' ),
+				array( 'key' => 'field_pdsha_compara', 'name' => 'ha_compara', 'label' => 'Compara-la amb', 'type' => 'relationship', 'post_type' => array( 'obra_art' ), 'post_status' => array( 'publish', 'private' ), 'filters' => array( 'search' ), 'return_format' => 'id', 'instructions' => 'Obres de la llista que surten com a targetes al final de l\'apartat.' ),
 				$tab( 'pau', 'PAU' ),
 				$wys( 'tambe', 'També pot sortir a', 'Exercicis 1, 3 i 4.' ),
 				$text( 'pau_etiqueta', "Etiqueta de l'enunciat", 'Per exemple, «Enunciat oficial, Sèrie 0 (2025). Exercici 2, opció A.» o «Proposta en format PAU (no és un enunciat oficial).»' ),
@@ -128,7 +128,7 @@ function pdsha_camps(): void {
 				$wys( 'estil_pau', 'Com entra a la PAU' ),
 				array(
 					'key'          => 'field_pdsha_estil_seccions',
-					'name'         => 'estil_seccions',
+					'name'         => 'ha_estil_seccions',
 					'label'        => 'Apartats',
 					'type'         => 'repeater',
 					'layout'       => 'block',

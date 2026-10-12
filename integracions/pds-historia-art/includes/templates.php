@@ -105,7 +105,7 @@ function pdsha_molla( array $extra = array() ): void {
 
 /** Text d'un camp WYSIWYG ja formatat per ACF (paràgrafs, imatges responsives). */
 function pdsha_html( string $name, $id ): string {
-	return (string) pdsha_f( $name, $id, '' );
+	return (string) pdsha_f( 'ha_' . $name, $id, '' );
 }
 
 /** Botons per filtrar per llenguatge a la pàgina d'un estil. */
@@ -125,7 +125,7 @@ function pdsha_xips_llenguatge( WP_Term $estil, ?WP_Term $actual, array $comptes
 
 /** Taula de la fitxa tècnica. */
 function pdsha_fitxa_html( int $post_id ): string {
-	$files = array_values( array_filter( (array) pdsha_f( 'fitxa', $post_id, array() ), static fn( $r ) => '' !== trim( (string) ( $r['etiqueta'] ?? '' ) ) ) );
+	$files = array_values( array_filter( (array) pdsha_f( 'ha_fitxa', $post_id, array() ), static fn( $r ) => '' !== trim( (string) ( $r['etiqueta'] ?? '' ) ) ) );
 	if ( ! $files ) {
 		return '';
 	}

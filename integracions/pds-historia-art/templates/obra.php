@@ -15,14 +15,14 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 	$pid     = get_the_ID();
-	$n       = (int) pdsha_f( 'numero', $pid, 0 );
+	$n       = (int) pdsha_f( 'ha_numero', $pid, 0 );
 	$estil   = pdsha_estil_de( $pid );
 	$periode = $estil ? pdsha_periode_de( $estil ) : null;
 	$llg     = pdsha_llenguatge_de( $pid );
-	$dates   = (string) pdsha_f( 'dates', $pid, '' );
-	$lloc    = (string) pdsha_f( 'lloc', $pid, '' );
-	$autor   = (string) pdsha_f( 'autor', $pid, '' );
-	$resum   = (string) pdsha_f( 'resum', $pid, '' );
+	$dates   = (string) pdsha_f( 'ha_dates', $pid, '' );
+	$lloc    = (string) pdsha_f( 'ha_lloc', $pid, '' );
+	$autor   = (string) pdsha_f( 'ha_autor', $pid, '' );
+	$resum   = (string) pdsha_f( 'ha_resum', $pid, '' );
 	$arq     = $llg && 'arquitectura' === $llg->slug;
 
 	// Apartats de l'exercici 2, en l'ordre de les preguntes. El destacat només hi és si té text.
@@ -31,12 +31,12 @@ while ( have_posts() ) :
 		array( 'k' => 'analisi', 'num' => 'b)', 'titol' => 'Anàlisi formal i estil' ),
 		array( 'k' => 'funcio', 'num' => 'c)', 'titol' => $arq ? 'Funció' : 'Tema i funció' ),
 	);
-	if ( '' !== trim( (string) pdsha_f( 'destacat_titol', $pid, '' ) ) && '' !== trim( wp_strip_all_tags( pdsha_html( 'destacat', $pid ) ) ) ) {
-		$apartats[] = array( 'k' => 'destacat', 'num' => 'Destacat', 'titol' => (string) pdsha_f( 'destacat_titol', $pid, '' ) );
+	if ( '' !== trim( (string) pdsha_f( 'ha_destacat_titol', $pid, '' ) ) && '' !== trim( wp_strip_all_tags( pdsha_html( 'destacat', $pid ) ) ) ) {
+		$apartats[] = array( 'k' => 'destacat', 'num' => 'Destacat', 'titol' => (string) pdsha_f( 'ha_destacat_titol', $pid, '' ) );
 	}
 	$apartats[] = array( 'k' => 'relacio', 'num' => 'd)', 'titol' => 'Relació amb altres obres' );
 
-	$compara = array_values( array_filter( array_map( 'get_post', (array) pdsha_f( 'compara', $pid, array() ) ), static fn( $p ) => $p instanceof WP_Post && in_array( $p->post_status, pdsha_estats(), true ) ) );
+	$compara = array_values( array_filter( array_map( 'get_post', (array) pdsha_f( 'ha_compara', $pid, array() ) ), static fn( $p ) => $p instanceof WP_Post && in_array( $p->post_status, pdsha_estats(), true ) ) );
 	$te_pau  = '' !== trim( wp_strip_all_tags( pdsha_html( 'pau_enunciat', $pid ) . pdsha_html( 'pau_propostes', $pid ) . pdsha_html( 'tambe', $pid ) ) );
 
 	// Obra anterior i següent segons el número de la llista.
@@ -110,9 +110,9 @@ while ( have_posts() ) :
 				</section>
 
 				<?php foreach ( $apartats as $i => $a ) :
-					$q = (string) pdsha_f( 'q_' . $a['k'], $pid, '' );
+					$q = (string) pdsha_f( 'ha_q_' . $a['k'], $pid, '' );
 					?>
-					<section class="um-sec pdsha-ap-<?php echo esc_attr( $a['k'] ); ?>" id="s<?php echo (int) ( $i + 1 ); ?>">
+					<section class="um-sec pdsha-ap-<?php echo esc_attr( $a['k'] ); ?>" id="s<?php echo (int) ( $i + 1 ); ?>"<?php echo 'Destacat' === $a['num'] ? '' : ' data-lletra="' . esc_attr( rtrim( $a['num'], ')' ) ) . '"'; ?>>
 						<header><span class="um-num"><?php echo esc_html( 'Destacat' === $a['num'] ? 'Destacat' : 'Apartat ' . $a['num'] ); ?></span><h2><?php echo esc_html( $a['titol'] ); ?></h2></header>
 						<?php if ( $q ) : ?>
 							<p class="um-q"><?php echo esc_html( $q ); ?></p>
@@ -130,13 +130,13 @@ while ( have_posts() ) :
 						<?php if ( 'relacio' === $a['k'] && ( $ant || $seg || $estil ) ) : ?>
 							<nav class="pdsha-pasa" aria-label="Altres obres">
 								<?php if ( $ant ) : ?>
-									<a class="pdsha-pasa-ant" href="<?php echo esc_url( get_permalink( $ant ) ); ?>"><small>Obra anterior</small><?php echo esc_html( pdsha_f( 'numero', $ant->ID, '' ) . '. ' . get_the_title( $ant ) ); ?></a>
+									<a class="pdsha-pasa-ant" href="<?php echo esc_url( get_permalink( $ant ) ); ?>"><small>Obra anterior</small><?php echo esc_html( pdsha_f( 'ha_numero', $ant->ID, '' ) . '. ' . get_the_title( $ant ) ); ?></a>
 								<?php endif; ?>
 								<?php if ( $estil ) : ?>
 									<a class="pdsha-pasa-estil" href="<?php echo esc_url( pdsha_estil_url( $estil ) ); ?>"><small>Tema de l'estil</small><?php echo esc_html( pdsha_titol_estil( $estil ) ); ?></a>
 								<?php endif; ?>
 								<?php if ( $seg ) : ?>
-									<a class="pdsha-pasa-seg" href="<?php echo esc_url( get_permalink( $seg ) ); ?>"><small>Obra següent</small><?php echo esc_html( pdsha_f( 'numero', $seg->ID, '' ) . '. ' . get_the_title( $seg ) ); ?></a>
+									<a class="pdsha-pasa-seg" href="<?php echo esc_url( get_permalink( $seg ) ); ?>"><small>Obra següent</small><?php echo esc_html( pdsha_f( 'ha_numero', $seg->ID, '' ) . '. ' . get_the_title( $seg ) ); ?></a>
 								<?php endif; ?>
 							</nav>
 						<?php endif; ?>
@@ -147,7 +147,7 @@ while ( have_posts() ) :
 					<header><span class="um-num">Fonts</span><h2>Crèdits i fonts</h2></header>
 					<?php
 					$credits = array();
-					foreach ( (array) pdsha_f( 'imatges', $pid, array() ) as $r ) {
+					foreach ( (array) pdsha_f( 'ha_imatges', $pid, array() ) as $r ) {
 						$att = (int) ( $r['imatge'] ?? 0 );
 						if ( $att && ! isset( $credits[ $att ] ) ) {
 							$credits[ $att ] = $r;
@@ -176,9 +176,9 @@ while ( have_posts() ) :
 						<header><span class="um-num">PAU</span><h2>Així surt a la PAU</h2></header>
 						<?php if ( '' !== trim( wp_strip_all_tags( pdsha_html( 'pau_enunciat', $pid ) ) ) ) : ?>
 							<div class="um-box um-think pdsha-enunciat">
-								<?php if ( pdsha_f( 'pau_etiqueta', $pid, '' ) ) : ?>
+								<?php if ( pdsha_f( 'ha_pau_etiqueta', $pid, '' ) ) : ?>
 									<span class="um-box-t">Exercici 2</span>
-									<p class="pdsha-etiqueta"><em><?php echo esc_html( (string) pdsha_f( 'pau_etiqueta', $pid, '' ) ); ?></em></p>
+									<p class="pdsha-etiqueta"><em><?php echo esc_html( (string) pdsha_f( 'ha_pau_etiqueta', $pid, '' ) ); ?></em></p>
 								<?php endif; ?>
 								<?php echo pdsha_html( 'pau_enunciat', $pid ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- camp WYSIWYG formatat per ACF. ?>
 							</div>

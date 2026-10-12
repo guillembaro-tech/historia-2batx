@@ -1,7 +1,8 @@
 <?php
 /**
- * Importació repetible del contingut (data/*.json). Cada element guarda l'identificador d'origen,
- * i tornar a importar actualitza sense duplicar. Les imatges es baixen de Wikimedia Commons una sola vegada
+ * Importació repetible del contingut (data/*.json). Els camps es desen per la clau (field_pdsha_…),
+ * perquè altres grups de camps del lloc fan servir noms com «imatges» o «fonts». Cada element guarda
+ * l'identificador d'origen, i tornar a importar actualitza sense duplicar. Les imatges es baixen de Wikimedia Commons una sola vegada
  * i porten l'autoria i la llicència a la llegenda.
  *
  * Al text dels apartats, [[img:clau|dreta|Títol|Text del peu]] es converteix en una figura amb requadre.
@@ -63,7 +64,7 @@ function pdsha_importa( string $fitxer, string $estat = 'private' ): array {
 				$rel[] = $pid;
 			}
 		}
-		update_field( 'compara', $rel, $ids[ (string) $o['origen'] ] );
+		update_field( 'field_pdsha_compara', $rel, $ids[ (string) $o['origen'] ] );
 	}
 	update_option( 'pdsha_flush', 1, false );
 	return $log;
@@ -212,12 +213,12 @@ function pdsha_importa_estil( array $e, array $imgs ): string {
 	$tid = (int) $t['term_id'];
 	$ref = 'term_' . $tid;
 	update_term_meta( $tid, 'pdsha_ordre', (int) ( $e['ordre'] ?? 0 ) );
-	update_field( 'pdsha_ordre', (int) ( $e['ordre'] ?? 0 ), $ref );
+	update_field( 'field_pdsha_estil_ordre', (int) ( $e['ordre'] ?? 0 ), $ref );
 	foreach ( array( 'estil_titol', 'estil_dates', 'estil_pregunta', 'estil_resum' ) as $k ) {
-		update_field( $k, (string) ( $e[ $k ] ?? '' ), $ref );
+		update_field( 'field_pdsha_' . $k, (string) ( $e[ $k ] ?? '' ), $ref );
 	}
 	foreach ( array( 'estil_pau', 'estil_fonts' ) as $k ) {
-		update_field( $k, pdsha_figures( (string) ( $e[ $k ] ?? '' ), $imgs ), $ref );
+		update_field( 'field_pdsha_' . $k, pdsha_figures( (string) ( $e[ $k ] ?? '' ), $imgs ), $ref );
 	}
 	$rows = array();
 	foreach ( (array) ( $e['estil_seccions'] ?? array() ) as $s ) {
@@ -228,7 +229,7 @@ function pdsha_importa_estil( array $e, array $imgs ): string {
 			'cos'        => pdsha_figures( (string) ( $s['cos'] ?? '' ), $imgs ),
 		);
 	}
-	update_field( 'estil_seccions', $rows, $ref );
+	update_field( 'field_pdsha_estil_seccions', $rows, $ref );
 	return 'estil ' . $slug . ' → ' . $tid;
 }
 
@@ -269,12 +270,12 @@ function pdsha_importa_obra( array $o, array $imgs, string $estat ) {
 		wp_set_object_terms( $pid, array( 'historia-art' ), 'materia' );
 	}
 
-	update_field( 'numero', (int) $o['numero'], $pid );
+	update_field( 'field_pdsha_numero', (int) $o['numero'], $pid );
 	foreach ( array( 'autor', 'dates', 'lloc', 'resum', 'q_context', 'q_analisi', 'q_funcio', 'destacat_titol', 'q_destacat', 'q_relacio', 'pau_etiqueta' ) as $k ) {
-		update_field( $k, (string) ( $o[ $k ] ?? '' ), $pid );
+		update_field( 'field_pdsha_' . $k, (string) ( $o[ $k ] ?? '' ), $pid );
 	}
 	foreach ( array( 'context', 'analisi', 'funcio', 'destacat', 'relacio', 'tambe', 'pau_enunciat', 'pau_criteris', 'pau_model', 'pau_propostes', 'fonts' ) as $k ) {
-		update_field( $k, pdsha_figures( (string) ( $o[ $k ] ?? '' ), $imgs ), $pid );
+		update_field( 'field_pdsha_' . $k, pdsha_figures( (string) ( $o[ $k ] ?? '' ), $imgs ), $pid );
 	}
 	$fitxa = array();
 	foreach ( (array) ( $o['fitxa'] ?? array() ) as $f ) {
@@ -283,7 +284,7 @@ function pdsha_importa_obra( array $o, array $imgs, string $estat ) {
 			'valor'    => (string) $f[1],
 		);
 	}
-	update_field( 'fitxa', $fitxa, $pid );
+	update_field( 'field_pdsha_fitxa', $fitxa, $pid );
 	$rows = array();
 	foreach ( (array) ( $o['imatges'] ?? array() ) as $im ) {
 		$id = (int) ( $imgs[ $im['clau'] ] ?? 0 );
@@ -296,7 +297,7 @@ function pdsha_importa_obra( array $o, array $imgs, string $estat ) {
 			);
 		}
 	}
-	update_field( 'imatges', $rows, $pid );
+	update_field( 'field_pdsha_imatges', $rows, $pid );
 	if ( ! empty( $o['miniatura'] ) && ! empty( $imgs[ $o['miniatura'] ] ) ) {
 		set_post_thumbnail( $pid, (int) $imgs[ $o['miniatura'] ] );
 	}

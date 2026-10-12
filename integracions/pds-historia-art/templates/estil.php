@@ -30,16 +30,16 @@ $obres = $llg ? array_values( array_filter( $totes, static fn( $p ) => ( pdsha_l
 
 $seccions = $es_per ? array() : array_values(
 	array_filter(
-		(array) pdsha_f( 'estil_seccions', $estil, array() ),
+		(array) pdsha_f( 'ha_estil_seccions', $estil, array() ),
 		static fn( $s ) => ! $llg || ( $s['llenguatge'] ?? '' ) === $llg->slug
 	)
 );
 $titol    = pdsha_titol_estil( $estil );
-$dates    = (string) pdsha_f( 'estil_dates', $estil, '' );
-$pregunta = (string) pdsha_f( 'estil_pregunta', $estil, '' );
-$resum    = (string) pdsha_f( 'estil_resum', $estil, '' );
-$pau      = (string) pdsha_f( 'estil_pau', $estil, '' );
-$fonts    = (string) pdsha_f( 'estil_fonts', $estil, '' );
+$dates    = (string) pdsha_f( 'ha_estil_dates', $estil, '' );
+$pregunta = (string) pdsha_f( 'ha_estil_pregunta', $estil, '' );
+$resum    = (string) pdsha_f( 'ha_estil_resum', $estil, '' );
+$pau      = (string) pdsha_f( 'ha_estil_pau', $estil, '' );
+$fonts    = (string) pdsha_f( 'ha_estil_fonts', $estil, '' );
 
 $molla = array();
 if ( $llg ) {
@@ -169,7 +169,7 @@ $per_n    = pdsha_obres_per_numero();
 							<span class="um-box-t"><?php echo 1 === count( $del ) ? 'Obra de la PAU' : 'Obres de la PAU'; ?></span>
 							<ul>
 								<?php foreach ( $del as $p ) : ?>
-									<li><a href="<?php echo esc_url( get_permalink( $p ) ); ?>"><?php echo esc_html( pdsha_f( 'numero', $p->ID, '' ) . '. ' . get_the_title( $p ) ); ?></a></li>
+									<li><a href="<?php echo esc_url( get_permalink( $p ) ); ?>"><?php echo esc_html( pdsha_f( 'ha_numero', $p->ID, '' ) . '. ' . get_the_title( $p ) ); ?></a></li>
 								<?php endforeach; ?>
 							</ul>
 						</div>

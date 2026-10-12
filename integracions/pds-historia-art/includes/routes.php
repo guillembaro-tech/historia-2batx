@@ -273,7 +273,7 @@ add_filter(
 				}
 				break;
 			case 'obra':
-				$n              = (int) pdsha_f( 'numero', get_queried_object_id(), 0 );
+				$n              = (int) pdsha_f( 'ha_numero', get_queried_object_id(), 0 );
 				$parts['title'] = ( $n ? $n . '. ' : '' ) . get_the_title( get_queried_object_id() ) . " · Història de l'Art";
 				break;
 		}
