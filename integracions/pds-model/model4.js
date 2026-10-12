@@ -891,6 +891,32 @@
     });
     return s;
   }
+  /* Alçades aproximades (cm) per omplir la columna de l'esquerra al Word */
+  function absorbable(n) {
+    if (n.nodeType !== 1 || n._pdAbs) { return false; }
+    if (/^(P|UL|OL|H3|H4)$/.test(n.tagName)) { return !n.querySelector('img, svg'); }
+    return /\b(um-box|um-check)\b/.test(n.className) && !/\b(pd-wide|um-cards|um-two|pd-side-g|pd-blk)\b/.test(n.className) && !n.querySelector('img, svg, table');
+  }
+  function leftEst(n, lw) {
+    var cpl = Math.max(30, Math.round(lw / 567 * 5.4)), len = txt(n).length, t = n.tagName;
+    if (t === 'H3') { return 0.95; }
+    if (t === 'H4') { return 0.8; }
+    if (t === 'UL' || t === 'OL') { return $$(':scope > li', n).reduce(function (a, li) { return a + Math.ceil(txt(li).length / (cpl - 4)) * 0.5 + 0.1; }, 0.25); }
+    if (/\b(um-box|um-check)\b/.test(n.className)) { return Math.ceil(len / (cpl * 1.1)) * 0.45 + 1.1; }
+    return Math.ceil(len / cpl) * 0.5 + 0.25;
+  }
+  function sideEst(n) {
+    var cm = 0;
+    $$('img, svg', n).forEach(function (el) {
+      var im = IMG.get(el);
+      var w = im ? im.w : (+el.getAttribute('width') || 4), h = im ? im.h : (+el.getAttribute('height') || 3);
+      cm += Math.min(SIDE / 567 * h / w, 8.5) + 0.15;
+    });
+    var cap = n.querySelector('figcaption');
+    var len = cap ? txt(cap).length : (n.tagName === 'FIGURE' ? 0 : txt(n).length);
+    cm += Math.ceil(len / 40) * 0.36 + (n.tagName === 'FIGURE' ? 0.3 : 1.0);
+    return cm;
+  }
   function wrapOne(k) { var d = document.createElement('div'); d.appendChild(k.cloneNode(true)); return d; }
 
   function linesXml(ctx, nl) {
@@ -935,6 +961,7 @@
     node.childNodes.forEach(function (k) {
       if (k.nodeType === 3) { pending.push(k); return; }
       if (k.nodeType !== 1) { return; }
+      if (k._pdAbs) { return; }
       var t = k.tagName.toLowerCase(), cl = k.classList;
       if (!BLOCK.test(t) && t !== 'svg' && t !== 'img' && !cl.contains('um-box-t') && !cl.contains('pd-lines') && !cl.contains('um-tag')) { pending.push(k); return; }
       flush();
@@ -1009,6 +1036,18 @@
             $$(':scope > *', ch).forEach(function (x) { right += x.tagName === 'FIGURE' ? figureXml(x, { width: SIDE, inCell: true, side: true }) : blocks(wrapOne(x), { width: SIDE, inCell: true, side: true }); });
           } else { left.appendChild(ch.cloneNode(true)); }
         });
+        /* Si la columna lateral és més alta que el text del bloc, el text que ve després (subapartats, paràgrafs,
+           caixes) també va a la columna de l'esquerra, perquè no quedi un forat al costat de la imatge, com al PDF */
+        var sideCm = 0, leftCm = 0;
+        $$(':scope > .pd-blk-h > .pd-side-g > *, :scope > .pd-side-g > *', k).forEach(function (x) { sideCm += sideEst(x); });
+        $$(':scope > *', left).forEach(function (x) { leftCm += leftEst(x, lw); });
+        var nxa = k.nextElementSibling;
+        while (nxa && leftCm + 0.4 < sideCm && absorbable(nxa)) {
+          left.appendChild(nxa.cloneNode(true));
+          leftCm += leftEst(nxa, lw);
+          nxa._pdAbs = true;
+          nxa = nxa.nextElementSibling;
+        }
         var lx = blocks(left, { width: lw, inCol: true });
         if (!/<\/w:p>$/.test(lx)) { lx += '<w:p/>'; }
         if (!/<\/w:p>$/.test(right)) { right += '<w:p/>'; }
