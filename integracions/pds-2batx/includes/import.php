@@ -67,6 +67,73 @@ function pds2_reescriu_enllacos( string $html ): string {
 	);
 }
 
+/**
+ * Imatges dels apartats. A la web d'Història, una imatge és un paràgraf amb una o dues imatges de media/
+ * i, a sota, un paràgraf en cursiva amb el peu. Aquí es converteix en una figura amb el peu, i les imatges
+ * es baixen una sola vegada a la mediateca des de la web d'Història (meta _pds2_media).
+ */
+function pds2_imatges( string $html, array &$inf ): string {
+	return (string) preg_replace_callback(
+		'#<p>((?:\s*<img [^>]*src="media/[^"]+"[^>]*/?>\s*)+)</p>\s*(?:<p><em>(.*?)</em></p>)?#s',
+		static function ( $m ) use ( &$inf ) {
+			preg_match_all( '#<img [^>]*src="(media/[^"]+)"[^>]*alt="([^"]*)"[^>]*/?>#', $m[1], $imgs, PREG_SET_ORDER );
+			if ( ! $imgs ) {
+				return $m[0];
+			}
+			$h = '';
+			foreach ( $imgs as $im ) {
+				$id  = pds2_media( html_entity_decode( $im[1], ENT_QUOTES ), $inf );
+				$src = $id ? wp_get_attachment_image_url( $id, 'large' ) : PDS2_FONT_URL . $im[1];
+				$h  .= '<img src="' . esc_url( (string) $src ) . '" alt="' . $im[2] . '" loading="lazy" />';
+			}
+			$cls = 'um-fig um-photo pds2-fig' . ( count( $imgs ) > 1 ? ' pds2-fig-2' : '' );
+			return '<figure class="' . $cls . '"><span class="pds2-fig-imgs">' . $h . '</span>' . ( isset( $m[2] ) && '' !== $m[2] ? '<figcaption>' . $m[2] . '</figcaption>' : '' ) . '</figure>';
+		},
+		$html
+	);
+}
+
+/** Baixa una imatge de la web d'Història a la mediateca (només la primera vegada). Torna l'identificador o 0. */
+function pds2_media( string $ruta, array &$inf ): int {
+	$ja = get_posts(
+		array(
+			'post_type'      => 'attachment',
+			'post_status'    => 'inherit',
+			'meta_key'       => '_pds2_media',
+			'meta_value'     => $ruta,
+			'posts_per_page' => 1,
+			'fields'         => 'ids',
+		)
+	);
+	if ( $ja ) {
+		return (int) $ja[0];
+	}
+	$r = wp_remote_get( PDS2_FONT_URL . $ruta, array( 'timeout' => 40 ) );
+	if ( 200 !== (int) wp_remote_retrieve_response_code( $r ) ) {
+		$inf['avisos'][] = 'No s\'ha pogut baixar ' . $ruta . '.';
+		return 0;
+	}
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/media.php';
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+	$tmp = wp_tempnam( basename( $ruta ) );
+	file_put_contents( $tmp, wp_remote_retrieve_body( $r ) ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
+	$id = media_handle_sideload(
+		array(
+			'name'     => 'historia-' . str_replace( '/', '-', preg_replace( '#^media/#', '', $ruta ) ),
+			'tmp_name' => $tmp,
+		),
+		0
+	);
+	if ( is_wp_error( $id ) ) {
+		@unlink( $tmp ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+		$inf['avisos'][] = 'No s\'ha pogut desar ' . $ruta . ' a la mediateca.';
+		return 0;
+	}
+	update_post_meta( $id, '_pds2_media', $ruta );
+	return (int) $id;
+}
+
 /** Element per identificador d'origen, o 0. */
 function pds2_per_origen( string $tipus, string $origen ): int {
 	$q = get_posts(
@@ -175,7 +242,7 @@ function pds2_importa_tema( int $n, array $t, ?array $taller, ?array $preg, arra
 			$llibre = trim( $m[1] );
 			$cos    = rtrim( substr( $cos, 0, -strlen( $m[0] ) ) );
 		}
-		$content .= '<h2 id="ap' . $i . '">' . esc_html( (string) $ap['titol'] ) . "</h2>\n" . pds2_md( $cos ) . "\n\n";
+		$content .= '<h2 id="ap' . $i . '">' . esc_html( (string) $ap['titol'] ) . "</h2>\n" . pds2_imatges( pds2_md( $cos ), $inf ) . "\n\n";
 		$amb      = array();
 		foreach ( (array) ( $ap['ambits'] ?? array() ) as $s ) {
 			$tid = pds2_ambit_per_numero( pds2_numero_ambit_text( (string) $s ) );

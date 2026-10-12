@@ -100,3 +100,9 @@
 	.um.pds2-v4 .pds2-v4-tl { grid-column: 2; justify-self: start; }
 }
 .um.pds2-v4-preguntes #pq { margin: 0; }
+
+/* Imatges dels apartats (importades de la web d'Història). Senceres, sense retallar, i dues una al costat de l'altra. */
+.um.pds2-v4 .um-fig.pds2-fig { margin: 22px 0; }
+.um.pds2-v4 .pds2-fig .pds2-fig-imgs { display: flex; gap: 10px; justify-content: center; align-items: flex-start; background: var(--surface-2); padding: 0; }
+.um.pds2-v4 .um-fig.um-photo.pds2-fig img { width: auto; max-width: 100%; height: auto; max-height: 480px; min-width: 0; object-fit: contain; cursor: zoom-in; }
+.um.pds2-v4 .um-fig.um-photo.pds2-fig-2 img { max-width: calc(50% - 5px); }
