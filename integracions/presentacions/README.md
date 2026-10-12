@@ -1,6 +1,8 @@
 # Presentacions dels temes
 
-Cada carpeta `tema-N/` té la presentació d'un tema, tal com es copia al servidor a `wp-content/uploads/pds-2batx/presentacions/tema-N/`.
+Cada carpeta `tema-N/` té la presentació d'un tema de 2n de Batxillerat, tal com es copia al servidor a `wp-content/uploads/pds-2batx/presentacions/tema-N/`.
+
+Les carpetes de les unitats de l'ESO i de 1r de Batxillerat (per exemple `1r-eso-grecia/`) es copien a `wp-content/uploads/pds-presentacions/unitat-ID/`, on ID és el número de la unitat al WordPress (L'Antiga Grècia és la 831). El connector `pds-presentacions-unitats` hi afegeix la pestanya «Presentació».
 
 - `la-...pptx` · Presentació editable. S'obre a Presentacions de Google (pujant-la a Google Drive), a PowerPoint i a LibreOffice.
 - `la-...pdf` · La mateixa presentació en PDF.
@@ -18,5 +20,5 @@ El contingut és el del tema publicat a professordesocials.cat. Les dates i xifr
 ## Eines
 
 - `eines/tema-1.js` · Tema 1 de 2n de Batxillerat (La Restauració). Les imatges són a `media/tema-1/` de la branca `main`.
-- `eines/1r-eso-grecia/build.js` · Mostra de L'Antiga Grècia (1r ESO, unitat 4), amb l'apartat 1. Té les imatges a `img/` i el dibuix de la capçalera (`hero-crop.png`).
+- `eines/1r-eso-grecia/build.js` · L'Antiga Grècia (1r ESO, unitat 4), completa i amb la versió visual (dibuixos, mapes, icones i fotos). Té les imatges a `img/`, les icones Tabler (MIT) a `img/ic/` i el dibuix de la capçalera (`hero-crop.png`). Els dibuixos i els mapes propis, amb els scripts que els generen, són a `dibuixos/`.
 - Tots dos fan servir `apply_theme.js` de l'habilitat de PowerPoint de Claude (la ruta canvia a cada sessió) i el paquet pptxgenjs. S'executen amb `NODE_PATH=$(npm root -g) node <fitxer> <sortida.pptx>`.

@@ -1,0 +1,35 @@
+/* Presentació de les unitats: visor de diapositives i descàrrega (mateix disseny que la dels temes de 2n) */
+.um .pdsp-v { margin: 18px 0 16px; }
+.um .pdsp-stage { position: relative; aspect-ratio: 16 / 9; background: var(--surface-2); border: 1px solid var(--outline); border-radius: var(--r); overflow: hidden; cursor: pointer; user-select: none; }
+.um .pdsp-stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.um .pdsp-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--outline); background: rgba(255,255,255,.92); color: var(--primary); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; box-shadow: 0 1px 3px rgba(60,64,67,.2); }
+.um .pdsp-nav:hover { background: #fff; }
+.um .pdsp-nav[disabled] { opacity: 0; pointer-events: none; }
+.um .pdsp-nav svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.um .pdsp-prev { left: 10px; }
+.um .pdsp-next { right: 10px; }
+.um .pdsp-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+.um .pdsp-tria { flex: 1 1 260px; min-width: 0; max-width: 100%; font: 400 15px/1.3 var(--font); color: var(--ink); border: 1px solid var(--outline); border-radius: var(--r); padding: 8px 10px; background: var(--surface); }
+.um .pdsp-comp { font-size: 14px; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.um .pdsp-bar .um-btn, .um .pdsp-btns .um-btn { border: 1px solid var(--outline); border-radius: 20px; padding: 8px 16px; background: var(--surface); color: var(--primary); font: 500 14px/1.2 var(--font); cursor: pointer; text-decoration: none; }
+.um .pdsp-bar .um-btn:hover, .um .pdsp-btns .um-btn:hover { background: var(--primary-soft); text-decoration: none; }
+.um .pdsp-notes p { white-space: pre-line; }
+.um .pdsp-btns { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.um .pdsp-btns .um-quiz-btn { margin: 0; }
+.um .pdsp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* Pantalla completa */
+.um .pdsp-v:fullscreen { background: #000; display: flex; flex-direction: column; justify-content: center; padding: 12px; margin: 0; }
+.um .pdsp-v:fullscreen .pdsp-stage { flex: 1 1 auto; aspect-ratio: auto; background: #000; border: 0; border-radius: 0; }
+.um .pdsp-v:fullscreen .pdsp-bar { justify-content: center; }
+.um .pdsp-v:fullscreen .pdsp-comp { color: #fff; }
+.um .pdsp-v.is-full { position: fixed; inset: 0; z-index: 9999; background: #000; display: flex; flex-direction: column; justify-content: center; padding: 12px; margin: 0; }
+.um .pdsp-v.is-full .pdsp-stage { aspect-ratio: auto; flex: 1 1 auto; background: #000; border: 0; border-radius: 0; }
+.um .pdsp-v.is-full .pdsp-comp { color: #fff; }
+html.pdsp-obert { overflow: hidden; }
+@media (max-width: 600px) {
+	.um .pdsp-nav { width: 36px; height: 36px; }
+	.um .pdsp-nav svg { width: 18px; height: 18px; }
+	.um .pdsp-prev { left: 6px; }
+	.um .pdsp-next { right: 6px; }
+}
+@media print { .um .pdsp-pres { display: none; } }
