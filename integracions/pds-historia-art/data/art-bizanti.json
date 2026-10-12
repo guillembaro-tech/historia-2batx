@@ -1,0 +1,196 @@
+{
+ "imatges": {
+  "ssext": {
+   "file": "Hagia Sophia Mars 2013.jpg",
+   "credit": "Foto d'Arild Vågen · CC BY-SA 3.0 · Wikimedia Commons",
+   "titol": "Santa Sofia de Constantinoble, exterior",
+   "alt": "Santa Sofia de Constantinoble, exterior"
+  },
+  "ssnau": {
+   "file": "Central nave, two of the semidomes and three of the archs where the main dome rests on - Hagia Sophia (8396671116).jpg",
+   "credit": "Foto de Jorge Láscar · CC BY 2.0 · Wikimedia Commons",
+   "titol": "Interior de Santa Sofia, la nau central amb les semicúpules",
+   "alt": "Interior de Santa Sofia, la nau central amb les semicúpules"
+  },
+  "ssplanta": {
+   "file": "Hagia-Sophia-Grundriss.jpg",
+   "credit": "Dibuix publicat a Grundriß der Kunstgeschichte, de Wilhelm Lübke i Max Semrau (1908) · Domini públic · Wikimedia Commons",
+   "titol": "Planta de Santa Sofia",
+   "alt": "Planta de Santa Sofia"
+  },
+  "sssec": {
+   "file": "Hagia-Sophia-Laengsschnitt.jpg",
+   "credit": "Dibuix publicat a Grundriß der Kunstgeschichte, de Wilhelm Lübke i Max Semrau (1908) · Domini públic · Wikimedia Commons",
+   "titol": "Secció longitudinal de Santa Sofia (reconstrucció)",
+   "alt": "Secció longitudinal de Santa Sofia (reconstrucció)"
+  },
+  "ssabsis": {
+   "file": "Apse mosaic Hagia Sophia Virgin and Child.jpg",
+   "credit": "Foto de Myrabella · Domini públic · Wikimedia Commons",
+   "titol": "Mosaic de la Mare de Déu amb el Nen a l'absis de Santa Sofia",
+   "alt": "Mosaic de la Mare de Déu amb el Nen a l'absis de Santa Sofia"
+  },
+  "ssdeesis": {
+   "file": "Deesis mosaic Hagia Sophia.jpg",
+   "credit": "Foto de Myrabella · Domini públic · Wikimedia Commons",
+   "titol": "Mosaic de la Deesis a Santa Sofia",
+   "alt": "Mosaic de la Deesis a Santa Sofia"
+  },
+  "justinia": {
+   "file": "Mosaic of Justinian I - San Vitale - Ravenna 2016.jpg",
+   "credit": "Foto de José Luiz · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Mosaic de Justinià i el seguici, Sant Vital de Ravenna",
+   "alt": "Mosaic de Justinià i el seguici, Sant Vital de Ravenna"
+  },
+  "sinai": {
+   "file": "Christ Icon Sinai 6th century.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Icona del Pantocràtor del monestir de Santa Caterina del Sinaí",
+   "alt": "Icona del Pantocràtor del monestir de Santa Caterina del Sinaí"
+  }
+ },
+ "estils": [
+  {
+   "slug": "art-bizanti",
+   "nom": "Art bizantí",
+   "pare": "edat-mitjana",
+   "ordre": 1,
+   "estil_titol": "L'art bizantí",
+   "estil_dates": "Segles IV a XV",
+   "estil_pregunta": "Com va expressar l'Imperi Romà d'Orient, amb cúpules, mosaics i icones, la unió entre el poder de l'emperador i la fe cristiana?",
+   "estil_resum": "L'art de l'Imperi Romà d'Orient, amb capital a Constantinoble, des del segle IV fins a la conquesta otomana del 1453. Esglésies de planta central cobertes amb cúpules, interiors revestits de marbres i de mosaics daurats, i icones que expressen alhora la fe cristiana i el poder de l'emperador.",
+   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> L'examen pot proposar Santa Sofia de Constantinoble (obra 13). No va sortir a la Sèrie 0 (2025) ni a la PAU 2026 (sèrie 1). Com en els altres estils, les preguntes demanen datar i contextualitzar l'obra, analitzar-ne la forma i l'estil, explicar-ne la funció i relacionar-la amb altres obres.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari de l'arquitectura i de les tècniques, com cúpula, petxina, mosaic o icona, o situar l'art bizantí en una línia del temps.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> L'art al servei del poder, com els mosaics de Justinià i Teodora, o els canvis d'ús del patrimoni, com el de Santa Sofia, que ha estat església, mesquita, museu i de nou mesquita.</p>",
+   "estil_seccions": [
+    {
+     "titol": "L'Imperi Romà d'Orient",
+     "llenguatge": "",
+     "pregunta": "Per què l'Imperi romà va sobreviure mil anys més a l'Orient, i quin paper hi tenia l'art?",
+     "cos": "<p>L'any 330, l'emperador <strong>Constantí</strong> va consagrar una nova capital a l'antiga ciutat grega de <strong>Bizanci</strong>, a la riba del Bòsfor, i li va donar el seu nom, <strong>Constantinoble</strong>, la ciutat de Constantí. D'aquí ve el nom d'<strong>art bizantí</strong>. El 395, Teodosi I va dividir l'imperi entre els seus dos fills, un per a l'Occident i un altre per a l'Orient. L'Imperi Romà d'Occident va caure el 476, però el d'Orient va durar gairebé mil anys més. Era un imperi cristià, de llengua grega, que es considerava l'hereu de Roma.</p><h3>Justinià i la primera edat d'or</h3><p>L'emperador <strong>Justinià</strong> (527-565) va voler reconstruir l'antic Imperi romà. Els seus exèrcits van conquerir Itàlia, el sud-est de la península Ibèrica i el nord d'Àfrica, que van prendre als vàndals. També va fer recopilar el dret romà en el <em>Corpus iuris civilis</em>. Va ser un gran constructor, i a la seva època es van construir Santa Sofia de Constantinoble (obra 13) i Sant Vital de Ravenna. L'Enciclopèdia Catalana anomena aquesta època la <strong>primera edat d'or</strong> de l'art bizantí.</p><h3>L'emperador i l'Església</h3><p>A Bizanci, el poder de l'emperador i el de l'Església estaven molt units. Aquesta relació s'ha anomenat <strong>cesaropapisme</strong>, un sistema en què el poder civil controla el poder religiós i hi intervé fins i tot en qüestions de doctrina. Els emperadors presidien concilis i decidien el nomenament dels patriarques, els caps de l'Església de Constantinoble. Alguns historiadors matisen el terme, perquè l'emperador no tenia poders de sacerdot. En tot cas, aquesta unió explica que l'art bizantí sigui alhora un art religiós i un art de poder.</p><h3>Mil anys d'història</h3><ul><li><strong>Iconoclàstia</strong> (726-843). Els emperadors prohibeixen les imatges religioses, amb una pausa entre el 787 i el 815.</li><li><strong>Segona edat d'or</strong> (de finals del segle IX al començament del XIII). Coincideix amb la dinastia macedònia, iniciada per Basili I el 867, i amb la dels Comnè.</li><li><strong>1054.</strong> Cisma que porta a la separació definitiva entre l'Església de Roma i l'Església d'Orient, l'ortodoxa.</li><li><strong>1204.</strong> Els croats de la quarta croada conquereixen Constantinoble, que no es recupera fins al 1261.</li><li><strong>Paleòlegs</strong> (1261-1453). Darrera etapa, amb un últim renaixement de l'art.</li><li><strong>29 de maig de 1453.</strong> El soldà otomà Mehmet II conquereix Constantinoble.</li></ul><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Imperi Romà d'Orient · Constantinoble · Justinià · cesaropapisme · patriarca · iconoclàstia · cisma · ortodòxia.</p></div>"
+    },
+    {
+     "titol": "L'arquitectura bizantina",
+     "llenguatge": "arquitectura",
+     "pregunta": "Com es pot posar una cúpula rodona damunt d'un espai quadrat?",
+     "cos": "<p>L'arquitectura bizantina posa la tradició constructiva romana al servei del culte cristià. Santa Sofia, per exemple, és de maó i morter, com molts edificis romans. L'element més característic és la <strong>cúpula</strong>.</p><ul><li><strong>Planta central.</strong> L'espai s'organitza al voltant d'un centre, sovint cobert amb una cúpula. La planta pot ser octogonal o de <strong>creu grega</strong>, amb quatre braços iguals.</li><li><strong>Cúpula sobre petxines.</strong> Per posar una cúpula, que és rodona, sobre un espai quadrat, cal un element de transició. La <strong>petxina</strong> és cadascun dels quatre triangles corbats que hi ha entre els arcs i sobre els quals descansa l'anell de la cúpula. L'altra solució és la <strong>trompa</strong>, un petit arc o volta que fa de pont a cada angle.</li><li><strong>Interiors rics.</strong> Columnes i plaques de marbre, paviments de pedres de colors i mosaics a les voltes.</li><li><strong>Creu inscrita.</strong> Després de la iconoclàstia, l'església habitual és de creu grega inscrita en un quadrat, amb una cúpula al centre.</li></ul>[[img:sssec||Secció de Santa Sofia (reconstrucció publicada el 1908).|La gran cúpula, sobre petxines, i les semicúpules que la prolonguen a banda i banda.]]<h3>Alguns exemples</h3><p>L'església de <strong>Sant Vital de Ravenna</strong>, començada cap al 525-527 i consagrada el 547, té planta octogonal. Els monuments paleocristians de Ravenna són Patrimoni Mundial des del 1996. L'església de <strong>Sant Marc de Venècia</strong>, començada cap al 1063, té planta de creu grega amb cinc cúpules, a imitació de l'església dels Sants Apòstols de Constantinoble. La gran obra de l'arquitectura bizantina és <strong>Santa Sofia</strong> (obra 13).</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Planta central · creu grega · creu inscrita · cúpula · petxina · trompa · semicúpula · maó · marbre.</p></div>"
+    },
+    {
+     "titol": "Mosaics i icones",
+     "llenguatge": "pintura",
+     "pregunta": "Per què les figures bizantines semblen flotar en un espai d'or?",
+     "cos": "<p>A Bizanci, les imatges tenen un paper molt important en la vida religiosa. Les dues grans tècniques són el <strong>mosaic</strong>, a les parets i les voltes de les esglésies, i la <strong>icona</strong>, pintada sobre fusta.</p><h3>El mosaic</h3><p>El mosaic es fa amb <strong>tessel·les</strong>, petites peces de vidre de colors o de vidre amb una làmina d'or, que reflecteixen la llum. Les figures són <strong>frontals</strong>, esquemàtiques i abstractes, i se situen sobre un <strong>fons daurat</strong> pla, sense paisatge ni profunditat. Aquest fons d'or no representa un lloc real, sinó un espai diví, celestial.</p>[[img:justinia|dreta|Justinià i el seguici. Sant Vital de Ravenna (consagrada el 547).|L'emperador porta una ofrena, envoltat de soldats, de funcionaris i del bisbe Maximià.]]<p>Els mosaics de Sant Vital de Ravenna mostren l'emperador <strong>Justinià</strong> i l'emperadriu <strong>Teodora</strong> portant ofrenes. Els va encarregar el bisbe Maximià, que va consagrar l'església el 547. Justinià hi apareix amb autoritat religiosa, política i militar, com un emperador escollit per Déu.</p><h3>Les icones</h3><p>La paraula <strong>icona</strong> ve del grec <em>eikón</em>, que vol dir 'imatge'. És una pintura sobre una taula de fusta, feta amb <strong>encàustica</strong> (una tècnica de colors barrejats amb cera) o amb <strong>tremp</strong> d'ou. Una de les més antigues és el <strong>Crist Pantocràtor</strong> del monestir de Santa Caterina del Sinaí, del segle VI. El terme <strong>Pantocràtor</strong>, que vol dir 'totpoderós', designa Crist com a senyor de l'univers, en actitud de beneir. A l'art bizantí sovint es representa de mig cos.</p>[[img:sinai||Crist Pantocràtor. Monestir de Santa Caterina del Sinaí (segle VI).|Encàustica sobre taula, 84 × 45,5 cm.]]<h3>La iconoclàstia</h3><p>El 726, l'emperador Lleó III es va manifestar contra el culte a les imatges, i el 730 en va prohibir l'ús. És la <strong>iconoclàstia</strong>, que vol dir 'trencament d'imatges'. El 787, el segon concili de Nicea va tornar a permetre les icones, però el 815 es van prohibir de nou. El 843, l'emperadriu Teodora, vídua de l'emperador Teòfil, en va restablir definitivament el culte. L'Església ortodoxa encara ho celebra amb la festa de l'Ortodòxia.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Mosaic · tessel·la · fons daurat · frontalitat · icona · encàustica · tremp · Pantocràtor · iconoclàstia.</p></div>"
+    },
+    {
+     "titol": "L'herència de Bizanci",
+     "llenguatge": "",
+     "pregunta": "Per què trobem models bizantins a Rússia, a Venècia, a Còrdova i fins i tot al Pirineu?",
+     "cos": "<p>L'art bizantí no s'acaba amb la caiguda de Constantinoble, ni es queda dins de les fronteres de l'imperi.</p><ul><li><strong>Al món ortodox.</strong> Es va estendre per Rússia i pels Balcans. A Rússia, l'estil bizantí es va mantenir després del 1453, sobretot en les icones.</li><li><strong>Al romànic.</strong> Segons l'Enciclopèdia Catalana, l'art bizantí es va adaptar a la pintura romànica occidental dels segles XI a XIII. El Crist en majestat de <strong>Sant Climent de Taüll</strong> (obra 17) és un Pantocràtor, però de cos sencer i assegut dins d'una màndorla, com és habitual en el romànic.</li><li><strong>A Itàlia.</strong> Pintors com Duccio, a Siena, encara feien servir el fons d'or de la pintura bizantina. <strong>Giotto</strong> (obra 22) va donar volum i espai a les figures i, als frescos de Pàdua, va substituir el fons d'or pel blau del cel.</li><li><strong>A l'art islàmic.</strong> Segons les fonts àrabs, els mosaics de la Gran Mesquita de Damasc els van fer artesans bizantins. Segons les cròniques, els del mihrab de la <strong>Mesquita de Còrdova</strong> (obra 14) es van fer amb l'ajuda d'un artesà enviat per l'emperador bizantí.</li><li><strong>A les mesquites otomanes.</strong> Segons la UNESCO, Santa Sofia es va convertir en el model d'una família d'esglésies i, més tard, de mesquites, com la Süleymaniye (1550-1557), de l'arquitecte Sinan.</li></ul>"
+    }
+   ],
+   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, <em>Exemples d'exercicis PAU 2025</em>, <em>Sèrie 0 (2025)</em> i examen de la PAU 2026 (sèrie 1).</li><li>Gran Enciclopèdia Catalana. Articles «art bizantí», «imperi bizantí», «Constantinoble», «Justinià I», «cesaropapisme», «iconoclàstia», «petxina» i «pantocràtor».</li><li>Encyclopaedia Britannica. Articles «Byzantine architecture», «pendentive», «caesaropapism» i «Iconoclastic Controversy».</li><li>The Metropolitan Museum of Art. <em>Heilbrunn Timeline of Art History</em>, «Byzantium (ca. 330-1453)».</li><li>Smarthistory. <em>Smarthistory Guide to Byzantine Art</em> i articles «San Vitale» i «Saint Mark's Basilica, Venice».</li><li>UNESCO. Fitxes del Patrimoni Mundial «Early Christian Monuments of Ravenna» i «Historic Areas of Istanbul».</li><li>National Gallery of Art (Washington). «Byzantine Art and Painting in Italy during the 1200s and 1300s».</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
+  }
+ ],
+ "obres": [
+  {
+   "origen": "hart-13",
+   "numero": 13,
+   "titol": "Santa Sofia de Constantinoble",
+   "slug": "santa-sofia-de-constantinoble",
+   "estil": "art-bizanti",
+   "llenguatge": "arquitectura",
+   "miniatura": "ssext",
+   "autor": "Antemi de Tral·les i Isidor de Milet",
+   "dates": "532-537",
+   "lloc": "Istanbul (Turquia)",
+   "resum": "Gran església de Constantinoble que l'emperador **Justinià** va fer construir entre el **532** i el **537**. Combina la planta central i la basilical. Una enorme **cúpula**, d'uns 31-32 metres de diàmetre, descansa sobre quatre **petxines**, i dues **semicúpules** allarguen l'espai. Les **40 finestres** de la base fan que la cúpula sembli suspesa sobre un anell de llum. Ha estat església, mesquita i museu, i des del 2020 torna a ser mesquita.",
+   "fitxa": [
+    [
+     "Localització",
+     "Istanbul (Turquia), l'antiga Constantinoble."
+    ],
+    [
+     "Cronologia",
+     "Comença el **23 de febrer de 532** i s'inaugura el **27 de desembre de 537**. La primera cúpula cau el 558, i la nova, més alta, s'acaba el 562."
+    ],
+    [
+     "Autors",
+     "**Antemi de Tral·les** i **Isidor de Milet**, matemàtics i enginyers. La segona cúpula és d'Isidor el Jove."
+    ],
+    [
+     "Promotor",
+     "L'emperador **Justinià**."
+    ],
+    [
+     "Materials",
+     "Maó i morter, excepte els pilars principals. A l'interior, marbres de colors i mosaics."
+    ],
+    [
+     "Estil",
+     "Art bizantí (primera edat d'or)."
+    ],
+    [
+     "Patrimoni",
+     "Patrimoni Mundial de la UNESCO des del 1985, dins de les Àrees històriques d'Istanbul."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "ssext",
+     "seccio": "inici",
+     "titol": "L'exterior",
+     "text": "La gran cúpula, les semicúpules i els contraforts. Els minarets es van afegir després del 1453."
+    },
+    {
+     "clau": "ssnau",
+     "seccio": "inici",
+     "titol": "La nau central",
+     "text": "Les semicúpules i els arcs sobre els quals descansa la cúpula. A les parets, els medallons amb cal·ligrafia de l'època otomana."
+    },
+    {
+     "clau": "ssplanta",
+     "seccio": "analisi",
+     "titol": "Planta",
+     "text": "A la meitat de dalt, el pis de les tribunes, i a la de baix, la planta baixa. Al centre, el cercle de la cúpula."
+    },
+    {
+     "clau": "sssec",
+     "seccio": "analisi",
+     "titol": "Secció longitudinal (reconstrucció)",
+     "text": "La cúpula, les semicúpules i les exedres que s'esglaonen cap avall."
+    },
+    {
+     "clau": "ssabsis",
+     "seccio": "destacat",
+     "titol": "Mare de Déu amb el Nen (cap al 867)",
+     "text": "Mosaic de l'absis. El patriarca Foci el va presentar com a signe del final de la iconoclàstia."
+    },
+    {
+     "clau": "ssdeesis",
+     "seccio": "destacat",
+     "titol": "Deesis (després del 1261)",
+     "text": "Crist entre la Mare de Déu i sant Joan Baptista, a la galeria sud."
+    }
+   ],
+   "q_context": "Per què Justinià va fer construir una nova gran església, i com es va poder acabar en menys de sis anys?",
+   "context": "<p>Les obres van començar el <strong>23 de febrer de 532</strong> i l'església es va inaugurar el <strong>27 de desembre de 537</strong>, en menys de sis anys. Segons l'Enciclopèdia Catalana, hi van treballar uns 10.000 obrers. A la PAU es pot datar al segle VI, a l'època de Justinià.</p><h3>Dues esglésies anteriors i una revolta</h3><p>En aquest lloc ja hi havia hagut dues esglésies. La primera es va consagrar el 360, en temps de l'emperador Constanci II, i la segona, en temps de Teodosi II, el 415. Aquesta segona església es va cremar el 532 durant la <strong>revolta de Nika</strong>, que va causar una gran destrucció i moltes morts a Constantinoble. Justinià la va substituir per un edifici nou, molt més gran i més ric.</p><h3>Un imperi romà i cristià</h3><p><strong>Justinià</strong> (527-565) volia reconstruir l'antic Imperi romà. Va reconquerir el nord d'Àfrica, Itàlia i el sud-est de la península Ibèrica, i va fer recopilar el dret romà en el <em>Corpus iuris civilis</em>. A Bizanci, l'emperador i l'Església estaven molt units, una relació que s'ha anomenat <strong>cesaropapisme</strong>. Santa Sofia havia de mostrar aquesta unió i la grandesa de la capital de l'imperi.</p><p>Mentrestant, el territori de l'antic Imperi Romà d'Occident s'havia dividit en regnes germànics, com el dels visigots a Hispània.</p>",
+   "q_analisi": "Com van aconseguir els arquitectes cobrir un espai tan gran amb una cúpula i omplir-lo de llum?",
+   "analisi": "<h3>La planta</h3><p>Santa Sofia combina dues idees. D'una banda, la <strong>planta central</strong>, organitzada al voltant de la gran cúpula. De l'altra, la <strong>planta basilical</strong>, allargada. Dues <strong>semicúpules</strong>, a l'est i a l'oest, prolonguen l'espai central, i als angles s'obren <strong>exedres</strong>, que són nínxols semicirculars. Les naus laterals i les <strong>tribunes</strong> del pis de dalt queden separades de la nau central per columnes, algunes de les quals, segons la tradició, procedien d'edificis antics. A l'entrada hi ha el <strong>nàrtex</strong>, un vestíbul.</p><h3>L'estructura</h3><p>La cúpula descansa sobre <strong>quatre grans pilars</strong> i <strong>quatre arcs</strong>. Entre els arcs, quatre <strong>petxines</strong> fan el pas del quadrat de la base al cercle de la cúpula. Les semicúpules i els contraforts recullen l'empenta de la cúpula. La cúpula fa entre 31 i 32 metres de diàmetre, segons on es mesuri, perquè és lleugerament el·líptica.</p><p>A la base de la cúpula s'obren <strong>40 finestres</strong> molt juntes. La llum que hi entra fa que la cúpula sembli separada de l'edifici. L'historiador <strong>Procopi de Cesarea</strong>, contemporani de Justinià, escrivia que no semblava recolzar-se sobre l'obra, sinó penjar del cel.</p><h3>Els materials</h3><p>L'edifici segueix la tradició romana i és de <strong>maó</strong> i <strong>morter</strong>, excepte els pilars principals. L'interior es revestia de <strong>marbres</strong> de colors portats de diversos llocs de l'imperi, i les voltes, de <strong>mosaics</strong> daurats. Al principi, la decoració era sobretot de creus i motius sense figures.</p><h3>L'estil</h3><p>És <strong>art bizantí</strong> de la primera edat d'or, l'època de Justinià. Segons la UNESCO, Santa Sofia es va convertir en el model d'una família sencera d'esglésies i, més tard, de mesquites.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Planta central · planta basilical · cúpula · petxina · semicúpula · exedra · pilar · contrafort · tribuna · nàrtex · marbre · mosaic.</p></div>",
+   "q_funcio": "Per a què servia Santa Sofia i què havia d'expressar?",
+   "funcio": "<p>Era la <strong>catedral</strong> de Constantinoble, l'església del <strong>patriarca</strong>, i el principal santuari de l'imperi. L'Enciclopèdia Catalana diu que s'anomenava la Gran Església i que era el símbol de tota l'ortodòxia.</p><p>L'edifici expressava la unió entre l'emperador i l'Església, i la riquesa i el poder de Justinià. La llum que entra per les finestres, reflectida en els marbres i en l'or dels mosaics, havia de fer pensar en el cel. Procopi escrivia que semblava que la llum no venia de fora, sinó que naixia a dins de l'església.</p><p>Una llegenda escrita uns tres segles més tard posa en boca de Justinià la frase «Salomó, t'he vençut», amb què l'emperador es comparava amb el rei que havia construït el temple de Jerusalem. No és una frase documentada a l'època, però mostra com es recordava l'ambició de l'emperador.</p>",
+   "destacat_titol": "Església, mesquita, museu i mesquita",
+   "q_destacat": "Què li ha passat a Santa Sofia en quinze segles?",
+   "destacat": "<ul><li>El <strong>558</strong>, després de diversos terratrèmols, la primera cúpula es va ensorrar. <strong>Isidor el Jove</strong>, nebot d'un dels arquitectes, en va fer una de nova, més alta, que es va acabar el <strong>562</strong>.</li><li>Després de la <strong>iconoclàstia</strong> s'hi van posar mosaics amb figures. El de la Mare de Déu amb el Nen de l'absis es va acabar cap al <strong>867</strong>. El de la <strong>Deesis</strong>, amb Crist entre la Mare de Déu i sant Joan Baptista, és de poc després del <strong>1261</strong>.</li><li>El <strong>1204</strong>, els croats de la quarta croada van saquejar la ciutat i també l'església, que va ser catedral catòlica llatina fins al 1261.</li><li>El <strong>1453</strong>, després de la conquesta de <strong>Mehmet II</strong>, es va convertir en <strong>mesquita</strong> i s'hi van afegir <strong>minarets</strong>. Els mosaics amb figures es van anar cobrint de guix durant l'època otomana. Al segle XVI, l'arquitecte <strong>Sinan</strong> en va reforçar els contraforts.</li><li>El <strong>1934</strong>, el govern de la República de Turquia la va convertir en <strong>museu</strong>, que es va obrir el 1935. Als anys trenta del segle XX se'n van descobrir i restaurar els mosaics.</li><li>El <strong>10 de juliol de 2020</strong>, un tribunal turc va anul·lar aquella decisió i, el mateix dia, un decret del president Recep Tayyip Erdoğan la va tornar a convertir en <strong>mesquita</strong>. La UNESCO va lamentar que el canvi es fes sense diàleg previ.</li></ul>",
+   "q_relacio": "Amb quines obres de la llista la pots comparar?",
+   "relacio": "<ul><li><strong>Obra 14. Mesquita de Còrdova.</strong> Dos grans edificis religiosos de l'edat mitjana que han passat d'un culte a un altre. Santa Sofia concentra l'espai sota una gran cúpula central. A la Mesquita de Còrdova, en canvi, la sala d'oració s'estén en horitzontal, com un bosc de columnes. Totes dues tenen mosaics daurats d'estil bizantí.</li><li><strong>Obra 17. Frescos de Sant Climent de Taüll.</strong> El Crist en majestat romànic és hereu del <strong>Pantocràtor</strong> bizantí. A l'art bizantí, el Pantocràtor sovint es representa de mig cos, mentre que a Taüll és de cos sencer i està assegut dins d'una màndorla.</li></ul><h3>Altres obres de l'art bizantí (per a l'apartat d de la PAU)</h3><ul><li><strong>Edificis.</strong> Sant Vital de Ravenna i Sant Marc de Venècia.</li><li><strong>Arts visuals.</strong> Els mosaics de Justinià i Teodora a Sant Vital de Ravenna i la icona del Crist Pantocràtor del monestir de Santa Caterina del Sinaí.</li></ul>",
+   "compara": [
+    "hart-14",
+    "hart-17"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Assenyalar en una secció la cúpula, les petxines, les semicúpules i els contraforts, o definir <em>petxina</em>, <em>mosaic</em> o <em>icona</em>.</p><p><strong>Exercici 3.</strong> L'art al servei del poder. Els mosaics de Justinià i Teodora a Sant Vital de Ravenna presenten l'emperador amb autoritat religiosa, política i militar.</p><p><strong>Exercici 4.</strong> Els canvis d'ús del patrimoni. Santa Sofia ha estat església, mesquita, museu i de nou mesquita.</p>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Santa Sofia de Constantinoble (exterior, interior de la nau i secció).</p><p>a) Dateu l'obra i situeu-la en el seu context històric i cultural. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de l'edifici i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu quina era la funció de l'obra i com l'arquitectura i la llum expressen el poder de l'emperador i la idea del sagrat. [1 punt]</p><p>d) Relacioneu Santa Sofia amb altres obres de l'art bizantí. Expliqueu-ne una semblança i una diferència. [1 punt]</p>",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Construïda entre el 532 i el 537, al segle VI, en temps de l'emperador Justinià. Constantinoble era la capital de l'Imperi Romà d'Orient. Justinià volia reconstruir l'Imperi romà. Va reconquerir el nord d'Àfrica, Itàlia i el sud-est de la península Ibèrica i va fer recopilar el dret romà. El poder de l'emperador i el de l'Església estaven molt units (cesaropapisme). L'església anterior s'havia cremat durant la revolta de Nika (532).</p><p><strong>b)</strong> Combina la planta central i la basilical. Una gran cúpula d'uns 31-32 metres de diàmetre descansa sobre quatre pilars, quatre arcs i quatre petxines, i dues semicúpules amb exedres allarguen l'espai. A la base de la cúpula hi ha 40 finestres. Té naus laterals, tribunes i nàrtex. És de maó i morter, amb marbres i mosaics a l'interior. És art bizantí, de la primera edat d'or.</p><p><strong>c)</strong> Era la catedral de Constantinoble, l'església del patriarca i el principal santuari de l'imperi. Mostrava la unió entre l'emperador i l'Església. Les dimensions de la cúpula i els marbres portats de diversos llocs de l'imperi expressaven la riquesa i el poder de Justinià. La llum de les finestres, reflectida en els marbres i l'or, feia que la cúpula semblés penjada del cel, com escrivia Procopi, i convertia l'interior en una imatge del cel.</p><p><strong>d)</strong> Sant Vital de Ravenna, de la mateixa època, també té una planta central, octogonal, i mosaics daurats, com els de Justinià i Teodora. Sant Marc de Venècia (cap al 1063) té planta de creu grega amb cinc cúpules. La diferència és que Santa Sofia combina la planta central amb la basilical en una escala molt més gran. Segons la UNESCO, va ser el model d'una família d'esglésies i, més tard, de mesquites otomanes com la Süleymaniye.</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>Santa Sofia es va obrir com a museu el 1935 i, el 2020, el govern turc la va tornar a convertir en mesquita. L'edifici forma part del Patrimoni Mundial de la UNESCO des del 1985.</p><ol><li>Expliqueu quins problemes pot plantejar que un monument declarat Patrimoni Mundial canviï d'ús. Tingueu en compte la conservació, l'accés dels visitants i el valor que té per a comunitats diferents. [1 punt]</li><li>Proposeu com es pot fer compatible l'ús religiós d'un edifici amb la visita turística i amb la conservació de les obres d'art que conté. [1 punt]</li></ol>",
+   "fonts": "<ul><li>Gran Enciclopèdia Catalana. Articles «Santa Sofia», «Constantinoble», «Justinià I» i «art bizantí».</li><li>The Metropolitan Museum of Art. <em>Heilbrunn Timeline of Art History</em>, «Hagia Sophia, 532-37».</li><li>UNESCO. Fitxa del Patrimoni Mundial «Historic Areas of Istanbul» i comunicat del 10 de juliol de 2020.</li><li>Smarthistory. «Hagia Sophia, Istanbul» i <em>Smarthistory Guide to Byzantine Art</em>, capítols de R. Ousterhout i E. Freeman.</li><li>Procopi de Cesarea. <em>Sobre els edificis</em>, llibre I, capítol 1 (traduccions de C. Mango i de H. B. Dewing).</li><li>C. Mango. <em>The Art of the Byzantine Empire 312-1453. Sources and Documents</em> (pàgines del projecte Mapping Gothic, Columbia University).</li><li>Encyclopaedia Britannica. Articles «Anthemius of Tralles» i «pendentive».</li><li>Associated Press (PBS NewsHour), 10 de juliol de 2020. «Turkey's president formally makes Hagia Sophia a mosque».</li></ul>"
+  }
+ ]
+}

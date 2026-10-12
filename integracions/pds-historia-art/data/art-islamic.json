@@ -1,0 +1,214 @@
+{
+ "imatges": {
+  "cordarcs": {
+   "file": "Córdoba - Mezquita-Catedral - Interior - 10.jpg",
+   "credit": "Foto de Benjamin Smith · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Arcs dobles de la sala d'oració de la Mesquita de Còrdova",
+   "alt": "Arcs dobles de la sala d'oració de la Mesquita de Còrdova"
+  },
+  "cordaeri": {
+   "file": "Mezquita de Córdoba desde el aire (Córdoba, España).jpg",
+   "credit": "Foto de Toni Castillo Quero · CC BY-SA 2.0 · Wikimedia Commons",
+   "titol": "Vista aèria de la Mesquita-Catedral de Còrdova",
+   "alt": "Vista aèria de la Mesquita-Catedral de Còrdova"
+  },
+  "cordplanta": {
+   "file": "Plano de la Mezquita de Córdoba (revised with labels).png",
+   "credit": "Plànol d'Azahara22, revisat per R Prazeres · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Planta de la Mesquita de Còrdova amb les ampliacions",
+   "alt": "Planta de la Mesquita de Còrdova amb les ampliacions"
+  },
+  "cordmihrab": {
+   "file": "Mirhab mezquita cordoba.jpg",
+   "credit": "Foto de Jebulon · Domini públic · Wikimedia Commons",
+   "titol": "Mihrab de la Mesquita de Còrdova",
+   "alt": "Mihrab de la Mesquita de Còrdova"
+  },
+  "cordcupula": {
+   "file": "Cordoba, la Mezquita - Cúpula de la Maqsura.jpg",
+   "credit": "Foto de Ruggero Poggianella · CC BY-SA 2.0 · Wikimedia Commons",
+   "titol": "Cúpula de la maqsura de la Mesquita de Còrdova",
+   "alt": "Cúpula de la maqsura de la Mesquita de Còrdova"
+  },
+  "cordcrucer": {
+   "file": "Crucero de la mezquita-catedral de Córdoba.jpg",
+   "credit": "Foto de Rodelar · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Creuer renaixentista de la catedral de Còrdova",
+   "alt": "Creuer renaixentista de la catedral de Còrdova"
+  },
+  "roca": {
+   "file": "Jerusalem-2013(2)-Temple Mount-Dome of the Rock (SE exposure).jpg",
+   "credit": "Foto de Godot13 · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Cúpula de la Roca, Jerusalem",
+   "alt": "Cúpula de la Roca, Jerusalem"
+  },
+  "damasc": {
+   "file": "The Umayyad Mosque, Courtyard, Damascus, Syria.jpg",
+   "credit": "Foto de Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons",
+   "titol": "Pati de la Gran Mesquita de Damasc",
+   "alt": "Pati de la Gran Mesquita de Damasc"
+  },
+  "aljaferia": {
+   "file": "Arquerías en el Palacio de la Aljafería (Zaragoza).jpg",
+   "credit": "Foto de José Luis Filpo Cabana · CC BY 4.0 · Wikimedia Commons",
+   "titol": "Arcs del palau de l'Aljaferia, Saragossa",
+   "alt": "Arcs del palau de l'Aljaferia, Saragossa"
+  },
+  "azahara": {
+   "file": "Hall of Abd al-Rahman III - Madinat al-Zahra.JPG",
+   "credit": "Foto de José Luiz · CC BY-SA 3.0 · Wikimedia Commons",
+   "titol": "Saló d'Abd al-Rahman III a Madinat al-Zahra",
+   "alt": "Saló d'Abd al-Rahman III a Madinat al-Zahra"
+  },
+  "lleons": {
+   "file": "Columns arches Patio de los Leones, Alhambra, Granada, Andalusia, Spain.jpg",
+   "credit": "Foto de Jebulon · CC0 · Wikimedia Commons",
+   "titol": "Columnes i arcs del Pati dels Lleons, Alhambra",
+   "alt": "Columnes i arcs del Pati dels Lleons, Alhambra"
+  }
+ },
+ "estils": [
+  {
+   "slug": "art-islamic",
+   "nom": "Art islàmic",
+   "pare": "edat-mitjana",
+   "ordre": 2,
+   "estil_titol": "L'art islàmic",
+   "estil_dates": "Segles VII a XV",
+   "estil_pregunta": "Com va crear l'islam un art propi, sense imatges als espais religiosos, que va arribar de Damasc fins a Còrdova i Granada?",
+   "estil_resum": "L'art que neix amb l'expansió de l'islam a partir del segle VII i que, a la península Ibèrica, es desenvolupa a al-Andalus entre el 711 i el 1492. Mesquites amb sales de columnes, arcs de ferradura i lobulats, i una decoració de cal·ligrafia, motius vegetals i formes geomètriques, sense figures als espais religiosos.",
+   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> L'examen pot proposar la Mesquita de Còrdova (obra 14). No va sortir a la Sèrie 0 (2025) ni a la PAU 2026 (sèrie 1). Les preguntes demanen datar i contextualitzar l'obra, analitzar-ne la forma i l'estil, explicar-ne la funció i relacionar-la amb altres obres.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari, com les parts d'una mesquita (mihrab, quibla, minaret) o els tipus d'arc, o situar l'art islàmic en una línia del temps.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> La convivència i els intercanvis entre cultures, el paper de l'escriptura a l'art islàmic, o la gestió d'un monument amb diverses capes religioses i molts visitants, com la Mesquita-Catedral de Còrdova o l'Alhambra.</p>",
+   "estil_seccions": [
+    {
+     "titol": "L'islam i la seva expansió",
+     "llenguatge": "",
+     "pregunta": "Com es va formar, en poc més d'un segle, un imperi que anava de l'Atlàntic fins a l'Indus?",
+     "cos": "<p>L'islam va néixer a l'Aràbia del segle VII amb la predicació de <strong>Mahoma</strong>. El 622, Mahoma va emigrar de la Meca a Medina. Aquesta emigració, l'<strong>Hègira</strong>, marca el començament del calendari musulmà. Després de la seva mort, els seus successors, els <strong>califes</strong>, van estendre l'islam amb una rapidesa extraordinària.</p><ul><li><strong>Califat omeia</strong> (661-750). La capital és <strong>Damasc</strong>, i l'imperi s'estén des de l'oceà Atlàntic fins al riu Indus.</li><li><strong>Califat abbàssida</strong> (750-1258). Els abbàssides enderroquen els omeies, traslladen la capital a <strong>Bagdad</strong> i governen fins a la invasió mongola del 1258.</li></ul><p>Els musulmans van conquerir territoris que havien estat de l'Imperi bizantí i de l'Imperi persa, i el seu art en va aprofitar les tradicions. Els primers grans edificis són de l'època omeia.</p>[[img:roca|dreta|Cúpula de la Roca, Jerusalem (691-692).|Un santuari amb una cúpula daurada, que segueix el model dels edificis bizantins.]]<ul><li><strong>Cúpula de la Roca</strong>, a Jerusalem, acabada el 691-692 en temps del califa Abd al-Malik. No és una mesquita, sinó un santuari.</li><li><strong>Gran Mesquita de Damasc</strong>, construïda entre el 705 i el 715 pel califa al-Walid I. És la mesquita de pedra més antiga que es conserva. Segons les fonts àrabs, els mosaics els van fer artesans bizantins, tot i que avui alguns historiadors ho discuteixen.</li></ul><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Islam · Mahoma · Hègira · califa · omeies · abbàssides · Damasc · Bagdad.</p></div>"
+    },
+    {
+     "titol": "La mesquita",
+     "llenguatge": "arquitectura",
+     "pregunta": "Com és un edifici pensat perquè tota una comunitat pregui alhora mirant cap a la Meca?",
+     "cos": "<p>La <strong>mesquita</strong> és el lloc de l'oració comunitària. La mesquita principal d'una ciutat, on es fa l'oració del divendres, ha de tenir una gran sala d'oració per acollir tota la comunitat. Moltes de les primeres mesquites són <strong>hipòstiles</strong>, és a dir, de moltes columnes.</p><ul><li><strong>Quibla.</strong> La direcció de la Meca, cap on preguen tots els musulmans. El <strong>mur de la quibla</strong> és la paret que hi mira.</li><li><strong>Mihrab.</strong> Nínxol al mur de la quibla que n'indica la direcció.</li><li><strong>Minbar.</strong> La trona des d'on es pronuncia el sermó.</li><li><strong>Maqsura.</strong> Espai tancat al costat del mihrab, reservat al governant.</li><li><strong>Sala d'oració.</strong> L'espai cobert on preguen els fidels.</li><li><strong>Pati.</strong> Espai obert davant de la sala d'oració, amb una font per a les <strong>ablucions</strong>, la purificació abans de pregar.</li><li><strong>Minaret.</strong> Torre des d'on es crida a l'oració.</li></ul>[[img:damasc||Pati de la Gran Mesquita de Damasc (705-715).|El gran pati, envoltat de porxos.]]<div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Mesquita · mesquita hipòstila · quibla · mihrab · minbar · maqsura · sala d'oració · pati · ablució · minaret.</p></div>"
+    },
+    {
+     "titol": "Decoració, arcs i cúpules",
+     "llenguatge": "arquitectura",
+     "pregunta": "Per què l'art islàmic omple les parets de lletres, plantes i formes geomètriques?",
+     "cos": "<h3>Un art sense imatges religioses</h3><p>A l'art religiós islàmic, i sobretot a les mesquites, no hi ha figures humanes ni d'animals. És l'<strong>aniconisme</strong>. L'Alcorà condemna la idolatria, i són alguns textos de la tradició, els <em>hadits</em>, els que rebutgen més clarament les imatges. No és una prohibició absoluta, perquè a l'art profà, als palaus o als objectes, les figures sí que hi apareixen.</p><h3>La decoració</h3><ul><li><strong>Cal·ligrafia.</strong> L'escriptura de textos de l'Alcorà i d'inscripcions. És l'element més valorat de l'art islàmic.</li><li><strong>Atauric.</strong> Decoració de motius vegetals més o menys estilitzats.</li><li><strong>Llaceria.</strong> Motius geomètrics enllaçats entre ells.</li><li><strong>Mocàrabs.</strong> Decoració formada per prismes acoblats i tallats per l'extrem inferior, a les voltes i als sostres. Els de l'Alhambra de Granada són molt coneguts.</li></ul><p>Els materials són sovint senzills, com el <strong>maó</strong> o el <strong>guix</strong>, però les parets es cobreixen d'una decoració molt rica, de guix tallat i de rajoles, com si fos un tapís.</p><h3>Arcs i cúpules</h3><ul><li><strong>Arc de ferradura.</strong> Arc que es tanca per baix, més enllà de la meitat del cercle. Ja era habitual a l'arquitectura dels visigots, i l'art d'al-Andalus el va fer seu.</li><li><strong>Arc lobulat.</strong> Arc amb l'intradós format per petits arcs o lòbuls.</li><li><strong>Arcs entrecreuats.</strong> Arcs que es creuen entre ells, sovint amb una funció decorativa.</li><li><strong>Cúpula de nervis.</strong> Cúpula amb nervis o arcs que s'entrecreuen, com les de la Mesquita de Còrdova.</li></ul>[[img:aljaferia|dreta|Palau de l'Aljaferia, Saragossa (segona meitat del segle XI).|Arcs mixtilinis i entrecreuats, decoratius.]]<div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Aniconisme · cal·ligrafia · atauric · llaceria · mocàrab · guix · arc de ferradura · arc lobulat · arcs entrecreuats · cúpula de nervis.</p></div>"
+    },
+    {
+     "titol": "L'art d'al-Andalus",
+     "llenguatge": "",
+     "pregunta": "Què queda a la península Ibèrica de gairebé vuit segles d'al-Andalus?",
+     "cos": "<p>El <strong>711</strong>, un exèrcit d'àrabs i berbers va desembarcar a la península Ibèrica i en pocs anys en va conquerir la major part. El territori sota domini musulmà es va anomenar <strong>al-Andalus</strong>, i <strong>Còrdova</strong> en va ser la capital des del 716.</p><ul><li><strong>Emirat independent</strong> (756-929). <strong>Abd al-Rahman I</strong>, de la família omeia, la dinastia que havia governat a Damasc, es proclama emir a Còrdova. Comença la Mesquita de Còrdova (obra 14).</li><li><strong>Califat de Còrdova</strong> (929-1031). <strong>Abd al-Rahman III</strong> es proclama califa el 929. Còrdova esdevé potser el centre intel·lectual més important d'Europa. Prop de la ciutat es construeix la ciutat palatina de <strong>Madinat al-Zahra</strong> (Medina Azahara), començada cap al 936-940 i destruïda a començaments del segle XI.</li><li><strong>Regnes de taifes</strong> (segle XI). Al-Andalus es divideix en petits regnes. A Saragossa es construeix el palau de l'<strong>Aljaferia</strong>, i a Catalunya, el palau del <strong>Castell Formós de Balaguer</strong>, del qual el Museu de la Noguera conserva restes de la decoració de guix.</li><li><strong>Almoràvits i almohades</strong> (segles XI-XIII). Dinasties del nord d'Àfrica. Els almohades construeixen la gran mesquita de Sevilla, amb el minaret de la <strong>Giralda</strong>, acabat el 1198.</li><li><strong>Regne nassarita de Granada</strong> (1238-1492). Els nassarites construeixen l'<strong>Alhambra</strong>, amb palaus del segle XIV, com el del <strong>Pati dels Lleons</strong>, de Muhammad V.</li></ul>[[img:azahara||Saló d'Abd al-Rahman III a Madinat al-Zahra (segle X).|A la ciutat palatina del califa, prop de Còrdova.]][[img:lleons||Pati dels Lleons, Alhambra de Granada (segle XIV).|Columnes primes, arcs i decoració de guix.]]<p>Als regnes cristians, molts edificis es van construir amb tècniques i formes islàmiques. És l'<strong>art mudèjar</strong>, que la UNESCO descriu com un art influït per la tradició islàmica i pels estils europeus, sobretot el gòtic, amb un ús molt refinat del maó i de les rajoles vidrades. N'és un exemple l'arquitectura mudèjar d'Aragó, Patrimoni Mundial.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Al-Andalus · emirat · califat · Madinat al-Zahra · taifes · almohades · Giralda · nassarites · Alhambra · mudèjar.</p></div>"
+    }
+   ],
+   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, <em>Exemples d'exercicis PAU 2025</em>, <em>Sèrie 0 (2025)</em> i examen de la PAU 2026 (sèrie 1).</li><li>Gran Enciclopèdia Catalana. Articles «Còrdova», «era musulmana», «atauric», «llaceries», «mocàrab» i «minbar», i <em>Catalunya Romànica</em>, «Castell Formós o de Balaguer».</li><li>The Metropolitan Museum of Art. <em>Heilbrunn Timeline of Art History</em>, «The Art of the Umayyad Period», «The Art of the Umayyad Period in Spain (711-1031)», «Figural Representation in Islamic Art», «Calligraphy in Islamic Art» i «The Art of the Almoravid and Almohad Periods».</li><li>Encyclopaedia Britannica. Articles «Hijrah», «Umayyad dynasty», «Abbasid caliphate», «Great Mosque of Damascus», «minbar» i «maqsurah».</li><li>Smarthistory. «Introduction to mosque architecture» i «The Great Mosque of Cordoba».</li><li>Patronato de la Alhambra y Generalife. «La Alhambra: de ciudad palatina a Patrimonio Mundial» i «Patio de los Leones».</li><li>Junta de Andalucía. Conjunt Arqueològic de Madinat al-Zahra. UNESCO. Fitxes «Caliphate City of Medina Azahara» i «Mudejar Architecture of Aragon».</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
+  }
+ ],
+ "obres": [
+  {
+   "origen": "hart-14",
+   "numero": 14,
+   "titol": "Mesquita de Còrdova",
+   "slug": "mesquita-de-cordova",
+   "estil": "art-islamic",
+   "llenguatge": "arquitectura",
+   "miniatura": "cordarcs",
+   "autor": "",
+   "dates": "Segles VIII a X",
+   "lloc": "Còrdova (Andalusia)",
+   "resum": "Mesquita principal de Còrdova, la capital d'al-Andalus. La va començar l'emir **Abd al-Rahman I** a finals del segle VIII i es va ampliar tres vegades fins a finals del segle X. La sala d'oració és un bosc de columnes amb **arcs dobles**, de ferradura i de mig punt, i **dovelles** de dos colors. El **mihrab** d'al-Hakam II és una obra mestra de l'art califal. Des del **1236** és la catedral de Còrdova.",
+   "fitxa": [
+    [
+     "Localització",
+     "Còrdova (Andalusia)."
+    ],
+    [
+     "Cronologia",
+     "Primera mesquita del **786-788**, segons la web oficial del monument (altres fonts diuen 784-786). Ampliacions d'**Abd al-Rahman II** (833-848), d'**al-Hakam II** (962-966) i d'**Almansor** (991-994; altres fonts, 987-988)."
+    ],
+    [
+     "Promotors",
+     "Els emirs i califes omeies de Còrdova, i també Almansor, primer ministre del califa Hixam II."
+    ],
+    [
+     "Materials",
+     "Pedra i maó. Columnes i capitells romans i visigots reaprofitats."
+    ],
+    [
+     "Mides",
+     "Uns 180 per 130 metres, amb 19 naus."
+    ],
+    [
+     "Estil",
+     "Art islàmic d'al-Andalus (emirat i califat de Còrdova)."
+    ],
+    [
+     "Patrimoni",
+     "Patrimoni Mundial de la UNESCO des del 1984. El 1994 la protecció es va estendre a una part del centre històric de Còrdova."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "cordarcs",
+     "seccio": "inici",
+     "titol": "La sala d'oració",
+     "text": "Arcs de ferradura a baix i de mig punt a dalt, amb dovelles de pedra i maó."
+    },
+    {
+     "clau": "cordaeri",
+     "seccio": "inici",
+     "titol": "Vista aèria",
+     "text": "El Pati dels Tarongers, el campanar, que conserva a dins el minaret, la sala d'oració i, al mig, la catedral."
+    },
+    {
+     "clau": "cordplanta",
+     "seccio": "analisi",
+     "titol": "Planta amb les ampliacions",
+     "text": "Cada color correspon a la part que va fer construir cada governant. A baix, el mur de la quibla i el mihrab."
+    },
+    {
+     "clau": "cordmihrab",
+     "seccio": "destacat",
+     "titol": "El mihrab d'al-Hakam II",
+     "text": "Arc de ferradura, mosaics daurats i inscripcions."
+    },
+    {
+     "clau": "cordcupula",
+     "seccio": "destacat",
+     "titol": "Cúpula de la maqsura",
+     "text": "Arcs que s'entrecreuen i mosaics daurats."
+    },
+    {
+     "clau": "cordcrucer",
+     "seccio": "funcio",
+     "titol": "El creuer de la catedral (segle XVI)",
+     "text": "Construït al mig de la sala d'oració a partir del 1523."
+    }
+   ],
+   "q_context": "Per què Còrdova va construir, i ampliar tres vegades, una de les mesquites més grans del món islàmic?",
+   "context": "<p>La primera mesquita es construeix el <strong>786-788</strong>, segons la web oficial del monument, i les ampliacions arriben fins al <strong>991-994</strong>. A la PAU es pot datar entre els segles VIII i X.</p><h3>Còrdova, capital d'al-Andalus</h3><p>Els musulmans van arribar a la península Ibèrica el 711, i Còrdova va ser la capital d'<strong>al-Andalus</strong> des del 716. El 756, <strong>Abd al-Rahman I</strong> es va proclamar emir a Còrdova, independent dels abbàssides, que havien pres el poder el 750. Era de la família dels <strong>omeies</strong>, la dinastia que havia governat el califat des de Damasc. El 929, <strong>Abd al-Rahman III</strong> es va proclamar <strong>califa</strong>. Amb el califat, Còrdova es va convertir potser en el centre intel·lectual més important d'Europa.</p><h3>Una mesquita que creix</h3><ul><li><strong>Abd al-Rahman I</strong> (786-788). Construeix una sala d'oració d'onze naus perpendiculars al mur de la quibla, la central més alta i ampla.</li><li><strong>Abd al-Rahman II</strong> (833-848). Allarga la sala d'oració cap al sud.</li><li><strong>Abd al-Rahman III</strong> (951-952). Hi aixeca un minaret nou, que avui és dins del campanar.</li><li><strong>Al-Hakam II</strong> (962-966). Torna a allargar la sala cap al sud i fa construir el mihrab actual i quatre lucernaris coberts amb cúpules. Segons la web oficial, és l'ampliació més creativa.</li><li><strong>Almansor</strong> (991-994). Afegeix vuit naus a l'est, com a mostra del seu poder. La mesquita arriba a 19 naus.</li></ul><p>Segons la tradició, la mesquita es va aixecar al lloc de la basílica visigoda de Sant Vicenç i en va aprofitar els materials. Alguns historiadors, però, consideren que aquesta església és un mite, perquè no se n'han trobat restes segures.</p>",
+   "q_analisi": "Com és l'espai de la sala d'oració, i com s'aconsegueix tanta alçada amb columnes reaprofitades?",
+   "analisi": "<h3>La planta</h3><p>És una mesquita <strong>hipòstila</strong>, de moltes columnes. Té una gran <strong>sala d'oració</strong>, amb naus perpendiculars al <strong>mur de la quibla</strong>, i un <strong>pati</strong>, l'actual Pati dels Tarongers, amb el <strong>minaret</strong>. Al final de les ampliacions fa uns 180 per 130 metres. El mur de la quibla no mira exactament cap a la Meca, que és al sud-est, sinó cap al sud.</p><h3>Les columnes i els arcs dobles</h3><p>Segons l'Encyclopaedia Britannica, unes 850 columnes divideixen l'interior. Moltes són romanes i visigodes, reaprofitades. Per guanyar alçada, sobre cada columna s'aixeca un pilar i s'hi superposen <strong>dues arcades</strong>, a baix <strong>arcs de ferradura</strong> i a dalt <strong>arcs de mig punt</strong>, que sostenen la coberta. La web oficial relaciona aquest sistema amb els aqüeductes i els arcs de triomf de l'antiga Roma.</p><p>Les <strong>dovelles</strong>, les peces que formen l'arc, alternen la pedra clara i el maó vermell, un recurs que ja es feia servir a l'època romana. A l'ampliació d'Almansor, en canvi, els dos colors són pintats.</p><h3>L'ampliació d'al-Hakam II</h3><p>És el moment de més riquesa. Hi apareixen <strong>arcs lobulats</strong> i <strong>arcs entrecreuats</strong>, i els quatre lucernaris es cobreixen amb <strong>cúpules d'arcs que s'entrecreuen</strong>, una solució nova que deixa entrar la llum.</p><h3>L'estil</h3><p>És <strong>art islàmic</strong> d'al-Andalus, de l'època de l'emirat i del califat omeia de Còrdova. Segons la UNESCO, la tècnica constructiva, amb pedra i maó, va ser una novetat que reaprofitava i integrava tècniques romanes i visigodes.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Mesquita hipòstila · sala d'oració · quibla · mihrab · maqsura · minaret · pati · arc de ferradura · arc de mig punt · dovella · arc lobulat · arcs entrecreuats · reaprofitament.</p></div>",
+   "q_funcio": "Per a què servia la mesquita, i com es fa servir des del 1236?",
+   "funcio": "<p>Era la mesquita principal de Còrdova, la que acollia l'<strong>oració comunitària del divendres</strong>. El <strong>mihrab</strong> indicava la direcció de l'oració, el <strong>minbar</strong> era la trona des d'on es pronunciava el sermó, i la <strong>maqsura</strong>, al costat del mihrab, era l'espai reservat al califa. Al pati, els fidels es purificaven abans de pregar, i des del minaret es cridava a l'oració. Les ampliacions també eren una mostra de poder, com la d'Almansor.</p><h3>De mesquita a catedral</h3><p>El <strong>29 de juny de 1236</strong>, després que el rei Ferran III de Castella conquerís Còrdova, a la mesquita es va celebrar la missa de dedicació de la <strong>catedral</strong>. El <strong>1523</strong>, el bisbe <strong>Alonso Manrique</strong> va fer començar un gran <strong>creuer</strong> renaixentista al mig de la sala d'oració, dirigit per l'arquitecte <strong>Hernán Ruiz I</strong>. Ho va fer amb el permís de l'emperador Carles V i amb l'oposició del consell de la ciutat. Les obres van durar més de setanta anys. A partir del 1593, el minaret va quedar dins del nou <strong>campanar</strong>, i a finals del segle XVI el pati es va omplir de tarongers.</p><p>Avui és la catedral de Còrdova, on se celebra el culte catòlic, i un monument visitat per gent de tot el món.</p>",
+   "destacat_titol": "El mihrab i la maqsura d'al-Hakam II",
+   "q_destacat": "Per què el mihrab de Còrdova és tan diferent dels d'altres mesquites?",
+   "destacat": "<p>Al-Hakam II va convertir el mihrab, que normalment és un nínxol, en una <strong>petita sala octogonal</strong> coberta amb una <strong>cúpula en forma de conquilla</strong>, feta d'un sol bloc de marbre blanc. S'hi entra per un <strong>arc de ferradura</strong>. La façana es decora amb <strong>mosaics</strong> daurats d'estil bizantí i amb inscripcions de l'Alcorà.</p><p>Segons les cròniques àrabs, l'emperador bizantí <strong>Nicèfor II Focas</strong> va enviar un artesà especialista en mosaics, tot i que alguns historiadors dubten de la fiabilitat d'aquestes cròniques. Davant del mihrab hi ha la <strong>maqsura</strong>, l'espai reservat al califa, amb cúpules d'arcs entrecreuats.</p>",
+   "q_relacio": "Amb quines obres de la llista la pots comparar?",
+   "relacio": "<ul><li><strong>Obra 13. Santa Sofia de Constantinoble.</strong> Una església convertida en mesquita i una mesquita convertida en catedral. Santa Sofia concentra l'espai sota una gran cúpula central, mentre que la Mesquita de Còrdova l'estén en horitzontal amb un bosc de columnes. Totes dues tenen mosaics daurats d'estil bizantí.</li><li><strong>Obra 15. Catedral de Santiago de Compostel·la.</strong> Segons les cròniques, el 997 les tropes d'Almansor van saquejar Santiago i se'n van endur les campanes a Còrdova, on se'n va fer servir el metall per fer llums per a la mesquita. Les cròniques castellanes expliquen que, després del 1236, Ferran III va fer tornar les campanes a Santiago. Les dues obres mostren també dues maneres d'entendre l'espai sagrat, la planta de creu llatina dirigida cap a l'altar i la sala d'oració dirigida cap a la quibla.</li></ul><h3>Altres obres de l'art islàmic (per a l'apartat d de la PAU)</h3><ul><li><strong>Fora de la península.</strong> La Cúpula de la Roca de Jerusalem i la Gran Mesquita de Damasc.</li><li><strong>A al-Andalus.</strong> Madinat al-Zahra, el palau de l'Aljaferia de Saragossa, la Giralda de Sevilla i l'Alhambra de Granada.</li></ul>",
+   "compara": [
+    "hart-13",
+    "hart-15"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Assenyalar a la planta o a la imatge el mihrab, el mur de la quibla, el pati i el minaret, o reconèixer un arc de ferradura i un arc lobulat.</p><p><strong>Exercici 3.</strong> L'absència d'imatges a l'art religiós islàmic i el valor de l'escriptura, o els intercanvis entre Bizanci i al-Andalus.</p><p><strong>Exercici 4.</strong> La gestió d'un monument amb dues capes religioses, Patrimoni Mundial des del 1984, i la convivència entre el culte i la visita turística.</p>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Mesquita de Còrdova (interior de la sala d'oració, mihrab i planta).</p><p>a) Dateu l'obra i situeu-la en el context històric d'al-Andalus. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de la sala d'oració i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu la funció de la mesquita i de les seves parts principals. [1 punt]</p><p>d) Compareu-la amb Santa Sofia de Constantinoble. Assenyaleu una semblança i una diferència. [1 punt]</p>",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Segles VIII a X. La primera mesquita és del 786-788, i les ampliacions són d'Abd al-Rahman II (833-848), al-Hakam II (962-966) i Almansor (991-994). Al-Andalus des del 711, amb Còrdova com a capital. Emirat independent dels omeies (756) i califat (929). Còrdova, un dels grans centres culturals d'Europa.</p><p><strong>b)</strong> Mesquita hipòstila, amb sala d'oració de naus perpendiculars al mur de la quibla, pati i minaret. Columnes romanes i visigodes reaprofitades i, a sobre, pilars amb una doble arcada, de ferradura a baix i de mig punt a dalt, per guanyar alçada. Dovelles de pedra i maó de dos colors. A l'ampliació d'al-Hakam II, arcs lobulats i entrecreuats i cúpules d'arcs entrecreuats. Art islàmic d'al-Andalus, califal.</p><p><strong>c)</strong> Mesquita principal de la ciutat, per a l'oració comunitària del divendres. El mihrab indica la direcció de l'oració, el minbar és la trona del sermó, la maqsura és l'espai del califa, el pati serveix per a les ablucions i el minaret, per cridar a l'oració. També mostrava el poder dels omeies. Des del 1236 és la catedral de Còrdova.</p><p><strong>d)</strong> Com a semblança, tots dos són grans edificis religiosos que han passat d'un culte a un altre i tenen mosaics daurats d'estil bizantí. Com a diferència, Santa Sofia s'organitza al voltant d'una gran cúpula central i té mosaics amb figures, mentre que la Mesquita de Còrdova és una sala hipòstila horitzontal, amb una decoració sense figures.</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>La Mesquita de Còrdova és la catedral de la ciutat des del 1236. Al segle XVI s'hi va construir un creuer renaixentista al mig de la sala d'oració. El conjunt és Patrimoni Mundial de la UNESCO des del 1984.</p><ol><li>Expliqueu per què aquest monument té diverses capes històriques i quins valors té cadascuna. [1 punt]</li><li>Proposeu dues idees per presentar als visitants d'avui un monument que ha tingut usos religiosos diferents. [1 punt]</li></ol>",
+   "fonts": "<ul><li>Mesquita-Catedral de Còrdova (web oficial del Cabildo). «Historia», «Mihrab» i fullet del monument.</li><li>UNESCO. Fitxa del Patrimoni Mundial «Historic Centre of Cordoba».</li><li>Gran Enciclopèdia Catalana. Article «Còrdova».</li><li>Encyclopaedia Britannica. Article «Mosque-Cathedral of Córdoba».</li><li>Smarthistory. «The Great Mosque of Cordoba».</li><li>The Metropolitan Museum of Art. «The Art of the Umayyad Period in Spain (711-1031)».</li><li>Momplet, <em>Anales de Historia del Arte</em> 22 (2012), sobre l'ampliació d'al-Hakam II, i F. Arce-Sainz, <em>Al-Qantara</em> 36 (2015), sobre la basílica de Sant Vicenç.</li><li>J. Ruiz Jiménez, <em>Historical Soundscapes</em> (2024), i A. Fernández-Puertas, <em>MEAH</em> 48 (1999), sobre les campanes de Santiago.</li><li>J. Luque Carrillo (Universitat de Sevilla), sobre la construcció del creuer.</li></ul>"
+  }
+ ]
+}

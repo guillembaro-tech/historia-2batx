@@ -22,6 +22,8 @@ Connector de WordPress per a la secció d'Història de l'Art de 2n de Batxillera
 
 Pública des del 12 d'octubre de 2026 (opció `pdsha_publicat` = 1). Mentre l'opció no valgui 1, només la veuen els administradors, les obres són privades i les pàgines porten `noindex`. Les obres noves que s'importen es publiquen si la secció és pública.
 
+**Vista prèvia d'un estil nou** (0.1.3). Per revisar-lo a la web abans de publicar-lo, s'afegeix el seu slug a l'opció `pdsha_previ` i s'importa amb les obres privades (`pdsha_importa( 'art-bizanti.json', 'private' )`). Els visitants no veuen el tema (404) ni la targeta a la portada, i els administradors el veuen sencer. Per publicar-lo, es treu de `pdsha_previ` i es publiquen les obres.
+
 ## Contingut
 
 `data/*.json` es pot importar tantes vegades com calgui amb `pdsha_importa( 'romanic.json' )`. Cada obra guarda l'identificador d'origen (`pdsha_origen`) i cada imatge el nom del fitxer de Wikimedia Commons (`pdsha_commons`), i no es duplica res. L'autoria i la llicència de les imatges són a la llegenda de la mediateca.

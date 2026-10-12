@@ -195,6 +195,10 @@ add_action(
 			pdsha_404();
 			return;
 		}
+		if ( 'estil' === $vista && pdsha_en_previ( get_queried_object() ) ) {
+			pdsha_404();
+			return;
+		}
 		if ( 'estil' === $vista && '' !== (string) get_query_var( 'pdsha_llenguatge' ) && ! pdsha_llenguatge_actual() ) {
 			pdsha_404();
 			return;
@@ -252,6 +256,20 @@ add_filter(
 			return $terms;
 		}
 		return array_values( array_filter( $terms, static fn( $t ) => ! ( $t instanceof WP_Term && 'historia-art' === $t->slug ) ) );
+	},
+	10,
+	2
+);
+
+/** Els estils en vista prèvia no surten a les llistes (portada, períodes) per als visitants. */
+add_filter(
+	'get_terms',
+	static function ( $terms, $taxonomies ) {
+		if ( is_admin() || ! is_array( $terms ) || ! in_array( 'estil', (array) $taxonomies, true ) || ! get_option( 'pdsha_previ' ) ) {
+			return $terms;
+		}
+		$fora = array_filter( $terms, 'pdsha_en_previ' );
+		return $fora ? array_values( array_diff_key( $terms, $fora ) ) : $terms;
 	},
 	10,
 	2

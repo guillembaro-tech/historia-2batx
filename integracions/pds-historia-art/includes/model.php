@@ -183,6 +183,17 @@ function pdsha_periodes(): array {
 	);
 }
 
+/**
+ * Estils en vista prèvia. Mentre el seu slug és a l'opció pdsha_previ, només els veuen els qui poden editar.
+ * Serveix per revisar a la web un estil nou (tema i obres privades) abans de publicar-lo.
+ */
+function pdsha_en_previ( $t ): bool {
+	if ( ! ( $t instanceof WP_Term ) || 'estil' !== $t->taxonomy || current_user_can( 'edit_posts' ) ) {
+		return false;
+	}
+	return in_array( $t->slug, (array) get_option( 'pdsha_previ', array() ), true );
+}
+
 /** La secció ja és pública? */
 function pdsha_publicat(): bool {
 	return (bool) get_option( 'pdsha_publicat', false );
