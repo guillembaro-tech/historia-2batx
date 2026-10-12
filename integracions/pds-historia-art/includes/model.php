@@ -142,13 +142,44 @@ function pdsha_termes_base(): void {
 	}
 }
 
-/** Els quatre períodes de la llista oficial d'obres de referència. */
+/**
+ * Els quatre períodes de la llista oficial d'obres de referència.
+ * «estils» són els estils previstos de cada període (slug => nom). Els que encara no tenen tema surten com a «En preparació».
+ */
 function pdsha_periodes(): array {
 	return array(
-		'antiguitat'          => array( 'nom' => 'Antiguitat', 'ordre' => 1, 'obres' => array( 1, 12 ) ),
-		'edat-mitjana'        => array( 'nom' => 'Edat mitjana', 'ordre' => 2, 'obres' => array( 13, 23 ) ),
-		'edat-moderna'        => array( 'nom' => 'Edat moderna', 'ordre' => 3, 'obres' => array( 24, 36 ) ),
-		'edat-contemporania'  => array( 'nom' => 'Edat contemporània', 'ordre' => 4, 'obres' => array( 37, 55 ) ),
+		'antiguitat'         => array(
+			'nom'    => 'Antiguitat',
+			'num'    => 'I',
+			'ordre'  => 1,
+			'obres'  => array( 1, 12 ),
+			'resum'  => 'Egipte, Grècia i Roma',
+			'estils' => array( 'art-egipci' => 'Art egipci', 'art-grec' => 'Art grec', 'art-roma' => 'Art romà' ),
+		),
+		'edat-mitjana'       => array(
+			'nom'    => 'Edat mitjana',
+			'num'    => 'II',
+			'ordre'  => 2,
+			'obres'  => array( 13, 23 ),
+			'resum'  => 'Art bizantí, islàmic, romànic i gòtic',
+			'estils' => array( 'art-bizanti' => 'Art bizantí', 'art-islamic' => 'Art islàmic', 'romanic' => 'El romànic', 'gotic' => 'El gòtic' ),
+		),
+		'edat-moderna'       => array(
+			'nom'    => 'Edat moderna',
+			'num'    => 'III',
+			'ordre'  => 3,
+			'obres'  => array( 24, 36 ),
+			'resum'  => 'Renaixement i barroc',
+			'estils' => array( 'renaixement' => 'El Renaixement', 'barroc' => 'El barroc' ),
+		),
+		'edat-contemporania' => array(
+			'nom'    => 'Edat contemporània',
+			'num'    => 'IV',
+			'ordre'  => 4,
+			'obres'  => array( 37, 55 ),
+			'resum'  => "Del neoclassicisme a l'art actual",
+			'estils' => array(),
+		),
 	);
 }
 

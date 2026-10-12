@@ -52,7 +52,7 @@ $oficials = pdsha_obres_oficials();
 $per_n    = pdsha_obres_per_numero();
 ?>
 <?php pdsha_avis_privat(); ?>
-<div class="um um4 um-c-2n-batxillerat pdsha-v4 pdsha-estil" data-view="alumne">
+<div class="um um4 um-c-2n-batxillerat pdsha-v4 pdsha-estil<?php echo $estil instanceof WP_Term ? ' pdsha-e-' . esc_attr( $estil->slug ) : ''; ?>" data-view="alumne">
 	<header class="um-hero">
 		<div class="um-wrap">
 			<?php pdsha_molla( $molla ); ?>

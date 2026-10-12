@@ -54,7 +54,7 @@ while ( have_posts() ) :
 	$molla[ $n ? 'Obra ' . $n : get_the_title() ] = '';
 	?>
 	<?php pdsha_avis_privat(); ?>
-	<div class="um um4 um-c-2n-batxillerat pdsha-v4 pdsha-obra" data-view="alumne">
+	<div class="um um4 um-c-2n-batxillerat pdsha-v4 pdsha-obra<?php echo $estil ? ' pdsha-e-' . esc_attr( $estil->slug ) : ''; ?>" data-view="alumne">
 		<header class="um-hero">
 			<div class="um-wrap">
 				<?php pdsha_molla( $molla ); ?>

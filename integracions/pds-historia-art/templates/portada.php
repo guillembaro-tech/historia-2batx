@@ -1,7 +1,7 @@
 <?php
 /**
- * Portada d'Història de l'Art. Els estils per períodes, la llista oficial d'obres de referència
- * (enllaçades les que ja són a la web) i com és l'examen.
+ * Portada d'Història de l'Art. Un bloc per a cada període de la llista oficial d'obres de referència,
+ * amb els seus estils i les seves obres (enllaçades les que ja són a la web), i com és l'examen.
  *
  * @package pds-historia-art
  */
@@ -12,12 +12,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header();
 
-$oficials = pdsha_obres_oficials();
-$per_n    = pdsha_obres_per_numero();
-$periodes = pdsha_periodes();
-$arbre    = pdsha_estils_ordenats();
-$llg      = isset( $_GET['llenguatge'] ) ? get_term_by( 'slug', sanitize_title( wp_unslash( $_GET['llenguatge'] ) ), 'llenguatge' ) : false; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només filtra la llista.
+$oficials  = pdsha_obres_oficials();
+$per_n     = pdsha_obres_per_numero();
+$periodes  = pdsha_periodes();
+$llg       = isset( $_GET['llenguatge'] ) ? get_term_by( 'slug', sanitize_title( wp_unslash( $_GET['llenguatge'] ) ), 'llenguatge' ) : false; // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només filtra la llista.
 $filtrades = $llg instanceof WP_Term ? pdsha_obres( array( 'llenguatge' => $llg->slug ) ) : array();
+
+// Estils que ja tenen tema, per període.
+$estils_de = array();
+foreach ( pdsha_estils_ordenats() as $branca ) {
+	$estils_de[ $branca['periode']->slug ] = $branca['estils'];
+}
+$a_la_web = static function ( array $rang ) use ( $per_n ): int {
+	return count( array_filter( array_keys( $per_n ), static fn( $n ) => $n >= $rang[0] && $n <= $rang[1] ) );
+};
 ?>
 <?php pdsha_avis_privat(); ?>
 <div class="um um4 um-c-2n-batxillerat pdsha-v4 pdsha-portada" data-view="alumne">
@@ -59,37 +67,81 @@ $filtrades = $llg instanceof WP_Term ? pdsha_obres( array( 'llenguatge' => $llg-
 				<?php endif; ?>
 				<p class="um-foot-note">Només hi surten les obres que ja són a la web.</p>
 			<?php else : ?>
-				<?php foreach ( $arbre as $branca ) :
-					$per  = $branca['periode'];
-					$rang = $periodes[ $per->slug ]['obres'] ?? null;
-					?>
-					<div class="pdsha-periode">
-						<h3><?php echo esc_html( $per->name ); ?><?php echo $rang ? ' <small>Obres ' . (int) $rang[0] . ' a ' . (int) $rang[1] . '</small>' : ''; ?></h3>
-						<?php if ( $branca['estils'] ) : ?>
-							<nav class="pdsha-chips pdsha-chips-estils" aria-label="<?php echo esc_attr( 'Estils · ' . $per->name ); ?>">
-								<?php foreach ( $branca['estils'] as $e ) : ?>
-									<a href="<?php echo esc_url( pdsha_estil_url( $e ) ); ?>"><?php echo esc_html( pdsha_titol_estil( $e ) ); ?></a>
-								<?php endforeach; ?>
-							</nav>
-						<?php endif; ?>
-						<?php if ( $rang ) : ?>
-							<ol class="pdsha-llista" start="<?php echo (int) $rang[0]; ?>">
-								<?php for ( $k = $rang[0]; $k <= $rang[1]; $k++ ) : ?>
-									<li value="<?php echo (int) $k; ?>" class="<?php echo isset( $per_n[ $k ] ) ? 'is-on' : 'is-off'; ?>">
-										<?php if ( isset( $per_n[ $k ] ) ) : ?>
-											<a href="<?php echo esc_url( get_permalink( $per_n[ $k ] ) ); ?>"><?php echo esc_html( $oficials[ $k ] ); ?></a>
-										<?php else : ?>
-											<?php echo esc_html( $oficials[ $k ] ); ?>
-										<?php endif; ?>
-									</li>
-								<?php endfor; ?>
-							</ol>
-						<?php endif; ?>
-					</div>
-				<?php endforeach; ?>
-				<p class="um-foot-note">Llista oficial «Història de l'Art. PAU 2026. Obres de referència», del Consell Interuniversitari de Catalunya. Les obres enllaçades ja són a la web.</p>
+				<nav class="pdsha-salt" aria-label="Períodes">
+					<?php foreach ( $periodes as $slug => $per ) : ?>
+						<a href="#<?php echo esc_attr( $slug ); ?>"><b><?php echo esc_html( $per['num'] ); ?></b><span><?php echo esc_html( $per['nom'] ); ?></span><small><?php echo (int) $a_la_web( $per['obres'] ); ?> de <?php echo (int) ( $per['obres'][1] - $per['obres'][0] + 1 ); ?> a la web</small></a>
+					<?php endforeach; ?>
+				</nav>
 			<?php endif; ?>
 		</section>
+
+		<?php if ( ! $llg ) : ?>
+			<?php foreach ( $periodes as $slug => $per ) :
+				$rang   = $per['obres'];
+				$tot    = $rang[1] - $rang[0] + 1;
+				$n_web  = $a_la_web( $rang );
+				$fets   = array();
+				foreach ( $estils_de[ $slug ] ?? array() as $t ) {
+					$fets[ $t->slug ] = $t;
+				}
+				$previstos = $per['estils'];
+				?>
+				<section class="um-sec pdsha-per" id="<?php echo esc_attr( $slug ); ?>">
+					<header class="pdsha-per-h" data-r="<?php echo esc_attr( $per['num'] ); ?>">
+						<div class="pdsha-per-t">
+							<span class="um-num"><?php echo esc_html( $per['nom'] ); ?></span>
+							<h2><?php echo esc_html( $per['nom'] ); ?></h2>
+							<p><?php echo esc_html( $per['resum'] ); ?> · Obres <?php echo (int) $rang[0]; ?> a <?php echo (int) $rang[1]; ?></p>
+						</div>
+						<div class="pdsha-per-c"><b><?php echo (int) $n_web; ?></b> de <?php echo (int) $tot; ?> a la web<span class="pdsha-bar"><i style="width: <?php echo esc_attr( (string) round( $n_web / $tot * 100 ) ); ?>%"></i></span></div>
+					</header>
+
+					<div class="pdsha-estils">
+						<?php
+						// Primer els estils previstos (amb tema o en preparació) i després els que tinguin tema i no siguin a la llista.
+						$ordre = array_unique( array_merge( array_keys( $previstos ), array_keys( $fets ) ) );
+						foreach ( $ordre as $es ) :
+							if ( isset( $fets[ $es ] ) ) :
+								$t      = $fets[ $es ];
+								$obr    = pdsha_obres( array( 'estil' => $t->term_id ) );
+								$thumb  = $obr ? get_post_thumbnail_id( $obr[0] ) : 0;
+								$dates  = (string) pdsha_f( 'ha_estil_dates', $t, '' );
+								?>
+								<a class="pdsha-estil" href="<?php echo esc_url( pdsha_estil_url( $t ) ); ?>">
+									<?php echo $thumb ? wp_get_attachment_image( $thumb, 'thumbnail', false, array( 'alt' => '', 'loading' => 'lazy' ) ) : ''; ?>
+									<span><b><?php echo esc_html( pdsha_titol_estil( $t ) ); ?></b><small><?php echo esc_html( implode( ' · ', array_filter( array( $dates, count( $obr ) . ' ' . ( 1 === count( $obr ) ? 'obra' : 'obres' ) ) ) ) ); ?></small></span>
+									<i>Obre el tema</i>
+								</a>
+							<?php else : ?>
+								<span class="pdsha-estil pdsha-estil-off"><span><b><?php echo esc_html( $previstos[ $es ] ); ?></b><small>En preparació</small></span></span>
+							<?php endif; ?>
+						<?php endforeach; ?>
+						<?php if ( ! $ordre ) : ?>
+							<span class="pdsha-estil pdsha-estil-off"><span><b>Estils del període</b><small>En preparació</small></span></span>
+						<?php endif; ?>
+					</div>
+
+					<ol class="pdsha-obres">
+						<?php for ( $k = $rang[0]; $k <= $rang[1]; $k++ ) : ?>
+							<?php if ( isset( $per_n[ $k ] ) ) :
+								$p     = $per_n[ $k ];
+								$e     = pdsha_estil_de( $p->ID );
+								$l     = pdsha_llenguatge_de( $p->ID );
+								$thumb = get_post_thumbnail_id( $p );
+								?>
+								<li class="pdsha-on"><a href="<?php echo esc_url( get_permalink( $p ) ); ?>">
+									<span class="pdsha-n"><?php echo (int) $k; ?></span>
+									<?php echo $thumb ? wp_get_attachment_image( $thumb, 'thumbnail', false, array( 'alt' => '', 'loading' => 'lazy' ) ) : ''; ?>
+									<span class="pdsha-tx"><b><?php echo esc_html( $oficials[ $k ] ); ?></b><small><?php echo esc_html( implode( ' · ', array_filter( array( $e ? $e->name : '', $l ? $l->name : '' ) ) ) ); ?></small></span>
+								</a></li>
+							<?php else : ?>
+								<li class="pdsha-off"><span class="pdsha-n"><?php echo (int) $k; ?></span><span class="pdsha-tx"><?php echo esc_html( $oficials[ $k ] ); ?></span></li>
+							<?php endif; ?>
+						<?php endfor; ?>
+					</ol>
+				</section>
+			<?php endforeach; ?>
+		<?php endif; ?>
 
 		<section class="um-sec" id="examen">
 			<header><span class="um-num">Examen</span><h2>Com és l'examen</h2></header>
@@ -100,6 +152,7 @@ $filtrades = $llg instanceof WP_Term ? pdsha_obres( array( 'llenguatge' => $llg-
 				<article class="um-card"><h4>Exercici 3. Dimensió individual i social de l'art</h4><span class="um-tag">2 punts</span><p>Dues o tres preguntes a partir d'imatges, sobre l'artista, la societat, la perspectiva de gènere o el mercat de l'art.</p></article>
 				<article class="um-card"><h4>Exercici 4. Art: espai, natura i ciutat</h4><span class="um-tag">2 punts</span><p>Un cas sobre patrimoni, museus, ciutat o turisme, sovint a partir d'una notícia. Les obres no han de ser de la llista.</p></article>
 			</div>
+			<p class="um-foot-note">Llista oficial «Història de l'Art. PAU 2026. Obres de referència», del Consell Interuniversitari de Catalunya.</p>
 		</section>
 
 	</div>

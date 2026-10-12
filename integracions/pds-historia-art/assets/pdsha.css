@@ -85,6 +85,51 @@
 .pdsha-credits { font-size: 14.5px; padding-left: 1.2em; }
 .pdsha-credits li { margin: 0 0 6px; }
 
+/* Portada · un bloc per període */
+.pdsha-salt { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 6px 0 4px; }
+.pdsha-salt a { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: var(--r, 12px); background: var(--primary-soft); color: var(--ink); text-decoration: none; border: 1px solid transparent; }
+.pdsha-salt a:hover { border-color: var(--primary); }
+.pdsha-salt b { font-size: 12px; color: var(--primary); letter-spacing: .08em; font-weight: 500; }
+.pdsha-salt span { font-weight: 500; font-size: 15.5px; line-height: 1.3; }
+.pdsha-salt small { font-size: 12.5px; color: var(--ink-2); }
+.pdsha-pagina .pdsha-per { margin-top: 18px; scroll-margin-top: 80px; }
+.um-sec.pdsha-per > header.pdsha-per-h { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding-bottom: 14px; border-bottom: 1px solid var(--outline); margin-bottom: 16px; }
+.um-sec.pdsha-per > header.pdsha-per-h::before { content: attr(data-r) !important; background-image: none !important; font-size: 15px; letter-spacing: .02em; }
+.pdsha-per-t { flex: 1 1 260px; }
+.pdsha-per-t h2 { margin: 0; }
+.pdsha-per-t p { margin: 2px 0 0; font-size: 14px; color: var(--ink-2); }
+.pdsha-per-c { font-size: 13px; color: var(--ink-2); min-width: 150px; }
+.pdsha-per-c b { font-size: 18px; color: var(--primary); font-weight: 500; margin-right: 2px; }
+.pdsha-bar { display: block; height: 6px; border-radius: 3px; background: var(--surface-2); margin-top: 6px; overflow: hidden; }
+.pdsha-bar i { display: block; height: 100%; background: var(--primary); border-radius: 3px; }
+.pdsha-estils { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 16px; }
+.pdsha-estil { display: flex; align-items: center; gap: 12px; padding: 8px 14px 8px 8px; border: 1px solid var(--primary); border-radius: var(--r, 12px); text-decoration: none; color: var(--ink); background: var(--surface); }
+a.pdsha-estil:hover { background: var(--primary-soft); }
+.pdsha-estil img { width: 64px; height: 48px; object-fit: cover; border-radius: 8px; flex: 0 0 auto; }
+.pdsha-estil b { display: block; color: var(--primary); font-weight: 500; line-height: 1.3; }
+.pdsha-estil small { font-size: 12.5px; color: var(--ink-2); }
+.pdsha-estil i { font-style: normal; font-size: 12.5px; color: var(--primary); margin-left: 6px; }
+.pdsha-estil-off { border-style: dashed; border-color: var(--outline); padding: 8px 14px; }
+.pdsha-estil-off b { color: var(--ink-2); }
+.pdsha-obres { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+.pdsha-obres li { margin: 0; }
+.pdsha-obres li > a, .pdsha-obres li.pdsha-off { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; min-height: 48px; }
+.pdsha-off { color: var(--ink-2); background: var(--surface-2); font-size: 14.5px; line-height: 1.35; }
+.pdsha-on > a { border: 1px solid var(--primary); background: var(--surface); color: var(--ink); text-decoration: none; }
+.pdsha-on > a:hover { background: var(--primary-soft); }
+.pdsha-on img { width: 56px; height: 42px; object-fit: cover; border-radius: 6px; flex: 0 0 auto; }
+.pdsha-n { flex: 0 0 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 500; border: 1px solid var(--outline); background: var(--surface); color: var(--ink-2); }
+.pdsha-on .pdsha-n { background: var(--primary); border-color: var(--primary); color: #fff; }
+.pdsha-tx { display: flex; flex-direction: column; min-width: 0; }
+.pdsha-on .pdsha-tx b { font-weight: 500; color: var(--primary); font-size: 14.5px; line-height: 1.3; }
+.pdsha-on .pdsha-tx small { font-size: 12.5px; color: var(--ink-2); }
+
+/* Dibuix de la capçalera. Història de l'Art (columna, cavallet amb una àmfora i paleta) i, als temes i obres de cada estil, el seu dibuix */
+@media (min-width: 1025px) {
+	.um.pdsha-v4 .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E %3Cpath d='M24 236H404'/%3E %3Cpath d='M52 236V224H132V236M60 224V214H124V224'/%3E %3Cpath d='M70 214V96M114 214V96M85 214V96M99 214V96'/%3E %3Cpath d='M58 96H126M54 84H130V96H54Z'/%3E %3Cpath d='M60 84Q52 72 64 70Q72 72 68 80M124 84Q132 72 120 70Q112 72 116 80'/%3E %3Cpath d='M228 236L240.4 172M258.9 76L262 60M342 236L329.6 172M311.1 76L308 60M285 236V172'/%3E %3Cpath d='M218 76H352V172H218Z'/%3E %3Cpath d='M276 98H294M279 98V108M291 108V98M279 108Q262 120 266 140Q270 156 280 162H290Q300 156 304 140Q308 120 291 108Z'/%3E %3Cpath d='M279 112Q266 108 268 124M291 112Q304 108 302 124'/%3E %3Cpath d='M268 134H302'/%3E %3Cpath d='M240 162H330'/%3E %3Cpath d='M360 220Q352 196 376 192Q404 190 402 210Q400 224 386 220Q378 232 366 228Q362 226 360 220Z'/%3E %3Ccircle cx='378' cy='204' r='3'/%3E%3Ccircle cx='390' cy='208' r='3'/%3E %3C/g%3E%3Cpath d='M218 76H352V172H218Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M54 84H130V96H54Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); }
+	.um.pdsha-v4.pdsha-e-romanic .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E %3Cpath d='M24 236H404'/%3E %3Cpath d='M120 236V150H290V236'/%3E %3Cpath d='M112 152L205 112L298 152'/%3E %3Cpath d='M72 236V180H120'/%3E %3Cpath d='M66 182Q92 160 120 166'/%3E %3Cpath d='M90 214V200Q96 192 102 200V214'/%3E %3Cpath d='M186 236V200Q205 178 224 200V236M178 236V196Q205 166 232 196'/%3E %3Cpath d='M300 236V52H352V236'/%3E %3Cpath d='M300 196H352M300 158H352M300 120H352M300 84H352'/%3E %3Cpath d='M310 146V136Q316 128 322 136V146M330 146V136Q336 128 342 136V146'/%3E %3Cpath d='M310 110V100Q316 92 322 100V110M330 110V100Q336 92 342 100V110'/%3E %3Cpath d='M310 76V66Q316 58 322 66V76M330 76V66Q336 58 342 66V76'/%3E %3Cpath d='M296 52L326 34L356 52'/%3E %3Cpath d='M132 160Q137 154 142 160Q147 154 152 160Q157 154 162 160Q167 154 172 160Q177 154 182 160Q187 154 192 160Q197 154 202 160Q207 154 212 160Q217 154 222 160Q227 154 232 160Q237 154 242 160Q247 154 252 160Q257 154 262 160Q267 154 272 160Q277 154 282 160'/%3E %3C/g%3E%3Cpath d='M112 152L205 112L298 152Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M296 52L326 34L356 52Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); }
+}
+
 @media (max-width: 640px) {
 	.pdsha-fitxa > div { grid-template-columns: 1fr; }
 	.pdsha-fitxa dt { padding-bottom: 4px; }
@@ -94,6 +139,10 @@
 	.um-main figure.um-fig.alignright, .um-main figure.um-fig.pdsha-dreta { float: none; width: auto; margin: 20px 0; }
 	.pdsha-pasa-seg, .pdsha-pasa-estil { text-align: left; }
 	.pdsha-llista { columns: 1; }
+	.pdsha-salt { grid-template-columns: 1fr 1fr; }
+	.pdsha-obres { grid-template-columns: 1fr; }
+	.pdsha-per-c { min-width: 0; flex: 1 1 100%; }
+	.pdsha-estil i { display: none; }
 }
 
 @media print {
