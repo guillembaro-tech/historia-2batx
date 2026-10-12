@@ -1,6 +1,6 @@
 # Model de situació d'aprenentatge (SA v4)
 
-Encàrrec del 12/10/2026. Mostra feta amb L'Antiga Grècia (post 831, SA «El vaixell que va arribar a Empúries», fitxa 832). **No publicat.** Pendent que el professor aprovi la mostra.
+Encàrrec del 12/10/2026. Mostra feta amb L'Antiga Grècia (post 831, SA «El vaixell que va arribar a Empúries», fitxa 832). **Aprovada i publicada el 12/10/2026 a les 23.20** (revisions 1665 i 1666 de 831). Fitxers a la branca `sa-model-20261012` (commits c8c0c8d i b2495b8), carpeta `integracions/situacions/`, pendent de fusionar a `pds-2batx`.
 
 ## Diagnòstic de la SA actual (Grècia)
 
@@ -27,7 +27,7 @@ Ordre fix de la pestanya (i dels documents).
 
 Colors del curs a tot arreu (icones, números, caixes). Icones Tabler (MIT) en línia, amb la classe `um-ico`. Al Word no surten.
 
-## Canvis tècnics necessaris (per publicar)
+## Canvis tècnics (fets a Grècia; per a les altres SA només cal el punt de la unitat, la fitxa, les sessions i el PDF)
 
 - `model4.css`. Afegir `claude/eines/sa/sa.css`.
 - `model4.js` (exportació). `claude/eines/sa/patch_js.py` i `patch_js2.py` (substitucions exactes, una sola vegada cadascuna). Portada amb el títol de la SA i la pregunta del repte quan només s'exporta la SA. `.um-lines` → línies. Icones fora del Word. Taules `um-fill` (alçada i amplades) al Word. Casella a les llistes `um-checklist` al Word. Salt de pàgina a `h3.um-sa-nova` al Word.
@@ -51,3 +51,10 @@ Colors del curs a tot arreu (icones, números, caixes). Icones Tabler (MIT) en l
 ## Altres SA del model v4 (per aplicar-hi el model)
 
 793 (841, «El gran canvi», PDF 1116), 822 (839, «El contracte del riu», 1121), 859 (860, «218 aC: la legió desembarca a Empúries», 1127), 1138 (1141, «Fundem un poble a la frontera», 1142), 1185 (1201, «Un dia a l'edat mitjana», 1191), 1186 (1206, «El mercader de la Llotja», 1193), 1187 (1211, «L'atles de la Corona», 1195), 1188 (1216, «Dos mons cara a cara», 1197), 1189 (1221, «1640: la revolta dels segadors», 1199). La unitat 857 té `section#sa` però cap fitxa de situació vinculada.
+
+## Com aplicar-ho a una altra SA
+
+1. Llegir la `section#sa` de la unitat, la fitxa de situació i el PDF antic. Contrastar les dades amb fonts fiables.
+2. Escriure la SA nova seguint `claude/eines/sa/sa-plantilla.html` (mateix ordre i classes). Icones de `icons.json` (o noves amb `react-icons/tb`).
+3. Còpia a `wp-content/upgrade/sa-<id>-<data>/`, substitució de `section#sa`, fitxa, sessions del pla (metadades i `#sessions`) i PDF nou generat des de la pàgina publicada.
+4. Comprovar web, mòbil, PDF i Word.
