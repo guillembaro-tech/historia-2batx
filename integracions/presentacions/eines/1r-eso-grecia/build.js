@@ -728,7 +728,7 @@ tx(s, "A principis del segle V aC, l'Imperi persa, el més gran del món, va int
 vtl(s, [
   ['490 aC', 'Marató. Els atenesos derroten el primer atac.'],
   ['480 aC', 'Termòpiles. Leònides i els seus 300 hoplites resisteixen, però Xerxes arrasa Grècia central.'],
-  ['480 aC', 'Salamina. La flota atenesa destrueix la persa i decideix la guerra.'],
+  ['480 aC', 'Salamina. La flota grega, amb Atenes al capdavant, derrota la persa.'],
 ], 7.65, 2.95, W - M - 7.65, 0.98, { dw: 1.05, fs: 15, lastFill: true });
 kbox(s, 'Per què «mèdiques»?', 'Els grecs anomenaven «medes» els perses.', 7.65, 5.7, W - M - 7.65, 0.85, { grey: true, fs: 15 });
 s.addNotes("Hi va haver dues guerres, dos atacs perses. En el segon atac, Xerxes va arrasar Grècia central malgrat la resistència de Leònides. A les Termòpiles, els 300 hoplites espartans anaven acompanyats per uns quants milers de soldats d'altres polis. Seguiu les fletxes del mapa amb l'alumnat. El traçat de les rutes és aproximat.");
@@ -738,7 +738,7 @@ s = cs(4, 'Perses contra grecs');
   const cw3 = (CW - 0.6) / 3;
   [['immortal', "L'Imperi persa", "L'imperi més gran del món. El rei Xerxes va dirigir el segon atac.", "Un soldat de la guàrdia del rei persa. Rajoles del palau de Susa (Iran). Museu del Louvre. Foto: dynamosquito, Wikimedia Commons, CC BY-SA 2.0."],
    ['marato', 'Marató, 490 aC', "Els atenesos guanyen. Segons la llegenda, un missatger va córrer uns 40 km fins a Atenes per donar la notícia.", "El túmul de Marató, on es van enterrar els atenesos morts a la batalla. Foto: George E. Koronaios, Wikimedia Commons, CC0."],
-   ['trirrem', 'Salamina, 480 aC', "La flota atenesa destrueix la persa a l'estret de Salamina.", "L'Olympias, rèplica moderna d'un trirrem, el vaixell de guerra atenès. Foto: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0."]].forEach((c, i) => {
+   ['trirrem', 'Salamina, 480 aC', "La flota grega, amb els vaixells atenesos al capdavant, derrota la persa a l'estret de Salamina.", "L'Olympias, rèplica moderna d'un trirrem, el vaixell de guerra atenès. Foto: George E. Koronaios, Wikimedia Commons, CC BY-SA 4.0."]].forEach((c, i) => {
     const x = M + i * (cw3 + 0.3);
     figCap(s, c[0], x, 1.5, cw3, 2.55, c[3]);
     tx(s, c[1], { x, y: 4.75, w: cw3, h: 0.4, fontSize: 19, bold: true, color: P });
@@ -806,7 +806,7 @@ comprova(4, ['Guerres mèdiques', 'Marató', 'Salamina', 'Lliga de Delos', 'Segl
   'Per què el segle V aC s\'anomena «segle de Pèricles»?',
   "Per què diem que la lliga de Delos es va convertir en un imperi d'Atenes?",
   'Segons Tucídides, quina va ser la causa més profunda de la guerra del Peloponès?',
-], "Respostes. 1, les polis gregues, unides, contra l'Imperi persa. Van guanyar els grecs. 2, la flota atenesa va destruir la flota persa el 480 aC, i aquella victòria va decidir la guerra. 3, perquè sota el seu lideratge Atenes va viure la seva màxima esplendor, es va consolidar la democràcia i es va reconstruir l'Acròpolis amb el Partenó. 4, perquè Atenes obligava els aliats a pagar i a quedar-s'hi per la força, va portar el tresor a Atenes i en va fer servir els diners. 5, la por que tenia Esparta del creixement del poder d'Atenes.");
+], "Respostes. 1, les polis gregues, unides, contra l'Imperi persa. Van guanyar els grecs. 2, la flota grega, amb els vaixells atenesos al capdavant, va derrotar la flota persa el 480 aC. Va ser el gran gir de la guerra. 3, perquè sota el seu lideratge Atenes va viure la seva màxima esplendor, es va consolidar la democràcia i es va reconstruir l'Acròpolis amb el Partenó. 4, perquè Atenes obligava els aliats a pagar i a quedar-s'hi per la força, va portar el tresor a Atenes i en va fer servir els diners. 5, la por que tenia Esparta del creixement del poder d'Atenes.");
 
 // ---------- Apartat 5
 sep(5, '', "Alexandre el Magne i l'època hel·lenística",
