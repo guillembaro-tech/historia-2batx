@@ -139,6 +139,11 @@ add_action(
 			pds2_404();
 			return;
 		}
+		// Amb la nova organització publicada, les preguntes 2010-2024 són dins de «Preparar la PAU».
+		if ( 'preguntes' === $vista && get_option( 'pds2_pau_v2', false ) ) {
+			wp_safe_redirect( pds2_pau_url() . '#preguntes', 301 );
+			exit;
+		}
 		// L'arxiu del curs porta a la portada de 2n i el de la matèria Història, a la portada d'Història (els del tema només llisten unitats).
 		// Mentre la secció és privada, només ho fan per als administradors, amb una redirecció temporal.
 		if ( is_tax( 'materia', 'historia' ) || is_tax( 'curs', PDS2_BASE ) ) {
