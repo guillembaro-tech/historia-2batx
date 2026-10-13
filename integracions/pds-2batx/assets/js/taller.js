@@ -472,6 +472,12 @@
       var nav = root.querySelector('.tabs');
       if (nav) setTimeout(function () { nav.scrollIntoView({ block: 'start' }); }, 0);
     }
+    /* Un enllaç dins de la mateixa pàgina (#e2, #test-3...) també obre l'exercici o el test */
+    if (V2) window.addEventListener('hashchange', function () {
+      var h2 = location.hash.replace('#', ''), m2 = /^test-(\d+|atzar)$/.exec(h2);
+      if (m2) { obre('e4', false); carregaTests({ el: root.querySelector('#tl-test'), url: CFG.tests, tema: n, inicial: m2[1] }); }
+      else if (/^e[1-4]$/.test(h2)) obre(h2, false);
+    });
   }
 
   function vistaPreparacio(n) {

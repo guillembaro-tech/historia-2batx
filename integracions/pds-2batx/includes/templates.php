@@ -64,7 +64,7 @@ add_action(
 	'wp_enqueue_scripts',
 	static function () {
 		$v = pds2_vista();
-		if ( '' === $v ) {
+		if ( '' === $v || is_404() ) {
 			return;
 		}
 		$v4 = pds2_disseny_v4();
@@ -133,7 +133,7 @@ add_action(
 add_action( 'wp_enqueue_scripts', 'pds2_estils_v4', 21 );
 
 function pds2_estils_v4(): void {
-	if ( ! pds2_disseny_v4() ) {
+	if ( ! pds2_disseny_v4() || is_404() ) {
 		return;
 	}
 	$dir    = WP_CONTENT_DIR . '/uploads/pds-model/';
