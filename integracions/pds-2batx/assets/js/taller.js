@@ -302,8 +302,8 @@
 
   /* Carrega els tests i dibuixa el selector. o.tema = número del tema (Taller) o 0 (test barrejat de tots els temes). */
   function carregaTests(o) {
-    if (!o.el || !o.url) return;
-    fetch(o.url, { credentials: 'same-origin', headers: { 'X-WP-Nonce': CFG.nonce }, cache: 'no-store' })
+    if (!o.el || !o.url) return null;
+    return fetch(o.url, { credentials: 'same-origin', headers: { 'X-WP-Nonce': CFG.nonce }, cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) { testApp(o, d.temes ? d.temes : [d]); })
       .catch(function () { o.el.innerHTML = '<p class="tl-loading">No s\'han pogut carregar els tests. Torna-ho a provar d\'aquí a uns minuts.</p>'; });
@@ -427,7 +427,20 @@
     root.style.setProperty('--tc', CFG.color || 'var(--primary)');
     var t = document.getElementById('pds2-test-mixt'), e = document.getElementById('pds2-eines');
     if (e) e.innerHTML = eines();
-    if (t) carregaTests({ el: t, url: CFG.tests, tema: 0 });
+    var pr = t ? carregaTests({ el: t, url: CFG.tests, tema: 0 }) : null;
+    /* El test es carrega després i empeny cap avall la resta de la pàgina. Si s'hi ha entrat amb un salt
+       (per exemple #eines des de la pestanya PAU del tema), s'hi torna quan el test ja és a lloc,
+       si l'usuari no s'ha mogut mentrestant (13/10/2026) */
+    if (pr && location.hash.length > 1) {
+      var mogut = false, marca = function () { mogut = true; };
+      ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (ev) { window.addEventListener(ev, marca, { once: true, passive: true }); });
+      pr.then(function () {
+        var dest = null;
+        try { dest = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (err) { dest = null; }
+        if (!dest || t.contains(dest) || mogut) return;
+        requestAnimationFrame(function () { dest.scrollIntoView(); });
+      });
+    }
   }
 
   /* ---------- vistes ---------- */
