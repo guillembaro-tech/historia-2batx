@@ -1016,3 +1016,98 @@ html.um-xp-open { overflow: hidden; }
 .pd .um-checklist li::before { content: ""; position: absolute; left: 0; top: .6mm; width: 3mm; height: 3mm; border: .8pt solid var(--c); border-radius: .6mm; }
 .pd .um-sa-rub td:first-child { width: 22mm; }
 .pd .um-sa table, .pd .um-sa-ses .um-card, .pd .um-sa-troballes .um-card { break-inside: avoid; }
+
+/* ---------- Accés per a docents (mòdul d'accés docent, octubre de 2026) ---------- */
+.um-tab.is-acces { color: var(--doc); }
+.um-tab.is-acces[aria-selected="true"]::after { background: var(--doc); }
+.um-xp.is-sense-docent .um-xp-sol, .um-xp.is-sense-docent .um-xp-sub[data-for="temari"], .um-xp.is-sense-docent .um-xp-sub[data-for="final inicial"] { display: none !important; }
+.um-acces-card { display: grid; grid-template-columns: 56px 1fr; gap: 22px; max-width: 760px; padding: 4px 0 8px; }
+.um-acces-ico { width: 56px; height: 56px; border-radius: 50%; background: var(--curs-soft); color: var(--curs); display: grid; place-items: center; }
+.um-acces-intro { margin: 4px 0 10px; color: #202124; font-size: 17px; line-height: 1.5; }
+.um-acces-llista { list-style: none; margin: 0 0 22px; padding: 0; display: grid; gap: 8px; }
+.um-acces-llista li { display: flex; gap: 10px; align-items: flex-start; color: #3C4043; font-size: 16px; line-height: 1.45; }
+.um-acces-llista svg { flex: none; margin-top: 2px; color: var(--curs); }
+.um-acces-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.um-acces-b1, .um-acces-b2 { font: 500 15px/1 "Roboto Var", Roboto, system-ui, sans-serif; border-radius: 8px; padding: 12px 22px; cursor: pointer; border: 1px solid var(--curs); }
+.um-acces-b1 { background: var(--curs); color: #fff; }
+.um-acces-b2 { background: #fff; color: var(--curs); }
+.um-acces-b1:hover { filter: brightness(.92); }
+.um-acces-b2:hover { background: var(--curs-soft); }
+.um-acces-b1:focus-visible, .um-acces-b2:focus-visible { outline: 3px solid var(--curs-soft); outline-offset: 2px; }
+.um .um-acces-nota { margin: 16px 0 0; color: #5F6368; font-size: 14px; }
+.um .um-acces-alumne { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid #DADCE0; color: #5F6368; font-size: 15px; line-height: 1.5; }
+.um-acces-alumne strong { color: #202124; }
+@media (max-width: 600px) { .um-acces-card { grid-template-columns: 1fr; gap: 14px; } }
+
+/* ---------- SA «L'assemblea d'Atenes» (personatges, propostes, desenllaç) i activitat curta d'Empúries, 13/10/2026 ---------- */
+.um-sa-opcions, .um-sa-pers { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.um-sa-opcions { grid-template-columns: 1fr 1fr; }
+.um-sa-opcions .um-card h4::before, .um-sa-pers .um-card h4::before, .um-sa-mini .um-card h4::before { display: none; }
+.um-sa-opcions .um-card h4, .um-sa-pers .um-card h4 { align-items: center; gap: 10px; font-size: 17px; }
+.um-sa-av { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; background: var(--primary-soft); }
+.um-sa .um-sa-av .um-ico { width: 22px; height: 22px; flex: 0 0 22px; color: var(--primary); }
+.um-sa-pers .um-card { display: flex; flex-direction: column; gap: 8px; }
+.um-sa-pers .um-card h4 { margin: 0; }
+.um-sa-vot { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; font-size: 13px; font-weight: 500; line-height: 1; padding: 5px 12px 5px 8px; border-radius: 999px; background: var(--primary); color: #fff; }
+.um-sa .um-sa-vot .um-ico { width: 16px; height: 16px; flex: 0 0 16px; color: #fff; }
+.um-sa-vot.is-no { background: #F1F3F4; color: var(--ink-2); }
+.um-sa .um-sa-vot.is-no .um-ico { color: var(--ink-2); }
+.um .um-sa-camp { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink); }
+.um-sa-camp.is-vol { font-weight: 500; }
+.um-sa-et { display: block; margin: 0 0 1px; font-size: 12px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--primary-dark); }
+.um-sa-punt { display: none; }
+.um-sa-dest .um-card p { font-size: 15px; }
+details.um-sa-desenllac { border: 2px dashed var(--primary); border-radius: var(--r); padding: 0 18px; margin: 26px 0; background: #fff; }
+details.um-sa-desenllac > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; padding: 14px 0; font-size: 17px; font-weight: 500; color: var(--primary); }
+details.um-sa-desenllac > summary::-webkit-details-marker { display: none; }
+details.um-sa-desenllac > summary::after { content: ""; margin-left: auto; width: 9px; height: 9px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .2s; }
+details.um-sa-desenllac[open] { border: 1px solid var(--outline); padding-bottom: 6px; }
+details.um-sa-desenllac[open] > summary { border-bottom: 1px solid var(--outline); margin-bottom: 6px; }
+details.um-sa-desenllac[open] > summary::after { transform: rotate(-135deg); }
+.um-sa .um-sa-desenllac > summary .um-ico { width: 22px; height: 22px; flex: 0 0 22px; }
+.um-sa-desenllac > h3 { margin-top: 10px; }
+.um-sa-fpers th { width: 34%; text-align: left; font-weight: 500; background: var(--primary-soft); vertical-align: top; }
+.um-sa-fpers td { height: 48px; }
+.um-sa-recompte td:last-child { width: 30%; }
+.um-sa-recompte td { height: 40px; }
+.um-box.um-sa-mini { border: 1px solid var(--outline); background: #fff; }
+.um-sa-mini .um-ico { width: 20px; height: 20px; flex: 0 0 20px; color: var(--primary); }
+.um-sa-mini .um-sa-troballes .um-card h4 { align-items: flex-start; gap: 8px; }
+.um-sa-mini .um-sa-troballes .um-card h4 .um-ico { margin-top: .1em; }
+.um-sa-mini-t td:first-child { font-weight: 500; }
+.um-sa-mini-t td { height: 40px; }
+.um-sa-mini .um-sa-ex td { background: var(--primary-soft); color: var(--ink-2); font-style: italic; height: auto; }
+.um-sa-mini .um-sa-ex td:first-child { font-style: normal; }
+.um-sa .um-map svg { max-width: 640px; margin: 0 auto; }
+@media (max-width: 760px) { .um-sa-opcions { grid-template-columns: 1fr; } }
+
+/* Documents (PDF) */
+.pd .um-sa-opcions, .pd .um-sa-pers { grid-template-columns: 1fr 1fr; }
+.pd .um-sa-opcions .um-card h4, .pd .um-sa-pers .um-card h4 { display: flex; align-items: center; gap: 2mm; margin: 0 0 1mm; }
+.pd .um-sa-av { display: inline-flex; align-items: center; justify-content: center; width: 7mm; height: 7mm; flex: 0 0 7mm; border-radius: 50%; background: var(--c-soft); }
+.pd .um-sa-av .um-ico { width: 4.2mm; height: 4.2mm; flex: 0 0 4.2mm; color: var(--c); }
+.pd .um-sa-vot { display: inline-flex; align-items: center; gap: 1.2mm; padding: .5mm 2.2mm .5mm 1.4mm; margin: 0 0 1mm; border-radius: 3mm; background: var(--c); color: #fff; font: 600 7.4pt/1.2 "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-sa-vot .um-ico { width: 3mm; height: 3mm; flex: 0 0 3mm; color: #fff; }
+.pd .um-sa-vot.is-no { background: #F1F3F4; color: #5F6368; }
+.pd .um-sa-vot.is-no .um-ico { color: #5F6368; }
+.pd .um-sa-camp { margin: 0; }
+.pd .um-sa-camp.is-vol { font-weight: 600; }
+.pd .um-sa-et { display: block; margin: 1.2mm 0 .2mm; font: 600 7pt "Roboto Var", Roboto, Arial, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--c-dark); }
+.pd .um-sa-punt { display: none; }
+.pd .um-sa-pers .um-card, .pd .um-sa-opcions .um-card { break-inside: avoid; }
+.pd .um-sa-fpers th { width: 34%; text-align: left; background: var(--c-soft); color: var(--ink); font-weight: 600; vertical-align: top; }
+.pd .um-sa-fpers td { height: 13mm; }
+.pd .um-sa-recompte td { height: 9mm; }
+.pd .um-sa-fpers, .pd .um-sa-recompte { break-inside: avoid; }
+.pd .um-box.um-sa-mini { border: .6pt solid var(--line); background: #fff; }
+.pd .um-sa-mini .um-ico { width: 3.6mm; height: 3.6mm; flex: 0 0 3.6mm; color: var(--c); }
+.pd .um-sa-mini .um-card h4 { display: flex; align-items: flex-start; gap: 1.6mm; }
+.pd .um-sa-mini-t td { height: 9mm; }
+.pd .um-sa-mini .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; }
+.pd .um-sa .um-photo img { max-height: 62mm; }
+.pd .um-sa .um-map svg { max-height: 120mm; }
+.pd .um-sa-pers .um-card, .pd .um-sa-opcions .um-card { font-size: 9.5pt; }
+.pd .um-sa-opcions .um-card p, .pd .um-sa-dest .um-card p, .pd .um-sa-mini .um-card p { font-size: 9.5pt; line-height: 1.42; }
+.pd .um-sa-mini .um-card p { font-size: 8.8pt; }
+
+.pd h4.um-sa-nova { margin-top: 0; }

@@ -10,7 +10,9 @@
     { id: 'avaluacio', label: 'Avaluació', ids: ['avaluacio'] },
     { id: 'situacio', label: "Situació d'aprenentatge", ids: ['sa'] },
     { id: 'recursos', label: 'Recursos', ids: ['recursos'] },
-    { id: 'docent', label: 'Per al docent', ids: ['fitxa', 'sessions', 'diversitat', 'solucionari'], docent: true }
+    { id: 'docent', label: 'Per al docent', ids: ['fitxa', 'sessions', 'sa-guia', 'diversitat', 'solucionari'], docent: true },
+    /* Sense sessió docent, el servidor hi posa l'avís «Accés per a docents» (mòdul d'accés docent) */
+    { id: 'acces', label: 'Per al docent', ids: ['acces-docent'], acces: true }
   ];
   var layout = root.querySelector('.um-layout');
   if (!layout) { return; }
@@ -30,7 +32,7 @@
   groups.forEach(function (g) {
     var b = document.createElement('button');
     b.type = 'button';
-    b.className = 'um-tab' + (g.docent ? ' is-docent' : '');
+    b.className = 'um-tab' + (g.docent ? ' is-docent' : (g.acces ? ' is-acces' : ''));
     b.setAttribute('role', 'tab');
     b.textContent = g.label;
     b.addEventListener('click', function () { show(g.id, true); });
@@ -274,6 +276,8 @@
   function mk(tag, cls, html) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (html !== undefined) { e.innerHTML = html; } return e; }
   function slug(t) { return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/·/g, '-').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
   function isDocent() { return root.getAttribute('data-view') === 'docent'; }
+  /* El servidor marca data-docent="0" quan qui mira no ha entrat com a docent */
+  function senseDocent() { return root.getAttribute('data-docent') === '0'; }
 
   var title = txt(root.querySelector('.um-hero h1')) || document.title;
   var eyebrow = txt(root.querySelector('.um-eyebrow'));
@@ -312,6 +316,7 @@
     { id: 'sa', label: "Situació d'aprenentatge", hint: 'Repte, treball i avaluació', ids: ['sa'] },
     { id: 'fitxa', label: 'Fitxa curricular', ids: ['fitxa'], docent: true },
     { id: 'sessions', label: 'Pla de sessions', ids: ['sessions'], docent: true },
+    { id: 'saguia', label: "Guia de la situació d'aprenentatge", ids: ['sa-guia'], docent: true },
     { id: 'diversitat', label: 'Atenció a la diversitat', ids: ['diversitat'], docent: true },
     { id: 'solucionari', label: 'Solucionari', ids: ['solucionari'], docent: true }
   ];
@@ -400,6 +405,13 @@
       var tr = d.querySelector('.um-tr');
       if (tr) { while (tr.firstChild) { box.appendChild(tr.firstChild); } }
       d.parentNode.replaceChild(box, d);
+    });
+    $$('details.um-sa-desenllac', c).forEach(function (d) {
+      var s = d.querySelector('summary');
+      if (s) { s.parentNode.removeChild(s); }
+      var box = mk('div', 'um-sa-desenllac');
+      while (d.firstChild) { box.appendChild(d.firstChild); }
+      var sec = d.parentNode; sec.removeChild(d); sec.appendChild(box);
     });
     $$('details', c).forEach(function (d) {
       var box = mk('div', d.className || '');
@@ -644,10 +656,10 @@
     var cov = mk('header', 'pd-cover');
     var kick = eyebrow;
     if (!hasTemari && parts.length === 1) { kick = (eyebrow ? eyebrow + ' · ' : '') + BY[parts[0]].label; }
-    var ctitle = title, cguide = hasTemari ? guide : '', saSola = !hasTemari && parts.length === 1 && parts[0] === 'sa';
+    var ctitle = title, cguide = hasTemari ? guide : '', saSola = !hasTemari && parts.length === 1 && (parts[0] === 'sa' || parts[0] === 'saguia');
     if (saSola) {
       var saH = root.querySelector('#sa > header h2'), saQ = root.querySelector('#sa .um-sa-repte strong');
-      if (saH) { ctitle = txt(saH); kick = "Situació d'aprenentatge · " + title + (eyebrow ? ' · ' + (eyebrow.split('·')[0] || '').trim() : ''); }
+      if (saH) { ctitle = txt(saH); kick = (parts[0] === 'saguia' ? "Guia del docent · " : "Situació d'aprenentatge · ") + title + (eyebrow ? ' · ' + (eyebrow.split('·')[0] || '').trim() : ''); }
       if (saQ) { cguide = txt(saQ); }
     }
     var band = mk('div', 'pd-band' + (hasTemari || saSola ? '' : ' is-small'));
@@ -985,7 +997,7 @@
       if (t === 'h1' && cl.contains('pd-h1')) { s += inlineP(k, { style: 'Heading1', pb: ctx.pb }); ctx.pb = false; return; }
       if (t === 'h1' || t === 'h2') { if (FLOAT) { s += CLEAR; FLOAT = false; } s += inlineP(k, { style: 'Heading2' }); return; }
       if (t === 'h3') { s += inlineP(k, { style: ctx.box ? 'BoxHead' : 'Heading3', pb: cl.contains('um-sa-nova') }); return; }
-      if (t === 'h4') { s += inlineP(k, { style: 'Heading4' }); return; }
+      if (t === 'h4') { s += inlineP(k, { style: 'Heading4', pb: cl.contains('um-sa-nova') }); return; }
       if (t === 'svg' || t === 'img') { s += imageXml(k, ctx); return; }
       if (cl.contains('um-box-t')) { s += inlineP(k, { style: 'BoxTitle', ind: base.ind }, { color: ctx.boxColor || C }); return; }
       if (cl.contains('um-tag')) { s += inlineP(k, { style: 'Tag', ind: base.ind }); return; }
@@ -1359,8 +1371,8 @@
           Object.keys(LEVELS).map(function (k) { return '<label><input type="radio" name="um-xp-lv" value="' + k + '"' + (k === 'tots' ? ' checked' : '') + '><span>' + LEVELS[k] + '</span></label>'; }).join('') + '</div>' : '') +
           '<label class="um-xp-opt"><input type="checkbox" name="lines" checked> Línies per respondre</label></div>';
       }
-      if (p.id === 'temari') { extra = '<div class="um-xp-sub" data-for="temari"><label class="um-xp-opt"><input type="checkbox" name="answers"> Amb les respostes del «Comprova-ho»</label><label class="um-xp-opt um-xp-doc"><input type="checkbox" name="notes"> Amb les notes per al docent</label></div>'; }
-      if (p.id === 'final') { extra = '<div class="um-xp-sub" data-for="final inicial"><label class="um-xp-opt"><input type="checkbox" name="solutions"> Marca les respostes correctes de les avaluacions</label></div>'; }
+      if (p.id === 'temari') { extra = '<div class="um-xp-sub" data-for="temari"><label class="um-xp-opt um-xp-sol"><input type="checkbox" name="answers"> Amb les respostes del «Comprova-ho»</label><label class="um-xp-opt um-xp-doc"><input type="checkbox" name="notes"> Amb les notes per al docent</label></div>'; }
+      if (p.id === 'final') { extra = '<div class="um-xp-sub" data-for="final inicial"><label class="um-xp-opt um-xp-sol"><input type="checkbox" name="solutions"> Marca les respostes correctes de les avaluacions</label></div>'; }
       return '<li class="' + (p.docent ? 'um-xp-doc' : '') + '"><label class="um-xp-row"><input type="checkbox" name="part" value="' + p.id + '"><span><b>' + esc(p.label) + '</b>' + (p.hint ? '<small>' + esc(p.hint) + '</small>' : '') + '</span></label>' + extra + '</li>';
     });
     var docStart = PARTS.findIndex(function (p) { return p.docent; });
@@ -1390,7 +1402,7 @@
     var q = function (n) { var i = dlg.querySelector('input[name="' + n + '"]'); return !!(i && i.checked); };
     var parts = $$('input[name="part"]:checked', dlg).map(function (i) { return i.value; }).filter(function (id) { return !BY[id].docent || isDocent(); });
     var lv = dlg.querySelector('input[name="um-xp-lv"]:checked');
-    return { parts: parts, level: lv ? lv.value : 'tots', lines: q('lines'), answers: q('answers'), notes: q('notes') && isDocent(), solutions: q('solutions'), name: q('name') };
+    return { parts: parts, level: lv ? lv.value : 'tots', lines: q('lines'), answers: q('answers') && !senseDocent(), notes: q('notes') && isDocent(), solutions: q('solutions') && !senseDocent(), name: q('name') };
   }
   function sync() {
     var o = opts();
@@ -1404,6 +1416,7 @@
   function open() {
     if (!dlg) { build(); }
     dlg.classList.toggle('is-docent', isDocent());
+    dlg.classList.toggle('is-sense-docent', senseDocent());
     $$('input[name="part"]', dlg).forEach(function (i) { i.checked = i.value === currentPart(); });
     if (!isDocent()) { $$('.um-xp-doc input', dlg).forEach(function (i) { i.checked = false; }); }
     last = document.activeElement;
