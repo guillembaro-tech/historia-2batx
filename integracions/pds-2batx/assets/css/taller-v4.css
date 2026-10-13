@@ -147,3 +147,28 @@
 /* Preparar la PAU: el test i la caixa d'eines dins de la pàgina */
 .um.pds2-v4 .pds2-pau-app#taller { padding: 0; }
 .um.pds2-v4 #taller #pds2-eines .panel > div:first-child > h2 { display: none; }
+
+/* Connectors per redactar, desplegable al pas d'escriure (13/10/2026) */
+.um.pds2-v4 #taller .tl-eines-d { margin: 0; border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface-2); }
+.um.pds2-v4 #taller .tl-eines-d > summary { display: flex; align-items: center; gap: 10px 14px; padding: 12px 16px; cursor: pointer; list-style: none; font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.um.pds2-v4 #taller .tl-eines-d > summary::-webkit-details-marker { display: none; }
+.um.pds2-v4 #taller .tl-eines-ic { flex: 0 0 36px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--primary-soft); color: var(--primary); }
+.um.pds2-v4 #taller .tl-eines-ic svg { width: 20px; height: 20px; }
+.um.pds2-v4 #taller .tl-eines-t { flex: 1 1 auto; min-width: 0; }
+.um.pds2-v4 #taller .tl-eines-t b { display: block; font-size: 15.5px; font-weight: 500; color: var(--ink); }
+.um.pds2-v4 #taller .tl-eines-go { flex: 0 0 auto; display: inline-flex; align-items: center; height: 34px; padding: 0 16px; border: 1px solid color-mix(in srgb, var(--primary) 40%, #fff); border-radius: 17px; background: var(--surface); color: var(--primary); font-weight: 500; font-size: 13.5px; }
+.um.pds2-v4 #taller .tl-eines-d > summary:hover .tl-eines-go { background: color-mix(in srgb, var(--primary) 8%, #fff); }
+.um.pds2-v4 #taller .tl-eines-d > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: var(--r); }
+.um.pds2-v4 #taller .tl-eines-go .c, .um.pds2-v4 #taller .tl-eines-d[open] .tl-eines-go .o { display: none; }
+.um.pds2-v4 #taller .tl-eines-d[open] .tl-eines-go .c { display: inline; }
+.um.pds2-v4 #taller .tl-eines-cos { padding: 4px 16px 16px; }
+.um.pds2-v4 #taller .tl-eines-cos > .panel { padding: 0; border: 0; background: none; gap: 14px; }
+.um.pds2-v4 #taller .tl-eines-cos > .panel > div:first-child > h2 { display: none; }
+.um.pds2-v4 #taller .tl-eines-cos .tool { background: var(--surface); }
+.um.pds2-v4 #taller .tl-eines-cos .tl-eines-nota { margin: 14px 0 0; }
+@media (max-width: 640px) {
+  .um.pds2-v4 #taller .tl-eines-d > summary { flex-wrap: wrap; padding: 12px; }
+  .um.pds2-v4 #taller .tl-eines-t { flex-basis: calc(100% - 50px); }
+  .um.pds2-v4 #taller .tl-eines-go { flex-basis: 100%; justify-content: center; }
+  .um.pds2-v4 #taller .tl-eines-cos { padding: 4px 12px 12px; }
+}

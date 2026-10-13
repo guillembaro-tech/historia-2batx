@@ -77,6 +77,11 @@ $opcions = static function ( array $ops ): string {
 	<?php endif; ?>
 
 	<h3 id="pau-exercicis">Practica els exercicis</h3>
+	<a class="pds2-pau-eines" href="<?php echo esc_url( pds2_pau_url() . '#eines' ); ?>">
+		<span class="pds2-pau-eines-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg></span>
+		<span class="pds2-pau-eines-t"><b>Connectors per redactar</b>Contrast, causa, conseqüència, conclusió… Per enllaçar bé les idees dels exercicis 1, 2 i 3.</span>
+		<span class="pds2-pau-eines-go">Obre'ls<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg></span>
+	</a>
 	<div class="pds2-pau-grid">
 
 		<article class="pds2-pau-card" id="pau-e1">

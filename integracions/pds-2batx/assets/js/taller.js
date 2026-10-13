@@ -42,7 +42,11 @@
   var V2 = !!(CFG && CFG.v2);
   function einesNota() {
     if (!V2 || !CFG.eines) return '';
-    return '<p class="note tl-eines-nota">Connectors, verbs precisos i errors freqüents per redactar, a la <a href="' + esc(CFG.eines) + '">Caixa d\'eines</a>.</p>';
+    /* Desplegable al començament del pas d'escriure, amb la caixa d'eines sencera (13/10/2026) */
+    return '<details class="tl-eines-d"><summary><span class="tl-eines-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 15l6 -6" /><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" /><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" /></svg></span>'
+      + '<span class="tl-eines-t"><b>Connectors per redactar</b>Contrast, causa, conseqüència, conclusió… Tria el que necessitis mentre escrius.</span>'
+      + '<span class="tl-eines-go"><span class="o">Mostra\'ls</span><span class="c">Amaga\'ls</span></span></summary>'
+      + '<div class="tl-eines-cos">' + eines() + '<p class="note tl-eines-nota">També els tens a la <a href="' + esc(CFG.eines) + '">Caixa d\'eines</a> de «Preparar la PAU».</p></div></details>';
   }
 
   var PAPER_NOTE = '<div class="paper-note">' + PEN(20) + '<p><b>La resposta s\'escriu a mà.</b> El taller et guia i t\'ajuda a corregir-te, però el pas 3 el fas en paper i amb bolígraf, com a l\'examen.</p></div>';
@@ -156,7 +160,7 @@
 
     var steps = step(0, "Llegeix l'enunciat i les fonts", "Llegeix les dues fonts senceres, també el peu de font, i busca les frases on hi ha les idees clau. Abans d'obrir cada pregunta de sota, intenta respondre-la tu.", exam + guide(e.guia, "Descompon l'enunciat · obre cada pregunta després de pensar-hi"))
       + step(1, "Planifica en un esquema", "Copia aquest esquema al marge del full o en un full d'esborrany i omple'l amb dues o tres paraules per casella. No el passis a net, perquè només serveix per ordenar les idees.", sketch(boxes(EX1_ESQUEMA)) + vocab + pits(EX1_ERRORS))
-      + step(2, "Escriu la resposta a mà", "Escriu les tres qüestions al paper. Pots tenir aquest guió a la vista. Diu què ha de fer cada paràgraf, i les etiquetes són les mateixes que trobaràs al model del pas 5.", banner("Full en blanc, bolígraf i marges a banda i banda. Numera cada resposta (1.1, 1.2, 1.3) i escriu amb lletra clara.") + plan(guio) + einesNota())
+      + step(2, "Escriu la resposta a mà", "Escriu les tres qüestions al paper. Pots tenir aquest guió a la vista. Diu què ha de fer cada paràgraf, i les etiquetes són les mateixes que trobaràs al model del pas 5.", einesNota() + banner("Full en blanc, bolígraf i marges a banda i banda. Numera cada resposta (1.1, 1.2, 1.3) i escriu amb lletra clara.") + plan(guio))
       + step(3, "Autoavalua't amb el full davant", "Rellegeix el que has escrit amb un llapis de color, subratlla els connectors i encercla les dates. Marca només el que realment hi és.", rubric(rub, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment dins de cada bloc és una guia per autoavaluar-te."))
       + step(4, "Compara amb una resposta model", "Posa el teu full al costat. No busquis frases idèntiques. Fixa't en què fa cada paràgraf i en com s'enllacen les idees.", gateModel(model(e.model), '<span><i class="sw"></i>connector</span><span>etiqueta que diu què fa cada paràgraf</span>'))
       + (CFG && CFG.correccio ? step(5, "Corregeix la resposta amb Claude", "Fes una foto clara del full sencer i puja-la. Claude llegeix la resposta, la corregeix amb els criteris oficials i marca a la imatge els fragments que comenta. La nota és orientativa.", (CFG.correccio.config && CFG.correccio.config.public ? '' : '<p class="tl-corr-avis"><b>Vista del professor.</b> Pots triar el model i veure el cost de cada correcció. Les opcions de la correcció oberta són al menú «Correcció PAU» del panell.</p>') + '<div id="pds-corr-app" class="tl-corr"><p>Carregant…</p></div>') : '');
@@ -198,7 +202,7 @@
     });
     var steps = step(0, "Llegeix l'enunciat i situa el moment", "L'exercici 2 et situa en un moment concret del passat i et dona un personatge. Has d'escriure des d'aquest personatge, i pots fer-ho en primera persona, però el text ha d'explicar aquell moment amb els cinc termes. No és l'exposició impersonal d'un tema ni un relat només d'impressions.", s1)
       + step(1, "Planifica i ordena els termes en el temps", "Copia aquest esquema i col·loca cada terme a la casella on té sentit. Si un terme no encaixa enlloc, encara no l'entens prou i has de tornar al temari.", s2)
-      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Parla des del personatge, però explica el tema. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", s3 + einesNota())
+      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Parla des del personatge, però explica el tema. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", einesNota() + s3)
       + step(3, "Autoavalua't amb el full davant", "Primer compta els termes subratllats. Després comprova si cada terme fa una feina dins del relat o només hi és de pas, i si el personatge explica el tema o només diu el que sent.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment del contingut és una guia. Recorda el possible descompte per ortografia i presentació."))
       + step(4, "Compara amb una resposta model", "Fixa't en com el personatge se situa al principi i, a partir d'aquí, explica el tema, i en com cada terme subratllat està lligat a una causa o a una conseqüència.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw"></i>connector</span><span><i class="sw t"></i>terme obligatori</span>'));
     return exSection('e2', [["Contingut de la redacció", "1,50"], ["Cinc termes × 0,20", "1,00"]], optsBar(o), steps);
@@ -243,7 +247,7 @@
     ];
     var steps = step(0, "Llegeix l'enunciat i el descriptor", "L'exercici 3 demana exposar un tema transversal, és a dir, un mateix fil que travessa diverses etapes. Fixa't en com es construeix una resposta real.", s1)
       + step(1, "Planifica en una taula per etapes", "Copia aquesta taula al full d'esborrany. Omple primer la fila que ja coneixes; per a la resta, fes servir les fites del descriptor. L'última columna és la més important, perquè hi decideixes el raonament.", s2)
-      + step(2, "Escriu la resposta a mà", "Fes un paràgraf d'introducció, un paràgraf per etapa i un de conclusió. Deixa una línia en blanc entre paràgrafs perquè l'estructura es vegi.", s3 + einesNota())
+      + step(2, "Escriu la resposta a mà", "Fes un paràgraf d'introducció, un paràgraf per etapa i un de conclusió. Deixa una línia en blanc entre paràgrafs perquè l'estructura es vegi.", einesNota() + s3)
       + step(3, "Autoavalua't amb el full davant", "Marca amb un color les frases on dius si una etapa avança, retrocedeix o es manté. Si n'hi ha poques, el raonament es queda curt.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment dins de cada bloc és una guia. Recorda el possible descompte per ortografia i presentació."))
       + step(4, "Compara amb una resposta model", "Fixa't en les frases ressaltades. Són el raonament sobre els canvis i les continuïtats, i van repartides per tota la resposta.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw r"></i>raonament sobre canvi o continuïtat</span><span><i class="sw"></i>connector</span>'));
     return exSection('e3', [["Descripció", "1,00"], ["Raonament", "1,00"], ["Conclusió", "0,50"]], optsBar(o), steps);
