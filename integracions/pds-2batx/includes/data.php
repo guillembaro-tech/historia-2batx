@@ -58,7 +58,7 @@ function pds2_tema_color( int $post_id ): string {
 	}
 	$o = pds2_temes_oficials();
 	$n = pds2_tema_numero( $post_id );
-	return $o[ $n ]['color'] ?? '#1F3A8A';
+	return $o[ $n ]['color'] ?? '#1F5FBF';
 }
 
 /** Àmbit PAU: número, títol, descriptor (paràgrafs) i enunciats d'exemple. */

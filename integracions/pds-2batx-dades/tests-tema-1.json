@@ -1,0 +1,416 @@
+{
+ "tema": 1,
+ "tests": [
+  {
+   "numero": 1,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un diplomàtic britànic destinat a Madrid i el 1891 heu d'enviar al vostre govern un informe sobre el funcionament del sistema polític de la Restauració. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "L'1 de desembre de 1874, el príncep Alfons, fill d'Isabel II, va presentar el seu programa polític en un document redactat per Cánovas que es coneix com",
+       "o": [
+        "el Pacte del Pardo.",
+        "el Manifest de Manzanares.",
+        "el pronunciament de Sagunt.",
+        "el Manifest de Sandhurst."
+       ],
+       "c": "d",
+       "e": "El va signar a l'acadèmia militar britànica de Sandhurst, on estudiava. S'hi presentava com un rei catòlic i liberal que portaria l'ordre. El pronunciament de Sagunt (29 de desembre de 1874) va ser el cop de Martínez Campos que el va proclamar rei.",
+       "ap": 1
+      },
+      {
+       "q": "Segons la Constitució de 1876, la sobirania",
+       "o": [
+        "residia en el poble, que l'exercia amb el sufragi universal.",
+        "residia exclusivament en la nació.",
+        "era compartida entre el rei i les Corts.",
+        "residia exclusivament en el rei."
+       ],
+       "c": "c",
+       "e": "La Constitució diu que la potestat de fer les lleis resideix «en las Cortes con el Rey». És la sobirania compartida del liberalisme doctrinari de Cánovas, diferent de la sobirania nacional de 1869.",
+       "ap": 1
+      },
+      {
+       "q": "L'alternança pactada en el govern entre el Partit Conservador de Cánovas i el Partit Liberal de Sagasta s'anomena",
+       "o": [
+        "sufragi censatari.",
+        "torn pacífic.",
+        "encasellat.",
+        "pacte de Sant Sebastià."
+       ],
+       "c": "b",
+       "e": "Els dos partits dinàstics s'alternaven en el poder de manera acordada. L'encasellat era l'eina que ho feia possible a les eleccions.",
+       "ap": 1
+      },
+      {
+       "q": "La llista dels candidats que havien de sortir elegits a cada districte, preparada des del Ministeri de la Governació abans de les eleccions, s'anomenava",
+       "o": [
+        "l'encasellat.",
+        "el cens electoral.",
+        "l'acta electoral.",
+        "la tupinada."
+       ],
+       "c": "a",
+       "e": "L'encasellat decidia el resultat abans de votar, i els governadors civils i els cacics s'encarregaven que es complís. La tupinada era la manipulació de les eleccions.",
+       "ap": 1
+      },
+      {
+       "q": "La llei electoral aprovada el 1890 pel govern liberal de Sagasta",
+       "o": [
+        "feia el vot obligatori.",
+        "reservava el vot als homes que pagaven una quantitat mínima d'impostos.",
+        "donava el vot a tots els homes majors de vint-i-cinc anys.",
+        "donava el vot als homes i a les dones majors de vint-i-tres anys."
+       ],
+       "c": "c",
+       "e": "Va restablir el sufragi universal masculí. El vot reservat als qui pagaven impostos era el sufragi censatari de 1878, i el vot obligatori va arribar amb la llei Maura de 1907.",
+       "ap": 1
+      }
+     ]
+    },
+    {
+     "context": "Sou un periodista francès que el 1898 segueix la guerra colonial d'Espanya i heu d'escriure una sèrie d'articles sobre les seves causes i les seves conseqüències. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "La primera guerra dels independentistes cubans contra Espanya, que va acabar amb la Pau de Zanjón (1878), es coneix com",
+       "o": [
+        "la Guerra del Rif.",
+        "la Guerra Hispano-estatunidenca.",
+        "la Tercera Guerra Carlina.",
+        "la Guerra dels Deu Anys."
+       ],
+       "c": "d",
+       "e": "Va durar de 1868 a 1878. Espanya hi va prometre reformes que no va complir, i el descontentament va portar a la nova insurrecció de 1895.",
+       "ap": 3
+      },
+      {
+       "q": "El capità general que va dirigir la repressió a Cuba a partir de 1896 i que va concentrar la població rural en poblats vigilats per l'exèrcit va ser",
+       "o": [
+        "Manuel Fernández Silvestre.",
+        "Valeriano Weyler.",
+        "Miguel Primo de Rivera.",
+        "Arsenio Martínez Campos."
+       ],
+       "c": "b",
+       "e": "Weyler va substituir Martínez Campos el 1896. La concentració de la població rural volia aïllar els guerrillers, i milers de persones hi van morir de gana i de malalties.",
+       "ap": 3
+      },
+      {
+       "q": "L'abril de 1898, els Estats Units van fer servir com a pretext per declarar la guerra a Espanya",
+       "o": [
+        "l'explosió del cuirassat Maine al port de l'Havana.",
+        "la mort de José Martí.",
+        "un atac de la flota espanyola a Florida.",
+        "l'assassinat de Cánovas."
+       ],
+       "c": "a",
+       "e": "El Maine va explotar el febrer de 1898. Els Estats Units ho van atribuir a un sabotatge espanyol, tot i que no es va demostrar mai. Martí havia mort el 1895 i Cánovas, el 1897.",
+       "ap": 3
+      },
+      {
+       "q": "Pel Tractat de París (desembre de 1898), Espanya",
+       "o": [
+        "va vendre Cuba als Estats Units i va conservar les Filipines.",
+        "va cedir Cuba i Puerto Rico a Alemanya.",
+        "va renunciar a Cuba i va cedir Puerto Rico, les Filipines i Guam als Estats Units.",
+        "va conservar Cuba a canvi de cedir les Filipines als Estats Units."
+       ],
+       "c": "c",
+       "e": "Cuba va passar a ser independent sota la tutela dels Estats Units. L'any següent, Espanya va vendre a Alemanya les últimes illes que li quedaven al Pacífic.",
+       "ap": 3
+      },
+      {
+       "q": "Després del Desastre, el regeneracionista aragonès que reclamava modernitzar Espanya amb «escola i rebost» i acabar amb el caciquisme era",
+       "o": [
+        "Joaquín Costa.",
+        "Miguel de Unamuno.",
+        "Pablo Iglesias.",
+        "Antoni Maura."
+       ],
+       "c": "a",
+       "e": "Costa demanava educació i una economia que donés de menjar a tothom, i arribava a reclamar un «cirurgià de ferro». Unamuno era un escriptor de la Generació del 98.",
+       "ap": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un sindicalista britànic que el 1919 visita Barcelona i heu de preparar per al vostre sindicat un informe sobre el moviment obrer a Espanya. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "El Partit Socialista Obrer Espanyol (PSOE) el va fundar el 1879 a Madrid",
+       "o": [
+        "Giuseppe Fanelli.",
+        "Francisco Largo Caballero.",
+        "Pablo Iglesias.",
+        "Salvador Seguí."
+       ],
+       "c": "c",
+       "e": "Pablo Iglesias el va fundar en la clandestinitat. Fanelli va ser qui va portar les idees anarquistes a Espanya el 1868, i Seguí va ser un dirigent de la CNT.",
+       "ap": 2
+      },
+      {
+       "q": "El sindicat socialista Unió General de Treballadors (UGT) es va crear el 1888 a",
+       "o": [
+        "Bilbao.",
+        "Madrid.",
+        "Barcelona.",
+        "Oviedo."
+       ],
+       "c": "c",
+       "e": "La UGT es va crear a Barcelona, tot i que després el socialisme va arrelar sobretot a Madrid, Biscaia i Astúries.",
+       "ap": 2
+      },
+      {
+       "q": "L'atemptat anarquista del novembre de 1893 al Gran Teatre del Liceu de Barcelona és un exemple de",
+       "o": [
+        "la propaganda pel fet.",
+        "la Setmana Tràgica.",
+        "el pistolerisme de la patronal.",
+        "l'acció sindical legal."
+       ],
+       "c": "a",
+       "e": "La propaganda pel fet eren els atemptats d'una minoria anarquista contra persones o llocs que simbolitzaven el poder de la burgesia. El pistolerisme és posterior, entre 1919 i 1923.",
+       "ap": 2
+      },
+      {
+       "q": "A partir de Solidaritat Obrera es va crear el sindicat anarcosindicalista que va ser majoritari a Catalunya. Era",
+       "o": [
+        "la FAI.",
+        "la UGT.",
+        "el Sindicat Lliure.",
+        "la CNT."
+       ],
+       "c": "d",
+       "e": "La CNT rebutjava la política i confiava en l'acció directa i en la vaga general. El Sindicat Lliure (1919) era el seu rival, i la FAI es va fundar el 1927.",
+       "ap": 6
+      },
+      {
+       "q": "Després de la vaga de La Canadenca (1919), el govern va aprovar",
+       "o": [
+        "la jornada màxima de vuit hores.",
+        "la llei d'associacions.",
+        "el sufragi universal masculí.",
+        "el dret de vaga."
+       ],
+       "c": "a",
+       "e": "La vaga va deixar Barcelona sense llum i va acabar amb la jornada de vuit hores. El dret de vaga es va reconèixer el 1909, el sufragi universal masculí el 1890 i la llei d'associacions el 1887.",
+       "ap": 4
+      }
+     ]
+    },
+    {
+     "context": "Sou corresponsal d'un diari italià a Barcelona entre 1909 i 1917 i heu d'explicar als vostres lectors els conflictes que viu la ciutat. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "La Setmana Tràgica (juliol de 1909) va començar com una protesta contra",
+       "o": [
+        "el tancament de les Corts.",
+        "la condemna de Ferrer i Guàrdia.",
+        "la mobilització de reservistes per a la guerra del Marroc.",
+        "la pujada del preu del pa."
+       ],
+       "c": "c",
+       "e": "Molts reservistes eren obrers casats i amb fills, mentre que els joves rics s'havien lliurat del servei pagant. La protesta es va convertir en una vaga general i en una revolta.",
+       "ap": 4
+      },
+      {
+       "q": "El pedagog fundador de l'Escola Moderna que va ser afusellat el 1909, acusat sense proves d'haver dirigit la Setmana Tràgica, era",
+       "o": [
+        "Francesc Layret.",
+        "Anselmo Lorenzo.",
+        "Salvador Seguí.",
+        "Francesc Ferrer i Guàrdia."
+       ],
+       "c": "d",
+       "e": "La seva execució va provocar protestes a tot Europa, amb el crit de «Maura, no!», i va contribuir a la caiguda del govern de Maura.",
+       "ap": 4
+      },
+      {
+       "q": "El 1917, els oficials de l'exèrcit descontents amb els sous i amb els ascensos per mèrits de guerra es van organitzar en",
+       "o": [
+        "la Unión Patriótica.",
+        "el Sometent.",
+        "el Directori militar.",
+        "les Juntes de Defensa."
+       ],
+       "c": "d",
+       "e": "Les Juntes de Defensa eren una mena de sindicats militars, i el govern les va acabar acceptant. El Directori militar i la Unión Patriótica són de la dictadura de Primo de Rivera.",
+       "ap": 4
+      },
+      {
+       "q": "El juliol de 1917, els parlamentaris catalanistes i republicans encapçalats per Francesc Cambó es van reunir a Barcelona per reclamar unes Corts constituents en",
+       "o": [
+        "l'Assemblea de Parlamentaris.",
+        "l'Assemblea de Manresa.",
+        "Solidaritat Catalana.",
+        "el Pacte de Sant Sebastià."
+       ],
+       "c": "a",
+       "e": "L'Assemblea de Parlamentaris (19 de juliol de 1917) va ser la crisi política de 1917, i la Guàrdia Civil la va dissoldre. L'Assemblea de Manresa és de 1892.",
+       "ap": 4
+      },
+      {
+       "q": "La vaga general revolucionària de l'agost de 1917 la van convocar",
+       "o": [
+        "la Lliga Regionalista i els republicans.",
+        "la UGT i la CNT.",
+        "les Juntes de Defensa.",
+        "el Sindicat Lliure i la CNT."
+       ],
+       "c": "b",
+       "e": "Era la crisi social de 1917 i volia forçar un canvi de règim. L'exèrcit la va reprimir. El Sindicat Lliure no es va crear fins al 1919.",
+       "ap": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un diplomàtic francès destinat a Madrid entre 1921 i 1931 i heu d'informar el vostre govern sobre la crisi de la monarquia d'Alfons XIII. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "El juliol de 1921, les tropes rifenyes d'Abd el-Krim van derrotar l'exèrcit del general Fernández Silvestre a",
+       "o": [
+        "Alhucemas.",
+        "Annual.",
+        "Sagunt.",
+        "Cavite."
+       ],
+       "c": "b",
+       "e": "El desastre d'Annual va causar milers de morts i l'opinió pública va exigir responsabilitats. Alhucemas és el desembarcament de 1925, i Cavite, la derrota naval de 1898.",
+       "ap": 4
+      },
+      {
+       "q": "La investigació militar sobre les responsabilitats del desastre d'Annual es coneix com",
+       "o": [
+        "la Llei de Jurisdiccions.",
+        "el Procés de Montjuïc.",
+        "el Memorial de Greuges.",
+        "l'Expedient Picasso."
+       ],
+       "c": "d",
+       "e": "L'Expedient Picasso va assenyalar errors greus dels comandaments. El debat sobre les responsabilitats no es va arribar a fer al Congrés per culpa del cop d'estat de 1923.",
+       "ap": 4
+      },
+      {
+       "q": "El cop d'estat del general Miguel Primo de Rivera, el setembre de 1923, es va iniciar a",
+       "o": [
+        "Barcelona.",
+        "Madrid.",
+        "Melilla.",
+        "Sevilla."
+       ],
+       "c": "a",
+       "e": "Primo de Rivera era el capità general de Catalunya i es va pronunciar a Barcelona la nit del 12 al 13 de setembre de 1923. Alfons XIII no s'hi va oposar.",
+       "ap": 5
+      },
+      {
+       "q": "El desembarcament d'Alhucemas (1925), fet en col·laboració amb França, va ser decisiu per",
+       "o": [
+        "crear el protectorat espanyol al Marroc.",
+        "recuperar les Filipines.",
+        "reprimir la vaga general de 1917.",
+        "acabar amb la revolta rifenya d'Abd el-Krim."
+       ],
+       "c": "d",
+       "e": "Va permetre derrotar els rebels rifenys, i el 1927 el protectorat va quedar pacificat. El protectorat ja existia des de 1912.",
+       "ap": 5
+      },
+      {
+       "q": "L'agost de 1930, republicans i catalanistes d'esquerra van signar un acord per instaurar la república, al qual després es van afegir els socialistes. Es coneix com",
+       "o": [
+        "el Pacte del Pardo.",
+        "el Manifest de Sandhurst.",
+        "el Pacte de Sant Sebastià.",
+        "la Pau de Zanjón."
+       ],
+       "c": "c",
+       "e": "El Pacte de Sant Sebastià va unir l'oposició contra la monarquia. El Pacte del Pardo (1885) era l'acord de Cánovas i Sagasta per continuar el torn pacífic.",
+       "ap": 5
+      }
+     ]
+    },
+    {
+     "context": "Sou un economista alemany que el 1930 estudia els canvis econòmics i socials que han viscut Espanya i Catalunya des de 1875. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "La plaga que va destruir les vinyes catalanes a partir de 1879 i que va agreujar el conflicte entre propietaris i rabassaires va ser",
+       "o": [
+        "la febre groga.",
+        "la llagosta.",
+        "la fil·loxera.",
+        "la pesta bubònica."
+       ],
+       "c": "c",
+       "e": "La fil·loxera és un insecte que destrueix les arrels dels ceps. Va arribar a l'Empordà el 1879 i al Penedès el 1887.",
+       "ap": 6
+      },
+      {
+       "q": "El contracte agrari català que durava mentre visquessin dos terços dels primers ceps plantats s'anomenava",
+       "o": [
+        "arrendament anual.",
+        "rabassa morta.",
+        "remença.",
+        "masoveria."
+       ],
+       "c": "b",
+       "e": "Quan la fil·loxera va matar els ceps, els propietaris van considerar acabats els contractes, i els rabassaires es van organitzar per defensar-se.",
+       "ap": 6
+      },
+      {
+       "q": "Les colònies industrials catalanes es van instal·lar sobretot",
+       "o": [
+        "a la costa, per exportar els productes per mar.",
+        "als afores de Madrid, a prop del mercat.",
+        "al costat de les mines de carbó d'Astúries.",
+        "a la vora dels rius, com el Llobregat i el Ter, per aprofitar la força de l'aigua."
+       ],
+       "c": "d",
+       "e": "L'amo hi construïa al costat de la fàbrica els habitatges, l'església, l'escola i la botiga, i controlava tota la vida dels treballadors.",
+       "ap": 6
+      },
+      {
+       "q": "Els industrials catalans i bascos reclamaven aranzels alts per reservar-se el mercat espanyol i el colonial. El govern conservador els els va concedir amb",
+       "o": [
+        "el Tractat de París.",
+        "l'aranzel de 1891.",
+        "la Llei de Jurisdiccions.",
+        "el Codi Civil de 1889."
+       ],
+       "c": "b",
+       "e": "Aquest proteccionisme explica per què la pèrdua de Cuba, el 1898, va ser un cop dur per al tèxtil català.",
+       "ap": 6
+      },
+      {
+       "q": "Durant la Restauració, la transició demogràfica a Catalunya es caracteritzava perquè",
+       "o": [
+        "la mortalitat no hi havia baixat gens des de 1875.",
+        "la natalitat i la mortalitat hi baixaven abans que a la resta d'Espanya.",
+        "la natalitat hi era la més alta d'Europa.",
+        "la població hi disminuïa per l'emigració a Amèrica."
+       ],
+       "c": "b",
+       "e": "Com que hi naixien pocs infants, el creixement de Catalunya depenia cada cop més de la immigració arribada d'altres zones d'Espanya.",
+       "ap": 6
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
