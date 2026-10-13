@@ -106,7 +106,11 @@ $amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 
 				<article class="um-card"><h4>Exercici 4. Poseu a prova els vostres sabers</h4><span class="um-tag">10 preguntes · 2,50 punts</span><p>Deu preguntes tipus test sobre fets, esdeveniments i contextos.</p></article>
 			</div>
 			<p class="pds2-v4-botons">
-				<a class="um-quiz-btn" href="<?php echo esc_url( pds2_preguntes_url() ); ?>">Què pregunta la PAU (2010-2024)</a>
+				<?php if ( pds2_pau_v2() ) : ?>
+					<a class="um-quiz-btn" href="<?php echo esc_url( pds2_pau_url() ); ?>">Preparar la PAU</a>
+				<?php else : ?>
+					<a class="um-quiz-btn" href="<?php echo esc_url( pds2_preguntes_url() ); ?>">Què pregunta la PAU (2010-2024)</a>
+				<?php endif; ?>
 			</p>
 		</section>
 

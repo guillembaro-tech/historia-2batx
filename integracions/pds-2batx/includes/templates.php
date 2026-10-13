@@ -25,6 +25,7 @@ add_filter(
 		$mapa = array(
 			'portada'   => pds2_disseny_v4() ? 'portada-v4.php' : 'portada.php',
 			'historia'  => 'historia-v4.php',
+			'pau'       => 'pau-v4.php',
 			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
 			'taller'    => pds2_disseny_v4() ? 'taller-v4.php' : 'taller.php',
 			'preguntes' => pds2_disseny_v4() ? 'preguntes-v4.php' : 'preguntes.php',
@@ -73,25 +74,41 @@ add_action(
 			wp_enqueue_style( 'pds2', PDS2_URL . 'assets/css/pds-2batx.css', $dep, PDS2_VER );
 		}
 
-		if ( 'taller' === $v ) {
-			$tema_id = get_queried_object_id();
+		if ( 'taller' === $v || 'pau' === $v ) {
+			$tema_id = 'taller' === $v ? get_queried_object_id() : 0;
 			wp_enqueue_style( 'pds2-taller', PDS2_URL . 'assets/css/taller.css', $v4 ? array() : array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-taller', PDS2_URL . 'assets/js/taller.js', array(), PDS2_VER, true );
-			$cfg = array(
-				'url'     => esc_url_raw( rest_url( 'pds-2batx/v1/taller/' . pds2_tema_numero( $tema_id ) ) ),
-				'nonce'   => wp_create_nonce( 'wp_rest' ),
-				'tema'    => pds2_tema_numero( $tema_id ),
-				'color'   => $v4 ? 'var(--primary)' : pds2_tema_color( $tema_id ),
-				'temaUrl' => get_permalink( $tema_id ),
-			);
-			$corr = pds2_correccio_config( $tema_id );
-			if ( $corr ) {
-				$cfg['correccio'] = $corr;
+			if ( 'pau' === $v ) {
+				// Preparar la PAU: el test barrejat i la caixa d'eines fan servir l'aplicació del Taller.
+				$cfg = array(
+					'vista'    => 'pau',
+					'v2'       => true,
+					'nonce'    => wp_create_nonce( 'wp_rest' ),
+					'tests'    => esc_url_raw( rest_url( 'pds-2batx/v1/tests' ) ),
+					'color'    => 'var(--primary)',
+				);
+			} else {
+				$cfg = array(
+					'url'     => esc_url_raw( rest_url( 'pds-2batx/v1/taller/' . pds2_tema_numero( $tema_id ) ) ),
+					'nonce'   => wp_create_nonce( 'wp_rest' ),
+					'tema'    => pds2_tema_numero( $tema_id ),
+					'color'   => $v4 ? 'var(--primary)' : pds2_tema_color( $tema_id ),
+					'temaUrl' => get_permalink( $tema_id ),
+				);
+				if ( pds2_pau_v2() ) {
+					$cfg['v2']    = true;
+					$cfg['tests'] = esc_url_raw( rest_url( 'pds-2batx/v1/tests/' . pds2_tema_numero( $tema_id ) ) );
+					$cfg['eines'] = pds2_pau_url() . '#eines';
+				}
+				$corr = pds2_correccio_config( $tema_id );
+				if ( $corr ) {
+					$cfg['correccio'] = $corr;
+				}
 			}
 			wp_add_inline_script( 'pds2-taller', 'window.PDS2_TALLER = ' . wp_json_encode( $cfg ) . ';', 'before' );
 		}
 
-		if ( 'preguntes' === $v || 'tema' === $v ) {
+		if ( 'preguntes' === $v || 'pau' === $v || ( 'tema' === $v && ! pds2_pau_v2() ) ) {
 			wp_enqueue_style( 'pds2-preguntes', PDS2_URL . 'assets/css/preguntes.css', $v4 ? array() : array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-preguntes', PDS2_URL . 'assets/js/preguntes.js', array(), PDS2_VER, true );
 			$cfg = array(
@@ -122,7 +139,7 @@ function pds2_estils_v4(): void {
 	$dir    = WP_CONTENT_DIR . '/uploads/pds-model/';
 	$url    = content_url( 'uploads/pds-model/' );
 	$vista  = pds2_vista();
-	$taller = 'taller' === $vista;
+	$taller = 'taller' === $vista || 'pau' === $vista;
 	if ( file_exists( $dir . 'model4.css' ) ) {
 		wp_enqueue_style( 'pds-um', $url . 'model4.css', array(), (string) filemtime( $dir . 'model4.css' ) );
 		// Les pestanyes i l'índex del model només els fa servir el tema; la resta de pàgines fan servir la capçalera i els estils.
@@ -140,7 +157,9 @@ function pds2_estils_v4(): void {
 		return;
 	}
 	wp_enqueue_script( 'pds2-tema-v4', PDS2_URL . 'assets/js/tema-v4.js', wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
-	wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => 'disponible' === pds2_f( 'estat_taller', $tema_id, '' ) ? pds2_taller_url( $tema_id ) : '' ) ) . ';', 'before' );
+	// Amb la nova organització de la PAU, el Taller s'obre des de la pestanya PAU i no cal la pestanya enllaç.
+	$v2 = pds2_pau_v2();
+	wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => ! $v2 && 'disponible' === pds2_f( 'estat_taller', $tema_id, '' ) ? pds2_taller_url( $tema_id ) : '', 'v2' => $v2 ) ) . ';', 'before' );
 }
 
 /** Molla de pa de la secció (disseny antic): Inici / 2n Batxillerat / Història / ... */

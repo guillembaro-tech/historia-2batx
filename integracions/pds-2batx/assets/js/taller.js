@@ -38,6 +38,13 @@
   function each(a, f) { return (a || []).map(f).join(''); }
 
   /* ---------- peces comunes ---------- */
+  /* Nova organització de la PAU: la caixa d'eines és a «Preparar la PAU» i el Taller hi enllaça des del pas d'escriure */
+  var V2 = !!(CFG && CFG.v2);
+  function einesNota() {
+    if (!V2 || !CFG.eines) return '';
+    return '<p class="note tl-eines-nota">Connectors, verbs precisos i errors freqüents per redactar, a la <a href="' + esc(CFG.eines) + '">Caixa d\'eines</a>.</p>';
+  }
+
   var PAPER_NOTE = '<div class="paper-note">' + PEN(20) + '<p><b>La resposta s\'escriu a mà.</b> El taller et guia i t\'ajuda a corregir-te, però el pas 3 el fas en paper i amb bolígraf, com a l\'examen.</p></div>';
 
   function guide(items, title, opt) {
@@ -149,7 +156,7 @@
 
     var steps = step(0, "Llegeix l'enunciat i les fonts", "Llegeix les dues fonts senceres, també el peu de font, i busca les frases on hi ha les idees clau. Abans d'obrir cada pregunta de sota, intenta respondre-la tu.", exam + guide(e.guia, "Descompon l'enunciat · obre cada pregunta després de pensar-hi"))
       + step(1, "Planifica en un esquema", "Copia aquest esquema al marge del full o en un full d'esborrany i omple'l amb dues o tres paraules per casella. No el passis a net, perquè només serveix per ordenar les idees.", sketch(boxes(EX1_ESQUEMA)) + vocab + pits(EX1_ERRORS))
-      + step(2, "Escriu la resposta a mà", "Escriu les tres qüestions al paper. Pots tenir aquest guió a la vista. Diu què ha de fer cada paràgraf, i les etiquetes són les mateixes que trobaràs al model del pas 5.", banner("Full en blanc, bolígraf i marges a banda i banda. Numera cada resposta (1.1, 1.2, 1.3) i escriu amb lletra clara.") + plan(guio))
+      + step(2, "Escriu la resposta a mà", "Escriu les tres qüestions al paper. Pots tenir aquest guió a la vista. Diu què ha de fer cada paràgraf, i les etiquetes són les mateixes que trobaràs al model del pas 5.", banner("Full en blanc, bolígraf i marges a banda i banda. Numera cada resposta (1.1, 1.2, 1.3) i escriu amb lletra clara.") + plan(guio) + einesNota())
       + step(3, "Autoavalua't amb el full davant", "Rellegeix el que has escrit amb un llapis de color, subratlla els connectors i encercla les dates. Marca només el que realment hi és.", rubric(rub, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment dins de cada bloc és una guia per autoavaluar-te."))
       + step(4, "Compara amb una resposta model", "Posa el teu full al costat. No busquis frases idèntiques. Fixa't en què fa cada paràgraf i en com s'enllacen les idees.", gateModel(model(e.model), '<span><i class="sw"></i>connector</span><span>etiqueta que diu què fa cada paràgraf</span>'))
       + (CFG && CFG.correccio ? step(5, "Corregeix la resposta amb Claude", "Fes una foto clara del full sencer i puja-la. Claude llegeix la resposta, la corregeix amb els criteris oficials i marca a la imatge els fragments que comenta. La nota és orientativa.", (CFG.correccio.config && CFG.correccio.config.public ? '' : '<p class="tl-corr-avis"><b>Vista del professor.</b> Pots triar el model i veure el cost de cada correcció. Les opcions de la correcció oberta són al menú «Correcció PAU» del panell.</p>') + '<div id="pds-corr-app" class="tl-corr"><p>Carregant…</p></div>') : '');
@@ -191,7 +198,7 @@
     });
     var steps = step(0, "Llegeix l'enunciat i situa el moment", "L'exercici 2 et situa en un moment concret del passat i et dona un personatge. Has d'escriure des d'aquest personatge, i pots fer-ho en primera persona, però el text ha d'explicar aquell moment amb els cinc termes. No és l'exposició impersonal d'un tema ni un relat només d'impressions.", s1)
       + step(1, "Planifica i ordena els termes en el temps", "Copia aquest esquema i col·loca cada terme a la casella on té sentit. Si un terme no encaixa enlloc, encara no l'entens prou i has de tornar al temari.", s2)
-      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Parla des del personatge, però explica el tema. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", s3)
+      + step(2, "Escriu la resposta a mà", "Escriu en tres o quatre paràgrafs seguint aquest guió. Parla des del personatge, però explica el tema. Subratlla cada terme obligatori a mesura que l'utilitzis, perquè el corrector el trobi.", s3 + einesNota())
       + step(3, "Autoavalua't amb el full davant", "Primer compta els termes subratllats. Després comprova si cada terme fa una feina dins del relat o només hi és de pas, i si el personatge explica el tema o només diu el que sent.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment del contingut és una guia. Recorda el possible descompte per ortografia i presentació."))
       + step(4, "Compara amb una resposta model", "Fixa't en com el personatge se situa al principi i, a partir d'aquí, explica el tema, i en com cada terme subratllat està lligat a una causa o a una conseqüència.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw"></i>connector</span><span><i class="sw t"></i>terme obligatori</span>'));
     return exSection('e2', [["Contingut de la redacció", "1,50"], ["Cinc termes × 0,20", "1,00"]], optsBar(o), steps);
@@ -236,7 +243,7 @@
     ];
     var steps = step(0, "Llegeix l'enunciat i el descriptor", "L'exercici 3 demana exposar un tema transversal, és a dir, un mateix fil que travessa diverses etapes. Fixa't en com es construeix una resposta real.", s1)
       + step(1, "Planifica en una taula per etapes", "Copia aquesta taula al full d'esborrany. Omple primer la fila que ja coneixes; per a la resta, fes servir les fites del descriptor. L'última columna és la més important, perquè hi decideixes el raonament.", s2)
-      + step(2, "Escriu la resposta a mà", "Fes un paràgraf d'introducció, un paràgraf per etapa i un de conclusió. Deixa una línia en blanc entre paràgrafs perquè l'estructura es vegi.", s3)
+      + step(2, "Escriu la resposta a mà", "Fes un paràgraf d'introducció, un paràgraf per etapa i un de conclusió. Deixa una línia en blanc entre paràgrafs perquè l'estructura es vegi.", s3 + einesNota())
       + step(3, "Autoavalua't amb el full davant", "Marca amb un color les frases on dius si una etapa avança, retrocedeix o es manté. Si n'hi ha poques, el raonament es queda curt.", rubric(groups, "Estimació orientativa. Els blocs de punts són els oficials; el repartiment dins de cada bloc és una guia. Recorda el possible descompte per ortografia i presentació."))
       + step(4, "Compara amb una resposta model", "Fixa't en les frases ressaltades. Són el raonament sobre els canvis i les continuïtats, i van repartides per tota la resposta.", gateModel(each(o, function (x) { return model(x.model, x.id); }), '<span><i class="sw r"></i>raonament sobre canvi o continuïtat</span><span><i class="sw"></i>connector</span>'));
     return exSection('e3', [["Descripció", "1,00"], ["Raonament", "1,00"], ["Conclusió", "0,50"]], optsBar(o), steps);
@@ -280,6 +287,145 @@
 
   var FOOT = '<p class="tl-foot">Les puntuacions i els criteris provenen dels criteris d\'avaluació i de les FAQ de les PAU d\'Història, i de les indicacions més recents dels correctors. Descriptors reproduïts literalment del document «Glossari i descriptors» PAU26. Els enunciats marcats com a oficials provenen de la Sèrie 0 (2025) i dels exemples PAU 2026; els d\'elaboració pròpia segueixen el format oficial, però no provenen de cap convocatòria. Els blocs de punts de l\'autoavaluació són oficials; el repartiment intern de cada bloc és una guia, no un criteri de correcció.</p>';
 
+  /* ---------- Exercici 4: tests ----------
+     Format de la PAU de juny de 2025: deu qüestions en dos blocs de cinc, cada bloc amb un context històric,
+     quatre opcions per qüestió. Encert +0,25, error −0,08, en blanc 0; el total no pot ser negatiu. */
+  var EX4_INSTR = 'Encercleu la lletra de la resposta correcta de les deu qüestions següents, tenint en compte els contextos històrics proposats.';
+  function nota(ok, ko) { return Math.max(0, Math.round((ok * 0.25 - ko * 0.08) * 100) / 100); }
+  function guarda(k, v) { try { var a = parseFloat(localStorage.getItem(k)); if (isNaN(a) || v > a) localStorage.setItem(k, String(v)); } catch (e) { /* res */ } }
+  function llegeix(k) { try { var a = parseFloat(localStorage.getItem(k)); return isNaN(a) ? null : a; } catch (e) { return null; } }
+  function barreja(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  /* Carrega els tests i dibuixa el selector. o.tema = número del tema (Taller) o 0 (test barrejat de tots els temes). */
+  function carregaTests(o) {
+    if (!o.el || !o.url) return;
+    fetch(o.url, { credentials: 'same-origin', headers: { 'X-WP-Nonce': CFG.nonce }, cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) { testApp(o, d.temes ? d.temes : [d]); })
+      .catch(function () { o.el.innerHTML = '<p class="tl-loading">No s\'han pogut carregar els tests. Torna-ho a provar d\'aquí a uns minuts.</p>'; });
+  }
+
+  function testApp(o, temes) {
+    temes = temes.filter(function (t) { return t.tests && t.tests.length; });
+    var el = o.el, mixt = !o.tema;
+    if (!temes.length) { el.innerHTML = '<div class="tl-empty"><p>Els tests d\'aquest tema estan en preparació.</p></div>'; return; }
+    var blocs = [];
+    temes.forEach(function (t) { t.tests.forEach(function (x) { x.blocs.forEach(function (b, i) { blocs.push({ tema: t, test: x, i: i, b: b }); }); }); });
+    var T = temes[0];
+
+    /* Un test fix (dos blocs del mateix test) o un de nou amb dos blocs triats a l'atzar */
+    function fix(num) {
+      var x = T.tests.filter(function (t) { return t.numero === num; })[0] || T.tests[0];
+      return { clau: 'pds2-test:' + T.tema + ':' + x.numero, titol: 'Test ' + x.numero, segell: x.segell, oficial: x.oficial, blocs: x.blocs.map(function (b) { return { tema: T, b: b }; }), num: x.numero };
+    }
+    function atzar() {
+      var tria = [], vistos = {};
+      barreja(blocs).forEach(function (b) {
+        if (tria.length === 2) return;
+        var k = mixt ? 't' + b.tema.tema : 'x' + b.test.numero;
+        /* Al test barrejat, cada bloc d'un tema diferent si n'hi ha més d'un; al d'un tema, de dos tests diferents */
+        if (vistos[k] && (mixt ? temes.length > 1 : T.tests.length > 1)) return;
+        vistos[k] = 1; tria.push(b);
+      });
+      if (tria.length < 2) tria = barreja(blocs).slice(0, 2);
+      return { clau: '', titol: mixt ? 'Test barrejat' : 'Test a l\'atzar', segell: 'Elaboració pròpia en format PAU', oficial: false, blocs: tria.map(function (b) { return { tema: b.tema, b: b.b }; }), num: 0 };
+    }
+
+    function selector(actiu) {
+      if (mixt) {
+        return '<div class="tt-sel"><p class="tt-sel-t">' + (temes.length > 1 ? 'Cada test barreja qüestions de temes diferents, com a l\'examen.' : 'De moment hi ha tests del ' + esc(temes.map(function (t) { return 'Tema ' + t.tema; }).join(', ')) + '. Quan n\'hi hagi d\'altres temes, el test les barrejarà, com a l\'examen.') + '</p>'
+          + '<button class="btn" type="button" data-nou>Un altre test</button></div>';
+      }
+      return '<div class="tt-sel" role="group" aria-label="Tria un test"><span class="tt-sel-t">Tria un test</span>'
+        + each(T.tests, function (x) {
+          var b = llegeix('pds2-test:' + T.tema + ':' + x.numero);
+          return '<button class="opt" type="button" data-num="' + x.numero + '" aria-pressed="' + (actiu === x.numero) + '">Test ' + x.numero + (b !== null ? ' <small>' + fmt(b) + '</small>' : '') + '</button>';
+        })
+        + (blocs.length > 2 ? '<button class="opt" type="button" data-num="atzar" aria-pressed="' + (actiu === 'atzar') + '">A l\'atzar</button>' : '') + '</div>';
+    }
+
+    function dibuixa(t, actiu) {
+      var k = 0;
+      var full = '<div class="exam tt-exam"><div class="exam-h"><span>Exercici 4. Poseu a prova els vostres sabers <span class="own' + (t.oficial ? ' official' : '') + '">' + esc(t.segell || 'Elaboració pròpia en format PAU') + '</span></span><span class="pts">2,50 punts</span></div>'
+        + '<p class="prompt">' + esc(EX4_INSTR) + '</p>'
+        + '<p class="tt-barem">Cada resposta correcta val 0,25 punts. Per cada resposta errònia es descompten 0,08 punts. Les qüestions no contestades no tenen descompte.</p>'
+        + each(t.blocs, function (bl) {
+          return '<div class="tt-bloc"><p class="tt-ctx"><b>Context històric.</b> ' + (mixt ? '<span class="tt-tema">Tema ' + bl.tema.tema + '</span> ' : '') + mk(bl.b.context) + '</p>'
+            + each(bl.b.preguntes, function (q) {
+              k++;
+              var nm = 'tt-' + k;
+              return '<fieldset class="tt-q" data-c="' + esc(q.c) + '"><legend><span class="qn">4.' + k + '</span><span>' + mk(q.q) + '</span></legend><div class="tt-ops">'
+                + each(q.o, function (op, j) { var l = 'abcd'[j]; return '<label class="tt-op" data-l="' + l + '"><input type="radio" name="' + nm + '" value="' + l + '"><span class="tt-l">' + l + ')</span><span>' + mk(op) + '</span></label>'; })
+                + '</div><button class="tt-blanc" type="button" hidden>Deixa-la en blanc</button>'
+                + '<div class="tt-expl" hidden><p>' + mk(q.e) + '</p>' + (q.ap ? '<p class="tt-rep"><a href="' + esc(bl.tema.url) + '#s' + q.ap + '">Repassa l\'apartat ' + q.ap + (mixt ? ' del Tema ' + bl.tema.tema : '') + '</a></p>' : '') + '</div></fieldset>';
+            }) + '</div>';
+        }) + '</div>';
+      el.innerHTML = selector(actiu) + '<p class="tt-intro">' + (mixt ? 'Deu qüestions de resposta tancada, en dos blocs amb un context històric, com a l\'exercici 4 de l\'examen.' : 'Deu qüestions de resposta tancada sobre aquest tema, en dos blocs amb un context històric, com a l\'exercici 4 de l\'examen.') + ' Si no estàs segur d\'una resposta, deixa-la en blanc, perquè els errors resten.</p>'
+        + full
+        + '<div class="tt-peu"><p class="tt-compte" aria-live="polite">0 de ' + k + ' respostes</p><button class="btn primary" type="button" data-corregeix>Corregeix</button></div>'
+        + '<div class="tt-res" hidden aria-live="polite"></div>';
+      var qs = [].slice.call(el.querySelectorAll('.tt-q'));
+      function compte() {
+        var n = qs.filter(function (f) { return f.querySelector('input:checked'); }).length;
+        el.querySelector('.tt-compte').textContent = n + ' de ' + qs.length + ' respostes';
+      }
+      qs.forEach(function (f) {
+        var bl = f.querySelector('.tt-blanc');
+        f.addEventListener('change', function () { bl.hidden = false; compte(); });
+        bl.addEventListener('click', function () { [].forEach.call(f.querySelectorAll('input'), function (i) { i.checked = false; }); bl.hidden = true; compte(); });
+      });
+      [].forEach.call(el.querySelectorAll('.tt-sel [data-num]'), function (b) {
+        b.addEventListener('click', function () {
+          var v = b.dataset.num;
+          inicia(v === 'atzar' ? 'atzar' : +v);
+          if (history.replaceState) history.replaceState(null, '', '#test-' + v);
+        });
+      });
+      var nou = el.querySelector('[data-nou]');
+      if (nou) nou.addEventListener('click', function () { inicia('atzar'); });
+      el.querySelector('[data-corregeix]').addEventListener('click', function () {
+        var ok = 0, ko = 0, bl = 0;
+        qs.forEach(function (f) {
+          var ch = f.querySelector('input:checked'), c = f.dataset.c;
+          [].forEach.call(f.querySelectorAll('input'), function (i) { i.disabled = true; });
+          f.querySelector('.tt-blanc').hidden = true;
+          f.querySelector('.tt-op[data-l="' + c + '"]').classList.add('is-ok');
+          if (!ch) { bl++; f.classList.add('is-blanc'); }
+          else if (ch.value === c) { ok++; f.classList.add('is-ok'); }
+          else { ko++; f.classList.add('is-ko'); ch.closest('.tt-op').classList.add('is-ko'); }
+          f.querySelector('.tt-expl').hidden = false;
+        });
+        var p = nota(ok, ko);
+        if (t.clau) guarda(t.clau, p);
+        var res = el.querySelector('.tt-res');
+        res.innerHTML = '<div class="score tt-score"><div><div class="big">' + fmt(p) + ' / 2,50</div><small>' + ok + (ok === 1 ? ' encert' : ' encerts') + ', ' + ko + (ko === 1 ? ' error' : ' errors') + ' i ' + bl + ' en blanc. ' + (ko ? 'Els errors t\'han restat ' + fmt(ko * 0.08) + ' punts.' : 'Cap error, cap descompte.') + '</small></div></div>'
+          + '<p class="tt-accions"><button class="btn" type="button" data-repeteix>Torna-ho a provar</button> '
+          + (mixt || t.num === 0 ? '<button class="btn primary" type="button" data-nou2>Un altre test</button>' : (T.tests.some(function (x) { return x.numero > t.num; }) ? '<button class="btn primary" type="button" data-seguent>Test següent</button>' : '')) + '</p>';
+        res.hidden = false;
+        el.querySelector('.tt-peu').hidden = true;
+        var rep = res.querySelector('[data-repeteix]'), sg = res.querySelector('[data-seguent]'), n2 = res.querySelector('[data-nou2]');
+        rep.addEventListener('click', function () { dibuixa(t, actiu); el.scrollIntoView({ block: 'start' }); });
+        if (sg) sg.addEventListener('click', function () { var nx = T.tests.filter(function (x) { return x.numero > t.num; })[0]; inicia(nx.numero); if (history.replaceState) history.replaceState(null, '', '#test-' + nx.numero); el.scrollIntoView({ block: 'start' }); });
+        if (n2) n2.addEventListener('click', function () { inicia('atzar'); el.scrollIntoView({ block: 'start' }); });
+        res.scrollIntoView({ block: 'nearest' });
+      });
+    }
+    function inicia(v) {
+      if (mixt || v === 'atzar') { dibuixa(atzar(), 'atzar'); return; }
+      dibuixa(fix(v), (fix(v)).num);
+    }
+    var ini = o.inicial;
+    inicia(mixt ? 'atzar' : (ini === 'atzar' ? 'atzar' : (ini ? +ini : T.tests[0].numero)));
+  }
+
+  /* Preparar la PAU: el test barrejat i la caixa d'eines */
+  function vistaPau() {
+    root.style.setProperty('--tc', CFG.color || 'var(--primary)');
+    var t = document.getElementById('pds2-test-mixt'), e = document.getElementById('pds2-eines');
+    if (e) e.innerHTML = eines();
+    if (t) carregaTests({ el: t, url: CFG.tests, tema: 0 });
+  }
+
   /* ---------- vistes ---------- */
   function heroTema(n, extra) {
     if (CFG) return '';
@@ -294,21 +440,38 @@
   function vistaTema(n, d) {
     root.style.setProperty('--tc', colorTema(n));
     if (!CFG) document.title = 'Taller PAU · Tema ' + n + '. ' + TEMES[n].nom;
+    var tabs = [
+      ['e1', '01', 'Exercici 1 (fonts)'],
+      ['e2', '02', 'Exercici 2 (situa\'t en el temps)'],
+      ['e3', '03', 'Exercici 3 (glossari)']
+    ];
+    tabs.push(V2 ? ['e4', '04', 'Exercici 4 (test)'] : ['tools', '+', 'Caixa d\'eines']);
     root.innerHTML = heroTema(n) + '<div class="tl-in"><nav class="tabs" role="tablist" aria-label="Exercicis">'
-      + '<button class="tab" type="button" role="tab" data-tab="e1" aria-selected="true"><span class="n">01</span>Exercici 1 (fonts)</button>'
-      + '<button class="tab" type="button" role="tab" data-tab="e2" aria-selected="false"><span class="n">02</span>Exercici 2 (situa\'t en el temps)</button>'
-      + '<button class="tab" type="button" role="tab" data-tab="e3" aria-selected="false"><span class="n">03</span>Exercici 3 (glossari)</button>'
-      + '<button class="tab" type="button" role="tab" data-tab="tools" aria-selected="false"><span class="n">+</span>Caixa d\'eines</button></nav>'
-      + ex1(d.ex1) + ex2(d.ex2) + ex3(d.ex3) + '<section id="tools" hidden>' + eines() + '</section>' + FOOT + '</div>';
-    var ids = ['e1', 'e2', 'e3', 'tools'];
+      + each(tabs, function (t, i) { return '<button class="tab" type="button" role="tab" data-tab="' + t[0] + '" aria-selected="' + (i === 0) + '"><span class="n">' + t[1] + '</span>' + t[2] + '</button>'; })
+      + '</nav>'
+      + ex1(d.ex1) + ex2(d.ex2) + ex3(d.ex3)
+      + (V2 ? '<section class="tl-ex4" id="e4" hidden><div id="tl-test" class="tt"><p class="tl-loading">Carregant els tests…</p></div></section>' : '<section id="tools" hidden>' + eines() + '</section>')
+      + FOOT + '</div>';
+    var ids = tabs.map(function (t) { return t[0]; });
+    function obre(id, desa) {
+      if (ids.indexOf(id) < 0) id = 'e1';
+      root.querySelectorAll('.tab').forEach(function (x) { x.setAttribute('aria-selected', x.dataset.tab === id); });
+      ids.forEach(function (k) { root.querySelector('#' + k).hidden = k !== id; });
+      if (desa && history.replaceState) history.replaceState(null, '', '#' + id);
+    }
     root.querySelectorAll('.tab').forEach(function (t) {
-      t.addEventListener('click', function () {
-        root.querySelectorAll('.tab').forEach(function (x) { x.setAttribute('aria-selected', x === t); });
-        ids.forEach(function (id) { root.querySelector('#' + id).hidden = id !== t.dataset.tab; });
-      });
+      t.addEventListener('click', function () { obre(t.dataset.tab, V2); });
     });
-    root.querySelector('#e1').hidden = false;
     root.querySelectorAll('section.tl-ex').forEach(activa);
+    /* L'adreça pot obrir directament un exercici (#e1 a #e4) o un test (#test-2, #test-atzar) */
+    var h = location.hash.replace('#', '');
+    var mt = /^test-(\d+|atzar)$/.exec(h);
+    obre(mt ? 'e4' : (/^e[1-4]$/.test(h) ? h : 'e1'), false);
+    if (V2) carregaTests({ el: root.querySelector('#tl-test'), url: CFG.tests, tema: n, inicial: mt ? mt[1] : '' });
+    if (mt || /^e[1-4]$/.test(h)) {
+      var nav = root.querySelector('.tabs');
+      if (nav) setTimeout(function () { nav.scrollIntoView({ block: 'start' }); }, 0);
+    }
   }
 
   function vistaPreparacio(n) {
@@ -417,6 +580,7 @@
 
   /* ---------- versió del WordPress ---------- */
   function rutaWP() {
+    if (CFG.vista === 'pau') { vistaPau(); return; }
     root.innerHTML = '<p class="tl-loading">Carregant el taller…</p>';
     fetch(CFG.url, { credentials: 'same-origin', headers: { 'X-WP-Nonce': CFG.nonce }, cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })

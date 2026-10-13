@@ -5,7 +5,9 @@
   'use strict';
   var root = document.querySelector('.um.pds2-v4');
   if (!root) { return; }
-  var NOMS = { 'Activitats': 'Pràctica PAU', 'Recursos': 'Què pregunta la PAU' };
+  var V2 = !!(window.PDS2_V4 && window.PDS2_V4.v2);
+  /* Amb la nova organització de la PAU, la pestanya «Activitats» del model és la pestanya «PAU» */
+  var NOMS = V2 ? { 'Activitats': 'PAU' } : { 'Activitats': 'Pràctica PAU', 'Recursos': 'Què pregunta la PAU' };
   [].forEach.call(root.querySelectorAll('.um-tabs .um-tab'), function (b) {
     var t = b.textContent.trim();
     if (NOMS[t]) { b.textContent = NOMS[t]; }

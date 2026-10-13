@@ -141,8 +141,9 @@ tema_fields = [
     ], button='Afegeix un enunciat', layout='table'),
     t.tab(['tab_pau'], 'Preguntes PAU'),
     t.repeater(['pau'], 'pau', 'Aspectes més preguntats (barres)', [
-        t.text(['pau', 'aspecte'], 'aspecte', 'Aspecte', width='75'),
-        t.number(['pau', 'n'], 'n', 'Preguntes', width='25'),
+        t.text(['pau', 'aspecte'], 'aspecte', 'Aspecte', width='60'),
+        t.number(['pau', 'n'], 'n', 'Preguntes', width='20'),
+        t.number(['pau', 'apartat'], 'apartat', 'Apartat del temari', width='20', min=1, max=12, instructions='Número de l\'apartat on s\'explica (opcional).'),
     ], button='Afegeix un aspecte', layout='table'),
     t.textarea(['preguntes_resum'], 'preguntes_resum', 'Resum de les preguntes 2010-2024', rows=3, instructions='Es pot fer servir **negreta**.'),
     t.repeater(['preguntes'], 'preguntes', 'Preguntes 2010-2024 per aspecte', [
@@ -244,6 +245,31 @@ ex_fields = [
 ]
 exercici = grup('group_pds2_exercici', 'Exercici PAU', ex_fields, [[{'param': 'post_type', 'operator': '==', 'value': 'exercici_pau'}]])
 
+# ---------------- Test PAU (exercici 4) ----------------
+q = G('test')
+LLETRES = {'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd'}
+test_fields = [
+    q.message(['msg'], 'Com és un test', 'Com a l\'examen de la PAU, cada test té deu qüestions en dos blocs de cinc, i cada bloc comença amb un context històric. Cada qüestió té quatre opcions i una sola de correcta. La puntuació és l\'oficial (0,25 per encert, −0,08 per error, les qüestions en blanc no compten i el total no pot ser negatiu).'),
+    q.post_object(['tema'], 'tema', 'Tema', required=1, width='40'),
+    q.number(['numero'], 'numero', 'Número del test', required=1, width='20', min=1, max=99),
+    q.text(['segell'], 'segell', 'Segell', width='25', instructions='Per exemple, Elaboració pròpia en format PAU.'),
+    q.truefalse(['oficial'], 'oficial', 'Oficial', width='15'),
+    q.repeater(['blocs'], 'blocs', 'Blocs', [
+        q.textarea(['blocs', 'context'], 'context', 'Context històric', rows=3, instructions='Sense l\'etiqueta «Context històric», que hi posa la pàgina.'),
+        q.repeater(['blocs', 'preguntes'], 'preguntes', 'Qüestions', [
+            q.textarea(['blocs', 'preguntes', 'q'], 'q', 'Enunciat', rows=2),
+            q.text(['blocs', 'preguntes', 'a'], 'a', 'Opció a', width='50'),
+            q.text(['blocs', 'preguntes', 'b'], 'b', 'Opció b', width='50'),
+            q.text(['blocs', 'preguntes', 'c'], 'c', 'Opció c', width='50'),
+            q.text(['blocs', 'preguntes', 'd'], 'd', 'Opció d', width='50'),
+            q.select(['blocs', 'preguntes', 'correcta'], 'correcta', 'Resposta correcta', LLETRES, default='a', width='25'),
+            q.number(['blocs', 'preguntes', 'apartat'], 'apartat', 'Apartat del temari', width='25', min=1, max=12),
+            q.textarea(['blocs', 'preguntes', 'explicacio'], 'explicacio', 'Explicació', rows=2, width='50'),
+        ], button='Afegeix una qüestió', collapsed=q.k('blocs', 'preguntes', 'q')),
+    ], button='Afegeix un bloc', collapsed=q.k('blocs', 'context')),
+]
+test = grup('group_pds2_test', 'Test PAU', test_fields, [[{'param': 'post_type', 'operator': '==', 'value': 'test_pau'}]])
+
 # ---------------- Àmbit PAU ----------------
 a = G('ambit')
 ambit_fields = [
@@ -258,7 +284,7 @@ ambit_fields = [
 ambit = grup('group_pds2_ambit', 'Àmbit PAU', ambit_fields, [[{'param': 'taxonomy', 'operator': '==', 'value': 'ambit_pau'}]])
 
 os.makedirs(DIR, exist_ok=True)
-for g in (tema, exercici, ambit):
+for g in (tema, exercici, test, ambit):
     with open(os.path.join(DIR, g['key'] + '.json'), 'w', encoding='utf-8') as fh:
         json.dump(g, fh, ensure_ascii=False, indent=4)
         fh.write('\n')

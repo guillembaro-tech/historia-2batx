@@ -32,6 +32,9 @@ while ( have_posts() ) :
 	$pau_tot   = array_sum( array_map( static fn( $r ) => count( pds2_convocatories( $r['fonts'] ?? '' ) ) + count( pds2_convocatories( $r['llargues'] ?? '' ) ), $preguntes ) );
 	$pau_max   = max( array_merge( array( 1 ), array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) ) );
 	$minuts    = max( 5, (int) ( round( $seccions['paraules'] / 200 / 5 ) * 5 ) );
+	$v2        = pds2_pau_v2();
+	$tests     = $v2 ? pds2_tests_data( (int) $n ) : null;
+	$n_tests   = $tests ? count( $tests['tests'] ) : 0;
 
 	?>
 	<?php pds2_avis_privat(); ?>
@@ -50,11 +53,20 @@ while ( have_posts() ) :
 					<?php if ( $pres ) : ?>
 						<li>Presentació (<?php echo count( $pres['diapositives'] ); ?> diapositives)</li>
 					<?php endif; ?>
-					<?php if ( $taller_on ) : ?>
-						<li>Taller PAU (exercicis 1, 2 i 3, pas a pas)</li>
-					<?php endif; ?>
-					<?php if ( $pau_tot ) : ?>
-						<li><?php echo (int) $pau_tot; ?> preguntes a les PAU (del 2010 al 2024)</li>
+					<?php if ( $v2 ) : ?>
+						<?php if ( $taller_on ) : ?>
+							<li>Taller PAU, els quatre exercicis pas a pas</li>
+						<?php endif; ?>
+						<?php if ( $n_tests ) : ?>
+							<li><?php echo (int) $n_tests; ?> <?php echo 1 === $n_tests ? 'test' : 'tests'; ?> de l'exercici 4</li>
+						<?php endif; ?>
+					<?php else : ?>
+						<?php if ( $taller_on ) : ?>
+							<li>Taller PAU (exercicis 1, 2 i 3, pas a pas)</li>
+						<?php endif; ?>
+						<?php if ( $pau_tot ) : ?>
+							<li><?php echo (int) $pau_tot; ?> preguntes a les PAU (del 2010 al 2024)</li>
+						<?php endif; ?>
 					<?php endif; ?>
 				</ul>
 				<div class="um-tools">
@@ -227,7 +239,9 @@ while ( have_posts() ) :
 					</section>
 				<?php endif; ?>
 
-				<?php if ( $practica || $taller_on ) : ?>
+				<?php if ( $v2 ) :
+					include pds2_plantilla( 'tema-pau-v4.php' );
+				elseif ( $practica || $taller_on ) : ?>
 					<section class="um-sec" id="activitats">
 						<header><span class="um-num">Practica</span><h2>Pràctica per a l'examen</h2></header>
 						<p>Enunciats en format PAU sobre aquest tema. Els oficials ho indiquen al començament.</p>
@@ -247,7 +261,7 @@ while ( have_posts() ) :
 					</section>
 				<?php endif; ?>
 
-				<?php if ( $pau || $preguntes ) : ?>
+				<?php if ( ! $v2 && ( $pau || $preguntes ) ) : ?>
 					<section class="um-sec" id="recursos">
 						<header><span class="um-num">PAU</span><h2>Què hi pregunta la PAU</h2></header>
 						<p>Preguntes de fonts i preguntes llargues de les PAU d'Història de Catalunya entre el 2010 i el 2024<?php echo $pau_tot ? ', ' . (int) $pau_tot . ' en total sobre aquest tema' : ''; ?>.</p>

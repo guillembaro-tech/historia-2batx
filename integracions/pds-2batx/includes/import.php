@@ -307,9 +307,15 @@ function pds2_importa_tema( int $n, array $t, ?array $taller, ?array $preg, arra
 	}
 	update_field( pds2_k( 'tema', 'practica' ), $pr, $id );
 
+	// L'apartat de cada aspecte s'edita al panell: es conserva si l'aspecte ja hi era.
+	$aps = array();
+	foreach ( (array) pds2_f( 'pau', $id, array() ) as $p ) {
+		$aps[ (string) ( $p['aspecte'] ?? '' ) ] = (int) ( $p['apartat'] ?? 0 );
+	}
 	$pau = array();
 	foreach ( (array) ( $t['pau'] ?? array() ) as $p ) {
-		$pau[] = array( 'aspecte' => (string) ( $p['aspecte'] ?? '' ), 'n' => (int) ( $p['n'] ?? 0 ) );
+		$asp   = (string) ( $p['aspecte'] ?? '' );
+		$pau[] = array( 'aspecte' => $asp, 'n' => (int) ( $p['n'] ?? 0 ), 'apartat' => $aps[ $asp ] ?? '' );
 	}
 	update_field( pds2_k( 'tema', 'pau' ), $pau, $id );
 
@@ -538,4 +544,52 @@ function pds2_importa( array $temes = array( 1 ) ): array {
 	}
 	update_option( 'pds2_darrera_importacio', array( 'quan' => current_time( 'mysql' ), 'informe' => $inf ), false );
 	return $inf;
+}
+
+/**
+ * Importa els tests de l'exercici 4 d'un tema a partir d'un JSON (tests-tema-N.json de la carpeta pds-2batx-dades).
+ * Es pot repetir sense duplicar res: cada test guarda l'origen tests-tema-N/test-K i, si ja existeix, s'actualitza.
+ * Els tests nous es creen publicats, perquè només es mostren amb la nova organització de la PAU.
+ */
+function pds2_importa_tests( array $d ): array {
+	$n    = (int) ( $d['tema'] ?? 0 );
+	$tema = $n ? pds2_tema_per_numero( $n ) : null;
+	if ( ! $tema ) {
+		throw new RuntimeException( 'No existeix el tema ' . $n . '.' );
+	}
+	$fets = array();
+	foreach ( (array) ( $d['tests'] ?? array() ) as $t ) {
+		$num    = (int) ( $t['numero'] ?? 0 );
+		$origen = 'tests-tema-' . $n . '/test-' . $num;
+		$nou    = ! pds2_per_origen( 'test_pau', $origen );
+		$id     = pds2_desa_post( 'test_pau', $origen, array( 'post_title' => 'Tema ' . $n . ' · Test ' . $num, 'menu_order' => $num ) );
+		if ( $nou ) {
+			wp_update_post( array( 'ID' => $id, 'post_status' => 'publish' ) );
+		}
+		$blocs = array();
+		foreach ( (array) ( $t['blocs'] ?? array() ) as $b ) {
+			$qs = array();
+			foreach ( (array) ( $b['preguntes'] ?? array() ) as $q ) {
+				$o    = array_values( (array) ( $q['o'] ?? array() ) );
+				$qs[] = array(
+					'q'          => (string) ( $q['q'] ?? '' ),
+					'a'          => (string) ( $o[0] ?? '' ),
+					'b'          => (string) ( $o[1] ?? '' ),
+					'c'          => (string) ( $o[2] ?? '' ),
+					'd'          => (string) ( $o[3] ?? '' ),
+					'correcta'   => (string) ( $q['c'] ?? 'a' ),
+					'apartat'    => (int) ( $q['ap'] ?? 0 ),
+					'explicacio' => (string) ( $q['e'] ?? '' ),
+				);
+			}
+			$blocs[] = array( 'context' => (string) ( $b['context'] ?? '' ), 'preguntes' => $qs );
+		}
+		update_field( pds2_k( 'test', 'tema' ), $tema->ID, $id );
+		update_field( pds2_k( 'test', 'numero' ), $num, $id );
+		update_field( pds2_k( 'test', 'segell' ), (string) ( $t['segell'] ?? '' ), $id );
+		update_field( pds2_k( 'test', 'oficial' ), ! empty( $t['oficial'] ) ? 1 : 0, $id );
+		update_field( pds2_k( 'test', 'blocs' ), $blocs, $id );
+		$fets[] = $id;
+	}
+	return $fets;
 }

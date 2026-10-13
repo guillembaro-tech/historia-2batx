@@ -99,3 +99,49 @@
 .um.pds2-v4 #pds-corr-app .notice { border-left: 4px solid #F9AB00; background: #FEF7E0; padding: 8px 12px; margin: 0 0 14px; border-radius: 0 var(--r) var(--r) 0; }
 .um.pds2-v4 #pds-corr-app select { min-height: 40px; border: 1px solid var(--outline); border-radius: var(--r); padding: 6px 10px; background: var(--surface); font-family: var(--font); }
 .um.pds2-v4 #pds-corr-app input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+
+/* Exercici 4: tests (Taller i Preparar la PAU) */
+.um.pds2-v4 #taller .tl-eines-nota { margin-top: 4px; }
+.um.pds2-v4 #taller .tt { display: grid; gap: 16px; }
+.um.pds2-v4 #taller .tt-sel { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.um.pds2-v4 #taller .tt-sel-t { font-size: 14px; color: var(--muted); margin-right: 4px; }
+.um.pds2-v4 #taller .tt-sel .opt small { font-weight: 400; color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.um.pds2-v4 #taller .tt-intro { color: var(--muted); font-size: 15px; }
+.um.pds2-v4 #taller .tt-exam { display: grid; gap: 14px; padding: 20px 22px; background: var(--paper); }
+.um.pds2-v4 #taller .tt-barem { font-size: 14px; color: var(--muted); margin-top: -6px; }
+.um.pds2-v4 #taller .tt-bloc { display: grid; gap: 12px; padding-top: 6px; }
+.um.pds2-v4 #taller .tt-ctx { padding: 12px 14px; border-radius: var(--r); background: var(--accent-soft); font-size: 15.5px; line-height: 1.55; }
+.um.pds2-v4 #taller .tt-tema { display: inline-block; font-size: 12.5px; font-weight: 500; padding: 1px 8px; border-radius: 10px; background: var(--paper); color: var(--accent); margin-right: 2px; }
+.um.pds2-v4 #taller .tt-q { border: 0; margin: 0; padding: 4px 0 8px; min-width: 0; }
+.um.pds2-v4 #taller .tt-q legend { display: flex; gap: 10px; padding: 0; margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+.um.pds2-v4 #taller .tt-q legend .qn { flex: 0 0 auto; font-weight: 500; color: var(--accent); font-variant-numeric: tabular-nums; }
+.um.pds2-v4 #taller .tt-ops { display: grid; gap: 6px; padding-left: 38px; }
+.um.pds2-v4 #taller .tt-op { display: flex; gap: 8px; align-items: flex-start; padding: 8px 12px; border: 1px solid var(--line); border-radius: var(--r); cursor: pointer; font-size: 15.5px; line-height: 1.45; background: var(--paper); }
+.um.pds2-v4 #taller .tt-op:hover { background: var(--bg); }
+.um.pds2-v4 #taller .tt-op input { margin: 4px 0 0; accent-color: var(--accent); flex: 0 0 auto; }
+.um.pds2-v4 #taller .tt-op .tt-l { flex: 0 0 auto; font-weight: 500; }
+.um.pds2-v4 #taller .tt-op:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.um.pds2-v4 #taller .tt-op:has(input:disabled) { cursor: default; }
+.um.pds2-v4 #taller .tt-op.is-ok { border-color: var(--ok); background: var(--ok-soft); }
+.um.pds2-v4 #taller .tt-op.is-ko { border-color: var(--warn); background: var(--warn-soft); }
+.um.pds2-v4 #taller .tt-blanc { margin: 6px 0 0 38px; border: 0; background: none; color: var(--muted); font-size: 13.5px; text-decoration: underline; padding: 2px 0; }
+.um.pds2-v4 #taller .tt-expl { margin: 8px 0 0 38px; padding: 10px 14px; border-radius: var(--r); background: var(--bg); font-size: 14.5px; line-height: 1.5; }
+.um.pds2-v4 #taller .tt-q.is-ok .tt-expl { border-left: 3px solid var(--ok); }
+.um.pds2-v4 #taller .tt-q.is-ko .tt-expl { border-left: 3px solid var(--warn); }
+.um.pds2-v4 #taller .tt-q.is-blanc .tt-expl { border-left: 3px solid var(--line); }
+.um.pds2-v4 #taller .tt-rep { margin-top: 4px; font-weight: 500; }
+.um.pds2-v4 #taller .tt-peu { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+.um.pds2-v4 #taller .tt-compte { color: var(--muted); font-size: 14.5px; font-variant-numeric: tabular-nums; }
+.um.pds2-v4 #taller .tt-res { display: grid; gap: 12px; }
+.um.pds2-v4 #taller .tt-score { position: static; background: var(--accent); }
+.um.pds2-v4 #taller .tt-score small { opacity: .92; max-width: none; font-size: 14px; }
+.um.pds2-v4 #taller .tt-accions { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 600px) {
+	.um.pds2-v4 #taller .tt-exam { padding: 16px 14px; }
+	.um.pds2-v4 #taller .tt-ops { padding-left: 0; }
+	.um.pds2-v4 #taller .tt-blanc, .um.pds2-v4 #taller .tt-expl { margin-left: 0; }
+}
+
+/* Preparar la PAU: el test i la caixa d'eines dins de la pàgina */
+.um.pds2-v4 .pds2-pau-app#taller { padding: 0; }
+.um.pds2-v4 #taller #pds2-eines .panel > div:first-child > h2 { display: none; }

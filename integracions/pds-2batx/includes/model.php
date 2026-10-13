@@ -23,7 +23,7 @@ function pds2_temes_oficials(): array {
 
 /** Adreces reservades dins de /2n-batxillerat/ que cap tema no pot fer servir. */
 function pds2_slugs_reservats(): array {
-	return array( 'preguntes-pau', 'taller', 'glossari', 'guia-de-l-examen', 'historia', 'historia-art', 'page', 'feed' );
+	return array( 'preguntes-pau', 'taller', 'glossari', 'guia-de-l-examen', 'historia', 'historia-art', 'pau', 'page', 'feed' );
 }
 
 add_action( 'init', 'pds2_register_model', 9 );
@@ -70,6 +70,31 @@ function pds2_register_model(): void {
 				'search_items'       => 'Cerca exercicis',
 				'not_found'          => 'No hi ha cap exercici.',
 				'not_found_in_trash' => 'No hi ha cap exercici a la paperera.',
+			),
+			'public'              => false,
+			'publicly_queryable'  => false,
+			'exclude_from_search' => true,
+			'show_ui'             => true,
+			'show_in_menu'        => 'edit.php?post_type=tema_pau',
+			'show_in_rest'        => false,
+			'rewrite'             => false,
+			'supports'            => array( 'title', 'revisions' ),
+		)
+	);
+
+	register_post_type(
+		'test_pau',
+		array(
+			'labels'              => array(
+				'name'               => 'Tests PAU',
+				'singular_name'      => 'Test PAU',
+				'all_items'          => 'Tests PAU (exercici 4)',
+				'add_new'            => 'Afegeix un test',
+				'add_new_item'       => 'Afegeix un test PAU',
+				'edit_item'          => 'Edita el test PAU',
+				'search_items'       => 'Cerca tests',
+				'not_found'          => 'No hi ha cap test.',
+				'not_found_in_trash' => 'No hi ha cap test a la paperera.',
 			),
 			'public'              => false,
 			'publicly_queryable'  => false,
@@ -144,7 +169,7 @@ add_filter(
 add_filter(
 	'private_title_format',
 	static function ( $format, $post ) {
-		return in_array( get_post_type( $post ), array( 'tema_pau', 'exercici_pau' ), true ) ? '%s' : $format;
+		return in_array( get_post_type( $post ), array( 'tema_pau', 'exercici_pau', 'test_pau' ), true ) ? '%s' : $format;
 	},
 	10,
 	2
@@ -158,4 +183,19 @@ function pds2_publicat(): bool {
 /** L'usuari actual pot veure la secció abans de publicar-la? */
 function pds2_pot_veure(): bool {
 	return pds2_publicat() || current_user_can( 'edit_posts' );
+}
+
+/**
+ * Nova organització de la PAU (pestanya PAU als temes, exercici 4 al Taller i pàgina «Preparar la PAU»).
+ * Mentre l'opció pds2_pau_v2 no s'activi, només la veuen els administradors i editors. Amb ?vista=actual
+ * l'administrador veu la versió que veuen ara els visitants.
+ */
+function pds2_pau_v2(): bool {
+	if ( get_option( 'pds2_pau_v2', false ) ) {
+		return true;
+	}
+	if ( ! current_user_can( 'edit_posts' ) ) {
+		return false;
+	}
+	return ! ( isset( $_GET['vista'] ) && 'actual' === sanitize_key( wp_unslash( $_GET['vista'] ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- només tria la vista.
 }

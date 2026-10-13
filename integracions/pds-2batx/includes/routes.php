@@ -17,6 +17,7 @@ add_action( 'init', 'pds2_add_rewrite_rules', 20 );
 function pds2_add_rewrite_rules(): void {
 	$b = preg_quote( PDS2_BASE, '/' );
 	add_rewrite_rule( '^' . $b . '/preguntes-pau/?$', 'index.php?pds2_vista=preguntes', 'top' );
+	add_rewrite_rule( '^' . $b . '/historia/pau/?$', 'index.php?pds2_vista=pau', 'top' );
 	add_rewrite_rule( '^' . $b . '/historia/?$', 'index.php?pds2_vista=historia', 'top' );
 	add_rewrite_rule( '^' . $b . '/([^/]+)/taller/?$', 'index.php?tema_pau=$matches[1]&pds2_vista=taller', 'top' );
 	add_rewrite_rule( '^' . $b . '/([^/]+)/?$', 'index.php?tema_pau=$matches[1]', 'top' );
@@ -32,10 +33,10 @@ add_filter(
 
 /** Vistes de la secció que no són cap entrada (pàgines fetes només amb la plantilla). */
 function pds2_vistes_sense_entrades(): array {
-	return array( 'preguntes', 'historia' );
+	return array( 'preguntes', 'historia', 'pau' );
 }
 
-/** Vista actual de la secció: portada (les matèries de 2n), historia (portada de la matèria), tema, taller, preguntes o cap. */
+/** Vista actual de la secció: portada (les matèries de 2n), historia (portada de la matèria), pau (preparar la PAU), tema, taller, preguntes o cap. */
 function pds2_vista(): string {
 	$v = (string) get_query_var( 'pds2_vista' );
 	if ( in_array( $v, pds2_vistes_sense_entrades(), true ) ) {
@@ -63,6 +64,11 @@ function pds2_portada_url(): string {
 /** Portada de la matèria Història (els sis temes de la PAU). */
 function pds2_historia_url(): string {
 	return home_url( '/' . PDS2_BASE . '/historia/' );
+}
+
+/** Preparar la PAU d'Història: l'examen, el test barrejat, la caixa d'eines i les preguntes 2010-2024. */
+function pds2_pau_url(): string {
+	return home_url( '/' . PDS2_BASE . '/historia/pau/' );
 }
 
 function pds2_preguntes_url(): string {
@@ -125,6 +131,11 @@ add_action(
 	static function () {
 		$vista = pds2_vista();
 		if ( '' !== $vista && ! pds2_pot_veure() ) {
+			pds2_404();
+			return;
+		}
+		// «Preparar la PAU» no existeix per als visitants fins que es publiqui la nova organització.
+		if ( 'pau' === $vista && ! pds2_pau_v2() ) {
 			pds2_404();
 			return;
 		}
@@ -220,6 +231,9 @@ add_filter(
 				break;
 			case 'preguntes':
 				$parts['title'] = 'Què pregunta la PAU d\'Història';
+				break;
+			case 'pau':
+				$parts['title'] = 'Preparar la PAU d\'Història';
 				break;
 		}
 		return $parts;

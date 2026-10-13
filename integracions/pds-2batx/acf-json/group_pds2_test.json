@@ -1,0 +1,355 @@
+{
+    "key": "group_pds2_test",
+    "title": "Test PAU",
+    "fields": [
+        {
+            "key": "field_pds2_test_msg",
+            "label": "Com és un test",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Com a l'examen de la PAU, cada test té deu qüestions en dos blocs de cinc, i cada bloc comença amb un context històric. Cada qüestió té quatre opcions i una sola de correcta. La puntuació és l'oficial (0,25 per encert, −0,08 per error, les qüestions en blanc no compten i el total no pot ser negatiu).",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_pds2_test_tema",
+            "label": "Tema",
+            "name": "tema",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "tema_pau"
+            ],
+            "post_status": [
+                "publish",
+                "private",
+                "draft"
+            ],
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "bidirectional": 0,
+            "ui": 1,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_pds2_test_numero",
+            "label": "Número del test",
+            "name": "numero",
+            "type": "number",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 99,
+            "step": ""
+        },
+        {
+            "key": "field_pds2_test_segell",
+            "label": "Segell",
+            "name": "segell",
+            "type": "text",
+            "instructions": "Per exemple, Elaboració pròpia en format PAU.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_pds2_test_oficial",
+            "label": "Oficial",
+            "name": "oficial",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "15",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Sí",
+            "ui_off_text": "No"
+        },
+        {
+            "key": "field_pds2_test_blocs",
+            "label": "Blocs",
+            "name": "blocs",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_pds2_test_blocs_context",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Afegeix un bloc",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_pds2_test_blocs_context",
+                    "label": "Context històric",
+                    "name": "context",
+                    "type": "textarea",
+                    "instructions": "Sense l'etiqueta «Context històric», que hi posa la pàgina.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_test_blocs_preguntes",
+                    "label": "Qüestions",
+                    "name": "preguntes",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_pds2_test_blocs_preguntes_q",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Afegeix una qüestió",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_q",
+                            "label": "Enunciat",
+                            "name": "q",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_a",
+                            "label": "Opció a",
+                            "name": "a",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_b",
+                            "label": "Opció b",
+                            "name": "b",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_c",
+                            "label": "Opció c",
+                            "name": "c",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_d",
+                            "label": "Opció d",
+                            "name": "d",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_correcta",
+                            "label": "Resposta correcta",
+                            "name": "correcta",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "a": "a",
+                                "b": "b",
+                                "c": "c",
+                                "d": "d"
+                            },
+                            "default_value": "a",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_apartat",
+                            "label": "Apartat del temari",
+                            "name": "apartat",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "25",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 1,
+                            "max": 12,
+                            "step": ""
+                        },
+                        {
+                            "key": "field_pds2_test_blocs_preguntes_explicacio",
+                            "label": "Explicació",
+                            "name": "explicacio",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "test_pau"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1791734400
+}

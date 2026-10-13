@@ -349,3 +349,91 @@ function pds2_preguntes_data(): array {
 		'temes'   => $temes,
 	);
 }
+
+/* -------------------------------------------------------------------------
+ * Tests de l'exercici 4
+ * ---------------------------------------------------------------------- */
+
+/** Tests PAU d'un tema, ordenats pel número. */
+function pds2_tests_posts( int $tema_id ): array {
+	$q = get_posts(
+		array(
+			'post_type'      => 'test_pau',
+			'post_status'    => pds2_estats_visibles(),
+			'posts_per_page' => -1,
+			'meta_key'       => 'tema',
+			'meta_value'     => (string) $tema_id,
+			'no_found_rows'  => true,
+		)
+	);
+	usort( $q, static fn( $a, $b ) => (int) pds2_f( 'numero', $a->ID, 0 ) <=> (int) pds2_f( 'numero', $b->ID, 0 ) );
+	return $q;
+}
+
+/** Un test amb la forma que fa servir el Taller: numero, segell, oficial i blocs (context i qüestions). */
+function pds2_test( int $id ): array {
+	$blocs = array();
+	foreach ( (array) pds2_f( 'blocs', $id, array() ) as $b ) {
+		$qs = array();
+		foreach ( (array) ( $b['preguntes'] ?? array() ) as $p ) {
+			$o = array( (string) ( $p['a'] ?? '' ), (string) ( $p['b'] ?? '' ), (string) ( $p['c'] ?? '' ), (string) ( $p['d'] ?? '' ) );
+			if ( '' === trim( (string) ( $p['q'] ?? '' ) ) || in_array( '', array_map( 'trim', $o ), true ) ) {
+				continue;
+			}
+			$qs[] = array(
+				'q'  => (string) $p['q'],
+				'o'  => $o,
+				'c'  => in_array( $p['correcta'] ?? '', array( 'a', 'b', 'c', 'd' ), true ) ? $p['correcta'] : 'a',
+				'e'  => (string) ( $p['explicacio'] ?? '' ),
+				'ap' => (int) ( $p['apartat'] ?? 0 ),
+			);
+		}
+		if ( $qs ) {
+			$blocs[] = array( 'context' => (string) ( $b['context'] ?? '' ), 'preguntes' => $qs );
+		}
+	}
+	return array(
+		'numero'  => (int) pds2_f( 'numero', $id, 0 ),
+		'segell'  => (string) pds2_f( 'segell', $id, '' ),
+		'oficial' => (bool) pds2_f( 'oficial', $id, false ),
+		'blocs'   => $blocs,
+	);
+}
+
+/** Tests d'un tema (número 1-6), amb el nom i l'adreça del tema. Null si el tema no és visible. */
+function pds2_tests_data( int $n ): ?array {
+	$tema = pds2_tema_per_numero( $n );
+	if ( ! $tema ) {
+		return null;
+	}
+	$tests = array();
+	foreach ( pds2_tests_posts( $tema->ID ) as $t ) {
+		$d = pds2_test( $t->ID );
+		if ( $d['blocs'] ) {
+			$tests[] = $d;
+		}
+	}
+	return array(
+		'tema'  => $n,
+		'titol' => pds2_temes_oficials()[ $n ]['nom'] ?? $tema->post_title,
+		'url'   => get_permalink( $tema ),
+		'tests' => $tests,
+	);
+}
+
+/** Tests de tots els temes visibles (per al test barrejat de «Preparar la PAU»). */
+function pds2_tests_tots(): array {
+	$out = array();
+	foreach ( pds2_temes() as $t ) {
+		$d = pds2_tests_data( pds2_tema_numero( $t->ID ) );
+		if ( $d && $d['tests'] ) {
+			$out[] = $d;
+		}
+	}
+	return $out;
+}
+
+/** Nombre de tests d'un tema. */
+function pds2_tests_compte( int $tema_id ): int {
+	return count( pds2_tests_posts( $tema_id ) );
+}
