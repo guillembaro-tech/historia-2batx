@@ -40,6 +40,8 @@ while ( have_posts() ) :
 			<div id="taller" class="pds2-taller">
 				<p class="tl-loading">Carregant el taller…</p>
 			</div>
+			<?php // Lloc de la invitació «Col·labora» (pds-collabora la posa dins de .um #recursos), perquè quedi dins dels marges de la pàgina. ?>
+			<div id="recursos" class="pds2-v4-collabora"></div>
 		</div>
 	</div>
 	<?php
