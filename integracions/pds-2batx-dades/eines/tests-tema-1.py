@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
-"""Tests de l'exercici 4 del Tema 1 (La Restauració), en el format de la PAU 2025.
+"""Tests de l'exercici 4 del Tema 1 (La Restauració), en el format de la PAU de juny de 2025.
 
-Cada test té dos blocs de cinc qüestions, cada bloc amb un context històric, com a l'examen
-de juny de 2025. Les opcions s'escriuen aquí amb la correcta en primer lloc i l'script les
-barreja de manera fixa (sempre igual) perquè la lletra correcta canviï d'una qüestió a l'altra.
+Cada test té dos blocs de cinc qüestions, cada bloc amb un context històric.
+Les opcions s'escriuen amb la correcta en primer lloc i comu.py les barreja de manera fixa.
+Els tests 1 a 3 fan servir la llavor 1837 i els 4 a 6 una altra, perquè les respostes dels primers no canviïn.
 
 Executa-ho des de la carpeta integracions/pds-2batx-dades: python3 eines/tests-tema-1.py
 """
-import json
 import os
-import random
+import sys
 
-SEGELL = 'Elaboració pròpia en format PAU'
-FI_CONTEXT = "Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu."
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from comu import construeix, desa  # noqa: E402
 
 # (enunciat, [correcta, distractor, distractor, distractor], explicació, apartat)
 TESTS = [
@@ -157,36 +156,156 @@ TESTS = [
              6),
         ]),
     ],
+    # ---------------- Test 4 ----------------
+    [
+        ("Sou un periodista nord-americà que el 1897 viatja per Espanya i heu d'explicar als vostres lectors quines forces s'oposen al règim de la Restauració.", [
+            ("Després de la derrota dels carlins el 1876, les províncies basques van perdre els furs, però el 1878 van obtenir",
+             ["els concerts econòmics.", "un estatut d'autonomia.", "una mancomunitat de diputacions.", "el sufragi universal masculí."],
+             "Els concerts econòmics permetien a les províncies basques recaptar els seus impostos i pagar a l'Estat una quantitat pactada.",
+             2),
+            ("El corrent republicà de Francesc Pi i Margall defensava",
+             ["una república federal.", "arribar al poder amb un pronunciament militar.", "col·laborar amb la monarquia dins de la legalitat.", "el retorn dels furs i d'una monarquia tradicional."],
+             "Els republicans estaven dividits. Els possibilistes de Castelar acceptaven la legalitat, els progressistes de Ruiz Zorrilla confiaven en un pronunciament i els federals de Pi i Margall volien una república federal. Els furs els defensaven els carlins.",
+             2),
+            ("El Partit Nacionalista Basc (PNB), creat el 1895, el va fundar",
+             ["Sabino Arana.", "Manuel Murguía.", "Enric Prat de la Riba.", "Valentí Almirall."],
+             "Arana defensava una identitat basca catòlica i tradicionalista. Murguía va ser la figura del regionalisme gallec.",
+             2),
+            ("El programa del catalanisme aprovat el 1892, que reclamava un poder regional català, es coneix com",
+             ["les Bases de Manresa.", "el Memorial de Greuges.", "el Pacte de Tortosa.", "Lo catalanisme."],
+             "Les Bases de Manresa van fixar el programa del catalanisme polític. El Memorial de Greuges és de 1885 i Lo catalanisme, el llibre d'Almirall de 1886.",
+             2),
+            ("La repressió contra l'anarquisme després de la bomba contra la processó de Corpus de Barcelona (1896) va donar lloc a",
+             ["el Procés de Montjuïc.", "la Setmana Tràgica.", "la Llei de Jurisdiccions.", "l'Expedient Picasso."],
+             "Hi va haver centenars de detencions, tortures i execucions, sovint sense proves, que van provocar protestes a tot Europa. En venjança, un anarquista va assassinar Cánovas el 1897.",
+             2),
+        ]),
+        ("Sou un diplomàtic alemany que el 1912 heu d'informar el vostre govern sobre els intents de reformar el sistema polític espanyol després del Desastre del 98.", [
+            ("La política del conservador Antoni Maura, que volia reformar el sistema des del poder per evitar una revolució al carrer, es coneix com",
+             ["la revolució des de dalt.", "el torn pacífic.", "la Dictablanda.", "el possibilisme."],
+             "Maura volia acabar amb el caciquisme i atreure a la política les «masses neutres», la gent que no votava.",
+             4),
+            ("L'article 29 de la llei electoral de Maura (1907) establia que",
+             ["als districtes amb un sol candidat per escó, aquest quedava elegit sense votació.", "les dones podien votar a les eleccions municipals.", "el vot quedava reservat als homes que pagaven més impostos.", "el vot seria secret i es controlaria des de l'estranger."],
+             "En la pràctica, aquest article va facilitar el control dels cacics, i en moltes eleccions una part dels diputats va sortir elegida sense que ningú votés.",
+             4),
+            ("La Llei del Cadenat (1910), del govern liberal de José Canalejas,",
+             ["prohibia durant dos anys establir noves ordres religioses sense autorització.", "declarava l'Estat aconfessional.", "suprimia l'impost de consums.", "legalitzava el divorci."],
+             "Canalejas volia reduir el poder de l'Església. També va suprimir l'impost de consums, però amb una altra llei.",
+             4),
+            ("El novembre de 1905, uns tres-cents oficials van assaltar a Barcelona les redaccions del Cu-cut! i de La Veu de Catalunya. El govern va respondre aprovant",
+             ["la Llei de Jurisdiccions.", "la Llei del Cadenat.", "la llei de mancomunitats.", "l'Estatut Provincial."],
+             "La Llei de Jurisdiccions (1906) feia jutjar per tribunals militars les ofenses a l'exèrcit. A Catalunya, la reacció va ser la Solidaritat Catalana.",
+             4),
+            ("El 1912, el president del govern José Canalejas",
+             ["va ser assassinat per un anarquista a Madrid.", "va dimitir per la Setmana Tràgica.", "va signar el Pacte de Sant Sebastià.", "va presidir la Mancomunitat de Catalunya."],
+             "Va morir abans que el Senat aprovés la llei de mancomunitats. La Setmana Tràgica havia fet caure el govern de Maura el 1909.",
+             4),
+        ]),
+    ],
+    # ---------------- Test 5 ----------------
+    [
+        ("Sou un periodista britànic que entre 1918 i 1923 informa sobre la conflictivitat social a Espanya.", [
+            ("Les vagues i les ocupacions de terres dels jornalers andalusos entre 1918 i 1920 es coneixen com",
+             ["el trienni bolxevic.", "la Setmana Tràgica.", "el pistolerisme.", "la Dictablanda."],
+             "Els jornalers es van inspirar en la revolució russa de 1917. El problema de la terra explica la força de l'anarquisme al camp andalús.",
+             4),
+            ("El 1918, al Congrés de Sants, la CNT es va organitzar en",
+             ["sindicats únics, que agrupaven tots els treballadors d'una mateixa indústria.", "sindicats verticals, amb obrers i patrons junts.", "comitès paritaris.", "partits polítics obrers."],
+             "Els sindicats únics van fer créixer molt la CNT. Els comitès paritaris són de la dictadura de Primo de Rivera, i el sindicat vertical, del franquisme.",
+             4),
+            ("El 1919 es va crear un sindicat contrari a la CNT, amb el suport de la patronal, que es deia",
+             ["Sindicat Lliure.", "Unió General de Treballadors.", "Solidaritat Obrera.", "Federació Anarquista Ibèrica."],
+             "Amb el Sindicat Lliure i els pistolers pagats per la patronal va començar el pistolerisme, en què es van matar centenars de persones.",
+             4),
+            ("La llei de fugues, que permetia disparar contra els detinguts amb l'excusa que intentaven escapar, la va aplicar a Barcelona el governador civil",
+             ["Severiano Martínez Anido.", "Valeriano Weyler.", "Dámaso Berenguer.", "Arsenio Martínez Campos."],
+             "Martínez Anido va aplicar una repressió duríssima contra la CNT. Berenguer va ser el cap del govern de la Dictablanda (1930-1931).",
+             4),
+            ("El dirigent de la CNT conegut com el «Noi del Sucre», assassinat el 1923 durant el pistolerisme, era",
+             ["Salvador Seguí.", "Francesc Layret.", "Pablo Iglesias.", "Francesc Ferrer i Guàrdia."],
+             "Seguí era un dels dirigents més moderats de la CNT. L'advocat Francesc Layret també va ser assassinat, el 1920.",
+             4),
+        ]),
+        ("Sou un diplomàtic italià destinat a Madrid entre 1923 i 1930 i heu d'informar el vostre govern sobre com governa el general Primo de Rivera.", [
+            ("Durant el Directori militar, Primo de Rivera va estendre a tot Espanya una milícia ciutadana d'origen català per mantenir l'ordre, anomenada",
+             ["el sometent.", "la Guàrdia Civil.", "les Juntes de Defensa.", "la Unión Patriótica."],
+             "El sometent era una milícia de ciutadans armats. La Unión Patriótica va ser el partit únic de la dictadura.",
+             5),
+            ("El 1925, la dictadura va suprimir",
+             ["la Mancomunitat de Catalunya.", "la UGT.", "l'Institut Nacional de Previsió.", "la Guàrdia Civil."],
+             "També va prohibir la bandera catalana i va limitar l'ús públic del català. La UGT, en canvi, va col·laborar amb la dictadura.",
+             5),
+            ("El partit únic creat per Primo de Rivera per donar suport al seu règim es deia",
+             ["Unión Patriótica.", "Falange Española.", "Comunión Tradicionalista.", "Partit Conservador."],
+             "Formava part de l'intent de convertir la dictadura en un règim permanent, durant el Directori civil (1925-1930).",
+             5),
+            ("La dictadura va crear els comitès paritaris, on representants dels obrers i dels patrons fixaven els salaris i les condicions de treball. Aquest model s'anomena",
+             ["corporativisme.", "anarcosindicalisme.", "liberalisme econòmic.", "proteccionisme."],
+             "L'Estat reunia obrers i patrons per acabar amb la lluita de classes, en lloc de deixar que negociessin lliurement o s'enfrontessin.",
+             5),
+            ("Davant dels comitès paritaris de la dictadura,",
+             ["la UGT hi va col·laborar i la CNT va continuar perseguida.", "la CNT hi va col·laborar i la UGT va ser prohibida.", "la UGT i la CNT s'hi van negar totes dues.", "la UGT i la CNT es van fusionar en un sol sindicat."],
+             "La UGT hi guanyava presència i millores. Els anarquistes més radicals van fundar clandestinament la FAI el 1927.",
+             5),
+        ]),
+    ],
+    # ---------------- Test 6 ----------------
+    [
+        ("Sou un professor francès que el 1931 escriu un llibre sobre la caiguda de la monarquia d'Alfons XIII.", [
+            ("El 1927, la dictadura va crear un organisme que havia de substituir les Corts i preparar una nova constitució, però que no elegien els ciutadans. Era",
+             ["l'Assemblea Nacional Consultiva.", "l'Assemblea de Parlamentaris.", "el Directori militar.", "el Consell Permanent de la Mancomunitat."],
+             "Els seus membres eren nomenats o representaven corporacions. La constitució que preparava no es va arribar a aprovar.",
+             5),
+            ("El 1926, Francesc Macià va intentar una invasió armada de Catalunya des de",
+             ["Prats de Molló.", "Jaca.", "Sagunt.", "Sant Sebastià."],
+             "La policia francesa va desarticular el complot. La repressió de la dictadura havia radicalitzat el catalanisme.",
+             5),
+            ("Primo de Rivera va dimitir el gener de 1930 perquè",
+             ["havia perdut el suport de l'exèrcit i del rei.", "havia perdut unes eleccions generals.", "les Corts l'havien destituït.", "havia mort Alfons XIII."],
+             "La crisi econòmica de 1929 i l'oposició d'intel·lectuals, estudiants, republicans i catalanistes havien desgastat el règim. Va morir a París poques setmanes després.",
+             5),
+            ("El desembre de 1930, els capitans Fermín Galán i Ángel García Hernández van ser afusellats després d'una insurrecció republicana fracassada a",
+             ["Jaca.", "Annual.", "Alhucemas.", "Montjuïc."],
+             "La seva mort els va convertir en màrtirs de la causa republicana pocs mesos abans de la caiguda de la monarquia.",
+             5),
+            ("A les eleccions municipals del 12 d'abril de 1931, que es van convertir en un plebiscit sobre la monarquia,",
+             ["les candidatures republicanes i socialistes van guanyar a la gran majoria de capitals de província.", "les dones van votar per primera vegada a Espanya.", "els partits monàrquics van guanyar a totes les grans ciutats.", "només es votava a Catalunya i al País Basc."],
+             "El 14 d'abril es va proclamar la Segona República i Alfons XIII va marxar a l'exili. Les dones no van votar fins al 1933.",
+             5),
+        ]),
+        ("Sou una periodista anglesa que el 1930 visita Barcelona i Madrid per escriure sobre la situació de les dones i dels treballadors a Espanya.", [
+            ("El Codi Civil de 1889 establia que la dona casada",
+             ["havia d'obeir el marit, que administrava els seus béns.", "tenia els mateixos drets que el marit.", "podia votar a les eleccions municipals.", "podia vendre les seves propietats sense el permís del marit."],
+             "Les lleis confirmaven la subordinació de la dona, d'acord amb la ideologia de la domesticitat.",
+             6),
+            ("La ideologia que destinava les dones a la llar i a la cura dels fills, amb l'ideal de l'«àngel de la llar», s'anomena",
+             ["ideologia de la domesticitat.", "feminisme catòlic.", "anarcosindicalisme.", "regeneracionisme."],
+             "La defensaven l'Església i la burgesia. El feminisme catòlic i moderat de Dolors Monserdà reclamava educació i treball per a les dones.",
+             6),
+            ("Moltes dones de les classes populars treballaven a la fàbrica i, a més, havien de fer les feines de casa. Aquesta doble càrrega s'anomena",
+             ["doble jornada.", "redempció en metàl·lic.", "clientelisme.", "encasellat."],
+             "Les obreres eren una part molt important de la mà d'obra tèxtil i cobraven salaris molt més baixos que els homes.",
+             6),
+            ("Abans de 1919, l'Estat ja havia aprovat algunes lleis socials, com",
+             ["la llei d'accidents de treball (1900).", "la jornada laboral de quaranta hores.", "trenta dies de vacances pagades.", "una Seguretat Social per a tota la població."],
+             "També es van regular el treball de dones i infants (1900) i el descans dominical (1904). Eren els primers passos, encara molt tímids, cap a l'Estat del benestar.",
+             6),
+            ("El 1930, la població de Barcelona",
+             ["havia superat el milió d'habitants, en bona part per la immigració.", "havia disminuït per l'emigració a Amèrica.", "era més petita que el 1875.", "no arribava als dos-cents mil habitants."],
+             "Com que a Catalunya naixien pocs infants, el creixement depenia cada cop més de la immigració arribada d'altres zones d'Espanya.",
+             6),
+        ]),
+    ],
 ]
 
 
-def construeix(seed=1837):
-    rnd = random.Random(seed)
-    tests = []
-    for n, blocs in enumerate(TESTS, start=1):
-        out_blocs = []
-        for context, preguntes in blocs:
-            qs = []
-            for q, opcions, expl, ap in preguntes:
-                assert len(opcions) == 4 and len(set(opcions)) == 4, q
-                ordre = list(range(4))
-                rnd.shuffle(ordre)
-                o = [opcions[i] for i in ordre]
-                c = 'abcd'[ordre.index(0)]
-                qs.append({'q': q, 'o': o, 'c': c, 'e': expl, 'ap': ap})
-            assert len(qs) == 5
-            out_blocs.append({'context': context + ' ' + FI_CONTEXT, 'preguntes': qs})
-        assert len(out_blocs) == 2
-        tests.append({'numero': n, 'segell': SEGELL, 'oficial': False, 'blocs': out_blocs})
-    return {'tema': 1, 'tests': tests}
+GRUPS = [(1, 3, 1837), (4, 6, 2424)]
+
+
+def construeix_tema():
+    return construeix(1, TESTS, GRUPS)
 
 
 if __name__ == '__main__':
-    dades = construeix()
-    lletres = [q['c'] for t in dades['tests'] for b in t['blocs'] for q in b['preguntes']]
-    print('Respostes correctes:', ''.join(lletres), {x: lletres.count(x) for x in 'abcd'})
-    desti = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tests-tema-1.json')
-    with open(desti, 'w', encoding='utf-8') as fh:
-        json.dump(dades, fh, ensure_ascii=False, indent=1)
-        fh.write('\n')
-    print('escrit', desti)
+    desa(construeix_tema(), 'tests-tema-1.json')

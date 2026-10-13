@@ -255,7 +255,8 @@ test_fields = [
     q.text(['segell'], 'segell', 'Segell', width='25', instructions='Per exemple, Elaboració pròpia en format PAU.'),
     q.truefalse(['oficial'], 'oficial', 'Oficial', width='15'),
     q.repeater(['blocs'], 'blocs', 'Blocs', [
-        q.textarea(['blocs', 'context'], 'context', 'Context històric', rows=3, instructions='Sense l\'etiqueta «Context històric», que hi posa la pàgina.'),
+        q.textarea(['blocs', 'context'], 'context', 'Context històric', rows=3, width='70', instructions='Sense l\'etiqueta «Context històric», que hi posa la pàgina.'),
+        q.text(['blocs', 'segell'], 'segell', 'Segell del bloc (opcional)', width='30', instructions='Només si el bloc és oficial, per exemple Qüestions oficials · PAU 2025, convocatòria ordinària.'),
         q.repeater(['blocs', 'preguntes'], 'preguntes', 'Qüestions', [
             q.textarea(['blocs', 'preguntes', 'q'], 'q', 'Enunciat', rows=2),
             q.text(['blocs', 'preguntes', 'a'], 'a', 'Opció a', width='50'),

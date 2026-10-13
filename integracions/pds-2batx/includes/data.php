@@ -389,7 +389,11 @@ function pds2_test( int $id ): array {
 			);
 		}
 		if ( $qs ) {
-			$blocs[] = array( 'context' => (string) ( $b['context'] ?? '' ), 'preguntes' => $qs );
+			$bl = array( 'context' => (string) ( $b['context'] ?? '' ), 'preguntes' => $qs );
+			if ( '' !== trim( (string) ( $b['segell'] ?? '' ) ) ) {
+				$bl['segell'] = (string) $b['segell'];
+			}
+			$blocs[] = $bl;
 		}
 	}
 	return array(

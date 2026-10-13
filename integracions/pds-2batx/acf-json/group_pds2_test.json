@@ -136,7 +136,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "",
+                        "width": "70",
                         "class": "",
                         "id": ""
                     },
@@ -145,6 +145,25 @@
                     "maxlength": "",
                     "rows": 3,
                     "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_test_blocs_segell",
+                    "label": "Segell del bloc (opcional)",
+                    "name": "segell",
+                    "type": "text",
+                    "instructions": "Només si el bloc és oficial, per exemple Qüestions oficials · PAU 2025, convocatòria ordinària.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_pds2_test_blocs_preguntes",

@@ -1,0 +1,417 @@
+{
+ "tema": 2,
+ "tests": [
+  {
+   "numero": 1,
+   "segell": "Elaboració pròpia i qüestions oficials de la PAU 2025",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un erudit barceloní que el 1885 escriu un article sobre els orígens del catalanisme. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "L'oda «La pàtria» (1833), considerada l'inici simbòlic de la Renaixença, la va escriure",
+       "o": [
+        "Bonaventura Carles Aribau.",
+        "Josep Anselm Clavé.",
+        "Jacint Verdaguer.",
+        "Valentí Almirall."
+       ],
+       "c": "a",
+       "e": "Es va publicar al diari El Vapor. Verdaguer va guanyar els Jocs Florals de 1877 amb L'Atlàntida, i Clavé va fundar els cors obrers.",
+       "ap": 1
+      },
+      {
+       "q": "El 1859 es van restaurar a Barcelona",
+       "o": [
+        "els Jocs Florals.",
+        "la Generalitat.",
+        "les Corts catalanes.",
+        "el Consell de Cent."
+       ],
+       "c": "a",
+       "e": "Els Jocs Florals eren un certamen literari que va donar prestigi al català com a llengua de cultura. Les institucions polítiques s'havien suprimit amb la Nova Planta.",
+       "ap": 1
+      },
+      {
+       "q": "El Decret de Nova Planta (1716)",
+       "o": [
+        "va reconèixer el català com a llengua oficial de l'Audiència.",
+        "va suprimir el dret civil català, però va mantenir la Generalitat.",
+        "va crear una mancomunitat de les quatre províncies catalanes.",
+        "va suprimir les institucions pròpies de Catalunya, però va mantenir el dret civil català."
+       ],
+       "c": "d",
+       "e": "Després de la Guerra de Successió, Felip V va abolir la Generalitat, les Corts i el Consell de Cent, i va imposar el castellà a l'Audiència.",
+       "ap": 1
+      },
+      {
+       "q": "La primera proposta política per reorganitzar l'Estat que va arrelar a Catalunya, amb el Pacte Federal de Tortosa (1869), va ser",
+       "o": [
+        "el federalisme republicà.",
+        "el centralisme liberal.",
+        "el carlisme.",
+        "el regionalisme conservador."
+       ],
+       "c": "a",
+       "e": "El federalisme volia un Estat format per estats federats. Va fracassar amb la Primera República (1873-1874), i molts federals van passar després al catalanisme.",
+       "ap": 1
+      },
+      {
+       "q": "El document que el 1885 una comissió catalana va lliurar a Alfons XII per protestar contra el codi civil únic i els tractats comercials amb altres països es coneix com",
+       "o": [
+        "el Missatge a la reina regent.",
+        "Lo catalanisme.",
+        "el Memorial de Greuges.",
+        "les Bases de Manresa."
+       ],
+       "c": "c",
+       "e": "Va ser el primer gran acte del catalanisme polític. No era separatista, sinó que defensava els interessos de Catalunya dins d'Espanya.",
+       "ap": 2
+      }
+     ]
+    },
+    {
+     "context": "Heu estat corresponsal de la premsa francesa a Barcelona al llarg de les primeres dècades del segle XX i heu de redactar un article sobre el creixement del catalanisme polític en aquest període. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Els líders principals de la Lliga Regionalista van ser",
+       "o": [
+        "Francesc Macià i Enric Prat de la Riba.",
+        "Francesc Cambó i Anselm Clavé.",
+        "Francesc Cambó i Lluís Companys.",
+        "Enric Prat de la Riba i Francesc Cambó."
+       ],
+       "c": "d",
+       "e": "Prat de la Riba n'era l'ideòleg i Cambó, l'orador i el líder parlamentari. Macià i Companys van ser dirigents d'Esquerra Republicana, i Clavé va fundar els cors obrers al segle XIX.",
+       "ap": 4
+      },
+      {
+       "q": "La coalició Solidaritat Catalana va aplegar, entre altres, els partits següents:",
+       "o": [
+        "la Lliga Regionalista, el Partit Liberal dinàstic i els carlins.",
+        "la Lliga Regionalista, el Partit Conservador i els federals.",
+        "la Lliga Regionalista, els carlins i els lerrouxistes.",
+        "la Lliga Regionalista, el Centre Nacionalista Republicà i els carlins."
+       ],
+       "c": "d",
+       "e": "Solidaritat Catalana (1906) va unir gairebé totes les forces catalanes contra la Llei de jurisdiccions, des de la Lliga fins als carlins i els republicans catalanistes. En van quedar fora els partits dinàstics i els republicans de Lerroux.",
+       "ap": 4
+      },
+      {
+       "q": "La Mancomunitat de Catalunya va existir entre",
+       "o": [
+        "el 1910 i el 1925.",
+        "el 1914 i el 1925.",
+        "el 1910 i el 1923.",
+        "el 1914 i el 1931."
+       ],
+       "c": "b",
+       "e": "Es va constituir el 6 d'abril de 1914, amb Prat de la Riba com a president, i la dictadura de Primo de Rivera la va suprimir el 1925.",
+       "ap": 5
+      },
+      {
+       "q": "Els dirigents principals d'Esquerra Republicana de Catalunya van morir en les circumstàncies següents:",
+       "o": [
+        "Francesc Macià a Prats de Molló i Lluís Companys a l'exili.",
+        "Francesc Macià de mort natural i Lluís Companys afusellat.",
+        "Lluís Companys de mort natural i Francesc Macià afusellat.",
+        "Francesc Macià i Lluís Companys van ser afusellats."
+       ],
+       "c": "b",
+       "e": "Macià va morir el desembre de 1933, quan era president de la Generalitat. Companys va ser afusellat al castell de Montjuïc el 15 d'octubre de 1940, després que la Gestapo el detingués a França i el lliurés al règim franquista.",
+       "ap": 6
+      },
+      {
+       "q": "L'Estatut d'autonomia que va ser aprovat a les Corts republicanes el 1932, pel que fa a les llengües,",
+       "o": [
+        "va establir el català i el castellà com a llengües oficials a Catalunya.",
+        "va establir el castellà com a llengua pública i el català com a llengua pròpia de l'àmbit privat.",
+        "va declarar el català com a única llengua oficial.",
+        "va negar l'oficialitat del català."
+       ],
+       "c": "a",
+       "e": "L'Estatut de 1932 va fer oficials el català i el castellà a Catalunya. És la continuació d'aquest tema, i l'estudiaràs a fons al Tema 3.",
+       "ap": 0
+      }
+     ],
+     "segell": "Qüestions oficials · PAU 2025, convocatòria ordinària"
+    }
+   ]
+  },
+  {
+   "numero": 2,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un periodista madrileny que el 1893 heu d'explicar als vostres lectors com ha evolucionat el catalanisme des de 1880. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Valentí Almirall, que havia estat republicà federal, va impulsar un catalanisme progressista i el 1882 va fundar",
+       "o": [
+        "el Centre Català.",
+        "la Lliga Regionalista.",
+        "Estat Català.",
+        "la Unió Catalanista."
+       ],
+       "c": "a",
+       "e": "El Centre Català va ser la primera entitat política del catalanisme. Almirall havia trencat amb Pi i Margall el 1881.",
+       "ap": 2
+      },
+      {
+       "q": "El llibre Lo catalanisme (1886), que va sistematitzar la doctrina del catalanisme progressista, el va escriure",
+       "o": [
+        "Enric Prat de la Riba.",
+        "Joan Mañé i Flaquer.",
+        "Josep Torras i Bages.",
+        "Valentí Almirall."
+       ],
+       "c": "d",
+       "e": "Torras i Bages va escriure La tradició catalana (1892), l'obra de referència del catalanisme catòlic i conservador.",
+       "ap": 2
+      },
+      {
+       "q": "El 1887, els catalanistes conservadors i catòlics que es van separar del Centre Català van fundar",
+       "o": [
+        "la Lliga de Catalunya.",
+        "el Centre Nacionalista Republicà.",
+        "Solidaritat Catalana.",
+        "la Lliga Regionalista."
+       ],
+       "c": "a",
+       "e": "L'escissió de 1887 va separar les dues ànimes del catalanisme. La Lliga Regionalista no es va fundar fins al 1901.",
+       "ap": 2
+      },
+      {
+       "q": "El 1888, durant l'Exposició Universal, la Lliga de Catalunya va lliurar a la regent Maria Cristina un missatge que demanava, entre altres coses,",
+       "o": [
+        "Corts pròpies i el català com a llengua oficial.",
+        "la independència de Catalunya.",
+        "una república federal.",
+        "el sufragi femení."
+       ],
+       "c": "a",
+       "e": "Era una petició d'autonomia dins de la monarquia, coherent amb el catalanisme conservador de la Lliga de Catalunya.",
+       "ap": 3
+      },
+      {
+       "q": "Les Bases de Manresa (1892) proposaven que",
+       "o": [
+        "Catalunya s'organitzés en províncies.",
+        "Catalunya s'independitzés i tingués exèrcit propi.",
+        "les Corts catalanes s'elegissin per sufragi universal masculí.",
+        "el català fos l'única llengua oficial de Catalunya."
+       ],
+       "c": "d",
+       "e": "Deixaven al poder central els afers exteriors, l'exèrcit i les duanes. Les Corts catalanes s'havien d'elegir per sufragi corporatiu, i la comarca havia de ser la base territorial.",
+       "ap": 3
+      }
+     ]
+    },
+    {
+     "context": "Sou un periodista francès que el 1907 escriu des de Barcelona sobre els canvis polítics que ha viscut Catalunya després del Desastre del 98. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "El 1899, molts comerciants i industrials de Barcelona es van negar a pagar els nous impostos del govern de Silvela. Aquesta protesta es coneix com",
+       "o": [
+        "les bullangues.",
+        "el tancament de caixes.",
+        "la Setmana Tràgica.",
+        "la vaga de La Canadenca."
+       ],
+       "c": "b",
+       "e": "La burgesia catalana havia confiat en les promeses del govern de Silvela i se'n va sentir decebuda. El govern va respondre declarant l'estat de guerra.",
+       "ap": 4
+      },
+      {
+       "q": "L'alcalde de Barcelona que el 1899 es va posar al costat dels qui protestaven contra els nous impostos era",
+       "o": [
+        "Francesc Macià.",
+        "el doctor Bartomeu Robert.",
+        "Francesc Cambó.",
+        "Enric Prat de la Riba."
+       ],
+       "c": "b",
+       "e": "El doctor Robert va preferir dimitir abans que aplicar mesures contra els contribuents que no pagaven. Es va convertir en un símbol del catalanisme.",
+       "ap": 4
+      },
+      {
+       "q": "El diari de la Lliga Regionalista, fundada el 1901, era",
+       "o": [
+        "La Campana de Gràcia.",
+        "Solidaridad Obrera.",
+        "La Veu de Catalunya.",
+        "El Vapor."
+       ],
+       "c": "c",
+       "e": "La Veu de Catalunya va ser, juntament amb el Cu-cut!, un dels mitjans que els militars van assaltar el novembre de 1905.",
+       "ap": 4
+      },
+      {
+       "q": "A les eleccions generals de 1907, la coalició Solidaritat Catalana",
+       "o": [
+        "va guanyar la majoria absoluta al Congrés dels Diputats.",
+        "va perdre davant dels partits dinàstics.",
+        "no s'hi va presentar.",
+        "va obtenir 41 dels 44 escons de Catalunya."
+       ],
+       "c": "d",
+       "e": "Va ser el primer gran triomf electoral del catalanisme. La coalició es va trencar el 1909, amb la Setmana Tràgica.",
+       "ap": 4
+      },
+      {
+       "q": "El 1907, Prat de la Riba, que presidia la Diputació de Barcelona, va crear",
+       "o": [
+        "el Servei Meteorològic de Catalunya.",
+        "la Mancomunitat de Catalunya.",
+        "l'Institut d'Estudis Catalans.",
+        "la Generalitat republicana."
+       ],
+       "c": "c",
+       "e": "L'Institut d'Estudis Catalans es va dedicar a la recerca i a la llengua, i el 1913 va publicar les normes ortogràfiques del català.",
+       "ap": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 3,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un enginyer que el 1923 escriu una memòria sobre l'obra de la Mancomunitat de Catalunya. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "La Mancomunitat de Catalunya era",
+       "o": [
+        "un govern autònom amb Estatut propi.",
+        "una associació d'ajuntaments republicans.",
+        "un parlament amb poder per fer lleis.",
+        "la unió de les quatre diputacions provincials catalanes."
+       ],
+       "c": "d",
+       "e": "Era una institució administrativa, sense poder legislatiu i amb pocs recursos, autoritzada per un reial decret de desembre de 1913.",
+       "ap": 5
+      },
+      {
+       "q": "El primer president de la Mancomunitat (1914-1917) va ser",
+       "o": [
+        "Josep Puig i Cadafalch.",
+        "Enric Prat de la Riba.",
+        "Francesc Cambó.",
+        "Francesc Macià."
+       ],
+       "c": "b",
+       "e": "Prat de la Riba va morir el 1917, i el va substituir l'arquitecte Josep Puig i Cadafalch.",
+       "ap": 5
+      },
+      {
+       "q": "Entre l'obra de la Mancomunitat hi ha",
+       "o": [
+        "la creació del Banc d'Espanya.",
+        "la construcció del metro de Madrid.",
+        "una reforma agrària.",
+        "l'ensenyament tècnic i la xarxa telefònica."
+       ],
+       "c": "d",
+       "e": "També va crear la Biblioteca de Catalunya, oberta al públic el 1914, i l'Escola de Bibliotecàries. Volia demostrar que una administració catalana podia modernitzar el país.",
+       "ap": 5
+      },
+      {
+       "q": "La Gramàtica catalana de 1918, que va fixar la normativa de la llengua, la va publicar",
+       "o": [
+        "Jacint Verdaguer.",
+        "Pompeu Fabra.",
+        "Joan Maragall.",
+        "Bonaventura Carles Aribau."
+       ],
+       "c": "b",
+       "e": "Fabra ja havia fet el Diccionari ortogràfic (1917). L'Institut d'Estudis Catalans havia aprovat les normes ortogràfiques el 1913.",
+       "ap": 5
+      },
+      {
+       "q": "El 1925, el dictador Primo de Rivera va suprimir la Mancomunitat amb",
+       "o": [
+        "el Decret de Nova Planta.",
+        "l'Estatut Provincial.",
+        "la Llei del Cadenat.",
+        "la Llei de jurisdiccions."
+       ],
+       "c": "b",
+       "e": "La dictadura va reprimir el catalanisme, i aquesta repressió el va radicalitzar.",
+       "ap": 5
+      }
+     ]
+    },
+    {
+     "context": "Sou un periodista uruguaià que el 14 d'abril de 1931 sou a Barcelona i heu d'explicar als vostres lectors com ha arribat el catalanisme d'esquerres al poder. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Francesc Macià va fundar el 1922 el partit independentista",
+       "o": [
+        "el Partit Republicà Català.",
+        "la Lliga Regionalista.",
+        "Estat Català.",
+        "Acció Catalana."
+       ],
+       "c": "c",
+       "e": "Macià havia estat militar i diputat. Acció Catalana, també de 1922, la van fundar catalanistes que es van separar de la Lliga.",
+       "ap": 6
+      },
+      {
+       "q": "El 1928, en una assemblea a l'Havana, el moviment de Macià va aprovar",
+       "o": [
+        "l'Estatut de Núria.",
+        "el Pacte de Sant Sebastià.",
+        "una Constitució provisional de la República Catalana.",
+        "les Bases de Manresa."
+       ],
+       "c": "c",
+       "e": "Després del fracàs de Prats de Molló (1926), Macià va buscar suports entre els catalans d'Amèrica.",
+       "ap": 6
+      },
+      {
+       "q": "Esquerra Republicana de Catalunya es va fundar el març de 1931 i el seu president era",
+       "o": [
+        "Lluís Companys.",
+        "Francesc Cambó.",
+        "Francesc Layret.",
+        "Francesc Macià."
+       ],
+       "c": "d",
+       "e": "ERC va unir Estat Català, el Partit Republicà Català i el grup de L'Opinió. Layret havia estat assassinat el 1920.",
+       "ap": 6
+      },
+      {
+       "q": "A les eleccions municipals del 12 d'abril de 1931 a Barcelona",
+       "o": [
+        "no s'hi va presentar cap partit catalanista.",
+        "la Lliga va obtenir la majoria absoluta.",
+        "Esquerra Republicana va obtenir més regidors que la Lliga.",
+        "va guanyar el Partit Radical de Lerroux."
+       ],
+       "c": "c",
+       "e": "ERC, un partit que tenia menys d'un mes, va obtenir 25 dels 50 regidors, i la Lliga, 12.",
+       "ap": 6
+      },
+      {
+       "q": "El 14 d'abril de 1931, Francesc Macià va proclamar",
+       "o": [
+        "el retorn de la monarquia.",
+        "la República Catalana, com a estat integrant d'una federació ibèrica.",
+        "la restauració de la Mancomunitat.",
+        "la independència de Catalunya, sense cap relació amb Espanya."
+       ],
+       "c": "b",
+       "e": "El 17 d'abril es va acordar amb el govern provisional de la República que es convertiria en la Generalitat de Catalunya.",
+       "ap": 6
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

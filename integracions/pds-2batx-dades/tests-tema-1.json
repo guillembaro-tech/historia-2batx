@@ -411,6 +411,417 @@
      ]
     }
    ]
+  },
+  {
+   "numero": 4,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un periodista nord-americà que el 1897 viatja per Espanya i heu d'explicar als vostres lectors quines forces s'oposen al règim de la Restauració. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Després de la derrota dels carlins el 1876, les províncies basques van perdre els furs, però el 1878 van obtenir",
+       "o": [
+        "un estatut d'autonomia.",
+        "els concerts econòmics.",
+        "el sufragi universal masculí.",
+        "una mancomunitat de diputacions."
+       ],
+       "c": "b",
+       "e": "Els concerts econòmics permetien a les províncies basques recaptar els seus impostos i pagar a l'Estat una quantitat pactada.",
+       "ap": 2
+      },
+      {
+       "q": "El corrent republicà de Francesc Pi i Margall defensava",
+       "o": [
+        "arribar al poder amb un pronunciament militar.",
+        "col·laborar amb la monarquia dins de la legalitat.",
+        "una república federal.",
+        "el retorn dels furs i d'una monarquia tradicional."
+       ],
+       "c": "c",
+       "e": "Els republicans estaven dividits. Els possibilistes de Castelar acceptaven la legalitat, els progressistes de Ruiz Zorrilla confiaven en un pronunciament i els federals de Pi i Margall volien una república federal. Els furs els defensaven els carlins.",
+       "ap": 2
+      },
+      {
+       "q": "El Partit Nacionalista Basc (PNB), creat el 1895, el va fundar",
+       "o": [
+        "Enric Prat de la Riba.",
+        "Manuel Murguía.",
+        "Sabino Arana.",
+        "Valentí Almirall."
+       ],
+       "c": "c",
+       "e": "Arana defensava una identitat basca catòlica i tradicionalista. Murguía va ser la figura del regionalisme gallec.",
+       "ap": 2
+      },
+      {
+       "q": "El programa del catalanisme aprovat el 1892, que reclamava un poder regional català, es coneix com",
+       "o": [
+        "les Bases de Manresa.",
+        "el Pacte de Tortosa.",
+        "el Memorial de Greuges.",
+        "Lo catalanisme."
+       ],
+       "c": "a",
+       "e": "Les Bases de Manresa van fixar el programa del catalanisme polític. El Memorial de Greuges és de 1885 i Lo catalanisme, el llibre d'Almirall de 1886.",
+       "ap": 2
+      },
+      {
+       "q": "La repressió contra l'anarquisme després de la bomba contra la processó de Corpus de Barcelona (1896) va donar lloc a",
+       "o": [
+        "la Setmana Tràgica.",
+        "la Llei de Jurisdiccions.",
+        "el Procés de Montjuïc.",
+        "l'Expedient Picasso."
+       ],
+       "c": "c",
+       "e": "Hi va haver centenars de detencions, tortures i execucions, sovint sense proves, que van provocar protestes a tot Europa. En venjança, un anarquista va assassinar Cánovas el 1897.",
+       "ap": 2
+      }
+     ]
+    },
+    {
+     "context": "Sou un diplomàtic alemany que el 1912 heu d'informar el vostre govern sobre els intents de reformar el sistema polític espanyol després del Desastre del 98. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "La política del conservador Antoni Maura, que volia reformar el sistema des del poder per evitar una revolució al carrer, es coneix com",
+       "o": [
+        "la Dictablanda.",
+        "el torn pacífic.",
+        "el possibilisme.",
+        "la revolució des de dalt."
+       ],
+       "c": "d",
+       "e": "Maura volia acabar amb el caciquisme i atreure a la política les «masses neutres», la gent que no votava.",
+       "ap": 4
+      },
+      {
+       "q": "L'article 29 de la llei electoral de Maura (1907) establia que",
+       "o": [
+        "als districtes amb un sol candidat per escó, aquest quedava elegit sense votació.",
+        "el vot quedava reservat als homes que pagaven més impostos.",
+        "el vot seria secret i es controlaria des de l'estranger.",
+        "les dones podien votar a les eleccions municipals."
+       ],
+       "c": "a",
+       "e": "En la pràctica, aquest article va facilitar el control dels cacics, i en moltes eleccions una part dels diputats va sortir elegida sense que ningú votés.",
+       "ap": 4
+      },
+      {
+       "q": "La Llei del Cadenat (1910), del govern liberal de José Canalejas,",
+       "o": [
+        "prohibia durant dos anys establir noves ordres religioses sense autorització.",
+        "suprimia l'impost de consums.",
+        "declarava l'Estat aconfessional.",
+        "legalitzava el divorci."
+       ],
+       "c": "a",
+       "e": "Canalejas volia reduir el poder de l'Església. També va suprimir l'impost de consums, però amb una altra llei.",
+       "ap": 4
+      },
+      {
+       "q": "El novembre de 1905, uns tres-cents oficials van assaltar a Barcelona les redaccions del Cu-cut! i de La Veu de Catalunya. El govern va respondre aprovant",
+       "o": [
+        "l'Estatut Provincial.",
+        "la llei de mancomunitats.",
+        "la Llei del Cadenat.",
+        "la Llei de Jurisdiccions."
+       ],
+       "c": "d",
+       "e": "La Llei de Jurisdiccions (1906) feia jutjar per tribunals militars les ofenses a l'exèrcit. A Catalunya, la reacció va ser la Solidaritat Catalana.",
+       "ap": 4
+      },
+      {
+       "q": "El 1912, el president del govern José Canalejas",
+       "o": [
+        "va dimitir per la Setmana Tràgica.",
+        "va ser assassinat per un anarquista a Madrid.",
+        "va presidir la Mancomunitat de Catalunya.",
+        "va signar el Pacte de Sant Sebastià."
+       ],
+       "c": "b",
+       "e": "Va morir abans que el Senat aprovés la llei de mancomunitats. La Setmana Tràgica havia fet caure el govern de Maura el 1909.",
+       "ap": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 5,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un periodista britànic que entre 1918 i 1923 informa sobre la conflictivitat social a Espanya. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Les vagues i les ocupacions de terres dels jornalers andalusos entre 1918 i 1920 es coneixen com",
+       "o": [
+        "la Setmana Tràgica.",
+        "el pistolerisme.",
+        "la Dictablanda.",
+        "el trienni bolxevic."
+       ],
+       "c": "d",
+       "e": "Els jornalers es van inspirar en la revolució russa de 1917. El problema de la terra explica la força de l'anarquisme al camp andalús.",
+       "ap": 4
+      },
+      {
+       "q": "El 1918, al Congrés de Sants, la CNT es va organitzar en",
+       "o": [
+        "sindicats únics, que agrupaven tots els treballadors d'una mateixa indústria.",
+        "partits polítics obrers.",
+        "sindicats verticals, amb obrers i patrons junts.",
+        "comitès paritaris."
+       ],
+       "c": "a",
+       "e": "Els sindicats únics van fer créixer molt la CNT. Els comitès paritaris són de la dictadura de Primo de Rivera, i el sindicat vertical, del franquisme.",
+       "ap": 4
+      },
+      {
+       "q": "El 1919 es va crear un sindicat contrari a la CNT, amb el suport de la patronal, que es deia",
+       "o": [
+        "Solidaritat Obrera.",
+        "Federació Anarquista Ibèrica.",
+        "Unió General de Treballadors.",
+        "Sindicat Lliure."
+       ],
+       "c": "d",
+       "e": "Amb el Sindicat Lliure i els pistolers pagats per la patronal va començar el pistolerisme, en què es van matar centenars de persones.",
+       "ap": 4
+      },
+      {
+       "q": "La llei de fugues, que permetia disparar contra els detinguts amb l'excusa que intentaven escapar, la va aplicar a Barcelona el governador civil",
+       "o": [
+        "Arsenio Martínez Campos.",
+        "Valeriano Weyler.",
+        "Dámaso Berenguer.",
+        "Severiano Martínez Anido."
+       ],
+       "c": "d",
+       "e": "Martínez Anido va aplicar una repressió duríssima contra la CNT. Berenguer va ser el cap del govern de la Dictablanda (1930-1931).",
+       "ap": 4
+      },
+      {
+       "q": "El dirigent de la CNT conegut com el «Noi del Sucre», assassinat el 1923 durant el pistolerisme, era",
+       "o": [
+        "Salvador Seguí.",
+        "Pablo Iglesias.",
+        "Francesc Layret.",
+        "Francesc Ferrer i Guàrdia."
+       ],
+       "c": "a",
+       "e": "Seguí era un dels dirigents més moderats de la CNT. L'advocat Francesc Layret també va ser assassinat, el 1920.",
+       "ap": 4
+      }
+     ]
+    },
+    {
+     "context": "Sou un diplomàtic italià destinat a Madrid entre 1923 i 1930 i heu d'informar el vostre govern sobre com governa el general Primo de Rivera. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "Durant el Directori militar, Primo de Rivera va estendre a tot Espanya una milícia ciutadana d'origen català per mantenir l'ordre, anomenada",
+       "o": [
+        "la Guàrdia Civil.",
+        "el sometent.",
+        "la Unión Patriótica.",
+        "les Juntes de Defensa."
+       ],
+       "c": "b",
+       "e": "El sometent era una milícia de ciutadans armats. La Unión Patriótica va ser el partit únic de la dictadura.",
+       "ap": 5
+      },
+      {
+       "q": "El 1925, la dictadura va suprimir",
+       "o": [
+        "l'Institut Nacional de Previsió.",
+        "la UGT.",
+        "la Mancomunitat de Catalunya.",
+        "la Guàrdia Civil."
+       ],
+       "c": "c",
+       "e": "També va prohibir la bandera catalana i va limitar l'ús públic del català. La UGT, en canvi, va col·laborar amb la dictadura.",
+       "ap": 5
+      },
+      {
+       "q": "El partit únic creat per Primo de Rivera per donar suport al seu règim es deia",
+       "o": [
+        "Falange Española.",
+        "Unión Patriótica.",
+        "Comunión Tradicionalista.",
+        "Partit Conservador."
+       ],
+       "c": "b",
+       "e": "Formava part de l'intent de convertir la dictadura en un règim permanent, durant el Directori civil (1925-1930).",
+       "ap": 5
+      },
+      {
+       "q": "La dictadura va crear els comitès paritaris, on representants dels obrers i dels patrons fixaven els salaris i les condicions de treball. Aquest model s'anomena",
+       "o": [
+        "anarcosindicalisme.",
+        "proteccionisme.",
+        "corporativisme.",
+        "liberalisme econòmic."
+       ],
+       "c": "c",
+       "e": "L'Estat reunia obrers i patrons per acabar amb la lluita de classes, en lloc de deixar que negociessin lliurement o s'enfrontessin.",
+       "ap": 5
+      },
+      {
+       "q": "Davant dels comitès paritaris de la dictadura,",
+       "o": [
+        "la UGT i la CNT es van fusionar en un sol sindicat.",
+        "la CNT hi va col·laborar i la UGT va ser prohibida.",
+        "la UGT hi va col·laborar i la CNT va continuar perseguida.",
+        "la UGT i la CNT s'hi van negar totes dues."
+       ],
+       "c": "c",
+       "e": "La UGT hi guanyava presència i millores. Els anarquistes més radicals van fundar clandestinament la FAI el 1927.",
+       "ap": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "numero": 6,
+   "segell": "Elaboració pròpia en format PAU",
+   "oficial": false,
+   "blocs": [
+    {
+     "context": "Sou un professor francès que el 1931 escriu un llibre sobre la caiguda de la monarquia d'Alfons XIII. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "El 1927, la dictadura va crear un organisme que havia de substituir les Corts i preparar una nova constitució, però que no elegien els ciutadans. Era",
+       "o": [
+        "el Directori militar.",
+        "l'Assemblea Nacional Consultiva.",
+        "l'Assemblea de Parlamentaris.",
+        "el Consell Permanent de la Mancomunitat."
+       ],
+       "c": "b",
+       "e": "Els seus membres eren nomenats o representaven corporacions. La constitució que preparava no es va arribar a aprovar.",
+       "ap": 5
+      },
+      {
+       "q": "El 1926, Francesc Macià va intentar una invasió armada de Catalunya des de",
+       "o": [
+        "Sant Sebastià.",
+        "Prats de Molló.",
+        "Sagunt.",
+        "Jaca."
+       ],
+       "c": "b",
+       "e": "La policia francesa va desarticular el complot. La repressió de la dictadura havia radicalitzat el catalanisme.",
+       "ap": 5
+      },
+      {
+       "q": "Primo de Rivera va dimitir el gener de 1930 perquè",
+       "o": [
+        "les Corts l'havien destituït.",
+        "havia perdut unes eleccions generals.",
+        "havia mort Alfons XIII.",
+        "havia perdut el suport de l'exèrcit i del rei."
+       ],
+       "c": "d",
+       "e": "La crisi econòmica de 1929 i l'oposició d'intel·lectuals, estudiants, republicans i catalanistes havien desgastat el règim. Va morir a París poques setmanes després.",
+       "ap": 5
+      },
+      {
+       "q": "El desembre de 1930, els capitans Fermín Galán i Ángel García Hernández van ser afusellats després d'una insurrecció republicana fracassada a",
+       "o": [
+        "Jaca.",
+        "Montjuïc.",
+        "Annual.",
+        "Alhucemas."
+       ],
+       "c": "a",
+       "e": "La seva mort els va convertir en màrtirs de la causa republicana pocs mesos abans de la caiguda de la monarquia.",
+       "ap": 5
+      },
+      {
+       "q": "A les eleccions municipals del 12 d'abril de 1931, que es van convertir en un plebiscit sobre la monarquia,",
+       "o": [
+        "les candidatures republicanes i socialistes van guanyar a la gran majoria de capitals de província.",
+        "només es votava a Catalunya i al País Basc.",
+        "els partits monàrquics van guanyar a totes les grans ciutats.",
+        "les dones van votar per primera vegada a Espanya."
+       ],
+       "c": "a",
+       "e": "El 14 d'abril es va proclamar la Segona República i Alfons XIII va marxar a l'exili. Les dones no van votar fins al 1933.",
+       "ap": 5
+      }
+     ]
+    },
+    {
+     "context": "Sou una periodista anglesa que el 1930 visita Barcelona i Madrid per escriure sobre la situació de les dones i dels treballadors a Espanya. Responeu a les qüestions següents triant la resposta que s'ajusti més bé al que escriuríeu.",
+     "preguntes": [
+      {
+       "q": "El Codi Civil de 1889 establia que la dona casada",
+       "o": [
+        "podia votar a les eleccions municipals.",
+        "podia vendre les seves propietats sense el permís del marit.",
+        "havia d'obeir el marit, que administrava els seus béns.",
+        "tenia els mateixos drets que el marit."
+       ],
+       "c": "c",
+       "e": "Les lleis confirmaven la subordinació de la dona, d'acord amb la ideologia de la domesticitat.",
+       "ap": 6
+      },
+      {
+       "q": "La ideologia que destinava les dones a la llar i a la cura dels fills, amb l'ideal de l'«àngel de la llar», s'anomena",
+       "o": [
+        "regeneracionisme.",
+        "feminisme catòlic.",
+        "anarcosindicalisme.",
+        "ideologia de la domesticitat."
+       ],
+       "c": "d",
+       "e": "La defensaven l'Església i la burgesia. El feminisme catòlic i moderat de Dolors Monserdà reclamava educació i treball per a les dones.",
+       "ap": 6
+      },
+      {
+       "q": "Moltes dones de les classes populars treballaven a la fàbrica i, a més, havien de fer les feines de casa. Aquesta doble càrrega s'anomena",
+       "o": [
+        "doble jornada.",
+        "encasellat.",
+        "redempció en metàl·lic.",
+        "clientelisme."
+       ],
+       "c": "a",
+       "e": "Les obreres eren una part molt important de la mà d'obra tèxtil i cobraven salaris molt més baixos que els homes.",
+       "ap": 6
+      },
+      {
+       "q": "Abans de 1919, l'Estat ja havia aprovat algunes lleis socials, com",
+       "o": [
+        "una Seguretat Social per a tota la població.",
+        "la llei d'accidents de treball (1900).",
+        "la jornada laboral de quaranta hores.",
+        "trenta dies de vacances pagades."
+       ],
+       "c": "b",
+       "e": "També es van regular el treball de dones i infants (1900) i el descans dominical (1904). Eren els primers passos, encara molt tímids, cap a l'Estat del benestar.",
+       "ap": 6
+      },
+      {
+       "q": "El 1930, la població de Barcelona",
+       "o": [
+        "era més petita que el 1875.",
+        "no arribava als dos-cents mil habitants.",
+        "havia disminuït per l'emigració a Amèrica.",
+        "havia superat el milió d'habitants, en bona part per la immigració."
+       ],
+       "c": "d",
+       "e": "Com que a Catalunya naixien pocs infants, el creixement depenia cada cop més de la immigració arribada d'altres zones d'Espanya.",
+       "ap": 6
+      }
+     ]
+    }
+   ]
   }
  ]
 }

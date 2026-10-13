@@ -112,6 +112,7 @@
 .um.pds2-v4 #taller .tt-bloc { display: grid; gap: 12px; padding-top: 6px; }
 .um.pds2-v4 #taller .tt-ctx { padding: 12px 14px; border-radius: var(--r); background: var(--accent-soft); font-size: 15.5px; line-height: 1.55; }
 .um.pds2-v4 #taller .tt-tema { display: inline-block; font-size: 12.5px; font-weight: 500; padding: 1px 8px; border-radius: 10px; background: var(--paper); color: var(--accent); margin-right: 2px; }
+.um.pds2-v4 #taller .tt-of { margin-right: 2px; background: var(--paper); }
 .um.pds2-v4 #taller .tt-q { border: 0; margin: 0; padding: 4px 0 8px; min-width: 0; }
 .um.pds2-v4 #taller .tt-q legend { display: flex; gap: 10px; padding: 0; margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
 .um.pds2-v4 #taller .tt-q legend .qn { flex: 0 0 auto; font-weight: 500; color: var(--accent); font-variant-numeric: tabular-nums; }

@@ -582,7 +582,7 @@ function pds2_importa_tests( array $d ): array {
 					'explicacio' => (string) ( $q['e'] ?? '' ),
 				);
 			}
-			$blocs[] = array( 'context' => (string) ( $b['context'] ?? '' ), 'preguntes' => $qs );
+			$blocs[] = array( 'context' => (string) ( $b['context'] ?? '' ), 'segell' => (string) ( $b['segell'] ?? '' ), 'preguntes' => $qs );
 		}
 		update_field( pds2_k( 'test', 'tema' ), $tema->ID, $id );
 		update_field( pds2_k( 'test', 'numero' ), $num, $id );

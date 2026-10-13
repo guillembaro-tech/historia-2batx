@@ -350,7 +350,7 @@
         + '<p class="prompt">' + esc(EX4_INSTR) + '</p>'
         + '<p class="tt-barem">Cada resposta correcta val 0,25 punts. Per cada resposta errònia es descompten 0,08 punts. Les qüestions no contestades no tenen descompte.</p>'
         + each(t.blocs, function (bl) {
-          return '<div class="tt-bloc"><p class="tt-ctx"><b>Context històric.</b> ' + (mixt ? '<span class="tt-tema">Tema ' + bl.tema.tema + '</span> ' : '') + mk(bl.b.context) + '</p>'
+          return '<div class="tt-bloc"><p class="tt-ctx"><b>Context històric.</b> ' + (mixt ? '<span class="tt-tema">Tema ' + bl.tema.tema + '</span> ' : '') + (bl.b.segell ? '<span class="own official tt-of">' + esc(bl.b.segell) + '</span> ' : '') + mk(bl.b.context) + '</p>'
             + each(bl.b.preguntes, function (q) {
               k++;
               var nm = 'tt-' + k;

@@ -121,8 +121,10 @@ $opcions = static function ( array $ops ): string {
 			<?php if ( $t_tests ) : ?>
 				<h4>Tests de deu qüestions, com a l'examen</h4>
 				<ul class="pds2-pau-tests">
-					<?php foreach ( $t_tests as $t ) : ?>
-						<li><a href="<?php echo esc_url( $t_url . '#test-' . (int) $t['numero'] ); ?>">Test <?php echo (int) $t['numero']; ?></a></li>
+					<?php foreach ( $t_tests as $t ) :
+						$ofi = (bool) array_filter( $t['blocs'], static fn( $b ) => ! empty( $b['segell'] ) );
+						?>
+						<li><a href="<?php echo esc_url( $t_url . '#test-' . (int) $t['numero'] ); ?>">Test <?php echo (int) $t['numero']; ?><?php echo $ofi ? ' <span class="pds2-pau-of">oficial</span>' : ''; ?></a></li>
 					<?php endforeach; ?>
 				</ul>
 				<p class="pds2-pau-s">Cada encert suma 0,25 i cada error resta 0,08, com a la PAU.</p>
