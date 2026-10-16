@@ -271,7 +271,7 @@ o3.update({
         h3('Les correccions òptiques'),
         p("El Partenó sembla fet de línies rectes, però gairebé no en té cap. L'estilòbat es corba lleugerament cap amunt al centre, les columnes tenen **èntasi**, un lleuger inflament del fust, s'estrenyen cap amunt i s'inclinen una mica cap a l'interior, i les columnes de les cantonades són més gruixudes. Tradicionalment, seguint l'arquitecte romà Vitruvi, aquests **refinaments** s'han explicat com a **correccions òptiques**, que compensen les deformacions que veu l'ull i fan que l'edifici sembli perfectament recte i ferm. Demostren la precisió de la construcció i la recerca d'una harmonia perfecta."),
         h3('Materials'),
-        p("És de **marbre pentèlic**, d'una pedrera propera a Atenes, fins i tot a les teules de la coberta, que tenia una estructura de fusta. Les peces s'unien sense morter, amb grapes de metall, i estaven tallades amb una precisió extraordinària. Tot el temple estava **pintat**, sobretot l'escultura i les motllures."),
+        p("És de **marbre pentèlic**, d'una pedrera propera a Atenes. La coberta tenia una estructura de fusta. Les peces s'unien sense morter, amb grapes de metall, i estaven tallades amb una precisió extraordinària. Tot el temple estava **pintat**, sobretot l'escultura i les motllures."),
         h3("L'estil"),
         p("És **dòric clàssic**, el model més perfecte de l'ordre dòric, però amb elements **jònics**, com el fris continu i les columnes de la sala de l'oest. Aquesta barreja de l'ordre de la Grècia continental i el de Jònia també tenia un sentit polític, perquè Atenes es presentava com la capital de tots els grecs."),
         box('Vocabulari per a la PAU', ['Períptere · octàstil · peristil · crepidoma · estilòbat · naos · pronaos · opistòdom · columna dòrica · equí · àbac · entaulament · arquitrau · tríglif · mètopa · fris continu · frontó · timpà · acroteri · correccions òptiques · èntasi.']),
@@ -308,7 +308,7 @@ o4 = {
 # ================================================================ Obra 5. Kore del pèplum
 o5 = {
     'origen': 'hart-5', 'numero': 5, 'titol': 'Kore del pèplum', 'slug': 'kore-del-peplum',
-    'estil': 'art-grec', 'llenguatge': 'escultura', 'miniatura': 'kore',
+    'estil': 'art-grec', 'llenguatge': 'escultura', 'miniatura': 'koredet',
     'autor': 'Anònim', 'dates': 'Cap al 530 aC', 'lloc': "Museu de l'Acròpoli, Atenes",
 }
 
