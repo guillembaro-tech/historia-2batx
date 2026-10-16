@@ -1,0 +1,376 @@
+{
+ "imatges": {
+  "narmer": {
+   "file": "Narmer Palette smiting side.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Paleta de Narmer",
+   "alt": "Paleta de Narmer"
+  },
+  "hunefer": {
+   "file": "The judgement of the dead in the presence of Osiris.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Judici d'Osiris al papir d'Hunefer",
+   "alt": "Judici d'Osiris al papir d'Hunefer"
+  },
+  "karnak": {
+   "file": "Luxor, Egypt, Karnak, Great Hypostyle Hall.jpg",
+   "credit": "Foto de Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons",
+   "titol": "Sala hipòstila del temple de Karnak",
+   "alt": "Sala hipòstila del temple de Karnak"
+  },
+  "kefren": {
+   "file": "Khafre Enthroned, near-front view.JPG",
+   "credit": "Foto d'A. Parrot · CC0 · Wikimedia Commons",
+   "titol": "Estàtua de Kefren assegut",
+   "alt": "Estàtua de Kefren assegut"
+  },
+  "escriba": {
+   "file": "Le Scribe accroupi - Musée du Louvre Antiquités égyptiennes E 3023.jpg",
+   "credit": "Foto de Shonagon · CC0 · Wikimedia Commons",
+   "titol": "Escriba assegut del Louvre",
+   "alt": "Escriba assegut del Louvre"
+  },
+  "nefertiti": {
+   "file": "Nefertiti Bust Neues Museum Berlin.jpg",
+   "credit": "Foto de Ywpark2003 · CC0 · Wikimedia Commons",
+   "titol": "Bust de Nefertiti",
+   "alt": "Bust de Nefertiti"
+  },
+  "nebamun": {
+   "file": "Tomb of Nebamun.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Nebamun caçant als aiguamolls",
+   "alt": "Nebamun caçant als aiguamolls"
+  },
+  "museuegipci": {
+   "file": "Museu Egipci de Barcelona.JPG",
+   "credit": "Foto del Museu Egipci de Barcelona · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Màscara funerària d'època ptolemaica del Museu Egipci de Barcelona",
+   "alt": "Màscara funerària d'època ptolemaica del Museu Egipci de Barcelona"
+  },
+  "guiza": {
+   "file": "All Gizah Pyramids.jpg",
+   "credit": "Foto de Ricardo Liberato · CC BY-SA 2.0 · Wikimedia Commons",
+   "titol": "Les piràmides de Guiza",
+   "alt": "Les piràmides de Guiza"
+  },
+  "gizaplanta": {
+   "file": "Giza pyramid complex (map).svg",
+   "credit": "Plànol de MesserWoland · CC BY-SA 3.0 · Wikimedia Commons",
+   "titol": "Plànol del conjunt de Guiza",
+   "alt": "Plànol del conjunt de Guiza"
+  },
+  "seccio": {
+   "file": "Great Pyramid Diagram.svg",
+   "credit": "Dibuix de Jeff Dahl, amb els rètols traduïts i ampliats en català · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Secció de la Gran Piràmide",
+   "alt": "Secció de la Gran Piràmide"
+  },
+  "djoser": {
+   "file": "Saqqara, Pyramid of Djoser, Ancient Egypt.jpg",
+   "credit": "Foto de Vyacheslav Argenberg · CC BY 4.0 · Wikimedia Commons",
+   "titol": "Piràmide esglaonada de Djoser a Sakkara",
+   "alt": "Piràmide esglaonada de Djoser a Sakkara"
+  },
+  "romboidal": {
+   "file": "Bent Pyramid of Snofru.jpg",
+   "credit": "Foto de Darer101 · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Piràmide romboidal de Snefrú a Dahšur",
+   "alt": "Piràmide romboidal de Snefrú a Dahšur"
+  },
+  "esfinx": {
+   "file": "The Sphinx and Pyramid of Khafre.jpg",
+   "credit": "Foto de kallerna · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "La Gran Esfinx i la piràmide de Kefren",
+   "alt": "La Gran Esfinx i la piràmide de Kefren"
+  },
+  "oques": {
+   "file": "Ägyptisches Museum Kairo 2016-03-29 Gänse von Meidum 01.jpg",
+   "credit": "Foto de Djehouty · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Fris de les oques de Meidum",
+   "alt": "Fris de les oques de Meidum"
+  },
+  "oquesdet": {
+   "file": "Ägyptisches Museum Kairo 2019-11-09 Gänse von Meidum 02.jpg",
+   "credit": "Foto de Djehouty · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Detall del fris de les oques de Meidum",
+   "alt": "Detall del fris de les oques de Meidum"
+  },
+  "mastaba16": {
+   "file": "Mastaba-M16-nefermaat-Meidoum.jpg",
+   "credit": "Dibuix de Franck Monnier · CC BY 3.0 · Wikimedia Commons",
+   "titol": "Reconstrucció de la mastaba de Nefermaat a Meidum",
+   "alt": "Reconstrucció de la mastaba de Nefermaat a Meidum"
+  },
+  "meidumpir": {
+   "file": "Meidum Pyramid 2.jpg",
+   "credit": "Foto de Zezinho68 · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Piràmide de Meidum",
+   "alt": "Piràmide de Meidum"
+  },
+  "pasta": {
+   "file": "Fragment from the tomb of Nefermaat and Itet, Meidum, Egypt, Old Kingdom, Dynasty 4, reign of Snefru, c. 2430 BC, limestone, colored paste, restored - Oriental Institute Museum, University of Chicago - DSC07773.JPG",
+   "credit": "Foto de Daderot · CC0 · Wikimedia Commons",
+   "titol": "Relleu amb pasta de colors de la mastaba de Nefermaat",
+   "alt": "Relleu amb pasta de colors de la mastaba de Nefermaat"
+  },
+  "rahotep": {
+   "file": "Rahotep and Nofret Statue, Egyptian Museum, al-Qāhirah, CG, EGY (47856923342).jpg",
+   "credit": "Foto de Warren LeMay · CC0 · Wikimedia Commons",
+   "titol": "Estàtues de Rahotep i Nofret",
+   "alt": "Estàtues de Rahotep i Nofret"
+  }
+ },
+ "estils": [
+  {
+   "slug": "art-egipci",
+   "nom": "Art egipci",
+   "pare": "antiguitat",
+   "ordre": 1,
+   "estil_titol": "L'art egipci",
+   "estil_dates": "Cap al 3100 aC - 30 aC",
+   "estil_pregunta": "Per què l'art egipci va mantenir les mateixes formes durant gairebé tres mil anys, i quin paper hi tenien el faraó i la vida eterna?",
+   "estil_resum": "L'art de l'antic Egipte, des de la unificació del país, cap al 3100 aC, fins a la conquesta romana, el 30 aC. Un art al servei del faraó i dels déus, pensat per durar per sempre. Tombes i temples de pedra, estàtues frontals i pintures que segueixen les mateixes normes durant gairebé tres mil anys.",
+   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> L'examen pot proposar les piràmides de Guiza (obra 1) o el fris de Meidum (obra 2). Cap de les dues no ha sortit a la Sèrie 0 (2025) ni a la PAU 2026 (sèrie 1). Les preguntes demanen datar i contextualitzar l'obra, analitzar-ne la forma i l'estil, explicar-ne la funció i relacionar-la amb altres obres.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari, com mastaba, hipogeu, pilona o sala hipòstila, les convencions de representació o situar l'art egipci en una línia del temps.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> A la PAU 2026 (sèrie 1), l'exercici 4, opció A, demanava esmentar dues obres representatives de l'art egipci i opinar sobre la restitució del patrimoni egipci. També pot sortir l'art al servei del poder.</p>",
+   "estil_seccions": [
+    {
+     "titol": "Un art per a l'eternitat",
+     "llenguatge": "",
+     "pregunta": "Per què l'art egipci va canviar tan poc en gairebé tres mil anys?",
+     "cos": "<p>La civilització egípcia va néixer a la vall del <strong>Nil</strong>, una franja estreta de terra fèrtil enmig del desert. Cada any, la crescuda del riu inundava els camps i hi deixava el <strong>llim</strong>, un fang molt fèrtil. Aquest ritme regular i el desert, que aïllava i protegia el país, van afavorir una societat molt estable, amb un poder central fort que organitzava el treball, els canals i els magatzems de gra.</p><h3>Tres mil anys d'història</h3><p>Cap al <strong>3100 aC</strong>, l'Alt Egipte (el sud, la vall) i el Baix Egipte (el nord, el delta) es van unir en un sol regne. La <strong>paleta de Narmer</strong>, al Museu Egipci del Caire, mostra el rei amb la corona blanca de l'Alt Egipte en una cara i amb la vermella del Baix Egipte a l'altra. Els historiadors divideixen la història d'Egipte en grans períodes d'estabilitat, separats per èpoques de crisi en què el país es dividia.</p><ul><li><strong>Època tinita o dinàstica primerenca</strong> (cap al 3100-2650 aC). Primeres dinasties, amb capital a Memfis.</li><li><strong>Imperi Antic</strong> (cap al 2650-2150 aC). L'època de les grans piràmides.</li><li><strong>Imperi Mitjà</strong> (cap al 2030-1650 aC). El país es torna a unificar des de Tebes.</li><li><strong>Imperi Nou</strong> (cap al 1550-1070 aC). Egipte domina Núbia i el Llevant. Grans temples i tombes de la Vall dels Reis.</li><li><strong>Època tardana i ptolemaica</strong> (664-30 aC). Després de la conquesta d'Alexandre el Gran (332 aC), hi regna la dinastia grega dels Ptolemeus fins a la conquesta romana, el 30 aC.</li></ul>[[img:narmer|dreta|Paleta de Narmer (cap al 3100 aC).|El rei, amb la corona blanca de l'Alt Egipte, venç un enemic. És més gran que les altres figures.]]<h3>El faraó, un rei diví</h3><p>El <strong>faraó</strong> no era només un rei. Els egipcis el consideraven l'encarnació del déu <strong>Horus</strong> i el fill del déu del sol, <strong>Ra</strong>. Era el mitjancer entre els déus i els homes, i la seva missió era mantenir la <strong>maat</strong>, l'ordre del món, la justícia i l'equilibri, contra el caos. L'art era una eina d'aquesta missió. Les estàtues i els relleus mostraven el faraó sempre jove, fort i serè, perquè la seva imatge havia d'expressar un ordre que no canvia.</p><h3>La vida després de la mort</h3><p>Els egipcis creien que la persona tenia diversos elements espirituals. El <strong>ka</strong> era la força vital, que continuava existint després de la mort i necessitava un cos o una imatge on residir i ofrenes per alimentar-se. El <strong>ba</strong>, representat com un ocell amb cap humà, podia sortir de la tomba i tornar-hi. Per això es <strong>momificava</strong> el cos, es feien estàtues del difunt i es pintaven a les parets ofrenes i escenes de la vida quotidiana. Per als egipcis, la imatge no era una decoració. Feia real, per sempre, el que representava.</p>[[img:hunefer||Judici d'Osiris al papir d'Hunefer (cap al 1275 aC).|El cor del difunt es pesa davant d'una ploma, el símbol de la maat. Si el cor no pesa més que la ploma, el difunt pot entrar a la vida eterna. British Museum.]]<h3>Per què l'art egipci canvia tan poc?</h3><p>La resposta és en la funció de les obres. Un art pensat per a l'eternitat no podia dependre de la moda ni de la invenció de cada artista. Els artesans treballaven en tallers del palau i dels temples, gairebé sempre anònims, i aprenien unes normes que es transmetien de generació en generació, com la <strong>quadrícula</strong> de proporcions. Repetir els models antics garantia que la imatge «funcionaria», i el faraó, que encarregava les obres, volia aparèixer com els seus predecessors, com a garant d'un ordre etern. Això no vol dir que l'art no canviés. Cada època té el seu estil, i amb el faraó <strong>Akhenaton</strong>, al segle XIV aC, hi va haver un trencament molt clar, però les convencions bàsiques es van mantenir fins a l'època romana.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Nil · llim · faraó · Horus · maat · ka · ba · momificació · Imperi Antic · Imperi Mitjà · Imperi Nou · taller · quadrícula.</p></div>"
+    },
+    {
+     "titol": "L'arquitectura, tombes i temples",
+     "llenguatge": "arquitectura",
+     "pregunta": "Per què els egipcis feien les cases de tova i les tombes i els temples de pedra?",
+     "cos": "<p>Les cases, i fins i tot els palaus, es feien de <strong>tova</strong>, maons d'argila assecats al sol, perquè eren per a la vida, que és curta. Les tombes i els temples, en canvi, es feien de <strong>pedra</strong>, perquè havien de durar per sempre. Per això el que en coneixem és sobretot arquitectura funerària i religiosa.</p><p>És una arquitectura <strong>arquitravada</strong>. Els murs i les columnes sostenen bigues de pedra horitzontals, els arquitraus. Com que una biga de pedra es trenca si és massa llarga, les columnes han d'estar molt juntes, i els espais interiors són estrets i atapeïts. Els edificis són <strong>monumentals</strong>, simètrics i organitzats al llarg d'un <strong>eix</strong>. Les columnes imiten plantes del Nil, com el papir, el lotus o la palmera, i els murs es cobreixen de relleus pintats i d'inscripcions.</p><h3>Les tombes</h3><ul><li><strong>Mastaba.</strong> Tomba de planta rectangular i murs inclinats, en forma de banc (és el que vol dir <em>mastaba</em> en àrab). A sota hi ha el pou i la cambra funerària, i a dalt, la capella d'ofrenes. Les primeres eren de tova. A l'Imperi Antic, s'hi enterraven els nobles i els alts funcionaris.</li><li><strong>Piràmide.</strong> Tomba dels reis de l'Imperi Antic i de l'Imperi Mitjà. L'evolució de la mastaba a la piràmide s'explica a l'obra 1.</li><li><strong>Hipogeu.</strong> Tomba excavada a la roca, amb corredors i cambres, com les de la Vall dels Reis, a Tebes, a l'Imperi Nou. Amagar la tomba era una manera de protegir-la dels lladres.</li></ul><h3>Els temples</h3><p>El temple era la casa del déu, que hi vivia en forma d'estàtua. A l'Imperi Nou es fixa un model, amb una avinguda d'esfinxs, una gran porta entre dues torres en forma de trapezi, la <strong>pilona</strong>, davant de la qual s'aixecaven <strong>obeliscs</strong>, un <strong>pati</strong> amb porxos, la <strong>sala hipòstila</strong>, coberta i plena de columnes, i el <strong>santuari</strong>. Cada espai era més petit, més baix i més fosc que l'anterior, i només el faraó i els sacerdots podien arribar al santuari. El recorregut anava de la llum a la foscor, del món dels homes al del déu.</p>[[img:karnak|dreta|Sala hipòstila del temple de Karnak (segle XIII aC).|Columnes papiriformes molt juntes i molt gruixudes, amb relleus i inscripcions.]]<p>Els grans exemples són els temples de <strong>Karnak</strong> i de <strong>Luxor</strong>, a Tebes, dedicats al déu Amon, el temple funerari de la reina <strong>Hatxepsut</strong> a Deir el-Bahari i el gran temple d'<strong>Abu Simbel</strong>, excavat a la roca per a Ramsès II.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Tova · arquitectura arquitravada · arquitrau · eix · mastaba · piràmide · hipogeu · pilona · obelisc · sala hipòstila · santuari · columna papiriforme.</p></div>"
+    },
+    {
+     "titol": "L'escultura",
+     "llenguatge": "escultura",
+     "pregunta": "Per què les estàtues egípcies miren al davant, quietes i serenes?",
+     "cos": "<p>L'escultura egípcia té sobretot una funció religiosa i funerària. L'estàtua d'un difunt era un suport per al seu <strong>ka</strong>. Per això es col·locava a la tomba, sovint en una cambra tancada, el <strong>serdab</strong>, o al temple, on rebia ofrenes. Les estàtues dels déus i del faraó, al temple, eren la seva presència real.</p><h3>Les convencions</h3><ul><li><strong>Frontalitat.</strong> La figura mira endavant i és simètrica respecte d'un eix vertical. Està pensada per ser vista de cara.</li><li><strong>Hieratisme.</strong> L'expressió és serena i solemne, sense emocions ni moviment, perquè representa una existència eterna.</li><li><strong>Forma de bloc.</strong> La figura conserva la forma del bloc de pedra. Els braços s'enganxen al cos, i darrere de moltes estàtues hi ha un <strong>pilar dorsal</strong>. Així són més resistents i duren més.</li><li><strong>Postura fixa.</strong> Les figures dretes masculines avancen la cama esquerra, sense que el pes del cos canviï de lloc. Les assegudes posen les mans sobre els genolls.</li><li><strong>Idealització.</strong> El faraó apareix sempre jove i fort. Els funcionaris i els servents, en canvi, es podien representar d'una manera més realista.</li><li><strong>Policromia.</strong> Moltes estàtues anaven pintades. Les figures masculines solen tenir la pell més fosca que les femenines.</li></ul>[[img:kefren|dreta|Kefren assegut (cap al 2520-2494 aC). Museu Egipci del Caire.|De diorita. El falcó Horus protegeix el cap del rei amb les ales.]]<p>Aquestes convencions es veuen bé a l'estàtua de <strong>Kefren</strong> assegut, del seu temple de la vall a Guiza, i a l'<strong>Escriba assegut</strong> del Louvre, de l'Imperi Antic. L'escriba és més realista i té els ulls incrustats de pedra i cristall de roca, que li donen una mirada molt viva.</p>[[img:escriba||Escriba assegut (Imperi Antic). Museu del Louvre, París.|Pedra calcària pintada, amb els ulls incrustats.]]<h3>L'excepció d'Amarna</h3><p>El faraó <strong>Akhenaton</strong> (cap al 1353-1336 aC) va imposar el culte a un sol déu, <strong>Aton</strong>, el disc solar, i va fundar una nova capital, Akhetaton, l'actual Amarna. L'art va canviar. Les figures tenen formes allargades i corbes, el faraó apareix amb la família en escenes íntimes, i la representació és més naturalista. El <strong>bust de Nefertiti</strong>, l'esposa del faraó, trobat al taller de l'escultor Tutmosis i conservat a Berlín, és l'obra més coneguda d'aquesta època. Després de la mort d'Akhenaton, Egipte va tornar als déus i a les formes tradicionals, cosa que demostra la força de les convencions.</p>[[img:nefertiti|dreta|Bust de Nefertiti (cap al 1345 aC). Neues Museum, Berlín.|Pedra calcària pintada i guix. Un dels ulls té una incrustació de quars, i l'altre no es va arribar a fer.]]<div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Ka · serdab · frontalitat · hieratisme · pilar dorsal · idealització · policromia · Amarna · Aton.</p></div>"
+    },
+    {
+     "titol": "Pintura i relleu",
+     "llenguatge": "pintura",
+     "pregunta": "Per què les figures pintades tenen el cap de perfil i l'ull de cara?",
+     "cos": "<p>La pintura i el relleu cobrien les parets de les tombes i dels temples. Als temples, mostraven el faraó davant dels déus i les seves victòries. A les tombes, les ofrenes i la vida quotidiana que el difunt havia de gaudir per sempre. Imatge i escriptura van juntes, i els <strong>jeroglífics</strong> formen part de la composició.</p><h3>La tècnica</h3><p>La pintura es feia sobre un <strong>arrebossat</strong> de fang i guix, ja sec, amb pigments minerals barrejats amb un aglutinant, com la goma. És una pintura al <strong>tremp</strong>, no un fresc. Els colors són plans, sense ombres. El relleu podia ser <strong>baix relleu</strong>, en què la figura sobresurt una mica del fons, o <strong>relleu enfonsat</strong>, en què la figura es talla dins de la pedra i resisteix millor el pas del temps i la llum forta de l'exterior. Tots dos es pintaven.</p><h3>Les convencions de representació</h3><ul><li><strong>Perspectiva composta.</strong> Cada part del cos es mostra des del punt de vista on es reconeix millor. El cap i les cames, de perfil. L'ull i les espatlles, de cara. Alguns llibres en diuen <strong>aspectiva</strong> i d'altres, llei de la frontalitat. No es representa el que es veu, sinó el que se sap que hi ha.</li><li><strong>Jerarquia de mida.</strong> Les figures més importants, com el faraó o el difunt, són més grans que les altres.</li><li><strong>Registres.</strong> Les escenes s'ordenen en franges horitzontals, cadascuna amb la seva línia de terra. No hi ha profunditat.</li><li><strong>Quadrícula de proporcions.</strong> Abans de pintar, es traçava una quadrícula a la paret. A l'Imperi Antic i a l'Imperi Mitjà, una figura dreta feia 18 quadres des de la planta del peu fins a la línia dels cabells. Així totes les figures tenien les mateixes proporcions.</li><li><strong>Colors convencionals.</strong> Els homes, amb la pell d'un to vermellós, i les dones, d'un to més clar, groguenc.</li></ul>[[img:nebamun||Nebamun caçant als aiguamolls (cap al 1350 aC). British Museum, Londres.|Nebamun, molt més gran que la seva família, caça ocells. Els ocells, els peixos i les plantes són molt naturalistes.]]<p>Aquestes normes s'apliquen sobretot a les figures humanes importants. Els animals, les plantes i les figures secundàries, en canvi, es representen sovint amb una observació molt atenta de la natura. El <strong>fris de Meidum</strong> (obra 2) i les pintures de la tomba de <strong>Nebamun</strong> en són bons exemples.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Tremp · arrebossat · relleu enfonsat · baix relleu · perspectiva composta (aspectiva) · jerarquia de mida · registre · quadrícula · jeroglífic.</p></div>"
+    },
+    {
+     "titol": "L'herència d'Egipte i el seu patrimoni",
+     "llenguatge": "",
+     "pregunta": "On són avui les obres de l'antic Egipte, i qui decideix on haurien de ser?",
+     "cos": "<p>L'art egipci ha influït en altres cultures molt després de la fi dels faraons.</p><ul><li><strong>A Grècia.</strong> Els primers escultors grecs, al segle VII aC, van adoptar la postura de les estàtues egípcies dretes, amb una cama avançada i els braços enganxats al cos. Són els <em>kuroi</em> de l'època arcaica, que l'art grec anirà transformant (obra 5).</li><li><strong>A Roma i a Europa.</strong> Els romans es van endur obeliscs egipcis a Roma. Després de l'expedició de Napoleó a Egipte (1798-1801) i del desxiframent dels jeroglífics per <strong>Jean-François Champollion</strong>, el 1822, gràcies a la <strong>pedra de Rosetta</strong>, va néixer l'egiptologia i Europa va viure una autèntica <strong>egiptomania</strong>.</li></ul><h3>On són les obres, i on haurien de ser?</h3><p>Al segle XIX i a principis del XX, moltes peces van sortir d'Egipte cap als grans museus d'Europa i d'Amèrica. La <strong>pedra de Rosetta</strong> és al British Museum de Londres des del 1802, el <strong>bust de Nefertiti</strong>, a Berlín, i el <strong>zodíac de Dendera</strong>, al Louvre de París. Avui Egipte en reclama el retorn. Els qui defensen la <strong>restitució</strong> diuen que aquestes obres formen part de la identitat del país d'origen i que algunes en van sortir de manera irregular. Els qui la rebutgen defensen el <strong>museu universal</strong>, on gent de tot el món pot veure obres de moltes cultures. L'obertura del <strong>Gran Museu Egipci</strong>, a Guiza, ha reforçat les reclamacions.</p><h3>Obres que pots citar</h3><p>A la PAU 2026 (sèrie 1) es demanava esmentar dues obres representatives de l'art egipci. Aquestes són algunes de les més conegudes.</p><ul><li><strong>Paleta de Narmer</strong> (cap al 3100 aC). Museu Egipci del Caire.</li><li><strong>Piràmide esglaonada de Djoser</strong>, a Sakkara (cap al 2630-2611 aC).</li><li><strong>Piràmides de Guiza</strong> (segle XXVI aC) i la <strong>Gran Esfinx</strong>.</li><li><strong>Kefren assegut</strong> (cap al 2520-2494 aC). Museu Egipci del Caire.</li><li><strong>Escriba assegut</strong> (Imperi Antic). Museu del Louvre.</li><li><strong>Temple d'Hatxepsut</strong> a Deir el-Bahari (segle XV aC).</li><li><strong>Sala hipòstila de Karnak</strong> (segle XIII aC).</li><li><strong>Temples d'Abu Simbel</strong>, de Ramsès II (segle XIII aC).</li><li><strong>Màscara de Tutankamon</strong> (cap al 1323 aC). Gran Museu Egipci.</li></ul><h3>Egipte a Catalunya</h3><p>El <strong>Museu Egipci de Barcelona</strong>, de la Fundació Arqueològica Clos, és un dels pocs museus d'Europa dedicats només a l'antic Egipte. El <strong>Museu de Montserrat</strong> conserva la col·lecció que hi va reunir el monjo i biblista Bonaventura Ubach. A la <strong>Biblioteca Museu Víctor Balaguer</strong> de Vilanova i la Geltrú hi ha una mòmia egípcia.</p>[[img:museuegipci|dreta|Màscara funerària d'època ptolemaica. Museu Egipci de Barcelona.|Tela de lli estucada i daurada.]]<div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Kuros · egiptologia · egiptomania · pedra de Rosetta · restitució · museu universal · patrimoni.</p></div>"
+    }
+   ],
+   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, <em>Exemples d'exercicis PAU 2025</em>, <em>Sèrie 0 (2025)</em> i examen de la PAU 2026 (sèrie 1).</li><li>The Metropolitan Museum of Art. <em>Heilbrunn Timeline of Art History</em>, «Egypt in the Old Kingdom», «Egyptian Art and Architecture», «Proportion in Ancient Egyptian Art» i «Kouroi and Korai».</li><li>Encyclopaedia Britannica. Articles «ancient Egypt», «Egyptian art and architecture», «ka» i «Amarna style».</li><li>Smarthistory. <em>Ancient Egypt, an introduction</em> i «Ancient Egyptian art».</li><li>G. Robins. <em>Proportion and Style in Ancient Egyptian Art</em>. University of Texas Press, 1994.</li><li>Gran Enciclopèdia Catalana. Articles «art egipci», «Egipte», «mastaba», «hipogeu» i «Akhenaton».</li><li>Museu Egipci de Barcelona, Museu de Montserrat i Biblioteca Museu Víctor Balaguer (webs oficials).</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
+  }
+ ],
+ "obres": [
+  {
+   "origen": "hart-1",
+   "numero": 1,
+   "titol": "Piràmides de Guiza",
+   "slug": "piramides-de-guiza",
+   "estil": "art-egipci",
+   "llenguatge": "arquitectura",
+   "miniatura": "guiza",
+   "autor": "",
+   "dates": "Segle XXVI aC",
+   "lloc": "Guiza (Egipte)",
+   "resum": "Les tres grans piràmides de **Guiza**, a l'oest del Nil, són les tombes de tres faraons de la **IV dinastia**, **Kheops**, **Kefren** i **Micerí**. Cada piràmide era el centre d'un **conjunt funerari** amb temples, una calçada i tombes de reines i funcionaris. La **Gran Piràmide**, la de Kheops, feia uns **146 metres** d'alçada. És l'única de les set meravelles del món antic que es conserva.",
+   "fitxa": [
+    [
+     "Localització",
+     "Altiplà de **Guiza**, a la riba occidental del Nil, al costat del Caire (Egipte)."
+    ],
+    [
+     "Cronologia",
+     "Imperi Antic, **IV dinastia**. Segons el Metropolitan Museum, **Kheops** va regnar cap al **2551-2528 aC**, **Kefren**, cap al 2520-2494 aC, i **Micerí**, cap al 2490-2472 aC. Altres cronologies, com la de la Gran Enciclopèdia Catalana, situen Kheops uns quaranta anys abans (2589-2566 aC)."
+    ],
+    [
+     "Autors",
+     "Anònims. Segons molts egiptòlegs, el visir **Hemiunu**, nebot de Kheops, va dirigir les obres de la Gran Piràmide."
+    ],
+    [
+     "Promotors",
+     "Els faraons **Kheops** (Khufu), **Kefren** (Khafre) i **Micerí** (Menkaure)."
+    ],
+    [
+     "Materials",
+     "Pedra calcària de la mateixa Guiza al nucli, **calcària blanca de Tura** al revestiment i **granit d'Assuan** a la cambra del rei."
+    ],
+    [
+     "Mides",
+     "Gran Piràmide, uns **146 m** d'alçada original (avui, uns 138 m) i uns **230 m** de costat. Piràmide de Kefren, uns 143 m d'alçada original i 216 m de costat. Piràmide de Micerí, uns 65 m d'alçada i 109 m de costat."
+    ],
+    [
+     "Patrimoni",
+     "Patrimoni Mundial de la UNESCO des del **1979**, dins de «Memfis i la seva necròpolis, els camps de piràmides de Guiza a Dahšur»."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "guiza",
+     "seccio": "inici",
+     "titol": "Les piràmides de Guiza",
+     "text": "D'esquerra a dreta, les piràmides de reines de Micerí i les piràmides de Micerí, Kefren i Kheops. La de Kefren sembla la més alta perquè és en un punt més elevat."
+    },
+    {
+     "clau": "djoser",
+     "seccio": "context",
+     "titol": "Piràmide esglaonada de Djoser, a Sakkara (III dinastia)",
+     "text": "Sis graons, com mastabes posades una sobre l'altra. Se n'atribueix el projecte a Imhotep."
+    },
+    {
+     "clau": "romboidal",
+     "seccio": "context",
+     "titol": "Piràmide romboidal de Snefrú, a Dahšur (IV dinastia)",
+     "text": "La inclinació de les cares canvia a mitja alçada. Conserva bona part del revestiment de pedra calcària."
+    },
+    {
+     "clau": "gizaplanta",
+     "seccio": "analisi",
+     "titol": "Planta del conjunt de Guiza",
+     "text": "Les tres piràmides (Pyramid of Khufu, Khafre i Menkaure), amb els seus temples funeraris, les calçades (causeway) i els temples de la vall (valley temple). Al voltant, les piràmides de les reines i els camps de mastabes. Al costat del temple de la vall de Kefren, la Gran Esfinx."
+    },
+    {
+     "clau": "seccio",
+     "seccio": "analisi",
+     "titol": "Secció de la Gran Piràmide (de sud a nord)",
+     "text": "L'entrada, a la cara nord, porta al corredor descendent i al corredor ascendent. La Gran Galeria puja fins a la cambra del rei, de granit, amb les cambres de descàrrega a sobre."
+    },
+    {
+     "clau": "esfinx",
+     "seccio": "funcio",
+     "titol": "La Gran Esfinx i la piràmide de Kefren",
+     "text": "L'esfinx, un lleó amb cap humà, es va tallar a la roca al costat de la calçada de Kefren. Fa uns 73 m de llargada i 20 m d'alçada."
+    }
+   ],
+   "q_context": "Com va poder un estat de fa 4.500 anys construir unes tombes tan enormes, i per què les va construir?",
+   "context": "<p>Les piràmides de Guiza són de l'Imperi Antic, de la <strong>IV dinastia</strong>. Segons el Metropolitan Museum, la de Kheops es va construir cap al 2551-2528 aC, i les de Kefren i Micerí, en les dècades següents. Altres cronologies les situen uns quaranta anys abans. A la PAU es poden datar a l'Imperi Antic, IV dinastia, al <strong>segle XXVI aC</strong>.</p><h3>Un estat fort i centralitzat</h3><p>A l'Imperi Antic, Egipte era un estat unificat i centralitzat, amb la capital a <strong>Memfis</strong>, molt a prop de Guiza. El <strong>faraó</strong>, considerat un déu, tenia un poder absolut. Una administració d'escribes i funcionaris, dirigida pel <strong>visir</strong>, recaptava els impostos en forma de collita i en treball. Això permetia alimentar i organitzar milers de treballadors durant anys. Les piràmides són, abans que res, una mostra d'aquest poder.</p><h3>De la mastaba a la piràmide</h3><ul><li><strong>Mastaba.</strong> A l'època tinita, els reis i els alts funcionaris s'enterraven en mastabes, de tova, a Abidos i a Sakkara.</li><li><strong>Piràmide esglaonada.</strong> Per al faraó <strong>Djoser</strong>, de la III dinastia (cap al 2630-2611 aC, segons el Metropolitan Museum), l'arquitecte <strong>Imhotep</strong> va fer a Sakkara una tomba de pedra de sis graons, d'uns 60 metres d'alçada. Va començar com una mastaba i es va anar ampliant. Segons la UNESCO, és el primer edifici monumental de pedra de la història.</li><li><strong>Meidum.</strong> La piràmide de Meidum, probablement començada per Huni i acabada per <strong>Snefrú</strong>, el pare de Kheops, va començar com una piràmide esglaonada. Després se'n van omplir els graons i es va revestir de pedra calcària perquè tingués les cares llises.</li><li><strong>Dahšur.</strong> Snefrú hi va fer dues piràmides més. A la <strong>piràmide romboidal</strong>, la inclinació de les cares passa de 52° a 43,5° a mitja alçada, segons Britannica. La <strong>piràmide roja</strong>, amb 43° d'inclinació, és la primera piràmide de cares llises acabada amb èxit.</li><li><strong>Guiza.</strong> Amb Kheops, el model arriba a la seva forma més perfecta i més gran.</li></ul><h3>Una religió solar</h3><p>A la IV dinastia, el culte al déu del sol, <strong>Ra</strong>, era cada vegada més important. Segons una interpretació molt estesa, la forma de la piràmide recorda els raigs del sol que baixen del cel i el <strong>benben</strong>, el turó que, segons els mites egipcis, va sorgir de les aigües al principi del món.</p>",
+   "q_analisi": "Com és una piràmide per dins i per fora, i com s'organitzava tot el conjunt funerari?",
+   "analisi": "<h3>El conjunt funerari</h3><p>Cada piràmide no era un edifici aïllat, sinó el centre d'un <strong>conjunt funerari</strong> orientat d'est a oest, del Nil cap al desert.</p><ul><li><strong>Temple de la vall</strong>, a la vora dels camps de conreu, on arribava el seguici funerari. El de Kefren està revestit de grans blocs de granit.</li><li><strong>Calçada</strong>, un passadís cobert que pujava fins a la piràmide.</li><li><strong>Temple funerari</strong>, adossat a la cara est de la piràmide, per al culte del rei mort.</li><li><strong>Piràmide</strong>, amb la cambra funerària del rei.</li><li><strong>Piràmides de les reines</strong>, tres al costat de la de Kheops, una al costat de la de Kefren i tres al costat de la de Micerí.</li><li><strong>Fosses per a vaixells.</strong> Al costat de la Gran Piràmide n'hi havia set. En una, el 1954, es va trobar un vaixell de fusta desmuntat en 1.224 peces, d'uns 43 metres de llargada, que des del 2021 és al Gran Museu Egipci.</li><li><strong>Necròpolis de mastabes</strong> dels familiars i els funcionaris del rei, a l'est i a l'oest de la Gran Piràmide.</li></ul><h3>La forma i la construcció</h3><p>La Gran Piràmide té una planta quadrada d'uns <strong>230 metres</strong> de costat, amb els costats orientats als quatre punts cardinals, i les cares tenen una inclinació d'uns 52°. Feia uns <strong>146 metres</strong> d'alçada i té uns <strong>2,3 milions de blocs</strong> de pedra. El nucli és de blocs de pedra calcària de la mateixa Guiza, i el revestiment exterior era de <strong>calcària blanca de Tura</strong>, polida, que feia brillar la piràmide al sol. Aquest revestiment es va arrencar a l'edat mitjana per construir. La piràmide de Kefren encara en conserva una part a dalt de tot, i la de Micerí tenia la part de baix revestida de granit d'Assuan.</p><h3>L'interior de la Gran Piràmide</h3><p>L'entrada és a la cara nord, a uns 18 metres d'alçada. Un <strong>corredor descendent</strong> baixa fins a una cambra subterrània que no es va acabar. Un <strong>corredor ascendent</strong> porta a l'anomenada cambra de la reina i a la <strong>Gran Galeria</strong>, d'uns 46 metres de llargada i uns 8,7 metres d'alçada, coberta amb una falsa volta, en què cada filera de pedres sobresurt una mica de la de sota. La Gran Galeria acaba a la <strong>cambra del rei</strong>, revestida de granit, amb un sarcòfag buit de granit vermell. A sobre, cinc <strong>cambres de descàrrega</strong> reparteixen el pes de la pedra perquè el sostre no s'enfonsi.</p><h3>Una arquitectura de massa</h3><p>La piràmide és una arquitectura de <strong>massa</strong>, no d'espai. És gairebé tota massissa, i l'espai interior és molt petit en relació amb el volum. Està pensada per ser vista de fora, com una forma geomètrica pura, simètrica i immutable, i per protegir el que hi ha a dins.</p><h3>L'estil</h3><p>És <strong>art egipci</strong> de l'Imperi Antic, de la IV dinastia, el moment de les piràmides més grans.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Mastaba · piràmide esglaonada · piràmide de cares llises · conjunt funerari · temple de la vall · calçada · temple funerari · revestiment · falsa volta · cambra de descàrrega · sarcòfag · arquitectura de massa.</p></div>",
+   "q_funcio": "Per a què servia una piràmide, i què volia transmetre?",
+   "funcio": "<p>La piràmide era la <strong>tomba del faraó</strong>. Havia de protegir el seu cos per sempre i assegurar-li la vida després de la mort. Al temple funerari, els sacerdots li feien ofrenes cada dia, i les estàtues del rei als temples, com la de Kefren assegut del seu temple de la vall, eren un suport per al seu <strong>ka</strong>. La forma de la piràmide expressava, segons molts egiptòlegs, la pujada del rei al cel per unir-se al déu del sol.</p><p>La piràmide també tenia una funció política. Mostrava el poder del faraó, capaç d'organitzar tot el país al voltant d'una obra immensa, i la seva naturalesa divina. Garantir la vida eterna del rei era garantir l'ordre del món, la <strong>maat</strong>.</p><p>A les piràmides de Guiza no hi ha inscripcions religioses a les cambres. Els <strong>Textos de les Piràmides</strong>, les fórmules per ajudar el rei a la vida eterna, apareixen més tard, a la piràmide d'Unas, l'últim rei de la V dinastia, a Sakkara.</p>",
+   "destacat_titol": "Qui va construir les piràmides?",
+   "q_destacat": "Les van construir esclaus, com es va creure durant segles, o treballadors organitzats per l'estat?",
+   "destacat": "<p>L'historiador grec <strong>Heròdot</strong>, que va visitar Egipte uns dos mil anys després, va escriure que la Gran Piràmide la van fer equips de cent mil homes que es rellevaven cada tres mesos, i que es va trigar deu anys a fer el camí per arrossegar les pedres i vint anys més a fer la piràmide (<em>Històries</em>, llibre II, capítol 124). Durant molt de temps es va pensar que eren esclaus. L'arqueologia ha canviat aquesta idea.</p><ul><li><strong>El poble dels treballadors.</strong> Des del 1988, l'equip de l'arqueòleg <strong>Mark Lehner</strong> excava, al sud de les piràmides, una ciutat amb forns de pa, magatzems i dormitoris per a equips de treballadors que es rellevaven.</li><li><strong>Les tombes dels treballadors.</strong> El 1990, l'egiptòleg <strong>Zahi Hawass</strong> va descobrir al costat de les piràmides les tombes dels treballadors. Segons Hawass, no els haurien enterrat amb tant d'honor si haguessin estat esclaus.</li><li><strong>El diari de Merer.</strong> El 2013, l'equip de l'egiptòleg francès <strong>Pierre Tallet</strong> va trobar a Wadi al-Jarf, a la costa del mar Roig, els papirs escrits més antics que es coneixen. Són el diari d'un inspector, Merer, que explica com el seu equip transportava amb vaixell la pedra calcària de Tura fins a Guiza, l'any 26 o 27 del regnat de Kheops.</li></ul><p>Avui es pensa que les piràmides les van fer un grup d'artesans especialitzats i equips de camperols que hi treballaven per torns, com una obligació amb l'estat, i que rebien menjar i allotjament.</p>",
+   "q_relacio": "Amb quines obres de la llista les pots comparar?",
+   "relacio": "<ul><li><strong>Obra 2. Fris de Meidum.</strong> De la mateixa època, la del pare de Kheops, Snefrú. Nefermaat, el propietari de la mastaba de Meidum, era probablement el pare d'Hemiunu, el visir que va dirigir les obres de la Gran Piràmide. La mastaba i la piràmide són dues tombes amb la mateixa funció, per a l'elit i per al rei.</li><li><strong>Obra 13. Santa Sofia de Constantinoble.</strong> Tots dos són encàrrecs d'un poder que es presenta com a escollit pels déus o per Déu. La piràmide és una arquitectura de massa, gairebé sense espai interior. Santa Sofia, en canvi, és una arquitectura d'espai, pensada per acollir els fidels sota una gran cúpula.</li></ul><p>Quan es facin els estils grec i romà, es podran comparar amb el <strong>Partenó</strong> (obra 3), un temple pensat per ser vist des de fora com la piràmide, però fet a escala humana, i amb el <strong>Panteó</strong> (obra 9), una gran arquitectura d'espai interior.</p><h3>Altres obres de l'art egipci (per a l'apartat d de la PAU)</h3><ul><li><strong>Arquitectura funerària.</strong> La piràmide esglaonada de Djoser, a Sakkara, les piràmides de Snefrú a Dahšur, el temple funerari d'Hatxepsut a Deir el-Bahari i els hipogeus de la Vall dels Reis.</li><li><strong>Escultura.</strong> La Gran Esfinx de Guiza i l'estàtua de Kefren assegut (Museu Egipci del Caire).</li></ul>",
+   "compara": [
+    "hart-2",
+    "hart-13"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Assenyalar en una secció les parts de la Gran Piràmide, o les parts d'un conjunt funerari en una planta. Definir <em>mastaba</em>, <em>piràmide esglaonada</em> o <em>hipogeu</em>.</p><p><strong>Exercici 3.</strong> L'art al servei del poder, i la imatge del faraó com a rei diví.</p><p><strong>Exercici 4.</strong> La restitució del patrimoni egipci (PAU 2026, sèrie 1, opció A), el Gran Museu Egipci de Guiza o el turisme de masses en un lloc del Patrimoni Mundial.</p>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Piràmides de Guiza (vista general, planta del conjunt i secció de la Gran Piràmide).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de la Gran Piràmide i del conjunt funerari i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu la funció de les piràmides i el seu significat religiós i polític. [1 punt]</p><p>d) Expliqueu com va evolucionar la tomba reial egípcia fins a arribar a les piràmides de Guiza. Esmenteu-ne dos exemples. [1 punt]</p>",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Imperi Antic, IV dinastia, segle XXVI aC (Kheops, cap al 2551-2528 aC, segons el Metropolitan Museum). Context, per exemple, un estat unificat i centralitzat amb capital a Memfis, el faraó com a rei diví i amb poder absolut, una administració d'escribes i funcionaris dirigida pel visir que recaptava impostos en collita i en treball, la importància de la vida després de la mort i la importància creixent del culte solar a Ra.</p><p><strong>b)</strong> Planta quadrada orientada als punts cardinals, d'uns 230 m de costat, i uns 146 m d'alçada original. Nucli de blocs de pedra calcària local i revestiment de calcària fina de Tura, avui gairebé desaparegut. A l'interior, corredors descendent i ascendent, cambra subterrània, Gran Galeria amb falsa volta i cambra del rei de granit amb cambres de descàrrega. Arquitectura de massa, geomètrica i monumental. Conjunt funerari amb temple de la vall, calçada, temple funerari, piràmides de reines i mastabes. Art egipci de l'Imperi Antic.</p><p><strong>c)</strong> Tomba del faraó, que havia de protegir el seu cos i assegurar-li la vida eterna, amb el culte funerari al temple. Significat solar (els raigs del sol, el benben, la pujada del rei al cel). Mostra del poder del faraó i de l'estat, i garantia de la maat, l'ordre del món.</p><p><strong>d)</strong> De la mastaba de l'època tinita a la piràmide esglaonada de Djoser a Sakkara (III dinastia, Imhotep), i després a les piràmides de Snefrú a Meidum i a Dahšur (romboidal i roja), on es van assajar les cares llises, fins a Guiza.</p>",
+   "pau_propostes": "<p><em>Enunciat oficial, PAU 2026 (sèrie 1). Exercici 4, opció A.</em></p><p>A partir de la lectura d'aquest article, responeu a les preguntes que hi ha a continuació.</p><p><strong>Egipte s'emporta la seva primera victòria en la batalla per recuperar peces museístiques.</strong> <em>El debat de la descolonització s'ha revifat després de l'obertura del Gran Museu Egipci: el país àrab reclama la devolució de peces com la pedra de Rosetta o el bust de Nefertiti.</em></p><p>(Resum de l'article.) Després d'inaugurar el Gran Museu Egipci, Egipte ha demanat a museus europeus que li tornin peces que en van sortir. Els Països Baixos han anunciat que retornaran un bust de pedra d'un alt funcionari de la dinastia de Tutmosis III, i s'espera que el Regne Unit, Alemanya i França facin el mateix amb la pedra de Rosetta, el bust de Nefertiti i el zodíac de Dandara. Una arqueòloga hi diu que el nou museu desmunta l'argument que Egipte no pot conservar el seu patrimoni. Font citada a l'examen, Constanza V. Paura, <em>National Geographic</em> (14 de novembre de 2025).</p><p>a) A banda dels retrats citats a l'article, el de l'alt funcionari i el de Nefertiti, esmenteu dues obres més que siguin representatives de l'art egipci de l'època dels faraons. [1 punt]</p><p>b) Creieu que les obres d'art egipci haurien de retornar al seu país d'origen? O penseu que és millor que continuïn en els museus de grans capitals europees? Justifiqueu la resposta de manera breu. [1 punt]</p><h3>Com respondre-la</h3><p><strong>a)</strong> N'hi ha prou amb dues obres ben identificades, amb la data o l'època, per exemple les piràmides de Guiza (IV dinastia, segle XXVI aC), la piràmide esglaonada de Djoser a Sakkara, el fris de les oques de Meidum, l'Escriba assegut del Louvre, el temple d'Abu Simbel o la màscara de Tutankamon. Al tema de l'estil hi ha la llista completa, datada.</p><p><strong>b)</strong> És una pregunta d'opinió. Segons els criteris oficials de l'exercici 4, es valora que l'alumne entengui el cas, faci servir la informació de l'article i argumenti de manera lògica, coherent i raonada. Es poden fer servir arguments a favor de la restitució (la identitat del país d'origen, la manera com van sortir algunes peces, l'existència del Gran Museu Egipci) i a favor del museu universal (l'accés de visitants de tot el món, la història de les col·leccions), i acabar amb una conclusió pròpia.</p><p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>El Museu Egipci de Barcelona, de la Fundació Arqueològica Clos, exposa a Catalunya peces originals de l'antic Egipte, com estàtues, sarcòfags i màscares funeràries.</p><ol><li>Expliqueu quins avantatges té per a l'alumnat i per als ciutadans de Catalunya que hi hagi un museu dedicat a l'antic Egipte. [1 punt]</li><li>Proposeu un itinerari per a un grup de segon de batxillerat que relacioni tres peces del museu amb les característiques de l'art egipci que heu estudiat. [1 punt]</li></ol>",
+   "fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, examen de la PAU 2026 (sèrie 1) i criteris de correcció de la Sèrie 0 (2025).</li><li>UNESCO. Fitxa del Patrimoni Mundial «Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur».</li><li>The Metropolitan Museum of Art. Catàleg de la col·lecció (Kheops, Kefren, Micerí i Djoser) i <em>Egyptian Art in the Age of the Pyramids</em> (1999).</li><li>Encyclopaedia Britannica. Articles «Pyramids of Giza», «Khufu», «Step Pyramid of Djoser», «Maydum», «Dahshur», «Great Sphinx» i «Pyramid Texts».</li><li>Smarthistory. «The Great Pyramids of Giza» i «Pyramid of Khufu».</li><li>Gran Enciclopèdia Catalana. Articles «Guiza», «Kheops», «Kefren», «Micerí», «Snefrú», «Imhotep» i «Sakkara».</li><li>Ancient Egypt Research Associates (AERA). «The Lost City of the Pyramid Builders», i Harvard Magazine (2003), entrevista a M. Lehner.</li><li>P. Tallet i G. Marouard, <em>Journal of the American Research Center in Egypt</em> 52 (2016), sobre els papirs de Wadi al-Jarf.</li><li>Heròdot. <em>Històries</em>, llibre II, capítol 124 (traducció anglesa d'A. D. Godley, Perseus).</li><li>Harvard Giza Project i Rosicrucian Egyptian Museum, sobre Hemiunu.</li></ul>"
+  },
+  {
+   "origen": "hart-2",
+   "numero": 2,
+   "titol": "Fris de Meidum de la mastaba de Nefermaat",
+   "slug": "fris-de-meidum",
+   "estil": "art-egipci",
+   "llenguatge": "pintura",
+   "miniatura": "oques",
+   "autor": "",
+   "dates": "Cap al 2600 aC",
+   "lloc": "Museu Egipci del Caire",
+   "resum": "Fris pintat amb sis **oques** que decorava la capella d'**Itet**, l'esposa de Nefermaat, a la mastaba que compartien a **Meidum**. És de l'època del faraó **Snefrú**, cap al **2600 aC**, i es considera la primera gran obra mestra de la pintura egípcia. Les oques, en dos grups simètrics, segueixen les **convencions** de l'art egipci, però el plomatge està pintat amb una observació molt atenta de la natura. És al **Museu Egipci del Caire**.",
+   "fitxa": [
+    [
+     "Altres noms",
+     "**Les oques de Meidum**, com l'anomena la Gran Enciclopèdia Catalana."
+    ],
+    [
+     "Lloc original",
+     "Capella d'Itet a la mastaba de **Nefermaat i Itet** (mastaba 16), a la necròpolis de **Meidum**, al nord de la piràmide (Egipte)."
+    ],
+    [
+     "Ubicació actual",
+     "**Museu Egipci del Caire**, a la plaça Tahrir (CG 1742)."
+    ],
+    [
+     "Cronologia",
+     "Imperi Antic, **IV dinastia**, regnat de **Snefrú**. Cap al **2600 aC**, segons el British Museum. El Metropolitan Museum el data cap al 2575-2551 aC."
+    ],
+    [
+     "Promotors",
+     "**Nefermaat**, visir i «fill gran del rei», i la seva esposa **Itet**."
+    ],
+    [
+     "Tècnica",
+     "Pintura sobre un arrebossat sec (no és un fresc), amb pigments minerals."
+    ],
+    [
+     "Mides",
+     "Uns 29 × 174 cm, segons el Museu Egipci del Caire (altres fonts donen 27 × 172 cm)."
+    ]
+   ],
+   "imatges": [
+    {
+     "clau": "oques",
+     "seccio": "inici",
+     "titol": "El fris sencer",
+     "text": "Dos grups de tres oques, d'esquena l'un a l'altre. Als extrems, dues oques que pasturen amb el cap acotat. Museu Egipci del Caire."
+    },
+    {
+     "clau": "mastaba16",
+     "seccio": "context",
+     "titol": "Reconstrucció de la mastaba de Nefermaat i Itet",
+     "text": "Una gran mastaba doble de tova, amb una capella per a cada esposa."
+    },
+    {
+     "clau": "meidumpir",
+     "seccio": "context",
+     "titol": "La piràmide de Meidum",
+     "text": "Va començar com una piràmide esglaonada i es va convertir en una piràmide de cares llises. El revestiment exterior es va esfondrar i avui en queda el nucli, en forma de torre."
+    },
+    {
+     "clau": "oquesdet",
+     "seccio": "analisi",
+     "titol": "Detall",
+     "text": "Una de les oques que pasturen. El plomatge es pinta ploma a ploma, amb colors plans i contorns nets."
+    },
+    {
+     "clau": "pasta",
+     "seccio": "destacat",
+     "titol": "Relleu amb pasta de colors (mastaba de Nefermaat)",
+     "text": "Les figures es tallaven a la pedra i s'omplien amb pastes de colors. Oriental Institute Museum, Universitat de Chicago."
+    },
+    {
+     "clau": "rahotep",
+     "seccio": "relacio",
+     "titol": "Rahotep i Nofret (IV dinastia)",
+     "text": "Estàtues de pedra calcària pintada d'una altra mastaba de Meidum. La pell d'ell és més fosca que la d'ella. Museu Egipci del Caire."
+    }
+   ],
+   "q_context": "Per què la tomba d'un alt funcionari es decorava amb pintures, i per què a Meidum?",
+   "context": "<p>El fris és de l'Imperi Antic, de la <strong>IV dinastia</strong>, del regnat de <strong>Snefrú</strong>. El British Museum el data cap al <strong>2600 aC</strong>, i el Metropolitan Museum, cap al 2575-2551 aC. A la PAU es pot datar a l'Imperi Antic, cap al 2600 aC.</p><h3>Snefrú i Meidum</h3><p><strong>Snefrú</strong> va ser el primer faraó de la IV dinastia i el pare de Kheops, el de la Gran Piràmide de Guiza. Va fer construir dues piràmides a Dahšur, i amb ell es va passar de la piràmide esglaonada a la piràmide de cares llises (obra 1). La piràmide de <strong>Meidum</strong>, que segons la Gran Enciclopèdia Catalana és molt probablement seva, n'és el primer pas. Al voltant de la piràmide del rei, els membres de la família reial i els alts funcionaris es feien enterrar en <strong>mastabes</strong>. Estar a prop del rei en la mort era un privilegi.</p><h3>Nefermaat i Itet</h3><p><strong>Nefermaat</strong> era <strong>visir</strong>, el càrrec més alt de l'administració després del faraó, i portava el títol de «fill gran del rei». Moltes fonts el consideren fill de Snefrú, però d'altres pensen que podia ser fill del seu predecessor, Huni, o que el títol era honorífic. Probablement era el pare d'<strong>Hemiunu</strong>, el visir que, segons molts egiptòlegs, va dirigir les obres de la Gran Piràmide. La seva esposa, <strong>Itet</strong>, portava el títol de «la que és coneguda pel rei». Tots dos es van fer enterrar en una gran mastaba doble de tova, la <strong>mastaba 16</strong>, d'uns 120 per 68 metres, amb dues capelles d'ofrenes, la d'Itet al nord i la de Nefermaat al sud.</p><h3>Una societat organitzada al voltant del rei</h3><p>A l'Imperi Antic, el faraó governava amb una administració d'escribes i funcionaris que recaptava els impostos en forma de collita i organitzava els grans treballs. L'elit vivia de la terra i dels càrrecs que el rei li donava, i dedicava una part de la seva riquesa a la tomba, perquè la vida eterna depenia de les ofrenes.</p>",
+   "q_analisi": "Com aconsegueix el pintor que sis oques de perfil semblin vives sense sortir de les normes?",
+   "analisi": "<h3>Què representa</h3><p>Sis <strong>oques</strong> caminen sobre una línia de terra, entre petites mates d'herba. Formen dos grups de tres, d'esquena l'un a l'altre. A cada extrem, una oca acota el cap per pasturar, i al centre, dues parelles d'oques dretes miren cap enfora. Les oques de cada grup no són iguals, perquè tenen colors i formes diferents. Segons els ornitòlegs que les han estudiat, són d'espècies diverses, entre les quals l'oca de front blanc i l'oca de coll roig.</p><h3>Composició</h3><ul><li><strong>Simetria.</strong> Els dos grups es reflecteixen com en un mirall respecte d'un eix central, però canvien els colors i les espècies. Aquesta variació dins de l'ordre dona vida a l'escena.</li><li><strong>Registre.</strong> Les oques ocupen una franja horitzontal, limitada per dues bandes negres. Era una part d'una paret més gran, amb altres escenes a sobre i a sota.</li><li><strong>Sense profunditat.</strong> No hi ha paisatge al fons ni perspectiva. Totes les oques són a la mateixa línia i tenen la mateixa mida.</li></ul><h3>Línia i color</h3><p>Cada oca es dibuixa amb un <strong>contorn</strong> net i s'omple amb <strong>colors plans</strong>, sense ombres. El plomatge, en canvi, es pinta ploma a ploma, amb molta precisió. Segons el Museu Egipci, els colors són de pigments minerals, com el blanc de la pedra calcària, el vermell d'òxid de ferro i el verd de la malaquita. El fons és d'un gris blavós clar.</p><h3>Les convencions</h3><p>Les oques es representen de <strong>perfil</strong>, el punt de vista on es reconeixen millor, sobre una línia de terra i sense profunditat, com totes les figures de l'art egipci. El naturalisme és en els detalls (el color, el bec, les potes, el plomatge), no en la manera de representar l'espai.</p><h3>La tècnica</h3><p>Segons el British Museum, sobre la paret de tova de la capella es posava una capa de morter per allisar-la i, a sobre, una capa fina d'arrebossat. Quan era seca, s'hi pintava. Per això no és un <strong>fresc</strong>, que es pinta sobre l'arrebossat humit, sinó una pintura sobre <strong>arrebossat sec</strong>.</p><h3>L'estil</h3><p>És <strong>art egipci</strong> de l'Imperi Antic, de la IV dinastia. La Gran Enciclopèdia Catalana el considera la primera obra mestra de la pintura egípcia.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Fris · registre · línia de terra · simetria · perfil · contorn · color pla · arrebossat sec · tremp · fresc · pigment mineral.</p></div>",
+   "q_funcio": "Per què es pintaven oques en una tomba?",
+   "funcio": "<h3>Tema</h3><p>Les oques no eren una escena aïllada. Formaven part d'una paret de la capella d'Itet amb escenes de la vida al camp. Segons el Metropolitan Museum, eren a sota d'una escena d'homes que cacen ocells amb una xarxa i els ofereixen als difunts, i segons el British Museum, a sota de les oques hi havia una escena de llaurada.</p><h3>Funció</h3><p>La capella era la part de la mastaba on els familiars i els sacerdots portaven ofrenes al <strong>ka</strong> dels difunts. Les pintures garantien que aquestes ofrenes no s'acabessin mai. Les oques, els ocells caçats i els camps llaurats eren aliments per a l'eternitat. Per als egipcis, la imatge tenia el poder de fer real el que mostrava. Alhora, una decoració tan rica mostrava el rang de Nefermaat i d'Itet.</p>",
+   "destacat_titol": "Una tècnica que no es va tornar a fer servir",
+   "q_destacat": "Com va voler Nefermaat que les seves imatges duressin per sempre?",
+   "destacat": "<p>A la seva capella, Nefermaat va fer servir una tècnica nova. Segons l'egiptòleg W. M. Flinders Petrie, que va excavar Meidum el 1891, les figures es tallaven a la pedra amb les vores obliqües i s'omplien amb <strong>pastes de colors</strong> fins arribar a la superfície. Una inscripció de la tomba diu que Nefermaat va fer les seves imatges amb una escriptura que no es pot esborrar. Però la pasta es desenganxava, i la tècnica no es va tornar a fer servir fora de Meidum. La capella d'Itet combinava aquesta tècnica amb la pintura, i és la pintura, la de les oques, la que ha arribat fins a nosaltres.</p><h3>Un fals?</h3><p>El 2015, l'egiptòleg italià Francesco Tiradritti va defensar que les oques podien ser una falsificació del segle XIX, obra de Luigi Vassalli, que les havia arrencat de la paret el 1871. Altres egiptòlegs ho van rebutjar, perquè l'escena coincideix amb la resta de la paret i amb altres representacions d'oques de l'Imperi Antic. Els estudis posteriors la consideren una pintura antiga.</p>",
+   "q_relacio": "Amb quines obres de la llista i de l'art egipci la pots comparar?",
+   "relacio": "<ul><li><strong>Obra 1. Piràmides de Guiza.</strong> El fris és una mica anterior, de l'època de Snefrú, el pare de Khufu. Probablement, el fill de Nefermaat, Hemiunu, va dirigir les obres de la Gran Piràmide. Les dues obres tenen la mateixa funció, assegurar la vida eterna, una per al rei i l'altra per a una família de l'elit.</li><li><strong>Obra 17. Frescos de Sant Climent de Taüll.</strong> Totes dues són pintures murals que segueixen unes normes fixes, amb colors plans, contorns marcats i sense profunditat. Taüll és un fresc religiós cristià, pensat per als fidels d'una església, i el fris és una pintura sobre arrebossat sec en una tomba. Totes dues es van arrencar de la paret i avui són en un museu.</li></ul><h3>Altres obres de l'art egipci (per a l'apartat d de la PAU)</h3><ul><li><strong>Rahotep i Nofret.</strong> Estàtues de pedra calcària pintada, d'una altra mastaba de Meidum, de la mateixa època, amb els ulls incrustats de cristall de roca. Mostren la convenció de pintar més fosca la pell dels homes que la de les dones. Museu Egipci del Caire.</li><li><strong>Pintures de la tomba de Nebamun</strong> (cap al 1350 aC). Molt posteriors, de l'Imperi Nou, amb ocells i peixos d'un gran naturalisme. British Museum.</li></ul>",
+   "compara": [
+    "hart-1",
+    "hart-17"
+   ],
+   "tambe": "<p><strong>Exercici 1.</strong> Distingir la pintura sobre arrebossat sec del fresc, o reconèixer les convencions de la pintura egípcia (perfil, registre, colors plans).</p><p><strong>Exercici 3.</strong> La relació entre l'art i la natura, o l'autenticitat d'una obra (la polèmica del 2015).</p><p><strong>Exercici 4.</strong> Les obres arrencades del seu lloc original i portades a un museu, com les oques de Meidum o les pintures romàniques del Pirineu al MNAC.</p>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Fris de les oques de Meidum (vista general i detall).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i tècniques de l'obra i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu el tema i la funció de l'obra dins de la tomba. [1 punt]</p><p>d) Esmenteu dues obres més de l'art egipci i expliqueu una convenció de representació que comparteixin amb el fris. [1 punt]</p>",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Imperi Antic, IV dinastia, regnat de Snefrú, cap al 2600 aC. Context, per exemple, el faraó com a rei diví amb una administració centralitzada, l'elit de funcionaris enterrada en mastabes al voltant de la piràmide del rei, la creença en la vida després de la mort i el ka, i el pas de la piràmide esglaonada a la de cares llises a Meidum i Dahshur. Nefermaat, visir i «fill gran del rei», i la seva esposa Itet.</p><p><strong>b)</strong> Pintura sobre arrebossat sec, amb pigments minerals. Sis oques en dos grups simètrics, d'esquena l'un a l'altre, dins d'un registre limitat per bandes, sobre una línia de terra. Figures de perfil, contorns nets i colors plans, sense ombres ni profunditat. Plomatge pintat amb gran detall i espècies diferents. Art egipci de l'Imperi Antic.</p><p><strong>c)</strong> Formava part d'una paret amb escenes de caça d'ocells amb xarxa i de llaurada, a la capella d'Itet. Les imatges garantien per sempre els aliments i les ofrenes per al ka dels difunts. També mostraven el seu rang.</p><p><strong>d)</strong> Per exemple, les estàtues de Rahotep i Nofret i les pintures de la tomba de Nebamun. Totes segueixen convencions com els colors plans i, a les figures humanes, la diferència de color entre la pell dels homes i la de les dones, o la representació de perfil i sense profunditat.</p>",
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 1.</em></p><ol><li>Expliqueu la diferència entre la pintura al fresc i la pintura sobre arrebossat sec. [0,50 punts]</li><li>Definiu què és un registre en la pintura egípcia. [0,50 punts]</li></ol><p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 3.</em></p><p>El 2015, un egiptòleg va defensar que les oques de Meidum podien ser una falsificació del segle XIX. Altres especialistes ho van rebutjar.</p><ol><li>Per què és important saber si una obra és autèntica? Penseu en el seu valor històric, artístic i econòmic. [1 punt]</li><li>Quines proves poden fer servir els especialistes per demostrar l'autenticitat d'una obra antiga? [1 punt]</li></ol>",
+   "fonts": "<ul><li>Museu Egipci del Caire (web oficial). «Meidum Geese» i «The Restoration Project of Nefermaat and his wife Itet».</li><li>The Metropolitan Museum of Art. Facsímil de les oques de Meidum, de Charles K. Wilkinson (31.6.8).</li><li>British Museum. Fragments de la tomba de Nefermaat i Itet (EA69014, EA69015 i EA1510).</li><li>University College London, Digital Egypt for Universities. «Meydum, the mastaba of Nefermaat» (amb W. M. F. Petrie, <em>Medum</em>, 1892).</li><li>Gran Enciclopèdia Catalana. Articles «art egipci» i «Snefrú».</li><li>Global Egyptian Museum. Fitxa de les oques de Meidum.</li><li>C. Romilio, <em>Journal of Archaeological Science: Reports</em> 36 (2021), i R. Kirwan i altres, <em>Journal of Archaeological Science: Reports</em> 41 (2022), sobre les espècies d'oca.</li><li>The Art Newspaper (2 d'abril de 2015), Live Science (31 de març de 2015) i Ahram Online (3 d'abril de 2015), sobre la polèmica de l'autenticitat.</li></ul>"
+  }
+ ]
+}
