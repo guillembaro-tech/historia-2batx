@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 734" font-family="Roboto, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g fill="none" stroke="#202124" stroke-width="2" stroke-linejoin="round">
+<rect x="330.0" y="568.8" width="895.5" height="15.1"/>
+<rect x="309.7" y="583.9" width="936.1" height="15.1"/>
+<rect x="289.4" y="599.0" width="976.7" height="15.1"/>
+<path d="M332.0 568.8 Q330.2 430.0 338.1 291.3 L381.0 291.3 Q388.9 430.0 387.2 568.8 Z" fill="#ffffff"/>
+<path d="M337.5 564.5 L342.4 294.8" stroke-width="1"/>
+<path d="M352.1 564.5 L353.7 294.8" stroke-width="1"/>
+<path d="M367.1 564.5 L365.4 294.8" stroke-width="1"/>
+<path d="M381.7 564.5 L376.7 294.8" stroke-width="1"/>
+<path d="M338.1 291.3 H381.0" stroke-width="1.4"/>
+<path d="M337.5 291.3 Q328.3 278.5 329.7 275.6 H389.4 Q390.9 278.5 381.6 291.3" fill="#ffffff"/>
+<rect x="329.7" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M438.7 568.8 Q436.9 430.0 444.8 291.3 L487.8 291.3 Q495.7 430.0 493.9 568.8 Z" fill="#ffffff"/>
+<path d="M444.2 564.5 L449.1 294.8" stroke-width="1"/>
+<path d="M458.8 564.5 L460.5 294.8" stroke-width="1"/>
+<path d="M473.8 564.5 L472.1 294.8" stroke-width="1"/>
+<path d="M488.4 564.5 L483.5 294.8" stroke-width="1"/>
+<path d="M444.8 291.3 H487.8" stroke-width="1.4"/>
+<path d="M444.3 291.3 Q435.0 278.5 436.4 275.6 H496.2 Q497.6 278.5 488.3 291.3" fill="#ffffff"/>
+<rect x="436.4" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M563.3 568.8 Q561.5 430.0 569.4 291.3 L612.3 291.3 Q620.2 430.0 618.5 568.8 Z" fill="#ffffff"/>
+<path d="M568.8 564.5 L573.7 294.8" stroke-width="1"/>
+<path d="M583.4 564.5 L585.0 294.8" stroke-width="1"/>
+<path d="M598.4 564.5 L596.7 294.8" stroke-width="1"/>
+<path d="M613.0 564.5 L608.1 294.8" stroke-width="1"/>
+<path d="M569.4 291.3 H612.3" stroke-width="1.4"/>
+<path d="M568.8 291.3 Q559.6 278.5 561.0 275.6 H620.8 Q622.2 278.5 612.9 291.3" fill="#ffffff"/>
+<rect x="561.0" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M687.8 568.8 Q686.1 430.0 694.0 291.3 L736.9 291.3 Q744.8 430.0 743.1 568.8 Z" fill="#ffffff"/>
+<path d="M693.4 564.5 L698.3 294.8" stroke-width="1"/>
+<path d="M708.0 564.5 L709.6 294.8" stroke-width="1"/>
+<path d="M723.0 564.5 L721.3 294.8" stroke-width="1"/>
+<path d="M737.6 564.5 L732.6 294.8" stroke-width="1"/>
+<path d="M694.0 291.3 H736.9" stroke-width="1.4"/>
+<path d="M693.4 291.3 Q684.1 278.5 685.6 275.6 H745.3 Q746.8 278.5 737.5 291.3" fill="#ffffff"/>
+<rect x="685.6" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M812.4 568.8 Q810.7 430.0 818.6 291.3 L861.5 291.3 Q869.4 430.0 867.7 568.8 Z" fill="#ffffff"/>
+<path d="M818.0 564.5 L822.9 294.8" stroke-width="1"/>
+<path d="M832.5 564.5 L834.2 294.8" stroke-width="1"/>
+<path d="M847.6 564.5 L845.9 294.8" stroke-width="1"/>
+<path d="M862.1 564.5 L857.2 294.8" stroke-width="1"/>
+<path d="M818.6 291.3 H861.5" stroke-width="1.4"/>
+<path d="M818.0 291.3 Q808.7 278.5 810.2 275.6 H869.9 Q871.4 278.5 862.1 291.3" fill="#ffffff"/>
+<rect x="810.2" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M937.0 568.8 Q935.3 430.0 943.2 291.3 L986.1 291.3 Q994.0 430.0 992.3 568.8 Z" fill="#ffffff"/>
+<path d="M942.5 564.5 L947.5 294.8" stroke-width="1"/>
+<path d="M957.1 564.5 L958.8 294.8" stroke-width="1"/>
+<path d="M972.1 564.5 L970.5 294.8" stroke-width="1"/>
+<path d="M986.7 564.5 L981.8 294.8" stroke-width="1"/>
+<path d="M943.2 291.3 H986.1" stroke-width="1.4"/>
+<path d="M942.6 291.3 Q933.3 278.5 934.8 275.6 H994.5 Q996.0 278.5 986.7 291.3" fill="#ffffff"/>
+<rect x="934.8" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M1061.6 568.8 Q1059.9 430.0 1067.8 291.3 L1110.7 291.3 Q1118.6 430.0 1116.8 568.8 Z" fill="#ffffff"/>
+<path d="M1067.1 564.5 L1072.1 294.8" stroke-width="1"/>
+<path d="M1081.7 564.5 L1083.4 294.8" stroke-width="1"/>
+<path d="M1096.7 564.5 L1095.1 294.8" stroke-width="1"/>
+<path d="M1111.3 564.5 L1106.4 294.8" stroke-width="1"/>
+<path d="M1067.8 291.3 H1110.7" stroke-width="1.4"/>
+<path d="M1067.2 291.3 Q1057.9 278.5 1059.3 275.6 H1119.1 Q1120.5 278.5 1111.3 291.3" fill="#ffffff"/>
+<rect x="1059.3" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<path d="M1168.3 568.8 Q1166.6 430.0 1174.5 291.3 L1217.4 291.3 Q1225.3 430.0 1223.6 568.8 Z" fill="#ffffff"/>
+<path d="M1173.8 564.5 L1178.8 294.8" stroke-width="1"/>
+<path d="M1188.4 564.5 L1190.1 294.8" stroke-width="1"/>
+<path d="M1203.5 564.5 L1201.8 294.8" stroke-width="1"/>
+<path d="M1218.0 564.5 L1213.1 294.8" stroke-width="1"/>
+<path d="M1174.5 291.3 H1217.4" stroke-width="1.4"/>
+<path d="M1173.9 291.3 Q1164.6 278.5 1166.1 275.6 H1225.8 Q1227.3 278.5 1218.0 291.3" fill="#ffffff"/>
+<rect x="1166.1" y="266.3" width="59.7" height="9.3" fill="#ffffff"/>
+<rect x="329.7" y="227.2" width="896.1" height="39.2" fill="#ffffff"/>
+<path d="M329.7 232.4 H1225.8" stroke-width="1"/>
+<rect x="329.7" y="188.0" width="896.1" height="39.2" fill="#ffffff"/>
+<rect x="329.7" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M337.8 191.5 V226.6" stroke-width="1.2"/>
+<path d="M345.9 191.5 V226.6" stroke-width="1.2"/>
+<rect x="400.8" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M408.9 191.5 V226.6" stroke-width="1.2"/>
+<path d="M417.0 191.5 V226.6" stroke-width="1.2"/>
+<rect x="454.1" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M462.2 191.5 V226.6" stroke-width="1.2"/>
+<path d="M470.4 191.5 V226.6" stroke-width="1.2"/>
+<rect x="516.4" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M524.5 191.5 V226.6" stroke-width="1.2"/>
+<path d="M532.7 191.5 V226.6" stroke-width="1.2"/>
+<rect x="578.7" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M586.8 191.5 V226.6" stroke-width="1.2"/>
+<path d="M594.9 191.5 V226.6" stroke-width="1.2"/>
+<rect x="641.0" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M649.1 191.5 V226.6" stroke-width="1.2"/>
+<path d="M657.2 191.5 V226.6" stroke-width="1.2"/>
+<rect x="703.3" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M711.4 191.5 V226.6" stroke-width="1.2"/>
+<path d="M719.5 191.5 V226.6" stroke-width="1.2"/>
+<rect x="765.6" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M773.7 191.5 V226.6" stroke-width="1.2"/>
+<path d="M781.8 191.5 V226.6" stroke-width="1.2"/>
+<rect x="827.9" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M836.0 191.5 V226.6" stroke-width="1.2"/>
+<path d="M844.1 191.5 V226.6" stroke-width="1.2"/>
+<rect x="890.2" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M898.3 191.5 V226.6" stroke-width="1.2"/>
+<path d="M906.4 191.5 V226.6" stroke-width="1.2"/>
+<rect x="952.5" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M960.6 191.5 V226.6" stroke-width="1.2"/>
+<path d="M968.7 191.5 V226.6" stroke-width="1.2"/>
+<rect x="1014.7" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M1022.9 191.5 V226.6" stroke-width="1.2"/>
+<path d="M1031.0 191.5 V226.6" stroke-width="1.2"/>
+<rect x="1077.0" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M1085.2 191.5 V226.6" stroke-width="1.2"/>
+<path d="M1093.3 191.5 V226.6" stroke-width="1.2"/>
+<rect x="1130.4" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M1138.5 191.5 V226.6" stroke-width="1.2"/>
+<path d="M1146.6 191.5 V226.6" stroke-width="1.2"/>
+<rect x="1201.4" y="188.0" width="24.4" height="39.2" fill="#FDE7F3"/>
+<path d="M1209.6 191.5 V226.6" stroke-width="1.2"/>
+<path d="M1217.7 191.5 V226.6" stroke-width="1.2"/>
+<path d="M367.3 220.7 L374.5 207.6 L386.1 220.7 M374.5 207.6 L378.9 197.5 L387.6 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="380.3" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M429.5 220.7 L436.7 207.6 L448.3 220.7 M436.7 207.6 L441.1 197.5 L449.8 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="442.5" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M487.3 220.7 L494.5 207.6 L506.1 220.7 M494.5 207.6 L498.9 197.5 L507.6 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="500.3" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M549.6 220.7 L556.8 207.6 L568.4 220.7 M556.8 207.6 L561.2 197.5 L569.9 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="562.6" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M611.9 220.7 L619.1 207.6 L630.7 220.7 M619.1 207.6 L623.5 197.5 L632.2 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="624.9" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M674.2 220.7 L681.4 207.6 L693.0 220.7 M681.4 207.6 L685.8 197.5 L694.5 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="687.2" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M736.5 220.7 L743.7 207.6 L755.3 220.7 M743.7 207.6 L748.1 197.5 L756.8 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="749.5" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M798.8 220.7 L806.0 207.6 L817.6 220.7 M806.0 207.6 L810.4 197.5 L819.1 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="811.8" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M861.0 220.7 L868.3 207.6 L879.9 220.7 M868.3 207.6 L872.6 197.5 L881.3 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="874.1" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M923.3 220.7 L930.6 207.6 L942.2 220.7 M930.6 207.6 L934.9 197.5 L943.6 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="936.4" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M985.6 220.7 L992.9 207.6 L1004.5 220.7 M992.9 207.6 L997.2 197.5 L1005.9 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="998.7" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M1047.9 220.7 L1055.2 207.6 L1066.8 220.7 M1055.2 207.6 L1059.5 197.5 L1068.2 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="1061.0" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M1105.7 220.7 L1113.0 207.6 L1124.6 220.7 M1113.0 207.6 L1117.3 197.5 L1126.0 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="1118.8" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<path d="M1168.0 220.7 L1175.2 207.6 L1186.8 220.7 M1175.2 207.6 L1179.6 197.5 L1188.3 203.3" stroke="#9AA0A6" stroke-width="1.4"/>
+<circle cx="1181.0" cy="194.0" r="3.2" stroke="#9AA0A6" stroke-width="1.4"/>
+<rect x="319.6" y="170.1" width="916.4" height="18.0" fill="#ffffff"/>
+<path d="M319.6 170.1 L777.8 70.0 L1236.0 170.1" fill="#ffffff"/>
+<path d="M360.2 170.1 L777.8 83.0 L1195.4 170.1" fill="#FDE7F3" stroke-width="1.4"/>
+<path d="M764.7 70.0 Q760.4 43.9 777.8 33.8 Q795.2 43.9 790.8 70.0" fill="#ffffff" stroke-width="1.6"/>
+<path d="M315.2 170.1 Q310.9 143.9 328.3 133.8 Q345.7 143.9 341.3 170.1" fill="#ffffff" stroke-width="1.6"/>
+<path d="M1214.2 170.1 Q1209.9 143.9 1227.3 133.8 Q1244.7 143.9 1240.3 170.1" fill="#ffffff" stroke-width="1.6"/>
+</g>
+<path d="M298.0 57.0 L769.1 52.6" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="769.1" cy="52.6" r="3.5" fill="#B80672"/>
+<text x="290.0" y="62.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Acroteri</text>
+<path d="M298.0 94.0 L676.3 152.7" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="676.3" cy="152.7" r="3.5" fill="#B80672"/>
+<text x="290.0" y="99.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Timpà</text>
+<path d="M298.0 131.0 L322.5 179.0" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="322.5" cy="179.0" r="3.5" fill="#B80672"/>
+<text x="290.0" y="136.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Cornisa</text>
+<path d="M298.0 168.0 L412.9 205.4" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="412.9" cy="205.4" r="3.5" fill="#B80672"/>
+<text x="290.0" y="173.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Tríglif</text>
+<path d="M298.0 205.0 L428.0 218.5" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="428.0" cy="218.5" r="3.5" fill="#B80672"/>
+<text x="290.0" y="210.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Mètopa</text>
+<path d="M298.0 242.0 L338.4 250.4" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="338.4" cy="250.4" r="3.5" fill="#B80672"/>
+<text x="290.0" y="247.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Arquitrau</text>
+<path d="M298.0 279.0 L466.3 282.3" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="466.3" cy="282.3" r="3.5" fill="#B80672"/>
+<text x="290.0" y="284.0" font-size="21" font-weight="500" fill="#202124" text-anchor="end">Capitell</text>
+<path d="M298.0 316.0 L331.2 271.0" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="331.2" cy="271.0" r="3.5" fill="#B80672"/>
+<text x="290.0" y="321.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Àbac</text>
+<path d="M298.0 353.0 L336.7 284.3" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="336.7" cy="284.3" r="3.5" fill="#B80672"/>
+<text x="290.0" y="358.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Equí</text>
+<path d="M298.0 449.8 L337.8 454.8" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="337.8" cy="454.8" r="3.5" fill="#B80672"/>
+<text x="290.0" y="454.8" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Fust amb estries</text>
+<path d="M298.0 572.5 L341.6 576.0" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="341.6" cy="576.0" r="3.5" fill="#B80672"/>
+<text x="290.0" y="577.5" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Estilòbat</text>
+<path d="M298.0 618.9 L301.0 606.5" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="301.0" cy="606.5" r="3.5" fill="#B80672"/>
+<text x="290.0" y="623.9" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Graons</text>
+<path d="M1276.0 70.0 h10 V170.1 h-10" stroke="#B80672" stroke-width="1.8" fill="none"/>
+<text x="1296.0" y="127.0" font-size="22" font-weight="500" fill="#B80672" text-anchor="start">Frontó</text>
+<path d="M1276.0 170.1 h10 V266.3 h-10" stroke="#B80672" stroke-width="1.8" fill="none"/>
+<text x="1296.0" y="225.2" font-size="22" font-weight="500" fill="#B80672" text-anchor="start">Entaulament</text>
+<path d="M1276.0 266.3 h10 V568.8 h-10" stroke="#B80672" stroke-width="1.8" fill="none"/>
+<text x="1296.0" y="424.6" font-size="22" font-weight="500" fill="#B80672" text-anchor="start">Columna</text>
+<path d="M1276.0 568.8 h10 V614.0 h-10" stroke="#B80672" stroke-width="1.8" fill="none"/>
+<text x="1296.0" y="598.4" font-size="22" font-weight="500" fill="#B80672" text-anchor="start">Crepidoma</text>
+<text x="750" y="666.0" font-size="22" font-weight="500" fill="#202124" text-anchor="middle">Alçat de la façana d'un temple dòric octàstil, com el Partenó</text>
+<text x="750" y="696.0" font-size="17" fill="#5F6368" text-anchor="middle">Esquema propi, amb proporcions aproximades. Vuit columnes a la façana, sense base, sobre l'estilòbat.</text>
+</svg>

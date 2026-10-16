@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 900" font-family="Roboto, Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g fill="none" stroke="#202124" stroke-width="2" stroke-linejoin="round">
+<path d="M1050.3 682.4 A340.4 340.4 0 1 0 389.7 682.4 L621.8 624.5 A101.2 101.2 0 1 1 818.2 624.5 Z" fill="#ffffff"/>
+<path d="M1216.7 696.5 A506.0 506.0 0 1 0 223.3 696.5 L367.8 668.5 A358.8 358.8 0 1 1 1072.2 668.5 Z" fill="#ffffff"/>
+<path d="M844.0 630.9 A127.8 127.8 0 1 0 596.0 630.9" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M869.8 637.3 A154.4 154.4 0 1 0 570.2 637.3" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M895.6 643.8 A180.9 180.9 0 1 0 544.4 643.8" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M921.3 650.2 A207.5 207.5 0 1 0 518.7 650.2" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M947.1 656.6 A234.1 234.1 0 1 0 492.9 656.6" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M972.9 663.1 A260.7 260.7 0 1 0 467.1 663.1" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M998.7 669.5 A287.2 287.2 0 1 0 441.3 669.5" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1024.5 675.9 A313.8 313.8 0 1 0 415.5 675.9" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1096.3 673.1 A383.3 383.3 0 1 0 343.7 673.1" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1120.4 677.8 A407.9 407.9 0 1 0 319.6 677.8" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1144.5 682.5 A432.4 432.4 0 1 0 295.5 682.5" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1168.5 687.2 A456.9 456.9 0 1 0 271.5 687.2" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M1192.6 691.9 A481.5 481.5 0 1 0 247.4 691.9" stroke="#BDC1C6" stroke-width="1"/>
+<path d="M818.2 624.5 L1050.3 682.4" stroke-width="1.8"/>
+<path d="M821.0 594.1 L1059.8 580.2" stroke-width="1.8"/>
+<path d="M814.7 564.3 L1038.5 479.9" stroke-width="1.8"/>
+<path d="M799.7 537.7 L988.2 390.4" stroke-width="1.8"/>
+<path d="M777.6 516.8 L913.6 320.0" stroke-width="1.8"/>
+<path d="M750.2 503.4 L821.4 275.1" stroke-width="1.8"/>
+<path d="M720.0 498.8 L720.0 259.6" stroke-width="1.8"/>
+<path d="M689.8 503.4 L618.6 275.1" stroke-width="1.8"/>
+<path d="M662.4 516.8 L526.4 320.0" stroke-width="1.8"/>
+<path d="M640.3 537.7 L451.8 390.4" stroke-width="1.8"/>
+<path d="M625.3 564.3 L401.5 479.9" stroke-width="1.8"/>
+<path d="M619.0 594.1 L380.2 580.2" stroke-width="1.8"/>
+<path d="M621.8 624.5 L389.7 682.4" stroke-width="1.8"/>
+<path d="M1072.2 668.5 L1216.7 696.5" stroke-width="1.5"/>
+<path d="M1078.6 611.4 L1225.7 616.1" stroke-width="1.5"/>
+<path d="M1075.8 554.0 L1221.8 535.1" stroke-width="1.5"/>
+<path d="M1063.9 497.8 L1205.0 455.9" stroke-width="1.5"/>
+<path d="M1043.2 444.2 L1175.8 380.4" stroke-width="1.5"/>
+<path d="M1014.2 394.7 L1135.0 310.4" stroke-width="1.5"/>
+<path d="M977.7 350.3 L1083.4 247.9" stroke-width="1.5"/>
+<path d="M934.6 312.4 L1022.6 194.4" stroke-width="1.5"/>
+<path d="M885.9 281.9 L954.0 151.4" stroke-width="1.5"/>
+<path d="M833.0 259.5 L879.4 119.8" stroke-width="1.5"/>
+<path d="M777.3 245.8 L800.7 100.5" stroke-width="1.5"/>
+<path d="M720.0 241.2 L720.0 94.0" stroke-width="1.5"/>
+<path d="M662.7 245.8 L639.3 100.5" stroke-width="1.5"/>
+<path d="M607.0 259.5 L560.6 119.8" stroke-width="1.5"/>
+<path d="M554.1 281.9 L486.0 151.4" stroke-width="1.5"/>
+<path d="M505.4 312.4 L417.4 194.4" stroke-width="1.5"/>
+<path d="M462.3 350.3 L356.6 247.9" stroke-width="1.5"/>
+<path d="M425.8 394.7 L305.0 310.4" stroke-width="1.5"/>
+<path d="M396.8 444.2 L264.2 380.4" stroke-width="1.5"/>
+<path d="M376.1 497.8 L235.0 455.9" stroke-width="1.5"/>
+<path d="M364.2 554.0 L218.2 535.1" stroke-width="1.5"/>
+<path d="M361.4 611.4 L214.3 616.1" stroke-width="1.5"/>
+<path d="M367.8 668.5 L223.3 696.5" stroke-width="1.5"/>
+<circle cx="720" cy="600" r="92.0" fill="#FDE7F3"/>
+<circle cx="720" cy="600" r="6" fill="#202124"/>
+<rect x="582.0" y="735.2" width="276.0" height="64.4" fill="#ffffff"/>
+<path d="M651.0 735.2 V799.6" stroke-width="1.4"/>
+<path d="M789.0 735.2 V799.6" stroke-width="1.4"/>
+<rect x="609.6" y="715.0" width="220.8" height="20.2" fill="#ffffff" stroke-width="1.6"/>
+<circle cx="617.0" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="634.2" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="651.4" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="668.6" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="685.8" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="703.0" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="720.2" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="737.4" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="754.6" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="771.8" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="789.0" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="806.2" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<circle cx="823.4" cy="725.1" r="3" fill="#202124" stroke="none"/>
+<path d="M490.0 724.2 H563.6" stroke-width="5" stroke-linecap="round"/>
+<path d="M515.8 724.2 H537.8" stroke="#ffffff" stroke-width="6"/>
+<path d="M876.4 724.2 H950.0" stroke-width="5" stroke-linecap="round"/>
+<path d="M902.2 724.2 H924.2" stroke="#ffffff" stroke-width="6"/>
+</g>
+<path d="M526.8 788.6 V738.9" stroke="#B80672" stroke-width="2" marker-end="url(#fl)"/>
+<path d="M913.2 788.6 V738.9" stroke="#B80672" stroke-width="2" marker-end="url(#fl)"/>
+<defs><marker id="fl" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#B80672"/></marker></defs>
+<path d="M258.0 145.0 L345.5 383.8" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="345.5" cy="383.8" r="3.5" fill="#B80672"/>
+<text x="250.0" y="150.0" font-size="21" font-weight="500" fill="#202124" text-anchor="end">Graderia superior</text>
+<path d="M258.0 295.0 L512.5 524.5" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="512.5" cy="524.5" r="3.5" fill="#B80672"/>
+<text x="250.0" y="300.0" font-size="21" font-weight="500" fill="#202124" text-anchor="end">Graderia inferior</text>
+<path d="M308.0 65.0 L504.8 324.5" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="504.8" cy="324.5" r="3.5" fill="#B80672"/>
+<text x="300.0" y="70.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Diazoma (passadís)</text>
+<path d="M1242.0 685.0 L949.0 621.4" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="949.0" cy="621.4" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="690.0" font-size="21" font-weight="400" fill="#202124" text-anchor="start">Kerkís (sector)</text>
+<path d="M1242.0 445.0 L1134.5 476.9" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="1134.5" cy="476.9" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="450.0" font-size="21" font-weight="400" fill="#202124" text-anchor="start">Escala</text>
+<path d="M1242.0 555.0 L779.8 563.2" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="779.8" cy="563.2" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="560.0" font-size="21" font-weight="500" fill="#202124" text-anchor="start">Orquestra</text>
+<path d="M1242.0 605.0 L725.0 602.0" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="725.0" cy="602.0" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="610.0" font-size="21" font-weight="400" fill="#202124" text-anchor="start">Thymele (altar)</text>
+<path d="M1242.0 785.0 L812.0 725.1" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="812.0" cy="725.1" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="790.0" font-size="21" font-weight="400" fill="#202124" text-anchor="start">Proscèni (proskenion)</text>
+<path d="M1242.0 835.0 L839.6 770.2" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="839.6" cy="770.2" r="3.5" fill="#B80672"/>
+<text x="1250.0" y="840.0" font-size="21" font-weight="500" fill="#202124" text-anchor="start">Escena (skene)</text>
+<path d="M268.0 795.0 L526.8 761.0" stroke="#B80672" stroke-width="1.5" fill="none"/>
+<circle cx="526.8" cy="761.0" r="3.5" fill="#B80672"/>
+<text x="260.0" y="800.0" font-size="21" font-weight="400" fill="#202124" text-anchor="end">Parodos (entrada)</text>
+<text x="80" y="870" font-size="17" fill="#5F6368">Esquema propi, a partir de la planta del teatre d'Epidaure. Graderia de més de mig cercle, orquestra circular i escena.</text>
+</svg>
