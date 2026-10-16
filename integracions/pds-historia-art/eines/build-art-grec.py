@@ -85,7 +85,7 @@ CREDIT = {
     # Obra 4
     'epidaure': ('Theatre of Epidaurus OLC.jpg', 'Foto d\'Olecorre · CC BY-SA 3.0 · Wikimedia Commons', "Teatre d'Epidaure"),
     'epidauredalt': ('Theatre of Epidavros - 2 (from the top).jpg', "Foto d'Annatsach · CC BY-SA 4.0 · Wikimedia Commons", "Teatre d'Epidaure des de la part alta de la graderia"),
-    'epidaureplanta': ('Reconstruction; plan of the theatre at Epidaurus Wellcome L0011576.jpg', "Dibuix publicat per A. Defrasse i H. Lechat (1895) · Wellcome Collection · CC BY 4.0 · Wikimedia Commons", "Planta del teatre d'Epidaure"),
+    'epidaureplanta': ('Reconstruction; plan of the theatre at Epidaurus Wellcome L0011576.jpg', "Dibuix d'Alphonse Defrasse · Wellcome Collection · CC BY 4.0 · Wikimedia Commons", "Planta del teatre d'Epidaure"),
     'grec': ('Teatre Grec.jpg', 'Foto de Josep Aznar · CC BY-SA 3.0 · Wikimedia Commons', 'Teatre Grec de Montjuïc, Barcelona'),
     # Obra 5
     'kore': ('ACMA 679 Kore 1.JPG', 'Foto de Marsyas · CC BY-SA 2.5 · Wikimedia Commons', 'Kore del pèplum'),
@@ -346,7 +346,7 @@ o4.update({
     ],
     'imatges': [
         {'clau': 'epidaure', 'seccio': 'inici', 'titol': 'La graderia i l\'orquestra', 'text': "Les dues parts de la graderia, separades per un passadís horitzontal, i l'orquestra circular."},
-        {'clau': 'epidaureplanta', 'seccio': 'analisi', 'titol': 'Planta (reconstrucció del 1895)', 'text': "La graderia, l'orquestra completa i, a baix, l'escena."},
+        {'clau': 'epidaureplanta', 'seccio': 'analisi', 'titol': "Planta (reconstrucció d'A. Defrasse, finals del segle XIX)", 'text': "La graderia, l'orquestra completa i, a baix, l'escena."},
         {'clau': 'teatre', 'seccio': 'analisi', 'titol': 'Les parts del teatre (esquema)', 'text': "Graderia, diazoma, sectors, orquestra, escena, proscèni i parodos."},
         {'clau': 'epidauredalt', 'seccio': 'destacat', 'titol': 'Des de dalt de la graderia', 'text': "Des de la fila més alta es veu i se sent el que passa a l'orquestra."},
         {'clau': 'grec', 'seccio': 'relacio', 'titol': 'Teatre Grec de Montjuïc, Barcelona (1929)', 'text': "Construït per a l'Exposició Internacional, inspirat en el teatre d'Epidaure."},
@@ -549,7 +549,7 @@ o3.update({
             "**Escultura.** Les escultures del mateix Partenó, el Dorífor de Policlet (obra 6) i la Kore del pèplum (obra 5).",
         ]),
     ),
-    'compara': ['hart-4', 'hart-6', 'hart-1'],
+    'compara': ['hart-4', 'hart-6'],
     'tambe': j(
         p("**Exercici 1.** Assenyalar a la planta la naos, el pronaos i l'opistòdom (Sèrie 0, 2025) o, en un alçat, el capitell dòric, l'arquitrau, el fris, el frontó, els acroteris i el peristil (PAU 2026, sèrie 1). Identificar una mètopa."),
         p("**Exercici 3.** L'art al servei del poder, com el programa de Pèricles, o el debat sobre la policromia de l'escultura grega."),
@@ -668,7 +668,7 @@ o7.update({
     'destacat_titol': 'El nu femení i la mirada',
     'q_destacat': 'Per a qui es representa nua la deessa, i per què aquest model ha durat tant?',
     'destacat': j(
-        p("Fins al segle IV aC, l'escultura grega representava el **nu masculí**, l'atleta o l'heroi, actiu i orgullós del seu cos. Les figures femenines, com les korai, anaven vestides. L'Afrodita de Cnidos inaugura un model diferent. La dona nua no actua, sinó que és **mirada**. El gest de tapar-se suggereix que algú la sorprèn, i converteix l'espectador, en una societat on l'art el feien i l'encarregaven homes, en un voyeur."),
+        p("Fins al segle IV aC, l'escultura grega representava el **nu masculí**, l'atleta o l'heroi, actiu i orgullós del seu cos. Les figures femenines, com les korai, anaven vestides. L'Afrodita de Cnidos inaugura un model diferent. La dona nua no actua, sinó que és **mirada**. El gest de tapar-se suggereix que algú la sorprèn, i converteix l'espectador en algú que la mira d'amagat, en una societat on l'art el feien i l'encarregaven homes."),
         p("Aquest model va passar a l'art romà i, des del Renaixement, a la pintura europea. Giorgione, a la *Venus adormida* (cap al 1510), estira la deessa en un paisatge, dormint i amb el mateix gest de la mà. Botticelli (*El naixement de Venus*, obra 27) en repeteix la postura de pudor. Més tard Ticià, Velázquez o Manet hi van tornar, sovint per qüestionar-lo."),
         p("Al segle XX, la crítica feminista va analitzar aquesta tradició. L'escriptor John Berger, a *Ways of Seeing* (1972), va explicar que al nu europeu la dona sovint apareix representada per ser contemplada per un espectador masculí. El 1989, el col·lectiu **Guerrilla Girls** va fer un cartell que preguntava si les dones havien d'anar nues per entrar al Metropolitan Museum, és a dir, si només hi eren com a model i no com a artistes."),
     ),
