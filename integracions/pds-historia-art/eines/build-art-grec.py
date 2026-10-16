@@ -334,12 +334,12 @@ o8 = {
 }
 
 o4.update({
-    'resum': "Teatre del santuari d'**Asclepi** a Epidaure, al Peloponès. Es va construir a **finals del segle IV aC** i és considerat el teatre grec més ben conservat. Té una **orquestra circular**, una **graderia** de més de mig cercle, amb **55 files** i capacitat per a unes **12.000 a 14.000 persones**, segons les fonts, i una acústica famosa. Encara s'hi fan representacions.",
+    'resum': "Teatre del santuari d'**Asclepi** a Epidaure, al Peloponès. Es va construir a **finals del segle IV aC** i és considerat el teatre grec més ben conservat. Té una **orquestra circular**, una **graderia** de més de mig cercle, amb **55 files** i capacitat per a unes **13.000 a 14.000 persones**, segons les fonts, i una acústica famosa. Encara s'hi fan representacions.",
     'fitxa': [
         ['Localització', "Santuari d'Asclepi a Epidaure, a l'Argòlida (Grècia)."],
         ['Cronologia', "Primera fase a **finals del segle IV aC** (cap al 340-300 aC). La part alta de la graderia és una ampliació d'època hel·lenística, de mitjan segle II aC segons la majoria d'autors."],
         ['Autor', "**Pausànias** (segle II dC) l'atribueix a **Policlet**, que tradicionalment s'identifica amb **Policlet el Jove**, arquitecte d'Argos. No és el Policlet del Dorífor (obra 6). Alguns autors en discuteixen l'atribució."],
-        ['Mides', "Unes **55 files** de seients (34 a la part baixa i 21 a la part alta), uns **118-120 m** de diàmetre i una orquestra d'uns **20 m**. Capacitat d'unes **12.000 a 14.000 persones**, segons les fonts."],
+        ['Mides', "Unes **55 files** de seients (34 a la part baixa i 21 a la part alta), uns **118-120 m** de diàmetre i una orquestra d'uns **20 m**. Capacitat d'unes **13.000 a 14.000 persones**, segons les fonts."],
         ['Material', 'Pedra calcària.'],
         ['Estil', 'Art grec, finals de l\'època clàssica i època hel·lenística.'],
         ['Patrimoni', "Patrimoni Mundial de la UNESCO des del 1988, amb tot el santuari d'Asclepi."],
@@ -791,7 +791,7 @@ o4.update({
     'pau_model': j(
         h3('Pautes de resposta'),
         p("**a)** Finals del segle IV aC (cap al 340-300 aC), amb la part alta de la graderia afegida a l'època hel·lenística. Context, per exemple, el santuari d'Asclepi, déu de la medicina, on anaven malalts de tot el món grec, la difusió per totes les polis del teatre nascut a Atenes al segle VI aC, la Grècia del segle IV aC després de la guerra del Peloponès i el pas a l'època hel·lenística. Pausànias l'atribueix a Policlet, identificat tradicionalment amb Policlet el Jove."),
-        p("**b)** Teatre construït sobre el pendent d'un turó. Graderia (koilon) de més de mig cercle, amb 34 files a la part baixa i 21 a la part alta, separades pel diazoma, i dividida en sectors (kerkides) per escales radials. Orquestra circular d'uns 20 m, amb la thymele al centre. Escena (skene) amb el prosceni. Dos parodos amb portes monumentals. Proedria. Capacitat d'unes 12.000 a 14.000 persones. Acústica excel·lent. Pedra calcària. Art grec, finals de l'època clàssica."),
+        p("**b)** Teatre construït sobre el pendent d'un turó. Graderia (koilon) de més de mig cercle, amb 34 files a la part baixa i 21 a la part alta, separades pel diazoma, i dividida en sectors (kerkides) per escales radials. Orquestra circular d'uns 20 m, amb la thymele al centre. Escena (skene) amb el prosceni. Dos parodos amb portes monumentals. Proedria. Capacitat d'unes 13.000 a 14.000 persones. Acústica excel·lent. Pedra calcària. Art grec, finals de l'època clàssica."),
         p("**c)** S'hi representaven tragèdies i comèdies durant les festes religioses. El teatre tenia un sentit religiós (culte de Dionís) i cívic, i formava part de la vida del santuari. Avui s'hi fan representacions cada estiu."),
         p("**d)** Segons els criteris oficials de la Sèrie 0, per exemple, la disposició semicircular dels seients, les fileres esglaonades, l'escenari a la part baixa, els passadissos entre les graderies i la recerca d'una bona acústica i visibilitat. Com a complement, i no com a criteri oficial, també perduren els noms orquestra, escena i prosceni."),
     ),
