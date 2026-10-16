@@ -177,7 +177,7 @@ while ( have_posts() ) :
 						<?php if ( '' !== trim( wp_strip_all_tags( pdsha_html( 'pau_enunciat', $pid ) ) ) ) : ?>
 							<div class="um-box um-think pdsha-enunciat">
 								<?php if ( pdsha_f( 'ha_pau_etiqueta', $pid, '' ) ) : ?>
-									<span class="um-box-t">Exercici 2</span>
+									<span class="um-box-t">Exercici <?php echo esc_html( preg_match( '/Exercici (\d)/u', (string) pdsha_f( 'ha_pau_etiqueta', $pid, '' ), $pdsha_m ) ? $pdsha_m[1] : '2' ); ?></span>
 									<p class="pdsha-etiqueta"><em><?php echo esc_html( (string) pdsha_f( 'ha_pau_etiqueta', $pid, '' ) ); ?></em></p>
 								<?php endif; ?>
 								<?php echo pdsha_html( 'pau_enunciat', $pid ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- camp WYSIWYG formatat per ACF. ?>
