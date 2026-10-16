@@ -117,10 +117,10 @@ t_context = j(
     img('acropoli', '', "L'Acròpoli d'Atenes des del turó de Filopap.", 'El Partenó domina el turó sagrat de la ciutat.'),
     h3("Les etapes de l'art grec"),
     ul([
-        "**Època geomètrica** (segles IX i VIII aC). Ceràmica decorada amb formes geomètriques.",
+        "**Època geomètrica** (segles IX i VIII aC; segons alguns autors, des del segle X aC). Ceràmica decorada amb formes geomètriques.",
         "**Època arcaica** (segle VII aC - 480 aC). Primers temples de pedra i estàtues de kuros i kore.",
-        "**Època clàssica** (480-323 aC). L'Atenes de Pèricles, el Partenó, Policlet i Praxíteles.",
-        "**Època hel·lenística** (323-31 aC). Des de la mort d'Alexandre el Gran fins a la conquesta romana de l'últim regne hel·lenístic.",
+        "**Època clàssica** (480 aC - finals del segle IV aC). L'Atenes de Pèricles, el Partenó, Policlet i Praxíteles. Molts autors la fan acabar el 323 aC, amb la mort d'Alexandre el Gran.",
+        "**Època hel·lenística** (323-30 aC). Des de la mort d'Alexandre el Gran fins a la conquesta romana d'Egipte, l'últim gran regne hel·lenístic.",
     ]),
     box('Conceptes clau', ['Polis · colònia · santuari · Acròpoli · guerres mèdiques · lliga de Delos · democràcia · Pèricles · arcaic · clàssic · hel·lenístic.']),
 )
@@ -135,12 +135,12 @@ t_temple = j(
     ul([
         "**Dòric.** És el més sobri i robust. La columna no té base i descansa directament sobre l'**estilòbat**. El fust té estries d'aresta viva i el **capitell** és format per l'**equí**, una peça corbada, i l'**àbac**, una llosa quadrada. El fris alterna **tríglifs**, plaques amb ranures verticals, i **mètopes**, plaques llises o esculpides.",
         "**Jònic.** És més esvelt i decorat. La columna té **base** i el capitell té dues **volutes**, unes espirals. L'arquitrau es divideix en tres franges i el **fris** és **continu**, sense tríglifs, de manera que s'hi pot esculpir una narració seguida. De vegades les columnes se substitueixen per figures femenines, les **cariàtides**, com a l'Erectèon de l'Acròpoli.",
-        "**Corinti.** El capitell és una campana coberta de **fulles d'acant**. Apareix a finals del segle V aC, al principi només a l'interior dels edificis, i els romans el faran servir molt.",
+        "**Corinti.** El capitell és una campana coberta de **fulles d'acant**. Apareix més tard, a l'època clàssica, al principi només a l'interior dels temples, i els romans el faran servir molt.",
     ]),
     img('ordres', '', 'Els tres ordres grecs.', 'Dòric, jònic i corinti, amb les parts principals.'),
     h3('Les parts i els tipus de temple'),
     p("El temple s'aixeca sobre una plataforma de graons, el **crepidoma**, que acaba en l'**estilòbat**. La sala principal és la **naos** o cel·la. Davant hi ha un porxo, el **pronaos**, i, sovint, darrere n'hi ha un altre de simètric, l'**opistòdom**. Quan les columnes envolten tot l'edifici formen el **peristil**, i el temple és **períptere**. Segons el nombre de columnes de la façana, el temple és **hexàstil** (sis) o **octàstil** (vuit). Les estàtues que coronen els vèrtexs del frontó són els **acroteris**."),
-    img('cariatides', 'dreta', "Porxo de les Cariàtides de l'Erectèon (421-406 aC).", 'Les cariàtides fan de columnes. Les originals són al Museu de l\'Acròpoli, excepte una, que és al British Museum.'),
+    img('cariatides', 'dreta', "Porxo de les Cariàtides de l'Erectèon (finals del segle V aC).", 'Les cariàtides fan de columnes. Les originals són al Museu de l\'Acròpoli, excepte una, que és al British Museum.'),
     box('Conceptes clau', ['Sistema arquitravat · ordre · mòdul · crepidoma · estilòbat · fust · estria · capitell · equí · àbac · volutes · acant · entaulament · arquitrau · fris · tríglif · mètopa · cornisa · frontó · timpà · acroteri · naos · pronaos · opistòdom · peristil · períptere · cariàtide.']),
 )
 
