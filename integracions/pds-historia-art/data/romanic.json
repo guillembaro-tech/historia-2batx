@@ -53,6 +53,24 @@
    "credit": "Foto de PMRMaeyaert · CC BY-SA 3.0 · Wikimedia Commons",
    "titol": "Església de Sant Climent de Taüll",
    "alt": "Església de Sant Climent de Taüll"
+  },
+  "moissacportal": {
+   "file": "Moissac Abbaye portail sud.jpg",
+   "credit": "Foto d'Asabengurtza · CC BY-SA 3.0 · Wikimedia Commons",
+   "titol": "Portalada sud de Sant Pere de Moissac",
+   "alt": "Portalada sud de Sant Pere de Moissac"
+  },
+  "moissacmainell": {
+   "file": "Moissac, trumeau.JPG",
+   "credit": "Foto de Cancre · CC BY-SA 4.0 · Wikimedia Commons",
+   "titol": "Mainell de la portalada de Moissac",
+   "alt": "Mainell de la portalada de Moissac"
+  },
+  "santiagoseccio": {
+   "file": "propi:santiago-seccio-transversal",
+   "credit": "Dibuix propi · CC BY-SA 4.0",
+   "titol": "Secció transversal esquemàtica de la nau de la catedral de Santiago de Compostel·la",
+   "alt": "Secció transversal esquemàtica de la nau de la catedral de Santiago de Compostel·la"
   }
  },
  "estils": [
@@ -95,7 +113,7 @@
      "titol": "Artistes, societat i patrimoni",
      "llenguatge": "",
      "pregunta": "Qui eren els artistes romànics i de qui és avui aquest art?",
-     "cos": "<h3>L'artista anònim</h3><p>A l'edat mitjana, l'artista era considerat un <strong>artesà</strong>, i l'obra tenia valor perquè servia a Déu i a l'Església, no per qui la feia. Per això la majoria d'autors són anònims, i els historiadors els anomenen pel lloc on van treballar, com el Mestre de Taüll. Treballaven en <strong>tallers</strong> que es desplaçaven d'una obra a una altra. Hi ha algunes excepcions, com la inscripció del Pòrtic de la Glòria que dona el nom del Mestre Mateu. Un precedent anterior al romànic és el <em>Beatus</em> de Girona (975), on apareix el nom d'<strong>Ende</strong>, una de les primeres dones pintores documentades a la península Ibèrica.</p><h3>Patrimoni, museu i territori</h3><p>Moltes obres romàniques catalanes són avui al MNAC, lluny dels pobles on es van fer. El trasllat les va preservar i les fa accessibles a tothom, però les separa del seu context. La Vall de Boí combina les dues coses, amb esglésies declarades Patrimoni Mundial, reproduccions i una recreació digital a Sant Climent. Aquest debat entre la conservació in situ i la museïtzació és un tema habitual de l'exercici 4 de la PAU.</p>[[img:esglesia||Sant Climent de Taüll (Vall de Boí).|L'església, de tres naus i tres absis, i el campanar de torre, de sis pisos, decorat amb frisos d'arcuacions cegues entre lesenes, com en el romànic llombard.]]"
+     "cos": "<h3>L'artista anònim</h3><p>A l'edat mitjana, l'artista era considerat un <strong>artesà</strong>, i l'obra tenia valor perquè servia a Déu i a l'Església, no per qui la feia. Per això la majoria d'autors són anònims, i els historiadors els anomenen pel lloc on van treballar, com el Mestre de Taüll. Treballaven en <strong>tallers</strong> que es desplaçaven d'una obra a una altra. Hi ha algunes excepcions, com la inscripció del Pòrtic de la Glòria que dona el nom del Mestre Mateu. Un exemple anterior al romànic és el <em>Beatus</em> de Girona (975), on apareix el nom d'<strong>Ende</strong>, una de les primeres dones pintores documentades a la península Ibèrica.</p><h3>Patrimoni, museu i territori</h3><p>Moltes obres romàniques catalanes són avui al MNAC, lluny dels pobles on es van fer. El trasllat les va preservar i les fa accessibles a tothom, però les separa del seu context. La Vall de Boí combina les dues coses, amb esglésies declarades Patrimoni Mundial, reproduccions i una recreació digital a Sant Climent. Aquest debat entre la conservació in situ i la museïtzació és un tema habitual de l'exercici 4 de la PAU.</p>[[img:esglesia||Sant Climent de Taüll (Vall de Boí).|L'església, de tres naus i tres absis, i el campanar de torre, de sis pisos, decorat amb frisos d'arcuacions cegues entre lesenes, com en el romànic llombard.]]<div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Artesà · taller · autor anònim · Mestre Mateu · Ende · conservació in situ · museïtzació · Patrimoni Mundial.</p></div>"
     }
    ],
    "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em>, <em>Exemples d'exercicis PAU 2025</em> i <em>Sèrie 0 (2025)</em>, amb els criteris de correcció.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li><li>Gran Enciclopèdia Catalana. Articles «Sant Vicenç del Castell de Cardona» i «Sant Climent de Taüll».</li><li>Museu Nacional d'Art de Catalunya. Fitxa de la <em>Majestat Batlló</em>.</li><li>Centre del Romànic de la Vall de Boí. <em>El redescobriment del romànic</em>.</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
@@ -156,6 +174,12 @@
      "seccio": "inici",
      "titol": "La nau central, vista des de la tribuna",
      "text": "Volta de canó amb arcs torals i, a banda i banda, la tribuna. Al fons, el baldaquí barroc de l'altar major."
+    },
+    {
+     "clau": "santiagoseccio",
+     "seccio": "analisi",
+     "titol": "Secció transversal de la nau (esquema)",
+     "text": "Volta de canó a la nau central, voltes d'aresta a les laterals i la tribuna, coberta amb una volta de quart de canó, que contraresta l'empenta. La nau central no té claristori i rep la llum de manera indirecta."
     },
     {
      "clau": "portic",
@@ -228,10 +252,22 @@
    ],
    "imatges": [
     {
+     "clau": "moissacportal",
+     "seccio": "inici",
+     "titol": "La portalada sud, sota el porxo",
+     "text": "Timpà, dintell, mainell i brancals."
+    },
+    {
      "clau": "moissac",
      "seccio": "inici",
      "titol": "Timpà de la portalada de Sant Pere de Moissac (cap al 1120-1125)",
      "text": "Crist en majestat, el tetramorf, dos àngels i els ancians de l'Apocalipsi."
+    },
+    {
+     "clau": "moissacmainell",
+     "seccio": "analisi",
+     "titol": "El mainell",
+     "text": "Tres parelles de lleons entrecreuats fan de guardians de l'entrada."
     }
    ],
    "q_context": "On i quan es va fer aquesta portalada, i per a qui?",
@@ -247,8 +283,12 @@
     "hart-17"
    ],
    "tambe": "<p><strong>Exercici 1.</strong> Assenyalar les parts d'una portalada (timpà, arquivoltes, dintell, mainell i brancals).</p><p><strong>Exercici 4.</strong> El patrimoni. L'església i el claustre formen part, des del 1998, del bé del Patrimoni Mundial «Camins de Sant Jaume a França».</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Identifiqueu les parts de la portalada i expliqueu què és la llei d'adaptació al marc.</li><li>Expliqueu el tema del timpà i la funció que tenia per als fidels que entraven a l'església.</li><li>Compareu el timpà de Moissac amb el timpà central del Pòrtic de la Glòria. Quines semblances i quines diferències hi observeu?</li></ol>",
-   "fonts": "<ul><li>Media Center for Art History, Columbia University. Fitxa de l'abadia de Sant Pere de Moissac.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 1.</em></p><ol><li>Assenyaleu en una imatge de la portalada el timpà, el dintell, el mainell i els brancals. [0,5 punts]</li><li>Expliqueu què és la llei d'adaptació al marc i poseu-ne un exemple de Moissac. [0,5 punts]</li></ol>",
+   "fonts": "<ul><li>Media Center for Art History, Columbia University. Fitxa de l'abadia de Sant Pere de Moissac.</li><li><em>Catalunya Romànica</em>, Enciclopèdia Catalana. Article «Introducció al romànic».</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Portalada de Sant Pere de Moissac (portalada, timpà i mainell).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals de l'escultura de la portalada i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu el tema del timpà i la funció que tenia. [1 punt]</p><p>d) Compareu el timpà de Moissac amb el Pòrtic de la Glòria de Santiago de Compostel·la. Expliqueu-ne una semblança i una diferència. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Cap al 1120-1125, segons la datació més habitual, que encara es discuteix. S'admet la primera meitat del segle XII. Elements de context. És l'Europa feudal, en què l'Església és la institució més poderosa i la principal clienta dels artistes. Moissac és una abadia benedictina en un dels camins cap a Santiago, i els pelegrinatges fan circular persones i idees artístiques. És el romànic ple, quan les portalades i els capitells s'omplen d'escultura. La gran majoria dels fidels no sabia llegir, i l'escultura tenia una funció didàctica.</p><p><strong>b)</strong> Relleu en pedra, originalment policromat, al timpà, al dintell, al mainell i als brancals. Les figures s'adapten a l'espai semicircular (llei d'adaptació al marc) i l'omplen sense buits (horror vacui). La mida depèn de la importància de cada figura (jerarquia), i Crist és la més gran. Composició simètrica al voltant de Crist. Frontalitat i rigidesa. Formes esquemàtiques i plecs de la roba en línies paral·leles. Al mainell, tres parelles de lleons entrecreuats. L'estil és el romànic.</p><p><strong>c)</strong> Representa la visió de l'Apocalipsi (capítols 4 i 5). Al centre, Crist en majestat, coronat i assegut en un tron, envoltat del tetramorf, els símbols dels quatre evangelistes, i de dos àngels. Als registres inferiors, els ancians, amb corones, copes i instruments, giren el cap cap a Crist. La portalada marca el pas al lloc sagrat, presenta Crist com a rei i jutge de la fi dels temps i adverteix els fidels i els pelegrins que entren a l'església.</p><p><strong>d)</strong> Semblança. Tots dos representen la visió de l'Apocalipsi, amb Crist i els vint-i-quatre ancians. Diferència. Al Pòrtic de la Glòria (1188), uns seixanta anys posterior, les figures del Mestre Mateu tenen volum, es giren i dialoguen entre elles, mentre que a Moissac són més rígides i se sotmeten al marc.</p>"
   },
   {
    "origen": "hart-17",

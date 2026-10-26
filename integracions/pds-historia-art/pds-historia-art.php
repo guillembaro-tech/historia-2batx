@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Història de l'Art
  * Description: Història de l'Art de 2n de Batxillerat (PAU). Una pàgina per a cada obra de referència, agrupades per estil i per llenguatge artístic, amb la pàgina de cada estil com a tema del corrent. Mentre no es publica, només la veuen els administradors.
- * Version: 0.1.4
+ * Version: 0.1.9
  * Author: Professor de socials
  * License: GPL-2.0-or-later
  * Requires PHP: 8.1
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PDSHA_VER', '0.1.4' );
+define( 'PDSHA_VER', '0.1.9' );
 define( 'PDSHA_FILE', __FILE__ );
 define( 'PDSHA_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDSHA_URL', plugin_dir_url( __FILE__ ) );
@@ -29,6 +29,9 @@ require_once PDSHA_DIR . 'includes/data.php';
 require_once PDSHA_DIR . 'includes/routes.php';
 require_once PDSHA_DIR . 'includes/templates.php';
 require_once PDSHA_DIR . 'includes/import.php';
+require_once PDSHA_DIR . 'includes/presentacio.php';
+require_once PDSHA_DIR . 'includes/maqueta.php';
+require_once PDSHA_DIR . 'includes/video.php';
 
 register_activation_hook(
 	__FILE__,

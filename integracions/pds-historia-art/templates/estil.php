@@ -69,6 +69,14 @@ $per_n    = pdsha_obres_per_numero();
 				<?php if ( $seccions ) : ?>
 					<li><?php echo count( $seccions ); ?> <?php echo 1 === count( $seccions ) ? 'apartat' : 'apartats'; ?></li>
 				<?php endif; ?>
+				<?php $pdsha_pres = ( ! $es_per && ! $llg && $estil instanceof WP_Term && function_exists( 'pdsha_presentacio' ) && function_exists( 'pdsp_seccio' ) ) ? pdsha_presentacio( $estil->slug ) : null; ?>
+				<?php $pdsha_vid = ( ! $es_per && ! $llg && function_exists( 'pdsha_video_estil' ) ) ? pdsha_video_estil( $estil ) : null; ?>
+				<?php if ( $pdsha_vid ) : ?>
+					<li>Vídeo de l'estil<?php echo '' !== $pdsha_vid['durada'] ? ' (' . esc_html( $pdsha_vid['durada'] ) . ')' : ''; ?></li>
+				<?php endif; ?>
+				<?php if ( $pdsha_pres ) : ?>
+					<li>Presentació (<?php echo count( $pdsha_pres['diapositives'] ); ?> diapositives)</li>
+				<?php endif; ?>
 			</ul>
 			<div class="um-tools">
 				<div class="um-seg" role="group" aria-label="Mida del text">
@@ -102,6 +110,7 @@ $per_n    = pdsha_obres_per_numero();
 				<?php if ( $resum && ! $llg ) : ?>
 					<p class="um-intro"><?php echo pdsha_marques( $resum ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?></p>
 				<?php endif; ?>
+				<?php echo $pdsha_vid ? pdsha_video_estil_html( $estil ) : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a pds2_video_sc(). ?>
 
 				<?php if ( $es_per ) : ?>
 					<?php
@@ -159,7 +168,7 @@ $per_n    = pdsha_obres_per_numero();
 					<?php if ( ! empty( $s['pregunta'] ) ) : ?>
 						<p class="um-q"><?php echo esc_html( $s['pregunta'] ); ?></p>
 					<?php endif; ?>
-					<?php echo (string) ( $s['cos'] ?? '' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- camp WYSIWYG formatat per ACF. ?>
+					<?php echo pdsha_maqueta_cos( (string) ( $s['cos'] ?? '' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- camp WYSIWYG formatat per ACF; només s'hi reordenen les imatges. ?>
 					<?php
 					// Al final de l'apartat d'un llenguatge, les obres de la llista d'aquell llenguatge.
 					$del = ! empty( $s['llenguatge'] ) ? array_values( array_filter( $totes, static fn( $p ) => ( pdsha_llenguatge_de( $p->ID )?->slug ?? '' ) === $s['llenguatge'] ) ) : array();
@@ -184,6 +193,8 @@ $per_n    = pdsha_obres_per_numero();
 					<p class="um-foot-note">Material obert de professordesocials.cat amb llicència Creative Commons BY-SA 4.0. Les imatges tenen la llicència que s'indica a cadascuna.</p>
 				</section>
 			<?php endif; ?>
+
+			<?php echo $pdsha_pres ? pdsha_presentacio_seccio( $estil ) : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a pdsp_seccio(). ?>
 
 		</article>
 	</div>

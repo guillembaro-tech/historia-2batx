@@ -105,6 +105,11 @@ function pdsha_importa_imatge( string $clau, array $im ) {
 		)
 	);
 	$id = $ja ? (int) $ja[0] : 0;
+	// Dibuix propi ('propi:nom'). Ja és a la mediateca i no es baixa de Commons.
+	$propi = 0 === strpos( $file, 'propi:' );
+	if ( ! $id && $propi ) {
+		return new WP_Error( 'pdsha', 'Dibuix propi sense adjunt (' . $file . ')' );
+	}
 	if ( ! $id ) {
 		$ua  = 'professordesocials.cat/1.0 (https://professordesocials.cat)';
 		$api = add_query_arg(
@@ -157,7 +162,11 @@ function pdsha_importa_imatge( string $clau, array $im ) {
 		)
 	);
 	update_post_meta( $id, '_wp_attachment_image_alt', (string) ( $im['alt'] ?? $im['titol'] ?? '' ) );
-	update_post_meta( $id, 'pdsha_font_url', 'https://commons.wikimedia.org/wiki/File:' . rawurlencode( str_replace( ' ', '_', $file ) ) );
+	if ( $propi ) {
+		delete_post_meta( $id, 'pdsha_font_url' );
+	} else {
+		update_post_meta( $id, 'pdsha_font_url', 'https://commons.wikimedia.org/wiki/File:' . rawurlencode( str_replace( ' ', '_', $file ) ) );
+	}
 	return (int) $id;
 }
 

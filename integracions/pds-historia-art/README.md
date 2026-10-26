@@ -27,3 +27,13 @@ Pública des del 12 d'octubre de 2026 (opció `pdsha_publicat` = 1). Mentre l'op
 ## Contingut
 
 `data/*.json` es pot importar tantes vegades com calgui amb `pdsha_importa( 'romanic.json' )`. Cada obra guarda l'identificador d'origen (`pdsha_origen`) i cada imatge el nom del fitxer de Wikimedia Commons (`pdsha_commons`), i no es duplica res. L'autoria i la llicència de les imatges són a la llegenda de la mediateca.
+
+## Versions
+
+Aquesta carpeta és la còpia exacta del connector instal·lat al servidor el 26 d'octubre de 2026 (0.1.9), comprovada fitxer a fitxer amb l'MD5. Els JSON de `data/` són els publicats i coincideixen amb la base de dades.
+
+- **0.1.5.** Pestanya «Presentació» a les pàgines d'estil (`includes/presentacio.php`).
+- **0.1.6.** Dibuixos propis a la importació. Una imatge amb `file` = `propi:nom` ja és a la mediateca (meta `pdsha_commons` = `propi:nom`) i no es baixa de Commons.
+- **0.1.7.** Maquetació de les imatges dels temes dels estils (`includes/maqueta.php`).
+- **0.1.8.** Targeta «Vídeo de l'obra» a la fitxa de cada obra (`includes/video.php`, `templates/obra.php`). Metes de l'obra `_pdsha_video` (`id`, `durada`, `titol`) i `_pds2_llista_videos`. Fa servir `pds2_video_sc()` del connector `pds-2batx`.
+- **0.1.9.** Targeta «Vídeo de l'estil» a la pàgina de cada estil (`templates/estil.php`), amb la meta del terme `_pdsha_video`.

@@ -44,7 +44,7 @@
   },
   "smmfac": {
    "file": "Main facade - Basílica de Santa Maria del Mar - Barcelona 2014.jpg",
-   "credit": "Foto de José Luiz · CC BY-SA 3.0 · Wikimedia Commons",
+   "credit": "Foto de José Luiz Bernardes Ribeiro · CC BY-SA 3.0 · Wikimedia Commons",
    "titol": "Façana de Santa Maria del Mar",
    "alt": "Façana de Santa Maria del Mar"
   },
@@ -95,6 +95,60 @@
    "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
    "titol": "Jan van Eyck, El matrimoni Arnolfini",
    "alt": "Jan van Eyck, El matrimoni Arnolfini"
+  },
+  "chplanta": {
+   "file": "ChartresDB383.jpg",
+   "credit": "Dibuix publicat a Die kirchliche Baukunst des Abendlandes, de Georg Dehio i Gustav von Bezold · Domini públic · Wikimedia Commons",
+   "titol": "Planta de la catedral de Chartres",
+   "alt": "Planta de la catedral de Chartres"
+  },
+  "chalcat": {
+   "file": "ChartresSouthDehioVonBezold.jpg",
+   "credit": "Dibuix publicat a Die kirchliche Baukunst des Abendlandes, de Georg Dehio i Gustav von Bezold · Domini públic · Wikimedia Commons",
+   "titol": "Alçat del costat sud de la catedral de Chartres",
+   "alt": "Alçat del costat sud de la catedral de Chartres"
+  },
+  "smmplanta": {
+   "file": "Plan of Santa Maria del Mar, Barcelona.png",
+   "credit": "Dibuix publicat a Die kirchliche Baukunst des Abendlandes, de Georg Dehio i Gustav von Bezold · Domini públic · Wikimedia Commons",
+   "titol": "Planta de Santa Maria del Mar",
+   "alt": "Planta de Santa Maria del Mar"
+  },
+  "llotjaplanta": {
+   "file": "Llotja pla.jpg",
+   "credit": "Dibuix de Felivet · Domini públic · Wikimedia Commons",
+   "titol": "Planta de la Llotja de València",
+   "alt": "Planta de la Llotja de València"
+  },
+  "pmoises": {
+   "file": "Dijon (Côte-d'Or) - Puits de Moïse - Moïse.jpg",
+   "credit": "Foto de Morio60 · CC BY-SA 2.0 · Wikimedia Commons",
+   "titol": "Pou de Moisès, el profeta Moisès",
+   "alt": "Pou de Moisès, el profeta Moisès"
+  },
+  "scrovpeto": {
+   "file": "Giotto - Scrovegni - -31- - Kiss of Judas.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Giotto, Petó de Judes",
+   "alt": "Giotto, Petó de Judes"
+  },
+  "scrovdonant": {
+   "file": "Giotto di Bondone - Last Judgment (detail) - WGA09237.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Giotto, Judici Final (detall), Enrico Scrovegni ofereix la capella",
+   "alt": "Giotto, Judici Final (detall), Enrico Scrovegni ofereix la capella"
+  },
+  "arnmirall": {
+   "file": "Jan van Eyck - Portrait of Giovanni Arnolfini and his Wife (detail) - WGA7695.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Jan van Eyck, El matrimoni Arnolfini (detall del mirall i de la signatura)",
+   "alt": "Jan van Eyck, El matrimoni Arnolfini (detall del mirall i de la signatura)"
+  },
+  "arnmans": {
+   "file": "Jan van Eyck - Portrait of Giovanni Arnolfini and his Wife (detail) - WGA7696.jpg",
+   "credit": "Reproducció de l'obra · Domini públic · Wikimedia Commons",
+   "titol": "Jan van Eyck, El matrimoni Arnolfini (detall de les mans)",
+   "alt": "Jan van Eyck, El matrimoni Arnolfini (detall de les mans)"
   }
  },
  "estils": [
@@ -107,7 +161,7 @@
    "estil_dates": "Segles XII a XV",
    "estil_pregunta": "Per què les ciutats medievals van aixecar edificis tan alts i plens de llum, i com va canviar la manera de representar les persones?",
    "estil_resum": "L'art de l'Europa de les ciutats, entre mitjan segle XII i el segle XV. Catedrals altes i lluminoses gràcies a l'arc apuntat, la volta de creueria i els arcbotants, edificis civils com les llotges, i una escultura i una pintura cada vegada més naturalistes.",
-   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> Pot proposar qualsevol de les sis obres del gòtic de la llista (obres 18 a 23). A la PAU de 2026 (sèrie 1), la pregunta d de l'opció A demanava comparar <em>La mort de la Mare de Déu</em> de Caravaggio amb dues pintures que l'enunciat anomenava «del gòtic», una de Giotto i una d'Hugo van der Goes.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari de l'arquitectura gòtica (arc apuntat, volta de creueria, arcbotant) o identificar l'estil d'una obra.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> L'artista i els gremis, el paper de les ciutats i dels mercaders, o casos de patrimoni com Santa Maria del Mar o la Llotja de València.</p>",
+   "estil_pau": "<p><strong>Exercici 2 (4 punts).</strong> Pot proposar qualsevol de les sis obres del gòtic de la llista (obres 18 a 23). A la PAU de 2026 (sèrie 1), la pregunta d de l'opció A demanava comparar <em>La mort de la Mare de Déu</em> de Caravaggio amb dues pintures que l'enunciat anomenava «del gòtic», una de Giotto i una d'Hugo van der Goes.</p><p><strong>Exercici 1 (2 punts).</strong> Vocabulari de l'arquitectura gòtica (arc apuntat, volta de creueria, arcbotant) o identificar l'estil d'una obra.</p><p><strong>Exercicis 3 i 4 (2 punts cadascun).</strong> L'artista i els promotors, o casos de patrimoni. A la Sèrie 0 (2025), l'exercici 4, opció A, preguntava si una peça del retaule gòtic d'Escalarre havia de tornar a l'església o exposar-se a l'Ecomuseu d'Esterri d'Àneu.</p>",
    "estil_seccions": [
     {
      "titol": "Les ciutats, les catedrals i la llum",
@@ -138,9 +192,15 @@
      "llenguatge": "pintura",
      "pregunta": "On es pinta quan les esglésies es queden sense murs?",
      "cos": "<p>Les grans finestres gòtiques deixen poc espai per a la pintura mural, i la pintura es trasllada al <strong>vitrall</strong> i a la <strong>taula</strong>, sobretot als <strong>retaules</strong>, grans conjunts de pintures que es col·loquen darrere l'altar. Les tècniques són el <strong>tremp</strong>, amb pigments lligats amb rovell d'ou, i, des del segle XV, l'<strong>oli</strong>, amb pigments barrejats amb un oli assecant, que permet colors més intensos i detalls molt minuciosos.</p><p>L'Enciclopèdia Catalana distingeix quatre etapes a la pintura gòtica catalana.</p><ul><li><strong>Gòtic lineal</strong> (finals del segle XIII). Predomina el dibuix. Per exemple, les pintures murals de la conquesta de Mallorca (1285-1290), al MNAC.</li><li><strong>Italogòtic</strong> (segle XIV). Influència de la pintura italiana de Giotto i dels pintors de Siena. <strong>Ferrer Bassa</strong> el va introduir a partir del 1333, i va pintar la capella de Sant Miquel del monestir de Pedralbes (començada el 1346). Després, el taller dels germans <strong>Serra</strong>.</li><li><strong>Gòtic internacional</strong> (finals del segle XIV i començaments del XV). Elegància, colors vius i molts detalls. <strong>Lluís Borrassà</strong> (retaule de Santa Clara de Vic, 1415) i <strong>Bernat Martorell</strong> (retaule de Sant Jordi, cap al 1425-1437).</li><li><strong>Gòtic d'arrel flamenca</strong> (segle XV). Influència de la pintura a l'oli de Flandes. <strong>Lluís Dalmau</strong>, que havia viatjat a Flandes el 1431, va pintar la <em>Mare de Déu dels Consellers</em> (1443-1445). També <strong>Jaume Huguet</strong>.</li></ul>[[img:dalmau|dreta|Lluís Dalmau, Mare de Déu dels Consellers (1443-1445). MNAC.|Pintura a l'oli, amb la influència de Jan van Eyck.]]<p>A Europa, dues obres de la llista marquen els grans camins de la pintura del final de l'edat mitjana. <strong>Giotto</strong> (obra 22) dona volum i espai a les figures a Itàlia, i <strong>Jan van Eyck</strong> (obra 23) porta l'oli i el detall a la màxima perfecció a Flandes.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Vitrall · retaule · tremp · oli · gòtic lineal · italogòtic · gòtic internacional · gòtic flamenc.</p></div>"
+    },
+    {
+     "titol": "Artistes, ciutats i patrimoni",
+     "llenguatge": "",
+     "pregunta": "Qui feia i qui pagava l'art gòtic, i com el conservem i el fem servir avui?",
+     "cos": "<h3>Mestres d'obres, tallers i gremis</h3><p>Una catedral era una obra col·lectiva que podia durar dècades. La dirigia un <strong>mestre d'obres</strong>, que en feia el projecte i coordinava picapedrers, fusters, vidriers i escultors. A les ciutats, els artesans s'organitzaven en <strong>gremis</strong>, que regulaven l'aprenentatge i la feina de cada ofici. Els pintors treballaven per encàrrec i signaven un <strong>contracte</strong> amb el client. El de la <em>Mare de Déu dels Consellers</em> de Lluís Dalmau (1443) fixava la fusta, l'or del fons, el preu, el termini d'un any i fins i tot com havien d'aparèixer els consellers. Al final del període, l'artista guanya prestigi i deixa el seu nom a l'obra, com Jan van Eyck a la paret del <em>Matrimoni Arnolfini</em> (obra 23).</p><h3>Qui encarrega l'art</h3><p>Els clients ja no són només els bisbes i els monestirs. Hi ha reis i prínceps, com els ducs de Borgonya (obra 21), banquers, com Enrico Scrovegni (obra 22), mercaders, com probablement Giovanni Arnolfini (obra 23), i governs de ciutat, com el de València, que va fer construir la Llotja (obra 20). Sovint els <strong>promotors</strong> es fan representar dins de l'obra com a <strong>donants</strong>. Enrico Scrovegni apareix al <em>Judici Final</em> oferint la capella, i a la pintura de Dalmau els cinc consellers de Barcelona estan agenollats als costats de la Mare de Déu. També hi ha dones promotores, com la reina <strong>Elisenda de Montcada</strong>, que el 1327 va fundar el monestir de Pedralbes, a Barcelona.</p><h3>El gòtic avui. Museus, patrimoni i ciutat</h3><p>Molts retaules gòtics catalans van sortir de les seves esglésies a començaments del segle XX, per venda o per <strong>espoli</strong>, i avui estan repartits per museus i col·leccions. El retaule major de <strong>Sant Martí d'Escalarre</strong> (Pallars Sobirà), del Mestre de Son, es va fotografiar sencer el 1903 i després es va vendre a trossos. El 2024, la Generalitat en va comprar un fragment per exposar-lo a l'Ecomuseu de les Valls d'Àneu, a Esterri d'Àneu, prop de l'església d'origen. El debat entre la <strong>conservació in situ</strong>, és a dir, tornar l'obra al seu lloc, i la <strong>museïtzació</strong>, exposar-la en un museu, és el que plantejava l'exercici 4, opció A, de la Sèrie 0 (2025).</p><p>Les ciutats també han refet el seu passat gòtic. Segons la tesi doctoral d'Agustín Cócola (Universitat de Barcelona, 2010), bona part del <strong>Barri Gòtic</strong> de Barcelona es va construir o reconstruir aproximadament entre el 1927 i el 1970, després de la façana neogòtica de la catedral, començada el 1887, per oferir als visitants una imatge medieval de la ciutat. Per això és important distingir el <strong>gòtic</strong> medieval del <strong>neogòtic</strong>, la recuperació de l'estil als segles XIX i XX.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Conceptes clau</span><p>Mestre d'obres · gremi · contracte · promotor · donant · espoli · museïtzació · conservació in situ · neogòtic.</p></div><h3>Practica l'exercici 4</h3><p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><p>El Barri Gòtic és un dels espais més visitats de Barcelona. Molts visitants creuen que tot el que hi veuen és medieval, però una part dels edificis i dels elements d'aspecte gòtic es van construir o refer als segles XIX i XX, com la façana de la catedral.</p><ol><li>Expliqueu la diferència entre un edifici gòtic i un edifici neogòtic, i poseu-ne un exemple de cada a Catalunya. [1 punt]</li><li>Creieu que és encertat completar o refer un barri històric perquè sembli més antic i atregui visitants? Argumenteu la resposta tenint en compte la conservació del patrimoni, l'autenticitat i la vida dels veïns. [1 punt]</li></ol><p><strong>Pautes.</strong> a) El gòtic és l'art dels segles XII a XV. El neogòtic en recupera les formes als segles XIX i XX, sovint amb tècniques i finalitats noves. Per exemple, Santa Maria del Mar (1329-1383) és gòtica, i la façana de la catedral de Barcelona, començada el 1887, és neogòtica. b) Es valora que s'entengui el cas, que es faci servir la informació de l'enunciat i que l'argumentació sigui lògica, coherent i raonada, amb exemples diversos.</p>"
     }
    ],
-   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em> i examen de la PAU 2026 (sèrie 1).</li><li><em>L'art gòtic a Catalunya</em>, Enciclopèdia Catalana. Articles «L'art d'Europa i l'art de Catalunya», «Les tipologies de l'arquitectura religiosa», «Introducció a l'etapa inicial de l'escultura gòtica» i «Les tècniques de la pintura».</li><li>Gran Enciclopèdia Catalana. Articles «claristori», «Ferrer Bassa», «Lluís Borrassà», «Bernat Martorell», «el Tinell» i «Catedral de Barcelona».</li><li>Museu Nacional d'Art de Catalunya. Fitxes de la col·lecció d'art gòtic.</li><li>Encyclopaedia Britannica. Articles «Gothic architecture», «rib vault», «flying buttress», «triforium» i «rose window».</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
+   "estil_fonts": "<ul><li>Consell Interuniversitari de Catalunya. <em>Història de l'Art. PAU 2026. Obres de referència</em> i examen de la PAU 2026 (sèrie 1).</li><li><em>L'art gòtic a Catalunya</em>, Enciclopèdia Catalana. Articles «L'art d'Europa i l'art de Catalunya», «Les tipologies de l'arquitectura religiosa», «Introducció a l'etapa inicial de l'escultura gòtica» i «Les tècniques de la pintura».</li><li>Gran Enciclopèdia Catalana. Articles «claristori», «Ferrer Bassa», «Lluís Borrassà», «Bernat Martorell», «el Tinell» i «Catedral de Barcelona».</li><li>Museu Nacional d'Art de Catalunya. Fitxes de la col·lecció d'art gòtic.</li><li>Encyclopaedia Britannica. Articles «Gothic architecture», «rib vault», «flying buttress», «triforium» i «rose window».</li><li>Enciclopèdia Catalana, <em>L'art gòtic a Catalunya</em>. «Contracte del retaule de la Mare de Déu dels Consellers».</li><li>Ajuntament de Barcelona. <em>Guia del Monestir de Pedralbes</em>.</li><li>3Cat. «Una peça del retaule d'Escalarre espoliat torna al Pallars després d'un segle de peripècies» (juliol del 2024).</li><li>A. Cócola Gant. <em>El Barrio Gótico de Barcelona. Planificación del pasado e imagen de marca</em>. Tesi doctoral, Universitat de Barcelona, 2010.</li><li>Gran Enciclopèdia Catalana. Article «August Font i Carreras».</li><li>Consell Interuniversitari de Catalunya. Sèrie 0 (2025) i criteris de correcció, exercici 4, opció A.</li><li>Imatges de Wikimedia Commons, amb l'autoria i la llicència al peu de cadascuna.</li></ul>"
   }
  ],
  "obres": [
@@ -196,10 +256,16 @@
      "text": "Arcades, trifori i claristori, el típic alçat de tres pisos del gòtic clàssic."
     },
     {
-     "clau": "arcbotants",
+     "clau": "chplanta",
      "seccio": "analisi",
-     "titol": "Arcbotants de la capçalera",
-     "text": "Porten l'empenta de les voltes cap als contraforts exteriors."
+     "titol": "Planta",
+     "text": "Creu llatina amb tres naus, transsepte amb naus laterals i capçalera amb doble girola i capelles radials."
+    },
+    {
+     "clau": "chalcat",
+     "seccio": "analisi",
+     "titol": "Alçat del costat sud",
+     "text": "Els arcbotants porten l'empenta de les voltes fins als contraforts, i el mur s'obre amb grans finestrals i la rosassa del transsepte."
     },
     {
      "clau": "portal",
@@ -217,7 +283,7 @@
    "q_context": "Per què es reconstrueix la catedral tan de pressa i amb un estil nou?",
    "context": "<p>La catedral actual es comença després de l'incendi del <strong>10 de juny de 1194</strong>, que va destruir l'església romànica. El <strong>1221</strong> els canonges ja celebraven els oficis al nou cor, i la catedral es va consagrar el <strong>17 d'octubre de 1260</strong>. A la PAU es pot datar a finals del segle XII i al segle XIII.</p><p>És l'època del creixement de les ciutats i de la burgesia, i de monarquies cada vegada més fortes, com la dels reis de França. La catedral era l'església del bisbe i el gran edifici de la ciutat. A l'Île-de-France, la regió de París, el gòtic havia nascut uns cinquanta anys abans a l'abadia de Saint-Denis (1144).</p><p>Chartres era un gran santuari dedicat a la Mare de Déu. Des del 876, quan el rei Carles el Calb el va donar a la catedral, s'hi guarda el <strong>vel de la Mare de Déu</strong>, la relíquia més important, que atreia molts pelegrins. Segons la UNESCO, els portals del transsepte són del 1210 i els vitralls de cap al 1210-1250.</p>",
    "q_analisi": "Quins elements fan possible que la catedral sigui tan alta i lluminosa?",
-   "analisi": "<h3>Planta i alçat</h3><p>Té planta de creu llatina, amb transsepte i una capçalera amb <strong>girola</strong> i <strong>capelles radials</strong>. L'alçat de la nau té tres pisos, les <strong>arcades</strong>, el <strong>trifori</strong> i el <strong>claristori</strong>. Segons l'Enciclopèdia Catalana, és la primera gran catedral sense <strong>tribunes</strong>, que se substitueixen pels <strong>arcbotants</strong>. Les voltes de la nau arriben a uns 36 metres d'alçada.</p><h3>L'estructura</h3><p>Les <strong>voltes de creueria</strong> quadripartides concentren el pes en els pilars. Els <strong>arcbotants</strong> recullen l'empenta de les voltes per fora de l'edifici i la porten fins als contraforts. Com que els murs ja no han d'aguantar el pes, el claristori es pot omplir de grans finestrals.</p><h3>L'escultura dels portals</h3><p>El <strong>Portal Reial</strong>, a la façana occidental, és de cap al 1145-1155 i es va salvar de l'incendi. Té tres portes, i als laterals hi ha <strong>estàtues columna</strong>, figures allargades lligades a les columnes. Als portals del transsepte, del segle XIII, les figures són més naturals i tenen més volum.</p><h3>L'estil</h3><p>És <strong>gòtic clàssic</strong>. Combina la volta de creueria, l'arcbotant i l'alçat de tres pisos d'una manera que van seguir moltes catedrals franceses posteriors.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Creu llatina · girola · capelles radials · arcades · trifori · claristori · volta de creueria · arcbotant · contrafort · estàtua columna · rosassa · vitrall.</p></div>",
+   "analisi": "<h3>Planta i alçat</h3><p>Té planta de creu llatina, amb tres naus, un transsepte també amb naus laterals i una capçalera amb doble <strong>girola</strong> i <strong>capelles radials</strong>. L'alçat de la nau té tres pisos, les <strong>arcades</strong>, el <strong>trifori</strong> i el <strong>claristori</strong>. Segons l'Enciclopèdia Catalana, és la primera gran catedral sense <strong>tribunes</strong>, que se substitueixen pels <strong>arcbotants</strong>. Les voltes de la nau arriben a uns 37 metres d'alçada.</p><h3>L'estructura</h3><p>Les <strong>voltes de creueria</strong> són quadripartides i es fan sobre trams rectangulars, en lloc de les voltes sexpartides sobre trams quadrats d'algunes catedrals anteriors. Concentren el pes en els pilars. Els <strong>arcbotants</strong> recullen l'empenta de les voltes per fora de l'edifici i la porten fins als contraforts, com es veu a l'alçat del costat sud. Com que els murs ja no han d'aguantar el pes, el claristori es pot omplir de grans finestrals.</p><h3>L'escultura dels portals</h3><p>El <strong>Portal Reial</strong>, a la façana occidental, és de cap al 1145-1155 i es va salvar de l'incendi. Té tres portes, i als laterals hi ha <strong>estàtues columna</strong>, figures allargades lligades a les columnes. Als portals del transsepte, del segle XIII, les figures són més naturals i tenen més volum.</p><h3>L'estil</h3><p>És <strong>gòtic clàssic</strong>. Combina la volta de creueria, l'arcbotant i l'alçat de tres pisos d'una manera que van seguir moltes catedrals franceses posteriors.</p><div class=\"um-box um-key\"><span class=\"um-box-t\">Vocabulari per a la PAU</span><p>Creu llatina · girola · capelles radials · arcades · trifori · claristori · volta de creueria · arcbotant · contrafort · estàtua columna · rosassa · vitrall.</p></div>",
    "q_funcio": "Per a què servia la catedral i per què és tan important la llum?",
    "funcio": "<p>És la <strong>catedral</strong>, l'església del bisbe, i un gran santuari de pelegrinatge dedicat a la Mare de Déu, on es venera la relíquia del vel. La catedral també expressava l'orgull i la riquesa de la ciutat.</p><p>La llum que entra pels vitralls tenia un sentit religiós. Seguint les idees que l'abat Suger havia aplicat a Saint-Denis, la llum de colors es veia com una imatge de la presència de Déu. Els vitralls i les escultures explicaven la Bíblia i la vida dels sants als fidels.</p>",
    "destacat_titol": "Els vitralls",
@@ -230,8 +296,12 @@
     "hart-19"
    ],
    "tambe": "<p><strong>Exercici 1.</strong> Identificar en una imatge l'arc apuntat, la volta de creueria, l'arcbotant o la rosassa, o distingir l'alçat romànic del gòtic.</p><p><strong>Exercici 3.</strong> El treball col·lectiu dels mestres d'obres i dels tallers, i el paper de la ciutat i del bisbe com a promotors.</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Dateu la catedral de Chartres i situeu-la en el seu context històric i cultural.</li><li>Expliqueu com funcionen la volta de creueria i l'arcbotant, i per què permeten obrir els murs amb vitralls.</li><li>Compareu l'alçat de la nau de Chartres amb el de la catedral de Santiago de Compostel·la.</li></ol>",
-   "fonts": "<ul><li>Cathédrale de Chartres (web oficial). «Les grandes dates», «L'architecture» i «Les vitraux».</li><li>Gran Enciclopèdia Catalana. Article «Chartres».</li><li>UNESCO. Fitxa del Patrimoni Mundial «Chartres Cathedral».</li><li>Encyclopaedia Britannica. Article «Chartres Cathedral».</li><li>Centre international du vitrail (Chartres). <em>Couleurs de la lumière</em>.</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 1.</em></p><ol><li>Assenyaleu a la foto de la nau i a l'alçat l'arcada, el trifori, el claristori, l'arcbotant i el contrafort. [0,5 punts]</li><li>Expliqueu per què l'arcbotant permet obrir els murs amb vitralls. [0,5 punts]</li></ol>",
+   "fonts": "<ul><li>Cathédrale de Chartres (web oficial). «Les grandes dates», «L'architecture» i «Les vitraux».</li><li>Gran Enciclopèdia Catalana. Article «Chartres».</li><li>UNESCO. Fitxa del Patrimoni Mundial «Chartres Cathedral».</li><li>Encyclopaedia Britannica. Article «Chartres Cathedral».</li><li>Centre international du vitrail (Chartres). <em>Couleurs de la lumière</em>.</li><li>Encyclopædia Universalis. Article «Chartres, cathédrale de».</li><li>Larousse. Article «cathédrale Notre-Dame de Chartres».</li><li>G. Dehio i G. von Bezold. <em>Die kirchliche Baukunst des Abendlandes</em> (planta i alçat).</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Catedral de Chartres (façana occidental, interior de la nau, planta i alçat del costat sud).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de l'edifici i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu la funció de la catedral i el paper que hi tenen la llum i els vitralls. [1 punt]</p><p>d) Compareu l'alçat de la nau de Chartres amb el de la catedral de Santiago de Compostel·la. Expliqueu-ne dues diferències. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> La catedral actual es comença després de l'incendi del 10 de juny de 1194, el 1221 els canonges ja fan els oficis al nou cor i es consagra el 17 d'octubre de 1260. S'admeten finals del segle XII i el segle XIII. Elements de context. Les ciutats i la burgesia creixen, i les monarquies, com la dels reis de França, es fan més fortes. La catedral és l'església del bisbe i l'orgull de la ciutat. La cultura passa als centres urbans, amb les universitats i l'escolàstica. El gòtic havia nascut a l'Île-de-France uns cinquanta anys abans, a Saint-Denis (1144). Chartres era un gran santuari de pelegrinatge dedicat a la Mare de Déu, on es venerava la relíquia del vel.</p><p><strong>b)</strong> Planta de creu llatina, amb tres naus, transsepte amb naus laterals i capçalera amb doble girola i capelles radials. Alçat de tres pisos (arcades, trifori i claristori), sense tribunes. Arc apuntat. Voltes de creueria quadripartides sobre trams rectangulars, que concentren el pes en els pilars. Arcbotants i contraforts exteriors que recullen l'empenta de les voltes. Murs oberts amb grans finestrals de vitralls i tres grans rosasses. Portal Reial (cap al 1145-1155) amb estàtues columna. L'estil és el gòtic clàssic, el model que van seguir moltes catedrals franceses posteriors.</p><p><strong>c)</strong> És la catedral, l'església del bisbe, i un gran santuari de pelegrinatge dedicat a la Mare de Déu. També expressava l'orgull i la riquesa de la ciutat. La llum de colors que entra pels vitralls tenia un sentit religiós. Seguint les idees que l'abat Suger havia aplicat a Saint-Denis, la llum es veia com una imatge de la presència de Déu. Els vitralls i l'escultura explicaven la Bíblia i la vida dels sants als fidels.</p><p><strong>d)</strong> La catedral de Santiago (obra 15) és romànica. La nau central es cobreix amb una volta de canó amb arcs torals de mig punt, i la tribuna en contraresta l'empenta, de manera que no hi ha claristori i l'interior és penombrós. A Chartres, l'arc apuntat, la volta de creueria i els arcbotants exteriors permeten suprimir la tribuna, aixecar la nau fins a uns 37 metres i obrir el claristori amb vitralls. L'interior és alt, vertical i lluminós.</p>"
   },
   {
    "origen": "hart-19",
@@ -283,6 +353,12 @@
      "seccio": "inici",
      "titol": "L'interior",
      "text": "Pilars octogonals molt separats i naus d'alçada semblant."
+    },
+    {
+     "clau": "smmplanta",
+     "seccio": "analisi",
+     "titol": "Planta",
+     "text": "Tres naus sense transsepte, girola i capelles entre els contraforts."
     }
    ],
    "q_context": "Qui va pagar i construir una església tan gran en un barri de mariners i mercaders?",
@@ -301,8 +377,12 @@
     "hart-20"
    ],
    "tambe": "<p><strong>Exercici 1.</strong> Assenyalar a la planta les tres naus, la girola i les capelles entre contraforts.</p><p><strong>Exercici 4.</strong> El patrimoni i la memòria. La destrucció del 1936 i la restauració, o el turisme al barri de la Ribera.</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Dateu Santa Maria del Mar i relacioneu-la amb la Barcelona i la Corona d'Aragó del segle XIV.</li><li>Exposeu cinc característiques del gòtic català que es veuen en aquesta església.</li><li>Esmenteu dues diferències entre Santa Maria del Mar i la catedral de Chartres.</li></ol>",
-   "fonts": "<ul><li><em>L'art gòtic a Catalunya</em>, Enciclopèdia Catalana. Articles «Santa Maria del Mar» i «Esglésies seculars i regulars als segles XIV i XV».</li><li>Gran Enciclopèdia Catalana. Article «Santa Maria del Mar».</li><li>Basílica de Santa Maria del Mar (web oficial). «History».</li><li>Universitat Politècnica de Catalunya, Institut d'Arquitectura i Història de la Construcció. Fitxa de Santa Maria del Mar.</li><li>Santa Seu. Carta apostòlica <em>Venerabilis frater</em> (1923).</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>El 1936, al començament de la Guerra Civil, un incendi va destruir l'altar major barroc i bona part del mobiliari de Santa Maria del Mar. La restauració es va fer entre el 1940 i el 1967, i avui l'interior és molt més despullat que a l'època barroca.</p><ol><li>Expliqueu com ha canviat la manera de veure l'edifici després de l'incendi i de la restauració. [1 punt]</li><li>Creieu que una restauració ha de tornar un edifici al seu aspecte original o ha de respectar els canvis de la seva història? Argumenteu la resposta amb exemples. [1 punt]</li></ol>",
+   "fonts": "<ul><li><em>L'art gòtic a Catalunya</em>, Enciclopèdia Catalana. Articles «Santa Maria del Mar» i «Esglésies seculars i regulars als segles XIV i XV».</li><li>Gran Enciclopèdia Catalana. Article «Santa Maria del Mar».</li><li>Basílica de Santa Maria del Mar (web oficial). «History».</li><li>Universitat Politècnica de Catalunya, Departament d'Enginyeria Civil i Ambiental. <em>Inspection and Analysis of Historical Constructions</em> (IAHC), fitxa de Santa Maria del Mar.</li><li>Santa Seu. Carta apostòlica <em>Venerabilis frater</em> (1923).</li><li>G. Dehio i G. von Bezold. <em>Die kirchliche Baukunst des Abendlandes</em> (planta).</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Santa Maria del Mar, Barcelona (façana, interior i planta).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de l'edifici i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu la funció de l'església i el paper que hi van tenir els veïns del barri de la Ribera. [1 punt]</p><p>d) Esmenteu dues diferències entre Santa Maria del Mar i la catedral de Chartres, i dos edificis més del gòtic català. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Primera pedra el 25 de març de 1329. L'última volta es tanca el novembre de 1383. S'admet el segle XIV. Elements de context. És l'època de l'expansió de la Corona d'Aragó per la Mediterrània, i la làpida de la primera pedra esmenta la conquesta de Sardenya. Barcelona és una gran ciutat marítima i comercial, i el barri de la Ribera, el centre de la vida del port. L'obra té el suport dels reis Alfons el Benigne i Pere el Cerimoniós. Els veïns del barri hi participen, com els bastaixos, que portaven la pedra de Montjuïc sense cobrar. Es construeix en poc més de cinquanta anys, molt de pressa per a l'època, i per això l'edifici és molt unitari.</p><p><strong>b)</strong> Tres naus de quatre trams, sense transsepte, i absis poligonal amb girola. Capelles entre els contraforts. Pilars octogonals molt prims i sense nervis, separats uns 13 metres. Voltes de creueria. La nau central, d'uns 33 metres d'alçada, només és uns cinc metres més alta que les laterals, i l'espai sembla una sola gran sala. Exterior sobri, amb murs llisos, contraforts massissos, terrats i torres octogonals sense agulla. Rosassa a la façana. L'estil és el gòtic català, que busca l'amplada, l'horitzontalitat i la unitat de l'espai.</p><p><strong>c)</strong> És una església parroquial dedicada a la Mare de Déu, la parròquia del barri de la Ribera. La van impulsar i finançar sobretot els veïns, mercaders, mariners i menestrals, amb el suport dels reis. Es va convertir en un símbol del barri i del poder comercial de la Barcelona medieval. Els bastaixos, que hi van portar la pedra, surten representats als capitells i a les portes. Pius XI la va declarar basílica el 1923.</p><p><strong>d)</strong> La catedral de Chartres (obra 18) és vertical, amb una nau central molt més alta que les laterals, arcbotants exteriors i murs plens de vitralls. Santa Maria del Mar busca l'amplada i l'horitzontalitat, té naus d'alçada semblant i amaga els contraforts entre les capelles. A més, Chartres té transsepte i Santa Maria del Mar no. Altres edificis del gòtic català són la catedral de Barcelona, Santa Maria del Pi, la catedral de Girona i el Saló del Tinell.</p>"
   },
   {
    "origen": "hart-20",
@@ -354,6 +434,12 @@
      "seccio": "inici",
      "titol": "La sala de contractació",
      "text": "Columnes helicoïdals que s'obren en els nervis de les voltes."
+    },
+    {
+     "clau": "llotjaplanta",
+     "seccio": "analisi",
+     "titol": "Planta",
+     "text": "La sala de contractació, la torre, el Consolat de Mar i el pati dels Tarongers."
     }
    ],
    "q_context": "Per què una ciutat construeix un edifici tan luxós per comerciar?",
@@ -369,8 +455,12 @@
     "hart-18"
    ],
    "tambe": "<p><strong>Exercici 3.</strong> El paper dels mercaders i de les ciutats com a promotors de l'art.</p><p><strong>Exercici 4.</strong> El patrimoni mundial i el turisme a València.</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Dateu la Llotja de València i expliqueu el context econòmic de la ciutat al segle XV.</li><li>Descriviu la sala de contractació i expliqueu la funció de l'edifici.</li><li>Per què es diu que el gòtic és també un art de les ciutats? Poseu-ne dos exemples.</li></ol>",
-   "fonts": "<ul><li>UNESCO. Fitxa del Patrimoni Mundial «La Lonja de la Seda de Valencia» i document d'avaluació.</li><li>Gran Enciclopèdia Catalana. Article «Llotja de València», i <em>Història. Política, societat i cultura dels Països Catalans</em>, «La llotja de València» i «Els consolats de mar i comerç».</li><li>Ajuntament de València. Fitxa del Catàleg de béns «Lonja de la Seda».</li><li>Universitat Politècnica de València. Estudi sobre la Llotja de València (2025).</li><li>Visit València. «Llotja de la Seda».</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 4.</em></p><p>La Llotja de València és Patrimoni Mundial de la UNESCO des del 1996.</p><ol><li>Expliqueu per què un edifici civil com la Llotja pot ser tan important per al patrimoni com una catedral. [1 punt]</li><li>Proposeu dues mesures per fer compatible el turisme amb la conservació de l'edifici. [1 punt]</li></ol>",
+   "fonts": "<ul><li>UNESCO. Fitxa del Patrimoni Mundial «La Lonja de la Seda de Valencia» i document d'avaluació.</li><li>Gran Enciclopèdia Catalana. Article «Llotja de València», i <em>Història. Política, societat i cultura dels Països Catalans</em>, «La llotja de València» i «Els consolats de mar i comerç».</li><li>Ajuntament de València. Fitxa del Catàleg de béns «Lonja de la Seda».</li><li>Universitat Politècnica de València. Estudi sobre la Llotja de València (2025).</li><li>Visit València. «Llotja de la Seda».</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Llotja de València (façana, sala de contractació i planta).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i estructurals de l'edifici, sobretot de la sala de contractació, i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu la funció de l'edifici. [1 punt]</p><p>d) Relacioneu la Llotja amb altres edificis civils del gòtic de la Corona d'Aragó. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> La sala de contractació es construeix entre el 1482 i el 1498, i el conjunt s'acaba al segle XVI. S'admeten finals del segle XV. Elements de context. València era una de les ciutats més poblades i riques de la Corona d'Aragó. La seva prosperitat es basava en el comerç, sobretot de la seda. La ciutat volia un edifici per als tractes dels mercaders que mostrés aquesta riquesa, com les llotges de Barcelona, Palma o Perpinyà. És una obra del gòtic final, quan en altres llocs d'Europa ja començava el Renaixement.</p><p><strong>b)</strong> Gran sala rectangular, d'uns 36 per 21 metres, dividida en tres naus. Vuit columnes helicoïdals exemptes i setze més adossades als murs. Les columnes, de gairebé 16 metres, giren com un cargol i, sense capitells, s'obren a dalt en els nervis de les voltes de creueria, com palmeres. Espai alt, lluminós i diàfan. A l'exterior, merlets i gàrgoles, i una torre amb una escala de cargol sense eix central. L'estil és el gòtic civil del gòtic final, amb formes decoratives i dinàmiques.</p><p><strong>c)</strong> Era l'edifici del comerç, on els mercaders feien els tractes, sobretot de seda. Hi tenia la seu la Taula de Canvis, i al Consolat de Mar hi havia el tribunal que resolia els conflictes del comerç marítim. Una inscripció en llatí del 1498 recorda que el comerç és bo quan no enganya i quan no presta a usura, i que el mercader honest guanyarà la vida eterna. Segons la UNESCO, il·lustra el poder i la riquesa de les grans ciutats mercantils de la Mediterrània.</p><p><strong>d)</strong> La Llotja de Barcelona, amb la gran sala de Pere Arvei (acabada el 1392), la Llotja de Palma i el Saló del Tinell de Barcelona, cobert amb grans arcs de diafragma. Com la Llotja de València, mostren que el gòtic també va ser l'art de les ciutats, dels mercaders i dels reis, i no només de les esglésies. Comparteixen la recerca d'espais amplis i diàfans.</p>"
   },
   {
    "origen": "hart-21",
@@ -412,6 +502,12 @@
    ],
    "imatges": [
     {
+     "clau": "pmoises",
+     "seccio": "inici",
+     "titol": "Moisès",
+     "text": "El profeta que avui dona nom al conjunt. A sobre, dos àngels amb les ales esteses."
+    },
+    {
      "clau": "sluter1",
      "seccio": "inici",
      "titol": "Jeremies i Zacaries",
@@ -419,7 +515,7 @@
     },
     {
      "clau": "sluter2",
-     "seccio": "inici",
+     "seccio": "analisi",
      "titol": "El profeta Daniel",
      "text": "Rostre expressiu, barba i turbant treballats amb molt de detall."
     }
@@ -437,8 +533,12 @@
     "hart-23"
    ],
    "tambe": "<p><strong>Exercici 3.</strong> L'artista de cort i el mecenatge dels prínceps, com els ducs de Borgonya.</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Situeu el <em>Pou de Moisès</em> en el seu context i expliqueu qui el va encarregar i per a quin lloc.</li><li>Analitzeu les característiques formals de les figures dels profetes.</li><li>Compareu aquesta obra amb la portalada de Moissac. Quins canvis hi observeu en la representació de la figura humana?</li></ol>",
-   "fonts": "<ul><li>Encyclopaedia Britannica. Article «Claus Sluter».</li><li>Gran Enciclopèdia Catalana. Article «Claus Sluter».</li><li>Smarthistory. «Claus Sluter, The Well of Moses».</li><li>Ministère de la Culture (França). Base Mérimée, «Ancienne chartreuse de Champmol».</li><li>Inventari del patrimoni de Bourgogne-Franche-Comté. Dossier de la cartoixa de Champmol.</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 3.</em></p><ol><li>Per què els prínceps, com els ducs de Borgonya, encarregaven obres als millors artistes del seu temps? [1 punt]</li><li>Quina relació hi havia entre l'artista i el seu promotor a la fi de l'edat mitjana? Poseu-ne un exemple. [1 punt]</li></ol>",
+   "fonts": "<ul><li>Encyclopaedia Britannica. Article «Claus Sluter».</li><li>Gran Enciclopèdia Catalana. Article «Claus Sluter».</li><li>Smarthistory. «Claus Sluter, The Well of Moses».</li><li>Ministère de la Culture (França). Base Mérimée, «Ancienne chartreuse de Champmol».</li><li>Inventari del patrimoni de Bourgogne-Franche-Comté. Dossier de la cartoixa de Champmol.</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Claus Sluter, Pou de Moisès (Dijon).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals de les figures dels profetes i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu el tema i la funció de l'obra. [1 punt]</p><p>d) Compareu la representació de la figura humana al Pou de Moisès i a la portalada de Moissac. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> Entre el 1395 i el 1405, aproximadament. S'admeten finals del segle XIV i començament del XV. Elements de context. Es fa per a la cartoixa de Champmol, a Dijon, que Felip l'Ardit, duc de Borgonya, va fundar a la dècada del 1380 com a panteó de la seva dinastia. Els ducs de Borgonya eren uns dels prínceps més rics d'Europa i tenien a la cort grans artistes del nord, com Claus Sluter, d'origen neerlandès, i el pintor Jean Malouel, que en va fer la policromia. És el final del gòtic, quan l'art de les corts busca alhora el luxe i una representació més real de les persones.</p><p><strong>b)</strong> Base hexagonal de gairebé set metres, amb sis profetes a mida natural (Moisès, David, Jeremies, Zacaries, Daniel i Isaïes) que porten llibres o filactèries, i àngels que ploren als angles. Escultura en pedra, originalment policromada i daurada. Figures de gran volum i pes. Robes amples amb plecs profunds de llum i ombra. Rostres individuals i expressius. Les figures ja no estan sotmeses a l'arquitectura. L'estil és el gòtic final de l'escola borgonyona, d'un gran realisme.</p><p><strong>c)</strong> Era la base d'un calvari, amb Crist a la creu i Maria Magdalena agenollada, al centre del gran claustre de la cartoixa. Els profetes havien anunciat la mort de Crist, i els àngels n'expressen el dolor. El conjunt era un símbol de la font de la vida, la salvació que neix de la mort de Crist, i antigament se'n deia la Gran Creu. Era una obra de devoció per als monjos i una mostra del poder i de la riquesa del duc.</p><p><strong>d)</strong> A la portalada de Moissac (obra 16, cap al 1120-1125), les figures són planes, frontals i rígides, se sotmeten a la llei d'adaptació al marc i la seva mida depèn de la jerarquia. Al Pou de Moisès, les figures tenen volum i pes, ocupen l'espai, tenen rostres individuals i expressen sentiments. Del romànic al gòtic final, l'escultura passa d'una imatge simbòlica a una representació més naturalista de la persona.</p>"
   },
   {
    "origen": "hart-22",
@@ -490,6 +590,18 @@
      "seccio": "analisi",
      "titol": "Plor sobre Crist mort",
      "text": "Figures d'esquena, gestos de dolor i una diagonal que porta la mirada cap a Crist."
+    },
+    {
+     "clau": "scrovpeto",
+     "seccio": "analisi",
+     "titol": "Petó de Judes",
+     "text": "Crist i Judes es miren als ulls enmig de les llances i les torxes."
+    },
+    {
+     "clau": "scrovdonant",
+     "seccio": "funcio",
+     "titol": "Judici Final (detall)",
+     "text": "Enrico Scrovegni, agenollat, ofereix una maqueta de la capella. El promotor apareix dins de l'obra."
     }
    ],
    "q_context": "Per què un banquer va encarregar una capella com aquesta?",
@@ -508,7 +620,9 @@
    "pau_etiqueta": "Enunciat oficial, PAU 2026 (sèrie 1). Exercici 2, opció A, pregunta d.",
    "pau_enunciat": "<p>L'opció A analitzava <em>La mort de la Mare de Déu</em> de Caravaggio. La darrera pregunta mostrava dues pintures, <em>La mort de la Mare de Déu</em> de Giotto (cap al 1310) i la d'Hugo van der Goes (cap al 1480).</p><p>d) A partir d'aquestes dues pintures del gòtic, assenyaleu dos trets diferenciadors en la representació del que és sagrat respecte a l'obra de Caravaggio. [0,5 punts]</p>",
    "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Dateu els frescos de la capella dels Scrovegni i situeu-los en el seu context.</li><li>Analitzeu les innovacions de Giotto a partir del <em>Plor sobre Crist mort</em>.</li><li>Compareu la pintura de Giotto amb la de Sant Climent de Taüll.</li></ol>",
-   "fonts": "<ul><li>Comune di Padova. «Cappella degli Scrovegni» (Padova Cultura) i web oficial de la capella.</li><li>Encyclopaedia Britannica. Article «Arena Chapel».</li><li>UNESCO. Fitxa del Patrimoni Mundial «Padua's fourteenth-century fresco cycles».</li><li>Gran Enciclopèdia Catalana. Articles «Giotto di Bondone» i «fresc».</li><li>Smarthistory. «Giotto, Arena (Scrovegni) Chapel».</li><li>National Gallery (Londres). Glossari, «fresco».</li><li>Consell Interuniversitari de Catalunya. Examen d'Història de l'Art, PAU 2026 (sèrie 1).</li></ul>"
+   "fonts": "<ul><li>Comune di Padova. «Cappella degli Scrovegni» (Padova Cultura) i web oficial de la capella.</li><li>Encyclopaedia Britannica. Article «Arena Chapel».</li><li>UNESCO. Fitxa del Patrimoni Mundial «Padua's fourteenth-century fresco cycles».</li><li>Gran Enciclopèdia Catalana. Articles «Giotto di Bondone» i «fresc».</li><li>Smarthistory. «Giotto, Arena (Scrovegni) Chapel».</li><li>National Gallery (Londres). Glossari, «fresco».</li><li>Consell Interuniversitari de Catalunya. Examen d'Història de l'Art, PAU 2026 (sèrie 1).</li><li>Staatliche Museen zu Berlin. Fitxa de Giotto, <em>La mort de la Mare de Déu</em> (cap al 1310).</li><li>Flemish Art Collection. Fitxa d'Hugo van der Goes, <em>La mort de la Mare de Déu</em> (Groeningemuseum, Bruges).</li><li>Ministère de la Culture, base Joconde. Fitxa de Caravaggio, <em>La Mort de la Vierge</em> (Museu del Louvre).</li></ul>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><em>No són els criteris oficials de correcció.</em></p><p>Es demanen dos trets diferenciadors. Com a orientació, uns 0,25 punts cadascun. Per exemple, aquests.</p><ul><li><strong>El món celestial, visible o no.</strong> A la pintura de Giotto (cap al 1310), Crist és al centre de l'escena, entre àngels, i totes les figures sagrades porten nimbe daurat. A la d'Hugo van der Goes, Crist apareix a dalt, dins d'una llum, entre àngels que han d'acompanyar l'ànima de la Mare de Déu al cel. Caravaggio no mostra cap escena celestial. El sagrat s'expressa amb la llum i amb el dolor humà dels apòstols i de Maria Magdalena.</li><li><strong>L'espai sagrat i l'espai real.</strong> Giotto pinta sobre fons d'or, un espai simbòlic que representa el món diví, i a Van der Goes l'aparició celestial ocupa la part de dalt de la cambra. Caravaggio situa l'escena en una habitació fosca i senzilla, amb un gran drap vermell, il·luminada per una llum que entra des de dalt a l'esquerra, sense cap obertura cap al cel.</li><li><strong>El cos de la Mare de Déu.</strong> A les pintures gòtiques, la Mare de Déu té un cos digne i idealitzat, i a Giotto les figures s'ordenen de manera simètrica al seu voltant. Caravaggio pinta un cos real i sense idealitzar. L'obra l'havia encarregat Laerzio Cherubini per a l'església de Santa Maria della Scala, al Trastevere de Roma, i el clergat la va rebutjar per raons de decència.</li></ul>"
   },
   {
    "origen": "hart-23",
@@ -554,6 +668,18 @@
      "seccio": "inici",
      "titol": "El matrimoni Arnolfini (1434)",
      "text": "Oli sobre taula, 82,2 × 60 cm. National Gallery, Londres."
+    },
+    {
+     "clau": "arnmirall",
+     "seccio": "analisi",
+     "titol": "El mirall i la signatura",
+     "text": "«Johannes de Eyck fuit hic. 1434». El mirall convex reflecteix l'habitació des del darrere i dues figures més a la porta."
+    },
+    {
+     "clau": "arnmans",
+     "seccio": "funcio",
+     "titol": "Les mans",
+     "text": "L'home sosté amb la mà esquerra la mà dreta de la dona."
     }
    ],
    "q_context": "Qui eren els personatges i en quin món vivien?",
@@ -569,8 +695,12 @@
     "hart-21"
    ],
    "tambe": "<p><strong>Exercici 3.</strong> La imatge de l'home i de la dona en el retrat, l'autoria i la signatura de l'artista, o el mercat de l'art i els museus.</p>",
-   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial).</em></p><ol><li>Dateu l'obra i situeu-la en el context de la Flandes del segle XV.</li><li>Expliqueu les característiques de la pintura a l'oli de Van Eyck a partir d'aquest quadre.</li><li>Què pot indicar la signatura «Johannes de Eyck fuit hic»? Relacioneu-ho amb la consideració de l'artista a la fi de l'edat mitjana.</li></ol>",
-   "fonts": "<ul><li>National Gallery (Londres). Fitxa «The Arnolfini Portrait» i audiodescripció.</li><li>Gran Enciclopèdia Catalana. Article «Jan van Eyck».</li><li>Smarthistory. «Jan van Eyck, The Arnolfini Portrait».</li><li>Ressenya de Lorne Campbell a <em>caa.reviews</em> i estudi a <em>Venezia Arti</em> (2017) sobre la identitat dels personatges.</li></ul>"
+   "pau_propostes": "<p><em>Proposta en format PAU (no és un enunciat oficial). Exercici 3.</em></p><ol><li>Què pot indicar la signatura «Johannes de Eyck fuit hic»? Relacioneu-ho amb la consideració de l'artista a la fi de l'edat mitjana. [1 punt]</li><li>Com es representen l'home i la dona en aquest retrat? Comenteu la postura, el gest i l'espai que ocupa cadascun. [1 punt]</li></ol>",
+   "fonts": "<ul><li>National Gallery (Londres). Fitxa «The Arnolfini Portrait» i audiodescripció.</li><li>Gran Enciclopèdia Catalana. Article «Jan van Eyck».</li><li>Smarthistory. «Jan van Eyck, The Arnolfini Portrait».</li><li>Ressenya de Lorne Campbell a <em>caa.reviews</em> i estudi a <em>Venezia Arti</em> (2017) sobre la identitat dels personatges.</li></ul>",
+   "pau_etiqueta": "Proposta en format PAU (no és un enunciat oficial).",
+   "pau_enunciat": "<p>Jan van Eyck, <em>El matrimoni Arnolfini</em> (National Gallery, Londres).</p><p>a) Dateu l'obra i situeu-la en el context històric i cultural corresponent. [1 punt]</p><p>b) Analitzeu les característiques formals i la tècnica de la pintura i indiqueu-ne l'estil. [1 punt]</p><p>c) Expliqueu el tema i la funció de l'obra i les interpretacions que se n'han fet. [1 punt]</p><p>d) Compareu aquesta obra amb els frescos de Giotto a la capella dels Scrovegni. [1 punt]</p>",
+   "pau_criteris": "",
+   "pau_model": "<h3>Pautes de resposta</h3><p><strong>a)</strong> 1434, segons la data que el pintor va escriure al quadre. S'admet la primera meitat del segle XV. Elements de context. Flandes, amb ciutats com Bruges i Gant, era un dels grans centres del comerç europeu, sobretot de draps i de luxe. Hi vivien mercaders i banquers de tot Europa, també italians, com probablement Giovanni di Nicolao Arnolfini. Jan van Eyck treballava per als ducs de Borgonya i per a la burgesia rica de les ciutats flamenques. És el final del gòtic al nord d'Europa, i l'Enciclopèdia Catalana considera Van Eyck alhora la culminació de l'art medieval i l'inici de l'art renaixentista.</p><p><strong>b)</strong> Oli sobre taula, de format petit (82,2 × 60 cm). Pintura amb veladures, capes de color fines i transparents, que donen colors intensos i brillants. Detall minuciós i textura de cada objecte, com el pèl del gos, el metall de l'aranya o la pell del vestit. Llum que entra per la finestra i dona unitat a l'espai. Mirall convex que reflecteix l'habitació des del darrere i dues figures més, amb deu escenes de la passió de Crist al marc. Signatura en llatí a la paret, «Johannes de Eyck fuit hic. 1434». L'estil és la pintura flamenca del segle XV (gòtic final).</p><p><strong>c)</strong> És el retrat d'una parella rica en el seu espai privat, que mostra el seu benestar amb la roba de luxe, el llit, l'aranya de metall o les taronges, una fruita cara. Per a la National Gallery, el gos era un signe habitual de fidelitat conjugal, i la dona no està embarassada, sinó que aixeca el vestit voluminós, com feien les dames de l'època. Durant molt de temps es va interpretar com la cerimònia d'un casament, però avui la National Gallery ja no ho considera així. Altres especialistes hi han vist un retrat commemoratiu d'una esposa morta. Són interpretacions, no fets demostrats.</p><p><strong>d)</strong> Giotto (obra 22, cap al 1303-1305) pinta al fresc un gran cicle religiós per a una capella, i dona volum, espai i emoció a les figures. Van Eyck, un segle després, pinta a l'oli, en petit format, una escena de la vida privada, amb un detall i una llum que reprodueixen la realitat. Tots dos s'allunyen de la pintura plana i simbòlica anterior i busquen representar l'espai i les persones de manera més real.</p>"
   }
  ]
 }
