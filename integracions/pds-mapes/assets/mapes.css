@@ -98,3 +98,6 @@
 .um .pdsm-rmapes li span span{font-size:13px;color:var(--primary,#1F5FBF)}
 .um .pdsm-rmapes .pdsm-tot{display:inline-block;margin-top:12px;color:var(--primary,#1F5FBF);font-size:14px}
 @media print{.pdsm-umlink,.pdsm-rmapes,.pdsm-filtres,.pdsm-dl,.pdsm-net,.pdsm-seg{display:none!important}}
+.pdsm a.pdsm-pill{color:var(--pdsm-t);text-decoration:none}
+.pdsm a.pdsm-pill.on{color:#fff}
+.pdsm a.pdsm-pill.off{color:#9AA0A6}
