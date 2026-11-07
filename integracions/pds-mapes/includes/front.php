@@ -166,7 +166,7 @@ function pdsm_enllacos_unitat( string $html, int $id, array $mapes ): string {
 		}
 		$img    = (int) pdsm_camp( 'pdsm_img_complet', $m );
 		$src    = $img ? wp_get_attachment_image_url( $img, 'medium' ) : '';
-		$items .= '<li><a href="' . esc_url( $url ) . '"><i aria-hidden="true"' . ( $src ? ' style="background-image:url(\'' . esc_url( $src ) . '\')"' : '' ) . '></i><span><b>' . esc_html( get_the_title( $m ) ) . '</b><span>Complet · Mut · PDF</span></span></a></li>';
+		$items .= '<li><a href="' . esc_url( $url ) . '"><i aria-hidden="true"' . ( $src ? ' style="background-image:url(\'' . esc_url( $src ) . '\')"' : '' ) . '></i><span><b>' . esc_html( pdsm_titol( $m ) ) . '</b><span>Complet · Mut · PDF</span></span></a></li>';
 		if ( ! $per ) {
 			$t   = pdsm_termes( $m, 'pdsm_periode' );
 			$per = $t ? $t[0] : null;
@@ -249,7 +249,7 @@ function pdsm_targeta( int $id ): string {
 	$priv = 'private' === get_post_status( $id ) ? '<span class="pdsm-v pdsm-priv">Privat</span>' : '';
 	return '<li><a class="pdsm-card" href="' . esc_url( get_permalink( $id ) ) . '">'
 		. '<span class="pdsm-img"' . ( $src ? ' style="background-image:url(\'' . esc_url( $src ) . '\')"' : '' ) . ' aria-hidden="true"></span>'
-		. '<span class="pdsm-cos"><span class="pdsm-et">' . esc_html( $et ) . '</span><span class="pdsm-tit">' . esc_html( get_the_title( $id ) ) . '</span>'
+		. '<span class="pdsm-cos"><span class="pdsm-et">' . esc_html( $et ) . '</span><span class="pdsm-tit">' . esc_html( pdsm_titol( $id ) ) . '</span>'
 		. '<span class="pdsm-peu">' . $curs . '<span class="pdsm-v">Complet</span><span class="pdsm-v">Mut</span><span class="pdsm-v">PDF</span>' . $priv . '</span></span></a></li>';
 }
 

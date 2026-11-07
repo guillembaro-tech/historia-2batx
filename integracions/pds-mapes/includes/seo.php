@@ -27,7 +27,7 @@ function pdsm_retalla( string $t, int $max = 160 ): string {
 
 function pdsm_titol_seo( int $id ): string {
 	$t = trim( (string) pdsm_camp( 'pdsm_seo_titol', $id ) );
-	return '' !== $t ? $t : get_the_title( $id ) . ' · Mapa complet i mut (PDF)';
+	return '' !== $t ? $t : pdsm_titol( $id ) . ' · Mapa complet i mut (PDF)';
 }
 
 function pdsm_descripcio_seo( int $id ): string {
@@ -122,7 +122,7 @@ add_action(
 				array(
 					'@context'           => 'https://schema.org',
 					'@type'              => 'ImageObject',
-					'name'               => get_the_title( $id ) . ' (' . mb_strtolower( $nom ) . ')',
+					'name'               => pdsm_titol( $id ) . ' (' . mb_strtolower( $nom ) . ')',
 					'description'        => '' !== $alt ? $alt : pdsm_descripcio_seo( $id ),
 					'contentUrl'         => wp_get_attachment_url( $a ),
 					'url'                => $url,

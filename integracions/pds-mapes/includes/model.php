@@ -124,8 +124,8 @@ function pdsm_crea_termes(): void {
 		'pdsm_territori' => array(
 			'catalunya'     => 'Catalunya',
 			'espanya'       => 'Espanya',
-			'europa'        => 'Europa',
 			'mediterrani'   => 'Mediterrani',
+			'europa'        => 'Europa',
 			'proxim-orient' => 'Pròxim Orient',
 			'mon'           => 'Món',
 		),
@@ -227,4 +227,9 @@ function pdsm_mapes_de( int $post_id ): array {
 		}
 	}
 	return $out;
+}
+
+/** Títol del mapa tal com s'ha escrit (sense «Privat:» ni entitats HTML). */
+function pdsm_titol( int $id ): string {
+	return (string) get_post_field( 'post_title', $id, 'raw' );
 }

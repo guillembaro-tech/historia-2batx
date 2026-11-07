@@ -79,7 +79,7 @@ get_header();
 		<div class="um-wrap">
 			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( $base ); ?>">Mapes</a><?php if ( $per ) : ?> / <a href="<?php echo esc_url( get_term_link( $per[0] ) ); ?>"><?php echo esc_html( $per[0]->name ); ?></a><?php endif; ?></nav>
 			<p class="um-eyebrow"><?php echo esc_html( $eyebrow ); ?></p>
-			<h1><?php echo esc_html( get_the_title( $id ) ); ?></h1>
+			<h1><?php echo esc_html( pdsm_titol( $id ) ); ?></h1>
 			<?php if ( has_excerpt( $id ) ) : ?><p class="um-guide"><?php echo esc_html( get_the_excerpt( $id ) ); ?></p><?php endif; ?>
 		</div>
 	</header>

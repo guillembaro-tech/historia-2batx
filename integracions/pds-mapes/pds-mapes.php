@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · Arxiu de mapes
  * Description: Arxiu de mapes de professordesocials.cat. Tipus de contingut «Mapa» amb la versió completa i la muda, els PDF per imprimir, taxonomies de període, territori i tipus, enllaços amb les unitats i SEO propi. No toca el tema.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: professordesocials.cat
  * License: GPL-2.0-or-later
  * Text Domain: pds-mapes
@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PDSM_VER', '0.1.0' );
+define( 'PDSM_VER', '0.1.1' );
 define( 'PDSM_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDSM_URL', plugin_dir_url( __FILE__ ) );
 
