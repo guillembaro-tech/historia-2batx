@@ -28,7 +28,7 @@ function pdsm_crea_mapa( array $m, string $dir ): array {
 			$md5 = md5_file( $f );
 			rename( $f, $dest . $slug . '-' . $n );
 			$log[ $n ] = md5_file( $dest . $slug . '-' . $n ) === $md5;
-		} elseif ( ! file_exists( $dest . $slug . '-' . $n ) ) {
+		} elseif ( ! file_exists( $dest . $slug . '-' . $n ) && ! str_ends_with( $n, '.svg' ) ) {
 			return array( 'error' => 'falta ' . $n );
 		}
 	}
@@ -106,7 +106,7 @@ function pdsm_crea_mapa( array $m, string $dir ): array {
 		'pdsm_fonts'           => implode( "\n", (array) ( $m['fonts'] ?? array() ) ),
 		'pdsm_autor'           => $m['autor'] ?? 'professordesocials.cat',
 		'pdsm_llicencia'       => $m['llicencia'] ?? 'cc-by-sa-4.0',
-		'pdsm_svg_origen'      => 'pds-mapes/' . $slug . '/' . $slug . '-complet.svg',
+		'pdsm_svg_origen'      => file_exists( $dest . $slug . '-complet.svg' ) ? 'pds-mapes/' . $slug . '/' . $slug . '-complet.svg' : 'pds-mapes/' . $slug . '/' . $slug . '-mut.svg',
 		'pdsm_seo_titol'       => $m['seo_titol'] ?? '',
 		'pdsm_seo_descripcio'  => $m['seo_descripcio'] ?? '',
 	);
@@ -114,6 +114,9 @@ function pdsm_crea_mapa( array $m, string $dir ): array {
 		update_field( $k, $v, $id );
 	}
 	$ap = (array) ( $m['aparicio'] ?? array() );
+	if ( ! empty( $ap['post'] ) && '' === trim( (string) ( $ap['apartat'] ?? '' ) ) ) {
+		$ap['apartat'] = pdsm_nom_apartat( (int) $ap['post'], (string) ( $ap['ancora'] ?? '' ) );
+	}
 	update_field(
 		'pdsm_aparicions',
 		empty( $ap['post'] ) ? array() : array(
@@ -127,4 +130,31 @@ function pdsm_crea_mapa( array $m, string $dir ): array {
 		$id
 	);
 	return array( 'id' => $id, 'att' => $att, 'fitxers' => $log );
+}
+
+/** «Apartat N. Títol» a partir de l'àncora del mapa a la unitat (s4-on → secció s4) o al tema (ap0 → apartat 1). */
+function pdsm_nom_apartat( int $post, string $ancora ): string {
+	$c   = (string) get_post_field( 'post_content', $post, 'raw' );
+	$net = static fn( $t ) => trim( html_entity_decode( wp_strip_all_tags( (string) $t ), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
+	if ( preg_match( '/^ap(\d+)$/', $ancora, $m ) ) {
+		$p = strpos( $c, 'id="' . $ancora . '"' );
+		if ( false !== $p && preg_match( '#<h[23][^>]*>(.*?)</h[23]>#s', substr( $c, $p, 3000 ), $h ) ) {
+			return 'Apartat ' . ( (int) $m[1] + 1 ) . '. ' . preg_replace( '/^\d+\.\s*/', '', $net( $h[1] ) );
+		}
+		return '';
+	}
+	$sec = 'sa' === $ancora ? 'sa' : ( preg_match( '/^(s\d+)/', $ancora, $m ) ? $m[1] : '' );
+	if ( '' === $sec ) {
+		return '';
+	}
+	$p = strpos( $c, 'id="' . $sec . '"' );
+	if ( false === $p ) {
+		return '';
+	}
+	$tros = substr( $c, $p, 4000 );
+	$h2   = preg_match( '#<h2[^>]*>(.*?)</h2>#s', $tros, $h ) ? $net( $h[1] ) : '';
+	if ( 'sa' === $sec ) {
+		return '' !== $h2 ? 'Situació d\'aprenentatge. ' . $h2 : 'Situació d\'aprenentatge';
+	}
+	return '' !== $h2 ? 'Apartat ' . substr( $sec, 1 ) . '. ' . $h2 : '';
 }
