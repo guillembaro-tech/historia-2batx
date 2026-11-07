@@ -1,0 +1,1003 @@
+[
+ {
+  "slug": "atica-483-ac",
+  "titol": "L'Àtica l'any 483 aC",
+  "excerpt": "Atenes, el Pireu, les mines de plata de Làurion i les illes d'Egina i Salamina, al golf Sarònic.",
+  "data": "483 aC",
+  "descripcio": "L'Àtica l'any 483 aC. Les mines de plata de Làurion eren al sud. Al golf Sarònic hi havia les illes d'Egina, la polis rival, i de Salamina. El Pireu, que Temístocles havia començat a fortificar, es convertiria en el gran port d'Atenes. La zona de les mines és aproximada.\n\nS'hi ha afegit la fletxa del nord. Al mapa, el nord és exacte a tot arreu i l'escala de l'original és real.",
+  "descripcio_mut": "El mut té les costes de l'Àtica, de les illes del golf Sarònic i del Peloponès, sense cap nom, un punt a Atenes, al Pireu i a Trezè, i el contorn discontinu de la zona de les mines de Làurion. S'hi poden escriure els noms i pintar la zona de les mines.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "mediterrani",
+   "europa"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 831,
+   "apartat": "",
+   "ancora": "sa",
+   "figura": "L'Àtica l'any 483 aC."
+  },
+  "alt_complet": "Mapa de l'Àtica amb Atenes, el port del Pireu, les mines de plata de Làurion al sud-est, les illes de Salamina i Egina al golf Sarònic i Trezè a la costa del Peloponès.",
+  "alt_mut": "Mapa mut de l'Àtica i el golf Sarònic, sense noms, amb un punt a Atenes, al Pireu i a Trezè i el contorn de la zona de les mines de Làurion.",
+  "seo_titol": "Mapa de l'Àtica, Atenes i el Pireu l'any 483 aC (complet i mut)",
+  "seo_descripcio": "Mapa de l'Àtica l'any 483 aC amb Atenes, el Pireu, les mines de plata de Làurion, Egina i Salamina. Versió completa i muda per imprimir en PDF."
+ },
+ {
+  "slug": "atur-comunitats-autonomes",
+  "titol": "L'atur per comunitats autònomes (2026)",
+  "excerpt": "La taxa d'atur de cada comunitat autònoma a l'estiu del 2026, de les Illes Balears, amb l'atur més baix, a Ceuta i Melilla, amb el més alt.",
+  "data": "Tercer trimestre del 2026",
+  "descripcio": "L'atur no és igual a tot arreu. A l'estiu del 2026, l'atur era més baix a les Illes Balears, on el turisme dona molta feina en aquesta època, al País Basc, a Cantàbria i a Castella i Lleó. Era més alt al sud, a Andalusia i Extremadura, i a Ceuta i Melilla. Catalunya, amb un 8,3 %, era per sota de la mitjana d'Espanya.\n\nS'hi ha afegit una escala gràfica real de 200 km i la fletxa del nord. L'escala només val per a la península i les Balears, perquè les Canàries són en un requadre a part, amb una altra escala. La variació d'escala dins de la península és menor de l'1 %.",
+  "descripcio_mut": "Mapa mut d'Espanya amb els límits de les comunitats autònomes, Ceuta i Melilla, les Canàries en un requadre, l'escala i el nord. L'alumnat hi pot pintar les comunitats segons la taxa d'atur, fer-ne la llegenda i escriure-hi el nom de cada comunitat.",
+  "fonts": [
+   "Dades: INE (Enquesta de població activa, tercer trimestre del 2026)",
+   "Límits: IGN (CC BY 4.0)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb dades de l'INE (Enquesta de població activa, tercer trimestre del 2026) i límits de l'IGN. CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "espanya"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s3-atur",
+   "figura": "L'atur no és igual a tot arreu."
+  },
+  "alt_complet": "Mapa d'Espanya per comunitats autònomes amb la taxa d'atur del tercer trimestre del 2026. L'atur més baix és a les Illes Balears (4,6 %) i el més alt a Andalusia (14,9 %), Ceuta (18,5 %) i Melilla (18,9 %). Catalunya, amb un 8,3 %, és per sota de la mitjana d'Espanya (10,2 %).",
+  "alt_mut": "Mapa mut d'Espanya amb els límits de les comunitats autònomes, les Canàries en un requadre, una escala gràfica de 200 km i la fletxa del nord, sense colors ni rètols.",
+  "seo_titol": "Mapa de l'atur per comunitats autònomes 2026 (complet i mut)",
+  "seo_descripcio": "Mapa de la taxa d'atur de cada comunitat autònoma d'Espanya al tercer trimestre del 2026, amb dades de l'INE. Complet i mut en PDF per a 3r d'ESO."
+ },
+ {
+  "slug": "catalunya-graella-coordenades",
+  "titol": "Catalunya en la graella de coordenades",
+  "excerpt": "Els paral·lels de 41° i 42° N i els meridians d'1°, 2° i 3° E sobre el mapa de Catalunya, amb una escala gràfica per mesurar distàncies.",
+  "data": "Actualitat",
+  "descripcio": "Catalunya en la graella de coordenades. Les línies discontínues són els paral·lels de 41° i 42° N i els meridians d'1°, 2° i 3° E. La creu vermella és el punt 41° N, 2° E, que cau al mar. Amb l'escala gràfica pots mesurar distàncies.\n\nAl mapa hi ha les quatre capitals de demarcació, Barcelona, Girona, Lleida i Tarragona.",
+  "descripcio_mut": "Mapa mut de Catalunya amb la graella de paral·lels i meridians sense rètols, quatre punts sense nom, l'escala gràfica i el nord. L'alumnat hi pot escriure els graus de cada línia, el nom de les quatre capitals, situar-hi el punt 41° N, 2° E i mesurar distàncies amb l'escala.",
+  "fonts": [
+   "Base cartogràfica: IGN (CC BY 4.0) i Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: IGN (CC BY 4.0) i Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "cartografia"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 857,
+   "apartat": "",
+   "ancora": "s2-exemple",
+   "figura": "Catalunya en la graella de coordenades."
+  },
+  "alt_complet": "Mapa de Catalunya amb els paral·lels de 41° i 42° N i els meridians d'1°, 2° i 3° E en línies discontínues, les quatre capitals de demarcació, una creu vermella al mar al punt 41° N, 2° E, una escala gràfica de 50 km i la fletxa del nord.",
+  "alt_mut": "Mapa mut de Catalunya amb els paral·lels i meridians en línies discontínues sense rètols, quatre punts negres sense nom, l'escala gràfica i la fletxa del nord.",
+  "seo_titol": "Mapa de Catalunya amb paral·lels i meridians (complet i mut)",
+  "seo_descripcio": "Mapa de Catalunya amb els paral·lels de 41° i 42° N, els meridians d'1°, 2° i 3° E i escala gràfica. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "catalunya-romana",
+  "titol": "La Catalunya romana",
+  "excerpt": "Les ciutats romanes principals de Catalunya, Empúries, Ullastret i el traçat aproximat de la Via Augusta.",
+  "data": "Edat antiga",
+  "descripcio": "La Catalunya romana. Les ciutats romanes principals, el lloc del desembarcament i la ciutat ibèrica d'Ullastret. La línia vermella és la Via Augusta, i la discontínua, el ramal que la unia amb Bàrcino. El traçat és aproximat.\n\nHi ha Tàrraco (Tarragona), capital de la província, Bàrcino (Barcelona), Iesso (Guissona), Ilerda (Lleida), Gerunda (Girona), Ausa (Vic) i Dertosa (Tortosa), i Empúries, on van desembarcar els romans el 218 aC.",
+  "descripcio_mut": "El mut té el contorn de Catalunya i dels territoris veïns, sense cap nom, el traçat de la Via Augusta i del ramal de Bàrcino, un quadrat a la capital i un punt a cada ciutat. S'hi poden escriure els noms romans i actuals de les ciutats i pintar la Via Augusta.",
+  "fonts": [
+   "Base cartogràfica: IGN (CC BY 4.0)",
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: IGN (CC BY 4.0) i Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 859,
+   "apartat": "",
+   "ancora": "s9",
+   "figura": "La Catalunya romana."
+  },
+  "alt_complet": "Mapa de Catalunya amb Tàrraco, capital de la província, les ciutats romanes de Bàrcino, Iesso, Ilerda, Gerunda, Ausa i Dertosa, Empúries, la ciutat ibèrica d'Ullastret i el traçat de la Via Augusta.",
+  "alt_mut": "Mapa mut de Catalunya, sense noms, amb el traçat de la Via Augusta i el ramal de Bàrcino, un quadrat a Tàrraco i un punt a cada ciutat.",
+  "seo_titol": "Mapa de la Catalunya romana i la Via Augusta (complet i mut)",
+  "seo_descripcio": "Mapa de la Catalunya romana, amb Tàrraco, Bàrcino, Empúries, Ullastret i la Via Augusta. Versió completa i muda per imprimir en PDF."
+ },
+ {
+  "slug": "climes-de-catalunya",
+  "titol": "Els climes de Catalunya",
+  "excerpt": "Quinze llocs d'exemple del Meteocat per als sis tipus de clima de Catalunya, amb la precipitació anual de cada un.",
+  "data": "Actualitat",
+  "descripcio": "Els climes de Catalunya. Cada punt és un lloc d'exemple del Meteocat.\n\nEls colors indiquen el tipus de clima (mediterrani litoral, prelitoral, continental, prepirinenc i pirinenc, i oceànic) i cada lloc porta la seva precipitació anual en mil·límetres.",
+  "descripcio_mut": "Mapa mut de Catalunya amb el contorn, l'escala, el nord i quinze punts sense nom. L'alumnat hi pot escriure el nom de cada lloc, pintar-lo segons el tipus de clima i fer-ne la llegenda.",
+  "fonts": [
+   "Dades: Meteocat",
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Dades: Meteocat. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "climatic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 1798,
+   "apartat": "",
+   "ancora": "s6",
+   "figura": "Els climes de Catalunya."
+  },
+  "alt_complet": "Mapa de Catalunya amb quinze llocs pintats segons el tipus de clima del Meteocat, de l'oceànic d'Arties al mediterrani litoral de Barcelona i Tarragona, amb la precipitació anual de cada lloc.",
+  "alt_mut": "Mapa mut de Catalunya amb el contorn, l'escala gràfica, la fletxa del nord i quinze punts negres sense nom.",
+  "seo_titol": "Mapa dels tipus de clima de Catalunya (complet i mut, PDF)",
+  "seo_descripcio": "Mapa dels climes de Catalunya amb quinze llocs d'exemple del Meteocat i la seva precipitació anual. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "colonies-fenicies",
+  "titol": "Les colònies fenícies a la Mediterrània",
+  "excerpt": "La ruta per mar dels fenicis, des de Tir, Sidó i Biblos fins a Gadir, i les colònies que hi van fundar.",
+  "data": "Edat antiga",
+  "descripcio": "Les colònies fenícies a la Mediterrània. Des de les ciutats de Fenícia, els vaixells arribaven fins a l'Atlàntic. Les rutes són aproximades, i les costes són les actuals.\n\nA l'est hi ha les ciutats de Fenícia, Tir, Sidó i Biblos. Una ruta per mar les uneix amb Kition, a Xipre, Cartago i Útica, al nord d'Àfrica, i Eivissa, Malaka i Gadir, a la península Ibèrica.",
+  "descripcio_mut": "El mut té les costes de la Mediterrània, sense cap nom, la ruta per mar dels fenicis i un punt a cada ciutat de Fenícia i a cada colònia. S'hi poden escriure els noms de les ciutats i de les colònies i pintar Fenícia i les terres del voltant.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "mediterrani"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 822,
+   "apartat": "",
+   "ancora": "s6-fenicis",
+   "figura": "Les colònies fenícies a la Mediterrània."
+  },
+  "alt_complet": "Mapa de la Mediterrània amb les ciutats de Fenícia (Tir, Sidó i Biblos) i la ruta per mar que les uneix amb les colònies de Kition, Cartago, Útica, Eivissa, Malaka i Gadir, i la plata, la fusta de cedre i la porpra.",
+  "alt_mut": "Mapa mut de la Mediterrània, sense noms, amb la ruta per mar dels fenicis i un punt a cada ciutat de Fenícia i a cada colònia.",
+  "seo_titol": "Mapa de les colònies fenícies a la Mediterrània (complet i mut)",
+  "seo_descripcio": "Mapa de les colònies fenícies, de Tir, Sidó i Biblos a Cartago, Eivissa i Gadir, amb la ruta per mar. Versió completa i muda per imprimir en PDF."
+ },
+ {
+  "slug": "colonies-gregues",
+  "titol": "Les colònies gregues (segles VIII-VI aC)",
+  "excerpt": "Les metròpolis gregues que van enviar colons, les colònies que van fundar i la ruta dels foceus fins a Empòrion.",
+  "data": "Segles VIII-VI aC",
+  "descripcio": "Les colònies gregues (segles VIII-VI aC). En blau, algunes de les metròpolis que van enviar colons. En taronja, algunes de les colònies que van fundar. La línia vermella és la ruta aproximada dels foceus, que van sortir de Focea, a l'Àsia Menor, van fundar Massàlia (Marsella) i, des d'allà, Empòrion.\n\nS'hi ha afegit la fletxa del nord. El mapa és en projecció de Mercator, i el nord hi és exacte a tot arreu.",
+  "descripcio_mut": "El mut té les costes del Mediterrani i de la mar Negra, sense cap nom, la ruta dels foceus i un punt a cada metròpoli i a cada colònia. S'hi poden escriure els noms, pintar de colors diferents les metròpolis i les colònies i resseguir la ruta dels foceus.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)",
+   "Coordenades: Wikidata"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic). Coordenades, Wikidata.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "mediterrani"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 831,
+   "apartat": "",
+   "ancora": "s1-colonies",
+   "figura": "Les colònies gregues (segles VIII-VI aC)."
+  },
+  "alt_complet": "Mapa del Mediterrani i la mar Negra amb cinc metròpolis gregues (Atenes, Corint, Esparta, Focea i Milet), onze colònies, d'Empòrion i Massàlia a Olbia i Naucratis, i la ruta dels foceus fins a Empòrion.",
+  "alt_mut": "Mapa mut del Mediterrani i la mar Negra, sense noms, amb la ruta dels foceus i un punt a cada metròpoli i a cada colònia grega.",
+  "seo_titol": "Mapa de les colònies gregues a la Mediterrània (complet i mut)",
+  "seo_descripcio": "Mapa de les colònies gregues dels segles VIII-VI aC, d'Empòrion i Massàlia a la mar Negra, amb la ruta dels foceus. Complet i mut en PDF."
+ },
+ {
+  "slug": "comunitats-autonomes-espanya",
+  "titol": "Mapa polític d'Espanya. Les comunitats autònomes",
+  "excerpt": "Les 17 comunitats autònomes i les ciutats autònomes de Ceuta i Melilla, amb les Canàries en un requadre.",
+  "data": "Actualitat",
+  "descripcio": "Les comunitats autònomes. Espanya té 17 comunitats autònomes i 2 ciutats autònomes, Ceuta i Melilla.\n\nS'hi ha afegit una escala gràfica real, calculada a la latitud de 40° N, i la fletxa del nord. Com que és una projecció de Mercator, l'escala varia un 12 % entre el sud i el nord de la península. Les Canàries no són a la seva posició real ni a la mateixa escala.",
+  "descripcio_mut": "Mapa mut d'Espanya amb els límits de les 17 comunitats autònomes, el requadre de les Canàries i un punt a Ceuta i un altre a Melilla. Serveix per escriure el nom de cada comunitat i de les ciutats autònomes, i per pintar-les.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, a partir de Natural Earth (domini públic), CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "espanya"
+  ],
+  "tipus": [
+   "politic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 663,
+   "apartat": "",
+   "ancora": "s4",
+   "figura": "Les comunitats autònomes."
+  },
+  "alt_complet": "Mapa polític d'Espanya amb les 17 comunitats autònomes en verd clar i Catalunya destacada en verd fosc, les ciutats autònomes de Ceuta i Melilla i les Canàries en un requadre.",
+  "alt_mut": "Mapa mut d'Espanya amb els límits de les comunitats autònomes, sense noms, les Canàries en un requadre i un punt a Ceuta i a Melilla.",
+  "seo_titol": "Mapa de les comunitats autònomes d'Espanya (complet i mut)",
+  "seo_descripcio": "Mapa polític d'Espanya amb les 17 comunitats autònomes i Ceuta i Melilla. Versió completa i muda per imprimir en PDF, per a 3r d'ESO."
+ },
+ {
+  "slug": "corrent-del-golf",
+  "titol": "El corrent del Golf",
+  "excerpt": "El corrent càlid que porta aigua del golf de Mèxic fins a Noruega i que explica per què Hammerfest i Utqiaġvik tenen climes tan diferents.",
+  "data": "Actualitat",
+  "descripcio": "El corrent del Golf. Porta aigua calenta des del golf de Mèxic fins a Noruega. Hammerfest i Utqiaġvik són gairebé a la mateixa latitud, però el seu clima és molt diferent.\n\nEl mapa no té escala ni fletxa del nord, perquè és una projecció cilíndrica de l'hemisferi nord i l'escala canvia molt d'una latitud a l'altra. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapa mut de l'hemisferi nord amb les costes, la graella cada 30°, el paral·lel 70 nord, la fletxa del corrent i tres punts sense nom. L'alumnat hi pot escriure el nom del corrent, dels oceans i dels continents i identificar Utqiaġvik, Hammerfest i Catalunya.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "climatic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 1798,
+   "apartat": "",
+   "ancora": "s2-corrents",
+   "figura": "El corrent del Golf."
+  },
+  "alt_complet": "Mapa de l'hemisferi nord, de l'Alaska a Europa, amb una fletxa vermella que segueix el corrent del Golf des del golf de Mèxic fins a Noruega. La línia del paral·lel 70 nord passa per Utqiaġvik (Alaska) i per Hammerfest (Noruega).",
+  "alt_mut": "Mapa mut de l'hemisferi nord, de l'Alaska a Europa, amb les costes, la graella de paral·lels i meridians, el paral·lel 70 nord, la fletxa del corrent en gris i tres punts sense nom.",
+  "seo_titol": "Mapa del corrent del Golf a l'Atlàntic (complet i mut, PDF)",
+  "seo_descripcio": "Mapa del corrent del Golf, del golf de Mèxic a Noruega, amb Hammerfest i Utqiaġvik al paral·lel 70 nord. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "economia-comarques-catalunya",
+  "titol": "Llocs de treball per sectors a les comarques de Catalunya (2026)",
+  "excerpt": "Tres mapes de Catalunya per comarques amb el pes de l'agricultura, la indústria i els serveis en els llocs de treball.",
+  "data": "Setembre del 2026",
+  "descripcio": "Cada comarca, la seva economia. Els serveis són el sector principal a gairebé totes les comarques, però no pesen igual. La indústria pesa més en comarques de l'interior, com la Segarra, la Conca de Barberà, la Garrotxa o Osona. L'agricultura pesa més a les Garrigues, la Terra Alta i la Noguera. Els serveis dominen al Barcelonès, a les ciutats grans i a les comarques turístiques. La construcció no surt al mapa.\n\nEls tres mapes tenen la mateixa escala. S'hi ha afegit una escala gràfica real de 100 km i la fletxa del nord, que valen per als tres. La variació d'escala entre el nord i el sud de Catalunya és d'un 4 %, i la barra correspon al centre del territori.",
+  "descripcio_mut": "Mapa mut de Catalunya amb els límits de les comarques, més gran, amb l'escala i el nord. L'alumnat hi pot pintar les comarques segons el pes d'un sector (agricultura, indústria o serveis), fer-ne la llegenda i escriure el nom de les comarques on aquell sector pesa més.",
+  "fonts": [
+   "Dades: Idescat (afiliacions a la Seguretat Social, setembre del 2026)",
+   "Límits: IGN (CC BY 4.0)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb dades de l'Idescat (afiliacions a la Seguretat Social segons on és l'empresa, assalariats i autònoms, setembre del 2026) i límits de l'IGN. CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s1-cadena",
+   "figura": "Cada comarca, la seva economia."
+  },
+  "alt_complet": "Tres mapes de Catalunya per comarques amb el percentatge de llocs de treball de cada sector el setembre del 2026. L'agricultura pesa més a les Garrigues, la Terra Alta i la Noguera, la indústria a la Segarra, la Conca de Barberà i la Garrotxa, i els serveis al Barcelonès, el Gironès i el Tarragonès.",
+  "alt_mut": "Mapa mut de Catalunya amb els límits de totes les comarques, l'escala gràfica de 50 km i la fletxa del nord, sense colors ni rètols.",
+  "seo_titol": "Mapa dels sectors econòmics per comarques (complet i mut, PDF)",
+  "seo_descripcio": "Mapes de Catalunya per comarques amb el pes de l'agricultura, la indústria i els serveis el 2026, i un mapa comarcal mut en PDF per a 3r d'ESO."
+ },
+ {
+  "slug": "eleccions-catalunya-1931-1936",
+  "titol": "Les eleccions a Catalunya, 1931-1936",
+  "excerpt": "La candidatura guanyadora a cada circumscripció catalana a les eleccions de 1931, 1932, 1933 i 1936.",
+  "data": "1931-1936",
+  "descripcio": "Candidatura guanyadora a cada circumscripció catalana a les eleccions de 1931, 1932, 1933 i 1936.\n\nS'hi ha afegit una escala gràfica real i la fletxa del nord al primer dels quatre mapes (generals de 1931), que tenen la mateixa escala. L'escala varia menys d'un 4 % de sud a nord de Catalunya.",
+  "descripcio_mut": "Mapa mut de Catalunya, gran, amb els límits de les quatre circumscripcions provincials i un cercle a Barcelona ciutat, que era una circumscripció pròpia. Serveix per pintar la candidatura guanyadora a cada circumscripció en una de les eleccions.",
+  "fonts": [
+   "Atles electoral de la Segona República a Catalunya",
+   "Base cartogràfica: es-atlas (© Instituto Geográfico Nacional)"
+  ],
+  "credit": "Gràfic de professordesocials.cat a partir de l'Atles electoral de la Segona República a Catalunya, CC BY-SA 4.0; mapa base es-atlas (© Instituto Geográfico Nacional).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-contemporania"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "electoral"
+  ],
+  "curs": [
+   "2n-batxillerat"
+  ],
+  "aparicio": {
+   "post": 2301,
+   "apartat": "",
+   "ancora": "ap5",
+   "figura": "Candidatura guanyadora a cada circumscripció catalana a les eleccions de 1931, 1932, 1933 i 1936."
+  },
+  "alt_complet": "Quatre mapes de Catalunya per circumscripcions, generals de 1931, Parlament de 1932, generals de 1933 i generals de 1936, amb la candidatura guanyadora a cada una. ERC i aliats guanyen a totes menys el 1933, quan la Lliga guanya Barcelona ciutat, Lleida i Tarragona.",
+  "alt_mut": "Mapa mut de Catalunya amb els límits de les quatre províncies i un cercle a Barcelona ciutat, sense noms ni colors.",
+  "seo_titol": "Mapa de les eleccions a Catalunya, 1931-1936 (complet i mut)",
+  "seo_descripcio": "Candidatura guanyadora a cada circumscripció catalana el 1931, 1932, 1933 i 1936. Mapes complet i mut en PDF per a Història de 2n de Batxillerat."
+ },
+ {
+  "slug": "eleccions-generals-1931-1933-1936",
+  "titol": "Les eleccions generals de 1931, 1933 i 1936 per províncies",
+  "excerpt": "El bloc que va obtenir més diputats a cada província a les tres eleccions generals de la Segona República.",
+  "data": "1931, 1933 i 1936",
+  "descripcio": "Bloc que va obtenir més diputats a cada província a les tres eleccions generals.\n\nS'hi ha afegit una escala gràfica real, calculada a 40° N, i la fletxa del nord al primer dels tres mapes (juny de 1931), que tenen la mateixa escala. Com que el mapa és en projecció de Mercator, l'escala varia un 12 % entre el sud i el nord de la península. Les Canàries són en un requadre i no hi són a escala.",
+  "descripcio_mut": "Mapa mut d'Espanya, gran, amb els límits de les províncies, sense noms, amb les Canàries en un requadre. Serveix per pintar el bloc guanyador a cada província en una de les tres eleccions i comparar-les.",
+  "fonts": [
+   "historiaelectoral.com",
+   "Wikipedia",
+   "Base cartogràfica: es-atlas (© Instituto Geográfico Nacional)"
+  ],
+  "credit": "Gràfic de professordesocials.cat a partir de historiaelectoral.com i Wikipedia, CC BY-SA 4.0; mapa base es-atlas (© Instituto Geográfico Nacional).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-contemporania"
+  ],
+  "territori": [
+   "espanya"
+  ],
+  "tipus": [
+   "electoral"
+  ],
+  "curs": [
+   "2n-batxillerat"
+  ],
+  "aparicio": {
+   "post": 2301,
+   "apartat": "",
+   "ancora": "ap5",
+   "figura": "Bloc que va obtenir més diputats a cada província a les tres eleccions generals."
+  },
+  "alt_complet": "Tres mapes d'Espanya per províncies, juny de 1931, novembre de 1933 i febrer de 1936, acolorits segons el bloc amb més diputats, esquerres, centre, dretes o PNB, amb ratllat on hi va haver empat.",
+  "alt_mut": "Mapa mut d'Espanya amb els límits de les províncies, sense noms ni colors, i les Canàries en un requadre.",
+  "seo_titol": "Mapa de les eleccions generals de 1931, 1933 i 1936 (PDF)",
+  "seo_descripcio": "Bloc amb més diputats a cada província a les eleccions generals de 1931, 1933 i 1936. Mapes complet i mut en PDF per a 2n de Batxillerat."
+ },
+ {
+  "slug": "eleccions-municipals-1931",
+  "titol": "Les eleccions municipals del 12 d'abril de 1931 a les capitals de província",
+  "excerpt": "Quina candidatura va guanyar a cada capital de província el 12 d'abril de 1931.",
+  "data": "12 d'abril de 1931",
+  "descripcio": "Resultat de les eleccions municipals del 12 d'abril de 1931 a les capitals de província. Les fonts no coincideixen en quatre ciutats, i per això la xifra tradicional és de 41 capitals republicanes de 50.\n\nS'hi ha afegit una escala gràfica real, calculada a 40° N, i la fletxa del nord, en una zona buida del mar. Com que el mapa és en projecció de Mercator, l'escala varia un 12 % entre el sud i el nord de la península. Les Canàries són en un requadre i no hi són a escala.",
+  "descripcio_mut": "Mapa mut d'Espanya amb els límits de les províncies i un punt a cada una de les 50 capitals de província, sense noms, amb les Canàries en un requadre. Serveix per escriure el nom de les capitals i pintar-les segons la candidatura que hi va guanyar.",
+  "fonts": [
+   "Anuario Estadístico de 1931",
+   "historiaelectoral.com",
+   "Base cartogràfica: es-atlas (© Instituto Geográfico Nacional)"
+  ],
+  "credit": "Gràfic de professordesocials.cat a partir de l'Anuario Estadístico de 1931 i historiaelectoral.com, CC BY-SA 4.0; mapa base es-atlas (© Instituto Geográfico Nacional).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-contemporania"
+  ],
+  "territori": [
+   "espanya"
+  ],
+  "tipus": [
+   "electoral"
+  ],
+  "curs": [
+   "2n-batxillerat"
+  ],
+  "aparicio": {
+   "post": 2301,
+   "apartat": "",
+   "ancora": "ap0",
+   "figura": "Resultat de les eleccions municipals del 12 d'abril de 1931 a les capitals de província."
+  },
+  "alt_complet": "Mapa d'Espanya per províncies amb un punt a cada capital acolorit segons la candidatura guanyadora el 12 d'abril de 1931, republicans i socialistes, monàrquics o resultat discutit, amb la llegenda i un comentari.",
+  "alt_mut": "Mapa mut d'Espanya amb els límits de les províncies i un punt negre a cada capital de província, sense noms.",
+  "seo_titol": "Mapa de les eleccions municipals de 1931 (complet i mut, PDF)",
+  "seo_descripcio": "Mapa del resultat de les eleccions municipals del 12 d'abril de 1931 a les 50 capitals de província, complet i mut en PDF. Història de 2n de Batxillerat."
+ },
+ {
+  "slug": "jaciments-prehistoria-catalunya",
+  "titol": "Jaciments de la prehistòria a Catalunya",
+  "excerpt": "Nou jaciments prehistòrics de Catalunya, del paleolític a l'edat del ferro, amb el color de cada etapa.",
+  "data": "Del paleolític a l'edat del ferro",
+  "descripcio": "Els jaciments de la unitat al mapa. El color indica l'etapa. Busca quin et queda més a prop.\n\nHi ha el Barranc de la Boella (la Canonja), l'Abric Romaní (Capellades) i les Coves del Toll (Moià), del paleolític; la Roca dels Moros (el Cogul), les Mines de Gavà i La Draga (Banyoles), del neolític i l'art llevantí; la Cova d'en Daina (Romanyà de la Selva) i el dolmen del Cap de l'Home (Roses), del megalitisme, i els Vilars (Arbeca), de l'edat del ferro.",
+  "descripcio_mut": "El mut té el contorn de Catalunya i dels territoris veïns, sense cap nom, un punt a cada jaciment i un quadrat a Barcelona, Girona, Lleida i Tarragona perquè serveixin de referència. S'hi poden escriure els noms dels jaciments i pintar cada punt amb el color de la seva etapa.",
+  "fonts": [
+   "Base cartogràfica: IGN (CC BY 4.0)",
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: IGN (CC BY 4.0) i Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "prehistoria"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 793,
+   "apartat": "",
+   "ancora": "s6",
+   "figura": "Els jaciments de la unitat al mapa."
+  },
+  "alt_complet": "Mapa de Catalunya amb nou jaciments prehistòrics pintats segons l'etapa (paleolític, neolític i art llevantí, megalitisme i edat del ferro), i Barcelona, Girona, Lleida i Tarragona com a referència.",
+  "alt_mut": "Mapa mut de Catalunya, sense noms, amb un punt a cada un dels nou jaciments prehistòrics i un quadrat a les quatre capitals de província.",
+  "seo_titol": "Mapa dels jaciments prehistòrics de Catalunya (complet i mut)",
+  "seo_descripcio": "Mapa dels jaciments de la prehistòria a Catalunya, de la Boella i el Toll a La Draga i els Vilars. Versió completa i muda per imprimir en PDF."
+ },
+ {
+  "slug": "latifundis-espanya-1932",
+  "titol": "Els latifundis a Espanya per províncies (1932)",
+  "excerpt": "On es concentraven les finques de més de 250 hectàrees segons Pasqual Carrión.",
+  "data": "1932",
+  "descripcio": "Percentatge de la superfície cadastrada ocupada per finques de més de 250 hectàrees, per províncies, segons Pasqual Carrión (1932). El nord i l'est encara no tenien cadastre.\n\nS'hi ha afegit una escala gràfica real, calculada a 40° N, i la fletxa del nord, en una zona buida del mar. Com que el mapa és en projecció de Mercator, l'escala varia un 12 % entre el sud i el nord de la península. Les Canàries són en un requadre i no hi són a escala.",
+  "descripcio_mut": "Mapa mut d'Espanya amb els límits de les províncies, sense noms, amb les Canàries en un requadre. Serveix per pintar les províncies segons el pes dels latifundis i per localitzar-les.",
+  "fonts": [
+   "Pasqual Carrión, «Los latifundios en España» (1932)",
+   "Base cartogràfica: es-atlas (© Instituto Geográfico Nacional)"
+  ],
+  "credit": "Gràfic de professordesocials.cat, CC BY-SA 4.0; mapa base es-atlas (© Instituto Geográfico Nacional).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-contemporania"
+  ],
+  "territori": [
+   "espanya"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "2n-batxillerat"
+  ],
+  "aparicio": {
+   "post": 2301,
+   "apartat": "",
+   "ancora": "ap2",
+   "figura": "Percentatge de la superfície cadastrada ocupada per finques de més de 250 hectàrees, per províncies, segons Pasqual Carrión (1932)."
+  },
+  "alt_complet": "Mapa d'Espanya per províncies acolorit segons el percentatge de superfície ocupada per finques de més de 250 hectàrees, amb els valors més alts a Andalusia, Extremadura i Ciudad Real i el nord i l'est sense cadastre.",
+  "alt_mut": "Mapa mut d'Espanya amb els límits de les províncies, sense noms ni colors.",
+  "seo_titol": "Mapa dels latifundis a Espanya el 1932 (complet i mut, PDF)",
+  "seo_descripcio": "Mapa per províncies del pes dels latifundis segons Pasqual Carrión (1932), complet i mut en PDF. Història de 2n de Batxillerat, la reforma agrària."
+ },
+ {
+  "slug": "mapa-comarcal-catalunya",
+  "titol": "Mapa comarcal de Catalunya",
+  "excerpt": "Les 42 comarques i l'Aran, amb el nom de cadascuna, i la versió muda per completar.",
+  "data": "Actualitat",
+  "descripcio": "Mapa comarcal de Catalunya amb les 42 comarques i l'Aran, inclosos el Moianès i el Lluçanès. Cada comarca té un color diferent del de les veïnes i porta el seu nom. Els límits són els del mapa «Cada comarca, la seva economia» de la unitat, fets a partir dels límits de l'IGN.\n\nS'hi ha afegit una escala gràfica real i la fletxa del nord. L'escala varia menys d'un 4 % de sud a nord de Catalunya.",
+  "descripcio_mut": "Mapa mut de Catalunya amb els límits de les 42 comarques i l'Aran, sense noms. Serveix per escriure el nom de cada comarca o de les capitals i per pintar-les per vegueries, províncies o qualsevol altra dada.",
+  "fonts": [
+   "Base cartogràfica: IGN (CC BY 4.0)",
+   "Països veïns: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: IGN (CC BY 4.0) i Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "catalunya"
+  ],
+  "tipus": [
+   "politic"
+  ],
+  "curs": [
+   "3r-eso",
+   "2n-batxillerat"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s1-cadena",
+   "figura": "Cada comarca, la seva economia."
+  },
+  "alt_complet": "Mapa comarcal de Catalunya amb les 42 comarques i l'Aran, cadascuna d'un color suau diferent del de les veïnes i amb el seu nom.",
+  "alt_mut": "Mapa mut de Catalunya amb els límits de les 42 comarques i l'Aran, sense noms ni colors.",
+  "seo_titol": "Mapa comarcal de Catalunya (complet i mut, PDF per imprimir)",
+  "seo_descripcio": "Mapa de les 42 comarques de Catalunya i l'Aran, amb el Moianès i el Lluçanès. Versió completa amb els noms i versió muda en PDF per imprimir."
+ },
+ {
+  "slug": "mapa-politic-mon",
+  "titol": "Mapa polític del món",
+  "excerpt": "Els països del món amb les fronteres actuals, en una versió amb colors i noms i una de muda per completar.",
+  "data": "Actualitat",
+  "descripcio": "Mapa mut del món. Marca-hi els països del viatge amb el número de cada pas i uneix-los amb fletxes.\n\nLa versió completa té els països pintats amb quatre colors suaus, de manera que dos països veïns no tenen mai el mateix color, i el nom en català dels 65 països més grans o més coneguts.\n\nÉs un mapamundi i no té escala ni fletxa del nord, perquè l'escala canvia molt d'un lloc a l'altre. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapamundi mut amb les fronteres dels països i la graella cada 30°, sense noms. Serveix per marcar-hi els països del viatge d'un producte i unir-los amb fletxes, o per pintar-hi i escriure-hi el nom dels països i els continents.",
+  "fonts": [
+   "Fronteres: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb fronteres de Natural Earth (domini públic). CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "politic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "sa",
+   "figura": "Mapa mut del món."
+  },
+  "alt_complet": "Mapa polític del món amb els països pintats de quatre colors suaus, sense que dos veïns en comparteixin cap, i el nom en català dels països més grans o més coneguts, com el Canadà, els Estats Units, el Brasil, Rússia, la Xina, l'Índia o Austràlia.",
+  "alt_mut": "Mapamundi mut amb les fronteres dels països en blanc sobre el mar i la graella de paral·lels i meridians cada 30°, sense noms.",
+  "seo_titol": "Mapa polític del món amb noms en català (complet i mut, PDF)",
+  "seo_descripcio": "Mapa polític del món amb els països en colors i el nom en català dels principals, i un mapamundi mut amb les fronteres. PDF per imprimir per a 3r d'ESO."
+ },
+ {
+  "slug": "mesopotamia-egipte-llevant",
+  "titol": "Mesopotàmia, Egipte i el Llevant",
+  "excerpt": "Les terres fèrtils que reguen el Nil, el Tigris i l'Eufrates, envoltades de deserts, i les ciutats principals.",
+  "data": "Edat antiga",
+  "descripcio": "Mesopotàmia, Egipte i el Llevant. La franja verda marca, de manera aproximada, les terres que reguen el Nil, el Tigris i l'Eufrates. Tot al voltant hi ha deserts. Els rius i les costes són els actuals.\n\nA Mesopotàmia hi ha Ur, Uruk, Lagaix, Babilònia i Nínive. A Egipte, Memfis i Gizeh, Tebes, Abu Simbel i Rosetta. Al Llevant, la terra dels fenicis i els hebreus, Biblos, Tir i Jerusalem.",
+  "descripcio_mut": "El mut té les costes, el Nil, el Tigris i l'Eufrates, el contorn discontinu de les terres fèrtils que reguen i un punt a cada ciutat, sense cap nom. S'hi poden pintar les terres fèrtils i els deserts i escriure els noms dels rius, de les regions i de les ciutats.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "proxim-orient"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 822,
+   "apartat": "",
+   "ancora": "s2-terra",
+   "figura": "Mesopotàmia, Egipte i el Llevant."
+  },
+  "alt_complet": "Mapa del Pròxim Orient amb el Nil, el Tigris i l'Eufrates i la franja de terres fèrtils que reguen, envoltada de deserts, i les ciutats de Mesopotàmia, d'Egipte i del Llevant.",
+  "alt_mut": "Mapa mut del Pròxim Orient, sense noms, amb els rius, el contorn discontinu de les terres fèrtils i un punt a cada ciutat.",
+  "seo_titol": "Mapa de Mesopotàmia, Egipte i el Llevant (complet i mut, PDF)",
+  "seo_descripcio": "Mapa de Mesopotàmia, Egipte i el Llevant, amb el Nil, el Tigris i l'Eufrates, les terres fèrtils i les ciutats. Versió completa i muda en PDF."
+ },
+ {
+  "slug": "mon-graella-coordenades",
+  "titol": "El món en una graella de coordenades",
+  "excerpt": "Els paral·lels i els meridians cada 30° formen una graella que serveix per situar qualsevol lloc del món.",
+  "data": "Actualitat",
+  "descripcio": "El món en una graella. Cada línia blava són 30°. L'equador i el meridià de Greenwich, en vermell, separen els quatre hemisferis. Barcelona i Nova York són gairebé a la mateixa latitud, uns 41° N.\n\nAl mapa també hi ha Tòquio. És un mapamundi i no té escala ni fletxa del nord, perquè l'escala canvia molt d'una latitud a l'altra.",
+  "descripcio_mut": "Mapamundi mut amb la graella cada 30°, l'equador i el meridià de Greenwich més gruixuts i tres punts sense nom. L'alumnat hi pot escriure els graus de cada línia, el nom dels hemisferis i dels continents, i trobar les coordenades dels tres punts.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "cartografia"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 857,
+   "apartat": "",
+   "ancora": "s2-latlon",
+   "figura": "El món en una graella."
+  },
+  "alt_complet": "Mapamundi amb la graella de paral·lels i meridians cada 30°. L'equador i el meridià de Greenwich, en vermell, separen els hemisferis nord i sud i est i oest. Hi ha marcades Barcelona, Nova York i Tòquio.",
+  "alt_mut": "Mapamundi mut amb la graella de paral·lels i meridians cada 30°, l'equador i el meridià de Greenwich en gris fosc i tres punts negres sense nom.",
+  "seo_titol": "Mapamundi amb la graella de coordenades (complet i mut, PDF)",
+  "seo_descripcio": "Mapamundi amb paral·lels i meridians cada 30°, l'equador, el meridià de Greenwich i els quatre hemisferis. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "naixement-agricultura",
+  "titol": "On va néixer l'agricultura",
+  "excerpt": "Els grans focus on va començar l'agricultura al món i quan s'hi va començar a conrear.",
+  "data": "Fa uns 12.000-8.000 anys",
+  "descripcio": "On va néixer l'agricultura. Els punts grans són els grans focus, amb la data aproximada en què s'hi va començar a conrear. Els punts petits són altres focus. Les dates canvien una mica segons els estudis.\n\nÉs un mapamundi i no porta escala ni nord, perquè l'escala hi canvia massa d'un lloc a l'altre. S'hi ha afegit una graella molt suau de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "El mut té els continents, sense cap nom, i un punt a cada focus on va néixer l'agricultura, amb la graella de paral·lels i meridians. Serveix per situar-hi els focus i escriure-hi quan s'hi va començar a conrear i quines plantes s'hi conreaven.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "prehistoria"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 793,
+   "apartat": "",
+   "ancora": "s4-on",
+   "figura": "On va néixer l'agricultura."
+  },
+  "alt_complet": "Mapamundi amb els grans focus on va néixer l'agricultura (Pròxim Orient, fa uns 12.000 anys; Xina i Mesoamèrica, fa uns 9.000 anys; Andes, fa uns 8.000 anys) i altres focus a Nova Guinea, l'Àfrica i l'est d'Amèrica del Nord.",
+  "alt_mut": "Mapamundi mut, sense noms, amb els continents, una graella de paral·lels i meridians i un punt a cada focus on va néixer l'agricultura.",
+  "seo_titol": "Mapa dels orígens de l'agricultura (complet i mut, PDF)",
+  "seo_descripcio": "Mapamundi dels llocs on va néixer l'agricultura, del Pròxim Orient als Andes, amb les dates aproximades. Versió completa i muda per imprimir en PDF."
+ },
+ {
+  "slug": "paisos-segons-ingressos",
+  "titol": "Els països del món segons els ingressos",
+  "excerpt": "La classificació dels països en quatre grups d'ingressos del Banc Mundial per al 2026-2027, de les rendes altes a les baixes.",
+  "data": "2026-2027",
+  "descripcio": "Els països del món segons els ingressos. Classificació del Banc Mundial per a l'any 2026-2027, feta amb la renda per habitant del 2025. Els països més pobres són gairebé tots a l'Àfrica subsahariana.\n\nLa llegenda diferencia quatre grups, ingressos alts (87 països), mitjans alts (59), mitjans baixos (47) i baixos (25), i els territoris sense dades.\n\nÉs un mapamundi i no té escala ni fletxa del nord, perquè l'escala canvia molt d'un lloc a l'altre. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapamundi mut amb les fronteres dels països i la graella cada 30°. L'alumnat hi pot pintar els països segons el grup d'ingressos, fer-ne la llegenda i escriure el nom d'alguns països de cada grup.",
+  "fonts": [
+   "Dades: Banc Mundial (juliol del 2026)",
+   "Fronteres: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb dades del Banc Mundial (juliol del 2026) i fronteres de Natural Earth (domini públic). CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s6-desigualtat",
+   "figura": "Els països del món segons els ingressos."
+  },
+  "alt_complet": "Mapamundi amb els països pintats segons els quatre grups d'ingressos del Banc Mundial per al 2026-2027. Els d'ingressos alts són sobretot a Amèrica del Nord, Europa, el golf Pèrsic, el Japó, Corea del Sud i Oceania, i els d'ingressos baixos, gairebé tots a l'Àfrica subsahariana.",
+  "alt_mut": "Mapamundi mut amb les fronteres dels països en blanc sobre el mar i la graella de paral·lels i meridians cada 30°.",
+  "seo_titol": "Mapa dels països del món segons els ingressos (complet i mut)",
+  "seo_descripcio": "Mapamundi amb els països classificats pel Banc Mundial en quatre grups d'ingressos per al 2026-2027. Versió completa i muda en PDF per a 3r d'ESO."
+ },
+ {
+  "slug": "potencies-paisos-menys-avancats",
+  "titol": "Potències i països menys avançats",
+  "excerpt": "Les potències del G7, la resta del G20 i els 44 països menys avançats de l'ONU en un mateix mapamundi.",
+  "data": "Novembre del 2026",
+  "descripcio": "Potències i països menys avançats. Les potències tradicionals són a l'hemisferi nord. Les emergents són sobretot a l'Àsia i a l'Amèrica Llatina. Els països menys avançats són gairebé tots a l'Àfrica subsahariana. La Unió Europea i la Unió Africana també formen part del G20.\n\nEn blau fosc hi ha el G7, en blau clar la resta del G20 i en vermell els 44 països menys avançats segons l'ONU.\n\nÉs un mapamundi i no té escala ni fletxa del nord, perquè l'escala canvia molt d'un lloc a l'altre. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapamundi mut amb les fronteres dels països i la graella cada 30°. L'alumnat hi pot pintar els països del G7, la resta del G20 i els països menys avançats, fer-ne la llegenda i escriure el nom de les potències.",
+  "fonts": [
+   "Dades: llista de països menys avançats de l'ONU (novembre del 2026)",
+   "Fronteres: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb la llista de països menys avançats de l'ONU (44 països el novembre del 2026) i fronteres de Natural Earth (domini públic). CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s6-potencies",
+   "figura": "Potències i països menys avançats."
+  },
+  "alt_complet": "Mapamundi amb els països del G7 en blau fosc (els Estats Units, el Canadà, el Japó, Alemanya, França, Itàlia i el Regne Unit), la resta del G20 en blau clar i els 44 països menys avançats en vermell, la majoria a l'Àfrica subsahariana.",
+  "alt_mut": "Mapamundi mut amb les fronteres dels països en blanc sobre el mar i la graella de paral·lels i meridians cada 30°.",
+  "seo_titol": "Mapa de potències i països menys avançats (complet i mut, PDF)",
+  "seo_descripcio": "Mapamundi amb el G7, la resta del G20 i els 44 països menys avançats de l'ONU. Versió completa i muda en PDF per a 3r d'ESO."
+ },
+ {
+  "slug": "primeres-civilitzacions-fluvials",
+  "titol": "Les primeres civilitzacions fluvials",
+  "excerpt": "Les quatre primeres civilitzacions fluvials, a la vora del Nil, el Tigris i l'Eufrates, l'Indus i el riu Groc.",
+  "data": "Cap al 3500-1600 aC",
+  "descripcio": "Les quatre primeres civilitzacions fluvials. Totes van néixer a la vora d'un gran riu, en zones càlides i seques. Les dates són aproximades.\n\nMesopotàmia, al Tigris i l'Eufrates, des de cap al 3500 aC. Egipte, al Nil, des de cap al 3100 aC. La civilització de l'Indus, entre el 3300 i el 1300 aC. La Xina, al riu Groc (Huang He), amb la dinastia Shang des de cap al 1600 aC.\n\nNo porta escala perquè l'escala hi canvia gairebé un 50 % d'un lloc a l'altre. S'hi ha afegit una graella molt suau de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "El mut té les costes d'Àfrica del nord i d'Àsia, sense cap nom, els quatre grans rius i un punt a cada civilització, amb la graella de paral·lels i meridians. S'hi poden escriure els noms de les civilitzacions i dels rius, i les dates.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 822,
+   "apartat": "",
+   "ancora": "s1-fluvials",
+   "figura": "Les quatre primeres civilitzacions fluvials."
+  },
+  "alt_complet": "Mapa d'Àfrica del nord i Àsia amb els rius Nil, Tigris i Eufrates, Indus i Groc destacats, i un punt a Egipte, Mesopotàmia, la civilització de l'Indus i la Xina, amb les dates aproximades.",
+  "alt_mut": "Mapa mut d'Àfrica del nord i Àsia, sense noms, amb els quatre grans rius, un punt a cada civilització fluvial i una graella de paral·lels i meridians.",
+  "seo_titol": "Mapa de les primeres civilitzacions fluvials (complet i mut)",
+  "seo_descripcio": "Mapa de les quatre primeres civilitzacions fluvials, Mesopotàmia, Egipte, l'Indus i la Xina, amb els seus rius. Versió completa i muda en PDF."
+ },
+ {
+  "slug": "projeccions-mercator-equal-earth",
+  "titol": "Dues projeccions del món, Mercator i Equal Earth",
+  "excerpt": "La mateixa Terra dibuixada amb dues projeccions. A la de Mercator, Groenlàndia sembla tan gran com l'Àfrica, i a l'Equal Earth es veu la mida real.",
+  "data": "Actualitat",
+  "descripcio": "La mateixa Terra, dues projeccions. A l'esquerra, la de Mercator. A la dreta, l'Equal Earth, que manté la mida real dels territoris. En verd, Groenlàndia i l'Àfrica.\n\nSón dos mapamundis i no tenen escala ni fletxa del nord. A la projecció de Mercator l'escala creix cap als pols, i a l'Equal Earth es mantenen les superfícies però no les distàncies.",
+  "descripcio_mut": "Els dos mapamundis muts, amb les costes i la graella, sense colors ni rètols. L'alumnat hi pot pintar Groenlàndia i l'Àfrica a cada projecció, escriure el nom de cada projecció i comparar-ne les mides.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "cartografia"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 857,
+   "apartat": "",
+   "ancora": "s3-projeccions",
+   "figura": "La mateixa Terra, dues projeccions."
+  },
+  "alt_complet": "Dos mapamundis de la mateixa Terra. A l'esquerra, amb la projecció de Mercator (1569), Groenlàndia, en verd, sembla tan gran com l'Àfrica. A la dreta, amb la projecció Equal Earth (2018), que manté la mida real dels territoris, Groenlàndia és molt més petita que l'Àfrica.",
+  "alt_mut": "Dos mapamundis muts, un amb la projecció de Mercator i l'altre amb la projecció Equal Earth, amb les costes i la graella, sense colors ni rètols.",
+  "seo_titol": "Mapa de les projeccions Mercator i Equal Earth (complet i mut)",
+  "seo_descripcio": "Dos mapamundis per comparar la projecció de Mercator i l'Equal Earth, amb Groenlàndia i l'Àfrica destacades. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "ruta-alexandre",
+  "titol": "La ruta d'Alexandre (334-323 aC)",
+  "excerpt": "El camí d'Alexandre des de Pel·la fins al riu Hidaspes, a l'Índia, i la tornada fins a Babilònia, on va morir.",
+  "data": "334-323 aC",
+  "descripcio": "La ruta d'Alexandre (334-323 aC). La línia contínua és el camí d'anada fins al riu Hidaspes, a l'Índia, i la discontínua, el de tornada fins a Babilònia, on va morir. El traçat és aproximat.\n\nSurt de Pel·la, capital de Macedònia, el 334 aC, venç al Grànic (334), a Issos (333), pren Tir (332), funda Alexandria a Egipte (331), venç a Gaugamela (331), entra a Babilònia (331) i a Persèpolis (330), arriba a Samarcanda (329) i al riu Hidaspes, a l'Índia (326). Torna per Gedròsia i mor a Babilònia el 323 aC.\n\nS'hi ha afegit la fletxa del nord. El mapa és en projecció de Mercator, i el nord hi és exacte a tot arreu.",
+  "descripcio_mut": "El mut té les costes de la Mediterrània oriental fins a l'Índia, sense cap nom, el camí d'anada (línia contínua) i de tornada (discontínua) i un punt a cada lloc del recorregut. S'hi poden escriure els noms dels llocs i les dates, i pintar l'imperi persa i Macedònia.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)",
+   "Coordenades: Wikidata"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic). Coordenades, Wikidata.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "proxim-orient",
+   "mediterrani"
+  ],
+  "tipus": [
+   "historic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 831,
+   "apartat": "",
+   "ancora": "s5-conquestes",
+   "figura": "La ruta d'Alexandre (334-323 aC)."
+  },
+  "alt_complet": "Mapa de la Mediterrània oriental fins a l'Índia amb la ruta d'Alexandre, de Pel·la a Grànic, Issos, Tir, Alexandria, Gaugamela, Babilònia, Persèpolis, Samarcanda i l'Hidaspes, i la tornada per Gedròsia fins a Babilònia.",
+  "alt_mut": "Mapa mut de la Mediterrània oriental fins a l'Índia, sense noms, amb el camí d'anada i de tornada d'Alexandre i un punt a cada lloc del recorregut.",
+  "seo_titol": "Mapa de la ruta d'Alexandre el Gran (complet i mut, PDF)",
+  "seo_descripcio": "Mapa de la ruta d'Alexandre el Gran (334-323 aC), de Pel·la a l'Índia i la tornada a Babilònia, amb les batalles i les dates. Complet i mut en PDF."
+ },
+ {
+  "slug": "rutes-comerc-mesopotamia",
+  "titol": "Les rutes del comerç de Mesopotàmia (cap al 2500-1800 aC)",
+  "excerpt": "Les rutes per riu, per mar i per terra per on Mesopotàmia comprava metalls, fusta i pedres que no tenia.",
+  "data": "Cap al 2500-1800 aC",
+  "descripcio": "Les rutes del comerç de Mesopotàmia (cap al 2500-1800 aC). Mesopotàmia venia teixits de llana i aliments, i comprava els metalls, la fusta i les pedres que no tenia. Les rutes són aproximades, i els rius i les costes són els actuals.\n\nDes de Mesopotàmia sortien rutes per riu i per mar, pel golf Pèrsic, cap a Dilmun (Bahrain), Magan (Oman) i Meluhha (la vall de l'Indus), i rutes per terra cap a les muntanyes del Líban, Anatòlia i l'Afganistan. D'aquests llocs arribaven fusta de cedre, plata, coure, estany, lapislàtzuli, cornalina i pedra dura.",
+  "descripcio_mut": "El mut té les costes i els rius, sense cap nom, les rutes del comerç (discontínues les de riu i mar, puntejades les de terra) i un punt a cada ciutat i a cada lloc d'on venien els productes. S'hi poden escriure els noms dels llocs i dels productes i pintar cada tipus de ruta d'un color.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "edat-antiga"
+  ],
+  "territori": [
+   "proxim-orient"
+  ],
+  "tipus": [
+   "historic",
+   "economic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 822,
+   "apartat": "",
+   "ancora": "s2-comerc",
+   "figura": "Les rutes del comerç de Mesopotàmia (cap al 2500-1800 aC)."
+  },
+  "alt_complet": "Mapa del Pròxim Orient, de la Mediterrània a la vall de l'Indus, amb les rutes del comerç de Mesopotàmia per riu i per mar cap a Dilmun, Magan i Meluhha i per terra cap al Líban, Anatòlia i l'Afganistan, i els productes que en venien.",
+  "alt_mut": "Mapa mut del Pròxim Orient, sense noms, amb els rius, les rutes del comerç de Mesopotàmia i un punt a cada ciutat i a cada lloc d'origen dels productes.",
+  "seo_titol": "Mapa de les rutes del comerç de Mesopotàmia (complet i mut)",
+  "seo_descripcio": "Mapa de les rutes del comerç de Mesopotàmia cap al 2500-1800 aC, per riu, per mar i per terra, fins a l'Indus i Anatòlia. Complet i mut en PDF."
+ },
+ {
+  "slug": "set-llocs-set-climes",
+  "titol": "Set llocs del món, set climes",
+  "excerpt": "Manaus, Kano, Assuan, Barcelona, Londres, Moscou i Utqiaġvik, set llocs per comparar els grans climes de la Terra.",
+  "data": "Actualitat",
+  "descripcio": "Set llocs, set climes. Els climogrames dels apartats 4 i 5 són d'aquests llocs i tenen la mateixa escala, per comparar-los. Amb aquesta escala, una barra per sota de la línia no vol dir que el mes sigui sec. Per saber-ho, multiplica la temperatura per 2 i compara-la amb la pluja.\n\nAl mapa hi ha Manaus (clima equatorial), Kano (tropical), Assuan (desèrtic), Barcelona (mediterrani), Londres (oceànic), Moscou (continental) i Utqiaġvik (polar).\n\nÉs un mapamundi i no té escala ni fletxa del nord, perquè l'escala canvia molt d'una latitud a l'altra. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapamundi mut amb les costes, la graella cada 30°, l'equador, els tròpics, el cercle polar àrtic i set punts sense nom. L'alumnat hi pot escriure el nom de cada lloc i el seu clima, i pintar les zones climàtiques.",
+  "fonts": [
+   "Base cartogràfica: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, CC BY-SA 4.0. Base cartogràfica: Natural Earth (domini públic).",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "climatic"
+  ],
+  "curs": [
+   "1r-eso"
+  ],
+  "aparicio": {
+   "post": 1798,
+   "apartat": "",
+   "ancora": "s4-climes",
+   "figura": "Set llocs, set climes."
+  },
+  "alt_complet": "Mapamundi amb l'equador, els tròpics i el cercle polar àrtic i set llocs marcats amb el seu clima. Manaus, equatorial. Kano, tropical. Assuan, desèrtic. Barcelona, mediterrani. Londres, oceànic. Moscou, continental. Utqiaġvik, polar.",
+  "alt_mut": "Mapamundi mut amb les costes, la graella de paral·lels i meridians, les línies de l'equador, els tròpics i el cercle polar àrtic, i set punts negres sense nom.",
+  "seo_titol": "Mapa de set llocs i set climes del món (complet i mut, PDF)",
+  "seo_descripcio": "Mapamundi amb set llocs i el seu clima, de l'equatorial de Manaus al polar d'Utqiaġvik. Versió completa i muda en PDF per a 1r d'ESO."
+ },
+ {
+  "slug": "viatge-dun-mobil",
+  "titol": "El viatge d'un mòbil",
+  "excerpt": "On es dissenyava, d'on venien les peces i on es muntava un iPhone 7 del 2016, i quants dòlars del preu es quedava cada país.",
+  "data": "2016",
+  "descripcio": "El viatge d'un mòbil. Un iPhone 7 del 2016 es dissenyava als Estats Units, portava peces del Japó, Corea del Sud, Taiwan i els mateixos Estats Units, i es muntava a la Xina, sobretot a la ciutat de Zhengzhou. Des d'allà viatjava fins a les botigues de tot el món. Les xifres diuen quants dòlars dels 649 del preu es quedava cada país.\n\nNo té escala ni fletxa del nord, perquè és un mapa d'una gran part del món (projecció Equal Earth) i l'escala hi canvia molt. S'hi ha afegit la graella de paral·lels i meridians cada 30°.",
+  "descripcio_mut": "Mapa mut amb les fronteres dels països d'Europa, l'Àsia i Amèrica del Nord, la graella cada 30°, les fletxes del viatge en gris i sis punts sense nom. L'alumnat hi pot pintar els països segons el que hi fan (disseny i peces, muntatge, venda), escriure'n el nom i apuntar-hi els dòlars que es queda cada un.",
+  "fonts": [
+   "Dades: Dedrick, Linden i Kraemer (Universitat de Califòrnia a Irvine, 2019)",
+   "Fronteres: Natural Earth (domini públic)"
+  ],
+  "credit": "Mapa: professordesocials.cat, amb dades de Dedrick, Linden i Kraemer (Universitat de Califòrnia a Irvine, 2019) i fronteres de Natural Earth (domini públic). CC BY-SA 4.0.",
+  "llicencia": "cc-by-sa-4.0",
+  "periode": [
+   "actualitat"
+  ],
+  "territori": [
+   "mon"
+  ],
+  "tipus": [
+   "economic"
+  ],
+  "curs": [
+   "3r-eso"
+  ],
+  "aparicio": {
+   "post": 617,
+   "apartat": "",
+   "ancora": "s5",
+   "figura": "El viatge d'un mòbil."
+  },
+  "alt_complet": "Mapa amb fletxes des dels Estats Units, el Japó, Corea del Sud i Taiwan, que fan el disseny i les peces d'un iPhone 7, fins a la Xina, on es munta, i des de la Xina fins a Espanya, on es compra. Dels 649 dòlars del preu, el benefici d'Apple era de 283 i el muntatge a la Xina, de 8,5.",
+  "alt_mut": "Mapa mut d'Europa, l'Àsia i Amèrica del Nord amb les fronteres dels països, la graella de paral·lels i meridians, les fletxes del viatge en gris i sis punts negres sense nom.",
+  "seo_titol": "Mapa del viatge d'un mòbil, la cadena global (complet i mut)",
+  "seo_descripcio": "Mapa de la cadena de producció d'un iPhone 7, del disseny als Estats Units al muntatge a la Xina i la venda a Espanya. Complet i mut en PDF per a 3r d'ESO."
+ }
+]
