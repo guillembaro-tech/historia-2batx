@@ -136,6 +136,20 @@ add_filter(
 	2
 );
 
+/* Temes de 2n de Batxillerat (Història i Geografia). Es mostren amb the_content, no amb pds_v4_html. */
+add_filter(
+	'the_content',
+	static function ( $html ) {
+		if ( ! is_singular( array( 'tema_pau', 'tema_geo' ) ) || (int) get_the_ID() !== (int) get_queried_object_id() || ! pdsm_visible() ) {
+			return $html;
+		}
+		$id    = (int) get_queried_object_id();
+		$mapes = pdsm_mapes_de( $id );
+		return $mapes ? pdsm_enllacos_unitat( (string) $html, $id, $mapes ) : $html;
+	},
+	40
+);
+
 function pdsm_icona_baixa(): string {
 	return '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>';
 }
@@ -172,7 +186,7 @@ function pdsm_enllacos_unitat( string $html, int $id, array $mapes ): string {
 			$per = $t ? $t[0] : null;
 		}
 	}
-	$p = strpos( $html, 'id="recursos"' );
+	$p = false === strpos( $html, 'pdsm-rmapes' ) ? strpos( $html, 'id="recursos"' ) : false;
 	if ( false !== $p ) {
 		$h = strpos( $html, '</header>', $p );
 		if ( false !== $h ) {
