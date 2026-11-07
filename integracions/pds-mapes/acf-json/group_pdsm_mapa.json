@@ -1,0 +1,555 @@
+{
+    "key": "group_pdsm_mapa",
+    "title": "Mapa",
+    "fields": [
+        {
+            "key": "field_pdsm_tab_mapa",
+            "label": "Mapa",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_pdsm_img_complet",
+            "label": "Mapa complet",
+            "name": "pdsm_img_complet",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Imatge WebP de 1.600 px d'amplada. El text alternatiu es posa a Mèdia.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "preview_size": "medium",
+            "mime_types": "webp,png,jpg,jpeg",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_img_mut",
+            "label": "Mapa mut",
+            "name": "pdsm_img_mut",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Sense noms, amb les costes i els límits per pintar. Text alternatiu a Mèdia.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "preview_size": "medium",
+            "mime_types": "webp,png,jpg,jpeg",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_data",
+            "label": "Data o època",
+            "name": "pdsm_data",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Com es diu a la fitxa. Per exemple, «Cap a l'any 800» o «Segles VIII-VI aC».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placeholder": "Cap a l'any 800",
+            "maxlength": "",
+            "prepend": "",
+            "append": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_pdsm_descripcio",
+            "label": "Què mostra",
+            "name": "pdsm_descripcio",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Explicació del mapa complet, en llenguatge planer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0,
+            "default_value": ""
+        },
+        {
+            "key": "field_pdsm_descripcio_mut",
+            "label": "Què hi ha al mapa mut",
+            "name": "pdsm_descripcio_mut",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Què s'hi veu i què s'hi pot fer (pintar, escriure noms…).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_pdsm_tab_pdf",
+            "label": "PDF",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_pdsm_pdf_complet",
+            "label": "PDF complet",
+            "name": "pdsm_pdf_complet",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "A4 apaïsat, amb capçalera i peu.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "pdf",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_pdf_mut",
+            "label": "PDF mut",
+            "name": "pdsm_pdf_mut",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "A4 apaïsat, amb capçalera, peu i línies per al nom.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "pdf",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_pdf_complet_net",
+            "label": "PDF complet sense capçalera ni peu",
+            "name": "pdsm_pdf_complet_net",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "Sense res que identifiqui el web. Només hi va la font de la base si la llicència ho exigeix (IGN, OpenStreetMap).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "pdf",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_pdf_mut_net",
+            "label": "PDF mut sense capçalera ni peu",
+            "name": "pdsm_pdf_mut_net",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "Igual, en la versió muda.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "mime_types": "pdf",
+            "min_size": "",
+            "max_size": ""
+        },
+        {
+            "key": "field_pdsm_tab_fonts",
+            "label": "Fonts i llicència",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_pdsm_autor",
+            "label": "Autor",
+            "name": "pdsm_autor",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "professordesocials.cat",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_pdsm_llicencia",
+            "label": "Llicència",
+            "name": "pdsm_llicencia",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cc-by-sa-4.0": "CC BY-SA 4.0",
+                "cc-by-4.0": "CC BY 4.0",
+                "cc0": "CC0 (domini públic)"
+            },
+            "default_value": "cc-by-sa-4.0",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_pdsm_fonts",
+            "label": "Fonts i base cartogràfica",
+            "name": "pdsm_fonts",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Una per línia. Per exemple, «Base cartogràfica: Natural Earth (domini públic)».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 3,
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "default_value": ""
+        },
+        {
+            "key": "field_pdsm_svg_origen",
+            "label": "Fitxer SVG d'origen al servidor",
+            "name": "pdsm_svg_origen",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Camí dins de wp-content/uploads/pds-mapes/. Serveix per refer el mapa.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_pdsm_tab_unitats",
+            "label": "On surt",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_pdsm_aparicions",
+            "label": "Unitats i temes on surt",
+            "name": "pdsm_aparicions",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "La unitat o el tema, l'apartat i el començament del peu del mapa a la unitat (serveix per posar-hi l'enllaç a l'arxiu).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Afegeix una unitat o un tema",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_pdsm_ap_post",
+                    "label": "Unitat o tema",
+                    "name": "pdsm_ap_post",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "unitat",
+                        "tema_pau",
+                        "tema_geo"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_pdsm_aparicions"
+                },
+                {
+                    "key": "field_pdsm_ap_apartat",
+                    "label": "Apartat",
+                    "name": "pdsm_ap_apartat",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Apartat 6. Un mar, tres mons",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_pdsm_aparicions"
+                },
+                {
+                    "key": "field_pdsm_ap_ancora",
+                    "label": "Àncora",
+                    "name": "pdsm_ap_ancora",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Identificador de l'apartat (per exemple, s6), sense #.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "s6",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_pdsm_aparicions"
+                },
+                {
+                    "key": "field_pdsm_ap_figura",
+                    "label": "Començament del peu",
+                    "name": "pdsm_ap_figura",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Unes quantes paraules del principi del peu del mapa a la unitat, tal com hi són.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placeholder": "Un mar, tres mons",
+                    "default_value": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_pdsm_aparicions"
+                }
+            ]
+        },
+        {
+            "key": "field_pdsm_tab_seo",
+            "label": "SEO",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_pdsm_seo_titol",
+            "label": "Títol per a Google",
+            "name": "pdsm_seo_titol",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Si es deixa buit, «Títol · Mapa complet i mut (PDF)». Uns 60 caràcters.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 70,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_pdsm_seo_descripcio",
+            "label": "Descripció per a Google",
+            "name": "pdsm_seo_descripcio",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Fins a 160 caràcters. Si es deixa buida, es fa amb «Què mostra».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "rows": 2,
+            "new_lines": "",
+            "maxlength": 160,
+            "placeholder": "",
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "mapa"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "discussion",
+        "comments",
+        "author",
+        "format",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "Camps de l'arxiu de mapes (connector pds-mapes).",
+    "show_in_rest": 0,
+    "modified": 1794082172
+}

@@ -1,0 +1,100 @@
+/* PDS · Arxiu de mapes. Model v4, blau corporatiu. */
+.pdsm{--pdsm-b:#1F5FBF;--pdsm-bd:#174A96;--pdsm-bs:#E8F0FC;--pdsm-bl:#D2E3FC;--pdsm-t:#202124;--pdsm-t2:#5F6368;--pdsm-ln:#DADCE0;--primary:#1F5FBF;--primary-soft:#E8F0FC}
+@media (min-width:1025px){.um.pdsm .um-hero > .um-wrap{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M60 44L150 22L240 44L330 22V196L240 218L150 196L60 218Z'/%3E%3Cpath d='M150 22V196M240 44V218'/%3E%3Cpath d='M84 86Q100 66 124 74Q146 70 150 92V150Q132 160 118 150Q96 156 90 136Q76 118 84 86Z' stroke-width='2.4'/%3E%3Cpath d='M150 92Q166 76 190 84Q214 80 222 104Q234 126 214 140Q206 162 184 156Q164 166 150 150' stroke-width='2.4'/%3E%3Cpath d='M252 78Q276 62 300 74Q318 92 306 112Q296 132 274 126Q252 130 248 108Q242 92 252 78Z' stroke-width='2.4'/%3E%3Ccircle cx='190' cy='110' r='9'/%3E%3Cpath d='M190 119V134'/%3E%3Ccircle cx='372' cy='190' r='26'/%3E%3Cpath d='M372 168L378 190L372 212L366 190Z'/%3E%3C/g%3E%3Cpath d='M240 44L330 22V196L240 218Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M60 44L150 22V196L60 218Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 28px center;background-size:auto 86%}}
+@media (max-width:1024px){.um.pdsm .um-hero > .um-wrap{background-image:none}}
+.pdsm .um-hero .um-crumbs a{color:inherit}
+.pdsm-wrap{padding-top:20px;padding-bottom:48px}
+.pdsm-avis{background:#FEF7E0;border:1px solid #F9AB00;border-radius:8px;padding:8px 12px;font-size:14px;margin:0 0 16px}
+.pdsm-filtres{background:#fff;border:1px solid var(--pdsm-ln);border-radius:8px;padding:20px 20px 16px;margin:0 0 20px}
+.pdsm-cerca{display:flex;align-items:center;gap:10px;border:1px solid var(--pdsm-ln);border-radius:24px;padding:0 16px;color:var(--pdsm-t2);margin:0 0 16px}
+.pdsm-cerca:focus-within{border-color:var(--pdsm-b);box-shadow:0 0 0 2px var(--pdsm-bl)}
+.pdsm-cerca svg{flex:none}
+.pdsm-cerca input{flex:1;border:0;outline:0;background:transparent;font:15px/1.4 Roboto,Arial,sans-serif;color:var(--pdsm-t);padding:11px 0;min-width:0}
+.pdsm-lbl{font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--pdsm-t2);margin:0 0 8px}
+.pdsm-pills{list-style:none;margin:0 0 14px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.pdsm-pill{display:inline-block;border:1px solid var(--pdsm-ln);border-radius:16px;padding:6px 12px;font-size:14px;color:var(--pdsm-t);background:#fff;white-space:nowrap;text-decoration:none}
+.pdsm-pill:hover{background:#F1F3F4}
+.pdsm-pill b{font-weight:400;color:var(--pdsm-t2);margin-left:5px}
+.pdsm-pill.on{background:var(--pdsm-b);border-color:var(--pdsm-b);color:#fff}
+.pdsm-pill.on b{color:var(--pdsm-bl)}
+.pdsm-pill.off{color:#9AA0A6}
+.pdsm-mes summary{cursor:pointer;font-size:14px;color:var(--pdsm-t2);list-style:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0}
+.pdsm-mes summary::-webkit-details-marker{display:none}
+.pdsm-mes summary:before{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin-right:4px;transition:transform .15s}
+.pdsm-mes[open] summary:before{transform:rotate(45deg)}
+.pdsm-mes summary b{background:var(--pdsm-b);color:#fff;border-radius:10px;font-size:12px;padding:1px 7px;font-weight:500}
+.pdsm-sels{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.pdsm-sel{display:flex;flex-direction:column;gap:2px;border:1px solid var(--pdsm-ln);border-radius:8px;padding:6px 10px}
+.pdsm-sel span{font-size:12px;color:var(--pdsm-t2)}
+.pdsm-sel select{border:0;background:transparent;font:15px Roboto,Arial,sans-serif;color:var(--pdsm-t);padding:2px 0;width:100%}
+.pdsm-res{display:flex;justify-content:space-between;align-items:baseline;margin:4px 2px 14px;font-size:15px;color:var(--pdsm-t2)}
+.pdsm-res strong{color:var(--pdsm-t);font-weight:500}
+.pdsm-res a,.pdsm-buit a{color:var(--pdsm-b)}
+.pdsm-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pdsm-card{background:#fff;border:1px solid var(--pdsm-ln);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;height:100%;color:var(--pdsm-t);text-decoration:none;transition:box-shadow .15s,border-color .15s}
+.pdsm-card:hover{border-color:#BDC1C6;box-shadow:0 1px 3px rgba(60,64,67,.2)}
+.pdsm-img{aspect-ratio:4/3;background:#F1F3F4 center/contain no-repeat;border-bottom:1px solid var(--pdsm-ln)}
+.pdsm-cos{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pdsm-et{font-size:12px;color:var(--pdsm-t2)}
+.pdsm-tit{font-size:16px;font-weight:500;line-height:1.3;color:var(--pdsm-t)}
+.pdsm-peu{display:flex;gap:6px;align-items:center;margin-top:auto;padding-top:6px;flex-wrap:wrap}
+.pdsm-curs{font-size:12px;font-weight:500;border-radius:4px;padding:2px 6px;color:var(--c);background:var(--c-soft)}
+.pdsm-v{font-size:12px;color:var(--pdsm-t2);border:1px solid var(--pdsm-ln);border-radius:4px;padding:1px 6px}
+.pdsm-priv{border-color:#F9AB00;color:#B06000}
+/* Fitxa */
+.pdsm-fitxa{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:start}
+.pdsm-visor,.pdsm-box,.pdsm-text{background:#fff;border:1px solid var(--pdsm-ln);border-radius:8px}
+.pdsm-visor{padding:16px}
+.pdsm-seg{display:inline-flex;border:1px solid var(--pdsm-ln);border-radius:20px;padding:3px;margin:0 0 14px;background:#F6F8FB}
+.pdsm-seg button{border:0;background:transparent;padding:7px 16px;border-radius:16px;font:14px Roboto,Arial,sans-serif;color:var(--pdsm-t2);cursor:pointer}
+.pdsm-seg button.on{background:#fff;color:var(--pdsm-b);font-weight:500;box-shadow:0 1px 2px rgba(60,64,67,.3)}
+.pdsm-seg button:focus-visible{outline:2px solid var(--pdsm-b);outline-offset:2px}
+.pdsm-fig{margin:0 0 12px}
+.pdsm-fig[hidden]{display:none}
+.pdsm-fig img{width:100%;height:auto;display:block;border:1px solid var(--pdsm-ln);border-radius:4px}
+.pdsm-fig figcaption{font-size:13px;color:var(--pdsm-t2);margin-top:8px}
+.pdsm-dl{display:flex;gap:10px;flex-wrap:wrap}
+.pdsm-btn{display:inline-flex;align-items:center;gap:8px;border-radius:20px;padding:9px 16px;font:500 14px Roboto,Arial,sans-serif;border:1px solid var(--pdsm-b);color:var(--pdsm-b);background:#fff;text-decoration:none;white-space:nowrap;cursor:pointer}
+.pdsm-btn:hover{background:var(--pdsm-bs)}
+.pdsm-btn.pri{background:var(--pdsm-b);color:#fff}
+.pdsm-btn.pri:hover{background:var(--pdsm-bd)}
+.pdsm-btn small{font-weight:400;opacity:.8}
+.pdsm-net{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:14px;color:var(--pdsm-t2);cursor:pointer}
+.pdsm-net input{width:18px;height:18px;accent-color:var(--pdsm-b)}
+.pdsm-text{padding:16px 20px;margin-top:16px;font-size:15px;line-height:1.6}
+.pdsm-text h2,.pdsm-box h2,.pdsm-rel h2{font-weight:500;color:var(--pdsm-t)}
+.pdsm-text h2{font-size:18px;margin:0 0 8px}
+.pdsm-text p{margin:0 0 10px}
+.pdsm-side{display:flex;flex-direction:column;gap:12px}
+.pdsm-box{padding:14px 16px;font-size:14px;line-height:1.45}
+.pdsm-box h2{font-size:15px;margin:0 0 10px}
+.pdsm-box p{margin:0 0 6px}
+.pdsm-box a{color:var(--pdsm-b)}
+.pdsm-dl2{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+.pdsm-dl2 dt{color:var(--pdsm-t2)}
+.pdsm-dl2 dd{margin:0}
+.pdsm-ap{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.pdsm-box a.pdsm-unitat{display:flex;gap:10px;align-items:flex-start;color:var(--pdsm-b);text-decoration:none}
+.pdsm-unitat i{flex:none;width:36px;height:36px;border-radius:6px;display:grid;place-items:center;font-style:normal;font-weight:500;font-size:13px;background:var(--c-soft,#E8F0FC);color:var(--c,#1F5FBF)}
+.pdsm-unitat b{display:block;font-weight:500;color:var(--pdsm-t)}
+.pdsm-fonts{color:var(--pdsm-t2)}
+.pdsm-rel{margin-top:28px}
+.pdsm-rel h2{font-size:18px;margin:0 0 12px}
+.pdsm-rel .pdsm-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:900px){.pdsm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pdsm-fitxa{grid-template-columns:1fr}.pdsm-rel .pdsm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.pdsm-grid{grid-template-columns:1fr}.pdsm-sels{grid-template-columns:1fr}.pdsm-filtres{padding:14px}.pdsm-pills{flex-wrap:nowrap;overflow-x:auto;margin-right:-14px;padding-right:14px;scrollbar-width:none}.pdsm-dl .pdsm-btn{flex:1;justify-content:center}.pdsm-btn small{display:none}}
+/* Enllaços des de les unitats (porten també um-sa-dl, que els treu dels documents; aquí se'n desfà l'estil) */
+.um a.pdsm-umlink.um-sa-dl{display:inline-flex;align-items:center;gap:8px;margin:10px 0 0;padding:8px 12px;border:1px solid var(--primary-soft,#E8F0FC);background:var(--primary-soft,#E8F0FC);border-radius:8px;font:14px/1.3 Roboto,Arial,sans-serif;color:var(--primary,#1F5FBF);text-decoration:none;width:auto}
+.um a.pdsm-umlink.um-sa-dl:hover{text-decoration:underline}
+.um a.pdsm-umlink svg{width:16px;height:16px;flex:none}
+.um .pdsm-rmapes.um-sa-dl{display:block;background:#fff;border:1px solid #DADCE0;border-radius:8px;padding:16px;margin:0 0 20px}
+.um .pdsm-rmapes h3{margin:0 0 4px;font-size:17px;font-weight:500}
+.um .pdsm-rmapes p{margin:0 0 12px;color:#5F6368;font-size:14px}
+.um .pdsm-rmapes ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.um .pdsm-rmapes li a{display:flex;gap:12px;align-items:center;border:1px solid #DADCE0;border-radius:8px;padding:8px;text-decoration:none;color:#202124}
+.um .pdsm-rmapes li a:hover{border-color:#BDC1C6}
+.um .pdsm-rmapes li i{width:96px;height:64px;flex:none;background:#F1F3F4 center/contain no-repeat;border-radius:4px}
+.um .pdsm-rmapes li b{display:block;font-weight:500;font-size:14px}
+.um .pdsm-rmapes li span span{font-size:13px;color:var(--primary,#1F5FBF)}
+.um .pdsm-rmapes .pdsm-tot{display:inline-block;margin-top:12px;color:var(--primary,#1F5FBF);font-size:14px}
+@media print{.pdsm-umlink,.pdsm-rmapes,.pdsm-filtres,.pdsm-dl,.pdsm-net,.pdsm-seg{display:none!important}}
