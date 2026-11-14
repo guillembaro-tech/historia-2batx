@@ -1,0 +1,83 @@
+
+/* ---------- Situació d'aprenentatge (model SA v4, 12/10/2026) ---------- */
+.um-sa .um-ico { width: 20px; height: 20px; flex: 0 0 20px; color: var(--primary); }
+.um-sa-top { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); align-items: start; gap: 24px; margin: 0 0 8px; }
+.um-sa-top .um-intro { margin: 0 0 14px; }
+.um-sa-top .um-fig.um-photo img { height: auto; max-height: 440px; width: 100%; object-fit: contain; }
+.um-sa-repte { margin: 0 0 14px; }
+.um-sa-fitxa { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.um-sa-fitxa > div { border: 1px solid var(--outline); border-radius: var(--r); padding: 10px 12px; }
+.um-sa-fitxa dt { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.um-sa-fitxa dd { margin: 4px 0 0; font-size: 15px; line-height: 1.4; color: var(--ink); }
+.um-sa-obj { list-style: none; display: grid; gap: 8px; margin: 8px 0 18px; }
+.um-sa-obj li { position: relative; padding-left: 34px; line-height: 1.5; }
+.um-sa-obj li::before { content: ""; position: absolute; left: 0; top: .1em; width: 22px; height: 22px; border-radius: 50%; background: var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 14px no-repeat; }
+.um-cards.um-sa-ses { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.um-sa-ses .um-card h4::before, .um-sa-troballes .um-card h4::before { display: none; }
+.um-sa-ses .um-card h4 { align-items: center; }
+.um-sa-n { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 15px; font-weight: 500; }
+.um-sa-ses .um-card ul { margin: 8px 0 10px; padding-left: 20px; font-size: 15px; line-height: 1.5; }
+.um-sa-ses .um-card ul li { margin: 0 0 3px; }
+.um .um-sa-ses .um-sa-lliura { font-size: 14px; font-weight: 500; color: var(--primary-dark); border-top: 1px dashed var(--outline); padding-top: 8px; }
+.um-sa-troballes .um-card h4 .um-ico { margin-top: .1em; }
+.um-sa .um-sa-taula td:first-child { width: 120px; text-align: left; font-weight: 500; }
+.um-sa .um-sa-taula td:last-child { width: 70px; text-align: center; }
+.um-sa .um-sa-ex td { background: var(--primary-soft); color: var(--ink-2); font-style: italic; }
+.um-sa .um-sa-ex td:first-child { font-style: normal; }
+.um-sa-esq th { width: 50%; color: var(--primary-dark); }
+.um-sa-esq td { height: 52px; border-right: 1px solid var(--outline); }
+.um-sa-esq td:last-child { border-right: 0; }
+.um-sa-ajuda { background: var(--surface-2, #F8F9FA); }
+.um-sa-ajuda ul { margin: 6px 0 10px; padding-left: 20px; }
+.um-sa-mot { display: inline-block; margin: 3px 2px 0; padding: 1px 10px; border-radius: 999px; background: var(--primary-soft); color: var(--primary-dark); font-size: 14px; }
+.um-lines { display: none; }
+.um-sa-rub td:first-child { width: 19%; }
+.um .um-box.um-sa-llista { border: 1px solid var(--outline); }
+.um-checklist { list-style: none; margin: 6px 0 0; }
+.um-checklist li { position: relative; padding-left: 28px; margin: 0 0 6px; }
+.um-checklist li::before { content: ""; position: absolute; left: 0; top: .2em; width: 15px; height: 15px; border: 1.5px solid var(--primary); border-radius: 3px; }
+@media (max-width: 760px) {
+  .um-cards.um-sa-ses { grid-template-columns: 1fr; }
+  .um-sa-top { grid-template-columns: 1fr; }
+  .um-sa-top .um-fig.um-photo img { max-height: 360px; }
+}
+@media (max-width: 420px) { .um-sa-fitxa { grid-template-columns: 1fr; } }
+
+/* Documents (PDF) */
+.pd .um-sa-top { grid-template-columns: 1.7fr 1fr; gap: 5mm; align-items: start; margin: 0 0 3mm; }
+.pd .um-sa-top .um-photo img { max-height: 78mm; width: auto; max-width: 100%; }
+.pd .um-sa-top .um-intro { margin-top: 0; }
+.pd .um-sa-repte { margin: 0 0 3mm; }
+.pd .um-sa-fitxa { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; margin: 0; }
+.pd .um-sa-fitxa > div { border: .6pt solid var(--line); border-radius: 2mm; padding: 1.8mm 2.4mm; break-inside: avoid; }
+.pd .um-sa-fitxa dt { display: flex; align-items: center; gap: 1.5mm; font: 600 7.6pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); }
+.pd .um-sa-fitxa dd { margin: .6mm 0 0; font: 8.8pt/1.35 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink); }
+.pd .um-sa .um-ico, .pd .um-ico { width: 3.6mm; height: 3.6mm; flex: 0 0 3.6mm; color: var(--c); }
+.pd .um-sa-obj { list-style: none; padding: 0; }
+.pd .um-sa-obj li { position: relative; padding-left: 6mm; margin: 0 0 1.4mm; }
+.pd .um-sa-obj li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 4mm; height: 4mm; border-radius: 50%; background: var(--c); color: #fff; font: 700 7pt/4mm "Roboto Var", Roboto, Arial, sans-serif; text-align: center; }
+.pd .um-sa-ses .um-card h4 { display: flex; align-items: center; gap: 2mm; }
+.pd .um-sa-n { display: inline-flex; align-items: center; justify-content: center; width: 5mm; height: 5mm; flex: 0 0 5mm; border-radius: 50%; background: var(--c); color: #fff; font: 600 8pt "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-sa-ses .um-card ul { margin: 1mm 0 1.2mm; padding-left: 4mm; }
+.pd .um-sa-lliura { font-weight: 600; color: var(--c-dark); border-top: .5pt dashed var(--line); padding-top: 1mm; margin: 0; }
+.pd .um-sa-troballes .um-card h4 { display: flex; align-items: flex-start; gap: 1.6mm; }
+.pd .um-sa-taula td { height: 15mm; }
+.pd .um-sa-taula { table-layout: fixed; }
+.pd .um-fill th[data-w] { width: auto; }
+.pd .um-sa-taula th:nth-child(1) { width: 17%; } .pd .um-sa-taula th:nth-child(2) { width: 13%; } .pd .um-sa-taula th:nth-child(3) { width: 30%; } .pd .um-sa-taula th:nth-child(5) { width: 10%; }
+.pd .um-sa-taula td:first-child { text-align: left; font-weight: 600; }
+.pd .um-sa-taula td:last-child { text-align: center; }
+.pd .um-sa-taula tr { break-inside: avoid; }
+.pd .um-sa-nova { break-before: page; margin-top: 0; }
+.pd .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; color: var(--ink2); }
+.pd .um-sa-esq th { width: 50%; }
+.pd .um-sa-esq td { height: 13mm; border-right: .5pt solid var(--line); }
+.pd .um-sa-esq td:last-child { border-right: 0; }
+.pd .um-sa-ajuda { background: #F8F9FA; }
+.pd .um-sa-mot { display: inline-block; margin: .6mm .4mm 0; padding: 0 2mm; border: .5pt solid var(--c); border-radius: 3mm; color: var(--c-dark); font: 8pt/1.5 "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-box.um-sa-llista { border: .6pt solid var(--line); }
+.pd .um-checklist { list-style: none; padding-left: 0; }
+.pd .um-checklist li { position: relative; padding-left: 5.5mm; margin: 0 0 1mm; }
+.pd .um-checklist li::before { content: ""; position: absolute; left: 0; top: .6mm; width: 3mm; height: 3mm; border: .8pt solid var(--c); border-radius: .6mm; }
+.pd .um-sa-rub td:first-child { width: 22mm; }
+.pd .um-sa table, .pd .um-sa-ses .um-card, .pd .um-sa-troballes .um-card { break-inside: avoid; }
