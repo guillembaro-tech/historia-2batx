@@ -88,7 +88,13 @@
             },
             "choices": {
                 "a": "a",
-                "b": "b"
+                "b": "b",
+                "c": "c",
+                "d": "d",
+                "e": "e",
+                "f": "f",
+                "g": "g",
+                "h": "h"
             },
             "default_value": "",
             "return_format": "value",
@@ -1484,5 +1490,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1791734400
+    "modified": 1794487920
 }

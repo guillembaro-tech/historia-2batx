@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PDS · 2n de Batxillerat
  * Description: Secció d'Història de 2n de Batxillerat (PAU). Temes PAU, Exercicis PAU, Àmbits PAU, Taller PAU interactiu, preguntes PAU 2010-2024 i importació des de la web d'Història. Mentre no es publica, només la veuen els administradors.
- * Version: 0.4.2
+ * Version: 0.5.6
  * Author: Professor de socials
  * License: GPL-2.0-or-later
  * Requires PHP: 8.1
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PDS2_VER', '0.4.2' );
+define( 'PDS2_VER', '0.5.8.1' );
 define( 'PDS2_FILE', __FILE__ );
 define( 'PDS2_DIR', plugin_dir_path( __FILE__ ) );
 define( 'PDS2_URL', plugin_dir_url( __FILE__ ) );
@@ -24,7 +24,8 @@ define( 'PDS2_URL', plugin_dir_url( __FILE__ ) );
 const PDS2_BASE = '2n-batxillerat';
 
 /** Adreça publicada de la web d'Història (font de la importació). */
-const PDS2_FONT_URL = 'https://guillembaro-tech.github.io/historia-2batx/';
+// La web de GitHub Pages es va retirar el 23/10/2026. La importació llegeix els fitxers directament del repositori.
+const PDS2_FONT_URL = 'https://raw.githubusercontent.com/guillembaro-tech/historia-2batx/main/';
 
 require_once PDS2_DIR . 'includes/model.php';
 require_once PDS2_DIR . 'includes/fields.php';
@@ -32,7 +33,14 @@ require_once PDS2_DIR . 'includes/routes.php';
 require_once PDS2_DIR . 'includes/data.php';
 require_once PDS2_DIR . 'includes/rest.php';
 require_once PDS2_DIR . 'includes/templates.php';
+require_once PDS2_DIR . 'includes/personatges.php';
+require_once PDS2_DIR . 'includes/banc.php';
+require_once PDS2_DIR . 'includes/pau-v3.php';
 require_once PDS2_DIR . 'includes/presentacio.php';
+require_once PDS2_DIR . 'includes/videos.php';
+require_once PDS2_DIR . 'includes/esquema.php';
+require_once PDS2_DIR . 'includes/sessions.php';
+require_once PDS2_DIR . 'includes/curs.php';
 require_once PDS2_DIR . 'includes/correccio.php';
 require_once PDS2_DIR . 'includes/import.php';
 require_once PDS2_DIR . 'includes/admin.php';

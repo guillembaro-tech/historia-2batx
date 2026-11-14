@@ -1,0 +1,60 @@
+/* Vídeos dels temes de 2n (codi curt [pds_video]). Targeta discreta dins el text: miniatura petita i títol.
+   En fer clic, el vídeo s'obre a tota l'amplada (16:9) amb el reproductor de YouTube. */
+.um .pds2-vid { display: grid; grid-template-columns: 208px minmax(0, 1fr); gap: 4px 18px; align-items: center; margin: 22px 0 26px; padding: 12px; border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface-2); }
+.um .pds2-vid-play { position: relative; display: block; width: 208px; aspect-ratio: 16 / 9; padding: 0; border: 0; border-radius: 6px; overflow: hidden; background: var(--ink); cursor: pointer; }
+.um .pds2-vid-img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; }
+.um .pds2-vid-buit { background: var(--primary-soft); }
+.um .pds2-vid-ic { position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: rgba(32, 33, 36, .78); transition: background .15s ease, transform .15s ease; }
+.um .pds2-vid-ic::after { content: ""; position: absolute; left: 18px; top: 14px; border-style: solid; border-width: 9px 0 9px 14px; border-color: transparent transparent transparent #fff; }
+.um .pds2-vid-play:hover .pds2-vid-ic, .um .pds2-vid-play:focus-visible .pds2-vid-ic { background: var(--primary); transform: scale(1.06); }
+.um .pds2-vid-play:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+.um .pds2-vid-qr { display: none; }
+.um .pds2-vid-t { display: flex; flex-direction: column; gap: 4px; margin: 0; font-size: 15px; line-height: 1.4; color: var(--ink-2); }
+.um .pds2-vid-k { font-size: 13.5px; font-weight: 500; color: var(--primary); font-variant-numeric: tabular-nums; }
+.um .pds2-vid-tit { font-size: 16.5px; font-weight: 500; line-height: 1.3; color: var(--ink); }
+.um .pds2-vid-nota { font-size: 13.5px; }
+.um .pds2-vid-nota a { color: var(--ink-2); }
+
+/* Obert: el reproductor ocupa tota l'amplada i el text queda a sota */
+.um .pds2-vid.is-open { grid-template-columns: minmax(0, 1fr); background: var(--surface); }
+.um .pds2-vid-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; background: #000; }
+.um .pds2-vid-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.um .pds2-vid.is-open .pds2-vid-t { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; align-items: start; }
+.um .pds2-vid.is-open .pds2-vid-t > :not(.pds2-vid-tanca) { grid-column: 1; }
+.um .pds2-vid-tanca { grid-column: 2; grid-row: 1 / span 3; align-self: center; display: inline-flex; align-items: center; gap: 6px; font: 500 14px/1 var(--font); color: var(--primary); background: var(--surface); border: 1px solid var(--outline); border-radius: 20px; padding: 9px 16px; cursor: pointer; white-space: nowrap; }
+.um .pds2-vid-tanca:hover { background: var(--primary-soft); border-color: var(--primary); }
+.um .pds2-vid-tanca:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+@media (max-width: 600px) {
+	.um .pds2-vid.is-open .pds2-vid-t { grid-template-columns: minmax(0, 1fr); }
+	.um .pds2-vid-tanca { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 6px; }
+}
+
+/* Índex: icona als subapartats que comencen amb un vídeo */
+.um .um-toc a.pds2-toc-vid::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 6px; vertical-align: 1px; border-style: solid; border-width: 4px 0 4px 7px; border-color: transparent transparent transparent var(--primary); }
+
+@media (max-width: 600px) {
+	.um .pds2-vid { grid-template-columns: 132px minmax(0, 1fr); gap: 4px 12px; padding: 10px; }
+	.um .pds2-vid-play { width: 132px; }
+	.um .pds2-vid-ic { width: 36px; height: 36px; margin: -18px 0 0 -18px; }
+	.um .pds2-vid-ic::after { left: 14px; top: 11px; border-width: 7px 0 7px 11px; }
+	.um .pds2-vid-tit { font-size: 15.5px; }
+}
+
+/* Impressió directa del navegador (sense el document compost): el codi QR en lloc del botó */
+@media print {
+	.um .pds2-vid { grid-template-columns: 26mm minmax(0, 1fr); background: none; break-inside: avoid; }
+	.um .pds2-vid-play, .um .pds2-vid-frame, .um .pds2-vid-tanca { display: none; }
+	.um .pds2-vid-qr { display: block; width: 26mm; height: 26mm; }
+	.um .pds2-vid-nota a { text-decoration: none; }
+}
+
+/* Document compost per al PDF (model4.js): el botó ja no hi és i queda el QR amb el peu */
+.pd .pds2-vid { display: flex; align-items: center; gap: 9pt; margin: 6pt 0 8pt; padding: 6pt 8pt; border: 1px solid #DADCE0; border-radius: 6px; break-inside: avoid; }
+.pd .pds2-vid .pds2-vid-qr { display: block; flex: 0 0 22mm; width: 22mm; height: 22mm; margin: 0; }
+.pd .pds2-vid figcaption { display: block; margin: 0; font-size: 9pt; line-height: 1.35; color: #5F6368; text-align: left; }
+.pd .pds2-vid .pds2-vid-k { display: block; color: var(--c, #1F5FBF); font-weight: 500; }
+.pd .pds2-vid .pds2-vid-tit { display: block; color: #202124; font-size: 10pt; font-weight: 500; }
+.pd .pds2-vid .pds2-vid-nota { display: block; }
+.pd .pds2-vid .pds2-vid-nota a { color: #5F6368; overflow-wrap: anywhere; }
+.pd .pds2-vid-llista { display: none; }
+.pd .pds2-vid-frame, .pd .pds2-vid-play { display: none; }

@@ -27,14 +27,18 @@ while ( have_posts() ) :
 	$pau       = array_values( (array) pds2_f( 'pau', $pid, array() ) );
 	$preguntes = array_values( (array) pds2_f( 'preguntes', $pid, array() ) );
 	$taller_on = 'disponible' === pds2_f( 'estat_taller', $pid, '' );
-	$pres      = pds2_presentacio( (int) $n );
+	$pres_tot  = pds2_presentacions( (int) $n );
+	$pres      = $pres_tot ? reset( $pres_tot ) : null;
 	$seccions  = pds2_v4_seccions( $pid );
+	$resum     = function_exists( 'pds2_video_resum' ) ? pds2_video_resum( $pid ) : null;
 	$pau_tot   = array_sum( array_map( static fn( $r ) => count( pds2_convocatories( $r['fonts'] ?? '' ) ) + count( pds2_convocatories( $r['llargues'] ?? '' ) ), $preguntes ) );
 	$pau_max   = max( array_merge( array( 1 ), array_map( static fn( $r ) => (int) ( $r['n'] ?? 0 ), $pau ) ) );
 	$minuts    = max( 5, (int) ( round( $seccions['paraules'] / 200 / 5 ) * 5 ) );
 	$v2        = pds2_pau_v2();
 	$tests     = $v2 ? pds2_tests_data( (int) $n ) : null;
 	$n_tests   = $tests ? count( $tests['tests'] ) : 0;
+	$pau3      = $v2 && pds2_pau_v3() ? pds2_pau_dades_tema( (int) $pid, (int) $n ) : null;
+	$c3        = $pau3 ? pds2_pau_compte( $pau3['fitxes'] ) : null;
 
 	?>
 	<?php pds2_avis_privat(); ?>
@@ -50,14 +54,26 @@ while ( have_posts() ) :
 				<ul class="um-facts">
 					<li><?php echo count( $apartats ); ?> apartats<?php echo $dates ? ' (' . esc_html( $dates ) . ')' : ''; ?></li>
 					<li>Lectura del temari, uns <?php echo (int) $minuts; ?> minuts</li>
-					<?php if ( $pres ) : ?>
+					<?php if ( isset( $pres_tot['essencial'], $pres_tot['completa'] ) ) : ?>
+						<li>Presentació essencial (<?php echo count( $pres_tot['essencial']['diapositives'] ); ?> diapositives) i completa (<?php echo count( $pres_tot['completa']['diapositives'] ); ?>)</li>
+					<?php elseif ( $pres ) : ?>
 						<li>Presentació (<?php echo count( $pres['diapositives'] ); ?> diapositives)</li>
+					<?php endif; ?>
+					<?php
+					$n_videos = (int) ( $seccions['videos'] ?? 0 );
+					if ( $n_videos ) :
+						$txt_v = $n_videos . ' ' . ( 1 === $n_videos ? 'vídeo' : 'vídeos' ) . ' dins el temari';
+						?>
+						<li><?php echo esc_html( $txt_v ); ?></li>
+					<?php endif; ?>
+					<?php if ( $resum ) : ?>
+						<li>Vídeo resum del tema<?php echo $resum['durada'] ? ' (' . esc_html( $resum['durada'] ) . ')' : ''; ?></li>
 					<?php endif; ?>
 					<?php if ( $v2 ) : ?>
 						<?php if ( $taller_on ) : ?>
-							<li>Taller PAU, els quatre exercicis pas a pas</li>
+							<li><?php echo $c3 ? esc_html( ( $c3[1] + $c3[2] + $c3[3] ) . ' exercicis i ' . $c3[4] . ' tests per preparar la PAU' ) : 'Taller PAU, els quatre exercicis pas a pas'; ?></li>
 						<?php endif; ?>
-						<?php if ( $n_tests ) : ?>
+						<?php if ( $n_tests && ! $c3 ) : ?>
 							<li><?php echo (int) $n_tests; ?> <?php echo 1 === $n_tests ? 'test' : 'tests'; ?> de l'exercici 4</li>
 						<?php endif; ?>
 					<?php else : ?>
@@ -83,13 +99,13 @@ while ( have_posts() ) :
 			<nav class="um-toc" aria-label="Índex del tema">
 				<p>Índex</p>
 				<ol>
-					<li><a href="#comencem">Abans de començar</a></li>
+					<li><a href="#comencem"<?php echo $resum ? ' class="pds2-toc-vid" title="Hi ha el vídeo resum del tema"' : ''; ?>>Abans de començar</a></li>
 					<?php foreach ( $seccions['apartats'] as $i => $s ) : ?>
 						<li><a href="#s<?php echo (int) ( $i + 1 ); ?>"><?php echo (int) ( $i + 1 ) . '. ' . esc_html( $s['titol'] ); ?></a>
 							<?php if ( $s['sub'] ) : ?>
 								<ol>
 									<?php foreach ( $s['sub'] as $sub ) : ?>
-										<li><a href="#<?php echo esc_attr( $sub['id'] ); ?>"><?php echo esc_html( $sub['titol'] ); ?></a></li>
+										<li><a href="#<?php echo esc_attr( $sub['id'] ); ?>"<?php echo ! empty( $sub['video'] ) ? ' class="pds2-toc-vid" title="Comença amb un vídeo"' : ''; ?>><?php echo esc_html( $sub['titol'] ); ?></a></li>
 									<?php endforeach; ?>
 								</ol>
 							<?php endif; ?>
@@ -120,10 +136,12 @@ while ( have_posts() ) :
 					<?php elseif ( has_excerpt() ) : ?>
 						<p class="um-intro"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
 					<?php endif; ?>
+					<?php echo $resum ? pds2_video_resum_html( $pid ) : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- HTML escapat a pds2_video_sc(). ?>
 					<div class="um-box um-near">
 						<span class="um-box-t">Tema <?php echo (int) $n; ?> de la PAU d'Història</span>
 						<p><?php echo esc_html( get_the_title() ); ?><?php echo $dates ? ' (' . esc_html( $dates ) . ')' : ''; ?>.</p>
 					</div>
+					<?php echo function_exists( 'pds2_esquema_html' ) ? pds2_esquema_html( $pid ) : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- HTML fet amb esc_html i esc_attr. ?>
 					<?php if ( $apartats && ! $claus ) : ?>
 						<h3>Els apartats</h3>
 						<ol>
@@ -140,7 +158,7 @@ while ( have_posts() ) :
 					<section class="um-sec" id="s<?php echo (int) ( $i + 1 ); ?>">
 						<header><span class="um-num">Apartat <?php echo (int) ( $i + 1 ); ?></span><h2 id="ap<?php echo (int) $i; ?>"><?php echo esc_html( $s['titol'] ); ?></h2></header>
 						<?php if ( ! empty( $ap['resum'] ) ) : ?>
-							<p class="um-q"><?php echo ! empty( $ap['dates'] ) ? '<strong>' . esc_html( $ap['dates'] ) . '.</strong> ' : ''; ?><?php echo esc_html( $ap['resum'] ); ?></p>
+							<p class="um-q"><?php echo ! empty( $ap['dates'] ) ? '<strong>' . esc_html( $ap['dates'] ) . '.</strong> ' : ''; ?><?php echo wp_kses( $ap['resum'], array( 'em' => array(), 'strong' => array(), 'i' => array() ) ); ?></p>
 						<?php endif; ?>
 						<?php echo $s['html']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- contingut del tema filtrat per the_content. ?>
 						<?php echo pds2_v4_peu( $ap ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
@@ -151,6 +169,7 @@ while ( have_posts() ) :
 					<section class="um-sec" id="fonts">
 						<header><span class="um-num">Fonts</span><h2>Fonts del tema</h2></header>
 						<p>Documents de l'època en la llengua original, amb la procedència i el context.</p>
+						<?php do_action( 'pds2_fonts_inici', $pid ); ?>
 						<?php foreach ( $fonts as $j => $f ) : ?>
 							<article class="pds2-v4-font" id="font<?php echo (int) ( $j + 1 ); ?>">
 								<header>
@@ -185,62 +204,97 @@ while ( have_posts() ) :
 					</section>
 				<?php endif; ?>
 
-				<?php if ( $pres ) :
-					$dia  = $pres['diapositives'];
-					$v    = rawurlencode( (string) ( $pres['versio'] ?? PDS2_VER ) );
-					$base = $pres['url'];
+				<?php if ( $pres_tot ) :
+					$dues = count( $pres_tot ) > 1;
 					?>
 					<section class="um-sec pds2-pres" id="sa" aria-labelledby="presentacio">
 						<header><span class="um-num">Presentació</span><h2 id="presentacio">Presentació del tema</h2></header>
-						<p>Les idees clau de cada apartat, amb les imatges i el que en surt a la PAU. Passa les diapositives amb les fletxes, lliscant el dit al mòbil o triant-ne una de la llista.</p>
-						<div class="pds2-pres-v" data-base="<?php echo esc_url( $base ); ?>" data-v="<?php echo esc_attr( $v ); ?>">
-							<div class="pds2-pres-stage">
-								<img src="<?php echo esc_url( $base . $dia[0]['img'] . '?v=' . $v ); ?>" width="1600" height="900" alt="<?php echo esc_attr( 'Diapositiva 1. ' . $dia[0]['t'] ); ?>" decoding="async">
-								<button type="button" class="pds2-pres-nav pds2-pres-prev" aria-label="Diapositiva anterior" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
-								<button type="button" class="pds2-pres-nav pds2-pres-next" aria-label="Diapositiva següent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+						<?php if ( $dues ) : ?>
+							<p>Hi ha dues presentacions del tema. Comença per l'essencial, i fes servir la completa quan vulguis aprofundir-hi.</p>
+							<div class="pds2-pres-tries" role="group" aria-label="Tria la presentació">
+								<?php foreach ( $pres_tot as $clau => $p ) : ?>
+									<button type="button" class="pds2-pres-tipus pds2-pres-tipus-<?php echo esc_attr( $clau ); ?>" data-pres="<?php echo esc_attr( $clau ); ?>" aria-pressed="<?php echo 'essencial' === $clau ? 'true' : 'false'; ?>">
+										<span class="pds2-pres-tipus-cap">
+											<span class="pds2-pres-tipus-nom"><?php echo esc_html( 'essencial' === $clau ? 'Essencial' : 'Completa' ); ?></span>
+											<?php if ( 'essencial' === $clau ) : ?><span class="pds2-pres-tipus-seg">Per començar</span><?php endif; ?>
+										</span>
+										<span class="pds2-pres-tipus-n"><?php echo count( $p['diapositives'] ); ?> diapositives</span>
+										<span class="pds2-pres-tipus-d"><?php echo esc_html( $p['descripcio'] ); ?></span>
+									</button>
+								<?php endforeach; ?>
 							</div>
-							<div class="pds2-pres-bar">
-								<label class="screen-reader-text" for="pds2-pres-tria">Tria una diapositiva</label>
-								<select id="pds2-pres-tria" class="pds2-pres-tria">
-									<?php
-									$grup = null;
-									foreach ( $dia as $i => $d ) :
-										if ( ( $d['s'] ?? '' ) !== $grup ) :
-											if ( null !== $grup ) :
-												echo '</optgroup>';
-											endif;
-											$grup = (string) ( $d['s'] ?? '' );
-											echo '<optgroup label="' . esc_attr( $grup ) . '">';
-										endif;
-										?>
-										<option value="<?php echo (int) $i; ?>"><?php echo (int) ( $i + 1 ) . '. ' . esc_html( (string) $d['t'] ); ?></option>
-									<?php endforeach; ?>
-									<?php echo null !== $grup ? '</optgroup>' : ''; ?>
-								</select>
-								<span class="pds2-pres-comp" aria-live="polite">1 / <?php echo count( $dia ); ?></span>
-								<button type="button" class="um-btn pds2-pres-full">Pantalla completa</button>
-							</div>
-						</div>
-						<div class="um-box um-near pds2-pres-notes">
-							<span class="um-box-t">Notes de la diapositiva</span>
-							<p><?php echo esc_html( (string) ( $dia[0]['n'] ?? '' ) ); ?></p>
-						</div>
-						<div class="um-box um-key pds2-pres-baixa">
-							<span class="um-box-t">Descarrega-la</span>
-							<p>El fitxer de PowerPoint s'obre i s'edita a Presentacions de Google. Puja'l a Google Drive i obre'l amb Presentacions de Google. També el pots obrir amb PowerPoint o amb LibreOffice.</p>
-							<p class="pds2-pres-btns">
-								<a class="um-quiz-btn" href="<?php echo esc_url( $base . $pres['pptx'] . '?v=' . $v ); ?>" download>Descarrega per a Google Slides (.pptx, <?php echo esc_html( pds2_mb( (int) ( $pres['mida_pptx'] ?? 0 ) ) ); ?>)</a>
-								<?php if ( ! empty( $pres['pdf'] ) ) : ?>
-									<a class="um-btn pds2-pres-pdf" href="<?php echo esc_url( $base . $pres['pdf'] . '?v=' . $v ); ?>" download>Descarrega en PDF (<?php echo esc_html( pds2_mb( (int) ( $pres['mida_pdf'] ?? 0 ) ) ); ?>)</a>
+						<?php else : ?>
+							<p>Les idees clau de cada apartat, amb les imatges i el que en surt a la PAU. Passa les diapositives amb les fletxes, lliscant el dit al mòbil o triant-ne una de la llista. Cada clic fa aparèixer un element nou de la diapositiva.</p>
+						<?php endif; ?>
+						<?php
+						$primer = true;
+						foreach ( $pres_tot as $clau => $pres_i ) :
+							$dia  = $pres_i['diapositives'];
+							$v    = rawurlencode( (string) ( $pres_i['versio'] ?? PDS2_VER ) );
+							$base = $pres_i['url'];
+							$sel  = 'pds2-pres-tria-' . $clau;
+							?>
+							<div class="pds2-pres-item" data-pres="<?php echo esc_attr( $clau ); ?>"<?php echo $primer ? '' : ' hidden'; ?>>
+								<?php if ( $dues ) : ?>
+									<h3 class="pds2-pres-titol"><?php echo esc_html( $pres_i['nom'] ); ?> <span>· <?php echo count( $dia ); ?> diapositives</span></h3>
+									<p class="pds2-pres-ajuda">Passa les diapositives amb les fletxes, lliscant el dit al mòbil o triant-ne una de la llista. Cada clic fa aparèixer un element nou de la diapositiva. Si la vols veure sencera, tria «Mostra-ho tot de cop».</p>
 								<?php endif; ?>
-							</p>
-						</div>
-						<script type="application/json" class="pds2-pres-dades"><?php echo wp_json_encode( array_map( static fn( $d ) => array( 'img' => (string) $d['img'], 't' => (string) $d['t'], 'n' => (string) ( $d['n'] ?? '' ) ), $dia ), JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP ); ?></script>
+								<div class="pds2-pres-v" data-base="<?php echo esc_url( $base ); ?>" data-v="<?php echo esc_attr( $v ); ?>">
+									<div class="pds2-pres-stage">
+										<img src="<?php echo esc_url( $base . $dia[0]['img'] . '?v=' . $v ); ?>" width="1600" height="900" alt="<?php echo esc_attr( 'Diapositiva 1. ' . $dia[0]['t'] ); ?>" decoding="async"<?php echo $primer ? '' : ' loading="lazy"'; ?>>
+										<button type="button" class="pds2-pres-nav pds2-pres-prev" aria-label="Diapositiva anterior" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+										<button type="button" class="pds2-pres-nav pds2-pres-next" aria-label="Diapositiva següent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+									</div>
+									<div class="pds2-pres-bar">
+										<label class="screen-reader-text" for="<?php echo esc_attr( $sel ); ?>">Tria una diapositiva</label>
+										<select id="<?php echo esc_attr( $sel ); ?>" class="pds2-pres-tria">
+											<?php
+											$grup = null;
+											foreach ( $dia as $i => $d ) :
+												if ( ( $d['s'] ?? '' ) !== $grup ) :
+													if ( null !== $grup ) :
+														echo '</optgroup>';
+													endif;
+													$grup = (string) ( $d['s'] ?? '' );
+													echo '<optgroup label="' . esc_attr( $grup ) . '">';
+												endif;
+												?>
+												<option value="<?php echo (int) $i; ?>"><?php echo (int) ( $i + 1 ) . '. ' . esc_html( (string) $d['t'] ); ?></option>
+											<?php endforeach; ?>
+											<?php echo null !== $grup ? '</optgroup>' : ''; ?>
+										</select>
+										<span class="pds2-pres-comp" aria-live="polite">1 / <?php echo count( $dia ); ?></span>
+										<?php if ( array_filter( array_column( $dia, 'p' ) ) ) : ?>
+											<button type="button" class="um-btn pds2-pres-passos">Mostra-ho tot de cop</button>
+										<?php endif; ?>
+										<button type="button" class="um-btn pds2-pres-full">Pantalla completa</button>
+									</div>
+								</div>
+								<div class="um-box um-near pds2-pres-notes">
+									<span class="um-box-t">Notes de la diapositiva</span>
+									<p><?php echo esc_html( (string) ( $dia[0]['n'] ?? '' ) ); ?></p>
+								</div>
+								<div class="um-box um-key pds2-pres-baixa">
+									<span class="um-box-t"><?php echo $dues ? esc_html( 'Descarrega la ' . lcfirst( $pres_i['nom'] ) ) : 'Descarrega-la'; ?></span>
+									<p>El fitxer de PowerPoint s'obre i s'edita a Presentacions de Google. Puja'l a Google Drive i obre'l amb Presentacions de Google. També el pots obrir amb PowerPoint o amb LibreOffice. Porta les mateixes animacions que el visor, cada element apareix en fer clic.</p>
+									<p class="pds2-pres-btns">
+										<a class="um-quiz-btn" href="<?php echo esc_url( $base . $pres_i['pptx'] . '?v=' . $v ); ?>" download>Descarrega per a Google Slides (.pptx, <?php echo esc_html( pds2_mb( (int) ( $pres_i['mida_pptx'] ?? 0 ) ) ); ?>)</a>
+										<?php if ( ! empty( $pres_i['pdf'] ) ) : ?>
+											<a class="um-btn pds2-pres-pdf" href="<?php echo esc_url( $base . $pres_i['pdf'] . '?v=' . $v ); ?>" download>Descarrega en PDF (<?php echo esc_html( pds2_mb( (int) ( $pres_i['mida_pdf'] ?? 0 ) ) ); ?>)</a>
+										<?php endif; ?>
+									</p>
+								</div>
+								<script type="application/json" class="pds2-pres-dades"><?php echo wp_json_encode( array_map( static fn( $d ) => array( 'img' => (string) $d['img'], 't' => (string) $d['t'], 'n' => (string) ( $d['n'] ?? '' ), 'p' => (int) ( $d['p'] ?? 0 ), 'v' => $d['v'] ?? null ), $dia ), JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP ); ?></script>
+							</div>
+							<?php
+							$primer = false;
+						endforeach;
+						?>
 					</section>
 				<?php endif; ?>
 
 				<?php if ( $v2 ) :
-					include pds2_plantilla( 'tema-pau-v4.php' );
+					include pds2_plantilla( $pau3 ? 'tema-pau-v5.php' : 'tema-pau-v4.php' );
 				elseif ( $practica || $taller_on ) : ?>
 					<section class="um-sec" id="activitats">
 						<header><span class="um-num">Practica</span><h2>Pràctica per a l'examen</h2></header>
@@ -283,6 +337,15 @@ while ( have_posts() ) :
 						<?php endif; ?>
 					</section>
 				<?php endif; ?>
+
+				<?php
+				$pds2_rec = $v2 ? (string) get_post_meta( $pid, '_pds2_recursos_html', true ) : '';
+				if ( '' !== trim( $pds2_rec ) ) {
+					echo wp_kses_post( $pds2_rec ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- filtrat amb wp_kses_post.
+				}
+				?>
+
+				<?php echo function_exists( 'pds2_sessions_html' ) ? pds2_sessions_html( $pid ) : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a sessions.php. ?>
 
 			</article>
 		</div>

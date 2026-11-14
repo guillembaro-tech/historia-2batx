@@ -25,7 +25,7 @@ add_filter(
 		$mapa = array(
 			'portada'   => pds2_disseny_v4() ? 'portada-v4.php' : 'portada.php',
 			'historia'  => 'historia-v4.php',
-			'pau'       => 'pau-v4.php',
+			'pau'       => pds2_pau_v3() ? 'pau-v5.php' : 'pau-v4.php',
 			'tema'      => pds2_disseny_v4() ? 'tema-v4.php' : 'tema.php',
 			'taller'    => pds2_disseny_v4() ? 'taller-v4.php' : 'taller.php',
 			'preguntes' => pds2_disseny_v4() ? 'preguntes-v4.php' : 'preguntes.php',
@@ -74,7 +74,7 @@ add_action(
 			wp_enqueue_style( 'pds2', PDS2_URL . 'assets/css/pds-2batx.css', $dep, PDS2_VER );
 		}
 
-		if ( 'taller' === $v || 'pau' === $v ) {
+		if ( 'taller' === $v || ( 'pau' === $v && ! pds2_pau_v3() ) ) {
 			$tema_id = 'taller' === $v ? get_queried_object_id() : 0;
 			wp_enqueue_style( 'pds2-taller', PDS2_URL . 'assets/css/taller.css', $v4 ? array() : array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-taller', PDS2_URL . 'assets/js/taller.js', array(), PDS2_VER, true );
@@ -108,7 +108,7 @@ add_action(
 			wp_add_inline_script( 'pds2-taller', 'window.PDS2_TALLER = ' . wp_json_encode( $cfg ) . ';', 'before' );
 		}
 
-		if ( 'preguntes' === $v || 'pau' === $v || ( 'tema' === $v && ! pds2_pau_v2() ) ) {
+		if ( 'preguntes' === $v || ( 'pau' === $v && ! pds2_pau_v3() ) || ( 'tema' === $v && ! pds2_pau_v2() ) ) {
 			wp_enqueue_style( 'pds2-preguntes', PDS2_URL . 'assets/css/preguntes.css', $v4 ? array() : array( 'pds2' ), PDS2_VER );
 			wp_enqueue_script( 'pds2-preguntes', PDS2_URL . 'assets/js/preguntes.js', array(), PDS2_VER, true );
 			$cfg = array(
@@ -150,15 +150,26 @@ function pds2_estils_v4(): void {
 	}
 	$tema_id = get_queried_object_id();
 	wp_enqueue_style( 'pds2-tema-v4', PDS2_URL . 'assets/css/tema-v4.css', wp_style_is( 'pds-um', 'enqueued' ) ? array( 'pds-um' ) : array(), PDS2_VER );
-	if ( $taller ) {
+	// PAU, organització del 31/10/2026: pestanya PAU del tema i Preparar la PAU.
+	if ( pds2_pau_v3() && ( 'tema' === $vista || 'pau' === $vista ) ) {
+		wp_enqueue_style( 'pds2-pau3', PDS2_URL . 'assets/css/pau-app.css', array( 'pds2-tema-v4' ), PDS2_VER );
+		wp_enqueue_script( 'pds2-pau3', PDS2_URL . 'assets/js/pau-app.js', 'tema' === $vista && wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
+	}
+	if ( $taller && ! ( 'pau' === $vista && pds2_pau_v3() ) ) {
 		wp_enqueue_style( 'pds2-taller-v4', PDS2_URL . 'assets/css/taller-v4.css', array( 'pds2-taller', 'pds2-tema-v4' ), PDS2_VER );
 	}
 	if ( 'tema' !== $vista ) {
 		return;
 	}
 	wp_enqueue_script( 'pds2-tema-v4', PDS2_URL . 'assets/js/tema-v4.js', wp_script_is( 'pds-um-tabs', 'enqueued' ) ? array( 'pds-um-tabs' ) : array(), PDS2_VER, true );
+	// Gràfics del temari en HTML (eixos, barres, taules) i ampliació d'imatges (3/11/2026).
+	if ( file_exists( PDS2_DIR . 'assets/css/grafics.css' ) ) {
+		wp_enqueue_style( 'pds2-grafics', PDS2_URL . 'assets/css/grafics.css', array( 'pds2-tema-v4' ), (string) filemtime( PDS2_DIR . 'assets/css/grafics.css' ) );
+		wp_enqueue_script( 'pds2-grafics', PDS2_URL . 'assets/js/grafics.js', array(), (string) filemtime( PDS2_DIR . 'assets/js/grafics.js' ), true );
+	}
 	// Amb la nova organització de la PAU, el Taller s'obre des de la pestanya PAU i no cal la pestanya enllaç.
 	$v2 = pds2_pau_v2();
+	wp_enqueue_script( 'pds2-banc', PDS2_URL . 'assets/js/banc.js', array(), PDS2_VER, true );
 	wp_add_inline_script( 'pds2-tema-v4', 'window.PDS2_V4 = ' . wp_json_encode( array( 'taller' => ! $v2 && 'disponible' === pds2_f( 'estat_taller', $tema_id, '' ) ? pds2_taller_url( $tema_id ) : '', 'v2' => $v2 ) ) . ';', 'before' );
 }
 
@@ -190,7 +201,7 @@ function pds2_fitxa_html( array $ap ): string {
 		$h .= '<div><dt>Dates</dt><dd class="pds2-mono">' . esc_html( $ap['dates'] ) . '</dd></div>';
 	}
 	if ( '' !== trim( (string) ( $ap['resum'] ?? '' ) ) ) {
-		$h .= '<div class="pds2-fitxa-resum"><dt>En resum</dt><dd>' . esc_html( $ap['resum'] ) . '</dd></div>';
+		$h .= '<div class="pds2-fitxa-resum"><dt>En resum</dt><dd>' . wp_kses( $ap['resum'], array( 'em' => array(), 'strong' => array(), 'i' => array() ) ) . '</dd></div>';
 	}
 	$conceptes = pds2_linies( $ap['conceptes'] ?? '' );
 	if ( $conceptes ) {
@@ -212,7 +223,7 @@ function pds2_fitxa_html( array $ap ): string {
 		$h .= '</dd></div>';
 	}
 	if ( '' !== trim( (string) ( $ap['al_llibre'] ?? '' ) ) ) {
-		$h .= '<div><dt>Al llibre</dt><dd>' . esc_html( $ap['al_llibre'] ) . '</dd></div>';
+		$h .= '<div><dt>Al llibre</dt><dd>' . wp_kses( $ap['al_llibre'], array( 'em' => array(), 'strong' => array(), 'i' => array() ) ) . '</dd></div>';
 	}
 	$h .= '</dl></div>';
 	return $h;
@@ -233,8 +244,9 @@ function pds2_contingut_tema( int $post_id ): string {
 }
 
 /**
- * Mentre un tema no és al WordPress, els enllaços que hi porten van a la web d'Història de GitHub.
- * Quan s'importa el tema, els enllaços tornen a portar a la pàgina del WordPress sense tocar res.
+ * Mentre un tema no és al WordPress, els enllaços que hi porten es mostren com a text (sense enllaç).
+ * Quan s'importa el tema, tornen a ser enllaços a la pàgina del WordPress sense tocar res.
+ * (Abans portaven a la web de GitHub Pages, retirada el 23/10/2026.)
  */
 function pds2_enllacos_pendents( string $html ): string {
 	static $presents = null;
@@ -250,14 +262,7 @@ function pds2_enllacos_pendents( string $html ): string {
 			continue;
 		}
 		$slug = preg_quote( $o['slug'], '#' );
-		$html = (string) preg_replace( '#href="' . $base . $slug . '/taller/"#', 'href="' . esc_url( PDS2_FONT_URL . 'taller.html#tema-' . $n ) . '"', $html );
-		$html = (string) preg_replace_callback(
-			'#href="' . $base . $slug . '/(\#[\w-]+)?"#',
-			static function ( $m ) use ( $n ) {
-				return 'href="' . esc_url( PDS2_FONT_URL . 'tema-' . $n . '.html' . ( $m[1] ?? '' ) ) . '"';
-			},
-			$html
-		);
+		$html = (string) preg_replace( '#<a\s[^>]*href="' . $base . $slug . '/(?:taller/)?(?:\#[\w-]+)?"[^>]*>(.*?)</a>#s', '$1', $html );
 	}
 	return $html;
 }
@@ -287,16 +292,23 @@ function pds2_v4_seccions( int $post_id ): array {
 			},
 			(string) ( $parts[ $k + 2 ] ?? '' )
 		);
+		// Vídeos de l'apartat (codi curt [pds_video]): «Vídeo 1.1», «Vídeo 1.2»… i la marca de l'índex.
+		$nv = 0;
+		if ( function_exists( 'pds2_videos_numera' ) ) {
+			$cos = pds2_videos_numera( $cos, $sub, $i + 1, $nv );
+		}
 		$out[ $i ] = array(
-			'titol' => trim( wp_strip_all_tags( $parts[ $k + 1 ] ) ),
-			'html'  => $cos,
-			'sub'   => $sub,
+			'titol'  => trim( wp_strip_all_tags( $parts[ $k + 1 ] ) ),
+			'html'   => $cos,
+			'sub'    => $sub,
+			'videos' => $nv,
 		);
 	}
 	ksort( $out );
 	return array(
 		'apartats' => array_values( $out ),
 		'paraules' => (int) preg_match_all( '/[\p{L}\p{N}]+/u', wp_strip_all_tags( $html ) ),
+		'videos'   => array_sum( array_column( $out, 'videos' ) ),
 	);
 }
 
@@ -321,7 +333,7 @@ function pds2_v4_peu( array $ap ): string {
 		$files[] = '<strong>Àmbits PAU.</strong> ' . implode( ' · ', $ambits ) . '.';
 	}
 	if ( '' !== trim( (string) ( $ap['al_llibre'] ?? '' ) ) ) {
-		$files[] = '<strong>Al llibre.</strong> ' . esc_html( $ap['al_llibre'] );
+		$files[] = '<strong>Al llibre.</strong> ' . wp_kses( $ap['al_llibre'], array( 'em' => array(), 'strong' => array(), 'i' => array() ) );
 	}
 	if ( ! $files ) {
 		return '';

@@ -139,8 +139,13 @@ add_action(
 			pds2_404();
 			return;
 		}
-		// Amb la nova organització publicada, les preguntes 2010-2024 són dins de «Preparar la PAU».
-		if ( 'preguntes' === $vista && get_option( 'pds2_pau_v2', false ) ) {
+		// Amb la nova organització del 31/10/2026, el Taller és dins de la pestanya PAU de cada tema.
+		if ( 'taller' === $vista && get_option( 'pds2_pau_v3', false ) ) {
+			wp_safe_redirect( trailingslashit( get_permalink( get_queried_object_id() ) ) . '#activitats', 301 );
+			exit;
+		}
+		// Amb la nova organització publicada, les preguntes 2010-2024 són dins de «Preparar la PAU» (fins al 31/10/2026; ara queden a part, per als docents).
+		if ( 'preguntes' === $vista && get_option( 'pds2_pau_v2', false ) && ! get_option( 'pds2_pau_v3', false ) ) {
 			wp_safe_redirect( pds2_pau_url() . '#preguntes', 301 );
 			exit;
 		}

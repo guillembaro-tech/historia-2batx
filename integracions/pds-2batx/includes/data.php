@@ -274,7 +274,12 @@ function pds2_taller_data( int $n ): ?array {
 	foreach ( pds2_exercicis( $tema->ID ) as $e ) {
 		switch ( (string) pds2_f( 'exercici', $e->ID, '' ) ) {
 			case '1':
-				$out['ex1'] = pds2_ex1( $e->ID );
+				// El primer exercici 1 és el del Taller; els altres, opcions de pràctica (opció a, b, c...).
+				if ( empty( $out['ex1'] ) ) {
+					$out['ex1'] = pds2_ex1( $e->ID );
+				} else {
+					$out['ex1_mes'][] = array_merge( pds2_ex1( $e->ID ), array( 'id' => (string) pds2_f( 'opcio', $e->ID, '' ), 'boto' => (string) pds2_f( 'boto', $e->ID, '' ) ) );
+				}
 				break;
 			case '2':
 				$ex2[] = pds2_ex2( $e->ID );

@@ -37,7 +37,7 @@ $amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 
 			<p class="um-guide">Història d'Espanya i Catalunya. Els sis temes de 2n de Batxillerat que entren a les PAU, de la Restauració a la consolidació democràtica (1875–1986).</p>
 			<ul class="um-facts">
 				<li>6 temes de la PAU</li>
-				<li><?php echo count( $amb_taller ); ?> <?php echo 1 === count( $amb_taller ) ? 'tema' : 'temes'; ?> amb Taller PAU</li>
+				<li><?php echo count( $amb_taller ); ?> <?php echo 1 === count( $amb_taller ) ? 'tema' : 'temes'; ?> <?php echo pds2_pau_v3() ? 'amb exercicis de la PAU per practicar' : 'amb Taller PAU'; ?></li>
 				<li>Preguntes de les PAU del 2010 al 2024</li>
 			</ul>
 		</div>
@@ -64,12 +64,14 @@ $amb_taller = array_filter( $posts, static fn( $p ) => 'disponible' === pds2_f( 
 							<span class="pds2-v4-tm"><?php echo esc_html( $p ? (string) pds2_f( 'dates', $p->ID, $o['dates'] ) : $o['dates'] ); ?><?php echo $p ? '' : ' · En preparació'; ?></span>
 						</div>
 						<?php if ( $taller ) : ?>
-							<a class="pds2-v4-tl" href="<?php echo esc_url( pds2_taller_url( $p->ID ) ); ?>">Taller PAU</a>
+							<a class="pds2-v4-tl" href="<?php echo esc_url( pds2_pau_v3() ? get_permalink( $p ) . '#activitats' : pds2_taller_url( $p->ID ) ); ?>"><?php echo pds2_pau_v3() ? 'Exercicis PAU' : 'Taller PAU'; ?></a>
 						<?php endif; ?>
 					</li>
 				<?php endforeach; ?>
 			</ol>
 		</section>
+
+		<?php echo function_exists( 'pds2_curs_html' ) ? pds2_curs_html() : ''; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 
 		<section class="um-sec" id="cronologia">
 			<header><span class="um-num">Cronologia</span><h2>La línia del temps</h2></header>

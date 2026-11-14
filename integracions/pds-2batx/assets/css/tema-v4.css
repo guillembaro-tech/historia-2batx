@@ -9,6 +9,16 @@
 /* Il·lustració del Tema 2: un edifici amb arcades i la bandera, i un document (les Bases de Manresa). */
 @media (min-width: 1025px) { .um.pds2-t-2 .um-hero > .um-wrap { background-size: auto 86%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M150 236V110H380V236'/%3E%3Cpath d='M150 110L265 74L380 110'/%3E%3Cpath d='M240 236V176Q265 146 290 176V236'/%3E%3Cpath d='M172 160V132Q186 116 200 132V160ZM330 160V132Q344 116 358 132V160Z'/%3E%3Cpath d='M172 214V188Q186 172 200 188V214ZM330 214V188Q344 172 358 188V214Z'/%3E%3Cpath d='M265 74V40'/%3E%3Cpath d='M265 42H292V60H265'/%3E%3Cpath d='M50 236V150H118V236'/%3E%3Cpath d='M62 168H106M62 184H106M62 200H96'/%3E%3C/g%3E%3Cpath d='M265 42H292V60H265Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M240 236V176Q265 146 290 176V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
 
+/* Il·lustració del Tema 3: la bandera republicana i la Constitució de 1931 oberta sobre un faristol. */
+@media (min-width: 1025px) { .um.pds2-t-3 .um-hero > .um-wrap { background-size: auto 86%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M24 236H404'/%3E%3Cpath d='M244 236V54'/%3E%3Cpath d='M238 236H250'/%3E%3Ccircle cx='244' cy='48' r='6'/%3E%3Cpath d='M244 64Q284 50 320 64T396 64V148Q356 162 320 148Q284 134 244 148Z'/%3E%3Cpath d='M244 92Q284 78 320 92T396 92'/%3E%3Cpath d='M244 120Q284 106 320 120T396 120'/%3E%3Cpath d='M40 236V222H196V236'/%3E%3Cpath d='M52 222L60 172H182L190 222'/%3E%3Cpath d='M118 172V222'/%3E%3Cpath d='M66 186H108M64 198H108M62 210H108M128 186H172M128 198H174M128 210H176'/%3E%3C/g%3E%3Cpath d='M244 92Q284 78 320 92T396 92V120Q356 134 320 120Q284 106 244 120Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M52 222L60 172H182L190 222Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
+
+
+/* Il·lustració de la portada de la matèria Història (/2n-batxillerat/historia/): el Congrés dels Diputats amb els lleons
+   i la façana del Palau de la Generalitat a la plaça de Sant Jaume, amb el balcó i l'escut de Sant Jordi.
+   La mida la fixa model4.css (340 px), com a la resta de capçaleres. */
+@media (min-width: 1025px) { .um.pds2-v4-historia .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 236H408'/%3E%3Cpath d='M58 236V230H160V236M64 230V224H154V230'/%3E%3Cpath d='M70 224V158M76 224V158M85 224V158M91 224V158M100 224V158M106 224V158M112 224V158M118 224V158M127 224V158M133 224V158M142 224V158M148 224V158'/%3E%3Cpath d='M64 158H154V148H64Z'/%3E%3Cpath d='M60 148L109 122L158 148Z'/%3E%3Cpath d='M26 236V222H54V236M164 236V222H192V236'/%3E%3Cpath d='M30 222V216Q30 211 36 211H44M44 222V216M28 214Q22 212 24 206'/%3E%3Ccircle cx='49' cy='208' r='6'/%3E%3Cpath d='M52 213V222'/%3E%3Cpath d='M188 222V216Q188 211 182 211H174M174 222V216M190 214Q196 212 194 206'/%3E%3Ccircle cx='169' cy='208' r='6'/%3E%3Cpath d='M166 213V222'/%3E%3Cpath d='M220 236V96H398V236'/%3E%3Cpath d='M216 96H402M220 82H398M226 84V94M238 84V94M250 84V94M262 84V94M274 84V94M344 84V94M356 84V94M368 84V94M380 84V94M392 84V94'/%3E%3Cpath d='M288 82V60H330V82M284 60H334M288 60L309 48L330 60'/%3E%3Cpath d='M300 63H318V71Q318 78 309 80Q300 78 300 71Z'/%3E%3Cpath d='M309 65V77M303 69H315'/%3E%3Cpath d='M216 172H402'/%3E%3Cpath d='M220 192H272M220 208H272M220 222H272M346 192H398M346 208H398M346 222H398'/%3E%3Cpath d='M279 236V172M286 236V172M332 236V172M339 236V172'/%3E%3Cpath d='M293 236V200A16 16 0 0 1 325 200V236'/%3E%3Cpath d='M274 168H344M278 168V152H340V168M290 152V168M302 152V168M316 152V168M328 152V168'/%3E%3Cpath d='M302 152V128H316V152'/%3E%3Cpath d='M300 122V110A9 9 0 0 1 318 110V122Z'/%3E%3Cpath d='M229 150V120H243V150M253 150V120H267V150M351 150V120H365V150M375 150V120H389V150'/%3E%3Cpath d='M227 116L236 108L245 116M251 116Q260 106 269 116M349 116Q358 106 367 116M373 116L382 108L391 116'/%3E%3C/g%3E%3Cpath d='M60 148L109 122L158 148Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M293 236V200A16 16 0 0 1 325 200V236Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M300 63H318V71Q318 78 309 80Q300 78 300 71Z' fill='%23ffffff' fill-opacity='.12'/%3E%3Cpath d='M300 122V110A9 9 0 0 1 318 110V122Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); } }
+
+
 /* Pestanya que porta al Taller PAU (és un enllaç, no una pestanya de la pàgina) */
 .um.pds2-v4 a.um-tab { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); text-decoration: none; }
 .um.pds2-v4 a.um-tab:hover { color: var(--ink); text-decoration: none; }
@@ -117,6 +127,22 @@
 
 /* Presentació del tema: visor de diapositives i descàrrega */
 .um.pds2-v4 .pds2-pres-v { margin: 18px 0 16px; }
+/* Dues presentacions, essencial i completa (28/10/2026) */
+.um.pds2-v4 .pds2-pres-tries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 14px 0 22px; }
+.um.pds2-v4 .pds2-pres-tipus { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; text-align: left; padding: 14px 16px; border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; }
+.um.pds2-v4 .pds2-pres-tipus:hover { border-color: var(--primary); }
+.um.pds2-v4 .pds2-pres-tipus[aria-pressed="true"] { border: 2px solid var(--primary); padding: 13px 15px; background: var(--primary-soft); }
+.um.pds2-v4 .pds2-pres-tipus:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um.pds2-v4 .pds2-pres-tipus-cap { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.um.pds2-v4 .pds2-pres-tipus-nom { font: 600 18px/1.25 var(--font); color: var(--primary); }
+.um.pds2-v4 .pds2-pres-tipus-seg { font: 500 12px/1 var(--font); color: #fff; background: var(--primary); border-radius: 999px; padding: 4px 9px; }
+.um.pds2-v4 .pds2-pres-tipus-n { font-size: 13px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-pres-tipus-d { font-size: 14.5px; line-height: 1.45; color: var(--ink); }
+.um.pds2-v4 .pds2-pres-titol { margin: 0 0 4px; font: 600 19px/1.3 var(--font); }
+.um.pds2-v4 .pds2-pres-titol span { font-weight: 400; color: var(--ink-2); font-size: 15px; }
+.um.pds2-v4 .pds2-pres-ajuda { margin: 0; color: var(--ink-2); font-size: 14.5px; }
+.um.pds2-v4 .pds2-pres-item[hidden] { display: none; }
+@media (max-width: 600px) { .um.pds2-v4 .pds2-pres-tries { grid-template-columns: 1fr; } }
 .um.pds2-v4 .pds2-pres-stage { position: relative; aspect-ratio: 16 / 9; background: var(--surface-2); border: 1px solid var(--outline); border-radius: var(--r); overflow: hidden; cursor: pointer; user-select: none; }
 .um.pds2-v4 .pds2-pres-stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .um.pds2-v4 .pds2-pres-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--outline); background: rgba(255,255,255,.92); color: var(--primary); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; box-shadow: 0 1px 3px rgba(60,64,67,.2); }
@@ -133,6 +159,9 @@
 .um.pds2-v4 .pds2-pres-notes p { white-space: pre-line; }
 .um.pds2-v4 .pds2-pres-btns { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 .um.pds2-v4 .pds2-pres-btns .um-quiz-btn { margin: 0; }
+/* En vista docent el botó del .pptx és un enllaç i heretava el color dels enllaços (30/10/2026) */
+.um.pds2-v4 .pds2-pres-btns a.um-quiz-btn, .um.pds2-v4 .pds2-pres-btns a.um-quiz-btn:visited { display: inline-block; color: var(--on-primary); text-decoration: none; }
+.um.pds2-v4 .pds2-pres-btns a.um-quiz-btn:hover { color: var(--on-primary); text-decoration: none; }
 .um.pds2-v4 .pds2-pres .screen-reader-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 /* Pantalla completa */
 .um.pds2-v4 .pds2-pres-v:fullscreen { background: #000; display: flex; flex-direction: column; justify-content: center; padding: 12px; margin: 0; }
@@ -207,4 +236,356 @@ html.pds2-pres-obert { overflow: hidden; }
   .um .pds2-pau-eines { flex-wrap: wrap; padding: 12px; }
   .um .pds2-pau-eines-t { flex-basis: calc(100% - 50px); }
   .um .pds2-pau-eines-go { flex-basis: 100%; justify-content: center; }
+}
+
+
+/* Il·lustració de la portada del curs (/2n-batxillerat/): les dues matèries. Una columna jònica (Història de l'Art),
+   una urna (Història, de la Restauració a la democràcia) i un campanar romànic llombard. La mida la fixa model4.css. */
+@media (min-width: 1025px) { .um.pds2-v4-curs .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20420%20240'%3E%3Cg%20fill='none'%20stroke='%23ffffff'%20stroke-opacity='.55'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3E%3Cpath%20d='M24%20236H404'/%3E%3Cpath%20d='M52%20236V226H128V236M58%20226V216H122V226'/%3E%3Cpath%20d='M68%20216V100M112%20216V100M83%20216V100M97%20216V100M66%20100H114'/%3E%3Cpath%20d='M54%2076H126V84H54Z'/%3E%3Cpath%20d='M66%2084V92H114V84'/%3E%3Ccircle%20cx='60'%20cy='92'%20r='8'/%3E%3Ccircle%20cx='60'%20cy='92'%20r='3'/%3E%3Ccircle%20cx='120'%20cy='92'%20r='8'/%3E%3Ccircle%20cx='120'%20cy='92'%20r='3'/%3E%3Cpath%20d='M150%20236V160H270V236'/%3E%3Cpath%20d='M146%20160V150H274V160'/%3E%3Cpath%20d='M192%20155H228'/%3E%3Cpath%20d='M197%20155V98H223V155'/%3E%3Cpath%20d='M203%20110H217M203%20118H217'/%3E%3Cpath%20d='M205%20128L215%20140M215%20128L205%20140'/%3E%3Cpath%20d='M184%20186H236V212H184Z'/%3E%3Cpath%20d='M312%20236V60H364V236'/%3E%3Cpath%20d='M312%20200H364M312%20164H364M312%20128H364M312%2092H364'/%3E%3Cpath%20d='M322%20154V144Q328%20136%20334%20144V154M342%20154V144Q348%20136%20354%20144V154'/%3E%3Cpath%20d='M322%20118V108Q328%20100%20334%20108V118M342%20118V108Q348%20100%20354%20108V118'/%3E%3Cpath%20d='M322%2084V76Q328%2068%20334%2076V84M342%2084V76Q348%2068%20354%2076V84'/%3E%3Cpath%20d='M330%20236V216Q338%20206%20346%20216V236'/%3E%3Cpath%20d='M306%2060L338%2040L370%2060'/%3E%3C/g%3E%3Cpath%20d='M150%20236V160H270V236Z'%20fill='%23ffffff'%20fill-opacity='.12'/%3E%3Cpath%20d='M54%2076H126V84H54Z'%20fill='%23ffffff'%20fill-opacity='.12'/%3E%3Cpath%20d='M306%2060L338%2040L370%2060Z'%20fill='%23ffffff'%20fill-opacity='.12'/%3E%3C/svg%3E"); } }
+
+/* Exercici 2: posar-se en el personatge (19/10/2026). Pestanya PAU del tema (#pau-personatges) i Preparar la PAU (#personatges) */
+.um .pds2-terme { text-decoration: underline; text-decoration-color: var(--primary); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.um.pds2-v4 .pds2-pj-pas { list-style: none; counter-reset: pj; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 4px 0 16px; padding: 0; }
+.um.pds2-v4 .pds2-pj-pas li { counter-increment: pj; position: relative; margin: 0; padding: 10px 12px 10px 46px; border-radius: var(--r); background: var(--surface-2); font-size: 14.5px; line-height: 1.45; color: var(--ink-2); }
+.um.pds2-v4 .pds2-pj-pas li::before { content: counter(pj); position: absolute; left: 12px; top: 10px; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--primary); color: #fff; font-size: 13px; font-weight: 500; }
+.um.pds2-v4 .pds2-pj-pas b { color: var(--ink); font-weight: 500; }
+.um.pds2-v4 .pds2-pj { display: grid; gap: 10px; margin: 0 0 12px; }
+.um.pds2-v4 .pds2-pj-d { border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface); scroll-margin-top: 140px; }
+.um.pds2-v4 .pds2-pj-d > summary { list-style: none; position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; padding: 13px 46px 13px 16px; cursor: pointer; border-radius: var(--r); }
+.um.pds2-v4 .pds2-pj-d > summary::-webkit-details-marker { display: none; }
+.um.pds2-v4 .pds2-pj-d > summary::after { content: ""; position: absolute; right: 19px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: translateY(-70%) rotate(45deg); transition: transform .15s ease; }
+.um.pds2-v4 .pds2-pj-d[open] > summary::after { transform: translateY(-25%) rotate(-135deg); }
+.um.pds2-v4 .pds2-pj-d > summary:hover { background: var(--surface-2); }
+.um.pds2-v4 .pds2-pj-d > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um.pds2-v4 .pds2-pj-rol { font-size: 16.5px; font-weight: 500; color: var(--ink); }
+.um.pds2-v4 .pds2-pj-seg { font-size: 13px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-pj-c { padding: 0 16px 6px; }
+.um.pds2-v4 .pds2-pj-sit { margin: 0 0 10px; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+.um.pds2-v4 .pds2-pj-termes { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; padding: 0; }
+.um.pds2-v4 .pds2-pj-termes li { margin: 0; padding: 3px 10px; border-radius: 14px; background: var(--primary-soft); font-size: 13.5px; color: var(--ink); }
+.um.pds2-v4 .pds2-pj-p { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 4px 16px; padding: 12px 0; border-top: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-pj-p p { margin: 0; }
+.um.pds2-v4 .pds2-pj-k { padding-top: 2px; font-size: 13px; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); }
+.um.pds2-v4 .pds2-pj-tx { font-size: 15.5px; line-height: 1.6; }
+.um.pds2-v4 .pds2-pj-tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 14px 0 12px; }
+.um.pds2-v4 .pds2-pj-tres .um-card { display: flex; flex-direction: column; gap: 6px; }
+.um.pds2-v4 .pds2-pj-tres .um-card h4 { align-items: center; gap: 10px; margin: 0; }
+.um.pds2-v4 .pds2-pj-tres .um-card h4::before { display: none; }
+.um.pds2-v4 .pds2-pj-tres .um-card p { margin: 0; font-size: 15px; line-height: 1.5; }
+.um.pds2-v4 .pds2-pj-tres .pds2-pj-ex { margin-top: auto; padding: 8px 0 0 10px; border-left: 3px solid var(--primary-soft); font-size: 14.5px; color: var(--ink-2); font-style: italic; }
+.um.pds2-v4 .pds2-pj-avui { margin: 0 0 8px; padding: 10px 14px; border-radius: var(--r); background: var(--surface-2); font-size: 15px; }
+.um.pds2-v4 .pds2-pj-avui b { font-weight: 500; }
+.um.pds2-v4 .pds2-pj-temes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px; margin: 10px 0 0; }
+.um.pds2-v4 .pds2-pj-t { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface); }
+.um.pds2-v4 .pds2-pj-dates { font-weight: 400; color: var(--ink-2); }
+.um.pds2-v4 .pds2-pj-l { margin: 0; padding-left: 18px; font-size: 15px; line-height: 1.45; }
+.um.pds2-v4 .pds2-pj-l li { margin: 0 0 6px; }
+.um.pds2-v4 .pds2-pj-l .pds2-pj-seg { display: block; margin-top: 1px; }
+.um.pds2-v4 .pds2-pj-go { margin: auto 0 0; padding-top: 4px; font-size: 14.5px; font-weight: 500; }
+@media (max-width: 760px) {
+  .um.pds2-v4 .pds2-pj-pas, .um.pds2-v4 .pds2-pj-tres, .um.pds2-v4 .pds2-pj-temes { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .um.pds2-v4 .pds2-pj-p { grid-template-columns: minmax(0, 1fr); }
+  .um.pds2-v4 .pds2-pj-c { padding: 0 14px 4px; }
+}
+
+/* Esquema-guia del tema, dins «Abans de començar» (21/10/2026). Plegable; colors derivats del color del curs. */
+.um .pds2-esq { margin: 26px 0 10px; border: 1px solid var(--outline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
+.um .pds2-esq-avis { display: inline-block; margin: 12px 16px 0; padding: 4px 12px; border-radius: 999px; background: var(--doc-soft, #E8F0FC); color: var(--doc, #1F5FBF); font-size: 12.5px; font-weight: 500; }
+.um .pds2-esq-d > summary { display: flex; align-items: center; gap: 12px 14px; padding: 14px 16px; cursor: pointer; list-style: none; }
+.um .pds2-esq-d > summary::-webkit-details-marker { display: none; }
+.um .pds2-esq-d > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.um .pds2-esq-ic, .um .pds2-esq-dl-ic { flex: 0 0 40px; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--primary-soft); color: var(--primary); }
+.um .pds2-esq-ic svg, .um .pds2-esq-dl-ic svg { width: 21px; height: 21px; }
+.um .pds2-esq-st { flex: 1 1 auto; min-width: 0; font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.um .pds2-esq-st b { display: block; font-size: 17px; font-weight: 500; color: var(--ink); }
+.um .pds2-esq-obre { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 16px; border: 1px solid var(--primary); border-radius: 18px; background: var(--primary); color: #fff; font-size: 14px; font-weight: 500; }
+.um .pds2-esq-obre::after { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.um .pds2-esq-d > summary:hover .pds2-esq-obre { background: color-mix(in srgb, var(--primary) 85%, #000); }
+.um .pds2-esq-obre .is-tanca { display: none; }
+.um .pds2-esq-d[open] .pds2-esq-obre { background: var(--surface); color: var(--primary); border-color: color-mix(in srgb, var(--primary) 40%, #fff); }
+.um .pds2-esq-d[open] > summary:hover .pds2-esq-obre { background: var(--primary-soft); }
+.um .pds2-esq-d[open] .pds2-esq-obre::after { transform: translateY(2px) rotate(-135deg); }
+.um .pds2-esq-d[open] .pds2-esq-obre .is-obre { display: none; }
+.um .pds2-esq-d[open] .pds2-esq-obre .is-tanca { display: inline; }
+.um .pds2-esq-cos { padding: 2px 16px 4px; border-top: 1px solid var(--outline); }
+.um .pds2-esq-intro { margin: 12px 0 14px; max-width: none; font-size: 14px; color: var(--ink-2); }
+.um .pds2-esq-e1 { --esq-e: color-mix(in srgb, var(--primary) 26%, #fff); --esq-ink: var(--ink); }
+.um .pds2-esq-e2 { --esq-e: color-mix(in srgb, var(--primary) 72%, #fff); --esq-ink: #fff; }
+.um .pds2-esq-e3 { --esq-e: color-mix(in srgb, var(--primary) 62%, #000); --esq-ink: #fff; }
+.um .pds2-esq-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.um .pds2-esq-bloc { margin: 0 0 10px; border: 1px solid var(--outline); border-radius: var(--r); overflow: hidden; background: var(--surface); }
+.um .pds2-esq-cap { padding: 8px 12px 9px; background: var(--primary); color: #fff; }
+.um .pds2-esq-cap h4 { margin: 0; font-size: 14px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: inherit; }
+.um .pds2-esq-cap p { margin: 2px 0 0; max-width: none; font-size: 13px; line-height: 1.35; opacity: .94; }
+.um .pds2-esq-pol .pds2-esq-cols { gap: 0; }
+.um .pds2-esq-col { padding: 0 0 10px; border-left: 1px solid var(--outline); }
+.um .pds2-esq-col:first-child { border-left: 0; }
+.um .pds2-esq-et { margin: 0; max-width: none; padding: 7px 12px 8px; background: var(--esq-e); color: var(--esq-ink); font-size: 13.5px; font-weight: 500; line-height: 1.3; }
+.um .pds2-esq-et b { display: block; font-size: 12.5px; font-weight: 500; opacity: .85; }
+.um .pds2-esq-dates { list-style: none; margin: 9px 12px 0; padding: 0 0 9px; border-bottom: 1px dashed var(--outline); font-size: 13px; }
+.um .pds2-esq-dates li { margin: 0 0 3px; padding-left: 2.9em; text-indent: -2.9em; line-height: 1.35; }
+.um .pds2-esq-dates b { display: inline-block; min-width: 2.9em; text-indent: 0; color: var(--primary); font-weight: 500; font-variant-numeric: tabular-nums; }
+.um .pds2-esq-punts { margin: 9px 12px 0; padding-left: 1.05em; font-size: 14px; }
+.um .pds2-esq-g { margin: 12px 12px 0; max-width: none; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--primary); }
+.um .pds2-esq-g + .pds2-esq-punts { margin-top: 5px; }
+.um .pds2-esq-nw { white-space: nowrap; }
+
+.um .pds2-esq-punts li { margin: 0 0 7px; line-height: 1.45; }
+.um .pds2-esq-punts li::marker { color: var(--primary); }
+.um .pds2-esq strong { font-weight: 600; color: var(--ink); }
+.um .pds2-esq-cat { color: var(--primary); font-size: .78em; vertical-align: .1em; }
+.um .pds2-esq-ar { font-family: Arial, "Segoe UI Symbol", sans-serif; color: var(--ink-2); }
+.um .pds2-esq-temari { margin: 8px 12px 0; max-width: none; font-size: 12.5px; line-height: 1.5; color: var(--ink-2); }
+.um .pds2-esq-temari > span { margin-right: 4px; font-weight: 500; }
+.um .pds2-esq-temari i { margin: 0 5px; font-style: normal; color: var(--ink-3); }
+.um .pds2-esq-temari a { color: var(--primary); text-decoration: none; }
+.um .pds2-esq-temari a:hover { text-decoration: underline; }
+.um .pds2-esq-temari a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um .pds2-esq-eixos .pds2-esq-bloc { margin: 0; padding-bottom: 10px; }
+.um .pds2-esq-lleg { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 12px 0 12px; max-width: none; font-size: 12.5px; color: var(--ink-2); }
+.um .pds2-esq-dl { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; padding: 10px 16px; border-top: 1px solid var(--outline); background: var(--surface-2); }
+.um .pds2-esq-dl-ic { flex-basis: 34px; width: 34px; height: 34px; }
+.um .pds2-esq-dl-ic svg { width: 18px; height: 18px; }
+.um .pds2-esq-dl-t { flex: 1 1 200px; min-width: 0; font-size: 13px; line-height: 1.4; color: var(--ink-2); }
+.um .pds2-esq-dl-t b { display: block; font-size: 14px; font-weight: 500; color: var(--ink); }
+.um .pds2-esq-btn { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 15px; border: 1px solid color-mix(in srgb, var(--primary) 40%, #fff); border-radius: 17px; background: var(--surface); color: var(--primary); font-size: 13.5px; font-weight: 500; text-decoration: none; }
+.um .pds2-esq-btn small { font-size: 12px; font-weight: 400; opacity: .8; }
+.um .pds2-esq-btn:hover { background: var(--primary-soft); }
+.um .pds2-esq-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+@media (max-width: 760px) {
+  .um .pds2-esq-d > summary { flex-wrap: wrap; }
+  .um .pds2-esq-st { flex-basis: calc(100% - 54px); }
+  .um .pds2-esq-obre { flex-basis: 100%; justify-content: center; }
+  .um .pds2-esq-cos { padding: 2px 12px 4px; }
+  .um .pds2-esq-cols { grid-template-columns: minmax(0, 1fr); }
+  .um .pds2-esq-col { border-left: 0; border-top: 1px solid var(--outline); }
+  .um .pds2-esq-col:first-child { border-top: 0; }
+  .um .pds2-esq-btn { flex: 1 1 40%; justify-content: center; }
+}
+@media print { .um .pds2-esq { display: none; } }
+
+/* Banc d'exercicis oficials de la PAU (pestanya PAU del tema, #pau-banc). */
+.um.pds2-v4 .pds2-banc { margin: 22px 0 6px; scroll-margin-top: 140px; }
+.um.pds2-v4 .pds2-banc-f { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px; }
+.um.pds2-v4 .pds2-banc-fb { font: inherit; font-size: 14px; padding: 5px 12px; border-radius: 16px; border: 1px solid var(--outline); background: var(--surface); color: var(--ink); cursor: pointer; }
+.um.pds2-v4 .pds2-banc-fb span { color: var(--ink-2); margin-left: 2px; font-variant-numeric: tabular-nums; }
+.um.pds2-v4 .pds2-banc-fb[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+.um.pds2-v4 .pds2-banc-fb[aria-pressed="true"] span { color: inherit; opacity: .85; }
+.um.pds2-v4 .pds2-banc-fb:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um.pds2-v4 .pds2-banc-l { display: grid; gap: 10px; }
+.um.pds2-v4 .pds2-banc-l [hidden] { display: none; }
+.um.pds2-v4 .pds2-banc-g { display: flex; align-items: center; gap: 10px; margin: 10px 0 0; font-size: 14px; font-weight: 500; color: var(--primary); }
+.um.pds2-v4 .pds2-banc-buit { padding: 12px 16px; border-radius: var(--r); background: var(--surface-2); font-size: 15px; }
+.um.pds2-v4 .pds2-banc-buit p { margin: 0; }
+.um.pds2-v4 .pds2-banc-buit p + p { margin-top: 6px; font-weight: 500; }
+.um.pds2-v4 .pds2-banc-d { border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface); scroll-margin-top: 140px; }
+.um.pds2-v4 .pds2-banc-d > summary { list-style: none; position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; padding: 13px 46px 13px 16px; cursor: pointer; border-radius: var(--r); }
+.um.pds2-v4 .pds2-banc-d > summary::-webkit-details-marker { display: none; }
+.um.pds2-v4 .pds2-banc-d > summary::after { content: ""; position: absolute; right: 19px; top: 50%; width: 8px; height: 8px; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: translateY(-70%) rotate(45deg); transition: transform .15s ease; }
+.um.pds2-v4 .pds2-banc-d[open] > summary::after { transform: translateY(-25%) rotate(-135deg); }
+.um.pds2-v4 .pds2-banc-d > summary:hover { background: var(--surface-2); }
+.um.pds2-v4 .pds2-banc-d > summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um.pds2-v4 .pds2-banc-t { font-size: 16.5px; font-weight: 500; color: var(--ink); }
+.um.pds2-v4 .pds2-banc-seg { font-size: 13px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-banc-alt { font-size: 12px; padding: 1px 8px; border-radius: 10px; background: var(--primary-soft); color: var(--ink); }
+.um.pds2-v4 .pds2-banc-c { padding: 0 16px 14px; }
+.um.pds2-v4 .pds2-banc-rol { margin: 0 0 8px; font-size: 13px; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); }
+.um.pds2-v4 .pds2-banc-e { margin: 0 0 10px; padding: 10px 14px; border-left: 3px solid var(--primary); background: var(--surface-2); border-radius: 0 var(--r) var(--r) 0; font-size: 15.5px; line-height: 1.6; font-style: normal; }
+.um.pds2-v4 .pds2-banc-nota { margin: 8px 0 0; font-size: 14.5px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-banc-k { margin: 0 0 4px; font-size: 13px; font-weight: 500; letter-spacing: .03em; text-transform: uppercase; color: var(--primary); }
+.um.pds2-v4 .pds2-banc-teo { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-banc-teo ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; }
+.um.pds2-v4 .pds2-banc-teo li { margin: 0; }
+.um.pds2-v4 .pds2-banc-teo a { display: inline-block; font-size: 14px; padding: 4px 11px; border-radius: 14px; border: 1px solid var(--outline); color: var(--primary); text-decoration: none; }
+.um.pds2-v4 .pds2-banc-teo a:hover { background: var(--primary-soft); }
+.um.pds2-v4 .pds2-banc-r { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--outline); }
+.um.pds2-v4 .pds2-banc-r > summary { cursor: pointer; color: var(--primary); font-weight: 500; font-size: 15px; }
+.um.pds2-v4 .pds2-banc-s { margin: 8px 0; font-size: 14px; color: var(--ink-2); }
+.um.pds2-v4 .pds2-banc-b { margin: 10px 0 0; padding: 10px 14px 6px; border: 1px solid var(--outline); border-radius: var(--r); min-width: 0; }
+.um.pds2-v4 .pds2-banc-b legend { padding: 0 6px; font-size: 14.5px; font-weight: 500; color: var(--ink); }
+.um.pds2-v4 .pds2-banc-b legend span { font-weight: 400; color: var(--ink-2); font-size: 13.5px; }
+.um.pds2-v4 .pds2-banc-b label { display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 8px; align-items: start; margin: 0 0 6px; font-size: 15px; line-height: 1.45; cursor: pointer; }
+.um.pds2-v4 .pds2-banc-b input { margin: 3px 0 0; width: 16px; height: 16px; accent-color: var(--primary); }
+.um.pds2-v4 .pds2-banc-b b { font-weight: 500; }
+.um.pds2-v4 .pds2-banc-nota-r { margin: 12px 0 0; font-size: 15.5px; }
+.um.pds2-v4 .pds2-banc-nota-r strong, .um.pds2-v4 .pds2-banc-res strong { font-size: 20px; font-weight: 500; color: var(--primary); font-variant-numeric: tabular-nums; }
+.um.pds2-v4 .pds2-banc-ctx { margin: 0 0 10px; padding: 10px 14px; border-radius: var(--r); background: var(--surface-2); font-size: 15px; line-height: 1.55; }
+.um.pds2-v4 .pds2-banc-test ol { list-style: none; margin: 0; padding: 0; }
+.um.pds2-v4 .pds2-banc-qn { font-weight: 500; color: var(--primary); }
+.um.pds2-v4 .pds2-banc-test li { margin: 0 0 12px; }
+.um.pds2-v4 .pds2-banc-test fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+.um.pds2-v4 .pds2-banc-test legend { padding: 0; margin: 0 0 6px; font-size: 15.5px; line-height: 1.5; }
+.um.pds2-v4 .pds2-banc-test label { display: grid; grid-template-columns: 20px 22px minmax(0, 1fr); gap: 4px; align-items: start; margin: 0 0 3px; padding: 4px 8px; border-radius: var(--r); font-size: 15px; line-height: 1.4; cursor: pointer; }
+.um.pds2-v4 .pds2-banc-test label:hover { background: var(--surface-2); }
+.um.pds2-v4 .pds2-banc-test input { margin: 3px 0 0; accent-color: var(--primary); }
+.um.pds2-v4 .pds2-banc-ll { color: var(--ink-2); }
+.um.pds2-v4 .pds2-banc-test label.is-ok { background: #e3f3e6; box-shadow: inset 3px 0 0 #2e7d32; }
+.um.pds2-v4 .pds2-banc-test label.is-ko { background: #fbe4e4; box-shadow: inset 3px 0 0 #c62828; }
+.um.pds2-v4 .pds2-banc-tb { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 6px 0 0; }
+.um.pds2-v4 .pds2-banc-tb .um-quiz-btn { margin: 0; }
+.um.pds2-v4 .pds2-banc-reset { font: inherit; font-size: 14.5px; border: 0; background: none; color: var(--primary); cursor: pointer; padding: 6px 4px; }
+.um.pds2-v4 .pds2-banc-res { margin: 8px 0 0; font-size: 15px; }
+.um.pds2-v4 .pds2-banc-peu { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 14px 0 0; font-size: 14px; }
+.um.pds2-v4 .pds2-banc-peu a.um-quiz-btn { display: inline-block; margin: 0; color: var(--on-primary); text-decoration: none; }
+@media (prefers-color-scheme: dark) {
+	.um.pds2-v4 .pds2-banc-test label.is-ok { background: rgba(76, 175, 80, .18); }
+	.um.pds2-v4 .pds2-banc-test label.is-ko { background: rgba(229, 57, 53, .18); }
+}
+@media (max-width: 760px) {
+	.um.pds2-v4 .pds2-banc-c { padding: 0 14px 12px; }
+	.um.pds2-v4 .pds2-banc-d > summary { padding: 12px 42px 12px 14px; }
+}
+
+/* Enllaç al vídeo sobre la imatge de la diapositiva (30/10/2026) */
+.um.pds2-v4 .pds2-pres-vlink { position: absolute; z-index: 2; display: block; border-radius: 999px; cursor: pointer; }
+.um.pds2-v4 .pds2-pres-vlink:hover, .um.pds2-v4 .pds2-pres-vlink:focus-visible { outline: 2px solid #B80672; outline-offset: 2px; }
+.um.pds2-v4 .pds2-pres-vlink[hidden] { display: none; }
+
+
+/* Taules del temari (p. ex. comparació d'eleccions al Tema 3). */
+.um.pds2-v4 .pds2-taula { overflow-x: auto; margin: 18px 0 24px; }
+.um.pds2-v4 .pds2-taula table { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 15px; line-height: 1.45; background: var(--surface, #fff); }
+.um.pds2-v4 .pds2-taula th, .um.pds2-v4 .pds2-taula td { padding: 10px 12px; border: 1px solid var(--outline, #ddd); vertical-align: top; text-align: left; }
+.um.pds2-v4 .pds2-taula thead th { background: var(--primary); color: var(--on-primary, #fff); font-weight: 700; }
+.um.pds2-v4 .pds2-taula tbody th { background: var(--primary-soft, var(--surface-2)); font-weight: 700; width: 16%; }
+
+/* Pla de sessions i ruta del tema (2/11/2026, sessions.php) */
+.pds2-ses .pds2-ses-res { color: var(--ink-3); font-size: 15px; }
+.pds2-ses-c h4 { font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--primary); margin: 1.3em 0 .5em; }
+.pds2-ses-c h5 { font-size: 15px; font-weight: 600; margin: 1.1em 0 .4em; }
+.pds2-ses-c ul { margin: .2em 0 .6em; padding-left: 1.2em; }
+.pds2-ses-c li { margin: 0 0 .3em; }
+.pds2-ses-temps { list-style: none; margin: 0; padding: 0; }
+.pds2-ses-temps li { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid var(--outline); margin: 0; }
+.pds2-ses-temps li > span { flex: 0 0 58px; font-weight: 600; color: var(--primary); }
+.pds2-ses-c ul.pds2-ses-diapos { list-style: none; padding: 0; margin: .2em 0 .6em; }
+.pds2-ses-diapos li { background: var(--surface-2); border-radius: 8px; padding: 7px 10px; margin: 0 0 6px; }
+.pds2-ses-d { font-weight: 500; text-decoration: none; color: var(--ink); }
+.pds2-ses-d:hover { color: var(--primary); }
+.pds2-ses-d span { display: inline-block; min-width: 2.3em; padding: 1px 6px; margin-right: 8px; border-radius: 6px; background: var(--primary-soft); color: var(--primary); font-size: 13px; text-align: center; }
+.pds2-ses-notes { margin-top: 4px; }
+.pds2-ses-notes summary { cursor: pointer; font-size: 13px; color: var(--ink-3); }
+.pds2-ses-notes p { font-size: 14px; margin: .45em 0 0; overflow-wrap: anywhere; }
+.pds2-ses-ret, .pds2-ses-err { border-radius: 8px; padding: 9px 12px 4px; margin: 12px 0 0; }
+.pds2-ses-ret { background: var(--primary-soft); }
+.pds2-ses-err { background: var(--surface-2); }
+.pds2-ses-ret > b, .pds2-ses-err > b { display: block; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+ul.pds2-ses-v { list-style: none; padding: 0; margin: .2em 0 .6em; }
+.pds2-ses-v li { margin: 0 0 5px; }
+.pds2-ses-v a { text-decoration: none; }
+.pds2-ses-v a span { display: inline-block; min-width: 2.4em; padding: 1px 6px; margin-right: 8px; border-radius: 6px; background: var(--primary); color: #fff; font-size: 12px; text-align: center; }
+.pds2-ses-v em { color: var(--ink-3); font-style: normal; font-size: 14px; }
+.pds2-ruta details > summary { cursor: pointer; font-weight: 500; color: var(--primary); margin-top: .3em; }
+.pds2-ruta-l { margin: .8em 0 0; padding-left: 1.3em; }
+.pds2-ruta-l > li { margin: 0 0 14px; }
+.pds2-ruta-l > li.is-ex::marker { color: var(--primary); font-weight: 700; }
+.pds2-ruta-t { margin: 0 0 .2em; }
+.pds2-ruta-k { margin: .3em 0 .1em; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); }
+.pds2-ruta-l ul { margin: 0 0 .3em; padding-left: 1.1em; }
+.pds2-ruta-l ul.pds2-ses-v { padding-left: 0; }
+
+/* Banc PAU, exercici 1 (fonts i preguntes) */
+.um.pds2-v4 .pds2-banc-fonts { display: grid; gap: 14px; margin: 0 0 12px; }
+@media (min-width: 760px) { .um.pds2-v4 .pds2-banc-fonts:has(.pds2-banc-img) { grid-template-columns: 1fr 1fr; align-items: start; } }
+.um.pds2-v4 .pds2-banc-font { margin: 0; }
+.um.pds2-v4 .pds2-banc-ft { margin: 0 0 6px; font-size: 15px; line-height: 1.45; }
+.um.pds2-v4 .pds2-banc-ft b { color: var(--primary); font-weight: 500; }
+.um.pds2-v4 .pds2-banc-font .pds2-banc-e p { margin: 0 0 8px; }
+.um.pds2-v4 .pds2-banc-font .pds2-banc-e p:last-child { margin-bottom: 0; }
+.um.pds2-v4 .pds2-banc-img { display: block; }
+.um.pds2-v4 .pds2-banc-img img { display: block; max-width: 100%; max-height: 520px; width: auto; height: auto; margin: 0 auto; border: 1px solid var(--outline); border-radius: var(--r); }
+.um.pds2-v4 .pds2-banc-fref { margin: 4px 0 0; font-size: 13.5px; color: var(--ink-2); overflow-wrap: anywhere; }
+.um.pds2-v4 .pds2-banc-qs { list-style: none; margin: 0 0 4px; padding: 0; }
+.um.pds2-v4 .pds2-banc-qs li { margin: 0 0 6px; font-size: 15.5px; line-height: 1.5; }
+.um.pds2-v4 .pds2-banc-pt { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+.um.pds2-v4 .pds2-banc-teo .pds2-banc-alt { margin-left: 2px; }
+
+/* Pla de sessions, blocs per trams (2/11/2026, 22.15) */
+.pds2-ses-c .pds2-obj { margin: 0 0 .8em; }
+.pds2-tram { border: 1px solid var(--outline); border-radius: 10px; margin: 0 0 10px; overflow: hidden; background: #fff; }
+.pds2-tram > header { display: flex; justify-content: space-between; gap: 10px; padding: 6px 12px; background: var(--primary-soft); color: var(--primary); font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.pds2-tram > header .pds2-min { font-weight: 500; letter-spacing: 0; text-transform: none; }
+.pds2-tram > div { padding: 10px 12px 4px; }
+.pds2-tram > div > p { margin: 0 0 .6em; }
+.pds2-pas { border-top: 1px dashed var(--outline); padding: 8px 0 4px; }
+.pds2-pas h5 { margin: 0 0 .4em; font-size: 15px; font-weight: 600; }
+.pds2-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 .4em; }
+.pds2-chip { display: inline-flex; gap: 7px; align-items: baseline; padding: 3px 10px; border: 1px solid var(--outline); border-radius: 999px; background: var(--surface-2); color: var(--ink); font-size: 13px; text-decoration: none; }
+.pds2-chip:hover { border-color: var(--primary); color: var(--primary); }
+.pds2-chip b { color: var(--primary); font-weight: 600; }
+.pds2-ses-notes p.pds2-nota-t { margin-top: .8em; font-weight: 500; }
+.pds2-ses-notes p.pds2-nota-t b { color: var(--primary); }
+.pds2-ses-c ul.pds2-idees { margin: .3em 0 .5em; }
+.pds2-casa { margin: 12px 0 0; }
+.pds2-casa > b { display: block; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--primary); }
+
+/* Cronograma del curs (2/11/2026) */
+.pds2-curs .pds2-curs-res { color: var(--ink-3); font-size: 14px; }
+.pds2-curs-barra { display: flex; gap: 2px; margin: 14px 0 18px; border-radius: 8px; overflow: hidden; min-height: 44px; }
+.pds2-curs-seg { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; padding: 4px 2px; background: var(--primary-soft); color: var(--primary); text-decoration: none; font-size: 12px; line-height: 1.2; }
+.pds2-curs-seg:nth-child(even) { background: var(--primary); color: #fff; }
+.pds2-curs-seg b { font-size: 14px; }
+.pds2-curs-seg:hover { filter: brightness(.95); }
+.pds2-curs-trim { width: 100%; border-collapse: collapse; margin: 0 0 18px; font-size: 14px; }
+.pds2-curs-trim th, .pds2-curs-trim td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--outline); }
+.pds2-curs-trim th { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
+.pds2-curs-trim td span { color: var(--ink-3); font-size: 13px; }
+.pds2-curs-c .pds2-curs-meta { color: var(--ink-3); font-size: 14px; margin: 0 0 .6em; }
+.pds2-curs-parts { list-style: none; margin: 0 0 .8em; padding: 0; }
+.pds2-curs-parts li { display: flex; gap: 12px; padding: 6px 0; border-top: 1px dashed var(--outline); }
+.pds2-curs-parts li > span { flex: 0 0 74px; font-weight: 600; color: var(--primary); font-size: 14px; }
+.pds2-curs-parts li.is-ex > div { font-weight: 600; }
+.pds2-curs-parts li.is-ex > span::after { content: " ✎"; }
+.pds2-curs-nota { font-size: 14px; color: var(--ink-3); }
+.pds2-curs-links a { display: inline-block; margin: 0 12px 6px 0; font-weight: 500; }
+@media (max-width: 600px) { .pds2-curs-seg span { display: none; } .pds2-curs-trim { font-size: 13px; } .pds2-curs-parts li > span { flex-basis: 64px; } }
+
+/* Eixos cronològics en HTML (3/11/2026). A la pantalla l'eix es llegeix sencer i es desplaça de costat;
+   al PDF, al Word i a la impressió directa surt la imatge de sempre (model4.js treu .pds2-eix del document). */
+.um.pds2-v4 .pds2-fig.pds2-eix-fig .pds2-fig-imgs, .um .pds2-eix-fig .pds2-fig-imgs { display: none; }
+.um .pds2-eix { --eix-col: 118px; --eix-c: var(--primary, #B8056F); --c: var(--eix-c); background: #fff; border: 1px solid color-mix(in srgb, var(--eix-c) 22%, #fff); border-radius: 12px; padding: 16px 0 10px; text-align: left; }
+.um .pds2-eix p { margin: 0; }
+.um .pds2-eix-cap { padding: 0 18px 8px; }
+.um .pds2-eix .pds2-eix-tit { font-weight: 700; font-size: 17px; line-height: 1.3; color: var(--eix-c); }
+.um .pds2-eix .pds2-eix-sub { font-size: 14.5px; line-height: 1.4; color: #555; margin-top: 2px; }
+.um .pds2-eix-lleg { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 8px 0 0; padding: 0; list-style: none; font-size: 14px; color: #333; }
+.um .pds2-eix-lleg li { margin: 0; padding: 0; }
+.um .pds2-eix-lleg li::before { content: ""; display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: var(--c); margin-right: 6px; vertical-align: -1px; }
+.um .pds2-eix-nav { display: flex; align-items: center; gap: 8px; padding: 0 18px 6px; font-size: 13.5px; color: #555; }
+.um .pds2-eix-nav[hidden] { display: none; }
+.um .pds2-eix-nav button { flex: 0 0 auto; width: 34px; height: 34px; padding: 0; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--eix-c) 35%, #fff); background: #fff; color: var(--eix-c); font-size: 20px; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.um .pds2-eix-nav button:hover:not(:disabled) { background: color-mix(in srgb, var(--eix-c) 10%, #fff); }
+.um .pds2-eix-nav button:disabled { opacity: .35; cursor: default; }
+.um .pds2-eix-nav span { margin-left: 4px; }
+.um .pds2-eix-scroll { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; padding: 6px 18px 16px; scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--eix-c) 40%, #fff) transparent; }
+.um .pds2-eix-scroll.is-mou { cursor: grab; }
+.um .pds2-eix-scroll.is-arrossega { cursor: grabbing; user-select: none; }
+.um .pds2-eix-scroll:focus-visible { outline: 2px solid var(--eix-c); outline-offset: -2px; border-radius: 8px; }
+.um .pds2-eix-grid { display: grid; grid-template-columns: repeat(var(--n), var(--eix-col)); grid-template-rows: auto auto 30px auto; row-gap: 12px; width: max-content; padding-right: calc(var(--eix-col) / 2); }
+.um .pds2-eix-grup { grid-row: 1; margin: 0 3px; padding: 6px 4px 0; border-top: 4px solid var(--c); color: var(--c); font-weight: 700; font-size: 12.5px; line-height: 1.25; letter-spacing: .5px; text-transform: uppercase; text-align: center; }
+.um .pds2-eix-grup span { display: block; font-weight: 500; font-size: 13px; letter-spacing: 0; text-transform: none; }
+.um .pds2-eix-linia { grid-row: 3; grid-column: 1 / -1; align-self: center; height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--eix-c) 30%, #fff); }
+.um .pds2-eix-franja { grid-row: 3; margin: 0 2px; border-radius: 15px; background: color-mix(in srgb, var(--c) 14%, #fff); }
+.um .pds2-eix-tram { grid-row: 3; align-self: center; height: 6px; background: var(--c); }
+.um .pds2-eix-punt { grid-row: 3; justify-self: center; align-self: center; width: 18px; height: 18px; box-sizing: border-box; border-radius: 50%; background: #fff; border: 4px solid var(--c); z-index: 2; }
+.um .pds2-eix-ev { position: relative; z-index: 1; box-sizing: border-box; width: calc(var(--eix-col) * 2 - 12px); margin-left: calc(var(--eix-col) / 2 - 1.5px); padding: 7px 10px 8px; background: #fff; border: 1px solid color-mix(in srgb, var(--c) 28%, #fff); border-left: 3px solid var(--c); border-radius: 0 8px 8px 0; }
+.um .pds2-eix-ev::before { content: ""; position: absolute; left: -3px; width: 3px; height: 27px; background: var(--c); }
+.um .pds2-eix-dalt { grid-row: 2; align-self: end; }
+.um .pds2-eix-dalt::before { top: 100%; }
+.um .pds2-eix-baix { grid-row: 4; align-self: start; }
+.um .pds2-eix-baix::before { bottom: 100%; }
+.um .pds2-eix-ev strong { display: block; font-weight: 700; font-size: 14px; line-height: 1.3; color: color-mix(in srgb, var(--c) 85%, #000); margin-bottom: 2px; }
+.um .pds2-eix-ev p { font-size: 14px; line-height: 1.42; color: #222; }
+.um .pds2-eix .pds2-eix-font { padding: 0 18px; font-size: 12.5px; line-height: 1.4; color: #6b6b6b; }
+@media (max-width: 600px) {
+  .um .pds2-eix { --eix-col: 102px; }
+  .um .pds2-eix-cap, .um .pds2-eix-nav, .um .pds2-eix .pds2-eix-font { padding-left: 14px; padding-right: 14px; }
+  .um .pds2-eix-scroll { padding-left: 14px; padding-right: 14px; }
+  .um .pds2-eix-ev p { font-size: 13.5px; }
+}
+@media print {
+  .um .pds2-eix { display: none; }
+  .um.pds2-v4 .pds2-fig.pds2-eix-fig .pds2-fig-imgs, .um .pds2-eix-fig .pds2-fig-imgs { display: flex; }
 }
