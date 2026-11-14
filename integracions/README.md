@@ -15,8 +15,11 @@ El 14/11/2026 es van portar aquí, des del servidor, els connectors `pds-2batx/`
 
 Aquest repositori és públic, així que no hi ha res amb notes, solucions o guies del docent. Per això no hi són:
 
-- `pds-2batx/includes/curs.php`, amb el calendari de classes del curs, que només veuen els docents. `pds-2batx.php` el carrega, així que aquesta còpia no funciona sola.
 - `pds-avaluacio/data/unitat-793.js` i `pds-quadern/assets/data-1095.js`, que porten les respostes de les activitats.
 - Les còpies de seguretat del servidor (`*.bak-*`).
+
+El calendari de classes del curs (cronograma d'Història de 2n), que només veuen els docents, ja no és al codi. Des del 14/11/2026 a la tarda és a l'opció de WordPress `pds2_curs_dades` del servidor, i `pds-2batx/includes/curs.php` (sense cap dada) també és aquí, així que la còpia del connector és completa. Sense l'opció, el cronograma no surt.
+
+El mateix dia es van portar `pds-model/model4.css` i `pds-model/model4.js` tal com són al servidor (`wp-content/uploads/pds-model/`), perquè els d'aquí eren del 13/10/2026. Només porten estils, codi i etiquetes de la interfície, cap contingut de les unitats.
 
 Els MD5 dels fitxers portats, iguals que els del servidor, són a `MD5-SERVIDOR-20261114.txt`. El servidor no llegeix el codi d'aquí. La còpia completa i privada del connector professor-socials i del tema és al repositori privat `pds-eines`.

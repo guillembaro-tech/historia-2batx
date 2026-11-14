@@ -5,7 +5,7 @@ Fitxers que al servidor són a `wp-content/uploads/pds-model/`. Aquí se'n guard
 - `model4.js`, pestanyes, menú d'opcions, exportació a PDF i Word (model de llibre de coneixements, octubre de 2026) i desplegable de les fonts.
 - `model4.css`, estils de les unitats, amb el desplegable de les fonts al final.
 
-El sandbox del servidor carrega `../sandbox/pds-fonts-desplegable.php` (filtre `pds_v4_html`), que posa les fonts de les unitats dins del desplegable.
+El servidor carrega `plugins/pds-0-nucli/includes/pds-fonts-desplegable.php` (fins al 14/11/2026, al sandbox) (filtre `pds_v4_html`), que posa les fonts de les unitats dins del desplegable.
 
 ## Activitats i Pràctica PAU (12/10/2026)
 
@@ -13,3 +13,7 @@ El sandbox del servidor carrega `../sandbox/pds-fonts-desplegable.php` (filtre `
 - No canvia el text de les pàgines. Les respostes es desen al navegador de l'alumne (`localStorage`, clau `ua:<ruta>:…`).
 - L'exportació llegeix la secció original (`sec._umOrig`, a `cleanClone`) i hi aplica `window.pdsUaPrint` (opcions en caselles, V/F, línies només a les preguntes obertes, 12 línies per exercici PAU). `linesXml` fa servir el nombre de línies de cada bloc.
 - Font de l'script a `activitats/activitats.src.js` (les icones Tabler 3.49, MIT, són a `activitats/icons.json` i substitueixen `__ICONS__`). L'script complet és el que va enganxat al final de `model4.js`.
+
+## Còpia del servidor (14/11/2026)
+
+`model4.css` (6c0a9146a249b2144d6dc16ef56b86c5) i `model4.js` (49e361c06e39677f92918afae4cbbc4a) són els del servidor el 14/11/2026, amb tots els canvis des del 13/10/2026 (accés de docents, color corporatiu, situacions d'aprenentatge, recursos, presentacions i lliçons). Abans de canviar-los al servidor, comprova que l'MD5 del servidor és aquest; si no ho és, porta primer aquí el del servidor.

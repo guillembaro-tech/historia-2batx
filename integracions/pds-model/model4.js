@@ -1,3 +1,5 @@
+/* PDS_REFRESC_DALT: en recarregar, no restaurar la posicio automaticament del navegador */
+(function(){ try { if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; } } catch(e){} })();
 /* Unitat model · versió 4: pestanyes de la unitat (sense dependències) */
 (function () {
   'use strict';
@@ -10,10 +12,22 @@
     { id: 'avaluacio', label: 'Avaluació', ids: ['avaluacio'] },
     { id: 'situacio', label: "Situació d'aprenentatge", ids: ['sa'] },
     { id: 'recursos', label: 'Recursos', ids: ['recursos'] },
-    { id: 'docent', label: 'Per al docent', ids: ['fitxa', 'sessions', 'diversitat', 'solucionari'], docent: true }
+    { id: 'docent', label: 'Per al docent', ids: ['docent-inici', 'fitxa', 'sessions', 'sa-guia', 'diversitat', 'solucionari'], docent: true },
+    /* Sense sessió docent, el servidor hi posa l'avís «Accés per a docents» (mòdul d'accés docent) */
+    { id: 'acces', label: 'Per al docent', ids: ['acces-docent'], acces: true }
   ];
   var layout = root.querySelector('.um-layout');
   if (!layout) { return; }
+  /* Pestanyes de l'alumne simplificades (1/11/2026, pds-pestanyes.php). Si el servidor marca l'avaluació final amb
+     data-pestanya="activitats", va al final de la pestanya «Activitats» i no té pestanya pròpia. */
+  (function () {
+    var av = document.getElementById('avaluacio');
+    if (!av || av.getAttribute('data-pestanya') !== 'activitats') { return; }
+    groups.forEach(function (g) {
+      if (g.id === 'activitats') { g.ids = g.ids.concat(['avaluacio']); }
+      if (g.id === 'avaluacio') { g.ids = []; }
+    });
+  })();
   /* Només les pestanyes que tenen contingut en aquesta unitat */
   groups = groups.filter(function (g) { return g.ids.some(function (i) { return document.getElementById(i); }); });
   var groupOf = {};
@@ -30,7 +44,7 @@
   groups.forEach(function (g) {
     var b = document.createElement('button');
     b.type = 'button';
-    b.className = 'um-tab' + (g.docent ? ' is-docent' : '');
+    b.className = 'um-tab' + (g.docent ? ' is-docent' : (g.acces ? ' is-acces' : ''));
     b.setAttribute('role', 'tab');
     b.textContent = g.label;
     b.addEventListener('click', function () { show(g.id, true); });
@@ -59,21 +73,46 @@
     window.dispatchEvent(new Event('scroll'));
   }
 
-  function openHash(hash) {
+  /* Salts llargs (21/10/2026). Les imatges diferides que es carreguen pel camí empenyen la destinació
+     avall. Es carreguen abans i, quan ja hi són, es torna a situar la destinació si l'usuari no s'ha mogut. */
+  function settle(el) {
+    if (!window.Promise) { return; }
+    var imgs = [].slice.call(document.querySelectorAll('img[loading="lazy"]')).filter(function (i) {
+      return !i.complete && (i.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+    });
+    if (!imgs.length) { return; }
+    var moved = false, evs = ['wheel', 'touchstart', 'keydown'];
+    function user() { moved = true; }
+    evs.forEach(function (t) { window.addEventListener(t, user, { passive: true }); });
+    imgs.forEach(function (i) { i.loading = 'eager'; });
+    Promise.all(imgs.map(function (i) {
+      return new Promise(function (r) { i.addEventListener('load', r, { once: true }); i.addEventListener('error', r, { once: true }); setTimeout(r, 4000); });
+    })).then(function () {
+      setTimeout(function () {
+        evs.forEach(function (t) { window.removeEventListener(t, user); });
+        if (!moved) { el.scrollIntoView(); }
+      }, 120);
+    });
+  }
+
+  function openHash(hash, fix) {
     var id = decodeURIComponent((hash || '').replace('#', ''));
     var el = id && document.getElementById(id);
     if (!el) { return false; }
     var sec = groupOf[id] ? el : el.closest('.um-sec[id]');
     if (!sec || !groupOf[sec.id]) { return false; }
     if (groupOf[sec.id] !== current) { show(groupOf[sec.id], false); }
+    /* Obre els blocs plegables (details) que contenen la destinació */
+    for (var d = el; d && d !== sec; d = d.parentElement) { if (d.tagName === 'DETAILS') { d.open = true; } }
     el.scrollIntoView();
+    if (fix) { settle(el); }
     return true;
   }
 
   root.addEventListener('click', function (e) {
     var a = e.target.closest('a[href^="#"]');
     if (!a) { return; }
-    if (openHash(a.getAttribute('href'))) { e.preventDefault(); history.replaceState(null, '', a.getAttribute('href')); }
+    if (openHash(a.getAttribute('href'), true)) { e.preventDefault(); history.replaceState(null, '', a.getAttribute('href')); }
   });
 
   new MutationObserver(function () {
@@ -81,7 +120,7 @@
   }).observe(root, { attributes: true, attributeFilter: ['data-view'] });
 
   show('temari', false);
-  if (location.hash) { openHash(location.hash); }
+  if (location.hash) { openHash(location.hash); window.scrollTo(0, 0); }
 })();
 
 /* Unitat model · versió 4: menú d'opcions i fitxa «Sobre la unitat» */
@@ -129,6 +168,8 @@
   /* Menú d'opcions: vista, mida del text i impressió */
   if (!tools || !hero) { return; }
   var views = tools.querySelectorAll('[data-um-view]');
+  /* Disseny nou per als docents (data-dn): sense botons de vista; la pestanya «Per al docent» sempre hi és */
+  if (root.hasAttribute('data-dn')) { views.forEach(function (b) { if (b.parentNode) { b.parentNode.removeChild(b); } }); views = []; }
   var down = tools.querySelector('[data-um-fs="down"]');
   var up = tools.querySelector('[data-um-fs="up"]');
   var pr = tools.querySelector('[data-um-print]');
@@ -213,8 +254,10 @@
       if (window.pdsUmExport) { window.pdsUmExport.open(); } else { window.print(); }
     });
     pr.parentNode.removeChild(pr);
-    menu.appendChild(px);
+    /* El botó «Imprimir» del capçal ja fa aquesta feina: la fila no es repeteix al desplegable */
   }
+  while (menu.firstChild && menu.firstChild.tagName === 'HR') { menu.removeChild(menu.firstChild); }
+  while (menu.lastChild && menu.lastChild.tagName === 'HR') { menu.removeChild(menu.lastChild); }
   root.appendChild(menu);
 
   function opener(cls, label) {
@@ -233,8 +276,102 @@
     openers.push(b);
     return b;
   }
-  var main = opener('um-opt-btn', 'Opcions');
+  /* Botó del capçal: «Imprimir» obre directament la finestra d'exportació; la fletxa obre el desplegable (mida del text, vista) */
+  var main;
+  if (pr) {
+    main = document.createElement('div');
+    main.className = 'um-opt-btn um-opt-split';
+    var pb = document.createElement('button');
+    pb.type = 'button';
+    pb.className = 'um-opt-print';
+    pb.title = 'Imprimir o descarregar en PDF o Word';
+    pb.innerHTML = IC.print + '<span>Imprimir</span>';
+    pb.addEventListener('click', function () {
+      close(false);
+      if (window.pdsUmExport) { window.pdsUmExport.open(); } else { window.print(); }
+    });
+    var mb = opener('um-opt-more', '');
+    mb.innerHTML = svg('<path d="m6 9 6 6 6-6"/>');
+    mb.setAttribute('aria-label', 'Més opcions');
+    mb.title = 'Més opcions: mida del text i impressió per parts';
+    main.appendChild(pb);
+    main.appendChild(mb);
+    /* «Imprimir» només a les pestanyes pensades per imprimir (9/11/2026). A Presentació, Recursos, PAU (enunciats
+       amb full propi) i l'avís d'accés docent s'amaga; la fletxa (mida del text) hi continua. */
+    var vis = function (id) { var e = document.getElementById(id); return !!(e && !e.classList.contains('um-tab-off')); };
+    var printable = function () {
+      if (['comencem', 's1', 'idees', 'glossari'].some(vis)) { return true; }
+      var a = document.getElementById('activitats');
+      if (vis('activitats') && !a.classList.contains('pds2-pau3')) { return true; }
+      if (vis('avaluacio')) { return true; }
+      var sa = document.getElementById('sa');
+      if (vis('sa') && !sa.classList.contains('pds2-pres')) { return true; }
+      return ['fitxa', 'sessions', 'sa-guia', 'diversitat', 'solucionari'].some(vis);
+    };
+    var syncPr = function () { var on = printable(); main.classList.toggle('is-noprint', !on); pb.hidden = !on; };
+    syncPr();
+    var tbar = root.querySelector('.um-tabs');
+    if (tbar) { new MutationObserver(syncPr).observe(tbar, { subtree: true, attributes: true, attributeFilter: ['aria-selected'] }); }
+    new MutationObserver(syncPr).observe(root, { attributes: true, attributeFilter: ['data-view'] });
+  } else {
+    main = opener('um-opt-btn', 'Opcions');
+  }
   hero.appendChild(main);
+  /* Interruptor visible «Alumne | Docent». Només hi és per a qui ha entrat com a docent (el servidor treu els botons de vista als altres). */
+  if (views.length) {
+    var VI = { alumne: svg('<path d="M22 9 12 5 2 9l10 4 10-4v6"/><path d="M6 10.6V16a6 3 0 0 0 12 0v-5.4"/>'), docent: svg('<path d="M8 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v11a1 1 0 0 1-1 1"/><path d="M11 16a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>') };
+    var VL = { alumne: 'Alumne', docent: 'Docent' };
+    var acts = document.createElement('div');
+    acts.className = 'um-hero-acts';
+    var vs = document.createElement('div');
+    vs.className = 'um-vista';
+    vs.setAttribute('role', 'group');
+    vs.setAttribute('aria-label', 'Vista de la unitat');
+    var sw = {};
+    views.forEach(function (b) {
+      var v = b.getAttribute('data-um-view');
+      var s = document.createElement('button');
+      s.type = 'button';
+      s.className = 'um-vista-b';
+      s.title = v === 'docent' ? 'Amb el pla de sessions, les notes i el solucionari' : 'Com ho veuen els alumnes';
+      s.innerHTML = (VI[v] || '') + '<span>' + (VL[v] || v) + '</span>';
+      s.addEventListener('click', function () { b.click(); });
+      vs.appendChild(s);
+      sw[v] = s;
+    });
+    var sync = function () {
+      var cv = root.getAttribute('data-view');
+      Object.keys(sw).forEach(function (k) { sw[k].setAttribute('aria-pressed', k === cv ? 'true' : 'false'); });
+    };
+    sync();
+    new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ['data-view'] });
+    hero.removeChild(main);
+    acts.appendChild(vs);
+    acts.appendChild(main);
+    hero.appendChild(acts);
+  }
+  /* El botó «Documents amb solucions» de l'índex del docent obre la finestra d'exportació */
+  root.addEventListener('click', function (e) {
+    var x = e.target.closest('[data-um-xp-open]');
+    if (x && window.pdsUmExport) { e.preventDefault(); window.pdsUmExport.open(); }
+  });
+  /* Disseny nou per als docents (data-dn): la pestanya «Per al docent» amb icona i les notes del temari plegades */
+  if (root.hasAttribute('data-dn')) {
+    var dTab = root.querySelector('.um-tab.is-docent');
+    if (dTab && !dTab.querySelector('svg')) { dTab.insertAdjacentHTML('afterbegin', svg('<path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"/><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/>')); }
+    root.querySelectorAll('.um-box.um-docent').forEach(function (bx) {
+      var t = bx.querySelector(':scope > .um-box-t');
+      if (!t || bx.closest('.um-sec.um-docent')) { return; }
+      bx.classList.add('is-plegat');
+      t.setAttribute('role', 'button');
+      t.setAttribute('tabindex', '0');
+      t.setAttribute('aria-expanded', 'false');
+      t.title = 'Mostra o amaga la nota';
+      var tg = function () { var tancat = bx.classList.toggle('is-plegat'); t.setAttribute('aria-expanded', tancat ? 'false' : 'true'); };
+      t.addEventListener('click', tg);
+      t.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tg(); } });
+    });
+  }
   tools.parentNode.removeChild(tools);
 
   /* Quan el botó del bàner ja no es veu, la barra de pestanyes en mostra un accés */
@@ -274,6 +411,8 @@
   function mk(tag, cls, html) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (html !== undefined) { e.innerHTML = html; } return e; }
   function slug(t) { return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/·/g, '-').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
   function isDocent() { return root.getAttribute('data-view') === 'docent'; }
+  /* El servidor marca data-docent="0" quan qui mira no ha entrat com a docent */
+  function senseDocent() { return root.getAttribute('data-docent') === '0'; }
 
   var title = txt(root.querySelector('.um-hero h1')) || document.title;
   var eyebrow = txt(root.querySelector('.um-eyebrow'));
@@ -312,11 +451,14 @@
     { id: 'sa', label: "Situació d'aprenentatge", hint: 'Repte, treball i avaluació', ids: ['sa'] },
     { id: 'fitxa', label: 'Fitxa curricular', ids: ['fitxa'], docent: true },
     { id: 'sessions', label: 'Pla de sessions', ids: ['sessions'], docent: true },
+    { id: 'saguia', label: "Guia de la situació d'aprenentatge", ids: ['sa-guia'], docent: true },
     { id: 'diversitat', label: 'Atenció a la diversitat', ids: ['diversitat'], docent: true },
     { id: 'solucionari', label: 'Solucionari', ids: ['solucionari'], docent: true }
   ];
   PARTS = PARTS.filter(function (p) {
     if (p.id === 'inicial') { return !!root.querySelector('#comencem form[data-inicial]'); }
+    /* La pràctica PAU dels temes de 2n (pds2-pau3) és una aplicació en pantalla: cada enunciat té el seu full */
+    if (p.id === 'activitats') { var ac = document.getElementById('activitats'); if (ac && ac.classList.contains('pds2-pau3')) { return false; } }
     return p.ids.some(function (i) { var e = document.getElementById(i); return e && !e.classList.contains('pds2-pres'); });
   });
   var BY = {};
@@ -379,7 +521,7 @@
     var c = (node._umOrig || node).cloneNode(true);
     $$('[id]', c).forEach(function (e) { e.removeAttribute('id'); });
     if (c.removeAttribute) { c.removeAttribute('id'); }
-    $$('button, .um-quiz-foot, .um-quiz-res, script, style, .um-progress, .um-quiz-btn, .pds2-v4-taller, .um-start-quiz, .um-start-prev, .um-step-bar, .um-step-nav, .um-step-res', c).forEach(function (e) { e.parentNode.removeChild(e); });
+    $$('button, .um-quiz-foot, .um-quiz-res, script, style, .um-progress, .um-quiz-btn, .pds2-v4-taller, .um-start-quiz, .um-start-prev, .um-step-bar, .um-step-nav, .um-step-res, .um-sa-dl, .pds2-esq, .pds2-eix', c).forEach(function (e) { e.parentNode.removeChild(e); });
     if (!o.notes) { $$('.um-box.um-docent', c).forEach(function (e) { e.parentNode.removeChild(e); }); }
     $$('.um-check details', c).forEach(function (d) {
       if (o.answers) {
@@ -400,6 +542,13 @@
       var tr = d.querySelector('.um-tr');
       if (tr) { while (tr.firstChild) { box.appendChild(tr.firstChild); } }
       d.parentNode.replaceChild(box, d);
+    });
+    $$('details.um-sa-desenllac', c).forEach(function (d) {
+      var s = d.querySelector('summary');
+      if (s) { s.parentNode.removeChild(s); }
+      var box = mk('div', 'um-sa-desenllac');
+      while (d.firstChild) { box.appendChild(d.firstChild); }
+      var sec = d.parentNode; sec.removeChild(d); sec.appendChild(box);
     });
     $$('details', c).forEach(function (d) {
       var box = mk('div', d.className || '');
@@ -609,6 +758,10 @@
     var b = sectionBody(sec, o, false);
     var h = b.el.querySelector('h2');
     if (h) { h.parentNode.replaceChild(mk('h1', 'pd-h1', h.innerHTML), h); }
+    if (p.id === 'sa') {
+      $$('.um-lines', b.el).forEach(function (l) { var nl = +l.getAttribute('data-n') || 8; l.parentNode.replaceChild(mk('div', 'pd-lines', new Array(nl + 1).join('<span></span>')), l); });
+      if (o.parts.length === 1) { var h1 = b.el.querySelector('h1.pd-h1'); if (h1) { h1.parentNode.removeChild(h1); } }
+    }
     if (p.id === 'activitats') {
       var lv = o.level || 'tots';
       if (lv !== 'tots') {
@@ -640,9 +793,15 @@
     var cov = mk('header', 'pd-cover');
     var kick = eyebrow;
     if (!hasTemari && parts.length === 1) { kick = (eyebrow ? eyebrow + ' · ' : '') + BY[parts[0]].label; }
-    var band = mk('div', 'pd-band' + (hasTemari ? '' : ' is-small'));
-    band.innerHTML = '<div class="pd-band-t">' + (kick ? '<p class="pd-kick">' + esc(kick) + '</p>' : '') + '<p class="pd-title">' + esc(title) + '</p>' +
-      (hasTemari && guide ? '<p class="pd-guia">' + esc(guide) + '</p>' : '') + '</div>' +
+    var ctitle = title, cguide = hasTemari ? guide : '', saSola = !hasTemari && parts.length === 1 && (parts[0] === 'sa' || parts[0] === 'saguia');
+    if (saSola) {
+      var saH = root.querySelector('#sa > header h2'), saQ = root.querySelector('#sa .um-sa-repte strong');
+      if (saH) { ctitle = txt(saH); kick = (parts[0] === 'saguia' ? "Guia del docent · " : "Situació d'aprenentatge · ") + title + (eyebrow ? ' · ' + (eyebrow.split('·')[0] || '').trim() : ''); }
+      if (saQ) { cguide = txt(saQ); }
+    }
+    var band = mk('div', 'pd-band' + (hasTemari || saSola ? '' : ' is-small'));
+    band.innerHTML = '<div class="pd-band-t">' + (kick ? '<p class="pd-kick">' + esc(kick) + '</p>' : '') + '<p class="pd-title">' + esc(ctitle) + '</p>' +
+      (cguide ? '<p class="pd-guia">' + esc(cguide) + '</p>' : '') + '</div>' +
       (BAND ? '<div class="pd-band-i"><img src="' + BAND.url + '" alt="" width="' + BAND.w + '" height="' + BAND.h + '"></div>' : '');
     cov.appendChild(band);
     if (o.name) { cov.appendChild(mk('p', 'pd-name', '<span>Nom i cognoms</span><i class="w"></i><span>Grup</span><i></i><span>Data</span><i></i>')); }
@@ -827,22 +986,29 @@
     rows.forEach(function (r) { var n = 0; Array.prototype.forEach.call(r.cells, function (c) { n += c.colSpan || 1; }); ncol = Math.max(ncol, n); });
     if (!ncol) { return ''; }
     var width = (ctx.width || TW) - (ctx.ind || 0), cw = Math.floor(width / ncol);
+    var fillT = t.classList.contains('um-fill'), hr = t.querySelector('tr'), cws = [];
+    for (var ci = 0; ci < ncol; ci++) { cws.push(cw); }
+    if (hr && hr.cells.length === ncol && Array.prototype.every.call(hr.cells, function (c) { return +c.getAttribute('data-w'); })) {
+      cws = Array.prototype.map.call(hr.cells, function (c) { return Math.floor(width * (+c.getAttribute('data-w')) / 100); });
+    }
     var ln = 'single:4:' + LINE;
     var s = '<w:tbl><w:tblPr><w:tblW w:w="' + width + '" w:type="dxa"/>' + (ctx.ind ? '<w:tblInd w:w="' + ctx.ind + '" w:type="dxa"/>' : '') + '<w:tblBorders>' + borders({ top: ln, bottom: ln }) + '<w:insideH w:val="single" w:sz="4" w:space="0" w:color="' + LINE + '"/><w:insideV w:val="nil"/></w:tblBorders><w:tblLayout w:type="fixed"/><w:tblCellMar><w:top w:w="40" w:type="dxa"/><w:left w:w="90" w:type="dxa"/><w:bottom w:w="40" w:type="dxa"/><w:right w:w="90" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>';
-    for (var i = 0; i < ncol; i++) { s += '<w:gridCol w:w="' + cw + '"/>'; }
+    for (var i = 0; i < ncol; i++) { s += '<w:gridCol w:w="' + cws[i] + '"/>'; }
     s += '</w:tblGrid>';
     var small = ncol > 5;
     rows.forEach(function (r, ri) {
       var head = r.parentNode.tagName === 'THEAD' || (ri === 0 && !t.querySelector('thead') && Array.prototype.every.call(r.cells, function (c) { return c.tagName === 'TH'; }));
-      s += '<w:tr><w:trPr>' + (head ? '<w:tblHeader/>' : '') + '<w:cantSplit/></w:trPr>';
+      s += '<w:tr><w:trPr>' + (head ? '<w:tblHeader/>' : '') + '<w:cantSplit/>' + (fillT && !head && !r.classList.contains('um-sa-ex') ? '<w:trHeight w:val="' + (+t.getAttribute('data-h') || 760) + '" w:hRule="atLeast"/>' : '') + '</w:trPr>';
+      var cix = 0;
       Array.prototype.forEach.call(r.cells, function (c) {
+        var cwc = cws[cix] || cw; cix += c.colSpan || 1;
         var span = c.colSpan || 1, th = c.tagName === 'TH';
         var f = { font: SANS, b: th || head, sz: small ? 15 : 17, color: head ? 'FFFFFF' : INK };
         var hasBlock = Array.prototype.some.call(c.children, function (k) { return BLOCK.test(k.tagName.toLowerCase()); });
-        var inner = hasBlock ? blocks(c, { width: cw * span - 180, f: f, inCell: true }) : para(runsXml(segs(c, f, [])), { space: [0, 0, 252] });
+        var inner = hasBlock ? blocks(c, { width: cwc * span - 180, f: f, inCell: true }) : para(runsXml(segs(c, f, [])), { space: [0, 0, 252] });
         if (!/<\/w:p>$/.test(inner)) { inner += '<w:p/>'; }
         var fill = head ? C : (ri % 2 === 0 && !head ? 'F8F9FA' : null);
-        s += '<w:tc><w:tcPr><w:tcW w:w="' + (cw * span) + '" w:type="dxa"/>' + (span > 1 ? '<w:gridSpan w:val="' + span + '"/>' : '') + (fill ? '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>' : '') + '</w:tcPr>' + inner + '</w:tc>';
+        s += '<w:tc><w:tcPr><w:tcW w:w="' + (cwc * span) + '" w:type="dxa"/>' + (span > 1 ? '<w:gridSpan w:val="' + span + '"/>' : '') + (fill ? '<w:shd w:val="clear" w:color="auto" w:fill="' + fill + '"/>' : '') + '</w:tcPr>' + inner + '</w:tc>';
       });
       s += '</w:tr>';
     });
@@ -874,7 +1040,7 @@
     var lvl = (ctx.lvl || 0), left = 340 * (lvl + 1) + (ctx.ind || 0);
     var claus = list.classList.contains('pds2-claus');
     $$(':scope > li', list).forEach(function (li) {
-      var pre = ordered ? (n++) + '.' : (lvl ? '–' : '•');
+      var pre = ordered ? (n++) + '.' : (list.classList.contains('um-checklist') ? '☐' : (lvl ? '–' : '•'));
       var inl = [], rest = [];
       li.childNodes.forEach(function (k) { if (k.nodeType === 1 && (BLOCK.test(k.tagName.toLowerCase()) || k.classList.contains('pd-lines'))) { rest.push(k); } else if (!rest.length) { inl.push(k); } else { rest.push(k); } });
       var tmp = document.createElement('span');
@@ -967,8 +1133,8 @@
       flush();
       if (t === 'h1' && cl.contains('pd-h1')) { s += inlineP(k, { style: 'Heading1', pb: ctx.pb }); ctx.pb = false; return; }
       if (t === 'h1' || t === 'h2') { if (FLOAT) { s += CLEAR; FLOAT = false; } s += inlineP(k, { style: 'Heading2' }); return; }
-      if (t === 'h3') { s += inlineP(k, { style: ctx.box ? 'BoxHead' : 'Heading3' }); return; }
-      if (t === 'h4') { s += inlineP(k, { style: 'Heading4' }); return; }
+      if (t === 'h3') { s += inlineP(k, { style: ctx.box ? 'BoxHead' : 'Heading3', pb: cl.contains('um-sa-nova') }); return; }
+      if (t === 'h4') { s += inlineP(k, { style: 'Heading4', pb: cl.contains('um-sa-nova') }); return; }
       if (t === 'svg' || t === 'img') { s += imageXml(k, ctx); return; }
       if (cl.contains('um-box-t')) { s += inlineP(k, { style: 'BoxTitle', ind: base.ind }, { color: ctx.boxColor || C }); return; }
       if (cl.contains('um-tag')) { s += inlineP(k, { style: 'Tag', ind: base.ind }); return; }
@@ -1002,7 +1168,7 @@
         return;
       }
       if (cl.contains('um-two') || cl.contains('um-cards')) {
-        var kids = $$(':scope > *', k), cols = 2, cw2 = Math.floor(((ctx.width || TW) - base.ind) / cols), card = cl.contains('um-cards');
+        var kids = $$(':scope > *', k), cols = cl.contains('pdsha-tres') ? 3 : 2, cw2 = Math.floor(((ctx.width || TW) - base.ind) / cols), card = cl.contains('um-cards');
         var rowsX = '';
         for (var r = 0; r < kids.length; r += cols) {
           rowsX += '<w:tr><w:trPr><w:cantSplit/></w:trPr>';
@@ -1241,7 +1407,7 @@
       var d = compose(o);
       d.style.cssText = 'position:absolute;left:-10000px;top:0;width:760px';
       document.body.appendChild(d);
-      var svgs = $$('svg, img', d).filter(function (s) { return !s.closest('.pd-band') && (s.tagName.toLowerCase() === 'img' || !s.parentNode.closest('svg')); });
+      var svgs = $$('svg, img', d).filter(function (s) { return !s.closest('.pd-band') && !(s.classList && s.classList.contains('um-ico')) && (s.tagName.toLowerCase() === 'img' || !s.parentNode.closest('svg')); });
       IMG = new Map();
       docPrId = 100;
       FLOAT = false;
@@ -1342,8 +1508,8 @@
           Object.keys(LEVELS).map(function (k) { return '<label><input type="radio" name="um-xp-lv" value="' + k + '"' + (k === 'tots' ? ' checked' : '') + '><span>' + LEVELS[k] + '</span></label>'; }).join('') + '</div>' : '') +
           '<label class="um-xp-opt"><input type="checkbox" name="lines" checked> Línies per respondre</label></div>';
       }
-      if (p.id === 'temari') { extra = '<div class="um-xp-sub" data-for="temari"><label class="um-xp-opt"><input type="checkbox" name="answers"> Amb les respostes del «Comprova-ho»</label><label class="um-xp-opt um-xp-doc"><input type="checkbox" name="notes"> Amb les notes per al docent</label></div>'; }
-      if (p.id === 'final') { extra = '<div class="um-xp-sub" data-for="final inicial"><label class="um-xp-opt"><input type="checkbox" name="solutions"> Marca les respostes correctes de les avaluacions</label></div>'; }
+      if (p.id === 'temari') { extra = '<div class="um-xp-sub" data-for="temari"><label class="um-xp-opt um-xp-sol"><input type="checkbox" name="answers"> Amb les respostes del «Comprova-ho»</label><label class="um-xp-opt um-xp-doc"><input type="checkbox" name="notes"> Amb les notes per al docent</label></div>'; }
+      if (p.id === 'final') { extra = '<div class="um-xp-sub" data-for="final inicial"><label class="um-xp-opt um-xp-sol"><input type="checkbox" name="solutions"> Marca les respostes correctes de les avaluacions</label></div>'; }
       return '<li class="' + (p.docent ? 'um-xp-doc' : '') + '"><label class="um-xp-row"><input type="checkbox" name="part" value="' + p.id + '"><span><b>' + esc(p.label) + '</b>' + (p.hint ? '<small>' + esc(p.hint) + '</small>' : '') + '</span></label>' + extra + '</li>';
     });
     var docStart = PARTS.findIndex(function (p) { return p.docent; });
@@ -1373,7 +1539,7 @@
     var q = function (n) { var i = dlg.querySelector('input[name="' + n + '"]'); return !!(i && i.checked); };
     var parts = $$('input[name="part"]:checked', dlg).map(function (i) { return i.value; }).filter(function (id) { return !BY[id].docent || isDocent(); });
     var lv = dlg.querySelector('input[name="um-xp-lv"]:checked');
-    return { parts: parts, level: lv ? lv.value : 'tots', lines: q('lines'), answers: q('answers'), notes: q('notes') && isDocent(), solutions: q('solutions'), name: q('name') };
+    return { parts: parts, level: lv ? lv.value : 'tots', lines: q('lines'), answers: q('answers') && !senseDocent(), notes: q('notes') && isDocent(), solutions: q('solutions') && !senseDocent(), name: q('name') };
   }
   function sync() {
     var o = opts();
@@ -1387,6 +1553,7 @@
   function open() {
     if (!dlg) { build(); }
     dlg.classList.toggle('is-docent', isDocent());
+    dlg.classList.toggle('is-sense-docent', senseDocent());
     $$('input[name="part"]', dlg).forEach(function (i) { i.checked = i.value === currentPart(); });
     if (!isDocent()) { $$('.um-xp-doc input', dlg).forEach(function (i) { i.checked = false; }); }
     last = document.activeElement;
@@ -1741,6 +1908,51 @@
     return box;
   }
 
+  /* Franja de descàrrega de les activitats, com la de la situació d'aprenentatge (13/10/2026).
+     De moment només als cursos de FRANJA (classe curs-… del body). Per posar-la a tot arreu, s'hi afegeixen els cursos. */
+  var FRANJA = ['curs-1r-eso', 'curs-2n-eso'];
+  function franja() { return FRANJA.some(function (c) { return document.body.classList.contains(c); }); }
+  function dlStrip() {
+    var X = window.pdsUmExport;
+    function sv(p) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + p + '</svg>'; }
+    var P = {
+      dl: '<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" />',
+      pdf: '<path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M17 18h2" /><path d="M20 15h-3v6" /><path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1" />',
+      doc: '<path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1" /><path d="M20 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" /><path d="M12.5 15a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1 -3 0v-3a1.5 1.5 0 0 1 1.5 -1.5" />'
+    };
+    var box = mk('div', 'um-sa-dl ua-franja ua-franja-c');
+    box.setAttribute('role', 'group');
+    box.setAttribute('aria-label', 'Descarrega les activitats');
+    box.appendChild(mk('span', 'um-sa-dl-t', '<b>Descarrega el nivell <span class="ua-dl-lv"></span></b> amb espai per respondre.'));
+    var row = mk('span', 'um-sa-dl-b');
+    var bp = mk('button', 'um-sa-dl-pdf', sv(P.pdf) + '<span>PDF</span>');
+    var bw = mk('button', 'um-sa-dl-doc', sv(P.doc) + '<span>Word</span>');
+    bp.type = bw.type = 'button';
+    bp.title = 'Desa en PDF o imprimeix. A la finestra d\'impressió, tria «Desa com a PDF».';
+    bw.title = 'Descarrega en Word (.docx)';
+    row.appendChild(bp);
+    row.appendChild(bw);
+    box.appendChild(row);
+    var msg = mk('span', 'um-sa-dl-msg');
+    msg.setAttribute('aria-live', 'polite');
+    box.appendChild(msg);
+    if (!X) { box.hidden = true; return box; }
+    bp.addEventListener('click', function () { if (X.prepareBand) { X.prepareBand(); } X.printDoc(dlOpts()); });
+    bw.addEventListener('click', function () {
+      var o = dlOpts();
+      bw.disabled = true;
+      msg.textContent = 'Preparant el document…';
+      if (X.prepareBand) { X.prepareBand(); }
+      X.buildDocx(o).then(function (blob) {
+        fileSave(blob, X.fileBase(o) + '.docx');
+        msg.textContent = 'Fet. S\'ha descarregat.';
+      }).catch(function () {
+        msg.textContent = 'No s\'ha pogut crear. Prova-ho amb el PDF.';
+      }).then(function () { bw.disabled = false; setTimeout(function () { msg.textContent = ''; }, 6000); });
+    });
+    return box;
+  }
+
   /* ---------- ESO: activitats per nivells ---------- */
   var TYPES = {
     tria: 'Tria', marca: 'Marca', comp: 'Completa', rel: 'Relaciona', ord: 'Ordena', vf: 'Vertader o fals',
@@ -1911,9 +2123,18 @@
     how.innerHTML = '<li>' + ic('level') + '<span><b>Tria el nivell</b> o el que et digui el professor.</span></li>' +
       '<li>' + ic('expl') + '<span><b>Respon aquí</b> o a la llibreta. Marca, completa i escriu.</span></li>' +
       '';
-    var dl = mk('li', 'ua-dl', ic('print') + '<span><b>Descarrega el nivell <span class="ua-dl-lv"></span></b> amb espai per respondre.</span>');
-    how.appendChild(dlButtons(dl));
-    if (lv) { lv.parentNode.insertBefore(how, lv); }
+    var dl;
+    if (franja()) {
+      /* Franja de descàrrega sota el títol, com la de la situació d'aprenentatge (13/10/2026) */
+      /* Bloc inicial simplificat: sense les targetes «Com es treballa» i amb la descàrrega just sota el triador de nivell */
+      dl = dlStrip();
+      how = null;
+      if (lv) { lv.insertAdjacentElement('afterend', dl); } else { var hd = sec.querySelector(':scope > header'); if (hd) { hd.insertAdjacentElement('afterend', dl); } }
+    } else {
+      dl = mk('li', 'ua-dl', ic('print') + '<span><b>Descarrega el nivell <span class="ua-dl-lv"></span></b> amb espai per respondre.</span>');
+      how.appendChild(dlButtons(dl));
+    }
+    if (lv && how) { lv.parentNode.insertBefore(how, lv); }
     var setLv = function () { var t = dl.querySelector('.ua-dl-lv'); if (t) { t.textContent = LVN[curLevel()] || ''; } };
     if (lv) { lv.addEventListener('click', function () { setTimeout(setLv, 0); }); }
     setTimeout(setLv, 0);
@@ -2144,7 +2365,8 @@
         '<p>S\'obrirà la finestra d\'impressió del navegador. Comprova-hi dues coses.</p>' +
         '<ol>' +
         '<li><b>Destinació</b>, tria «Desa com a PDF». Si el vols imprimir, tria la impressora.</li>' +
-        '<li><b>Marges</b>, tria «Per defecte»' + (chrome ? ' (és a «Més opcions de configuració»)' : '') + '. Amb «Cap», el text queda enganxat a la vora del full.</li>' +
+        '<li><b>Marges</b>, tria «Per defecte»' + (chrome ? ' (és a «Més opcions de configuració»)' : '') + '.' +
+          '<span class="pds-avis-alerta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"/><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z"/><path d="M12 16h.01"/></svg><span><b>Amb «Cap»</b>, el text queda enganxat a la vora del full.</span></span></li>' +
         '</ol>' +
         '<label class="pds-avis-no"><input type="checkbox"> No ho tornis a mostrar en aquest ordinador</label>' +
         '<div class="pds-avis-btns"><button type="button" class="pds-avis-x">Cancel·la</button><button type="button" class="pds-avis-ok">Entesos, obre-la</button></div>' +
@@ -2163,4 +2385,62 @@
       ok.focus();
     });
   };
+})();
+
+/* Descàrrega de la situació d'aprenentatge en PDF o Word, a l'inici de la pestanya (13/10/2026) */
+(function () {
+  'use strict';
+  var root = document.querySelector('.um');
+  var X = window.pdsUmExport;
+  if (!root || !X || !X.printDoc || !X.buildDocx || root.classList.contains('pds2-v4')) { return; }
+  var sec = root.querySelector('section.um-sec#sa');
+  if (!sec || sec.querySelector('.um-sa-dl')) { return; }
+  function svg(p) { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' + p + '</svg>'; }
+  var I = {
+    dl: '<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" />',
+    pdf: '<path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 18h1.5a1.5 1.5 0 0 0 0 -3h-1.5v6" /><path d="M17 18h2" /><path d="M20 15h-3v6" /><path d="M11 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1" />',
+    doc: '<path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" /><path d="M5 15v6h1a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2h-1" /><path d="M20 16.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" /><path d="M12.5 15a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1 -3 0v-3a1.5 1.5 0 0 1 1.5 -1.5" />'
+  };
+  function mk(tag, cls, html) { var e = document.createElement(tag); if (cls) { e.className = cls; } if (html !== undefined) { e.innerHTML = html; } return e; }
+  function opts() { return { parts: ['sa'], level: 'tots', lines: true, answers: false, notes: false, solutions: false, name: true }; }
+  function save(blob, name) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.parentNode.removeChild(a); }, 1500);
+  }
+  var box = mk('div', 'um-sa-dl');
+  box.setAttribute('role', 'group');
+  box.setAttribute('aria-label', "Descarrega la situació d'aprenentatge");
+  box.appendChild(mk('span', 'um-sa-dl-ic', svg(I.dl)));
+  box.appendChild(mk('span', 'um-sa-dl-t', "<b>Descarrega la situació d'aprenentatge</b>En PDF per imprimir-la o en Word per editar-la. Les fitxes tenen espai per escriure."));
+  var row = mk('span', 'um-sa-dl-b');
+  var bp = mk('button', 'um-sa-dl-pdf', svg(I.pdf) + '<span>PDF</span>');
+  var bw = mk('button', 'um-sa-dl-doc', svg(I.doc) + '<span>Word</span>');
+  bp.type = bw.type = 'button';
+  bp.title = 'Desa en PDF o imprimeix. A la finestra d\'impressió, tria «Desa com a PDF».';
+  bw.title = 'Descarrega en Word (.docx)';
+  row.appendChild(bp);
+  row.appendChild(bw);
+  box.appendChild(row);
+  var msg = mk('span', 'um-sa-dl-msg');
+  msg.setAttribute('aria-live', 'polite');
+  box.appendChild(msg);
+  bp.addEventListener('click', function () { if (X.prepareBand) { X.prepareBand(); } X.printDoc(opts()); });
+  bw.addEventListener('click', function () {
+    var o = opts();
+    bw.disabled = true;
+    msg.textContent = 'Preparant el document…';
+    if (X.prepareBand) { X.prepareBand(); }
+    X.buildDocx(o).then(function (blob) {
+      save(blob, X.fileBase(o) + '.docx');
+      msg.textContent = 'Fet. S\'ha descarregat.';
+    }).catch(function () {
+      msg.textContent = 'No s\'ha pogut crear. Prova-ho amb el PDF.';
+    }).then(function () { bw.disabled = false; setTimeout(function () { msg.textContent = ''; }, 6000); });
+  });
+  var head = sec.querySelector(':scope > header');
+  if (head && head.nextSibling) { sec.insertBefore(box, head.nextSibling); } else if (head) { sec.appendChild(box); } else { sec.insertBefore(box, sec.firstChild); }
 })();

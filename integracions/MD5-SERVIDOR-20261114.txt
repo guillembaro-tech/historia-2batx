@@ -66,3 +66,6 @@ d41c0222dfc0d2e51c093f186440e7cc  pds-quadern/assets/kit.css
 9773e2e481dc8aad130c852bc09fbf86  pds-quadern/pds-quadern.php
 5ee8f5d802ffcb71f309b627971ca14e  pds-pdf/pds-pdf.php
 85373b6672dbd29db6067b582c1b036c  pds-presentacions-submit/pds-presentacions-submit.php
+667f4cb36ad86c97c8ba6eee47f3d74e  pds-2batx/includes/curs.php
+6c0a9146a249b2144d6dc16ef56b86c5  pds-model/model4.css
+49e361c06e39677f92918afae4cbbc4a  pds-model/model4.js

@@ -15,9 +15,9 @@
   --ink: #202124;
   --ink-2: #5F6368;
   --ink-3: #80868B;
-  --doc: #0B3A7E;
-  --doc-soft: #F3F6FB;
-  --doc-line: #C9D6EC;
+  --doc: #1F5FBF;
+  --doc-soft: #E8F0FC;
+  --doc-line: #D2E3FC;
   --ok: #188038;
   --ok-soft: #E6F4EA;
   --ko: #C5221F;
@@ -132,7 +132,7 @@ details.um-think > summary::-webkit-details-marker { display: none; }
 details.um-think[open] > summary { margin-bottom: 8px; }
 .um-docent { display: none; background: var(--doc-soft); border: 1px solid var(--doc-line); font-size: 15.5px; line-height: 1.55; }
 .um-docent .um-box-t { display: inline-flex; align-items: center; gap: 6px; color: var(--doc); }
-.um-docent .um-box-t::before { content: ""; width: 16px; height: 16px; flex: 0 0 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B3A7E' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8'/%3E%3C/svg%3E") center / contain no-repeat; }
+.um-docent .um-box-t::before { content: ""; width: 16px; height: 16px; flex: 0 0 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F5FBF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8'/%3E%3C/svg%3E") center / contain no-repeat; }
 .um[data-view="docent"] .um-docent { display: block; }
 html:not(.um-js) .um .um-docent { display: block; }
 .um[data-view="docent"] .um-sec.um-docent { display: block; background: var(--surface); border: 1px solid var(--outline); padding: 24px 28px 8px; font-size: var(--fs); line-height: 1.65; }
@@ -249,7 +249,7 @@ body.pds-body .site-header { background: #FFFFFF; backdrop-filter: none; -webkit
 body.pds-body .site-header .inner, body.pds-body .site-footer .inner { box-sizing: content-box; max-width: 1040px; padding: 0 clamp(16px, 4vw, 32px); }
 body.pds-body .site-header .inner { height: 64px; gap: 16px; }
 body.pds-body .brand, body.pds-body .mobile-nav-top .brand { font-family: var(--qe-font-body); font-weight: 400; font-size: 21px; letter-spacing: 0; color: #3C4043; gap: 0; }
-body.pds-body .brand .brand-mark, .footer-brand .brand-big .brand-mark { display: inline-block; content: ""; width: 32px; height: 32px; flex: 0 0 32px; margin-right: 10px; border-radius: 8px; background: #202124 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8.5'/%3E%3Cpath d='M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5S9.6 5.9 12 3.5z'/%3E%3C/svg%3E") center / 20px no-repeat; }
+body.pds-body .brand .brand-mark, .footer-brand .brand-big .brand-mark { display: inline-block; content: ""; width: 32px; height: 32px; flex: 0 0 32px; margin-right: 10px; border-radius: 8px; background: #1F5FBF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='8.5'/%3E%3Cpath d='M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5S9.6 5.9 12 3.5z'/%3E%3C/svg%3E") center / 20px no-repeat; }
 body.pds-body .brand .star, .footer-brand .brand-big .star { color: #1F5FBF; font-style: normal; font-weight: 500; }
 body.pds-body .nav-main { gap: 2px; margin-left: 8px; flex-shrink: 0; }
 body.pds-body .site-header .brand { flex-shrink: 0; white-space: nowrap; }
@@ -361,7 +361,7 @@ html.um-xp-open { overflow: hidden; }
 .um-xp-doc { display: none !important; }
 .um-xp.is-docent .um-xp-doc { display: block !important; }
 .um-xp.is-docent .um-xp-sub .um-xp-doc { display: flex !important; }
-.um-xp-sep span { display: block; padding: 12px 4px 4px; font-size: 12.5px; color: #0B3A7E; font-weight: 500; }
+.um-xp-sep span { display: block; padding: 12px 4px 4px; font-size: 12.5px; color: #1F5FBF; font-weight: 500; }
 .um-xp-name { margin: 14px 4px 0; }
 .um-xp-foot { position: sticky; bottom: -18px; margin: 16px -24px -18px; padding: 12px 24px 16px; background: #fff; border-top: 1px solid #DADCE0; }
 .um-xp-btns { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; }
@@ -455,7 +455,7 @@ html.um-xp-open { overflow: hidden; }
 .pd .pd-opts li.is-ok { font-weight: 500; }
 .pd .pd-why, .pd .pd-ans { font-size: 9pt; color: #3C4043; font-style: italic; margin: 3pt 0 0; }
 .pd .pd-sess { border: 1px solid #DADCE0; border-radius: 6px; padding: 5pt 8pt; margin: 0 0 6pt; break-inside: avoid; }
-.pd .pd-sess h4 { margin: 0 0 3pt; color: #0B3A7E; }
+.pd .pd-sess h4 { margin: 0 0 3pt; color: #1F5FBF; }
 .pd .pd-sess p { margin: 0 0 2pt; font-size: 9.5pt; }
 
 /* ---------- Unitats llargues: índex amb subapartats, fotos i selector de nivell ---------- */
@@ -847,3 +847,643 @@ html.um-xp-open { overflow: hidden; }
 .pds-avis-btns button { padding: 9px 18px; border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 500; line-height: 1.2; cursor: pointer; }
 .pds-avis-x { border: 1px solid #DADCE0; background: #fff; color: #3C4043; }
 .pds-avis-ok { border: 0; background: var(--primary, #1F5FBF); color: #fff; }
+
+/* Pestanya «Recursos» · model 2026-10 (publicat el 12/10/2026, mostra a L'Antiga Grècia) */
+.um-rec-intro { color: var(--ink-2); font-size: 15px; margin: 6px 0 4px; }
+.um-rec-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 6px; padding: 0; list-style: none; }
+.um-rec-nav li { margin: 0; }
+.um-rec-nav a { display: inline-block; border: 1px solid var(--outline); border-radius: 18px; padding: 6px 14px; font-size: 14px; font-weight: 500; color: var(--ink); background: var(--surface); }
+.um-rec-nav a:hover { border-color: var(--primary); color: var(--primary); background: var(--primary-soft); }
+
+/* Icones per tipus (Tabler, MIT) */
+.um-rec [class*="is-t-"]::before { content: ""; display: inline-block; width: 18px; height: 18px; flex: 0 0 18px; background: var(--primary); -webkit-mask: var(--ic) center / contain no-repeat; mask: var(--ic) center / contain no-repeat; }
+.um-rec .is-t-video { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='5' width='18' height='14' rx='3'/%3E%3Cpath d='M10 9.5v5l4.5-2.5z' fill='black'/%3E%3C/svg%3E"); }
+.um-rec .is-t-audio { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 15v-3a8 8 0 0 1 16 0v3'/%3E%3Crect x='3' y='14' width='4' height='6' rx='1.5'/%3E%3Crect x='17' y='14' width='4' height='6' rx='1.5'/%3E%3C/svg%3E"); }
+.um-rec .is-t-web { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3.6 9h16.8M3.6 15h16.8M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18'/%3E%3C/svg%3E"); }
+.um-rec .is-t-text { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 3v4a1 1 0 0 0 1 1h4'/%3E%3Cpath d='M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2zM9 13h6M9 17h6'/%3E%3C/svg%3E"); }
+.um-rec .is-t-llibre { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13'/%3E%3C/svg%3E"); }
+.um-rec .is-t-film { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2'/%3E%3Cpath d='M8 4v16M16 4v16M4 8h4M4 16h4M4 12h16M16 8h4M16 16h4'/%3E%3C/svg%3E"); }
+.um-rec .is-t-aula { --ic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 9L12 5L2 9l10 4l10-4v6'/%3E%3Cpath d='M6 10.6V16a6 3 0 0 0 12 0v-5.4'/%3E%3C/svg%3E"); }
+
+/* Etiquetes */
+.um-rec-lang, .um-rec-edat { display: inline-block; font-size: 12px; font-weight: 500; line-height: 1; padding: 4px 8px; border-radius: 10px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--outline); vertical-align: 1px; white-space: nowrap; }
+.um-rec-lang.is-ca { background: var(--primary-soft); color: var(--primary); border-color: transparent; }
+.um-rec-edat { background: var(--surface); color: var(--ink); font-weight: 700; min-width: 34px; text-align: center; }
+.um-rec-meta { color: var(--ink-2); font-size: 13.5px; }
+.um-rec-note { font-size: 13.5px; color: var(--ink-2); margin: 4px 0 0; }
+.um-rec-note b { color: var(--ink); font-weight: 500; }
+
+/* Material de la unitat */
+.um-rec-kit { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 14px 0 8px; }
+.um-rec-kit a { display: flex; gap: 12px; align-items: center; border: 1px solid var(--outline); border-radius: var(--r); padding: 12px 14px; color: var(--ink); }
+.um-rec-kit a:hover { border-color: var(--primary); background: var(--primary-soft); }
+.um-rec-ico { flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%; background: var(--primary-soft); display: flex; align-items: center; justify-content: center; }
+.um-rec-ico::before { width: 22px !important; height: 22px !important; flex-basis: 22px !important; }
+.um-rec-kit b { display: block; font-weight: 500; font-size: 16px; line-height: 1.3; }
+.um-rec-kit span { display: block; font-size: 13.5px; color: var(--ink-2); line-height: 1.35; }
+
+/* Per apartats */
+.um-rec-aps { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 12px; margin: 14px 0 8px; }
+.um-rec-ap { border: 1px solid var(--outline); border-radius: var(--r); padding: 0 0 6px; overflow: hidden; }
+.um-rec-ap > header { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: var(--primary-soft); }
+.um-rec-ap > header a.um-rec-n { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.um-rec-ap > header h4 { font-size: 15.5px; font-weight: 500; line-height: 1.3; margin: 0; }
+.um-rec-ap > header h4 a { color: var(--ink); }
+.um-rec-ap ul { list-style: none; padding: 4px 14px 0; margin: 0; }
+.um-rec-ap li { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; margin: 0; border-top: 1px solid #EEF0F2; }
+.um-rec-ap li:first-child { border-top: 0; }
+.um-rec-ap li::before { margin-top: 3px; }
+.um-rec-ap li > div { flex: 1 1 auto; min-width: 0; }
+.um-rec-ap li a.um-rec-t { font-weight: 500; font-size: 15.5px; line-height: 1.35; color: var(--ink); }
+.um-rec-ap li a.um-rec-t:hover { color: var(--primary); text-decoration: underline; }
+.um-rec-ap li p { font-size: 14px; line-height: 1.45; color: var(--ink-2); margin: 2px 0 0; }
+.um-rec-ap .um-rec-meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+
+/* Llibres, pel·lícules i docent */
+.um-rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 14px 0 8px; }
+.um-rec-item { display: flex; flex-direction: column; gap: 4px; border: 1px solid var(--outline); border-radius: var(--r); padding: 14px 16px; }
+.um-rec-item > .um-rec-top { display: flex; gap: 8px; align-items: center; justify-content: space-between; }
+.um-rec-item > .um-rec-top > span:first-child { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--ink-2); }
+.um-rec-item h4 { font-size: 16.5px; font-weight: 500; line-height: 1.3; margin: 2px 0 0; }
+.um-rec-item h4 a { color: var(--ink); }
+.um-rec-item h4 a:hover { color: var(--primary); }
+.um-rec-item p { font-size: 14.5px; line-height: 1.5; margin: 0; }
+.um-rec-item .um-rec-by { font-size: 13.5px; color: var(--ink-2); }
+.um-rec-item .um-rec-on { margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13.5px; color: var(--ink-2); }
+.um-rec-item .um-rec-on a { display: inline-block; border: 1px solid var(--primary); color: var(--primary); border-radius: 16px; padding: 4px 12px; font-weight: 500; }
+.um-rec-item .um-rec-on a:hover { background: var(--primary-soft); }
+.um-rec-sub { font-size: 14px; font-weight: 500; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; margin: 18px 0 0; }
+.um-rec-avis { font-size: 13.5px; color: var(--ink-2); background: var(--surface-2); border-radius: var(--r); padding: 10px 14px; margin: 4px 0 18px; }
+
+.um-rec-aps.is-one { grid-template-columns: 1fr; }
+.um-rec-ap > header .um-rec-ico { flex-basis: 28px; width: 28px; height: 28px; background: var(--surface); }
+.um-rec-ap > header .um-rec-ico::before { width: 16px !important; height: 16px !important; }
+.um-rec-cols { columns: 2 300px; column-gap: 28px; }
+.um-rec-cols li { break-inside: avoid; }
+.um-rec-cols li { border-top: 0; }
+.um-rec-meta a { color: var(--primary); font-weight: 500; }
+.um-rec-edat.is-12 { background: #FEF3E2; color: #B06000; border-color: #F6C26B; }
+.um-rec-edat.is-16, .um-rec-edat.is-18 { background: #FCE8E6; color: #C5221F; border-color: #F4A9A4; }
+.um-rec-alerta { display: flex; gap: 6px; align-items: flex-start; font-size: 13.5px !important; line-height: 1.4 !important; color: #8A4B00; background: #FEF7EC; border-radius: 6px; padding: 6px 10px; margin-top: 4px !important; }
+.um-rec-alerta::before { content: "!"; flex: 0 0 16px; width: 16px; height: 16px; border-radius: 50%; background: #B06000; color: #fff; font: 700 11px/16px var(--font); text-align: center; margin-top: 1px; }
+.um-rec-item.is-adult .um-rec-alerta { color: #A50E0E; background: #FCE8E6; }
+.um-rec-item.is-adult .um-rec-alerta::before { background: #C5221F; }
+.um-rec-item .um-rec-on .um-rec-lang { margin-left: auto; }
+.um-rec-avis a { color: var(--primary); font-weight: 500; }
+@media (max-width: 640px) {
+  .um-rec-aps, .um-rec-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Situació d'aprenentatge (model SA v4, 12/10/2026) ---------- */
+.um-sa .um-ico { width: 20px; height: 20px; flex: 0 0 20px; color: var(--primary); }
+.um-sa-top { grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); align-items: start; gap: 24px; margin: 0 0 8px; }
+.um-sa-top .um-intro { margin: 0 0 14px; }
+.um-sa-top .um-fig.um-photo img { height: auto; max-height: 440px; width: 100%; object-fit: contain; }
+.um-sa-repte { margin: 0 0 14px; }
+.um-sa-fitxa { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.um-sa-fitxa > div { border: 1px solid var(--outline); border-radius: var(--r); padding: 10px 12px; }
+.um-sa-fitxa dt { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--ink-2); }
+.um-sa-fitxa dd { margin: 4px 0 0; font-size: 15px; line-height: 1.4; color: var(--ink); }
+.um-sa-obj { list-style: none; display: grid; gap: 8px; margin: 8px 0 18px; }
+.um-sa-obj li { position: relative; padding-left: 34px; line-height: 1.5; }
+.um-sa-obj li::before { content: ""; position: absolute; left: 0; top: .1em; width: 22px; height: 22px; border-radius: 50%; background: var(--primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 14px no-repeat; }
+.um-cards.um-sa-ses { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.um-sa-ses .um-card h4::before, .um-sa-troballes .um-card h4::before { display: none; }
+.um-sa-ses .um-card h4 { align-items: center; }
+.um-sa-n { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 15px; font-weight: 500; }
+.um-sa-ses .um-card ul { margin: 8px 0 10px; padding-left: 20px; font-size: 15px; line-height: 1.5; }
+.um-sa-ses .um-card ul li { margin: 0 0 3px; }
+.um .um-sa-ses .um-sa-lliura { font-size: 14px; font-weight: 500; color: var(--primary-dark); border-top: 1px dashed var(--outline); padding-top: 8px; }
+.um-sa-troballes .um-card h4 .um-ico { margin-top: .1em; }
+.um-sa .um-sa-taula td:first-child { width: 120px; text-align: left; font-weight: 500; }
+.um-sa .um-sa-taula td:last-child { width: 70px; text-align: center; }
+.um-sa .um-sa-ex td { background: var(--primary-soft); color: var(--ink-2); font-style: italic; }
+.um-sa .um-sa-ex td:first-child { font-style: normal; }
+.um-sa-esq th { width: 50%; color: var(--primary-dark); }
+.um-sa-esq td { height: 52px; border-right: 1px solid var(--outline); }
+.um-sa-esq td:last-child { border-right: 0; }
+.um-sa-ajuda { background: var(--surface-2, #F8F9FA); }
+.um-sa-ajuda ul { margin: 6px 0 10px; padding-left: 20px; }
+.um-sa-mot { display: inline-block; margin: 3px 2px 0; padding: 1px 10px; border-radius: 999px; background: var(--primary-soft); color: var(--primary-dark); font-size: 14px; }
+.um-lines { display: none; }
+.um-sa-rub td:first-child { width: 19%; }
+.um .um-box.um-sa-llista { border: 1px solid var(--outline); }
+.um-checklist { list-style: none; margin: 6px 0 0; }
+.um-checklist li { position: relative; padding-left: 28px; margin: 0 0 6px; }
+.um-checklist li::before { content: ""; position: absolute; left: 0; top: .2em; width: 15px; height: 15px; border: 1.5px solid var(--primary); border-radius: 3px; }
+@media (max-width: 760px) {
+  .um-cards.um-sa-ses { grid-template-columns: 1fr; }
+  .um-sa-top { grid-template-columns: 1fr; }
+  .um-sa-top .um-fig.um-photo img { max-height: 360px; }
+}
+@media (max-width: 420px) { .um-sa-fitxa { grid-template-columns: 1fr; } }
+
+/* Documents (PDF) */
+.pd .um-sa-top { grid-template-columns: 1.7fr 1fr; gap: 5mm; align-items: start; margin: 0 0 3mm; }
+.pd .um-sa-top .um-photo img { max-height: 78mm; width: auto; max-width: 100%; }
+.pd .um-sa-top .um-intro { margin-top: 0; }
+.pd .um-sa-repte { margin: 0 0 3mm; }
+.pd .um-sa-fitxa { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; margin: 0; }
+.pd .um-sa-fitxa > div { border: .6pt solid var(--line); border-radius: 2mm; padding: 1.8mm 2.4mm; break-inside: avoid; }
+.pd .um-sa-fitxa dt { display: flex; align-items: center; gap: 1.5mm; font: 600 7.6pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); }
+.pd .um-sa-fitxa dd { margin: .6mm 0 0; font: 8.8pt/1.35 "Roboto Var", Roboto, Arial, sans-serif; color: var(--ink); }
+.pd .um-sa .um-ico, .pd .um-ico { width: 3.6mm; height: 3.6mm; flex: 0 0 3.6mm; color: var(--c); }
+.pd .um-sa-obj { list-style: none; padding: 0; }
+.pd .um-sa-obj li { position: relative; padding-left: 6mm; margin: 0 0 1.4mm; }
+.pd .um-sa-obj li::before { content: "✓"; position: absolute; left: 0; top: 0; width: 4mm; height: 4mm; border-radius: 50%; background: var(--c); color: #fff; font: 700 7pt/4mm "Roboto Var", Roboto, Arial, sans-serif; text-align: center; }
+.pd .um-sa-ses .um-card h4 { display: flex; align-items: center; gap: 2mm; }
+.pd .um-sa-n { display: inline-flex; align-items: center; justify-content: center; width: 5mm; height: 5mm; flex: 0 0 5mm; border-radius: 50%; background: var(--c); color: #fff; font: 600 8pt "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-sa-ses .um-card ul { margin: 1mm 0 1.2mm; padding-left: 4mm; }
+.pd .um-sa-lliura { font-weight: 600; color: var(--c-dark); border-top: .5pt dashed var(--line); padding-top: 1mm; margin: 0; }
+.pd .um-sa-troballes .um-card h4 { display: flex; align-items: flex-start; gap: 1.6mm; }
+.pd .um-sa-taula td { height: 15mm; }
+.pd .um-sa-taula { table-layout: fixed; }
+.pd .um-fill th[data-w] { width: auto; }
+.pd .um-sa-taula th:nth-child(1) { width: 17%; } .pd .um-sa-taula th:nth-child(2) { width: 13%; } .pd .um-sa-taula th:nth-child(3) { width: 30%; } .pd .um-sa-taula th:nth-child(5) { width: 10%; }
+.pd .um-sa-taula td:first-child { text-align: left; font-weight: 600; }
+.pd .um-sa-taula td:last-child { text-align: center; }
+.pd .um-sa-taula tr { break-inside: avoid; }
+.pd .um-sa-nova { break-before: page; margin-top: 0; }
+.pd .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; color: var(--ink2); }
+.pd .um-sa-esq th { width: 50%; }
+.pd .um-sa-esq td { height: 13mm; border-right: .5pt solid var(--line); }
+.pd .um-sa-esq td:last-child { border-right: 0; }
+.pd .um-sa-ajuda { background: #F8F9FA; }
+.pd .um-sa-mot { display: inline-block; margin: .6mm .4mm 0; padding: 0 2mm; border: .5pt solid var(--c); border-radius: 3mm; color: var(--c-dark); font: 8pt/1.5 "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-box.um-sa-llista { border: .6pt solid var(--line); }
+.pd .um-checklist { list-style: none; padding-left: 0; }
+.pd .um-checklist li { position: relative; padding-left: 5.5mm; margin: 0 0 1mm; }
+.pd .um-checklist li::before { content: ""; position: absolute; left: 0; top: .6mm; width: 3mm; height: 3mm; border: .8pt solid var(--c); border-radius: .6mm; }
+.pd .um-sa-rub td:first-child { width: 22mm; }
+.pd .um-sa table, .pd .um-sa-ses .um-card, .pd .um-sa-troballes .um-card { break-inside: avoid; }
+
+/* ---------- Accés per a docents (mòdul d'accés docent, octubre de 2026) ---------- */
+.um-tab.is-acces { color: var(--doc); }
+.um-tab.is-acces[aria-selected="true"]::after { background: var(--doc); }
+.um-xp.is-sense-docent .um-xp-sol, .um-xp.is-sense-docent .um-xp-sub[data-for="temari"], .um-xp.is-sense-docent .um-xp-sub[data-for="final inicial"] { display: none !important; }
+.um-acces-card { display: grid; grid-template-columns: 56px 1fr; gap: 22px; max-width: 860px; padding: 4px 0 8px; }
+.um-acces-ico { width: 56px; height: 56px; border-radius: 50%; background: var(--curs-soft); color: var(--curs); display: grid; place-items: center; }
+.um-acces-intro { margin: 4px 0 10px; color: #202124; font-size: 17px; line-height: 1.5; }
+.um .um-acces-llista { list-style: none; margin: 4px 0 24px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.um .um-acces-llista li { display: flex; gap: 12px; align-items: center; margin: 0; padding: 10px 12px; border: 1px solid #DADCE0; border-radius: 8px; background: #fff; }
+.um-acces-li-ico { flex: 0 0 36px; width: 36px; height: 36px; border-radius: 50%; background: var(--curs-soft); color: var(--curs); display: grid; place-items: center; }
+.um-acces-li-ico svg { width: 20px; height: 20px; }
+.um-acces-li-t { display: block; color: #202124; font-size: 15px; font-weight: 500; line-height: 1.3; }
+.um-acces-li-d { display: block; margin-top: 2px; color: #5F6368; font-size: 13.5px; line-height: 1.35; }
+.um-acces-btns { display: flex; flex-wrap: wrap; gap: 12px; }
+.um-acces-b1, .um-acces-b2 { font: 500 15px/1 "Roboto Var", Roboto, system-ui, sans-serif; border-radius: 8px; padding: 12px 22px; cursor: pointer; border: 1px solid var(--curs); }
+.um-acces-b1 { background: var(--curs); color: #fff; }
+.um-acces-b2 { background: #fff; color: var(--curs); }
+.um-acces-b1:hover { filter: brightness(.92); }
+.um-acces-b2:hover { background: var(--curs-soft); }
+.um-acces-b1:focus-visible, .um-acces-b2:focus-visible { outline: 3px solid var(--curs-soft); outline-offset: 2px; }
+.um .um-acces-nota { margin: 16px 0 0; color: #5F6368; font-size: 14px; }
+.um .um-acces-alumne { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid #DADCE0; color: #5F6368; font-size: 15px; line-height: 1.5; }
+.um-acces-alumne strong { color: #202124; }
+@media (max-width: 600px) { .um-acces-card { grid-template-columns: 1fr; gap: 14px; } .um-acces-ico { display: none; } }
+
+/* ---------- SA «L'assemblea d'Atenes» (personatges, propostes, desenllaç) i activitat curta d'Empúries, 13/10/2026 ---------- */
+.um-sa-opcions, .um-sa-pers { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.um-sa-opcions { grid-template-columns: 1fr 1fr; }
+.um-sa-opcions .um-card h4::before, .um-sa-pers .um-card h4::before, .um-sa-mini .um-card h4::before { display: none; }
+.um-sa-opcions .um-card h4, .um-sa-pers .um-card h4 { align-items: center; gap: 10px; font-size: 17px; }
+.um-sa-av { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%; background: var(--primary-soft); }
+.um-sa .um-sa-av .um-ico { width: 22px; height: 22px; flex: 0 0 22px; color: var(--primary); }
+.um-sa-pers .um-card { display: flex; flex-direction: column; gap: 8px; }
+.um-sa-pers .um-card h4 { margin: 0; }
+.um-sa-vot { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; font-size: 13px; font-weight: 500; line-height: 1; padding: 5px 12px 5px 8px; border-radius: 999px; background: var(--primary); color: #fff; }
+.um-sa .um-sa-vot .um-ico { width: 16px; height: 16px; flex: 0 0 16px; color: #fff; }
+.um-sa-vot.is-no { background: #F1F3F4; color: var(--ink-2); }
+.um-sa .um-sa-vot.is-no .um-ico { color: var(--ink-2); }
+.um .um-sa-camp { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink); }
+.um-sa-camp.is-vol { font-weight: 500; }
+.um-sa-et { display: block; margin: 0 0 1px; font-size: 12px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--primary-dark); }
+.um-sa-punt { display: none; }
+.um-sa-dest .um-card p { font-size: 15px; }
+details.um-sa-desenllac { border: 2px dashed var(--primary); border-radius: var(--r); padding: 0 18px; margin: 26px 0; background: #fff; }
+details.um-sa-desenllac > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; padding: 14px 0; font-size: 17px; font-weight: 500; color: var(--primary); }
+details.um-sa-desenllac > summary::-webkit-details-marker { display: none; }
+details.um-sa-desenllac > summary::after { content: ""; margin-left: auto; width: 9px; height: 9px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .2s; }
+details.um-sa-desenllac[open] { border: 1px solid var(--outline); padding-bottom: 6px; }
+details.um-sa-desenllac[open] > summary { border-bottom: 1px solid var(--outline); margin-bottom: 6px; }
+details.um-sa-desenllac[open] > summary::after { transform: rotate(-135deg); }
+.um-sa .um-sa-desenllac > summary .um-ico { width: 22px; height: 22px; flex: 0 0 22px; }
+.um-sa-desenllac > h3 { margin-top: 10px; }
+.um-sa-fpers th { width: 34%; text-align: left; font-weight: 500; background: var(--primary-soft); vertical-align: top; }
+.um-sa-fpers td { height: 48px; }
+.um-sa-recompte td:last-child { width: 30%; }
+.um-sa-recompte td { height: 40px; }
+.um-box.um-sa-mini { border: 1px solid var(--outline); background: #fff; }
+.um-sa-mini .um-ico { width: 20px; height: 20px; flex: 0 0 20px; color: var(--primary); }
+.um-sa-mini .um-sa-troballes .um-card h4 { align-items: flex-start; gap: 8px; }
+.um-sa-mini .um-sa-troballes .um-card h4 .um-ico { margin-top: .1em; }
+.um-sa-mini-t td:first-child { font-weight: 500; }
+.um-sa-mini-t td { height: 40px; }
+.um-sa-mini .um-sa-ex td { background: var(--primary-soft); color: var(--ink-2); font-style: italic; height: auto; }
+.um-sa-mini .um-sa-ex td:first-child { font-style: normal; }
+.um-sa .um-map svg { max-width: 640px; margin: 0 auto; }
+@media (max-width: 760px) { .um-sa-opcions { grid-template-columns: 1fr; } }
+
+/* Documents (PDF) */
+.pd .um-sa-opcions, .pd .um-sa-pers { grid-template-columns: 1fr 1fr; }
+.pd .um-sa-opcions .um-card h4, .pd .um-sa-pers .um-card h4 { display: flex; align-items: center; gap: 2mm; margin: 0 0 1mm; }
+.pd .um-sa-av { display: inline-flex; align-items: center; justify-content: center; width: 7mm; height: 7mm; flex: 0 0 7mm; border-radius: 50%; background: var(--c-soft); }
+.pd .um-sa-av .um-ico { width: 4.2mm; height: 4.2mm; flex: 0 0 4.2mm; color: var(--c); }
+.pd .um-sa-vot { display: inline-flex; align-items: center; gap: 1.2mm; padding: .5mm 2.2mm .5mm 1.4mm; margin: 0 0 1mm; border-radius: 3mm; background: var(--c); color: #fff; font: 600 7.4pt/1.2 "Roboto Var", Roboto, Arial, sans-serif; }
+.pd .um-sa-vot .um-ico { width: 3mm; height: 3mm; flex: 0 0 3mm; color: #fff; }
+.pd .um-sa-vot.is-no { background: #F1F3F4; color: #5F6368; }
+.pd .um-sa-vot.is-no .um-ico { color: #5F6368; }
+.pd .um-sa-camp { margin: 0; }
+.pd .um-sa-camp.is-vol { font-weight: 600; }
+.pd .um-sa-et { display: block; margin: 1.2mm 0 .2mm; font: 600 7pt "Roboto Var", Roboto, Arial, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--c-dark); }
+.pd .um-sa-punt { display: none; }
+.pd .um-sa-pers .um-card, .pd .um-sa-opcions .um-card { break-inside: avoid; }
+.pd .um-sa-fpers th { width: 34%; text-align: left; background: var(--c-soft); color: var(--ink); font-weight: 600; vertical-align: top; }
+.pd .um-sa-fpers td { height: 13mm; }
+.pd .um-sa-recompte td { height: 9mm; }
+.pd .um-sa-fpers, .pd .um-sa-recompte { break-inside: avoid; }
+.pd .um-box.um-sa-mini { border: .6pt solid var(--line); background: #fff; }
+.pd .um-sa-mini .um-ico { width: 3.6mm; height: 3.6mm; flex: 0 0 3.6mm; color: var(--c); }
+.pd .um-sa-mini .um-card h4 { display: flex; align-items: flex-start; gap: 1.6mm; }
+.pd .um-sa-mini-t td { height: 9mm; }
+.pd .um-sa-mini .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; }
+.pd .um-sa .um-photo img { max-height: 62mm; }
+.pd .um-sa .um-map svg { max-height: 120mm; }
+.pd .um-sa-pers .um-card, .pd .um-sa-opcions .um-card { font-size: 9.5pt; }
+.pd .um-sa-opcions .um-card p, .pd .um-sa-dest .um-card p, .pd .um-sa-mini .um-card p { font-size: 9.5pt; line-height: 1.42; }
+.pd .um-sa-mini .um-card p { font-size: 8.8pt; }
+
+.pd h4.um-sa-nova { margin-top: 0; }
+
+/* ---------- SA «L'arxiu de l'escriba» (documents, fitxa del document i xifres cuneïformes), 13/10/2026 ---------- */
+.um-sa-docs { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.um-sa-docs .um-card { display: flex; flex-direction: column; gap: 8px; }
+.um-sa-docs .um-card h4::before { display: none; }
+.um-sa-docs .um-card h4 { align-items: center; gap: 10px; font-size: 17px; margin: 0; }
+.um-sa-docs .um-card .um-tag { margin: 0; }
+.um-sa-doc-img { margin: 2px 0 0; border: 1px solid var(--outline); border-radius: 6px; overflow: hidden; background: #F8F9FA; }
+.um-sa-doc-img img { display: block; width: 100%; height: 200px; object-fit: contain; }
+.um-sa-doc-img figcaption { font-size: 12.5px; line-height: 1.4; color: var(--ink-2); padding: 6px 10px 7px; background: #fff; border-top: 1px solid var(--outline); }
+.um .um-sa-docs .um-card p { margin: 0; font-size: 15px; line-height: 1.5; }
+.um .um-sa-docs blockquote.um-sa-cita p { margin: 0; }
+.um-sa-docs blockquote.um-sa-cita { margin: 0; padding: 8px 12px 9px; border-left: 3px solid var(--primary); border-radius: 0 6px 6px 0; background: var(--primary-soft); font-size: 15px; line-height: 1.5; }
+.um .um-sa-docs .um-card .um-sa-cita-t { display: block; margin: 0 0 2px; font-size: 12px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--primary-dark); }
+.um .um-sa-docs .um-sa-font { margin-top: auto; font-size: 13px; line-height: 1.4; color: var(--ink-2); }
+.um-sa-fdoc th, .um-sa-fdoc td { text-align: left; vertical-align: top; }
+.um-sa-fdoc tbody th { width: 28%; font-weight: 500; background: var(--primary-soft); }
+.um-sa-fdoc td { height: 52px; }
+.um-sa-fdoc td.um-sa-ex-c { width: 30%; color: var(--ink-2); font-style: italic; background: #F8F9FA; }
+.um-sa-xifres svg { max-width: 560px; margin: 0 auto; }
+@media (max-width: 760px) { .um-sa-doc-img img { height: 180px; } }
+
+/* Documents (PDF) */
+.pd .um-sa-docs { grid-template-columns: 1fr 1fr; gap: 2.4mm; }
+.pd .um-sa-docs .um-card { display: block; font-size: 8.6pt; padding: 2.6mm 3mm; }
+.pd .um-sa-docs .um-card h4 { display: flex; align-items: center; gap: 2mm; margin: 0 0 .6mm; }
+.pd .um-sa-doc-img { margin: 1.2mm 0 1.4mm; border: .5pt solid var(--line); border-radius: 1.5mm; background: #F8F9FA; break-inside: avoid; }
+.pd .um-sa-doc-img img { display: block; width: 100%; height: 27mm; object-fit: contain; margin: 0; max-height: none; }
+.pd .um-sa-doc-img figcaption { font: 7pt/1.3 "Roboto Var", Roboto, Arial, sans-serif; color: var(--grey); padding: .8mm 1.6mm 1mm; background: #fff; border-top: .5pt solid var(--line); }
+.pd .um-sa-docs .um-card p { margin: 0 0 1mm; font-size: 8.6pt; line-height: 1.32; }
+.pd .um-sa-docs blockquote.um-sa-cita { margin: 0 0 1.2mm; padding: 1.2mm 2mm; border-left: 1.2pt solid var(--c); background: var(--c-soft); font-size: 8.6pt; line-height: 1.32; }
+.pd .um-sa-docs .um-card .um-sa-cita-t { display: block; font: 600 6.8pt "Roboto Var", Roboto, Arial, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--c-dark); margin: 0 0 .3mm; }
+.pd .um-sa-docs .um-sa-font { font-size: 7.6pt; color: var(--grey); margin: 0; }
+.pd .um-sa-fdoc { table-layout: fixed; break-inside: avoid; }
+.pd .um-sa-fdoc th, .pd .um-sa-fdoc td { text-align: left; vertical-align: top; }
+.pd .um-sa-fdoc thead th:nth-child(1) { width: 28%; } .pd .um-sa-fdoc thead th:nth-child(2) { width: 30%; }
+.pd .um-sa-fdoc tbody th { background: var(--c-soft); color: var(--ink); font-weight: 600; }
+.pd .um-sa-fdoc td { height: 15mm; }
+.pd .um-sa-fdoc td.um-sa-ex-c { font-style: italic; color: var(--ink2); background: #F8F9FA; }
+.pd .um-sa-xifres svg { max-height: 34mm; }
+.pd .um-sa-docs blockquote.um-sa-cita p { margin: 0; }
+
+/* ---------- Interruptor «Alumne | Docent» a la capçalera (accés docent, 13/10/2026) ---------- */
+.um-hero-acts { position: absolute; top: 22px; right: 24px; display: flex; align-items: center; gap: 10px; max-width: none !important; }
+.um-hero-acts .um-opt-btn { position: static; }
+.um-vista { display: inline-flex; gap: 2px; height: 36px; padding: 3px; box-sizing: border-box; border-radius: 18px; background: rgba(0,0,0,.2); box-shadow: inset 0 0 0 1px rgba(255,255,255,.5); }
+.um-vista-b { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 14px 0 10px; border: 0; border-radius: 15px; background: transparent; color: #fff; font: 500 14px/1 var(--font); cursor: pointer; }
+.um-vista-b .um-ic { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.um-vista-b:hover { background: rgba(255,255,255,.16); }
+.um-vista-b[aria-pressed="true"] { background: #fff; color: var(--primary); box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+.um-vista-b:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 1024px) { .um-hero-acts { top: 14px; right: 14px; } }
+@media (max-width: 760px) { .um-hero-acts { position: static; order: -1; align-self: stretch; justify-content: space-between; margin: 0 0 14px; } }
+@media print { .um-hero-acts { display: none !important; } }
+
+/* ---------- Índex «Material per al docent» (accés docent, 13/10/2026) ---------- */
+.um-doc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin: 16px 0 6px; }
+.um .um-doc-card { display: flex; gap: 12px; align-items: center; width: 100%; box-sizing: border-box; border: 1px solid var(--outline); border-radius: var(--r); padding: 12px 14px; background: #fff; color: var(--ink); font: inherit; text-align: left; text-decoration: none; cursor: pointer; }
+.um .um-doc-card:hover { border-color: var(--primary); background: var(--primary-soft); }
+.um .um-doc-card, .um .um-doc-card:hover, .um .um-doc-card * { text-decoration: none; }
+.um .um-doc-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um-doc-ico { flex: 0 0 40px; width: 40px; height: 40px; border-radius: 50%; background: var(--primary-soft); color: var(--primary); display: grid; place-items: center; }
+.um-doc-card:hover .um-doc-ico { background: #fff; }
+.um-doc-ico svg { width: 22px; height: 22px; }
+.um-doc-txt b { display: block; font-weight: 500; font-size: 16px; line-height: 1.3; }
+.um-doc-txt span { display: block; margin-top: 2px; font-size: 13.5px; color: var(--ink-2); line-height: 1.35; }
+.um .um-doc-nota { margin: 14px 0 0; font-size: 14px; color: var(--ink-2); }
+
+/* ---------- Disseny nou per als docents (data-dn, 13/10/2026): blau del web, pestanya destacada i notes plegades ---------- */
+.um[data-dn] { --doc: #1F5FBF; --doc-soft: #E8F0FC; --doc-line: #D2E3FC; }
+.um[data-dn] .um-docent .um-box-t::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F5FBF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='8' r='4'/%3E%3Cpath d='M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8'/%3E%3C/svg%3E"); }
+.um[data-dn] .um-tab.is-docent { display: inline-flex; align-items: center; gap: 7px; align-self: center; margin-left: 8px; padding: 9px 16px; border-radius: 999px; background: var(--doc-soft); color: var(--doc); }
+.um[data-dn] .um-tab.is-docent svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.um[data-dn] .um-tab.is-docent:hover { background: #D2E3FC; color: var(--doc); }
+.um[data-dn] .um-tab.is-docent[aria-selected="true"] { background: var(--doc); color: #fff; }
+.um[data-dn] .um-tab.is-docent[aria-selected="true"]::after { display: none; }
+.um[data-dn] .um-doc-ico { background: var(--doc-soft); color: var(--doc); }
+.um[data-dn] .um-doc-card:hover { border-color: var(--doc); background: var(--doc-soft); }
+.um[data-dn] .um-doc-card:focus-visible { outline-color: var(--doc); }
+.um[data-dn] .um-box.um-docent > .um-box-t[role="button"] { cursor: pointer; user-select: none; }
+.um[data-dn] .um-box.um-docent > .um-box-t[role="button"]::after { content: ""; width: 16px; height: 16px; flex: 0 0 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F5FBF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6l6 -6'/%3E%3C/svg%3E") center / contain no-repeat; transition: transform .15s; }
+.um[data-dn] .um-box.um-docent:not(.is-plegat) > .um-box-t[role="button"]::after { transform: rotate(180deg); }
+.um[data-dn] .um-box.um-docent > .um-box-t[role="button"]:focus-visible { outline: 2px solid var(--doc); outline-offset: 3px; border-radius: 4px; }
+.um[data-dn] .um-box.um-docent.is-plegat { padding-top: 10px; padding-bottom: 10px; }
+.um[data-dn] .um-box.um-docent.is-plegat > .um-box-t { margin-bottom: 0; }
+.um[data-dn] .um-box.um-docent.is-plegat > :not(.um-box-t) { display: none; }
+@media (max-width: 760px) {
+  .um[data-dn] .um-tab.is-docent { order: -1; margin: 0 4px 0 0; }
+}
+@media print {
+  .um[data-dn] .um-box.um-docent.is-plegat > :not(.um-box-t) { display: revert; }
+  .um[data-dn] .um-box.um-docent > .um-box-t[role="button"]::after { display: none; }
+}
+
+/* ---------- Descàrrega de la situació d'aprenentatge (13/10/2026) ---------- */
+.um .um-sa-dl { display: flex; align-items: center; gap: 12px 16px; margin: 0 0 22px; padding: 14px 16px; border: 1px solid var(--outline); border-radius: var(--r); background: var(--surface-2); }
+.um .um-sa-dl-ic { flex: 0 0 40px; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--primary-soft); color: var(--primary); }
+.um .um-sa-dl-ic svg { width: 22px; height: 22px; }
+.um .um-sa-dl-t { flex: 1 1 auto; min-width: 0; font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.um .um-sa-dl-t b { display: block; font-size: 16px; font-weight: 500; color: var(--ink); }
+.um .um-sa-dl-b { flex: 0 0 auto; display: inline-flex; gap: 8px; }
+.um .um-sa-dl-b button { display: inline-flex; align-items: center; justify-content: center; gap: 7px; height: 38px; padding: 0 18px; border-radius: 19px; font: 500 14px/1 var(--font); cursor: pointer; }
+.um .um-sa-dl-b button svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.um .um-sa-dl-pdf { background: var(--primary); color: var(--on-primary); border: 1px solid var(--primary); }
+.um .um-sa-dl-pdf:hover { background: color-mix(in srgb, var(--primary) 82%, #000); }
+.um .um-sa-dl-doc { background: var(--surface); color: var(--primary); border: 1px solid color-mix(in srgb, var(--primary) 40%, #fff); }
+.um .um-sa-dl-doc:hover { background: color-mix(in srgb, var(--primary) 8%, #fff); }
+.um .um-sa-dl-b button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.um .um-sa-dl-b button:disabled { opacity: .6; cursor: wait; }
+.um .um-sa-dl-msg { flex-basis: 100%; margin: -4px 0 0 56px; font-size: 13px; color: var(--ink-2); }
+.um .um-sa-dl-msg:empty { display: none; }
+@media (max-width: 640px) {
+  .um .um-sa-dl { flex-wrap: wrap; padding: 14px; }
+  .um .um-sa-dl-t { flex-basis: calc(100% - 56px); }
+  .um .um-sa-dl-b { flex-basis: 100%; }
+  .um .um-sa-dl-b button { flex: 1 1 0; }
+  .um .um-sa-dl-msg { margin-left: 0; }
+}
+@media print { .um .um-sa-dl { display: none !important; } }
+
+/* Avís del PDF: la frase dels marges, destacada (13/10/2026) */
+.pds-avis-alerta { display: flex; gap: 8px; align-items: flex-start; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #FEF7E0; border: 1px solid #FDD663; color: #202124; font-size: 14.5px; line-height: 1.45; }
+.pds-avis-alerta svg { flex: 0 0 18px; width: 18px; height: 18px; margin-top: 1px; color: #B06000; }
+.pds-avis-card .pds-avis-alerta b { font-weight: 600; }
+
+/* ---------- SA «El judici del Neolític» (793): la balança ---------- */
+.um-sa .um-sa-balanca td { height: 44px; }
+.um-sa .um-sa-balanca td:first-child { width: 120px; text-align: left; font-weight: 500; }
+.um-sa .um-sa-balanca td:nth-child(2), .um-sa .um-sa-balanca td:nth-child(3), .um-sa .um-sa-balanca td:nth-child(4) { width: 84px; text-align: center; }
+.pd .um-sa-balanca { table-layout: fixed; }
+.pd .um-sa-balanca td { height: 14mm; }
+.pd .um-sa-balanca th:nth-child(1) { width: 18%; }
+.pd .um-sa-balanca th:nth-child(2), .pd .um-sa-balanca th:nth-child(3), .pd .um-sa-balanca th:nth-child(4) { width: 11%; }
+.pd .um-sa-balanca td:nth-child(2), .pd .um-sa-balanca td:nth-child(3), .pd .um-sa-balanca td:nth-child(4) { text-align: center; }
+.pd .um-sa-balanca td:first-child { text-align: left; font-weight: 600; }
+
+/* ---------- Descàrrega de les activitats, franja com la de la SA (13/10/2026) ---------- */
+.um .ua-how.ua-how-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 700px) { .um .ua-how.ua-how-2 { grid-template-columns: 1fr; } }
+
+/* Bloc inicial de les activitats, simplificat (13/10/2026) */
+.um .um-sa-dl.ua-franja-c { margin: -10px 0 18px; padding: 8px 8px 8px 16px; gap: 6px 12px; }
+.um .ua-franja-c .um-sa-dl-t, .um .ua-franja-c .um-sa-dl-t b { display: inline; font-size: 14px; }
+.um .ua-franja-c .um-sa-dl-b button { height: 34px; padding: 0 14px; border-radius: 17px; font-size: 13.5px; }
+.um .ua-franja-c .um-sa-dl-b button svg { width: 16px; height: 16px; flex-basis: 16px; }
+.um .ua-franja-c .um-sa-dl-msg { margin: 0; }
+@media (max-width: 640px) {
+  .um .um-sa-dl.ua-franja-c { margin-top: -8px; padding: 10px 12px; }
+  .um .ua-franja-c .um-sa-dl-t { flex-basis: 100%; }
+}
+
+/* ---------- SA «Passaports de Catalunya» (857): eines, llocs, dossiers i frase per pensar, 13/10/2026 ---------- */
+.um-sa-dibuix svg { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; }
+.um-sa-eines { grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.um-sa-eines .um-card h4::before { display: none; }
+.um-sa-eines .um-card h4 { display: flex; align-items: center; gap: 10px; font-size: 16px; margin: 0 0 4px; }
+.um-sa-eines .um-card .um-tag { margin: 0 0 6px; }
+.um .um-sa-eines .um-card p { margin: 0; font-size: 15px; line-height: 1.5; }
+.um-sa-llocs td:first-child, .um-sa-llocs th:first-child { width: 56px; text-align: center; font-weight: 600; color: var(--primary-dark); }
+h3.um-sa-dos-h { display: flex; align-items: center; gap: 10px; padding-top: 14px; border-top: 2px solid var(--primary-soft); }
+.um .um-sa-dos-lloc { display: flex; align-items: center; gap: 8px; margin: -4px 0 12px; font-size: 15px; font-weight: 500; color: var(--ink-2); }
+.um-sa-dos-lloc .um-ico { color: var(--primary); }
+.um-sa-dos-font figure img { max-height: 260px; object-fit: contain; }
+.um-box.um-sa-frase { border-left: 4px solid var(--primary); background: var(--primary-soft); }
+.um .um-box.um-sa-frase p { font-size: 17px; line-height: 1.5; font-style: italic; color: var(--ink); }
+
+.um-fig.um-photo.um-sa-mapa img { height: auto; max-height: none; object-fit: contain; }
+
+.um-table.um-sa-dates { table-layout: fixed; width: 100%; }
+.um-sa-dates th:nth-child(1) { width: 46%; } .um-sa-dates th:nth-child(2) { width: 16%; } .um-sa-dates th:nth-child(3) { width: 14%; } .um-sa-dates th:nth-child(4) { width: 24%; }
+.um-sa-dates td { height: 46px; text-align: left; vertical-align: top; }
+
+/* Documents (PDF) */
+.pd .um-sa-dibuix svg { max-height: 58mm; }
+.pd .um-sa-eines { grid-template-columns: 1fr 1fr; gap: 2.2mm; }
+.pd .um-sa-eines .um-card { padding: 2.2mm 2.8mm; break-inside: avoid; }
+.pd .um-sa-eines .um-card h4 { display: flex; align-items: center; gap: 1.6mm; margin: 0 0 .6mm; }
+.pd .um-sa-eines .um-card p { font-size: 8.6pt; line-height: 1.32; margin: 0; }
+.pd .um-sa-llocs { break-inside: avoid; }
+.pd .um-sa-llocs td:first-child { width: 12mm; text-align: center; font-weight: 600; }
+.pd h3.um-sa-dos-h { display: flex; align-items: center; gap: 2mm; border-top: 0; padding-top: 0; }
+.pd .um-sa-dos-lloc { display: flex; align-items: center; gap: 1.5mm; margin: -1mm 0 2.5mm; font-size: 9pt; font-weight: 600; color: var(--grey); }
+.pd .um-sa-dos-font figure img { max-height: 42mm; object-fit: contain; }
+.pd .um-box.um-sa-frase { border-left: 1.4pt solid var(--c); background: var(--c-soft); break-inside: avoid; }
+.pd .um-box.um-sa-frase p { font-style: italic; font-size: 10pt; }
+.pd .um-sa .um-sa-mapa img { width: 100%; height: auto; max-height: 125mm; }
+.pd .um-sa-dates { table-layout: fixed; width: 100%; }
+.pd .um-sa-dates th:nth-child(1) { width: 46%; } .pd .um-sa-dates th:nth-child(2) { width: 16%; } .pd .um-sa-dates th:nth-child(3) { width: 14%; } .pd .um-sa-dates th:nth-child(4) { width: 24%; }
+.pd .um-sa-dates td { height: 11mm; text-align: left; vertical-align: top; }
+.pd .um-sa-preg td { height: 12mm; }
+.pd .um-sa-preg thead th:nth-child(1) { width: 38%; }
+
+/* ---------- SA «218 aC. Les legions desembarquen a Empúries» (859): dossiers, factors i consell, 14/10/2026 ---------- */
+.um-sa-factors { grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); }
+.um .um-sa-factors .um-card p { margin: 0; font-size: 15px; line-height: 1.5; }
+.um-sa-dossiers { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+.um-sa .um-sa-lletra { font-size: 19px; font-weight: 700; color: var(--primary); }
+.um-sa-dossier .um-sa-doc-img img { height: 200px; object-fit: cover; }
+.um-sa-dossier .um-sa-doc-img { margin: 0; }
+.um-sa-dest .um-card h4 { align-items: center; gap: 10px; font-size: 17px; margin: 0 0 4px; }
+.um-sa-fexpl thead th { text-align: left; }
+.um-sa-fexpl tbody th { width: 20%; }
+.um-sa-fexpl .um-sa-ex td { background: var(--primary-soft); color: var(--ink-2); font-style: italic; height: auto; }
+.um-sa-fexpl .um-sa-ex td:first-child { font-style: normal; font-weight: 500; }
+.um-sa-consell td { height: 44px; }
+.um-sa-consell td:first-child { width: 130px; font-weight: 500; }
+.um-sa-consell td:last-child { width: 70px; }
+@media (max-width: 760px) { .um-sa-dossiers { grid-template-columns: 1fr; } }
+
+/* Documents (PDF) */
+.pd .um-sa-factors { grid-template-columns: 1fr 1fr 1fr; }
+.pd .um-sa-factors .um-card p { font-size: 8.8pt; line-height: 1.35; margin: 0; }
+.pd .um-sa-dossiers { grid-template-columns: 1fr 1fr; }
+.pd .um-sa-lletra { font: 700 10pt "Roboto Var", Roboto, Arial, sans-serif; color: var(--c); }
+.pd .um-sa-dossier { break-inside: avoid; font-size: 8.8pt; }
+.pd .um-sa-dossier .um-sa-camp { font-size: 8.8pt; line-height: 1.32; }
+.pd .um-sa-dossier .um-sa-doc-img img { height: 30mm; object-fit: cover; }
+.pd .um-sa-dest .um-card h4 { display: flex; align-items: center; gap: 2mm; margin: 0 0 1mm; }
+.pd .um-sa-fexpl { table-layout: fixed; break-inside: avoid; }
+.pd .um-sa-fexpl th { text-align: left; }
+.pd .um-sa-fexpl tbody th { background: var(--c-soft); color: var(--ink); font-weight: 600; }
+.pd .um-sa-fexpl td { height: 14mm; }
+.pd .um-sa-fexpl .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; }
+.pd .um-sa-consell { table-layout: fixed; break-inside: avoid; }
+.pd .um-sa-consell td { height: 14mm; }
+.pd .um-sa-consell td:first-child { font-weight: 600; }
+
+/* Unitat «Clima i paisatges»: dibuix de la capçalera (sol, núvol, termòmetre i muntanyes) */
+@media (min-width: 1025px) { .um.um-t-cli .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Ccircle cx='92' cy='70' r='30'/%3E%3Cpath d='M92 22V30M92 110V118M44 70H52M132 70H140M58 36L64 42M120 98L126 104M58 104L64 98M120 42L126 36'/%3E%3Cpath d='M150 120Q150 96 174 96Q182 72 210 76Q236 64 252 90Q280 88 282 114Q282 132 262 132H164Q150 132 150 120Z'/%3E%3Cpath d='M176 150L170 166M206 150L200 166M236 150L230 166'/%3E%3Cpath d='M330 40V150'/%3E%3Ccircle cx='330' cy='172' r='18'/%3E%3Cpath d='M318 40Q318 26 330 26Q342 26 342 40V156'/%3E%3Cpath d='M318 40V156'/%3E%3Cpath d='M346 60H356M346 84H356M346 108H356'/%3E%3Cpath d='M20 230L90 170L130 200L190 140L260 210L300 185L410 230'/%3E%3C/g%3E%3Cpath d='M324 120H336V172H324Z' fill='%23ffffff' fill-opacity='.18'/%3E%3Cpath d='M190 140L210 160L176 160Z' fill='%23ffffff' fill-opacity='.12'/%3E%3C/svg%3E"); background-size: auto 86%; } }
+
+
+/* ---------- SA «Expedició climàtica» (1798): clau dels climes, sobres, climogrames i pistes, 14/10/2026 ---------- */
+.um-sa-clau td:first-child { white-space: nowrap; font-weight: 500; text-align: left; }
+.um-sa-clau td { text-align: left; vertical-align: top; }
+.um-sa-cl { display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; background: var(--cl); vertical-align: -1px; }
+.um-fig.um-sa-clim svg { display: block; width: 100%; max-width: 620px; height: auto; margin: 0 auto; }
+.um-table.um-sa-dades { table-layout: fixed; font-size: 14px; margin: 8px 0 18px; }
+.um-sa-dades th, .um-sa-dades td { padding: 6px 2px; text-align: center; }
+.um-sa-dades thead th:first-child, .um-sa-dades tbody th { width: 64px; }
+.um-sa-dades tbody th { font-weight: 500; background: var(--primary-soft); }
+.um-two.um-sa-pistes-top { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; }
+.um-sa-pistes { display: grid; gap: 10px; }
+.um-sa-pistes .um-card h4::before { display: none; }
+.um-sa-pistes .um-card h4 { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; font-size: 16px; }
+.um .um-sa-pistes .um-card p { margin: 0; font-size: 15px; line-height: 1.5; }
+.um-fig.um-sa-mon svg { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) { .um-two.um-sa-pistes-top { grid-template-columns: 1fr; } .um-table.um-sa-dades { font-size: 12px; } .um-sa-dades thead th:first-child, .um-sa-dades tbody th { width: 46px; } }
+
+/* Documents (PDF) */
+.pd .um-sa-clau td { text-align: left; vertical-align: top; }
+.pd .um-sa-clau td:first-child { white-space: nowrap; font-weight: 600; }
+.pd .um-sa-cl { display: inline-block; width: 2.6mm; height: 2.6mm; margin-right: 1.5mm; border-radius: 50%; background: var(--cl); }
+.pd .um-sa-clim svg { max-height: 78mm; }
+.pd .um-sa-dades { table-layout: fixed; font-size: 8pt; break-inside: avoid; }
+.pd .um-sa-dades th, .pd .um-sa-dades td { padding: .8mm .3mm; text-align: center; }
+.pd .um-sa-dades thead th:first-child, .pd .um-sa-dades tbody th { width: 13mm; }
+.pd .um-sa-pistes-top { grid-template-columns: 1.1fr 1fr; align-items: start; }
+.pd .um-sa-pistes { display: grid; gap: 2mm; }
+.pd .um-sa-pistes .um-card h4 { display: flex; align-items: center; gap: 1.6mm; margin: 0 0 .6mm; }
+.pd .um-sa-pistes .um-card p { margin: 0; font-size: 8.8pt; line-height: 1.32; }
+.pd .um-sa-mon svg { max-height: 100mm; }
+
+/* Guia del docent: solucions, taula resum i llegenda del mapa */
+.um-table.um-sa-sol th { width: 34%; text-align: left; vertical-align: top; font-weight: 500; background: var(--primary-soft); }
+.um-table.um-sa-sol td { text-align: left; vertical-align: top; }
+.um-table.um-sa-resum th, .um-table.um-sa-resum td { text-align: left; vertical-align: top; }
+.um-table.um-sa-resum td:nth-child(n+3):nth-child(-n+6) { white-space: nowrap; }
+.um .um-sa-llegenda { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: -4px 0 18px; font-size: 14px; }
+.pd .um-sa-sol th { width: 34%; text-align: left; vertical-align: top; }
+.pd .um-sa-sol td, .pd .um-sa-resum th, .pd .um-sa-resum td { text-align: left; vertical-align: top; }
+.pd .um-sa-llegenda { display: flex; flex-wrap: wrap; gap: 1mm 4mm; font-size: 8.5pt; }
+
+/* Unitat «L'organització política de les societats» (3r ESO): dibuix de la capçalera (urna amb una papereta i hemicicle d'un parlament) */
+@media (min-width: 1025px) { .um.um-t-est .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M40 128H130V214H40Z'/%3E%3Cpath d='M62 128V122H108V128'/%3E%3Cpath d='M70 124V70H100V124'/%3E%3Cpath d='M77 92L83 100L94 82'/%3E%3Cpath d='M60 170H110'/%3E%3Cpath d='M180 214A110 110 0 0 1 400 214'/%3E%3Cpath d='M212 214A78 78 0 0 1 368 214'/%3E%3Cpath d='M244 214A46 46 0 0 1 336 214'/%3E%3Cpath d='M276 214V190H304V214'/%3E%3Cpath d='M270 190H310'/%3E%3Cpath d='M290 190V176'/%3E%3Ccircle cx='290' cy='171' r='5'/%3E%3Cpath d='M14 226H410'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.55'%3E%3Ccircle cx='231' cy='195' r='4'/%3E%3Ccircle cx='254' cy='164' r='4'/%3E%3Ccircle cx='290' cy='152' r='4'/%3E%3Ccircle cx='326' cy='164' r='4'/%3E%3Ccircle cx='349' cy='195' r='4'/%3E%3Ccircle cx='198' cy='193' r='4'/%3E%3Ccircle cx='217' cy='155' r='4'/%3E%3Ccircle cx='249' cy='129' r='4'/%3E%3Ccircle cx='290' cy='120' r='4'/%3E%3Ccircle cx='331' cy='129' r='4'/%3E%3Ccircle cx='363' cy='155' r='4'/%3E%3Ccircle cx='382' cy='193' r='4'/%3E%3C/g%3E%3Cpath d='M244 214A46 46 0 0 1 336 214Z' fill='%23ffffff' fill-opacity='.14'/%3E%3Cpath d='M70 124V70H100V124Z' fill='%23ffffff' fill-opacity='.14'/%3E%3C/svg%3E"); background-size: auto 86%; } }
+
+/* Pestanya «Recursos» · blocs plegables i imprescindibles (17/10/2026, mostra a La Restauració) */
+.um-rec-ap.is-basics { border-color: var(--primary); }
+.um-rec-ap.is-basics > header { background: var(--primary); }
+.um-rec-ap.is-basics > header h4 { color: #fff; }
+.um-rec-ap.is-basics > header .um-rec-ico { background: #fff; }
+.um-rec-mes { border-top: 1px solid #EEF0F2; margin: 0 14px; }
+.um-rec-mes > summary { list-style: none; cursor: pointer; color: var(--primary); font-size: 14px; font-weight: 500; padding: 9px 0 4px; }
+.um-rec-mes > summary::-webkit-details-marker { display: none; }
+.um-rec-mes > summary::before { content: "+"; display: inline-block; width: 16px; font-weight: 700; }
+.um-rec-mes[open] > summary::before { content: "−"; }
+.um-rec-mes > summary:hover { text-decoration: underline; }
+.um-rec-ap .um-rec-mes ul { padding: 0; }
+.um-rec-ap .um-rec-mes li:first-child { border-top: 1px solid #EEF0F2; }
+.um-rec-sec { border: 1px solid var(--outline); border-radius: var(--r); margin: 14px 0; }
+.um-rec-sec > summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding: 14px 48px 14px 16px; position: relative; border-radius: var(--r); }
+.um-rec-sec > summary::-webkit-details-marker { display: none; }
+.um-rec-sec > summary::after { content: ""; position: absolute; right: 20px; top: 50%; width: 9px; height: 9px; margin-top: -7px; border-right: 2px solid var(--primary); border-bottom: 2px solid var(--primary); transform: rotate(45deg); transition: transform .15s; }
+.um-rec-sec[open] > summary::after { transform: rotate(-135deg); margin-top: -2px; }
+.um-rec-sec > summary:hover { background: var(--primary-soft); }
+.um-rec-sec > summary h3 { margin: 0 !important; padding: 0; border: 0; }
+.um-rec-sum { color: var(--ink-2); font-size: 14px; }
+.um-rec-sec > .um-rec-body { padding: 0 16px 8px; }
+.um-rec-sec > .um-rec-body > .um-rec-intro:first-child { margin-top: 0; }
+
+/* Barra de pestanyes fixa (mòbil). El botó «⋮» queda dins del marge de la barra i, a la seva dreta i als cantons
+   del cercle, es veia un tros de la pestanya següent. Ara el botó és opac fins als cantons i una franja del color
+   de la barra en tapa el marge dret. El cercle gris del pas del ratolí es manté (17/10/2026). */
+.um-tab-more { border-radius: 0; }
+.um-tab-more::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; }
+.um-tab-more:hover { background: var(--surface); }
+.um-tab-more:hover::before { background: var(--surface-2); }
+.um-tab-more::after { content: ""; position: absolute; top: -20px; bottom: -20px; left: 100%; width: clamp(16px, 4vw, 32px); background: var(--surface); }
+
+/* Unitat «L'organització econòmica de les societats» (3r ESO): gràfic, monedes, vaixell i globus */
+.um-t-eco .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20420%20240'%3E%3Cg%20fill='none'%20stroke='%23ffffff'%20stroke-opacity='.55'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3E%3Cpath%20d='M14%20226H410'/%3E%3Cpath%20d='M40%20226V176H66V226M80%20226V146H106V226M120%20226V112H146V226'/%3E%3Cpath%20d='M36%20150L88%20120L128%2090L166%2060'/%3E%3Cpath%20d='M146%2058H168V80'/%3E%3Cellipse%20cx='214'%20cy='200'%20rx='24'%20ry='8'/%3E%3Cpath%20d='M190%20200V214C190%20218%20238%20218%20238%20214V200'/%3E%3Cellipse%20cx='214'%20cy='184'%20rx='24'%20ry='8'/%3E%3Cpath%20d='M190%20184V192M238%20184V192'/%3E%3Cpath%20d='M262%20196H404L392%20216H276Z'/%3E%3Cpath%20d='M280%20196V176H304V196M308%20196V176H332V196M336%20196V176H360V196M294%20176V156H318V176M322%20176V156H346V176'/%3E%3Cpath%20d='M370%20196V150H388V196'/%3E%3Ccircle%20cx='330'%20cy='66'%20r='32'/%3E%3Cellipse%20cx='330'%20cy='66'%20rx='13'%20ry='32'/%3E%3Cpath%20d='M298%2066H362M303%2050H357M303%2082H357'/%3E%3C/g%3E%3Cg%20fill='%23ffffff'%20fill-opacity='.14'%3E%3Cpath%20d='M120%20226V112H146V226Z'/%3E%3Cpath%20d='M262%20196H404L392%20216H276Z'/%3E%3Ccircle%20cx='330'%20cy='66'%20r='32'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+
+/* Unitat «Al-Andalus i els regnes cristians» (2n ESO): arcs dobles de la Mesquita de Còrdova */
+@media (min-width: 1025px) { .um.um-t-and .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20420%20240'%3E%3Cg%20fill='none'%20stroke='%23ffffff'%20%20stroke-opacity='.55'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3E%3Cpath%20d='M24%20236H404'/%3E%3Cpath%20d='M110%20236V76M103%20176H117'/%3E%3Cpath%20d='M180%20236V76M173%20176H187'/%3E%3Cpath%20d='M250%20236V76M243%20176H257'/%3E%3Cpath%20d='M320%20236V76M313%20176H327'/%3E%3Cpath%20d='M112%20176A37%2037%200%201%201%20178%20176'/%3E%3Cpath%20d='M120%20172A28%2028%200%201%201%20170%20172'/%3E%3Cpath%20d='M110%20109A35%2030%200%200%201%20180%20109'/%3E%3Cpath%20d='M182%20176A37%2037%200%201%201%20248%20176'/%3E%3Cpath%20d='M190%20172A28%2028%200%201%201%20240%20172'/%3E%3Cpath%20d='M180%20109A35%2030%200%200%201%20250%20109'/%3E%3Cpath%20d='M252%20176A37%2037%200%201%201%20318%20176'/%3E%3Cpath%20d='M260%20172A28%2028%200%201%201%20310%20172'/%3E%3Cpath%20d='M250%20109A35%2030%200%200%201%20320%20109'/%3E%3Cpath%20d='M96%2074H334'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; } }
+
+/* ---------- SA «L'elefant de Carlemany» (2n ESO, tema 1), 9/11/2026: taula dels tres mons ---------- */
+.um-sa-tres td { height: 48px; vertical-align: top; }
+.um-sa-tres td:first-child { font-weight: 500; background: var(--primary-soft); }
+.um-sa-tres .um-sa-ex td { height: auto; background: var(--primary-soft); color: var(--ink-2); font-style: italic; }
+.um-sa-tres .um-sa-ex td:first-child { font-style: normal; color: var(--ink); }
+.um-sa-troballes .um-card blockquote { margin: 8px 0 0; padding: 8px 12px; border-left: 3px solid var(--primary); background: var(--primary-soft); border-radius: 4px; font-style: italic; }
+.um-sa-troballes .um-card blockquote p { margin: 0; }
+.pd .um-sa-tres { break-inside: avoid; }
+.pd .um-sa-tres td { height: 12mm; vertical-align: top; }
+.pd .um-sa-tres td:first-child { font-weight: 600; background: var(--c-soft); }
+.pd .um-sa-tres .um-sa-ex td { height: auto; background: var(--c-soft); font-style: italic; }
+.pd .um-sa-troballes .um-card blockquote { margin: 1.2mm 0 0; padding: 1.2mm 2.4mm; border-left: 1.2pt solid var(--c); background: var(--c-soft); font-style: italic; }
+.um-sa-tres { table-layout: fixed; }
+.um-sa-tres th:first-child, .um-sa-tres td:first-child { width: 22%; }
+.um-sa-tres td + td, .um-sa-tres th + th { border-left: 1px solid var(--outline); }
+.um-sa .um-map.um-sa-ample svg { max-width: 100%; }
+.pd .um-sa-tres { table-layout: fixed; }
+.pd .um-sa-tres td + td, .pd .um-sa-tres th + th { border-left: .5pt solid var(--line); }
+.pd .um-sa .um-map.um-sa-ample svg { max-height: 150mm; }
+
+/* Botó partit del capçal: Imprimir + desplegable (9/11/2026) */
+.um-opt-split { padding: 0 !important; gap: 0 !important; overflow: hidden; }
+.um-opt-split:hover { background: #fff; }
+.um-opt-split > button { height: 36px; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; display: inline-flex; align-items: center; }
+.um-opt-split > button:hover { background: var(--primary-soft); }
+.um-opt-split > button:focus-visible { outline: 2px solid var(--primary); outline-offset: -3px; }
+.um-opt-print { gap: 7px; padding: 0 12px 0 14px; font-weight: 600 !important; }
+.um-opt-more { padding: 0 10px 0 8px; border-left: 1px solid rgba(0,0,0,.12) !important; }
+.um-opt-split .um-ic { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+html.um-js .um-crumbs { padding-right: 170px; }
+@media (max-width: 1024px) { html.um-js .um-crumbs { padding-right: 160px; } }
+
+/* Pestanyes no imprimibles: només queda la fletxa (9/11/2026) */
+.um-opt-split .um-opt-print[hidden] { display: none !important; }
+.um-opt-split.is-noprint .um-opt-more { border-left: 0 !important; padding: 0 10px; }
+
+/* Unitat «Població i migracions» (3r ESO): dibuix de la capçalera (piràmide de població, família i maleta amb una fletxa de migració) */
+@media (min-width: 1025px) { .um.um-t-pob .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 226H410'/%3E%3Cpath d='M110 52V226'/%3E%3Cpath d='M110 208H80V190H110M110 208H138V190H110'/%3E%3Cpath d='M80 190H70V172H110M138 190H146V172H110'/%3E%3Cpath d='M70 172H56V154H110M146 172H160V154H110'/%3E%3Cpath d='M56 154H48V136H110M160 154H170V136H110'/%3E%3Cpath d='M48 136H60V118H110M170 136H162V118H110'/%3E%3Cpath d='M60 118H76V100H110M162 118H148V100H110'/%3E%3Cpath d='M76 100H90V82H110M148 100H134V82H110'/%3E%3Cpath d='M90 82H100V64H110M134 82H122V64H110'/%3E%3Cpath d='M80 208V226M138 208V226'/%3E%3Ccircle cx='222' cy='138' r='11'/%3E%3Cpath d='M204 226V178C204 166 212 158 222 158C232 158 240 166 240 178V226'/%3E%3Ccircle cx='262' cy='146' r='10'/%3E%3Cpath d='M246 226V182C246 172 253 165 262 165C271 165 278 172 278 182V226'/%3E%3Ccircle cx='295' cy='176' r='8'/%3E%3Cpath d='M283 226V202C283 195 288 190 295 190C302 190 307 195 307 202V226'/%3E%3Cpath d='M330 196H384V226H330Z'/%3E%3Cpath d='M346 196V186H368V196'/%3E%3Cpath d='M330 208H384'/%3E%3Cpath d='M222 96C262 56 318 52 368 84'/%3E%3Cpath d='M350 70L370 85L346 92'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M48 136H170V154H160V172H146V190H138V208H80V190H70V172H56V154H48Z'/%3E%3Cpath d='M330 196H384V226H330Z'/%3E%3Ccircle cx='222' cy='138' r='11'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; } }
+
+
+/* Il·lustracions pròpies dels heros que encara tenien la muntanya genèrica (11/11/2026) */
+/* El sector primari (3r ESO): blat, tractor i barca de pesca */
+.um.um-t-pri .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 226H300'/%3E%3Cpath d='M60 226V122M78 226V104M96 226V124'/%3E%3Cpath d='M60 130l-8-7M60 130l8-7M60 143l-8-7M60 143l8-7M60 156l-8-7M60 156l8-7'/%3E%3Cpath d='M78 112l-9-8M78 112l9-8M78 126l-9-8M78 126l9-8M78 140l-9-8M78 140l9-8'/%3E%3Cpath d='M96 132l-8-7M96 132l8-7M96 145l-8-7M96 145l8-7M96 158l-8-7M96 158l8-7'/%3E%3Cpath d='M60 200Q46 192 42 176M96 196Q110 188 114 172'/%3E%3Ccircle cx='250' cy='192' r='34'/%3E%3Ccircle cx='250' cy='192' r='11'/%3E%3Ccircle cx='162' cy='208' r='18'/%3E%3Ccircle cx='162' cy='208' r='6'/%3E%3Cpath d='M146 190V160H212M212 146V96H278V146M206 96H284'/%3E%3Cpath d='M222 108H268V138H222Z'/%3E%3Cpath d='M204 178Q204 146 250 146Q296 146 296 178'/%3E%3Cpath d='M180 160V132M175 132H185M146 174H160'/%3E%3Cpath d='M306 222Q318 214 330 222T354 222T378 222T402 222'/%3E%3Cpath d='M318 206H398L386 220H330Z'/%3E%3Cpath d='M352 206V146M362 206V188H382V206'/%3E%3Cpath d='M352 154L398 172V198'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M222 108H268V138H222Z'/%3E%3Cpath d='M318 206H398L386 220H330Z'/%3E%3Ccircle cx='250' cy='192' r='11'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* El sector secundari (3r ESO): engranatge, fàbrica i aerogenerador */
+.um.um-t-sec .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 226H410'/%3E%3Ccircle cx='72' cy='110' r='30'/%3E%3Ccircle cx='72' cy='110' r='10'/%3E%3Cpath d='M120 226V160L155 130V160L190 130V160L225 130V160L260 130V226'/%3E%3Cpath d='M176 226V198H204V226'/%3E%3Cpath d='M134 180H154V198H134ZM226 180H246V198H226Z'/%3E%3Cpath d='M272 226V92H292V226M272 106H292'/%3E%3Ccircle cx='280' cy='78' r='8'/%3E%3Ccircle cx='268' cy='60' r='11'/%3E%3Ccircle cx='254' cy='40' r='7'/%3E%3Cpath d='M360 226V118'/%3E%3Ccircle cx='360' cy='112' r='6'/%3E%3Cpath d='M360 106V70M365 115L396 133M355 115L324 133'/%3E%3C/g%3E%3Cpath d='M102 110L111 110M93.2 131.2L99.6 137.6M72 140L72 149M50.8 131.2L44.4 137.6M42 110L33 110M50.8 88.8L44.4 82.4M72 80L72 71M93.2 88.8L99.6 82.4' fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='8' stroke-linecap='butt'/%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M120 160L155 130V160L190 130V160L225 130V160L260 130V226H120Z'/%3E%3Ccircle cx='72' cy='110' r='10'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Portada de Geografia (2n Batx): corbes de nivell, punt de mapa i ciutat */
+body .um.pdsgeo-portada .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M34 160Q26 118 56 96Q76 66 116 72Q150 58 180 80Q214 92 220 128Q228 168 196 186Q170 210 128 202Q96 214 66 198Q38 188 34 160Z'/%3E%3Cpath d='M58 154Q54 122 78 108Q96 88 122 96Q146 86 166 104Q190 116 190 142Q192 168 166 176Q142 190 116 180Q84 188 70 174Q58 166 58 154Z'/%3E%3Cpath d='M82 146Q80 124 98 118Q112 108 126 120Q140 128 134 146Q128 162 108 160Q86 162 82 146Z'/%3E%3Cpath d='M150 132Q152 118 166 120Q178 124 174 138Q170 150 158 148Q148 144 150 132Z'/%3E%3Cpath d='M104 140L110 130L116 140ZM160 138L164 131L168 138'/%3E%3Cpath d='M240 226H410'/%3E%3Cpath d='M250 226V172H274V226M274 226V140H300V226M300 226V184H322V226M322 226V118H346V226M346 226V162H372V226M372 226V190H396V226'/%3E%3Cpath d='M284 156h8M284 172h8M284 188h8M330 134h8M330 150h8M330 166h8M330 182h8'/%3E%3Cpath d='M300 102Q278 80 278 66A22 22 0 0 1 322 66Q322 80 300 102Z'/%3E%3Ccircle cx='300' cy='65' r='8'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M82 146Q80 124 98 118Q112 108 126 120Q140 128 134 146Q128 162 108 160Q86 162 82 146Z'/%3E%3Cpath d='M150 132Q152 118 166 120Q178 124 174 138Q170 150 158 148Q148 144 150 132Z'/%3E%3Cpath d='M322 118H346V226H322Z'/%3E%3Cpath d='M300 102Q278 80 278 66A22 22 0 0 1 322 66Q322 80 300 102Z'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Geografia Tema 1, La població: piràmide regressiva, natalitat i mortalitat, habitatges */
+body .um.pdsgeo-t-1 .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 226H410'/%3E%3Cpath d='M76 210H144V226H76ZM72 194H148V210H72ZM64 178H156V194H64ZM54 162H166V178H54ZM50 146H170V162H50ZM56 130H164V146H56ZM68 114H152V130H68ZM82 98H138V114H82ZM96 82H124V98H96Z'/%3E%3Cpath d='M110 62V226'/%3E%3Cpath d='M236 36V126H404'/%3E%3Cpath d='M244 54Q296 64 326 98T398 116'/%3E%3Cpath d='M244 100Q300 102 326 98T398 82'/%3E%3Cpath d='M248 226V158H298V226M308 226V178H348V226M358 226V196L378 178L398 196V226'/%3E%3Cpath d='M258 168h10v10h-10zM278 168h10v10h-10zM258 188h10v10h-10zM278 188h10v10h-10zM318 188h8v8h-8zM330 188h8v8h-8zM372 206h12v20h-12z'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M50 146H170V162H50Z'/%3E%3Cpath d='M248 158H298V226H248Z'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Geografia Tema 2, Recursos naturals i energètics: embassament, aerogeneradors i placa solar */
+body .um.pdsgeo-t-2 .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M14 100Q50 92 84 110Q112 124 142 112'/%3E%3Cpath d='M142 104H164L208 226H142Z'/%3E%3Cpath d='M142 104V226'/%3E%3Cpath d='M152 104V96H164V104'/%3E%3Cpath d='M20 124Q34 118 48 124T76 124T104 124T132 124'/%3E%3Cpath d='M24 146H124M30 168H110'/%3E%3Cpath d='M190 210H214V226M214 222Q224 216 234 222T254 222'/%3E%3Cpath d='M14 226H410'/%3E%3Cpath d='M270 226V96'/%3E%3Ccircle cx='270' cy='92' r='5'/%3E%3Cpath d='M270 87V56M274 95L301 110M266 95L239 110'/%3E%3Cpath d='M326 226V130'/%3E%3Ccircle cx='326' cy='126' r='4'/%3E%3Cpath d='M326 122V100M330 128L348 139M322 128L304 139'/%3E%3Cpath d='M344 214L358 178H404L394 214ZM351 196H399M374 178L369 214M376 214V226'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M14 124H142V226H14Z'/%3E%3Cpath d='M142 104H164L208 226H142Z'/%3E%3Cpath d='M344 214L358 178H404L394 214Z'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Preparar la PAU de Geografia: full d'examen, cronòmetre i llapis */
+body .um.pdsgeo-paupag .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Ccircle cx='86' cy='150' r='40'/%3E%3Cpath d='M86 110V100M76 100H96M86 150V124M86 150L104 160M116 120L122 114'/%3E%3Cpath d='M150 40H262L282 60V222H150ZM262 40V60H282'/%3E%3Cpath d='M166 60H230'/%3E%3Cpath d='M170 92Q168 80 182 78Q196 72 204 84Q214 82 214 96Q218 110 204 114Q188 122 178 112Q166 106 170 92Z'/%3E%3Cpath d='M230 120V104M242 120V90M254 120V98M266 120V82M226 120H270'/%3E%3Cpath d='M166 142H266M166 158H266M166 174H240'/%3E%3Cpath d='M166 192h16v16h-16zM169 200l4 5 8-10'/%3E%3Cpath d='M300 210L364 104L380 114L316 220ZM300 210L298 228L316 220M356 116L372 126'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M150 40H262L282 60V222H150Z'/%3E%3Ccircle cx='86' cy='150' r='40'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Preparar la PAU d'Història: font amb segell, examen, ploma i tinter */
+body .um.pds2-v4-pau:not(.pdsgeo-paupag) .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M40 70H124V200H40Z'/%3E%3Cpath d='M54 92H110M54 108H110M54 124H100M54 140H110'/%3E%3Ccircle cx='104' cy='176' r='12'/%3E%3Cpath d='M98 186L94 204M110 186L114 204'/%3E%3Cpath d='M160 50H260L280 70V220H160ZM260 50V70H280'/%3E%3Cpath d='M176 74H236'/%3E%3Cpath d='M176 98H264M176 114H264M176 130H250M176 146H264M176 162H240'/%3E%3Ccircle cx='252' cy='194' r='14'/%3E%3Cpath d='M245 194l5 6 10-12'/%3E%3Cpath d='M384 40Q332 72 316 140Q322 150 334 142Q372 104 384 40Z'/%3E%3Cpath d='M384 40L320 190'/%3E%3Cpath d='M352 82L340 76M344 104L330 100'/%3E%3Cpath d='M318 226V206H354V226ZM328 206V198H344V206M304 226H368'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M160 50H260L280 70V220H160Z'/%3E%3Ccircle cx='104' cy='176' r='12'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Què pregunta la PAU d'Història: arxiu de preguntes, interrogant i lupa */
+body .um.pds2-v4-preguntes .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M40 100H130V220H40Z'/%3E%3Cpath d='M50 100V90H140V210H130M60 90V80H150V200H140'/%3E%3Cpath d='M54 124H116M54 140H116M54 156H104M54 172H116M54 188H96'/%3E%3Cpath d='M196 50H300Q316 50 316 66V130Q316 146 300 146H242L216 170L220 146H196Q180 146 180 130V66Q180 50 196 50Z'/%3E%3Cpath d='M230 84Q230 66 248 66Q266 66 266 84Q266 96 250 102V114'/%3E%3Ccircle cx='334' cy='182' r='28'/%3E%3Cpath d='M354 202L384 232'/%3E%3Cpath d='M320 176H348M320 190H340'/%3E%3C/g%3E%3Ccircle cx='250' cy='128' r='4' fill='%23ffffff' fill-opacity='.55'/%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M196 50H300Q316 50 316 66V130Q316 146 300 146H242L216 170L220 146H196Q180 146 180 130V66Q180 50 196 50Z'/%3E%3Ccircle cx='334' cy='182' r='28'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
+/* Compte docent: pissarra, cadenat i clau */
+body .um.pdsa-v4-compte .um-hero > .um-wrap { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 240'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M58 60H222V162H58ZM70 72H210V150H70Z'/%3E%3Cpath d='M86 94H150M86 112H182M86 130H130'/%3E%3Cpath d='M52 168H228'/%3E%3Cpath d='M150 162H166M180 160H200V168H180Z'/%3E%3Cpath d='M140 60V48'/%3E%3Cpath d='M92 168L78 226M188 168L202 226M24 226H404'/%3E%3Cpath d='M280 144H352V216H280Z'/%3E%3Cpath d='M292 144V118A24 24 0 0 1 340 118V144'/%3E%3Ccircle cx='316' cy='172' r='7'/%3E%3Cpath d='M316 179V196'/%3E%3Ccircle cx='384' cy='96' r='12'/%3E%3Cpath d='M384 108V170M384 150H394M384 162H394'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Cpath d='M70 72H210V150H70Z'/%3E%3Cpath d='M280 144H352V216H280Z'/%3E%3C/g%3E%3C/svg%3E"); background-size: auto 86%; }
