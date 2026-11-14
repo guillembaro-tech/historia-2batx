@@ -101,6 +101,9 @@ $opcions = static function ( array $ops ): string {
 			<?php if ( $tl && ! empty( $tl['ex2']['opcions'] ) ) : ?>
 				<h4>Tria una opció i escriu des del personatge</h4>
 				<?php echo $opcions( $tl['ex2']['opcions'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
+				<?php if ( pds2_personatges_tema( (int) $pid ) ) : ?>
+					<p class="pds2-pau-s"><a href="#pau-personatges">Com posar-te en el personatge</a></p>
+				<?php endif; ?>
 				<p class="pds2-pau-go"><a class="um-quiz-btn" href="<?php echo esc_url( $t_url . '#e2' ); ?>">Fes-lo pas a pas</a></p>
 			<?php else : ?>
 				<p class="pds2-pau-s">En preparació.</p>
@@ -141,5 +144,7 @@ $opcions = static function ( array $ops ): string {
 		</article>
 
 	</div>
-	<p class="pds2-pau-mesdades">Com es puntua cada exercici, la caixa d'eines per redactar i un test amb qüestions de tots els temes, a <a href="<?php echo esc_url( pds2_pau_url() ); ?>">Preparar la PAU</a>.</p>
+	<?php echo pds2_banc_tema_html( (int) $pid, (int) $n ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
+	<?php echo pds2_personatges_tema_html( (int) $pid ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
+	<p class="pds2-pau-mesdades">Com es puntua cada exercici, els personatges de l'exercici 2 de tots els períodes, la caixa d'eines per redactar i un test amb qüestions de tots els temes, a <a href="<?php echo esc_url( pds2_pau_url() ); ?>">Preparar la PAU</a>.</p>
 </section>

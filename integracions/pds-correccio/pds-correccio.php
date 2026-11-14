@@ -21,7 +21,7 @@ define( 'PDS_CORR_VER', '0.2.0' );
 require_once PDS_CORR_DIR . 'includes/public.php';
 
 /** Adreça pública dels exercicis del Taller PAU (web d'Història de 2n de Batxillerat). */
-const PDS_CORR_TALLER_URL = 'https://guillembaro-tech.github.io/historia-2batx/content/temes/taller-%d.json';
+const PDS_CORR_TALLER_URL = 'https://raw.githubusercontent.com/guillembaro-tech/historia-2batx/main/content/temes/taller-%d.json';
 
 /**
  * Models permesos i preus orientatius en dòlars per milió de tokens (entrada, sortida),

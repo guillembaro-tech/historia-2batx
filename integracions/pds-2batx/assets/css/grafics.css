@@ -1,0 +1,91 @@
+/* Gràfics del temari en HTML (barres i taules comparatives) i ampliació d'imatges.
+   Els eixos cronològics en HTML són a tema-v4.css (.pds2-eix).
+   Afegit el 3/11/2026. Els gràfics són HTML editable: es llegeixen bé, es poden desplaçar de costat
+   quan són més amples que la pantalla i s'imprimeixen com a llistes o taules. */
+
+.um.pds2-v4 .pds2-graf { margin: 26px 0 28px; padding: 0; border: 1px solid var(--outline, #ddd); border-radius: var(--r, 10px); background: var(--surface, #fff); overflow: hidden; }
+.um.pds2-v4 .pds2-graf-cap { padding: 16px 20px 6px; }
+.um.pds2-v4 .pds2-graf-t { margin: 0; font-size: 18px; line-height: 1.3; font-weight: 600; color: var(--primary); }
+.um.pds2-v4 .pds2-graf-s { margin: 2px 0 0; font-size: 15px; line-height: 1.4; color: var(--ink-2, #555); }
+.um.pds2-v4 .pds2-graf > figcaption { margin: 0; padding: 10px 20px 14px; font-size: 13.5px; line-height: 1.45; color: var(--ink-2, #555); border-top: 1px solid var(--outline, #ddd); background: var(--surface-2, #f6f6f6); }
+
+/* Zona que es desplaça de costat */
+.um.pds2-v4 .pds2-graf-scroll { position: relative; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: thin; padding: 10px 20px 16px; outline: none; }
+.um.pds2-v4 .pds2-graf-scroll:focus-visible { box-shadow: inset 0 0 0 2px var(--primary); }
+.um.pds2-v4 .pds2-graf-scroll.is-drag { cursor: grabbing; user-select: none; }
+.um.pds2-v4 .pds2-graf.is-ample .pds2-graf-scroll { cursor: grab; }
+.um.pds2-v4 .pds2-graf-nav { display: none; align-items: center; gap: 8px; padding: 0 20px 4px; font-size: 13.5px; color: var(--ink-2, #555); }
+.um.pds2-v4 .pds2-graf.is-ample .pds2-graf-nav { display: flex; }
+.um.pds2-v4 .pds2-graf-nav::before { content: "Desplaça\2019t de costat per veure\2019l sencer."; flex: 1; }
+.um.pds2-v4 .pds2-graf-nav button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--outline, #ccc); background: var(--surface, #fff); color: var(--primary); font-size: 18px; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+.um.pds2-v4 .pds2-graf-nav button:hover:not([disabled]) { background: var(--primary-soft, #f3e6ee); }
+.um.pds2-v4 .pds2-graf-nav button[disabled] { opacity: .35; cursor: default; }
+
+/* ---------- Gràfic de barres (taula amb barres) ----------
+   Cada cel·la numèrica porta data-v amb el valor; el JavaScript hi dibuixa la barra proporcional. */
+.um.pds2-v4 .pds2-barres table { width: 100%; min-width: 520px; border-collapse: collapse; font-size: 15px; line-height: 1.35; }
+.um.pds2-v4 .pds2-barres th, .um.pds2-v4 .pds2-barres td { padding: 7px 10px 7px 0; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--outline, #e3e3e3); }
+.um.pds2-v4 .pds2-barres thead th { font-size: 13.5px; font-weight: 600; color: var(--ink-2, #555); }
+.um.pds2-v4 .pds2-barres tbody th { font-weight: 500; width: 30%; }
+.um.pds2-v4 .pds2-barres td[data-v] { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.um.pds2-v4 .pds2-barres .pds2-barra { display: inline-block; vertical-align: middle; height: 14px; border-radius: 3px; margin-right: 8px; background: var(--s, var(--primary)); }
+.um.pds2-v4 .pds2-barres .pds2-llegenda { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 4px 0 0; padding: 0; list-style: none; font-size: 13.5px; color: var(--ink-2, #555); }
+.um.pds2-v4 .pds2-barres .pds2-llegenda li { margin: 0; display: inline-flex; align-items: center; gap: 6px; }
+.um.pds2-v4 .pds2-barres .pds2-llegenda i { width: 12px; height: 12px; border-radius: 2px; background: var(--s, var(--primary)); }
+
+/* Taula dins d'un gràfic: hereta l'estil de .pds2-taula */
+.um.pds2-v4 .pds2-graf .pds2-taula { margin: 0; overflow: visible; }
+.um.pds2-v4 .pds2-graf .pds2-taula tbody th { width: 18%; }
+
+/* ---------- Ampliar imatges ---------- */
+.um.pds2-v4 .pds2-fig-imgs, .um.pds2-v4 .pds2-v4-font .um-fig { position: relative; }
+.um.pds2-v4 .pds2-zoom-btn { position: absolute; right: 8px; bottom: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px 5px 8px; border: 0; border-radius: 16px; background: rgba(20,20,20,.72); color: #fff; font: 500 13px/1 inherit; cursor: zoom-in; opacity: .9; }
+.um.pds2-v4 .pds2-zoom-btn:hover, .um.pds2-v4 .pds2-zoom-btn:focus-visible { opacity: 1; background: rgba(20,20,20,.9); }
+.um.pds2-v4 .pds2-zoom-btn svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.pds2-lb { position: fixed; inset: 0; z-index: 2147483000; display: flex; flex-direction: column; background: #121214; color: #fff; }
+.pds2-lb[hidden] { display: none; }
+.pds2-lb-bar { display: flex; align-items: center; gap: 8px; padding: 10px 14px; font-size: 14px; }
+.pds2-lb-bar span { flex: 1; opacity: .8; }
+.pds2-lb-bar button { min-width: 40px; height: 40px; padding: 0 12px; border: 1px solid rgba(255,255,255,.35); border-radius: 20px; background: transparent; color: #fff; font-size: 15px; cursor: pointer; }
+.pds2-lb-bar button:hover, .pds2-lb-bar button:focus-visible { background: rgba(255,255,255,.14); }
+.pds2-lb-area { flex: 1; overflow: auto; display: flex; align-items: center; justify-content: center; cursor: zoom-in; }
+.pds2-lb-area img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; background: #fff; }
+.pds2-lb.is-zoom .pds2-lb-area { display: block; cursor: zoom-out; }
+.pds2-lb.is-zoom .pds2-lb-area img { max-width: none; max-height: none; width: var(--zw, auto); margin: 0 auto; }
+.pds2-lb-cap { margin: 0; padding: 10px 16px 14px; font-size: 14px; line-height: 1.45; max-height: 22vh; overflow: auto; opacity: .9; }
+body.pds2-lb-obert { overflow: hidden; }
+
+@media (max-width: 640px) {
+	.um.pds2-v4 .pds2-graf-cap { padding: 14px 14px 4px; }
+	.um.pds2-v4 .pds2-graf-scroll { padding: 8px 14px 14px; }
+	.um.pds2-v4 .pds2-graf-nav { padding: 0 14px 4px; }
+	.um.pds2-v4 .pds2-graf > figcaption { padding: 10px 14px 12px; }
+	.um.pds2-v4 .pds2-zoom-btn span { display: none; }
+}
+
+@media print {
+	.um.pds2-v4 .pds2-graf { break-inside: avoid; }
+	.um.pds2-v4 .pds2-graf-scroll { overflow: visible; padding: 8px 12px; }
+	.um.pds2-v4 .pds2-graf-nav, .um.pds2-v4 .pds2-zoom-btn, .pds2-lb { display: none !important; }
+}
+
+/* ---------- Barra apilada (p. ex. diputats per blocs) ----------
+   Cada segment porta --v (valor) i --s (color); l'amplada és proporcional al valor dins de la fila.
+   La línia discontínua marca la meitat (majoria absoluta). */
+.um.pds2-v4 .pds2-pila { position: relative; display: flex; min-width: 420px; height: 34px; border-radius: 5px; overflow: hidden; background: var(--surface-2, #eee); }
+.um.pds2-v4 .pds2-pila > span { flex: var(--v, 1) 1 0; min-width: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; white-space: nowrap; font-size: 13.5px; font-weight: 600; color: #fff; background: var(--s, var(--primary)); font-variant-numeric: tabular-nums; }
+.um.pds2-v4 .pds2-pila > span + span { box-shadow: inset 1px 0 0 rgba(255,255,255,.7); }
+.um.pds2-v4 .pds2-pila.is-meitat::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; border-left: 2px dashed rgba(0,0,0,.55); }
+.um.pds2-v4 .pds2-pila-t td { padding: 8px 0; }
+.um.pds2-v4 .pds2-pila-t th { padding: 8px 14px 8px 0; white-space: nowrap; }
+.um.pds2-v4 .pds2-pila-t .pds2-pila-d { display: block; margin-top: 4px; font-size: 13.5px; font-weight: 400; color: var(--ink-2, #555); white-space: normal; }
+@media print { .um.pds2-v4 .pds2-pila > span { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+.um.pds2-v4 .pds2-barres .pds2-barra { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+/* Cel·les amb diversos elements (nom en negreta i detalls a sota), p. ex. partits i sindicats */
+.um.pds2-v4 .pds2-graf .pds2-taula td b { display: block; margin-top: 8px; font-weight: 600; }
+.um.pds2-v4 .pds2-graf .pds2-taula td b:first-child { margin-top: 0; }
+.um.pds2-v4 .pds2-graf .pds2-taula td small { display: block; font-size: 13.5px; line-height: 1.35; color: var(--ink-2, #555); }
+.um.pds2-v4 .pds2-graf .pds2-taula.is-ampla table { min-width: 940px; }
+.um.pds2-v4 .pds2-graf .pds2-taula tr.pds2-pol th { background: transparent; color: var(--primary); padding: 2px 4px 6px; border: 0; font-size: 14px; }
+.um.pds2-v4 .pds2-graf .pds2-taula tr.pds2-pol th span { display: flex; justify-content: space-between; border-bottom: 3px solid var(--primary); padding-bottom: 4px; }

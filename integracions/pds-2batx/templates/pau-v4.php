@@ -27,9 +27,10 @@ foreach ( pds2_temes() as $p ) {
 			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / <a href="<?php echo esc_url( pds2_portada_url() ); ?>">2n Batxillerat</a> / <a href="<?php echo esc_url( pds2_historia_url() ); ?>">Història</a> / Preparar la PAU</nav>
 			<p class="um-eyebrow">2n Batxillerat · Història · PAU</p>
 			<h1>Preparar la PAU</h1>
-			<p class="um-guide">Com és l'examen d'Història, un test amb qüestions de diversos temes, la caixa d'eines per redactar i el que ha preguntat la PAU fins ara.</p>
+			<p class="um-guide">Com és l'examen d'Història, com posar-te en el personatge de l'exercici 2, un test amb qüestions de diversos temes, la caixa d'eines per redactar i el que ha preguntat la PAU fins ara.</p>
 			<ul class="um-facts">
 				<li>Quatre exercicis de 2,5 punts</li>
+				<li>Personatges de l'exercici 2, període per període</li>
 				<li>Tests de l'exercici 4 amb la puntuació oficial</li>
 				<li>Connectors i verbs per redactar</li>
 			</ul>
@@ -40,6 +41,7 @@ foreach ( pds2_temes() as $p ) {
 
 		<nav class="pds2-pau-salts" aria-label="En aquesta pàgina">
 			<a href="#examen">L'examen</a>
+			<a href="#personatges">Personatges de l'exercici 2</a>
 			<a href="#test">Test de l'exercici 4</a>
 			<a href="#eines">Caixa d'eines</a>
 			<a href="#preguntes">Què pregunta la PAU</a>
@@ -50,7 +52,7 @@ foreach ( pds2_temes() as $p ) {
 			<p>Quatre exercicis obligatoris de 2,5 punts cadascun, en 90 minuts. Als exercicis 2 i 3 es tria una de les dues opcions. Cada examen equilibra l'àmbit català i l'espanyol, i temes polítics, socials i econòmics.</p>
 			<div class="um-cards">
 				<article class="um-card"><h4>Exercici 1. Anàlisi crítica de fonts</h4><span class="um-tag">0,50 + 0,50 + 1,50 punts</span><p>Dues fonts amb un mateix eix temàtic. Dues idees de cada font i una breu redacció que les compara i les relaciona amb el context.</p></article>
-				<article class="um-card"><h4>Exercici 2. Situeu-vos en el temps</h4><span class="um-tag">1,50 + 5 termes × 0,20 punts</span><p>Una redacció des del personatge que proposa l'enunciat, amb cinc termes històrics ben integrats.</p></article>
+				<article class="um-card"><h4>Exercici 2. Situeu-vos en el temps</h4><span class="um-tag">1,50 + 5 termes × 0,20 punts</span><p>Una redacció des del personatge que proposa l'enunciat, amb cinc termes històrics ben integrats. <a href="#personatges">Com posar-te en el personatge</a>.</p></article>
 				<article class="um-card"><h4>Exercici 3. Glossari</h4><span class="um-tag">1,00 + 1,00 + 0,50 punts</span><p>Un tema transversal, que pot travessar diverses etapes, a partir d'un descriptor del glossari oficial.</p></article>
 				<article class="um-card"><h4>Exercici 4. Poseu a prova els vostres sabers</h4><span class="um-tag">10 qüestions · 2,50 punts</span><p>Deu qüestions tipus test amb quatre opcions. Cada encert suma 0,25, cada error resta 0,08 i les qüestions en blanc no compten.</p></article>
 			</div>
@@ -75,6 +77,8 @@ foreach ( pds2_temes() as $p ) {
 				<?php endforeach; ?>
 			</ol>
 		</section>
+
+		<?php echo pds2_personatges_pau_html(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escapat a la funció. ?>
 
 		<div id="taller" class="pds2-taller pds2-pau-app">
 			<section class="um-sec" id="test">

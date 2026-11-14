@@ -51,20 +51,29 @@ if ( $art ) {
 	$art_obres = count( pdsha_obres_per_numero() );
 	$art_total = count( pdsha_obres_oficials() );
 }
+
+// Geografia, si el connector hi és i l'usuari la pot veure.
+$geo       = function_exists( 'pdsgeo_pot_veure' ) && function_exists( 'pdsgeo_temari' ) && pdsgeo_pot_veure();
+$geo_fets  = $geo ? count( pdsgeo_temes_per_numero() ) : 0;
+$geo_total = $geo ? count( pdsgeo_temari() ) : 0;
+$n_mat     = 1 + ( $art ? 1 : 0 ) + ( $geo ? 1 : 0 );
 ?>
 <?php pds2_avis_privat(); ?>
 <div class="um um4 um-c-2n-batxillerat pds2-v4 pds2-v4-portada pds2-v4-curs" data-view="alumne">
 	<header class="um-hero">
 		<div class="um-wrap">
 			<nav class="um-crumbs" aria-label="Ruta"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inici</a> / 2n Batxillerat</nav>
-			<p class="um-eyebrow">Curs · Història<?php echo $art ? ", Història de l'Art" : ''; ?></p>
+			<p class="um-eyebrow">Curs · Història<?php echo $art ? ", Història de l'Art" : ''; ?><?php echo $geo ? ', Geografia' : ''; ?></p>
 			<h1>2n Batxillerat</h1>
-			<p class="um-guide">Les matèries de 2n de Batxillerat, preparades per a les PAU.<?php echo $art ? " Història explica els sis temes de l'examen i Història de l'Art, les obres de referència agrupades per estils." : " Història explica els sis temes de l'examen."; ?></p>
+			<p class="um-guide">Les matèries de 2n de Batxillerat, preparades per a les PAU.<?php echo $art ? " Història explica els sis temes de l'examen i Història de l'Art, les obres de referència agrupades per estils." : " Història explica els sis temes de l'examen."; ?><?php echo $geo ? ' Geografia explica els temes de la matèria, amb gràfics i exercicis en format PAU.' : ''; ?></p>
 			<ul class="um-facts">
-				<li><?php echo $art ? '2 matèries' : '1 matèria'; ?></li>
+				<li><?php echo (int) $n_mat; ?> <?php echo 1 === $n_mat ? 'matèria' : 'matèries'; ?></li>
 				<li><?php echo count( $posts ); ?> de 6 temes d'Història</li>
 				<?php if ( $art ) : ?>
 					<li><?php echo (int) $art_obres; ?> de <?php echo (int) $art_total; ?> obres d'Història de l'Art</li>
+				<?php endif; ?>
+				<?php if ( $geo ) : ?>
+					<li><?php echo (int) $geo_fets; ?> de <?php echo (int) $geo_total; ?> temes de Geografia</li>
 				<?php endif; ?>
 			</ul>
 		</div>
@@ -91,7 +100,7 @@ if ( $art ) {
 							<span class="pds2-v4-tm"><?php echo esc_html( $p ? (string) pds2_f( 'dates', $p->ID, $o['dates'] ) : $o['dates'] ); ?><?php echo $p ? '' : ' · En preparació'; ?></span>
 						</div>
 						<?php if ( $taller ) : ?>
-							<a class="pds2-v4-tl" href="<?php echo esc_url( pds2_taller_url( $p->ID ) ); ?>">Taller PAU</a>
+							<a class="pds2-v4-tl" href="<?php echo esc_url( pds2_pau_v3() ? get_permalink( $p ) . '#activitats' : pds2_taller_url( $p->ID ) ); ?>"><?php echo pds2_pau_v3() ? 'Exercicis PAU' : 'Taller PAU'; ?></a>
 						<?php endif; ?>
 					</li>
 				<?php endforeach; ?>
@@ -128,6 +137,11 @@ if ( $art ) {
 				<p class="pds2-v4-botons"><a class="um-quiz-btn" href="<?php echo esc_url( pdsha_portada_url() ); ?>">Obre Història de l'Art</a></p>
 			</section>
 		<?php endif; ?>
+
+		<?php
+		// Altres matèries de 2n (per exemple Geografia, del connector pds-geografia).
+		do_action( 'pds2_portada_materies' );
+		?>
 
 	</div>
 </div>

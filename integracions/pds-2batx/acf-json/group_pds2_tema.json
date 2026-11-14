@@ -889,6 +889,194 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_pds2_tema_tab_personatges",
+            "label": "Personatges (exercici 2)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_pds2_tema_msg_personatges",
+            "label": "Com funcionen",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Surten a la pestanya PAU del tema, a «Exercici 2. Com posar-te en el personatge». Als textos, <code>__terme__</code> surt subratllat, com els termes obligatoris a l'examen. El primer personatge surt obert.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_pds2_tema_personatges",
+            "label": "Personatges d'exemple",
+            "name": "personatges",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_pds2_tema_pj_rol",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Afegeix un personatge",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_pds2_tema_pj_rol",
+                    "label": "Personatge",
+                    "name": "rol",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_segell",
+                    "label": "On surt",
+                    "name": "segell",
+                    "type": "text",
+                    "instructions": "Per exemple, «PAU juny 2026 · opció A».",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_situacio",
+                    "label": "Situació",
+                    "name": "situacio",
+                    "type": "textarea",
+                    "instructions": "L'enunciat resumit, adreçat a l'alumne.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_termes",
+                    "label": "Termes de l'examen",
+                    "name": "termes",
+                    "type": "textarea",
+                    "instructions": "Un per línia.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_inici",
+                    "label": "Comença",
+                    "name": "inici",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_enmig",
+                    "label": "Enmig",
+                    "name": "enmig",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 5,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_pds2_tema_pj_final",
+                    "label": "Acaba",
+                    "name": "final",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -909,5 +1097,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1791734400
+    "modified": 1792421317
 }
